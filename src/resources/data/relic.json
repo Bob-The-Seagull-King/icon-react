@@ -1,6 +1,7 @@
 [
     {
         "name": "APE GOD",
+        "colour": "red",
         "desc": "This gauntlet or weapon is oversized, studded with metal, and incredibly heavy",
         "tier 1": "<b>Invoke (Attack, 17+)</b>: Stun your attack target.",
         "tier 2": "Become <i>immune</i> to stun",
@@ -10,6 +11,7 @@
     },     
     {
         "name": "CRIMSON KING",
+        "colour": "red",
         "desc": "A blood red gem, similar to an Elixir Stone, is set into this weapon or armor.",
         "tier 1": "When you’re at 25% hp or lower, you may reduce all <i>sacrifice</i> costs to <i>sacrifice</i> 2 if higher, even those based on % of your hp.",
         "tier 2": "When you’d take any wound, roll a d6. On a 6, ignore the wound. If you’d already roll a d6 to ignore a wound, instead improve that roll by 1, to a minimum of 2+.",
@@ -19,6 +21,7 @@
     }, 
     {
         "name": "ERYS",
+        "colour": "red",
         "desc": "This helm, mantle, or pauldron is crowned with horns, spines, or a mantle of thick goat-like fur.",
         "tier 1": "<b>Invoke (Attack, 11+)</b>: You may shove your target 1.",
         "tier 2": "When you are shoved, you can choose to reduce the shove distance by 1.",
@@ -28,6 +31,7 @@
     }, 
     {
         "name": "MAIDEN",
+        "colour": "red",
         "desc": "Your relic bears a statuette or image of the Weeping Titan, impaled by spears.",
         "tier 1": "While you’re bloodied, gain counter.",
         "tier 2": "While you have counter, you also grant all adjacent allies counter.",
@@ -37,6 +41,7 @@
     }, 
     {
         "name": "ORPHEO",
+        "colour": "red",
         "desc": "This relic has a cracked mirror, set on a pendant or into a shield or weapon hilt.",
         "tier 1": "<b>Invoke (Attack, 17+)</b>: Gain <i>defiance</i>. If you already have <i>defiance</i>, gain 4 vigor.",
         "tier 2": "When <i>defiance</i> triggers, you may deal fray damage to all adjacent foes.",
@@ -46,6 +51,7 @@
     },
     {
         "name": "UNGOLIANT",
+        "colour": "red",
         "desc": "Your relic is a massive weapon carved from the fang of an ur-spider or beast of the deep caverns.",
         "tier 1": "Charged attacks gain +1 boon.",
         "tier 2": "Charged attacks also deal 2 damage to all foes adjacent to your attack target after the ability resolves.",
@@ -55,6 +61,7 @@
     }, 
     {
         "name": "WYRMTOOTH",
+        "colour": "red",
         "desc": "This weapon or armor has carvings made from pure wyrmbone. It is hot to the touch.",
         "tier 1": "While afflicted by a status, you no longer take bonus damage and cannot be critically hit.",
         "tier 2": "While afflicted by three or more statuses, gain +1 boon on saves and deal bonus damage with all abilities.",
@@ -64,6 +71,7 @@
     }, 
     {
         "name": "TROLLHIDE",
+        "colour": "red",
         "desc": "A cape, shield, or mantle of scaly leather, a hardy relic that knits itself back together like a living thing.",
         "tier 1": "If you don’t attack on your turn, gain 4 vigor.",
         "tier 2": "If you don’t attack on your turn, gain +1 boon on saves until the start of your next turn.",
@@ -73,6 +81,7 @@
     }, 
     {
         "name": "TITANSBANE",
+        "colour": "red",
         "desc": "A weapon or armor made of Arken black metal. Seethes with a fell energy. You can feel a killing intent from within.",
         "tier 1": "When you use a <i>delay</i> effect, you can <i>rush</i> 1 before activating it. If you’re <i>bloodied</i>, you can <i>rush</i> 3 instead.",
         "tier 2": "Your <i>delay</i> effects deal <i>divine</i> damage to characters at 25% health or lower.",
@@ -82,6 +91,7 @@
     }, 
     {
         "name": "IRONSOUL",
+        "colour": "red",
         "desc": "A relic made of sturdy and thick star-iron, cool and comforting to the touch.",
         "tier 1": "Gain +1 boon on attacks while adjacent to an ally.",
         "tier 2": "<b>Invoke (Gambit)</b>: Reduce all damage from an incoming ability targeting you or an adjacent ally by 2 per adjacent ally, as if from armor.",
@@ -91,6 +101,7 @@
     }, 
     {
         "name": "GLADESONG",
+        "colour": "yellow",
         "desc": "Your weapon is carved from supple but durable gaia wood, sharper than any metal.",
         "tier 1": "Your attacks against foes standing next to an allied summon gain +1 boon.",
         "tier 2": "<b>Invoke (Attack, 11+)</b>: Move all allied summons in range 2 of you 1 space, ignoring all movement penalties. All foes adjacent to at least one allied summon that was moved this way then take 2 damage.",
@@ -100,6 +111,7 @@
     }, 
     {
         "name": "GLOAM",
+        "colour": "yellow",
         "desc": "This cloak or clothing appears to be made out of woven shadow. The cloth is richly textured.",
         "tier 1": "Invoke (Attack, 14+): <i>Blind</i> your foe. If your foe is already <i>blinded</i>, they take 2 damage.",
         "tier 2": "+1 boon on attacks against <i>blind</i> targets.",
@@ -109,6 +121,7 @@
     }, 
     {
         "name": "HERMES",
+        "colour": "yellow",
         "desc": "Intricate, curling silver wings are carved into this artifact, weapon, or armor.",
         "tier 1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Teleport 2.",
         "tier 2": "When you use this relic’s invoke, all other allies in range 2 of you can teleport 2 as well.",
@@ -118,6 +131,7 @@
     }, 
     {
         "name": "MISTBORN",
+        "colour": "yellow",
         "desc": "Your weapon is made from seeping mist, and doesn’t seem to be entirely present.",
         "tier 1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Gain stealth.",
         "tier 2": "Attacks from <i>stealth</i> deal bonus damage.",
@@ -127,6 +141,7 @@
     }, 
     {
         "name": "RUIN",
+        "colour": "yellow",
         "desc": "A weapon, bow, or stave carved from ancient stone, a heavy slab of a thing.",
         "tier 1": "You may trade in 1 boon, once per attack, for bonus damage.",
         "tier 2": "Become immune to <i>pacified</i>.",
@@ -136,6 +151,7 @@
     }, 	
     {
         "name": "SLEIPNIR",
+        "colour": "yellow",
         "desc": "Odd wooden armor or a necklace of bones carved with the image of an eight legged horse.",
         "tier 1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Fly 2. This free action can interrupt abilities.",
         "tier 2": "Once a turn, after you end any flying movement on a lower elevation than you started, you can fly 1 again.",
@@ -145,6 +161,7 @@
     }, 
     {
         "name": "RIGOLETTO",
+        "colour": "yellow",
         "desc": "A colorful token, built to look like a spinning wheel. When sewn into armor, weapons, or accessories, it allows its wielder to move with preternatural speed.",
         "tier 1": "Evasion triggers for you on a 3+.",
         "tier 2": "When you or an ally in range 2 successfully evades an attack, deal 2 damage to the attacker.",
@@ -154,6 +171,7 @@
     }, 
     {
         "name": "HUNTRESS",
+        "colour": "yellow",
         "desc": "This supple leather relic has been crafted with images of Gaia, the Hunter Titan.",
         "tier 1": "Gain <i>dodge</i> against characters you marked.",
         "tier 2": "Attacks against characters you marked deal bonus damage.",
@@ -163,6 +181,7 @@
     }, 
     {
         "name": "FRAGMENT OF IZ",
+        "colour": "yellow",
         "desc": "A shifting, crackling relic that seems out of sync with reality. Its color and shape seems to writhe and warp.",
         "tier 1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Gain phasing until the start of your next turn.",
         "tier 2": "When you phase through a character, you may deal 2 damage to them. This effect can only trigger once a round for the same character.",
@@ -172,6 +191,7 @@
     }, 
     {
         "name": "DOMINUS",
+        "colour": "yellow",
         "desc": "A relic that most often takes the form of a crimson gauntlet. The surface is oddly slick.",
         "tier 1": "All your attacks gain a new effect: <i>Slay</i>: Dash 2 after the ability resolves.",
         "tier 2": "<b>Invoke (Attack, 17+)</b>: Trigger any slay effects of your attack.",
@@ -181,6 +201,7 @@
     }, 
     {
         "name": "BYRAX",
+        "colour": "green",
         "desc": "Goat horn engravings adorn this armor, weapon, or cloak, curling into intricate runes",
         "tier 1": "When you refresh a stance, dash 1.",
         "tier 2": "<b>Invoke (Gambit)</b>: <i>Effect</i>: Refresh all your stances.",
@@ -190,6 +211,7 @@
     }, 
     {
         "name": "ERENBRASS",
+        "colour": "green",
         "desc": "A burnished metal helm, gauntlet, or mantle, bright in the sun.",
         "tier 1": "At the start of your turn, you may shove an ally 1 space in any direction.",
         "tier 2": "Erenbrass I can be taken at the start and end of your turn, and can choose different characters each time.",
@@ -199,6 +221,7 @@
     }, 
     {
         "name": "ESPER",
+        "colour": "green",
         "desc": "This gem is a void of space within. If you stare long enough, you can see stars.",
         "tier 1": "<b>Invoke (Attack, 16+)</b>: Cure a character inrange 2 of your attack target.",
         "tier 2": "Increase range of all cure effects by 2.",
@@ -208,6 +231,7 @@
     },
     {
         "name": "MERCY",
+        "colour": "green",
        "desc": "This gold-filagreed choker or torc is surprisingly light, and includes imagery of grasping hands.",
         "tier 1": "Your cures can target defeated characters. If you do, they are <i>rescued</i> before being cured.",
         "tier 2": "When you <i>cure</i> a character at 25% hp or lower, they automatically clear one status they are affected by.",
@@ -217,6 +241,7 @@
     },
     {
         "name": "SCHEHEREZADE",
+        "colour": "green",
         "desc": "This weapon emits a faint singing tone that can only be heard in a quiet room.",
         "tier 1": "At the start of combat, gain 2 blessing tokens on yourself.",
         "tier 2": "When you spend blessing tokens to gain a boon on a save against a status, it automatically clears the status, but no more than once a turn.",
@@ -226,6 +251,7 @@
     }, 	
     {
         "name": "STORM LORD",
+        "colour": "green",
         "desc": "This armor is wrapped in knotted holy cords and imagery of the sea during a storm.",
         "tier 1": "At the end of any turn you didn’t attack, you may gain a combo token, or spend one to dash 1.",
         "tier 2": "WWhen you spend a combo token on an ability, you may deal 2 damage again to one of its targets, but only once per ability.",
@@ -235,6 +261,7 @@
     },
     {
         "name": "VESSEL",
+        "colour": "green",
         "desc": "This weapon or armor seems surprisingly hollow, despite how durable it is. It’s cold and heavy.",
         "tier 1": "Deal bonus damage when at or under 25% hp.",
         "tier 2": "When a foe breaks your vigor, deal 2 damage to them.",
@@ -244,6 +271,7 @@
     },
     {
         "name": "CHIME",
+        "colour": "green",
         "desc": "This symbol of a bell shines with gentle power. A soft ringing can be heard in its presence, but only when it’s very quiet.",
         "tier 1": "<b>Invoke (Gambit)</b>: <i>Pacify</i> a foe in range 5.",
         "tier 2": "You are immune to statuses caused by <i>pacified</i> foes.",
@@ -253,6 +281,7 @@
     },
     {
         "name": "GILDED FINGER",
+        "colour": "green",
         "desc": "A golden finger of a saint or holy icon - real or carved - set into armor or weaponry.",
         "tier 1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: You gain aura 1 until the end of your next turn. Foes inside the aura gain +1 curse on attacks, and allies gain +1 boon on attacks.",
         "tier 2": "Your gambit aura also gives foes +1 <i>curse</i> on saves, and grants allies +1 boon on saves.",
@@ -262,6 +291,7 @@
     },
     {
         "name": "SILVER RABBIT",
+        "colour": "green",
         "desc": "A beautiful relic inlaid with a shining silver coin, embalmed with the image of the smiling Moon Titan, Tsumi.",
         "tier 1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: <i>Gamble</i>, then dash exactly that far in a straight line.",
         "tier 2": "After using this relic’s gambit, you may also deal that much damage to a foe in range 3.",
@@ -271,6 +301,7 @@
     },
     {
         "name": "APOPHIS",
+        "colour": "blue",
         "desc": "Coiling serpents cradle the hilt of this weapon or curl around the base of this necklace.",
         "tier 1": "At the start of your turn, create a poison pool <i>dangerous terrain</i> space in free space adjacent to you.",
         "tier 2": "You are immune to dangerous terrain. If you start your turn in a dangerous terrain space, you may deal 1 piercing damage to all adjacent characters.",
@@ -280,6 +311,7 @@
     },
     {
         "name": "DOMAIN",
+        "colour": "blue",
         "desc": "A sceptre, weapon, or helm embedded with a deeply inset gem.",
         "tier 1": "<b>Gain trait</b>: <i>Domain</i>: When you create a terrain effect or object, you can place your <i>Domain</i> over one of its spaces, a small blast terrain effect. Using this trait again moves the Domain instead of creating a new one.  Gain +1 boon on attacks against foes in your Domain.",
         "tier 2": "Foes that end their turn in your Domain take 1 piercing damage.",
@@ -289,6 +321,7 @@
     },
     {
         "name": "CLOUDPIERCER",
+        "colour": "blue",
         "desc": "This bright metal weapon crackles with latent power.",
         "tier 1": "Gain +1 boon on attacks against foes at exactly range 3.",
         "tier 2": "When you attack a foe at exactly range 3, deal 1 piercing damage to them again after the ability resolves.",
@@ -298,6 +331,7 @@
     },
     {
         "name": "PLEIADES",
+        "colour": "blue",
         "desc": "A set of six star-diamonds, flickering with a distance light, set into earrings or a neck piece.",
         "tier 1": "<b>Invoke (Attack, 11+)</b>: Create an icy patch of difficult terrain under your attack target.",
         "tier 2": "You are immune to difficult terrain. If you start your turn in a difficult terrain space, you can create an icy patch of difficult terrain in a free adjacent space, including under characters.",
@@ -307,6 +341,7 @@
     },
     {
         "name": "SKIPJACK",
+        "colour": "blue",
         "desc": "This gem-incrusted gauntlet is intricately made and seems heavy, but is oddly light to wear.",
         "tier 1": "Increase the listed range of all your abilities by +1.",
         "tier 2": "Your attacks with a range gain <i>rebound</i>. The rebounded ability has a maximum range of 3.",
@@ -316,6 +351,7 @@
     },
     {
         "name": "TOWER OF BARBS",
+        "colour": "blue",
         "desc": "Coiling thorns have been set into this ranged weapon. The barbs sometimes curl towards your flesh.",
         "tier 1": "Deal bonus damage if a character is at maximum range of your ranged attack or in the end space of a line or arc area effect.",
         "tier 2": "Also gains <i>unerring</i> if a character is at maximum range.",
@@ -325,6 +361,7 @@
     },
     {
         "name": "RIFTWALKER",
+        "colour": "blue",
         "desc": "This relic has a contorted shape set into at - an impossible geometry that confounds the mind.",
         "tier 1": "You may cause any of your attack with area effects to include in the area any Pit spaces connected to them by adjacency, even diagonally.",
         "tier 2": "You can ignore movement and height penalties from pits.",
@@ -334,6 +371,7 @@
     },
     {
         "name": "ARENHEIR",
+        "colour": "blue",
         "desc": "This weapon or armor has the imagery of a great fierce wolf on it.",
         "tier 1": "Your critical hits deal bonus damage.",
         "tier 2": "If your attack target is at 25% hp or lower, your ability triggers all <i>exceed</i> effects.",
@@ -343,6 +381,7 @@
     },
     {
         "name": "CONQUERING KING",
+        "colour": "blue",
         "desc": "This relic has a regal bearing, with imagery of lightning bolts made of wrought gold.",
         "tier 1": "<b>Invoke (5th Round+)</b> - All abilities deal bonus damage.",
         "tier 2": "<b>Invoke (7th Round+)</b> - All attacks become <i>critical hits</i> on hit.",
@@ -352,6 +391,7 @@
     },
     {
         "name": "PALEBLOOD",
+        "colour": "blue",
         "desc": "This relic has inlays of pale bone, intricately carved. When infused, the inlays light up.",
         "tier 1": "At the start of combat, gain a d4 power die, starting at 1. Tick it up by 1 at the end of each round. When the die is 4, you may expend it when you use any ability, discarding it, to grant that ability bonus damage and trigger <i>all</i> of the following triggered effects: <i>charge, collide, comeback, chain reaction, exceed, finishing blow, slay</i>.",
         "tier 2": "<b>Invoke (Attack, 16+)</b>: Tick a power die you have up or down by 1.",
