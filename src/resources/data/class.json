@@ -1,0 +1,847 @@
+[
+    {
+        "name": "STALWART",
+        "description": "Weapon master and unparalleled soldier",
+        "stats": {
+            "vitality": 10,
+            "speed": 4,
+            "dash": 2,
+            "defence": 6,
+            "dice": 6,
+            "fray": 4,
+            "basic_atk": 3
+        },
+        "mechanic": {
+            "name": "Heroics",
+            "description": "Stalwarts can push themselves beyond their normal limits, performing <b>heroics</b> and activaitng any <b>heroic</b> triggered effects of an ability. Each job has different ways of performing heroics.",
+            "gambit": "If you take a Stalwart ability as a non-Stalwart class, you get Heroics, and the ability to triggera Heroic ability for free once a combat."
+        },
+        "traits": [
+            {
+                "name": "Armor 2",
+                "description": "Reduce all damage taken by 2"
+            },
+            {
+                "name": "Fortify",
+                "description": "Spaces adjacent to you have <i>Rampart</i>. Gain <i>Vigilance</i> +1 at the end of your turn."
+            },
+            {
+                "name": "Rush X",
+                "description": "Stalwarts can <i>rush</i> as part of their abilities. When you rush, you move X spaces and are <i>unstoppable</i> and <i>immune</i> to all damage during that move."
+            }
+        ],
+        "jobs": [
+            {
+                "name": "Bastion",
+                "tagline": "Unbreakable Knight",
+                "description": "The Bastions are the shield lords of Arden Eld, larger than life figures that tread the ancient imperial roads with their heads held high and armor gleaming. From town to town they act as errant knights and mercenaries, protecting the weak and vulnerable, and driving back the Blights with hammer-like blows from their greatshields, which they throw like a discus with incredible force. The imperious and mighty presence of a Bastion in town is a stabilizing force and can become an event for a whole village. All Bastions follow an ancient and long-forgotten hero’s code, an old oath to stand against chaos in all its forms.",
+                "traits": [
+                    {
+                        "name": "Strive",
+                        "desc": "You may cause any ability to trigger its heroic effects when you use it, and increase the distance of any shoves by +1. If you do, after that ability resolves, you can’t use heroics until the end of your next turn, and deal half damage during that turn"
+                    },
+                    {
+                        "name": "Press the Advantage",
+                        "desc": "Once a round, when you shove a character, you and an ally of your choice anywhere can each rush 1"
+                    },
+                    {
+                        "name": "Bull’s Strength",
+                        "desc": "All your abilities gain collide: deal 2 damage. Characters can’t take this damage more than once a turn."
+                    },
+                    {
+                        "name": "Shieldmaster",
+                        "desc": " You have aura 1. If you end your turn with an ally in the aura, gain vigilance +1 and become sturdy until the start of your turn."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Helion",
+                    "blurb":"Your shield becomes the sun: a discus of light and motion, shattering enemy ranks and spurring allies forth.",
+                    "description": "<b>Effect:</b> You hurl your shield, and every character on the battlefield is shoved 1 space in a direction of your choice. You may shove in any order, and may choose different directions for each character. <br> <b>Effect:</b> Bloodied foes are weakened. Foes at 25% hp or lower are stunned.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 2}, 
+                        {"tag_name": "action", "val": 1} 
+                    ],
+                    "ultimate":{
+                        "name": "PERFECT HELION",
+                        "desc": "You can repeat this effect once on either allies or enemies."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Black Rock Vanguard",
+                    "tags":[
+                    ],
+                    "description": "You can take any number of interrupts per turn. When you take an interrupt, you may <i>rush 1</i> after it resolves."
+                }
+            },
+            {
+                "name": "Demon Slayer",
+                "tagline": "Master of the Forbidden Arts",
+                "description": "Warriors of impossible strength and insane bravado, demon slayers are warriors that specialize in fighting the largest and most dangerous monsters to crawl out of the pits that riddle the land. They relish in fighting against impossible odds, training themselves in forbidden techniques, arcane arts, and oversized weaponry that normal Kin would quake at wielding. They organize themselves into loose orders and train and hunt together, sharing tales and trophies of the colossal horrors they have slain. Some say in order to fight their quarries, the slayers must ingest demon blood to gain their strength, giving them dark and forbidden power that makes other Kin fear and respect them in equal measure.",
+                "traits": [
+                    {
+                        "name": "Demon Edge",
+                        "desc": "If you elect to take a slow turn or use a delay effect, gain <i>vigilance +1</i>, and all your abilities deal <i>bonus damage</i> and gain <i>true strike</i> until the end of your next turn."
+                    },
+                    {
+                        "name": "Demon Strength",
+                        "desc": "You can make any ability Heroic when you use it. If you do, you can't attack or use heroics until the end of your following turn."
+                    },
+                    {
+                        "name": "Hissatsu",
+                        "desc": "If you don't attack during your turn, your next attack ability gains +1 boon, <i>true strike</i>, and upgrades its damage die to <i>d10</i>. This effect ends after you hit with an attack."
+                    },
+                    {
+                        "name": "True Horn",
+                        "desc": "You are <i>sturdy</i> from the start of each round until the start of your turn."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Split Heaven and Hell",
+                    "blurb":"Sever Divinity and cut through the threads of possibility. Pour all your rage into one blow and topple the Gods.",
+                    "description": "<b>End your turn,</b> and start charging up a god cutting blow. <b>Delay:</b> Your next turn must be slow. At the start of that turn, you may take one of the following options. <ul><li><b>Sever Divine Thread:</b> Swing your weapon a line 5 <b>area effect</b> drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their distance on the line from you. <ul><li><b>1 space:</b> 100% of max hp</li><li><b>2-4 space:</b> 50% of max hp</li><li><b>5+ spaces:</b> 25% of max HP</li></ul></li><li><b>Divine Cancel:</b> You may cancel this ability, refunding the resolve cost, and <i>rush 1</i>. You can limit break again this combat, but not this turn.</li><li><b>Divine Delay:</b> You continue to hold this baility. Your next turn must be slow and repeat this delay effect. Each time you do this, increase the width of the line by 1 space, to a maximum of 3 width, and its length by 3 spaces. You cannot attack while holding Divine Delay.</li></ul> Legend characters always take 25% of max hp from this ability instead of other effects.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 3}, 
+                        {"tag_name": "action", "val": 1}, 
+                        {"tag_name": "end turn"},
+                        {"tag_name": "delay"},
+                        {"tag_name": "true strike"},
+                        {"tag_name": "divine"}
+                    ],
+                    "ultimate":{
+                        "name": "God Waster",
+                        "desc": "While holding a God Cutting Blow, you can <i>rush 2</i> at the start or end of any other turn thatn yours, but no more than twice a round."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Rangiri",
+                    "tags":[
+                    ],
+                    "description": "If you trigger Hissatsu twice in a row, your attack ability becomes upgraded further. The entire ability now deals <i>double damage</i>. Roll and determine all damage on the atatcker's end when making it, then double the total before applying it."
+                }
+            },
+            {
+                "name": "Colossus",
+                "tagline": "High Flying Grappler",
+                "description": "Ferocious followers of Arenheir, the Wolf Titan, the Colossi are a martial order of berserkers, pankrationists, and warriors that reaches across all of Arden Eld. They travel throughout the land seeking powerful foes, and taking trophies to return to their great lodges to offer in tribute to Arenheir in fierce hope of resurrecting their god. At their lodges they feast and drink to their deeds, companions, and boasts. <br/>Colossi seek glory and challenge through battle, and will often go for only the absolute strongest warriors and monsters, heedless of their own safety. They fight with wild abandon and unconventional techniques that would make even the dirtiest Knave raise an eyebrow.",
+                "traits": [
+                    {
+                        "name": "Furious Berserk",
+                        "desc": "You go into a furious blood rage as you take damage, giving you the following benefits: <ul><li>You start combat with <i>defiance</i></li><li>You have <i>regeneration</i>, and regain regeneration if defeated and rescued.</li><li>While you're <i>bloodied</i>, you are <i>sturdy</i>, and gain <i>vigilance +1</i> at the end of your turn.</li></ul>"
+                    },
+                    {
+                        "name": "Wolfheart",
+                        "desc": "Once a round, you may <i>sacrifice 25%</i> of your max hp to make an ability <i>Heroic</i> and increase the distance of any flight, rush, or dash as part of that move by +1."
+                    },
+                    {
+                        "name": "Pulverize",
+                        "desc": "When you start an attack ability on higher elevation than your target, it deals bonus damage. If you are two or more levels higher, it also triggers all <i>exceed</i> effects."
+                    },
+                    {
+                        "name": "Great Leap",
+                        "desc": "When you would end any movement on a lower elevation than you started, you may gain <i>flying</i> for the duraction of that movement."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Gigantas Crusher",
+                    "blurb":"Wrestle with the gods themselves",
+                    "description": "<b>Effect:</b> You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character's turn, you come spinning back to earth, slamming that character into the battlefield in an unoccupied space in range 2 of your original location. You <i>sacrifice</i> 25% of your hp. Your foe take 50% of their max hp as <i>divine</i> damage, or 25% as <i>divine</i> damage on a successful save. THen place both of you back in or adjacent to that space. <br.> This ability can be used against Legends, but they may always save, taking <i>divine</i> fray damage on refunding this ability's resolve cost on asuccessful save, and only 25% hp as <i>divine</i> damage on a failed save.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 3}, 
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "divine"},
+                        {"tag_name": "sacrifice"} 
+                    ],
+                    "ultimate":{
+                        "name": "Atomos Crusher",
+                        "desc": "If you're at 1 hp or lower, this ability deals 25% more max hp damage to non-legend characters."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Unbreakable",
+                    "tags":[
+                    ],
+                    "description": "If defeated, you can <i>rescue</i> yourself and take a turn as normal. This doesn't take an action and takes place at the start of your turn. In addition, after being rescued in any way, including as part of this trait, you can <i>rush 1</i> and deal 2 damage to all adjacent characters."
+                }
+            },
+            {
+                "name": "Knave",
+                "tagline": "Absolute Bastard",
+                "description": "The advent of the Churning Age has coincided with the rise of a certain class of person with heavypockets and a long list of ‘problems’ to solve. The Knaves are the solution. Hedge knights, rogue warriors, duelists, deserters, and veterans, they roam the land offering their services to whoever has the dust to spare. Though some of them are altruistically minded, they tend to go where the work, food, and fighting is thickest, and never stay for long in one location. <br/> Knaves operate under a loose moral code and an even looser no-holds-barred fighting style, using hilts, head butts, and gauntleted fists to inflict pain, punishment, and humiliation on their opponents in equal measure. These braggadocios warriors spare no effort in flexing their incredible strength - if the price isright. For a freshly roasted chicken, a pocket full of dust, and a polish of their boots, they’ll do just about anything.",
+                "traits": [
+                    {
+                        "name": "Martial Master",
+                        "desc": "You can take two stances at once."
+                    },
+                    {
+                        "name": "Blackheart",
+                        "desc": "While you're suffering from a status, gain <i>vigilance +1</i> at the end of your turn. If you are suffering from two or more, also deal <i>bonus damage</i> with all abilities."
+                    },
+                    {
+                        "name": "Taunt (1 action)",
+                        "desc": "A foe in range 3 gains <i>hatred</i> of you."
+                    },
+                    {
+                        "name": "Spite",
+                        "desc": "You can choose to use the Heroic effects of any ability when you use it. However, after it resolves, gain <i>Hatred+</i> of the closest foe to you until the end of your next turn and you can't use Heroics again for the same duraction. If multiple foes are equidistant, you can choose."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Mock",
+                    "blurb":"There is no weapon greater than a well-timed and well-aimed insult.",
+                    "description": "<b>Effect:</b> A foe in range 3 becomes <i>slashed+, weakened+,</i>, cannot gain or benefit from <i>evasion, dodge,</i> or <i>stealth</i>, and gains <i>hatred+</i> of you. These effects continue until the end of their next turn. <br/> <b>Special:</b> On elite and legend foes, this ability lasts two turns instead.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 2}, 
+                        {"tag_name": "action", "val": 1} 
+                    ],
+                    "ultimate":{
+                        "name": "Dread Mock",
+                        "desc": "Gains range 5 and also deals <i>divine</i> fray damage to your foe."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Way of the Crow",
+                    "tags":[
+                    ],
+                    "description": "If any ally is <i>defeated</i>, <i>cure</i> yourself and become <i>unstoppable</i> until the end of your next turn."
+                }
+            }
+        ]
+    },
+    {
+        "name": "VAGABOND",
+        "description": "Rogue, Scoundrel, and Blade for Hire",
+        "stats": {
+            "vitality": 7,
+            "speed": 4,
+            "dash": 4,
+            "defence": 10,
+            "dice": 10,
+            "fray": 2,
+            "basic_atk": 4
+        },
+        "mechanic": {
+            "name": "Finishing Blow",
+            "description": "Abilities with <b>Finishing Blow</b> triggered effects gain additional, more powerful effects if they target at least one <i>bloodied</i> foe. Effects depend on the action.",
+            "gambit": "If you take a Vagabond ability as a non-Vagabond class, your <i>vagabond<i> abilities benefit from <b>Finesse</b>."
+        },
+        "traits": [
+            {
+                "name": "Skirmisher",
+                "description": "A character with this trait can move diagonally and dash at full speed."
+            },
+            {
+                "name": "Dodge",
+                "description": "Immune to <i>all</i> damage from missed attacks, successful saves, and and <i>area effects</i>."
+            },
+            {
+                "name": "Prowl (1 action)",
+                "description": "Gain <i>stealth</i>. Becomes a <i>free action</i> if no foes are in range 2."
+            },
+            {
+                "name": "Finesse",
+                "description": "You deal bonus damage to bloodied foes."
+            }
+        ],
+        "jobs": [
+            {
+                "name": "Fool",
+                "tagline": "Masked Avenger",
+                "description": "Fools are dedicated defenders of the common people of Arden Eld, part folk hero, and part hired killer. They have no official organization, and cover their faces with masks to hide their identity, wearing bells and motley to cover their collections of deadly weapons and explosives. <br/>Some people fear the Fools, calling them self-interested thugs or anarchic cultists of the Laughing God. They may not be entirely wrong, but none can deny their flair for the theatrical. <br/>They are feared rightly by all would-be tyrants, under-barons, and aspiring imperial lords. Wherever kin labor under oppression, someone will take up the mask and knives and sent cold jolts of fear into the hearts of the rich and comfortable.",
+                "traits": [
+                    {
+                        "name": "Tumbling",
+                        "desc": "You may <i>phase</i> through characters. Entering the space of any character, including summons, always costs a maximum of 1 movement."
+                    },
+                    {
+                        "name": "Curse of Chaos",
+                        "desc": "You have <i>evasion</i> against characters that are 3 or more spaces away from you."
+                    },
+                    {
+                        "name": "Cheap Trick",
+                        "desc": "When an attack misses you, you may <i>teleport</i> 1 space, then leave a <i>bomb</i> in an adjacent space."
+                    },
+                    {
+                        "name": "Stack Dice",
+                        "desc": "Once a round, when you trigger a <i>finishing blow</i> or <i>slay</i> effect, gain a <i>Stacked Die</i> after that ability resolves. You can use this die when you <i>gamble</i> to make the <i>gamble</i> result 6, consuming the die. You can only hold on to one Stacked Die at once, and lose all of them at the end of combat."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Curtain Call",
+                    "blurb":"Bring out the fireworks. Fire up the elden magic. Time for a showstopper.",
+                    "description": "<b>Effect: Gamble</b>, then draw a line <i>area effect</i> of that many spaces +2. Soar into the air, removing yourself from the battlefield, then place yourself adjacent to the <i>first</i> foe in that line, delivering a massive blow. This ability has different effects depending on their position on the line. If there ar eno valid targets after rolling, the resolve cost of this ability is refunded. <br/> Roll [D] + fray damage once, then apply it the number of times listed. <br/> <b>3-5 spaces:</b> x2 <br/> <b>6-7 spaces:</b> x3 <br/> <b>8 spaces:</b> x4 and the character is <i>stunned</i>.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 24}, 
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "divine"},
+                        {"tag_name": "gamble"},
+                        {"tag_name": "true strike"}
+                    ],
+                    "ultimate":{
+                        "name": "Ultima Curtain Call",
+                        "desc": "After this ability resolves, summon half as many bombs as your <i>gamble</i> result anywhere on the battlefield."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Death's Apprentice",
+                    "tags":[
+                    ],
+                    "description": "You can hold on to 2 stacked dice at once."
+                }
+            },
+            {
+                "name": "Freelancer",
+                "tagline": "Divine Punisher",
+                "description": "Freelancers are free-roaming exorcists and hired guns, roaming the land and fighting blights, demons and bandits in the name of justice. They tend to act as wild cards: highly independent, highly effective, and sticking to their codes of honor. <br/>Freelancers have their history in an ancient disgraced knightly order from one of the Seven Families of the Thrynn. They each wield a bright metal six gun, a bow, or a long rifle with extreme skill, the bullets, shot, or arrows of which they infuse with raw Aether drawn from their very souls. Each weapon is a relic passed down from master to student over the years, and can only be won in a duel with another freelancer. The freelancer’s ultimate weapon is the Astral Chain, a holy gauntlet which they use to purge and bind demons and rogue spirits into their service as Seraphim.",
+                "traits": [
+                    {
+                        "name": "Bound Spirit",
+                        "desc": "At the start of combat, you may place your <i>seraph</i> in range 2 from you. This summon persists even if you're defeated."
+                    },
+                    {
+                        "name": "Aether Shot",
+                        "desc": "Any attack made on the third and sixth round of combat deals bonus damage and triggers all <i>exceed</i> effects, hit or miss."
+                    },
+                    {
+                        "name": "Trigrammaton",
+                        "desc": "Your abilities used against foes at exactly range 3 gain +1 boon on attack rolls and <i>unerring</i>."
+                    },
+                    {
+                        "name": "Astral Binding",
+                        "desc": "You can stack up to two marks on characters. As a <i>free action</i>, you can teleport all characters marked by you 1 space."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Paradiso",
+                    "blurb":"You summon the spirit of you weapon, drawing out the residual soul aether of every single one of its previous users. Ghostly doubles of dozens of your predecessors match your mvoements, and create an aura of untold power.",
+                    "description": "You gain an aura of supernatural accuracy, charging your weapons and the weapons of your allies with aether. <br/>You gain <i>Aura 2</i> until the end of your next turn. While standing in Paradiso, abilities used by you or allies against foes outside of Paradiso trigger <i>all</i> the following triggered effects: <i>charge, collide, comeback, chain reaction, exceed, finishing blow, slay</i>.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 3}, 
+                        {"tag_name": "action", "val": 1},
+                        {"tag_name": "aura"}
+                    ],
+                    "ultimate":{
+                        "name": "Ultima Paradiso",
+                        "desc": "As a free action ability while Paradiso is active, you can teleport yourself, all allies, and the area itself to any other part of the battlefield, as long as there is free space to place all characters teleported inside the area when it is moved."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Divine Chamber",
+                    "tags":[
+                    ],
+                    "description": "Your sixth round Aether Shell also deals <i>divine</i> damage."
+                }
+            },
+            {
+                "name": "Shade",
+                "tagline": "Nacturnal Assassin",
+                "description": "Night-walkers, shadow-steppers, and masters of secret scroll arts, the Shades are spies, scouts, and assassins of unparalleled skill. Their number forms a secret and deadly society of Shadow Clans spread across Arden Eld, each practicing and refining the Night Venom Techniques. Joining the shades is presumed to be extremely difficult, but they tend to open their ranks to anyone that has been lost or abandoned. <br/>The legends say Shades make a deal with the Weeper, the dead titan queen of night and air, and drink her tears, splitting their soul in two. Their shadow becomes animate, bestial and hungry. Over a week and a day, they must fast and train their shadow to obey them, transforming them into agile and silent warriors of the highest order. The Shades say the stories are rumors, and they get along with their Darksides. They do have a tendency to appear when least expected, in uncanny and unsettling ways.",
+                "traits": [
+                    {
+                        "name": "Shadow Arts",
+                        "desc": "You have <i>phasing</i> and are immune to <i>blinded</i>."
+                    },
+                    {
+                        "name": "Underworld",
+                        "desc": "Abilities used against foes in <i>pits, difficult</i> or <i>dangerous</i> terrain gain <i>unerring</i> and deals bonus damage."
+                    },
+                    {
+                        "name": "Darkside",
+                        "desc": "When you first vacate a space on your turn, you may leave a <i>shadow</i>."
+                    },
+                    {
+                        "name": "Meld",
+                        "desc": "Once a round, before or after ysing any ability on your turn, you can swap places with any <i>shadow</i> in range 3, teleporting."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Abyssal Ecstasy",
+                    "blurb":"A prayer and a drop of blood, and soothing darkness cloaks the battlefield.",
+                    "description": "<b>Effect:</b> Yourself, all allies, and allied summons gain <i>stealth</i>, and all foes are <i>blinded</i>.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 2}, 
+                        {"tag_name": "action", "val": 1} 
+                    ],
+                    "ultimate":{
+                        "name": "Ultima Ecstasy",
+                        "desc": "Summon <i>shadows</i> adjacent to all allies."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Umbral Soul",
+                    "tags":[
+                    ],
+                    "description": "Once a round, one of your allies can swap places with any of your shadows before or after using any ability, teleporting."
+                }
+            },
+            {
+                "name": "Warden",
+                "tagline": "Friend to Beast and Bough",
+                "description": "The Wardens are the protectors and keepers of the Deep Green, the old and untamed parts of Arden Eld, lorded over by the beasts and the ancient trees. They are both the keepers and the servants of the herd and root, tending to their health, and culling them when it becomes necessary. They sleep under the stars and make their home under bough and root, making staunch allies of the ferocious beasts of the deep wilds through a combination of rigorous training and mutual respect. Their fierce defense of the wild sometimes puts them at odds with civilization, which they tend to have a distaste for. <br/>Wardens are the keepers of the green kenning, the old ranger arts, that allow one to travel noiselessly, hide in plain sight, live off the land, and become immune to even the most deadly of toxins. They are solitary and powerful fighters. It is not uncommon for a Warden on a long sojourn to go without speaking the tongue of Kin for years at a time.",
+                "traits": [
+                    {
+                        "name": "Beast Master",
+                        "desc": "At the start of every combat, summon a <i>great beast</i> in range 2, a trained animal companion. This summon persists even if you're defeated."
+                    },
+                    {
+                        "name": "Path of the Aesi",
+                        "desc": "While you have <i>stealth</i> the <i>dash</i> action becomes a free action."
+                    },
+                    {
+                        "name": "Ambush Master",
+                        "desc": "Your abilities made from <i>stealth</i> ignore cover, and deal bonus damage."
+                    },
+                    {
+                        "name": "Green Kenning",
+                        "desc": "You and your summons ignore all movement penalties from terrain. Any time you grant a dash, the target also gains this benefit."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Lycanthropy",
+                    "blurb":"You muster up the primal magic of the Deep Green. The power of fang, tooth, scale, fur, and claw pours into you, granting you masssively increased speed and power.",
+                    "description": "You become a beast hybrid of primal fury, You gain a greatly enhanced dash, with the following benefits: <ul><li>Dash always becomes a free action</li><li>All dashed granted as a part of any of your abilities, summons, or actions (including this one!) may be increased by +1, and grant <i>phasing</i> while moving.</li><li>When you take the dash action, all allies and allies summons can dash 1. Then, any foe adjacent to one or more characters that dashed this way takes 2 damage.</li></ul>",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 3}, 
+                        {"tag_name": "action", "val": 1} , 
+                        {"tag_name": "divine"} 
+                    ],
+                    "ultimate":{
+                        "name": "Ultima Lycanthropy",
+                        "desc": "WHen you shape change, you can also allow allies to partly shift. The first two effects from Lycanthropy affect all allied characters."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Deep Stealth",
+                    "tags":[
+                    ],
+                    "description": "While in stealth, you cannot be directly targeted at all, even form adjacent spaces."
+                }
+            }
+        ]
+    },
+    {
+        "name": "MENDICANT",
+        "description": "Wandering Healer and Storyteller",
+        "stats": {
+            "vitality": 10,
+            "speed": 4,
+            "dash": 2,
+            "defence": 8,
+            "dice": 6,
+            "fray": 3,
+            "basic_atk": 5
+        },
+        "mechanic": {
+            "name": "Blessing",
+            "description": "Certain actions give characters a <b>Blessing</b> token. A character can <b>spend</b> a blessing when making a save to gain +1 boon on that save. <br/> All Mendicant jobs also have <b>different, alternative ways to spend blessings tokens</b>. All blessings are discarded at the end of combat. <br/> Blessings are not unique (they don't 'belong' to a character) and as long as a character has blessings form anyone, they can use them for any effects that require blessing tokens, though only one type of blessing at once.",
+            "gambit": "If you take a Mendicant ability as a non-Mendicant job, you gain this class' <b>Bless</b> action."
+        },
+        "traits": [
+            {
+                "name": "Diaga (1 action)",
+                "description": "<i>Cure</i> a character in range 4. <i>(A character that's cured gains 4 vigor, or a vigor surge if they are bloodied. Then, they can immediately save agianst all statuses, ending them on a success)</i>."
+            },
+            {
+                "name": "Bless (1 action)",
+                "description": "Grant a <b>blessing</b> token to a character in range 4."
+            },
+            {
+                "name": "Succor",
+                "description": "Mendicants may use Rescue to bring up a defeated ally at range 4 instead of adjacent."
+            }
+        ],
+        "jobs": [
+            {
+                "name": "Chanter",
+                "tagline": "Songweaver of the Great Chant",
+                "description": "Descending from numerous holy orders that have their roots high in the chronicler monasteries, the chanters are part singer, part storyteller, and part priest. At the time of the Doom, when all knowledge was deemed lost and everything put to page was transformed into ash, the only thing that persisted was the power of song, poetry, and the spirit of survival. A select order of priests committed all the great and necessary knowledge of Kin to memory, creating a single, continuous song, known as the Great Chant. In myths, stories, and histories, they recorded the knowledge of the ancients, transforming it into liturgy. <br/>The Chant performed its role, and it was through its power that the early bands of Kin survived and persevered through the darkest days. Today, however, it is so archaic, convoluted, and long that many dispute the meaning of its dogma, though none can deny its value as a mythic text. The Old Church of the chroniclers has splintered into factions that mostly squabble over its meaning and try to draw some angle from its numerous and sometimes contradictory adaptions into holy texts. <br/>Nevertheless, the Chant still holds power - real, tangible power - to heal, mend, and uplift. There are still those that take to the road and use its awesome power for good, ringing the bells of awakening and purification, as they sing to victory.",
+                "traits": [
+                    {
+                        "name": "Blessing of Faith",
+                        "desc": "Yourself and allies may spend a blesisng token when using an ability to gain <i>True Strike</i> on that ability and <i>fly 2</i> before using it. If they spend 3 tokens, the ability also triggers any <i>charge</i> effects."
+                    },
+                    {
+                        "name": "Songweave",
+                        "desc": "You are a master of weaving spell-sings together. You can spend a combo token as part of <i>any</i> ability to activate all the <i>charge</i> effects of that ability, even on a regular turn. If that ability was a combo, perform its base version instead of its combo version."
+                    },
+                    {
+                        "name": "Divine Grace",
+                        "desc": "Once a round, when you gain of spend a combo token, you may fly 2, then <i>Bless</i> yourself or an ally in range 3 of you."
+                    },
+                    {
+                        "name": "Uplift",
+                        "desc": "The first time a round you use any ability that allows you to fly, <i>all</i> allies can fly 1."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "March of the Saints",
+                    "blurb":"You sing of the deeds of the first heroes, from the Doom. The Great Chant waves around your allies and transforms them into echoes of those mighty heroes.",
+                    "description": "<b>Stance:</b> You begin weavinig an epic song, a saga of legendary heroes. When you take this action, and when this stance refreshes, you may invest an ally in range 5 with the power of one of the great saints. Each saint must be chosen at least once before it can be chosen again. The effect takes place immediately and lasts until the end of their next turn. <br/><b>Refresh:</b> This stance refreshed automatically at the start of your turns.<ul><li><b>Parzival:</b> An allied character gains flying and cover from all directions.</li><li><b>Leon:</b> An allied character gains <i>dodge</i> and the ability to move diagonally.</li><li><b>Angrbod:</b> An allied character gains <i>sturdy</i>, and their attacks gain <i>true strike</i> and shove 1.</li><li><b>Farnese:</b> An ally gains 1 blessing and +1 boon on all attacks and saves.</li></ul>",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 2}, 
+                        {"tag_name": "action", "val": 1} , 
+                        {"tag_name": "stance"} 
+                    ],
+                    "ultimate":{
+                        "name": "Divine Investment",
+                        "desc": "You also gain the benefit of any chosen saint, lasting until the end of your next turn."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Gran Redempta",
+                    "tags":[
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "uses", "val": "1/expedition"}
+                    ],
+                    "description": "<i>Cure</i> yourself and every ally on the map. Characters that are cured this way are also Rescued if they're defeated."
+                }
+            },
+            {
+                "name": "Harvester",
+                "tagline": "Arbiter of Life and Death",
+                "description": "Servants of Tsumi, the Moon Titan, the Harvesters are the death priests of Arden Eld. They travel from land to land, sanctifying burial sites, performing funeral rites, and helping lingering spirits move on. The land is full of the malice and unfulfilled wishes of the long suffering dead, and so the services of the harvesters are in high demand. <br/>Tsumi is the protector of cycles, and so the Harvesters also perform fertility blessings, oversee harvest festivals, and see to the cultivation and protection of the land and nature. They plant flowers over battlefields, and tend groves of beautiful fruit trees planted over graveyards. This dual nature makes Harvesters fierce warriors, able to make the battle bloom or rot with a single swipe of their greatscythes.",
+                "traits": [
+                    {
+                        "name": "Blessing of Rebirth",
+                        "desc": "Yourself and allies can spend 1 blessing when using any ability to grant it <i>pierce</i> and <i>bonus damage</i>. THey may spend 3 blessings instead to additionally trigger any <i>slay</i> effects."
+                    },
+                    {
+                        "name": "Mark of Tsumi",
+                        "desc": "At the end of your turn, deal 2 piercing damage to all foes marked by you, and <i>bless</i> either yourself, or all allies marked by you."
+                    },
+                    {
+                        "name": "Gardener of Kin",
+                        "desc": "You can stack 2 marks on characters. Foes marked by you take +1 damage from summons."
+                    },
+                    {
+                        "name": "Balance",
+                        "desc": "All your abilities gain <i>slay: cure</i> yourself or any ally."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Death Sentence",
+                    "blurb":"A flash of the scythe, and the line between life and death is blurred.",
+                    "description": "<b>Summon:</b> You slash an adjacent foe with your weapon, knicking their soul out of their body. Draw a line 4 area effect from your foe facing directly away from you and <i>summon</i> the <b>severed soul</b> in the last available space. <br/> The soul lasts until the end of your next turn, or until the affected character is defeated.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 3}, 
+                        {"tag_name": "action", "val": 0} 
+                    ],
+                    "ultimate":{
+                        "name": "Soul Bloom",
+                        "desc": "If the foe is defeated while their soul is out, summon 4 plants anywhere on the battlefield."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Defy the Cycle",
+                    "tags":[
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "uses", "val": "1/expedition"}
+                    ],
+                    "description": "You call upon your power to forbid the natural order of lfie and death from working. Until the start of your next turn, characters cannot be reduced below 1 hp. <i>Divine</i> damage bypasses this ability."
+                }
+            },
+            {
+                "name": "Sealer",
+                "tagline": "Holy Judge and Purger of Evil",
+                "description": "Traveling priests, monks, judges, and doctors, the Sealers roam the world from village to village, performing necessary rituals, marriages, ceremonies, and yearly festivals. They are a welcome sight in most villages, and most perform the important function of traveling judge and medium, acting as an impartial party translating for the will of the local spirits. They often travel with many blessed relics of the deities of the land or even portable shrines on their back. <br/>In their other role, Sealers are legendary monster hunters and exorcists of unbelievable prowess and unshakeable faith. Whenever an especially bad blight or an arch demon appears, the Sealers are usually there to drive it back with ancient sealing magic, blessed brands, and flaming weapons.",
+                "traits": [
+                    {
+                        "name": "BLessing of War",
+                        "desc": "Yourself or allies can spend a blessing when they use an ability to gain <i>+1 boon</i> on attacks and <i>bonus damage</i> with that ability. If they consume 3 blessings, it additionally triggers all <i>exceed</i> effects."
+                    },
+                    {
+                        "name": "Mantra of Sealing",
+                        "desc": "Your attacks bless <i>all</i> adjacent allies to you and grant them 2 vigor."
+                    },
+                    {
+                        "name": "Godly Smite",
+                        "desc": "You steadily gather power as you fight. You start ocmbat with a mantra power die, a d6 that starts at 1, and ticks up by 1 at the start of every round, to a maximum of 6. You gain the <b>Godly Smite</b> interrupt."
+                    },
+                    {
+                        "name": "Martial Arts",
+                        "desc": "You have <i>dodge</i>."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Passage to the Afterlife",
+                    "blurb":"You unleash the supreme Sealer war art, inflicting ten thousand blows and shattering the connections of your foe's vital energy to their body, hurrying on the transmigration of immortal souls.",
+                    "description": "<b>Attack:</b> <i>On Hit:</i> [D]+fray, three times. <i>Miss:</i> Once.<br/><b>Exceed:</b> Deal [D]+fray two more times.<br/><b>Effect:</b> You may teleport adjacent to the target before the attack if they're in range 3. Every ally in range 3 of the target can also teleport adjacent to your target, or as close as possible. Your target then takes 2 additional divine damage, once, per adjacent ally.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 5}, 
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "boon", "val": 1},
+                        {"tag_name": "attack"},
+                        {"tag_name": "divine"}
+                    ],
+                    "ultimate":{
+                        "name": "Reach Heaven Through Violence",
+                        "desc": "The teleport effect has the range of the battlefield for both allied characters and yourself. If your target is at or under 25% hp, they take 2 divine damage twice for each adjacent ally instead."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Great Spirit Festival",
+                    "tags":[
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "uses", "val": "1/expedition"}
+                    ],
+                    "description": "<i>Bless</i> all allies on the map and grant then 2 vigor. If they're bloodied, repeat this effect."
+                }
+            },
+            {
+                "name": "Seer",
+                "tagline": "Fortune Teller and Master of Fate",
+                "description": "The Seers are made up of all the orders of hedge witches, stargazers, corner prophets, folk healers, shamans, and all manner of individuals that find themselves attracted to reading the Great Arcana, the esoteric practice of reading destiny itself, the Great Wheel of Arden Eld that determines the final fate of all things. <br/>Through ritual, ceremony, and unrelenting practice, Seers gain the ability to predict and even defy a person’s fate, using their Aether infused card decks to influence the turning of the Great Wheel and empower their allies with foresight, precision, and uncanny accuracy.",
+                "traits": [
+                    {
+                        "name": "The Wheel of Fate",
+                        "desc": "Set up a deck made up of one suit of a 52 card standard playing card deck (so 13 cards). At the start of any combat, draw up to 5 cards if you have less. Your hand and deck persist through combats, and your maximum hand size is 7 (you must discard down to 7 cards at the end of your turn). Discarded cards go in a discard pile. Once you draw through your deck, shuffle the discard pile and draw it as your new deck (meaning there’s no replacement and you will eventually draw through the deck)."
+                    },
+                    {
+                        "name": "Skein",
+                        "desc": "Draw a card at the start of your turn. If you didn't attack, draw an extra card at the end of your turn as well."
+                    },
+                    {
+                        "name": "Foretell",
+                        "desc": "You can discard 1 blessing token on yourself or an ally before that ally uses any abiility to tell their fortune as an effect. You discard a card from your hand and immediately apply the effects to your target, no matter the distance or if you can see them or not. If you have no cards in hand, draw the top card of your deck instead, apply its effects, then discard it. <br/> <b>The Great Wheel</b> <br/> 2 - <b>The Fool</b> - Ally must dash 3 spaces in a straight line before using the ability. <br/> 3 - <b>The Scepter</b> - Teleport your ally to an adjacent space to you after the action resolves. <br/> 4 - <b>The Ewer</b> - <i>Bless</i> all allies in a small blast area centered on your ally. <br/> 5 - <b>The Devil</b> - If the ability forces saves, foes get +2 curses to save against them. <br/> 6 - <b>The Sword</b> - Ability gains pierce. <br/> 7 - <b>Death</b> - Ally gains Defiance. <br/> 8 - <b>The Chariot</b> - ALly becomes <i>unstoppable</i> and <i>immune</i> to all damage while moving during the ability. <br/> 9 - <b>The Papessa</b> - Ally becomes <i>pacified</i> but is <i>cured</i> after the ability resolves. <br/> 10 - <b>The Emperor</b> - Ally gains <i>stealth</i> after the ability resolves. <br/> J - <b>The Star</b> - Ally makes all attacks and saves with +1 Boon unti lthe start of their next turn, including with the triggering ability. <br/> Q - <b>The Moon</b> - Ally gains <i>Evasion</i> until the start of their next turn. <br/> K - <b>The Sun</b> - ALly gains <i>Counter</i> and <i>Sturdy</i>, but cannot gain or benefit from stealth or evasion until the start of their next turn. <br/> A - <b>The World</b> - Ally becomes <i>Unstoppable</i> until the start of their next turn."
+                    },
+                    {
+                        "name": "Bend Fate",
+                        "desc": "You can discard any number of cards after you <i>gamble</i> to roll an extra die per card discarded, choosing any result. You can repeat this effect any number of times as long as you have cards, and you can choose to discard after you see each result."
+                    },
+                    {
+                        "name": "Karma",
+                        "desc": "Allies are <i>immune</i> to damage from your area effects. Any time you include an ally in an area effect that would damage them, after that ability resolves they gain 2 vigor and are <i>blessed</i> instead."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "High Prophecy",
+                    "blurb":"A burning third eye of pure etheric energy appears on your forehead. Possibilities unfurl befor eyou, laid out like infinite gleaming threads.",
+                    "description": "<b>Aura:</b> Until the start of your next turn, you gain aura 2. Every d6 any character in the aura rolls for boons, curses, or <i>gambling</i> is either a 6 or a 1 (you choose).",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 3}, 
+                        {"tag_name": "action", "val": 0},
+                        {"tag_name": "aura"} 
+                    ],
+                    "ultimate":{
+                        "name": "Thoth",
+                        "desc": "While the aura is active, you are automatically missed by attacks, turn any of your attack misses into hits, and succeed all saves."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Chakravartin",
+                    "tags":[
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "uses", "val": "1/expedition"}
+                    ],
+                    "description": "An ally in range 6 becomes <i>unstoppable</i> and <i>immune</i> to all damage until the end of their next turn."
+                }
+            }
+        ]
+    },
+    {
+        "name": "WRIGHT",
+        "description": "Mage, thaumaturge, and master of the arcane arts",
+        "stats": {
+            "vitality": 8,
+            "speed": 4,
+            "dash": 2,
+            "defence": 7,
+            "dice": 8,
+            "fray": 3,
+            "basic_atk": 6
+        },
+        "mechanic": {
+            "name": "Aether",
+            "description": "All Wrights gather <b>Aether</b> during combat, represented by a d6 <b>power die</b>. They passively gain 1 at the start of their turn, starting with 0. Use a d6 to track Aether. Other abilities and <b>Chain Reaction</b> will generate Ather when used. All Aether disperses at the end of combat. <br/> <b>INFUSE X:</b> <br/> Many wright abilities have upgraded versions that can only be cast by <b>Infusing</b> them by spending X Aether as part of that ability. Aether is consumed at the start of the action. Only one infusion can be chosen at once, and only once infuse effect can trigger at a time. <br/> Infused abilities count as the same ability as the base ability and also benefit from all talents.",
+            "gambit": "If you take a Wright ability as a non-wright class, you get <b>Aether</b> and <b>Chain Reaction</b>."
+        },
+        "traits": [
+            {
+                "name": "Slip",
+                "description": "Wright's movement does not trigger and ignores <i>interrupts</i>, <i>vigilance</i> and <i>rampart</i>."
+            },
+            {
+                "name": "Aetherwall",
+                "description": "Wrights gain <i>resistance</i> against all abilities from characters that are outside of range 2 from them."
+            },
+            {
+                "name": "Chain Reaction",
+                "description": "1/round, if a wright damages two or more foes with an ability, they gain 1 Aether after the ability resolves."
+            }
+        ],
+        "jobs": [
+            {
+                "name": "Enochian",
+                "tagline": "Unbridled Destruction",
+                "description": "The Enochian Orders of wrights are the most chaotic of the mage orders. They have no official organization, most of their members being hedge wizards or self taught. Many Enochians disdain authority and work for hire, sleeping and eating where they can and relying on the communities they work for to support them. Those that work on contract with guilds, armies, or mercenary companies tend to value their independence. <br/>The power that condenses inside an Enochian is related to the element of fire, a wild spark that grows and wanes with their emotions and energy, but with control can be focused into power that can carve mountains, scorch forests, and boil rivers. In times of desperation, the Enochians can feed this power with their own life force, a dangerous practice that the other orders of wrights look down upon. The Enochians, for their part, see other wrights as stiff and uncreative. They’d rather do it their way, after all.",
+                "traits": [
+                    {
+                        "name": "Inner Furnace",
+                        "desc": "Once a round, you may burn your own life force when you <i>Infuse</i> an ability. You can <i>sacrifice 25%</i> of your max hp to reduce the Aether cost of that ability by 2."
+                    },
+                    {
+                        "name": "Embersoul",
+                        "desc": "Start combat with <i>regeneration</i> and <i>defiance</i>. Regain <i>regeneration</i> if <i>rescued</i>."
+                    },
+                    {
+                        "name": "Phoenix Rage",
+                        "desc": "At the start of round 5, become suffused with immortal flame. Gain <i>defiance</i> at the start of each of your turns, and when you would take a wound, <i>gamble</i>. On a 4+, ignore it. If this is your last wound, this roll becomes a 2+ instead."
+                    },
+                    {
+                        "name": "Soulfire",
+                        "desc": "You abilities gain <i>Comback:</i> Your threshold to <i>critical hit</i> becomes 18+, and your threshold to <i>exceed</i> becomes 13+. If you're at 1hp, these thresholds are reduced to 15+ and 10+."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Gigaflare",
+                    "blurb":"I, who stand at the apex of things, <br/>Thou, who are in the deepest pits of despair,<br/>Let thy very bones become ash!<br/>O Flame, let the air become death!<br/>Ignite, and be banished to Hell!",
+                    "description": "<b>Effect:</b> You summon the eldflame, the primeval force of creation, dealing [D]+Fray <i>divine</i> damage to <i>every</i> character, on the battlefield, ignoring line of sight. Characters in range 2 of you are exempt from this ability.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 4}, 
+                        {"tag_name": "action", "val": 2},
+                        {"tag_name": "divine"},
+                        {"tag_name": "unerring"},
+                        {"tag_name": "true strike"} 
+                    ],
+                    "ultimate":{
+                        "name": "Meteor",
+                        "desc": "You gain the <b>Meteor</b> infusion."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Bright Soul",
+                    "tags":[
+                    ],
+                    "description": "If you are defeated, you can choose to burn off all your aether to cause a massive <i>Burst 2 (self)</i> explosion <i>area effect</i>, dealing 4 piercing damage, then 4 piercing damage a number of times again to all characters inside equal to the amount of aether you burned."
+                }
+            },
+            {
+                "name": "Geomancer",
+                "tagline": "Guardian of the Pure Earth",
+                "description": "Geomancers belong to an old order of mystics, doctors, alchemists, and esoteric martial artists called the Keepers of the Elden Gate. These scholarly wrights are concerned with health and the flow of energy, not just through the body, but through the very earth itself. They consider themselves physicians of the highest order - their patient being the eternal land of Arden Eld.<br/>These studious wrights attune themselves to earth Aether, aligning the energy channels of their body to crystalline perfection with vigorous exercise and sometimes bizarre health regimes. In battle, the land itself is their ally, spitting forth poisonous gases, cavernous upheavals of earth, and great spires of rock to crush their foes. <br/>None are more concerned with the Churn than the geomancers, who view it as the greatest sickness known to Kin, and will take any opportunity to fight or study it with exuberance.",
+                "traits": [
+                    {
+                        "name": "Aftershock",
+                        "desc": "When you use any attack, you can cause an aftershock in the space under your target. Gain <b>Delay:</b> Your next turn must be slow, but at the start of that turn, the aftershock explodes in a burst 1 <i>area effect</i> centered on that space, dealing piercing fray damage to characters within (other than you). If the area effect catches an object in the area, it deals piercing fray damage twice instead. <br/><i>Unlike most other delay effects, aftershock does not end your turn, and can stack with other delay effects.</i>"
+                    },
+                    {
+                        "name": "Resonance",
+                        "desc": "When you make an attack against a character at exactly range 3, it deals bonus damage, gain 1 Aether, and gain 3 vigor after the ability resolves."
+                    },
+                    {
+                        "name": "Orogenic Rage",
+                        "desc": "At the start of round 5 and for the rest of combat, become <i>unstoppable</i> and your <i>aftershocks</i> deal double damage."
+                    },
+                    {
+                        "name": "Stone Double",
+                        "desc": "When you first vacate a space on your turn, you can leave a height 1 <i>statue</i> object behind in the space you vacate."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Cataclysm",
+                    "blurb":"I, protected by the holy trigram,<br/>Summon the ten thousand molten metal kings.<br/>Run amok with thy furies, and rend the immortal stone,<br/>Turn Heaven and Earth!",
+                    "description": "<b>Effect: End your turn.</b> You dive into the earth and off the battlefield. Remove yourself from play. Target a line area 3 spaces wide from one side of the battlefield to the next. Then gain <b>Delay:</b> Your next turn must be slow. At the start of that turn, you cause a rolling wave of earth to sweep across this area, from one side to the next. Characters within tak [D] + fray as an effect and are shoved 1 in the direction of the line.<br/><b>Effect:</b> After the first effect resolves, all objects in the area release an explosion for a medium blast area effect centered on them, dealing [D] + Fray as an area effect. Characters hit by two or more explosions take 2[D] + Fray instead.<br/>When this ability resolves, place yourself in any unoccupied space in the area.",
+                    "tags":[
+                        {"tag_name": "resolve", "val": 3}, 
+                        {"tag_name": "action", "val": 1},
+                        {"tag_name": "divine"} 
+                    ],
+                    "ultimate":{
+                        "name": "Molten Core",
+                        "desc": "After taking this move, you emerge with a shield of molten rock covering you. You gain <i>unstoppable</i> and <i>resistance</i> until the end of your next turn."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Stoneswim",
+                    "tags":[
+                    ],
+                    "description": "You have <i>phasing</i>, for objects, and the spaces of objects always cost a maximum of 1 movement for you to enter."
+                }
+            },
+            {
+                "name": "Spellblade",
+                "tagline": "Swordmaster, Wind Dancer",
+                "description": "Spellblades are a martial order of highly trained wrights. Many of them come from the Guild Academies in the great cities of Arden Eld, where they often take prestigious posts in the local militias and city watch. Other wrights tend to view Spellblades as stiff, unfeeling military types, but spell blades themselves know they are consummate professionals and unparalleled masters of their art.<br/>The lightning Aether that the spellblades wield is highly volatile, and requires intense training and focus to control. Once a spell blade has learned their craft, however, the speed, power, and precision at which they can act is intoxicating, crossing great spans of space in an instant, riding the Aetherial currents with a flash of gleaming steel.",
+                "traits": [
+                    {
+                        "name": "Aether Deflection",
+                        "desc": "Gain the <b>Aether Deflection</b> interrupt. You only have one use of this interrupt per combat. However, you can spend 2 Aether any time to regain it."
+                    },
+                    {
+                        "name": "Conqueror's Edge",
+                        "desc": "The infuse cost of your abilities is reduced by 1 if there's a foe in range 2. Additionally, many of your infuses can be triggered as <i>slay</i> effects instead, and you may infuse 3 Aether to trigger the <i>slay</i> effect of any ability. Abilities with <i>infuse</i> and <i>slay</i> effects cannot trigger both at once."
+                    },
+                    {
+                        "name": "Storm Hilt Rage",
+                        "desc": "At the start of round 5 and for the rest of combat, any effects that teleport you have the range of the battlefield, and you may teleport to any space before using any ability."
+                    },
+                    {
+                        "name": "Klingenkunst (free action)",
+                        "desc": "Teleport 2. This ability can interrupt other abilities or movement on your turn without stopping them."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Gran Levincross",
+                    "blurb":"I summon thee, bloody gods of the cutting art, <br/>Let the might of the divine realm crash upon the piteous earth,<br/>Strike eighty thousand blows at once,<br/>And split the air asunder!",
+                    "description": "<b>Effect:</b> Your blade extends and you make two massive cuts across the map, splitting the walls between words. Draw a cross section across the map, splitting it into four sections of any size. Deal [D] + Fray <i>divine</i> damage to all characters caught in the cross, then remove all characters out of the affected area and place them in the nearest free space of your choice. Characters can pass a save to choose which side they end up on.<br/>The affected area becomes a crackling wall of lightning that does not block line of sight, but blocks all movement except teleporting. This effect ends at the end of the next round.<br/>Allies can use a <i>free action</i> to teleport across the wall from an adjacent space, placing them on the closest adjacent space on the other side.<br/>If any version of this ability has no valid space in which to teleport a character to, still deal damage, but this ability doesn't create the lightning wall.",
+                    "tags":[
+                        {"tag_name": "action", "val": 2}, 
+                        {"tag_name": "resolve", "val": 4},
+                        {"tag_name": "divine"} 
+                    ],
+                    "ultimate":{
+                        "name": "Gotterdammerung",
+                        "desc": "You gain the <b>Gotterdammerung</b> infusion."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Great Wind Riding",
+                    "tags":[
+                    ],
+                    "description": "Once a turn, when you teleport, you can also teleport an adjacent ally with you, placing them in a free adjacent space after your teleport resolves."
+                }
+            },
+            {
+                "name": "Stormbender",
+                "tagline": "Dire Navigator, Master of the Waves",
+                "description": "The seas of Arden Eld are its most treacherous terrain. Boiling over with monsters, and wracked with unnatural and freakish weather, most folk prefer to give them wide berth. However, there are still those brave and hardy souls that live on the islands around Arden Eld, and the merchants, sailors, and travelers that rely on the sea for fast passage and the movement of cargo, the lifeblood of the continent’s great cities.<br/>The storm benders are the great masters of the sea, the supreme navigators that make sailing even possible around Arden Eld. Water-attuned wrights, they are most at home on a deck, or clambering the rigging. Each of them are sailors of the highest caliber, coming from all over - old trade guilds, islander clans, and nautical churner enclaves.<br/>Bending the essence of the sea to their beck and call, the storm benders can clear the skies with a swipe of their hands, feel the currents ahead for aquatic monsters, turn weather away from the hull of the ship, and blow wind into its sails. It doesn’t matter that many of them dabble in a little light piracy on the side - they are the undisputed masters of their element, and they wouldn’t have it any other way.",
+                "traits": [
+                    {
+                        "name": "Selkie",
+                        "desc": "You have a bound elemental. At the start of any combat, <b>summon</b> a Seklie in range 3."
+                    },
+                    {
+                        "name": "Dash on the Rocks",
+                        "desc": "1/round when you cause a character to <i>collide</i>, you may gain 1 Aether and deal 1 piercing damage as a burst 1 <i>area effect</i> centered on that character."
+                    },
+                    {
+                        "name": "Sea Legs",
+                        "desc": "You deal bonus damage to characters in pits, difficult, or dangerous terrain. While inside any of your own terrain effects, you have <i>flying</i>."
+                    },
+                    {
+                        "name": "Pelagic Rage",
+                        "desc": "At the start of round 5 and for the rest of combat, youare buoyed up by a huge swell of elemental water. You gain aura 2. Yourself and allies in the aura gain <i>flying</i> and <i>cover</i> from all direction, and the area is <i>difficult</i> and <i>dangerous</i> terrain for foes."
+                    }
+                ],
+                "limitbreak": {
+                    "name": "Elemental",
+                    "blurb":"On account of the magic that is in my body,<br/>Turn aside, detested of Sea and Storm,<br/>Thou wretch, go with thy face diverted!<br/>I call the elements into the temple of my body.<br/>Be scattered like dust, and feed the wind!",
+                    "description": "<b>Effect:</b> You take on a fearsome elemental form, gaining the following benefits for the rest of combat:<ul><li>You gain flying and phasing.</li><li>You release aura 2 around you. The area is a <i>terrain</i> effect that moves with you that is <i>difficult</i> and <i>dangerous</i> terrain for foes, and allies gain <i>cover</i> from all directions in the area.</li><li>You can share space with characters. You have <i>resistance</i> to any character sharing your space, and allies have <i>resistance</i> while sharing your space</li></ul>",
+                    "tags":[
+                        {"tag_name": "action", "val": 0}, 
+                        {"tag_name": "resolve", "val": 3} 
+                    ],
+                    "ultimate":{
+                        "name": "Shield of the Four Winds",
+                        "desc": "If you so choose, when an ally would be shoved, teleported, or removed from your your area, you can completely prevent that ally from being moved. This effect can trigger only once a round."
+                    }
+                },
+                "ultimatetrait":{
+                    "name" : "Whirlgang",
+                    "tags":[
+                    ],
+                    "description": "You are highly attuned to the ambient air currents and can command them at will. At the statr of your turn, yourself and every ally in range 2 of you may fly 1 in the same direction as an <i>effect</i>."
+                }
+            }
+        ]
+    }
+]

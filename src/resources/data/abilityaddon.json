@@ -1,0 +1,151 @@
+[
+    {
+        "job": "Bastion",
+        "ability": "Endless Battlement",
+        "name": "Heroic Intervention",
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: A foe targets your ally with an ability<br><b>Effect</b>: You soar into the air, removing yourself from the battlefield, then return in any space in the aura. Adjacent foes take 2 damage."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Gigaflare",
+        "name": "Tetraflare",
+        "tags":[
+            {"tag_name": "infuse", "val": 6}
+        ],
+        "description": "Deal [D] + Fray twice instead."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Gigaflare",
+        "name": "Meteor",
+        "tags":[
+            {"tag_name": "infuse", "val": 8},
+            {"tag_name": "resolve", "val": 6},
+            {"tag_name": "mastery"}
+        ],
+        "description": "Deal [D] + Fray four times instead. <br/> <i>Special Effect:</i> You can pay the resolve, aether, and action cost of this spell with your entire life force, dying after this action resolves, obliterating your body and scattering your soul. If you do, it deals 999 divine damage instead."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Gran Levincross",
+        "name": "Ragnarok",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "slay"}
+        ],
+        "description": "<b>Area Effect:</b> After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take [D]+Fray Divine damage."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Gran Levincross",
+        "name": "Gotterdammerung",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "mastery"}
+        ],
+        "description": "<b>Area Effect:</b> After this ability resolves, scathing divine lightning hits aevery quarter of the map but one of your choice. Characters within take 2[D]+Fray Divine damage."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Pyre",
+        "name": "Pyrotic",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Increase range to 10 and blast size to <i>Large Blast</i>. Create a pit under the attack target after this ability resolves."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Pyre",
+        "name": "Magnapyre",
+        "tags":[
+            {"tag_name": "infuse", "val": 6},
+            {"tag_name": "mastery"},
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 12},
+            {"tag_name": "blast", "val": "large"},
+            {"tag_name": "attack"}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b>Create a pit under your attack target.<b>Effect:</b>After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters.<br/><b>Comeback</b> or <b>Exceed:</b> The are explodes again, dealing 2 piercing damage to all characters."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Elden Rune",
+        "name": "Great Rune",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Grant the following effect to your rune: your attacks also <i>shatter</i> their main target while standing in this rune."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Lance",
+        "name": "Volvaga",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Gains width +1 and may melt any objects of your choice in its path, removing them."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Lance",
+        "name": "Great Spirit Lance",
+        "tags":[
+            {"tag_name": "infuse", "val": 6},
+            {"tag_name": "mastery"},
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "line", "val": 10},
+            {"tag_name": "width", "val": 3},
+            {"tag_name": "attack"}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Line of sight can't be blocked by objects, and ignores cover greanted by objects or terrain.<br/><b>Effect:</b> After the ability resolves, every foe or ally in the area explodes, taking 2 piercing damage as an <i>area effect</i>. If you catch at least three foes or allies in the area, every foe or ally in the area takes 2 piercing damage twice instead."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Soul Burn",
+        "name": "Incandius",
+        "tags":[
+            {"tag_name": "infuse", "val": 4}
+        ],
+        "description": "When entering this stance, shove all adjacent characters 3 and spark a soul ember at them, dealing 1 piercing damage to them. <i>Collide:</i> Characters are <i>vulnerable</i>."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Blazing Bond",
+        "name": "Heartfire",
+        "tags":[
+            {"tag_name": "interrupt", "val": 2}
+        ],
+        "description": "<b>Trigger:</b> You or your ally takes damage or <i>sacrifices</i> hp.<br/><b>Effect:</b> You can choose to reduce that damage by 3, as if by armor, or the sacrifice cost by 3. If you do, the other partner <i>sacrifices 3</i>.<br/><b>Comeback:</b> Reduce partner sacrfice to 1."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Implode",
+        "name": "Null",
+        "tags":[
+            {"tag_name": "infuse", "val": 4}
+        ],
+        "description": "All characters adjacent to the area effect are also affected."
+    },
+    {
+        "job": "Enochian",
+        "ability": "Pyroclast",
+        "name": "Pyrospire",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Terrian space becomes height 3"
+    },
+    {
+        "job": "Enochian",
+        "ability": "Blackstar",
+        "name": "Astral Blackstar",
+        "tags":[
+            {"tag_name": "infuse", "val": 5}
+        ],
+        "description": "Ignore Blackstar's round requirement."
+    }
+]

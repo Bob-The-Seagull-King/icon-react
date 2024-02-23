@@ -1,0 +1,271 @@
+[
+    {
+        "job": "Bastion",
+        "name": "Heracule",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}, 
+            {"tag_name": "attack"},
+            {"tag_name": "range", "val": 3},
+            {"tag_name": "true strike"}
+        ],
+        "description": "<b>Attack:</b> <i>On hit:</i> [D] + fray. Miss: fray.<br><b>Effect:</b> Attack target is weakened and shoved 1<br> <b>Effect:</b> A different foe in range 3 from your target is shoved 1 away from your main target.<br><b>Collide or Heroic:</b> Repeat the above effect<br>",
+        "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
+        "talent1":"Heracule’s shoves can be in any direction",
+        "talent2":"Heracule’s second effect triggers +1 more time.",
+        "masteryname": "PERFECT HERACULE",
+        "masterdescription":"Heracule gains <i>rebound<i>, and its second effect triggers +1 more time"
+    },
+    {
+        "job": "Bastion",
+        "name": "Battering Ram",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1} 
+        ],
+        "description": "<b>Effect:</b> An adjacent character is shoved 2 spaces.<br><b>Collide</b> or <b>Heroic</b>: Foe is <i>slashed</i>, and refund the action cost of this ability.",
+        "blurb": "Use your shield, weapon, or armored fist and send your target flying.",
+        "talent1": "You may rush 1 before using Battering Ram.",
+        "talent2": "You can also shove objects with Battering Ram. The object triggers <i>collide</i> effects on the first character it collides with.",
+        "masteryname": "GATE SMASHER",
+        "masterdescription":"Once a turn, if you trigger Battering Ram’s <i>Collide</i> or <i>Heroic</i> effect, the ability can be used one more time this turn."
+    },
+    {
+        "job": "Bastion",
+        "name": "Land Waster",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"},
+            {"tag_name": "burst-target", "val": 1}			
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Area effect</b>: Foes take fray damage.<br><b>Effect</b>: Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1. <br><b>Heroic</b>: Gains <i>True Strike</i> and becomes Burst 2 (target).",
+        "blurb": "Crash your greatshield or weapon into the earth, sending up devastating shockwaves.",
+        "talent1": "If Land Waster’s effect shockwave shoves 3 or more foes or allies, it shoves +1 and <i>stuns</i> your target.",
+        "talent2": "If Land Waster’s effect shockwave shoves 2 or more foes or allies, <i>cure</i> yourself.",
+        "masteryname": "AJAX",
+        "masterdescription":"Terrain effect: Before Land Waster’s effect triggers, you tear up the very ground, creating a height 1 boulder <i>object</i> in range 3 of you."
+    },
+    {
+        "job": "Bastion",
+        "name": "Valiant",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}	
+        ],
+        "description": "<b>Effect</b>: <i>Rush</i> 1, then <i>rush</i> 1. After each rush, shove all adjacent characters 1.<br><b>Collide</b> or <b>Heroic</b>: <i>Rush</i> 1 again, then shove all adjacent characters 1.",
+        "blurb": "Stride forth, with your shield held before you, battering aside foes.",
+        "talent1": "<i>Collide</i>: Become <i>unstoppable</i> for the rest of your turn.",
+        "talent2": "If you only shove one foe, they gain <i>hatred</i> of you after this ability resolves.",
+        "masteryname": "SECOND WIND",
+        "masterdescription":"At round 4 or higher in combat, Valiant becomes a free action."
+    },
+    {
+        "job": "Bastion",
+        "name": "Endless Battlement",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "stance"},
+			{"tag_name": "aura"}					
+        ],
+        "description": "<b>Stance</b>: When you enter this stance, or when it refreshes, choose an ally in range 4. That ally gains aura 1 until the start of your next turn. The aura deactivates if your ally is out of range. While the aura is active, you can use the following interrupt:<br><b>Refresh</b>: Refresh this stance at the start of your turn.<br><b>Heroic</b>: Immediately activate the interrupt effect.",
+        "blurb": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there.",
+        "talent1": "While you are in the aura, attacks against your ally gain +1 curse.",
+        "talent2": "You and your ally both have have <i>counter</i> while you are in the aura.",
+        "masteryname": "PERFECT BATTLEMENT",
+        "masterdescription":"At round 4 or higher, Endless Battlement has no maximum range, deals 4 damage instead of 2, and becomes interrupt 2."
+    },
+    {
+        "job": "Bastion",
+        "name": "Catapult",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}				
+        ],
+        "description": "<b>Trigger</b>: An ally ends a movement in an adjacent space<br><b>Effect</b>: Shove that ally 2 in any direction.<b>Collide</b> or <b>Heroic</b>: That ally gains 2 vigor and may <i>rush</i> 1.",
+        "blurb": "Use your shield as a springboard to set up ally maneuvers or to deflect projectiles.",
+        "talent1": "Your shield becomes a valid target for allied abilities. You can expend this interrupt to grant them <i>rebound</i>.",
+        "talent2": "Catapult can also be triggered on foes. When triggered on foes, the effect becomes effect: shove 1. <i>Collide</i>: you may rush 1.",
+        "masteryname": "MANGONEL",
+        "masterdescription":"Catapult becomes Interrupt 3."
+    },
+    {
+        "job": "Bastion",
+        "name": "Perseus",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "interrupt", "val": 2},
+            {"tag_name": "aura"}			
+        ],
+        "description": "<b>Trigger</b>: You are included in an allied <i>area effect</i>.<br><b>Effect</b>: You release an aura 1 effect centered on you that lasts for the duration of the triggering ability, extending the area effect to encompass the aura. You can choose to be immune to any part of the triggering ability.<br><b>Heroic</b>: Increase the aura size by +1.",
+        "blurb": "Your armor and shield become a mirror, channeling and amplifying the destructive power of your allies’ attacks.",
+        "talent1": "You gain 4 vigor the first time in a round this ability triggers.",
+        "talent2": "You can extend the area as a line 5 <i>area effect</i> instead of an aura.",
+        "masteryname": "CHAOS FINISHER",
+        "masterdescription":"When this interrupt triggers, after the triggering effect resolves, you may deal 2 damage to all affected foes from the triggering ability and shove them 1 in any direction."
+    },
+    {
+        "job": "Sealer",
+        "name": "Godly Smite",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1},
+            {"tag_name": "trait", "val": "Godly Smite"}
+        ],
+        "description": "<i>Trigger:</i> You or an ally make an attack roll, and you see the total result (after boons, curses, and other adjustments). <i>Effect:</i> Add the number on your mantra die to the attack roll, which changes the final result. That foe also takes damage again after the attack resolves equal to the number on your manrta die."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Aether Deflection",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1},
+            {"tag_name": "trait", "val": "Aether Deflection"}
+        ],
+        "description": "<i>Trigger:</i> You are targetted by an ability from a character in range 2. <i>Effect:</i> Gain <i>resistance</i> against damage from that ability."
+    },
+    {
+        "job": "Enochian",
+        "name": "Pyre",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 6},
+            {"tag_name": "attack"},
+            {"tag_name": "blast", "val": "medium"}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> Fray.<br/><b>Area Effect:</b>Fray.<br/><b>Comback</b> or <b>Exceed:</b> After the ability resovles, the area explodes again, dealing 2 piercing damage to all characters.",
+        "blurb": "Power curls into a writhing ball in your hand, before it's unleashed on your enemies.",
+        "talent1":"<i>Comeback:</i> Allies are immune to damage from this ability.",
+        "talent2":"<i>Exceed:</i> You may shove all characters in the area 2 spaces.",
+        "masteryname": "Magnapyre",
+        "masterdescription":"Gain access to the <b>Magnapyre</b> infusion. <i>Magnapyre benefits from Pyre talents.</i>"
+    },
+    {
+        "job": "Enochian",
+        "name": "Elden Rune",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "<b>Terrain Effect:</b> Inscribe an Elden Rune on the space underneath you. While standing on an Elden Rune space, the range of all abilities with a listed range is increased by +3. The rune lasts until the end of the scene. A foe can scrub out an Elden Run by enter or exiting its space.<br/><b>Effect:</b> You can <i>sacrifice 2</i> to cast a rune down as a free action.",
+        "blurb": "You carve a burning rune of power into the very ground beneath you.",
+        "talent1":"You can teleport up to 3 spaces into an Elden Rune space as a free action.",
+        "talent2":"While standing in an Elden Rune, the infuse cost of your spells are reduce by 1, to a minimum of 1.",
+        "masteryname": "Arkenrune",
+        "masterdescription":"You can put an Arkenrune down instead of a regular Elden Rune, but only one at a time, replacing the last Arkenrune you placed. Arkenrunes can't be scrubbed out, extend to a small blast area, and their benefits also extend to allies."
+    },
+    {
+        "job": "Enochian",
+        "name": "Lance",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "attack"},
+            {"tag_name": "line", "val": 8}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> [D] + Fray. <i>Miss:</i> Fray.<br/><b>Effect:</b> Foe is <i>vulnerable</i>.<br/><b>Area Effect:</b> Fray.<br/><b>Effect:</b> Line of sight can't be blocked by objects, and ignores cover granted by objects or terrain.<br/><b>Comeback</b> or <b>Exceed:</b> Also deals bonus damage for every unique object it passed through.",
+        "blurb": "A flash scorches the eyeballs, and a thin line burns through rock, flesh, and armor.",
+        "talent1":"When this ability passes through an object, it released a soul ember, dealing 1 piercing damage to a character in range 3 of that object. Each character can only be struck by one ember by a single use of this ability.",
+        "talent2":"If you are at 1 hp or lower, this ability deals maximum base damage (before critical hits).",
+        "masteryname": "Great Spirit Lance",
+        "masterdescription":"Gain access to the <b>Great Spirit Lance</b> infusion. <i>Great Spirit Lance benefits from Pyre talents.</i>"
+    },
+    {
+        "job": "Enochian",
+        "name": "Soul Burn",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "stance"}
+        ],
+        "description": "<b>Stance:</b> Burn your own life force into a fierce blaze. In this stance:<ul><li>You <i>sacrifice 2</i> at the end of your turn.</li><li>Your abilities automatically activate any <i>comeback</i> triggers.</li><li>After you <i>sacrifice</i> with this ability, or after any other of your abilities with a <i>sacrifice</i> effect resolves, you can spark a soul ember at a character in range 5, dealing 1 piercing damage.</li></ul><b>Refresh:</b> Refresh or exit this stance at the start of your turn.",
+        "blurb": "You stoke the furnace with the very essence of your being.",
+        "talent1":"If a foe is struck by two or more soul embers from this ability in the same turn, they become <i>vulnerable</i>.",
+        "talent2":"Foes that end their turn adjacent to you while Soul Burn is active take 1 piercing damage are shoved 1.",
+        "masteryname": "Soul Spark",
+        "masterdescription":"<b>Free Action:</i> You can willingly siphon off your burning life force to empower your next ability <i>sacrificing 4</i>, then ending the stance.<br/>The ability deals <i>bonus damage</i>, cannot miss (turn any attack miss into a hit), activates all <i>exceed</i> effects, and foes gain <i>+1 curse</i> on any saves."
+    },
+    {
+        "job": "Enochian",
+        "name": "Blazing Bond",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4}
+        ],
+        "description": "<b>Mark:</b> An ally in range is marked by you. While affected by this mark and in range, gain the <i>Heartfire</i> interrupt:",
+        "blurb": "You link the soul Aether of you and a companion with a chain of pure fire aether, drawing from the strength of one to bolster the other.",
+        "talent1": "While marked, you can teleport yourself or your ally 2 spaces at the end of your turn, as long as you end closer to each other.",
+        "talent2": "<i>Comeback:</i> Grant both you and your ally <i>defiance</i> when taking this action.",
+        "masteryname": "Great Soul Bond",
+        "masterdescription": "If one of the partners would take damage from an ability that would reduce them below 1 hp, the other can reduce themselves to 1 hp to grant that ally immunity to all damage from the triggering ability. The bond then snaps, ending this mark."
+    },
+    {
+        "job": "Enochian",
+        "name": "Aethershard",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 6},
+            {"tag_name": "summon", "val": "Aethershard"}
+        ],
+        "description": "<b>Object:</b><i> Sacrifice 3</i> and <b>summon</b> an Aethershard in a free space in range 6.<br/><b>Comeback:</b> Reduce <i>sacrifice</i> to 1.",
+        "blurb": "You crystallize ambient Aether with force of will, forcing it to take a useful form.",
+        "talent1": "When you take any action that spends Aether, you can first remove one of your aethershards, then place it in any free space up to range 2 from its original location.",
+        "talent2": "Your abilities gain <i>pierce</i> against characters adjacent to Aethershards.",
+        "masteryname": "Aethershift",
+        "masterdescription": "If you start or end your turn adjacent to an Aethershard, gain <i>phasing</i> until the end of your next turn. The spaces of objects cost a maximum of 0 spaces for you to enter for the same duration."
+    },
+    {
+        "job": "Enochian",
+        "name": "Implode",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 6},
+            {"tag_name": "end turn"},
+            {"tag_name": "delay"}
+        ],
+        "description": "<b>Effect: End your turn</b> and <b>Delay:</b> Choose a space in range. Your next turn must be slow, but at the start of that turn, that space explodes with gravitational energy, shoving all characters in a large blast <i>area effect</i> around it as close as possible towards it. Characters are shoved in any order you like. Any character that is in the center space when this ability activates must save or be <i>stunned</i>.<br/><b>Comeback:</b> Free action.",
+        "blurb": "You burn away the air itself, creating a sucking void that rips your foes into its howling embrace.",
+        "talent1": "Any character in the center space is also <i>shattered</i> when this ability activates.",
+        "talent2": "The center space also becomes a <i>pit</i>",
+        "masteryname": "Waking Void",
+        "masterdescription": "You can choose a character with this ability instead of a space, but it doesn't stun the center character. If that character is defeated, Implode immediately activates."
+    },
+    {
+        "job": "Enochian",
+        "name": "Pyroclast",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 6}
+        ],
+        "description": "<b>Effect:</b> Choose yourself or a character in range. At the end of that character's next turn, the ground beneath them erupts. Create a height 1 magma spire <i>object</i> under them, pushing them up. All characters adjacent to that object, but not the original character, are shoved 1 and take 2 piercing damage.<br/><b>Comeback:</b> You may choose yourself <i>and</i> another character.",
+        "blurb": "Taking a page from the geomancers, Enochians can send a pulse of fire aether into the earth itself, causing tectonic upheaval.",
+        "talent1": "Also cause a magma eruption adjacent to your target, creating 2 spaces of dangerous terrain.",
+        "talent2": "You may <i>sacrifice 2</i> to immediately <i>shatter</i> your target as part of this ability.",
+        "masteryname": "Magmotic",
+        "masterdescription": "Instead of creating a spire, you can create a magma-filled Pit. The pit is additionally dangerous terrain. When it appears, the eruption causes a medium blast area effect centered on your target that inflicts 2 piercing damage."
+    },
+    {
+        "job": "Enochian",
+        "name": "Blackstar",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 8},
+            {"tag_name": "blast", "val": "large"},
+            {"tag_name": "attack"},
+            {"tag_name": "pierce"}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Comeback</b> or <b>Exceed:</b> Deals bonus damage, creates a <i>pit</i> under the center space, and up to three spaces of difficult terrain in the area.<br/><b>Special Effect:</b> Also <i>Sacrifice 50%</i> of your max hp unless the round number is 6 or higher.",
+        "blurb": "You burn and condense your own aether into super condensed form, creating a crackling black orb that inflicts maximum destruction. Without the time to stabilize this attack, its use can rip away your very life force.",
+        "talent1": "If Blackstar's special effect triggers, capture your fleeing soul aether and gain 1 aether after this ability resolves.",
+        "talent2": "If Blackstar's special effect triggers, gain 5 vigor after this ability resolves.",
+        "masteryname": "Great Spirit Bomb",
+        "masterdescription": "When you use Blackstar, if it's special effect triggers, you can split sacrifice into 25% max hp to yourself, and 25% to an ally in range 4."
+    }
+]
