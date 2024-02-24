@@ -13,7 +13,7 @@ export const sayHello = (userName: string): string => {
  * @returns The string with the first letter capitalized
  */
 export function capitalizeTag(stringVal: string) {
-    return stringVal[0].toUpperCase() + stringVal.slice(1);
+    return stringVal[0].toUpperCase() + stringVal.slice(1).toLowerCase();
 }
 
 /**
