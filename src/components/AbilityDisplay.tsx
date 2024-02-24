@@ -10,7 +10,7 @@ import SummonDisplay from '../components/SummonDisplay'
 const AbilityDisplay = (props: any) => {
     // Declare Summon Variables --------------------
     const abilityData = props.data;
-    const bannedAbilityTags = ["slay", "infuse", "mastery"];
+    const bannedAbilityTags = ["slay", "infuse", "mastery", "trait"];
     // ---------------------------------------------
 
     // Run evaluations -----------------------------
