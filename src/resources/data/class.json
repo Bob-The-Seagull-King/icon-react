@@ -490,7 +490,7 @@
                     "name" : "Gran Redempta",
                     "tags":[
                         {"tag_name": "action", "val": 2},
-                        {"tag_name": "uses", "val": "1/expedition"}
+                        {"tag_name": "uses", "val": "(1/expedition)"}
                     ],
                     "description": "<i>Cure</i> yourself and every ally on the map. Characters that are cured this way are also Rescued if they're defeated."
                 }
@@ -534,7 +534,7 @@
                     "name" : "Defy the Cycle",
                     "tags":[
                         {"tag_name": "action", "val": 2},
-                        {"tag_name": "uses", "val": "1/expedition"}
+                        {"tag_name": "uses", "val": "(1/expedition)"}
                     ],
                     "description": "You call upon your power to forbid the natural order of lfie and death from working. Until the start of your next turn, characters cannot be reduced below 1 hp. <i>Divine</i> damage bypasses this ability."
                 }
@@ -581,7 +581,7 @@
                     "name" : "Great Spirit Festival",
                     "tags":[
                         {"tag_name": "action", "val": 2},
-                        {"tag_name": "uses", "val": "1/expedition"}
+                        {"tag_name": "uses", "val": "(1/expedition)"}
                     ],
                     "description": "<i>Bless</i> all allies on the map and grant then 2 vigor. If they're bloodied, repeat this effect."
                 }
@@ -630,7 +630,7 @@
                     "name" : "Chakravartin",
                     "tags":[
                         {"tag_name": "action", "val": 2},
-                        {"tag_name": "uses", "val": "1/expedition"}
+                        {"tag_name": "uses", "val": "(1/expedition)"}
                     ],
                     "description": "An ally in range 6 becomes <i>unstoppable</i> and <i>immune</i> to all damage until the end of their next turn."
                 }

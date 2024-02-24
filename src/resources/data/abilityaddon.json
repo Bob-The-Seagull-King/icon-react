@@ -22,7 +22,7 @@
         "ability": "Gates of Hell",
         "name": "Flash Step",
         "tags":[
-            {"tag_name": "free action"}
+            {"tag_name": "action", "val": 0}
         ],
         "description": "<b>Effect</b>: Remove an afterimage that has no characters occupying it, then remove yourself and place yourself in its space."
     },
@@ -31,7 +31,7 @@
         "ability": "Six Hells Trigram",
         "name": "Dark Wind Chain",
         "tags":[
-            {"tag_name": "free action"}
+            {"tag_name": "action", "val": 0}
         ],
         "description": "<i>Effect</i>: Deal 2 damage to any foe in range 4 and shove them 1 space towards you, then force them to save. On a failed save, they are shoved 2 more spaces towards you."
     },
@@ -40,7 +40,6 @@
         "ability": "Boiling Blood",
         "name": "Defy Death",
         "tags":[
-            {}
         ],
         "description": "<b>Trigger</b>: You are defeated<br><b>Effect</b>: You fight on, remaining standing at 1 hp and do not become defeated until the end of your next turn, or if combat ends before then. During that time, damage cannot reduce you past 1 hp and you deal bonus damage with all abilities.<br><b>Heroic</b>: Also deal fray damage twice to all adjacent foes."
     },
