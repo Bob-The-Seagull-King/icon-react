@@ -104,14 +104,14 @@ const LimitBreakDisplay = (props: any) => {
             <h1 style={{color: getColour(limitBreakData.name)}}>{limitBreakData.limitbreak.name}</h1>
             
             <p>{tagsArray}</p>
-            <p><i><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.blurb || '')}}/></i></p>
+            <span><i><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.blurb || '')}}/></i></span>
             <div><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.description || '')}}></p></div>
             
             <div>
                 {abilityAddonArray.map((item) => (
                 <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
                     <AddonDisplay data={item}/>
-                </div>
+                </div>  
                 ))}
             </div>
             <div>

@@ -55,8 +55,8 @@ const JobDisplay = (props: any) => {
             <h1 style={{color: getColour(jobData.name), fontSize: '3em'}}>{capitalizeTag( jobData.name )}</h1>
             <h3><b>{jobData.tagline}</b></h3>
             <p><i><span dangerouslySetInnerHTML={{__html: (jobData.description || '')}}/></i></p>
-            <TraitsDisplay key={jobData.name} data={jobData}/>
-            <LimitBreakDisplay key={jobData.name} data={jobData}/>
+            <TraitsDisplay key={jobData.name + "Traits"} data={jobData}/>
+            <LimitBreakDisplay key={jobData.name + "LimitBreak"} data={jobData}/>
             <span>
                 {summonStructure()}
             </span>

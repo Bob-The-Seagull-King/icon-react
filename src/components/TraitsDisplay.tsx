@@ -24,8 +24,6 @@ const TraitsDisplay = (props: any) => {
             }
         }
 
-        console.log(addonArray);
-
         return (
             <div style={{paddingLeft: "20%", paddingRight: "20%"}}>
             {addonArray.map((item:any) => (
