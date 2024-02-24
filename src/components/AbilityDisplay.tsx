@@ -96,7 +96,7 @@ const AbilityDisplay = (props: any) => {
             {isNotTrait == true && <span>
                 <p>I.   <span dangerouslySetInnerHTML={{__html: (abilityData.talent1 || '')}}></span></p>
                 <p>II.  <span dangerouslySetInnerHTML={{__html: (abilityData.talent2 || '')}}></span></p>
-                <h2>Mastery: {abilityData.masteryname}</h2>
+                <h2>Mastery: {capitalizeTag(abilityData.masteryname)}</h2>
                 <div><p dangerouslySetInnerHTML={{__html: (abilityData.masterdescription || '')}}></p></div>
                 <div>
                     {masteryAddonArray.map((item) => (
