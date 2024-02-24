@@ -128,7 +128,8 @@
         "name":"Aethershard",
         "tags":[
             {"tag_name": "height", "val":1},
-            {"tag_name": "object"}
+            {"tag_name": "object"},
+            {"tag_name": "ability", "val": "Aethershard"}
         ],
         "description":"<b>Summon Effect:</b> When you include the Aethershard in the <i>area effect</i> of any ability, the ability resonates with the shards, dealing 2 piercing damage as an <i>area effect</i>, once, to all characters in the area for every one of your Aethershards caught in the same ability. Then destroy all Aethershards activated this way and gain 1 Aether."
     }

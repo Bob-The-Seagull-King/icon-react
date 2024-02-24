@@ -32,13 +32,11 @@ const HomePage: React.FC = () => {
         return _jobArray;
     }
 
-    console.log(jobArray);
-
     return (
         <div style={{ position: 'relative', paddingLeft: '30%', paddingRight: '30%',  width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             <h1 style={{ fontSize: '4em' }}>Hello world!</h1>
-            {jobArray.map((item) => (
-                    <TraitsDisplay key={item.name} data={item}/>
+            {abilityData.map((item) => (
+                    <AbilityDisplay key={item.name} data={item}/>
                     ))}
         </div>
     )

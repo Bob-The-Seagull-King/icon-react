@@ -4,6 +4,8 @@ import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/f
 
 import addonData from '../resources/data/abilityaddon.json';
 import AddonDisplay from '../components/AddonDisplay'
+import summonData from '../resources/data/summon.json';
+import SummonDisplay from '../components/SummonDisplay'
 
 const AbilityDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -14,6 +16,7 @@ const AbilityDisplay = (props: any) => {
     // Run evaluations -----------------------------
     const tagsArray = tagReturn(); 
     const abilityAddonArray = abilityAddonReturn();
+    const summonAddonArray = summonAddonReturn();
     const masteryAddonArray = masteryAddonReturn();
     const isNotTrait = !isTrait();
     // ---------------------------------------------
@@ -35,6 +38,21 @@ const AbilityDisplay = (props: any) => {
         }
 
         return abilityAddons;
+    }
+
+    function summonAddonReturn() {
+        const summonAddons = [];
+        let i = 0;
+
+        for (i = 0; i < summonData.length; i++) {
+            if ((containsTag(summonData[i].tags, "ability"))) {
+                if (getTagValue(summonData[i].tags, "ability") == abilityData.name) {
+                    summonAddons.push(summonData[i]);
+                }
+            }
+        }
+
+        return summonAddons;
     }
 
     function masteryAddonReturn() {
@@ -90,7 +108,16 @@ const AbilityDisplay = (props: any) => {
             <div><p dangerouslySetInnerHTML={{__html: (abilityData.description || '')}}></p></div>
             <div>
                 {abilityAddonArray.map((item) => (
-                <AddonDisplay key={item.name} data={item}/>
+                <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
+                    <AddonDisplay data={item}/>
+                </div>
+                ))}
+            </div>
+            <div>
+                {summonAddonArray.map((item) => (
+                <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
+                    <SummonDisplay data={item}/>
+                </div>
                 ))}
             </div>
             {isNotTrait == true && <span>
@@ -100,7 +127,9 @@ const AbilityDisplay = (props: any) => {
                 <div><p dangerouslySetInnerHTML={{__html: (abilityData.masterdescription || '')}}></p></div>
                 <div>
                     {masteryAddonArray.map((item) => (
-                    <AddonDisplay key={item.name} data={item}/>
+                    <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
+                        <AddonDisplay data={item}/>
+                    </div>
                     ))}
                 </div>
                 </span>

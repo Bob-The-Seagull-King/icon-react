@@ -185,7 +185,7 @@
         "talent1":"If a foe is struck by two or more soul embers from this ability in the same turn, they become <i>vulnerable</i>.",
         "talent2":"Foes that end their turn adjacent to you while Soul Burn is active take 1 piercing damage are shoved 1.",
         "masteryname": "Soul Spark",
-        "masterdescription":"<b>Free Action:</i> You can willingly siphon off your burning life force to empower your next ability <i>sacrificing 4</i>, then ending the stance.<br/>The ability deals <i>bonus damage</i>, cannot miss (turn any attack miss into a hit), activates all <i>exceed</i> effects, and foes gain <i>+1 curse</i> on any saves."
+        "masterdescription":"<b>Free Action:</b> You can willingly siphon off your burning life force to empower your next ability <i>sacrificing 4</i>, then ending the stance.<br/>The ability deals <i>bonus damage</i>, cannot miss (turn any attack miss into a hit), activates all <i>exceed</i> effects, and foes gain <i>+1 curse</i> on any saves."
     },
     {
         "job": "Enochian",
@@ -208,8 +208,7 @@
         "chapter": 1,
         "tags":[
             {"tag_name": "action", "val": 1},
-            {"tag_name": "range", "val": 6},
-            {"tag_name": "summon", "val": "Aethershard"}
+            {"tag_name": "range", "val": 6}
         ],
         "description": "<b>Object:</b><i> Sacrifice 3</i> and <b>summon</b> an Aethershard in a free space in range 6.<br/><b>Comeback:</b> Reduce <i>sacrifice</i> to 1.",
         "blurb": "You crystallize ambient Aether with force of will, forcing it to take a useful form.",
