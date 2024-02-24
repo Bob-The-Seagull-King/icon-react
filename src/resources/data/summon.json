@@ -67,7 +67,8 @@
         "tags":[
             {"tag_name": "size", "val":1},
             {"tag_name": "intangible"},
-            {"tag_name": "immobile"}
+            {"tag_name": "immobile"},
+            {"tag_name": "ability", "val": "Death Sentence"}
         ],
         "description":"<b>Summon Effect:</b> While they have their soul knocked out, foes can act normally. However, the soul can be targeted as if it was the body, transferring all damage or effects it would take to the body, no matter the distance or line of sight. Damage becomes <i>divine</i>. Abilities that are able to target both the body and soul of the foe (such as AoEs) can hit both."
     },

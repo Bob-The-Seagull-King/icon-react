@@ -43,7 +43,7 @@
         "ability": "Gran Levincross",
         "name": "Gotterdammerung",
         "tags":[
-            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "infuse", "val": 6},
             {"tag_name": "mastery"}
         ],
         "description": "<b>Area Effect:</b> After this ability resolves, scathing divine lightning hits aevery quarter of the map but one of your choice. Characters within take 2[D]+Fray Divine damage."

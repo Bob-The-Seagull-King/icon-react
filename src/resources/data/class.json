@@ -693,7 +693,7 @@
                 ],
                 "limitbreak": {
                     "name": "Gigaflare",
-                    "blurb":"I, who stand at the apex of things, <br/>Thou, who are in the deepest pits of despair,<br/>Let thy very bones become ash!<br/>O Flame, let the air become death!<br/>Ignite, and be banished to Hell!",
+                    "blurb":"I, who stand at the apex of things, <br/> Thou, who are in the deepest pits of despair, <br/> Let thy very bones become ash! <br/> O Flame, let the air become death! <br/> Ignite, and be banished to Hell!",
                     "description": "<b>Effect:</b> You summon the eldflame, the primeval force of creation, dealing [D]+Fray <i>divine</i> damage to <i>every</i> character, on the battlefield, ignoring line of sight. Characters in range 2 of you are exempt from this ability.",
                     "tags":[
                         {"tag_name": "resolve", "val": 4}, 
