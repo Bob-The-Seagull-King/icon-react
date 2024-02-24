@@ -5,7 +5,6 @@ import { capitalizeTag, getColour } from '../utility/functions';
 const RelicDisplay = (props: any) => {
     // Declare Summon Variables --------------------
     const relicData = props.data;
-    console.log(relicData.colour);
     // ---------------------------------------------
 
     return (

@@ -45,3 +45,25 @@ export function getColour(name: string){
 
     return "";
 }
+
+export function containsTag(tag:any, value:string) {
+    let i = 0;
+
+    for (i = 0; i < tag.length; i++) {
+        if (tag[i].tag_name == value) {
+            return true;
+        }
+    }
+    return false;
+}
+
+export function getTagValue(tag:any, value:string) {
+    let i = 0;
+
+    for (i = 0; i < tag.length; i++) {
+        if (tag[i].tag_name == value) {
+            return tag[i].val;
+        }
+    }
+    return "";
+}
