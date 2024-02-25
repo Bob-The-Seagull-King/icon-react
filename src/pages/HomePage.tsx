@@ -219,7 +219,8 @@ const HomePage: React.FC = () => {
 
     // Return result -----------------------------
     return (
-        <div style={{ position: 'relative', paddingLeft: '20%', paddingRight: '20%',  width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+        <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <div><br/></div>
             {getRequestedContent()}
         </div>
     )

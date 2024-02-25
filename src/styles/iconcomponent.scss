@@ -1,0 +1,55 @@
+// Basic Shape and Structure -----------------------
+.summonStructure {
+    border-radius: 1em;
+    opacity: 0.8;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 25em;
+    padding: 1%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.titleShape {
+    padding: 0%;
+    margin: 0%;
+}
+// -------------------------------------------------
+
+// Colour Base -------------------------------------
+.titleblue {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: blue;
+    color: white;
+}
+.titlegreen {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: green;
+    color: white;
+}
+.titlered {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: red;
+    color: white;
+}
+.titleyellow {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: yellow;
+    color: white;
+}
+
+// -------------------------------------------------

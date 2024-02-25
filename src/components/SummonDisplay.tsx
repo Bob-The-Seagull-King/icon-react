@@ -1,11 +1,13 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../utility/functions';
+import '../styles/iconcomponent.scss';
+import { useNavigate } from 'react-router-dom';
 
 const SummonDisplay = (props: any) => {
     // Declare Summon Variables --------------------
     const summonData = props.data;
-    const bannedSummonTags: string[] = [];
+    const bannedSummonTags: string[] = ["ability"];
     // ---------------------------------------------
 
     // Run evaluations -----------------------------
@@ -68,8 +70,8 @@ const SummonDisplay = (props: any) => {
 
     // Return render -------------------------------
     return (
-        <div>
-            <h1 style={{color: getColour(summonData.job)}}>{summonData.name}</h1>
+        <div className='summonStructure'>
+            <h1 className={'titleShape title'+getColour(summonData.job)}>{summonData.name}</h1>
             <p>{tagsArray}</p>
             <div><p dangerouslySetInnerHTML={{__html: (summonData.description || '')}}></p></div>
             <p>{limitText}</p>
