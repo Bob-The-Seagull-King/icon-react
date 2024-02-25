@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 import addonData from '../resources/data/abilityaddon.json';
 import AddonDisplay from '../components/AddonDisplay'
@@ -138,31 +139,31 @@ const AbilityDisplay = (props: any) => {
 
     // Return result -------------------------------
     return (
-        <div>
-            <h1 style={{color: getColour(abilityData.job)}}>{abilityData.name}</h1>
+        <div className='abilityStructure'>
+            <h1 className={'titleShape title'+getColour(abilityData.job)}>{abilityData.name}</h1>
             <p>{tagsArray}</p>
             <p><i>{abilityData.blurb}</i></p>
             <div><p dangerouslySetInnerHTML={{__html: (abilityData.description || '')}}></p></div>
             <div>
                 {abilityAddonArray.map((item) => (
-                <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
-                    <AddonDisplay data={item}/>
+                <div key={item.name} className='abilityAddonPosition'>
+                    <AddonDisplay className='abiltyAddonSize' data={item}/>
                 </div>
                 ))}
             </div>
             <div>
                 {summonAddonArray.map((item) => (
-                <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
-                    <SummonDisplay data={item}/>
+                <div key={item.name}  className='abilityAddonPosition'>
+                    <SummonDisplay className='abiltyAddonSize' data={item}/>
                 </div>
                 ))}
             </div>
             {(isNotTrait == true)&& <span>
                 {(talents == 1 || talents == 3) &&
-                <p>I.   <span dangerouslySetInnerHTML={{__html: (abilityData.talent1 || '')}}></span></p>
+                <p><b>I.</b>   <span dangerouslySetInnerHTML={{__html: (abilityData.talent1 || '')}}></span></p>
                 }
                 {(talents == 2 || talents == 3) &&
-                <p>II.  <span dangerouslySetInnerHTML={{__html: (abilityData.talent2 || '')}}></span></p>
+                <p><b>II.</b>  <span dangerouslySetInnerHTML={{__html: (abilityData.talent2 || '')}}></span></p>
                 }
                 {(mastery == true) &&
                 <span>
@@ -170,8 +171,8 @@ const AbilityDisplay = (props: any) => {
                     <div><p dangerouslySetInnerHTML={{__html: (abilityData.masterdescription || '')}}></p></div>
                     <div>
                         {masteryAddonArray.map((item) => (
-                        <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
-                            <AddonDisplay data={item}/>
+                        <div key={item.name}  className='abilityAddonPosition' >
+                            <AddonDisplay className='abiltyAddonSize' data={item}/>
                         </div>
                         ))}
                     </div>

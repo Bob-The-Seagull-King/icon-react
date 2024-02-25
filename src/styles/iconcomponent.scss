@@ -4,6 +4,19 @@
     opacity: 0.8;
     box-shadow: 0 0 5px 1px #CCC;
     max-width: 25em;
+    padding: 1em;
+    padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+.abilityStructure {
+    border-radius: 1em;
+    opacity: 0.8;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 25em;
     padding: 2%;
     padding-bottom:0.01%;
     text-align: justify;
@@ -12,6 +25,7 @@
         box-shadow: 0 0 10px 2px #CCC;
     }
 }
+
 .addonStructure {
     border-radius: 1em;
     opacity: 0.8;
@@ -113,4 +127,13 @@
     color: white;
 }
 
+// -------------------------------------------------
+
+// Component positioning ---------------------------
+.abilityAddonPosition {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 1em;
+}
 // -------------------------------------------------

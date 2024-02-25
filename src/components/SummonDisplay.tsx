@@ -2,6 +2,7 @@ import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../utility/functions';
 import '../styles/iconcomponent.scss';
+import { useNavigate } from "react-router-dom";
 
 const SummonDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -64,6 +65,12 @@ const SummonDisplay = (props: any) => {
         }
 
         return _tagExport;
+    }
+    // ---------------------------------------------
+
+    // Navigation ----------------------------------
+    function navClickSummon () {    
+        window.open(location.protocol + '//' + location.host +'/summon/'+summonData.name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 
