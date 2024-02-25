@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 const AddonDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -77,8 +78,8 @@ const AddonDisplay = (props: any) => {
 
     // Return result -------------------------------
     return (
-        <div>
-            <h3 style={{color: getColour(addonData.job)}}>{title}</h3>
+        <div className='addonStructure'>
+            <h3 className={'titleShape subtitle'+getColour(addonData.job)}>{title}</h3>
             <p>{tagsArray}</p>
             <div><p dangerouslySetInnerHTML={{__html: (addonData.description || '')}}></p></div>
         </div>

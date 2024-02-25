@@ -4,7 +4,21 @@
     opacity: 0.8;
     box-shadow: 0 0 5px 1px #CCC;
     max-width: 25em;
-    padding: 1%;
+    padding: 2%;
+    padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+.addonStructure {
+    border-radius: 1em;
+    opacity: 0.8;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 25em;
+    padding: 2%;
+    padding-bottom:0.01%;
     text-align: justify;
 
     &:hover {
@@ -22,33 +36,80 @@
 .titleblue {
     padding-left: 0.25em;
     padding-right: 0.25em;
+    padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
     background-color: blue;
     color: white;
 }
+
+.subtitleblue {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: rgb(0, 255, 255);
+    color: white;
+}
+
 .titlegreen {
     padding-left: 0.25em;
     padding-right: 0.25em;
+    padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
     background-color: green;
     color: white;
 }
+
+.subtitlegreen {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: rgb(0, 255, 21);
+    color: white;
+}
+
 .titlered {
     padding-left: 0.25em;
     padding-right: 0.25em;
+    padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
     background-color: red;
     color: white;
 }
+
+.subtitlered {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: rgb(255, 81, 81);
+    color: white;
+}
+
 .titleyellow {
     padding-left: 0.25em;
     padding-right: 0.25em;
+    padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
     background-color: yellow;
+    color: white;
+}
+
+.subtitleyellow {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: rgb(252, 255, 74);
     color: white;
 }
 
