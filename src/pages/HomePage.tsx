@@ -11,6 +11,8 @@ import JobFullDisplay from '../components/JobFullDisplay'
 import ClassStatsDisplay from '../components/ClassStatsDisplay'
 import ClassMechanicDisplay from '../components/ClassMechanicDisplay'
 import ClassDescriptionDisplay from '../components/ClassDescriptionDisplay'
+import ClassDisplay from '../components/ClassDisplay'
+import ClassFullDisplay from '../components/ClassFullDisplay'
 
 import summonData from '../resources/data/summon.json';
 import relicData from '../resources/data/relic.json';
@@ -39,10 +41,9 @@ const HomePage: React.FC = () => {
     }
 
     return (
-        <div style={{ position: 'relative', paddingLeft: '30%', paddingRight: '30%',  width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <h1 style={{ fontSize: '4em' }}>Hello world!</h1>
+        <div style={{ position: 'relative', paddingLeft: '20%', paddingRight: '20%',  width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {jobArray.map((item) => (
-                    <ClassDescriptionDisplay key={item.name + "stats"} data={item}/>
+                    <ClassFullDisplay key={item.name + "stats"} data={item}/>
                     ))}
         </div>
     )
