@@ -2,21 +2,14 @@ import React from 'react'
 
 import SummonDisplay from '../components/SummonDisplay'
 import RelicDisplay from '../components/RelicDisplay'
-import AddonDisplay from '../components/AddonDisplay'
 import AbilityDisplay from '../components/AbilityDisplay'
-import TraitsDisplay from '../components/TraitsDisplay'
-import LimitBreakDisplay from '../components/LimitBreakDisplay'
 import JobDisplay from '../components/JobDisplay'
 import JobFullDisplay from '../components/JobFullDisplay'
-import ClassStatsDisplay from '../components/ClassStatsDisplay'
-import ClassMechanicDisplay from '../components/ClassMechanicDisplay'
-import ClassDescriptionDisplay from '../components/ClassDescriptionDisplay'
 import ClassDisplay from '../components/ClassDisplay'
 import ClassFullDisplay from '../components/ClassFullDisplay'
 
 import summonData from '../resources/data/summon.json';
 import relicData from '../resources/data/relic.json';
-import addonData from '../resources/data/abilityaddon.json';
 import abilityData from '../resources/data/ability.json';
 import classData from '../resources/data/class.json';
 
@@ -52,6 +45,10 @@ const HomePage: React.FC = () => {
     
             if (urlSplits[1].toLowerCase() == "relic" ) {
                 return returnRelic(urlSplits[2]);
+            }
+    
+            if (urlSplits[1].toLowerCase() == "summon" ) {
+                return returnSummon(urlSplits[2]);
             }
             
         }
@@ -158,6 +155,23 @@ const HomePage: React.FC = () => {
             if (relicData[i].name.toLowerCase() == relicName.toLowerCase()) {
                 return (
                     <RelicDisplay key={relicData[i].name + "relic"} data={{values:relicData[i], tier:4}}/>
+                )
+            }
+        }
+
+        return (
+            <h1>RELIC NOT FOUND</h1>
+        );
+    }
+
+    function returnSummon(summonName:string) {
+        let i = 0;
+
+
+        for (i=0; i < summonData.length; i++) {
+            if (summonData[i].name.toLowerCase() == summonName.toLowerCase()) {
+                return (
+                    <SummonDisplay key={summonData[i].name + "summon"} data={summonData[i]}/>
                 )
             }
         }
