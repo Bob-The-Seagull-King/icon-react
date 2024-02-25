@@ -14,6 +14,10 @@ const AddonDisplay = (props: any) => {
     // ---------------------------------------------
 
     // Evaluation functions ------------------------
+    /**
+     * Returns the title of an addon
+     * @returns String title for an addon
+     */
     function titleReturn() {
         let _title = "";
 
@@ -31,7 +35,7 @@ const AddonDisplay = (props: any) => {
     }
 
     /**
-     * Returns a string to display summon tag information
+     * Returns a string to display addon tag information
      * @returns String with all valid tags, their values
      * and formatting if required
      */
@@ -71,6 +75,7 @@ const AddonDisplay = (props: any) => {
     }
     // ---------------------------------------------
 
+    // Return result -------------------------------
     return (
         <div>
             <h3 style={{color: getColour(addonData.job)}}>{title}</h3>
@@ -78,6 +83,7 @@ const AddonDisplay = (props: any) => {
             <div><p dangerouslySetInnerHTML={{__html: (addonData.description || '')}}></p></div>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default AddonDisplay

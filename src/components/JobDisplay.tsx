@@ -20,6 +20,10 @@ const JobDisplay = (props: any) => {
 
     // Evaluation functions ------------------------
 
+    /**
+     * Returns array of all summons for a job
+     * @returns Array any[] of all job summons
+     */
     function summonAddonReturn() {
         const summonAddons = [];
         let i = 0;
@@ -33,6 +37,11 @@ const JobDisplay = (props: any) => {
         return summonAddons;
     }
 
+    /**
+     * Returns HTML for all a job's summons
+     * @returns HTML structure with all summons
+     * displayed
+     */
     function summonStructure() {
         if (summonAddonArray.length > 0) {
             return (
@@ -51,6 +60,7 @@ const JobDisplay = (props: any) => {
     }
     // --------------------------------------------
 
+    // Return result -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(jobData.name), fontSize: '3em'}}>{capitalizeTag( jobData.name )}</h1>
@@ -64,6 +74,7 @@ const JobDisplay = (props: any) => {
             </span>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default JobDisplay

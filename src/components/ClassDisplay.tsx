@@ -12,12 +12,7 @@ const ClassDisplay = (props: any) => {
     const classData = props.data;
     // ---------------------------------------------
 
-    // Run evaluations -----------------------------
-    // ---------------------------------------------
-
-    // Evaluation functions ------------------------
-    // --------------------------------------------
-
+    // Return result -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(classData.name), fontSize: '3em'}}>{capitalizeTag( classData.name )}</h1>
@@ -28,6 +23,7 @@ const ClassDisplay = (props: any) => {
             <ClassMechanicDisplay key={classData.name + "mechanic"} data={classData}/>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default ClassDisplay

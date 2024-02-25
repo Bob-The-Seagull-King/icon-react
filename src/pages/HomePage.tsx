@@ -16,6 +16,12 @@ import classData from '../resources/data/class.json';
 const HomePage: React.FC = () => {
 
     // Get URL Path Content ----------------------
+
+    /**
+     * Finds the URL parameters and returns the 
+     * appropriate ICON content as HTML
+     * @returns 
+     */
     function getRequestedContent() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -49,17 +55,19 @@ const HomePage: React.FC = () => {
     
             if (urlSplits[1].toLowerCase() == "summon" ) {
                 return returnSummon(urlSplits[2]);
-            }
-            
+            }  
         }
 
         return (
             <h1>PAGE NOT FOUND</h1>
         )
-
-
     }
 
+    /**
+     * Returns HTML for a class
+     * @param classname  The name of the class
+     * @returns HTML elements
+     */
     function returnClass(classname:string) {
         let i = 0;
 
@@ -76,6 +84,11 @@ const HomePage: React.FC = () => {
         );
     }
 
+    /**
+     * Returns HTML for a class and all jobs
+     * @param classname The name of the class
+     * @returns HTML elements
+     */
     function returnClassFull(classname:string) {
         let i = 0;
 
@@ -92,6 +105,11 @@ const HomePage: React.FC = () => {
         );
     }
 
+    /**
+     * Returns HTML for a job
+     * @param jobName The name of the job
+     * @returns HTML elements
+     */
     function returnJob(jobName:string) {
         let i = 0;
 
@@ -111,6 +129,11 @@ const HomePage: React.FC = () => {
         );
     }
 
+    /**
+     * Returns HTML for a job and all abilities
+     * @param jobName The name of the job
+     * @returns HTML elements
+     */
     function returnJobFull(jobName:string) {
         let i = 0;
 
@@ -130,9 +153,13 @@ const HomePage: React.FC = () => {
         );
     }
 
+    /**
+     * Returns HTML for an ability
+     * @param abilityName The name of the ability
+     * @returns HTML elements
+     */
     function returnAbility(abilityName:string) {
         let i = 0;
-
 
         for (i=0; i < abilityData.length; i++) {
             if (abilityData[i].name.toLowerCase() == abilityName.toLowerCase()) {
@@ -147,9 +174,13 @@ const HomePage: React.FC = () => {
         );
     }
 
+    /**
+     * Returns HTML for a relic
+     * @param relicName The name of the relic
+     * @returns HTML elements
+     */
     function returnRelic(relicName:string) {
         let i = 0;
-
 
         for (i=0; i < relicData.length; i++) {
             if (relicData[i].name.toLowerCase() == relicName.toLowerCase()) {
@@ -164,9 +195,13 @@ const HomePage: React.FC = () => {
         );
     }
 
+    /**
+     * Returns HTML for a summon
+     * @param summonName The name of the summon
+     * @returns HTML elements
+     */
     function returnSummon(summonName:string) {
         let i = 0;
-
 
         for (i=0; i < summonData.length; i++) {
             if (summonData[i].name.toLowerCase() == summonName.toLowerCase()) {
@@ -180,16 +215,15 @@ const HomePage: React.FC = () => {
             <h1>RELIC NOT FOUND</h1>
         );
     }
-
-
-
     // -------------------------------------------
 
+    // Return result -----------------------------
     return (
         <div style={{ position: 'relative', paddingLeft: '20%', paddingRight: '20%',  width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             {getRequestedContent()}
         </div>
     )
+    // -------------------------------------------
 }
 
 export default HomePage

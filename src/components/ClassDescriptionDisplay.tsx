@@ -7,11 +7,7 @@ const ClassDescriptionDisplay = (props: any) => {
     const classDescriptionData = props.data;
     // ---------------------------------------------
 
-    // Run evaluations -----------------------------
-    // ---------------------------------------------
-
-    // Evaluation functions ------------------------
-
+    // Return result -------------------------------
     return (
         <div>
             <div><b>Strengths:</b> <span dangerouslySetInnerHTML={{__html: (classDescriptionData.info.strengths || '')}}/></div>
@@ -21,6 +17,7 @@ const ClassDescriptionDisplay = (props: any) => {
             <div><span dangerouslySetInnerHTML={{__html: (classDescriptionData.info.description || '')}}/></div>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default ClassDescriptionDisplay

@@ -11,7 +11,13 @@ const TraitsDisplay = (props: any) => {
     const job = props.data.name;
     // ---------------------------------------------
 
-    // Run evaluations -----------------------------
+    // Evaluation functions ------------------------
+    /**
+     * Checks if a trait has any addons, and returns the
+     * addon display HTML if needed.
+     * @param trait The name of the trait being checked
+     * @returns HTML map of all abilities being added on
+     */
     function returnAddons(trait: string) {
         const addonArray = [];
         let i = 0;
@@ -34,9 +40,7 @@ const TraitsDisplay = (props: any) => {
     }
     // ---------------------------------------------
 
-    // Evaluation functions ------------------------
-    // ---------------------------------------------
-
+    // Return render -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(job)}}>Traits</h1>
@@ -51,6 +55,7 @@ const TraitsDisplay = (props: any) => {
             </div>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default TraitsDisplay

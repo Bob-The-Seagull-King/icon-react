@@ -7,11 +7,7 @@ const ClassMechanicDisplay = (props: any) => {
     const classMechanicData = props.data;
     // ---------------------------------------------
 
-    // Run evaluations -----------------------------
-    // ---------------------------------------------
-
-    // Evaluation functions ------------------------
-
+    // Return result -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(classMechanicData.name)}}>Special Mechanics: {classMechanicData.mechanic.name}</h1>
@@ -20,6 +16,7 @@ const ClassMechanicDisplay = (props: any) => {
             <span dangerouslySetInnerHTML={{__html: (classMechanicData.mechanic.gambit || '')}}/>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default ClassMechanicDisplay

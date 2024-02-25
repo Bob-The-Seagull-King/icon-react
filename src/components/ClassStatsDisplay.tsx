@@ -7,11 +7,7 @@ const ClassStatsDisplay = (props: any) => {
     const classStatsData = props.data;
     // ---------------------------------------------
 
-    // Run evaluations -----------------------------
-    // ---------------------------------------------
-
-    // Evaluation functions ------------------------
-
+    // Return result -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(classStatsData.name)}}>Class Statistics</h1>
@@ -24,6 +20,7 @@ const ClassStatsDisplay = (props: any) => {
             <p><b>Basic Attack:</b> Range {classStatsData.stats.basic_atk}</p>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default ClassStatsDisplay

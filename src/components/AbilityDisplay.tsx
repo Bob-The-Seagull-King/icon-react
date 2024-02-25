@@ -33,11 +33,19 @@ const AbilityDisplay = (props: any) => {
     // ---------------------------------------------
 
     // Evaluation functions ------------------------
+    /**
+     * Checks if an ability is part of a trait
+     * @returns Boolean result
+     */
     function isTrait() {
         const isDisplay = containsTag(abilityData.tags, "trait");
         return isDisplay;
     }
 
+    /**
+     * Returns all ability specific addons
+     * @returns Array any[] of ability addons
+     */
     function abilityAddonReturn() {
         const abilityAddons = [];
         let i = 0;
@@ -51,6 +59,10 @@ const AbilityDisplay = (props: any) => {
         return abilityAddons;
     }
 
+    /**
+     * Returns all ability specific summmons
+     * @returns Array any[] of ability summons
+     */
     function summonAddonReturn() {
         const summonAddons = [];
         let i = 0;
@@ -66,6 +78,10 @@ const AbilityDisplay = (props: any) => {
         return summonAddons;
     }
 
+    /**
+     * Returns all mastery addons
+     * @returns Array any[] of mastery addons
+     */
     function masteryAddonReturn() {
         const masteryAddons = [];
         let i = 0;
@@ -80,7 +96,7 @@ const AbilityDisplay = (props: any) => {
     }
 
     /**
-     * Returns a string to display summon tag information
+     * Returns a string to display ability tag information
      * @returns String with all valid tags, their values
      * and formatting if required
      */
@@ -120,6 +136,7 @@ const AbilityDisplay = (props: any) => {
     }
     // ---------------------------------------------
 
+    // Return result -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(abilityData.job)}}>{abilityData.name}</h1>
@@ -164,6 +181,7 @@ const AbilityDisplay = (props: any) => {
             }
         </div>
     )
+    // ------------------------------------------
 }
 
 export default AbilityDisplay

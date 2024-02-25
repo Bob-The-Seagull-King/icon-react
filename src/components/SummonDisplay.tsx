@@ -66,6 +66,7 @@ const SummonDisplay = (props: any) => {
     }
     // ---------------------------------------------
 
+    // Return render -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(summonData.job)}}>{summonData.name}</h1>
@@ -74,6 +75,7 @@ const SummonDisplay = (props: any) => {
             <p>{limitText}</p>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default SummonDisplay

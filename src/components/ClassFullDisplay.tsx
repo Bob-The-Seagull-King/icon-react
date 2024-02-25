@@ -10,12 +10,7 @@ const ClassFullDisplay = (props: any) => {
     const classData = props.data;
     // ---------------------------------------------
 
-    // Run evaluations -----------------------------
-    // ---------------------------------------------
-
-    // Evaluation functions ------------------------
-    // --------------------------------------------
-
+    // Return result -------------------------------
     return (
         <div>
             <ClassDisplay key={classData.name + "base"} data={classData}/>
@@ -26,6 +21,7 @@ const ClassFullDisplay = (props: any) => {
             </div>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default ClassFullDisplay

@@ -13,12 +13,14 @@ const JobPlaystyleDisplay = (props: any) => {
     const bannedAbilityTags = ["slay", "infuse", "mastery", "trait"];
     // ---------------------------------------------
 
+    // Return result -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(jobPlaystyleData.name)}}>Playstyle</h1>
             <span dangerouslySetInnerHTML={{__html: (jobPlaystyleData.playstyle || '')}}/>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default JobPlaystyleDisplay

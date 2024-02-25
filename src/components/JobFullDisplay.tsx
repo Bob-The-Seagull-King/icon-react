@@ -21,6 +21,10 @@ const JobDisplayFull = (props: any) => {
     // ---------------------------------------------
 
     // Evaluation functions ------------------------
+    /**
+     * Splits all abilities for a job into three
+     * arrays, one for each chapter
+     */
     function abilitySort() {
         let i = 0;
 
@@ -39,6 +43,11 @@ const JobDisplayFull = (props: any) => {
         }
     }
 
+    /**
+     * Returns a span with all valid tags in human
+     * readable format
+     * @returns Span with string of all tags
+     */
     function tagReturn() {
         const _tagArray: string[] = [];
         let _tagExport = " ";
@@ -77,6 +86,7 @@ const JobDisplayFull = (props: any) => {
     }
     // --------------------------------------------
 
+    // Return result ------------------------------
     return (
         <div>
             <JobDisplay key={jobData.name} data={jobData}/>
@@ -111,6 +121,7 @@ const JobDisplayFull = (props: any) => {
 
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default JobDisplayFull

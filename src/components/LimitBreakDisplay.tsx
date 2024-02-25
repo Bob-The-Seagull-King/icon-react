@@ -22,7 +22,10 @@ const LimitBreakDisplay = (props: any) => {
 
     // Evaluation functions ------------------------
 
-
+    /**
+     * Finds all addons for the LB main ability
+     * @returns Array any[] of addons
+     */
     function abilityAddonReturn() {
         const abilityAddons = [];
         let i = 0;
@@ -36,6 +39,10 @@ const LimitBreakDisplay = (props: any) => {
         return abilityAddons;
     }
 
+    /**
+     * Finds all summon addons for the LB
+     * @returns Array any[] of summons
+     */
     function summonAddonReturn() {
         const summonAddons = [];
         let i = 0;
@@ -51,6 +58,10 @@ const LimitBreakDisplay = (props: any) => {
         return summonAddons;
     }
 
+    /**
+     * Finds all mastery addons for the LB ultimate
+     * @returns Array any[] of addons
+     */
     function masteryAddonReturn() {
         const masteryAddons = [];
         let i = 0;
@@ -65,7 +76,7 @@ const LimitBreakDisplay = (props: any) => {
     }
 
     /**
-     * Returns a string to display summon tag information
+     * Returns a string to display limit break tag information
      * @returns String with all valid tags, their values
      * and formatting if required
      */
@@ -105,6 +116,7 @@ const LimitBreakDisplay = (props: any) => {
     }
     // ---------------------------------------------
 
+    // Return render -------------------------------
     return (
         <div>
             <h1 style={{color: getColour(limitBreakData.name)}}>LIMIT BREAK: {limitBreakData.limitbreak.name.toUpperCase()}</h1>
@@ -140,6 +152,7 @@ const LimitBreakDisplay = (props: any) => {
             </span>
         </div>
     )
+    // ---------------------------------------------
 }
 
 export default LimitBreakDisplay
