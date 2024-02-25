@@ -84,6 +84,12 @@ const LimitBreakDisplay = (props: any) => {
                 if (tagName == "Action 0") {
                     tagName = "Free Action";
                 }
+                if (tagName == "Action 1") {
+                    tagName = "1 Action";
+                }
+                if (tagName == "Action 2") {
+                    tagName = "2 Actions";
+                }
                 _tagArray.push(tagName);
             }
         }
