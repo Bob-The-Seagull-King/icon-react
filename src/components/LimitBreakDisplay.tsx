@@ -107,7 +107,7 @@ const LimitBreakDisplay = (props: any) => {
 
     return (
         <div>
-            <h1 style={{color: getColour(limitBreakData.name)}}>{limitBreakData.limitbreak.name}</h1>
+            <h1 style={{color: getColour(limitBreakData.name)}}>LIMIT BREAK: {limitBreakData.limitbreak.name.toUpperCase()}</h1>
             
             <p>{tagsArray}</p>
             <span><i><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.blurb || '')}}/></i></span>
