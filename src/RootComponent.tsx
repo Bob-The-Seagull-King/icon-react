@@ -9,7 +9,6 @@ const RootComponent: React.FC = () => {
     return (
         <Router>
             <Routes>
-                <Route path="*" element={<NotFoundPage />} />
                 <Route path={ROUTES.HOMEPAGE_ROUTE} element={<HomePage />} />
             </Routes>
         </Router>

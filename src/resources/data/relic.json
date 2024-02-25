@@ -1,6 +1,6 @@
 [
     {
-        "name": "APE GOD",
+        "name": "Ape God",
         "colour": "red",
         "desc": "This gauntlet or weapon is oversized, studded with metal, and incredibly heavy",
         "tier1": "<b>Invoke (Attack, 17+)</b>: Stun your attack target.",
@@ -10,7 +10,7 @@
         "quest": "Climb the highest peak in Arden Eld."
     },     
     {
-        "name": "CRIMSON KING",
+        "name": "Crimson King",
         "colour": "red",
         "desc": "A blood red gem, similar to an Elixir Stone, is set into this weapon or armor.",
         "tier1": "When you’re at 25% hp or lower, you may reduce all <i>sacrifice</i> costs to <i>sacrifice</i> 2 if higher, even those based on % of your hp.",
@@ -20,7 +20,7 @@
         "quest": "Quench your relic in the abyssal blood of a powerful demon."
     }, 
     {
-        "name": "ERYS",
+        "name": "Erys",
         "colour": "red",
         "desc": "This helm, mantle, or pauldron is crowned with horns, spines, or a mantle of thick goat-like fur.",
         "tier1": "<b>Invoke (Attack, 11+)</b>: You may shove your target 1.",
@@ -30,7 +30,7 @@
         "quest": "Take the horns of a legendary beast as your trophy."
     }, 
     {
-        "name": "MAIDEN",
+        "name": "Maiden",
         "colour": "red",
         "desc": "Your relic bears a statuette or image of the Weeping Titan, impaled by spears.",
         "tier1": "While you’re bloodied, gain counter.",
@@ -40,7 +40,7 @@
         "quest": "Gather and reforge true iron nails from the sarcophagus of a Relict Emperor."
     }, 
     {
-        "name": "ORPHEO",
+        "name": "Orpheo",
         "colour": "red",
         "desc": "This relic has a cracked mirror, set on a pendant or into a shield or weapon hilt.",
         "tier1": "<b>Invoke (Attack, 17+)</b>: Gain <i>defiance</i>. If you already have <i>defiance</i>, gain 4 vigor.",
@@ -50,7 +50,7 @@
         "quest": "Bathe in the water of the river that leads to the underworld."
     },
     {
-        "name": "UNGOLIANT",
+        "name": "Ungoliant",
         "colour": "red",
         "desc": "Your relic is a massive weapon carved from the fang of an ur-spider or beast of the deep caverns.",
         "tier1": "Charged attacks gain +1 boon.",
@@ -60,7 +60,7 @@
         "quest": "Weave the aethersilk of an ancient Ur-spider into your relic."
     }, 
     {
-        "name": "WYRMTOOTH",
+        "name": "Wyrmtooth",
         "colour": "red",
         "desc": "This weapon or armor has carvings made from pure wyrmbone. It is hot to the touch.",
         "tier1": "While afflicted by a status, you no longer take bonus damage and cannot be critically hit.",
@@ -70,7 +70,7 @@
         "quest": "Carve the skull or horns of a wyrm and incorporate it into your relic."
     }, 
     {
-        "name": "TROLLHIDE",
+        "name": "Trollhide",
         "colour": "red",
         "desc": "A cape, shield, or mantle of scaly leather, a hardy relic that knits itself back together like a living thing.",
         "tier1": "If you don’t attack on your turn, gain 4 vigor.",
@@ -80,7 +80,7 @@
         "quest": "Seek the wisdom of the keepers of the Deep Bog and do their bidding for three days."
     }, 
     {
-        "name": "TITANSBANE",
+        "name": "Titansbane",
         "colour": "red",
         "desc": "A weapon or armor made of Arken black metal. Seethes with a fell energy. You can feel a killing intent from within.",
         "tier1": "When you use a <i>delay</i> effect, you can <i>rush</i> 1 before activating it. If you’re <i>bloodied</i>, you can <i>rush</i> 3 instead.",
@@ -90,7 +90,7 @@
         "quest": "Pull and reforge a god-killing weapon from the corpse of a titan."
     }, 
     {
-        "name": "IRONSOUL",
+        "name": "Ironsoul",
         "colour": "red",
         "desc": "A relic made of sturdy and thick star-iron, cool and comforting to the touch.",
         "tier1": "Gain +1 boon on attacks while adjacent to an ally.",
@@ -100,7 +100,7 @@
         "quest": "Find and smith the Primal Iron Soul, a legendary meteorite that fell deep in the blight lands."
     }, 
     {
-        "name": "GLADESONG",
+        "name": "Gladesong",
         "colour": "yellow",
         "desc": "Your weapon is carved from supple but durable gaia wood, sharper than any metal.",
         "tier1": "Your attacks against foes standing next to an allied summon gain +1 boon.",
@@ -110,7 +110,7 @@
         "quest": "Drink from the primeval Gaia pool."
     }, 
     {
-        "name": "GLOAM",
+        "name": "Gloam",
         "colour": "yellow",
         "desc": "This cloak or clothing appears to be made out of woven shadow. The cloth is richly textured.",
         "tier1": "Invoke (Attack, 14+): <i>Blind</i> your foe. If your foe is already <i>blinded</i>, they take 2 damage.",
@@ -120,7 +120,7 @@
         "quest": "Find a source of True Darkness, deep underground, and capture it with needle and thread."
     }, 
     {
-        "name": "HERMES",
+        "name": "Hermes",
         "colour": "yellow",
         "desc": "Intricate, curling silver wings are carved into this artifact, weapon, or armor.",
         "tier1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Teleport 2.",
@@ -130,7 +130,7 @@
         "quest": "Weave a strand taken from the cloak of the Titan of trickery, the Laughing God, into your relic."
     }, 
     {
-        "name": "MISTBORN",
+        "name": "Mistborn",
         "colour": "yellow",
         "desc": "Your weapon is made from seeping mist, and doesn’t seem to be entirely present.",
         "tier1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Gain stealth.",
@@ -140,7 +140,7 @@
         "quest": "Sail to the edge of the world and bathe your relic in the mists there."
     }, 
     {
-        "name": "RUIN",
+        "name": "Ruin",
         "colour": "yellow",
         "desc": "A weapon, bow, or stave carved from ancient stone, a heavy slab of a thing.",
         "tier1": "You may trade in 1 boon, once per attack, for bonus damage.",
@@ -150,7 +150,7 @@
         "quest": "Gather rubble from the pillars of the oldest Arkenruin."
     }, 	
     {
-        "name": "SLEIPNIR",
+        "name": "Sleiphir",
         "colour": "yellow",
         "desc": "Odd wooden armor or a necklace of bones carved with the image of an eight legged horse.",
         "tier1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Fly 2. This free action can interrupt abilities.",
@@ -160,7 +160,7 @@
         "quest": "Tame a titansteed, one of the enormous legendary wild horses."
     }, 
     {
-        "name": "RIGOLETTO",
+        "name": "Rigoletto",
         "colour": "yellow",
         "desc": "A colorful token, built to look like a spinning wheel. When sewn into armor, weapons, or accessories, it allows its wielder to move with preternatural speed.",
         "tier1": "Evasion triggers for you on a 3+.",
@@ -170,7 +170,7 @@
         "quest": "Beat the shadow of the Laughing God in a foot race. He cheats."
     }, 
     {
-        "name": "HUNTRESS",
+        "name": "Huntress",
         "colour": "yellow",
         "desc": "This supple leather relic has been crafted with images of Gaia, the Hunter Titan.",
         "tier1": "Gain <i>dodge</i> against characters you marked.",
@@ -180,7 +180,7 @@
         "quest": "Take the pelt of a legendary beast and incorporate it into your relic."
     }, 
     {
-        "name": "FRAGMENT OF IZ",
+        "name": "Fragment of Iz",
         "colour": "yellow",
         "desc": "A shifting, crackling relic that seems out of sync with reality. Its color and shape seems to writhe and warp.",
         "tier1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: Gain phasing until the start of your next turn.",
@@ -190,7 +190,7 @@
         "quest": "Stand before the gates of the buried and ancient necropolis of Iz, and behold the horror."
     }, 
     {
-        "name": "DOMINUS",
+        "name": "Dominus",
         "colour": "yellow",
         "desc": "A relic that most often takes the form of a crimson gauntlet. The surface is oddly slick.",
         "tier1": "All your attacks gain a new effect: <i>Slay</i>: Dash 2 after the ability resolves.",
@@ -200,7 +200,7 @@
         "quest": "Beat another wielder of a Dominus relic in single combat."
     }, 
     {
-        "name": "BYRAX",
+        "name": "Byrax",
         "colour": "green",
         "desc": "Goat horn engravings adorn this armor, weapon, or cloak, curling into intricate runes",
         "tier1": "When you refresh a stance, dash 1.",
@@ -210,7 +210,7 @@
         "quest": "Find the resting place of the Wanderer Titan, take a splinter of one of their weapons, and reforge it."
     }, 
     {
-        "name": "ERENBRASS",
+        "name": "Erenbrass",
         "colour": "green",
         "desc": "A burnished metal helm, gauntlet, or mantle, bright in the sun.",
         "tier1": "At the start of your turn, you may shove an ally 1 space in any direction.",
@@ -220,7 +220,7 @@
         "quest": "Take command of an army, militia, or regiment in battle and fight to victory."
     }, 
     {
-        "name": "ESPER",
+        "name": "Esper",
         "colour": "green",
         "desc": "This gem is a void of space within. If you stare long enough, you can see stars.",
         "tier1": "<b>Invoke (Attack, 16+)</b>: Cure a character inrange 2 of your attack target.",
@@ -230,7 +230,7 @@
         "quest": "Find a shrine of the Titan of death and darkness, the Weeper, and survive the trialsthere."
     },
     {
-        "name": "MERCY",
+        "name": "Mercy",
         "colour": "green",
        "desc": "This gold-filagreed choker or torc is surprisingly light, and includes imagery of grasping hands.",
         "tier1": "Your cures can target defeated characters. If you do, they are <i>rescued</i> before being cured.",
@@ -240,7 +240,7 @@
         "quest": "Find and incorporate a twig of the eternal world tree into this relic."
     },
     {
-        "name": "SCHEHEREZADE",
+        "name": "Scheherezade",
         "colour": "green",
         "desc": "This weapon emits a faint singing tone that can only be heard in a quiet room.",
         "tier1": "At the start of combat, gain 2 blessing tokens on yourself.",
@@ -250,7 +250,7 @@
         "quest": "Recover a genuine page fragment of the legendary Tale of Ages."
     }, 	
     {
-        "name": "STORM LORD",
+        "name": "Storm Lord",
         "colour": "green",
         "desc": "This armor is wrapped in knotted holy cords and imagery of the sea during a storm.",
         "tier1": "At the end of any turn you didn’t attack, you may gain a combo token, or spend one to dash 1.",
@@ -260,7 +260,7 @@
         "quest": "Ride the lightning to the palace of clouds and learn from the teachings of the long-dead Storm Lord."
     },
     {
-        "name": "VESSEL",
+        "name": "Vessel",
         "colour": "green",
         "desc": "This weapon or armor seems surprisingly hollow, despite how durable it is. It’s cold and heavy.",
         "tier1": "Deal bonus damage when at or under 25% hp.",
@@ -270,7 +270,7 @@
         "quest": "Split a part of your soul into your relic at a deep shrine of the Black Blood Titan, the Holy Body."
     },
     {
-        "name": "CHIME",
+        "name": "Chime",
         "colour": "green",
         "desc": "This symbol of a bell shines with gentle power. A soft ringing can be heard in its presence, but only when it’s very quiet.",
         "tier1": "<b>Invoke (Gambit)</b>: <i>Pacify</i> a foe in range 5.",
@@ -280,7 +280,7 @@
         "quest": "Ring the old temple bell of the hidden thirteenth chamber of the chroniclers."
     },
     {
-        "name": "GILDED FINGER",
+        "name": "Gilded Finger",
         "colour": "green",
         "desc": "A golden finger of a saint or holy icon - real or carved - set into armor or weaponry.",
         "tier1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: You gain aura 1 until the end of your next turn. Foes inside the aura gain +1 curse on attacks, and allies gain +1 boon on attacks.",
@@ -290,7 +290,7 @@
         "quest": "Retrieve one of the thirteen forbidden Arks - holy reliquaries from before the Doom thought to be lost to time."
     },
     {
-        "name": "SILVER RABBIT",
+        "name": "Silver Rabbit",
         "colour": "green",
         "desc": "A beautiful relic inlaid with a shining silver coin, embalmed with the image of the smiling Moon Titan, Tsumi.",
         "tier1": "<b>Invoke (Gambit)</b>: <i>Free action</i>: <i>Gamble</i>, then dash exactly that far in a straight line.",
@@ -300,7 +300,7 @@
         "quest": "Travel to Arden Eld’s moon."
     },
     {
-        "name": "APOPHIS",
+        "name": "Apophis",
         "colour": "blue",
         "desc": "Coiling serpents cradle the hilt of this weapon or curl around the base of this necklace.",
         "tier1": "At the start of your turn, create a poison pool <i>dangerous terrain</i> space in free space adjacent to you.",
@@ -310,7 +310,7 @@
         "quest": "Infuse your relic with three scales of the ancient Wyrm Nidhogg."
     },
     {
-        "name": "DOMAIN",
+        "name": "Domain",
         "colour": "blue",
         "desc": "A sceptre, weapon, or helm embedded with a deeply inset gem.",
         "tier1": "<b>Gain trait</b>: <i>Domain</i>: When you create a terrain effect or object, you can place your <i>Domain</i> over one of its spaces, a small blast terrain effect. Using this trait again moves the Domain instead of creating a new one.  Gain +1 boon on attacks against foes in your Domain.",
@@ -320,7 +320,7 @@
         "quest": "Gain a gemstone for your Domain relic from a ruler (dead or living)."
     },
     {
-        "name": "CLOUDPIERCER",
+        "name": "Cloudpiercer",
         "colour": "blue",
         "desc": "This bright metal weapon crackles with latent power.",
         "tier1": "Gain +1 boon on attacks against foes at exactly range 3.",
@@ -330,7 +330,7 @@
         "quest": "Survive a day in the Hundred Year storm."
     },
     {
-        "name": "PLEIADES",
+        "name": "Pleiades",
         "colour": "blue",
         "desc": "A set of six star-diamonds, flickering with a distance light, set into earrings or a neck piece.",
         "tier1": "<b>Invoke (Attack, 11+)</b>: Create an icy patch of difficult terrain under your attack target.",
@@ -340,7 +340,7 @@
         "quest": "Find and learn from the observatory of the Stargazer Titan."
     },
     {
-        "name": "SKIPJACK",
+        "name": "Skipjack",
         "colour": "blue",
         "desc": "This gem-incrusted gauntlet is intricately made and seems heavy, but is oddly light to wear.",
         "tier1": "Increase the listed range of all your abilities by +1.",
@@ -350,7 +350,7 @@
         "quest": "Find and use the workshop of the Forge Titan in the heart of Arden Eld."
     },
     {
-        "name": "TOWER OF BARBS",
+        "name": "Tower of Barbs",
         "colour": "blue",
         "desc": "Coiling thorns have been set into this ranged weapon. The barbs sometimes curl towards your flesh.",
         "tier1": "Deal bonus damage if a character is at maximum range of your ranged attack or in the end space of a line or arc area effect.",
@@ -360,7 +360,7 @@
         "quest": " Climb to the top floor of the legendary dungeon the Tower of Barbs."
     },
     {
-        "name": "RIFTWALKER",
+        "name": "Riftwalker",
         "colour": "blue",
         "desc": "This relic has a contorted shape set into at - an impossible geometry that confounds the mind.",
         "tier1": "You may cause any of your attack with area effects to include in the area any Pit spaces connected to them by adjacency, even diagonally.",
@@ -370,7 +370,7 @@
         "quest": "Enter the Eternal Maze - a dangerous pocket dimension, and escape with its secrets."
     },
     {
-        "name": "ARENHEIR",
+        "name": "Arenheir",
         "colour": "blue",
         "desc": "This weapon or armor has the imagery of a great fierce wolf on it.",
         "tier1": "Your critical hits deal bonus damage.",
@@ -380,7 +380,7 @@
         "quest": "Find the burial tomb of Arenheir’s master, the ancient Berserker Titan, the Hundred Sword Titan, and pray there."
     },
     {
-        "name": "CONQUERING KING",
+        "name": "Conquering King",
         "colour": "blue",
         "desc": "This relic has a regal bearing, with imagery of lightning bolts made of wrought gold.",
         "tier1": "<b>Invoke (5th Round+)</b> - All abilities deal bonus damage.",
@@ -390,7 +390,7 @@
         "quest": "Find and commune with an entrance to the Highest House, the divine realm where the creators of the world are said to sleep."
     },
     {
-        "name": "PALEBLOOD",
+        "name": "Paleblood",
         "colour": "blue",
         "desc": "This relic has inlays of pale bone, intricately carved. When infused, the inlays light up.",
         "tier1": "At the start of combat, gain a d4 power die, starting at 1. Tick it up by 1 at the end of each round. When the die is 4, you may expend it when you use any ability, discarding it, to grant that ability bonus damage and trigger <i>all</i> of the following triggered effects: <i>charge, collide, comeback, chain reaction, exceed, finishing blow, slay</i>.",

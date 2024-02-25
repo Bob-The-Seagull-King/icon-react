@@ -1,3 +1,3 @@
 export const ROUTES = {
-    HOMEPAGE_ROUTE: '/'
+    HOMEPAGE_ROUTE: '/*'
 }
