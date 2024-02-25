@@ -85,7 +85,7 @@ const JobDisplayFull = (props: any) => {
             <div>
                 {abilityChapter1.map((item) => (
                 <div key={item.name + "ability"} style={{paddingLeft: "10%", paddingRight: "10%"}} >
-                    <AbilityDisplay data={item}/>
+                    <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
                 </div>
                 ))}
             </div>
@@ -93,7 +93,7 @@ const JobDisplayFull = (props: any) => {
             <div>
                 {abilityChapter2.map((item) => (
                 <div key={item.name + "ability"} style={{paddingLeft: "10%", paddingRight: "10%"}} >
-                    <AbilityDisplay data={item}/>
+                    <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
                 </div>
                 ))}
             </div>
@@ -104,7 +104,7 @@ const JobDisplayFull = (props: any) => {
             <div>
                 {abilityChapter3.map((item) => (
                 <div key={item.name + "ability"} style={{paddingLeft: "10%", paddingRight: "10%"}} >
-                    <AbilityDisplay data={item}/>
+                    <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
                 </div>
                 ))}
             </div>

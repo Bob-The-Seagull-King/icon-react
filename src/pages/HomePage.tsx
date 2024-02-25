@@ -24,13 +24,12 @@ const HomePage: React.FC = () => {
         const _jobArray = [];
 
         for (i = 0; i < classData.length; i++) {
-            //let j = 0;
+            let j = 0;
 
-            _jobArray.push(classData[i])
            
-           /* for (j = 0; j < classData[i].jobs.length; j++) {
+            for (j = 0; j < classData[i].jobs.length; j++) {
                 _jobArray.push(classData[i]["jobs"][j]);
-            }*/
+            }
         }
 
         return _jobArray;
@@ -40,7 +39,7 @@ const HomePage: React.FC = () => {
         <div style={{ position: 'relative', paddingLeft: '30%', paddingRight: '30%',  width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
             <h1 style={{ fontSize: '4em' }}>Hello world!</h1>
             {jobArray.map((item) => (
-                    <TraitsDisplay key={item.name + "full"} data={item}/>
+                    <JobFullDisplay key={item.name + "full"} data={item}/>
                     ))}
         </div>
     )

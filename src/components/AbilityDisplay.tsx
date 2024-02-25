@@ -8,8 +8,19 @@ import summonData from '../resources/data/summon.json';
 import SummonDisplay from '../components/SummonDisplay'
 
 const AbilityDisplay = (props: any) => {
+    /**
+     * Prop format {values:item, _talents:NUMBER, _mastery:BOOLEAN}
+     * _talents:    0 = none
+     *              1 = talent 1
+     *              2 = talent 2
+     *              3 = both
+     */
+
+
     // Declare Summon Variables --------------------
-    const abilityData = props.data;
+    const abilityData = props.data.values;
+    const talents = props.data._talents;
+    const mastery = props.data._mastery;
     const bannedAbilityTags = ["slay", "infuse", "mastery", "trait"];
     // ---------------------------------------------
 
@@ -129,18 +140,26 @@ const AbilityDisplay = (props: any) => {
                 </div>
                 ))}
             </div>
-            {isNotTrait == true && <span>
+            {(isNotTrait == true)&& <span>
+                {(talents == 1 || talents == 3) &&
                 <p>I.   <span dangerouslySetInnerHTML={{__html: (abilityData.talent1 || '')}}></span></p>
+                }
+                {(talents == 2 || talents == 3) &&
                 <p>II.  <span dangerouslySetInnerHTML={{__html: (abilityData.talent2 || '')}}></span></p>
-                <h2>Mastery: {capitalizeTag(abilityData.masteryname)}</h2>
-                <div><p dangerouslySetInnerHTML={{__html: (abilityData.masterdescription || '')}}></p></div>
-                <div>
-                    {masteryAddonArray.map((item) => (
-                    <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
-                        <AddonDisplay data={item}/>
+                }
+                {(mastery == true) &&
+                <span>
+                    <h2>Mastery: {capitalizeTag(abilityData.masteryname)}</h2>
+                    <div><p dangerouslySetInnerHTML={{__html: (abilityData.masterdescription || '')}}></p></div>
+                    <div>
+                        {masteryAddonArray.map((item) => (
+                        <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
+                            <AddonDisplay data={item}/>
+                        </div>
+                        ))}
                     </div>
-                    ))}
-                </div>
+                </span>
+                }
                 </span>
             }
         </div>

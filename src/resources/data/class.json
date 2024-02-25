@@ -2,6 +2,12 @@
     {
         "name": "Stalwart",
         "description": "Weapon master and unparalleled soldier",
+        "info": {
+            "strengths": "Tough, good at punishing foes, protecting allies, and controlling the battlefield.",
+            "weaknesses": "Lower mobility and weak to ranged attackers.",
+            "complexity": "Low",
+            "description": "Stalwarts are <b>tough and vigorous warriors</b>, with heavy armor and abilities that let them stand their ground, protect their allies, and control space. They largely eschew the use of ranged attacks but are mythic soldiers and gods of the battlefield, able to perform incredible feats of physical prowess and resilience. <br/>Stalwarts boast <b>Slashed</b> and <b>Weakened</b>, which allow them to slow down speedy foes and lower their damage, and have acces to <b>Rampart</b> and <b>Vigilance</b>, which makes it much more risky for characters to move around them. They also easily gain <b>Sturdy</b>, making them resistance to being moved, and can in turn <b>Shove</b> their foes, knocking them around the battlefield. <br/>Stalwarts are <b>strong</b> again <i>skirmisher</i> foes and <b>weaker</b> against <i>artillery</i> foes."
+        },
         "stats": {
             "vitality": 10,
             "speed": 4,
@@ -210,6 +216,12 @@
     {
         "name": "Vagabond",
         "description": "Rogue, Scoundrel, and Blade for Hire",
+        "info": {
+            "strengths": "High mobility and damage, strong summons and marks, strong against isolated foes.",
+            "weaknesses": "Relatively low durability, relies on support.",
+            "complexity": "Medium",
+            "description": "Vagabonds are the mercenaries and wanderers of Arden Eld. They know how to aima  crossbow bolt through the helmet slit of a knight or the weak spot of a monster, how to move quietly and quickly, and how to fling a knife with deadly precision. <br/>Vagabonds boast high damage and even higher mobility. <b>Skirmisher</b> lets them move faster and further than other classes, while <b>Dodge</b> lets them avoid damage unless targeted directly. They make use of numerous tools such as <b>Stealth, Evasion</b> and <b>Finishing Blow</b> to crush weak, isolated, or ranges enemies and avoid their counterattacks. <br/>Vagabonds are <b>string</b> against <i>artillery</i> foes and <b>weaker</b> against <i>heavy</i> foes."
+        },
         "stats": {
             "vitality": 7,
             "speed": 4,
@@ -421,6 +433,12 @@
     {
         "name": "Mendicant",
         "description": "Wandering Healer and Storyteller",
+        "info": {
+            "strengths": "Strong all-rounders, with many potent effects and the ability to heal allies and lift statuses.",
+            "weaknesses": "Low damage and reliant on allies.",
+            "complexity": "High",
+            "description": "Mendicants are the itenerant priests, exorcists, and healers of Arden Eld. They travel from town to town, healing sicknesses of the body and soul, cleansing the damage dealt by the ruins, consulting with local spirits, and setting up wards against evil. Many mendicants are highly learned scholars, but others come from folk practices, temple monks, green witch circles, or town priesthoods. They are a highly diverse lot, and attuned to the land and the people that they care for. <br/>Mendicants are the only class that can consistently grant <b>vigor</b> and lift statuses with the potent <b>cure</b> effect. They protect allies and guide their attacks with the <b>Sealed</b> and <b>Pacified</b> statuses, while making use of powerful <b>combos</b>, <b>auras</b>, and <b>marks</b> to stack negative effects on foes while empowering allies. <br/>Mendicants aren't <b>weak</b> or <b>strong</b> against any particular type of foe, but have different strengths and weaknesses depending on job. Thus can make them a little more complex than other jobs."
+        },
         "stats": {
             "vitality": 10,
             "speed": 4,
@@ -640,6 +658,12 @@
     {
         "name": "Wright",
         "description": "Mage, thaumaturge, and master of the arcane arts",
+        "info": {
+            "strengths": "High damage an excellent range, strong area of effect, and become more powerful the longer fights go on.",
+            "weaknesses": "Low durability and weak to foes that can engage them up close.",
+            "complexity": "Medium",
+            "description": "Wrights are mages who have mastered the manipulation of the raw power of creations: Aether. ALl souls are connected to Aether, and everyone is able to connect to it and feel it to some degree. Those with training, potential, and ability can learn to form and shape Aether as natural as they move their own flesh and blood. Wrights weild terrifying power - and they know it. <br/>Wrghts become stronger the longer fights go on by the power of <b>Aether</b>, which they can use to <b>Infuse</b> their abilities to unleash some of the most spectacular attacks in the game. Wrights focus heavily on <b>piercing</b> damage, the <b>shattered</b> and <b>vulnerable</b> statuses, and <b>Area of Effect</b> abilities to punish foes that group up or rely on nearby allies. <br/>Wrights are <b>strong</b> against <i>heavy</i> foes since they can bypass their armor, hit a broad area around them, and hit them from range, but are <b>weaker</b> against <i>skirmisher</i> foes that can quickly close the gap."
+        },
         "stats": {
             "vitality": 8,
             "speed": 4,

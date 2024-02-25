@@ -27,7 +27,7 @@ const TraitsDisplay = (props: any) => {
         return (
             <div style={{paddingLeft: "20%", paddingRight: "20%"}}>
             {addonArray.map((item:any) => (
-                <AbilityDisplay key={item.name} data={item}/>
+                <AbilityDisplay key={item.name} data={{values:item, _talents:3, _mastery:true}}/>
                 ))}
             </div>
         )
