@@ -1,6 +1,6 @@
 [
     {
-        "name": "STALWART",
+        "name": "Stalwart",
         "description": "Weapon master and unparalleled soldier",
         "stats": {
             "vitality": 10,
@@ -19,15 +19,15 @@
         "traits": [
             {
                 "name": "Armor 2",
-                "description": "Reduce all damage taken by 2"
+                "desc": "Reduce all damage taken by 2"
             },
             {
                 "name": "Fortify",
-                "description": "Spaces adjacent to you have <i>Rampart</i>. Gain <i>Vigilance</i> +1 at the end of your turn."
+                "desc": "Spaces adjacent to you have <i>Rampart</i>. Gain <i>Vigilance</i> +1 at the end of your turn."
             },
             {
                 "name": "Rush X",
-                "description": "Stalwarts can <i>rush</i> as part of their abilities. When you rush, you move X spaces and are <i>unstoppable</i> and <i>immune</i> to all damage during that move."
+                "desc": "Stalwarts can <i>rush</i> as part of their abilities. When you rush, you move X spaces and are <i>unstoppable</i> and <i>immune</i> to all damage during that move."
             }
         ],
         "jobs": [
@@ -208,7 +208,7 @@
         ]
     },
     {
-        "name": "VAGABOND",
+        "name": "Vagabond",
         "description": "Rogue, Scoundrel, and Blade for Hire",
         "stats": {
             "vitality": 7,
@@ -227,19 +227,19 @@
         "traits": [
             {
                 "name": "Skirmisher",
-                "description": "A character with this trait can move diagonally and dash at full speed."
+                "desc": "A character with this trait can move diagonally and dash at full speed."
             },
             {
                 "name": "Dodge",
-                "description": "Immune to <i>all</i> damage from missed attacks, successful saves, and and <i>area effects</i>."
+                "desc": "Immune to <i>all</i> damage from missed attacks, successful saves, and and <i>area effects</i>."
             },
             {
                 "name": "Prowl (1 action)",
-                "description": "Gain <i>stealth</i>. Becomes a <i>free action</i> if no foes are in range 2."
+                "desc": "Gain <i>stealth</i>. Becomes a <i>free action</i> if no foes are in range 2."
             },
             {
                 "name": "Finesse",
-                "description": "You deal bonus damage to bloodied foes."
+                "desc": "You deal bonus damage to bloodied foes."
             }
         ],
         "jobs": [
@@ -419,7 +419,7 @@
         ]
     },
     {
-        "name": "MENDICANT",
+        "name": "Mendicant",
         "description": "Wandering Healer and Storyteller",
         "stats": {
             "vitality": 10,
@@ -438,15 +438,15 @@
         "traits": [
             {
                 "name": "Diaga (1 action)",
-                "description": "<i>Cure</i> a character in range 4. <i>(A character that's cured gains 4 vigor, or a vigor surge if they are bloodied. Then, they can immediately save agianst all statuses, ending them on a success)</i>."
+                "desc": "<i>Cure</i> a character in range 4. <i>(A character that's cured gains 4 vigor, or a vigor surge if they are bloodied. Then, they can immediately save agianst all statuses, ending them on a success)</i>."
             },
             {
                 "name": "Bless (1 action)",
-                "description": "Grant a <b>blessing</b> token to a character in range 4."
+                "desc": "Grant a <b>blessing</b> token to a character in range 4."
             },
             {
                 "name": "Succor",
-                "description": "Mendicants may use Rescue to bring up a defeated ally at range 4 instead of adjacent."
+                "desc": "Mendicants may use Rescue to bring up a defeated ally at range 4 instead of adjacent."
             }
         ],
         "jobs": [
@@ -638,7 +638,7 @@
         ]
     },
     {
-        "name": "WRIGHT",
+        "name": "Wright",
         "description": "Mage, thaumaturge, and master of the arcane arts",
         "stats": {
             "vitality": 8,
@@ -657,15 +657,15 @@
         "traits": [
             {
                 "name": "Slip",
-                "description": "Wright's movement does not trigger and ignores <i>interrupts</i>, <i>vigilance</i> and <i>rampart</i>."
+                "desc": "Wright's movement does not trigger and ignores <i>interrupts</i>, <i>vigilance</i> and <i>rampart</i>."
             },
             {
                 "name": "Aetherwall",
-                "description": "Wrights gain <i>resistance</i> against all abilities from characters that are outside of range 2 from them."
+                "desc": "Wrights gain <i>resistance</i> against all abilities from characters that are outside of range 2 from them."
             },
             {
                 "name": "Chain Reaction",
-                "description": "1/round, if a wright damages two or more foes with an ability, they gain 1 Aether after the ability resolves."
+                "desc": "1/round, if a wright damages two or more foes with an ability, they gain 1 Aether after the ability resolves."
             }
         ],
         "jobs": [
