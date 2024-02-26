@@ -414,6 +414,144 @@
         "masterdescription":"When Defy Death would expire, you can take a wound to extend the duration by 1 turn. This effect can only be triggered once per combat."
     },
     {
+        "job": "Knave",
+        "name": "Low Blow",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+			{"tag_name": "combo"},
+			{"tag_name": "true strike"}
+        ],
+        "description": "<b>Effect</b>: You may <i>Rush</i> 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>slashed</i>. If they are already slashed, they gain <i>hatred</i> of you.<br><b>Slay</b> or <b>Heroic</b>: You may <i>cure</i> yourself.",
+        "blurb": "Hit them right in the gronch.",
+        "talent1":"Deals bonus damage if your foe is suffering from a status.",
+        "talent2":"<i>Comeback</i>: Gain vigilance +1",
+        "masteryname":"SADIST",
+        "masterdescription":"After this ability resolves, you may <i>Rush</i> 1 and gain 2 <i>vigor</i> for every status your foe is suffering from."
+    },
+    {
+        "job": "Knave",
+        "name": "Provoke",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "<b>Effect</b>: You may <i>Rush</i> 1, then each adjacent foe deals 1 piercing damage to you, as if damaging you with an ability. You then deal 2 damage, once, for each foe that damaged you this way to all adjacent foes, to a maximum of three times.<br><b>Heroic</b>: Affects all foes in range 2.<br><b>Slay</b>: Then, you may shove all affected foes 1 towards or away from you.",
+        "blurb": "You drop your guard, and wait for foes to take the bait.",
+        "talent1":"If this ability only affects one foe, they gain <i>hatred</i> of you.",
+        "talent2":"You can <i>sacrifice</i> 2 after this ability resolves to deal 2 damage again to all adjacent foes.",
+        "masteryname":"STORM OF FURY",
+        "masterdescription":"Before dealing each instance of damage, you may <i>rush</i> 1."
+    },
+    {
+        "job": "Knave",
+        "name": "Revenge",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Gain <i>unstoppable</i> and <i>counter</i> until the end of your next turn<br><b>Slay</b> or <b>Heroic</b>: While this ability’s effect is active, you can <i>rush</i> 1 as an effect if you are damaged by a foe’s ability, but no more than once a turn.",
+        "blurb": "",
+        "talent1":"While this ability’s effect is active, attacks against adjacent allies gain +1 curse",
+        "talent2":"You may <i>sacrifice</i> 4 to gain or lose a combo token after using any version of this ability.",
+        "masteryname":"IRON MAIDEN",
+        "masterdescription":"Also gains <b>effect</b>: until the end of your next turn, immediately after you activate vigilance, deal 2 damage to all adjacent foes."
+    },
+    {
+        "job": "Knave",
+        "name": "Riposte",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "stance"},
+			{"tag_name": "gamble"}
+        ],
+        "description": "<b>Stance</b>: When you enter this stance or when it refreshes, gain the following interrupt until the start of your next turn:<br><b>Refresh</b>: Refresh this stance when a foe damages you or an adjacent ally with an ability.<br><b>Heroic</b>: Also gain vigor equal to your gamble result after this ability resolves.",
+        "blurb": "When you come at a knave, you best not miss.",
+        "talent1":"You can also <i>sacrifice</i> 2 to roll 1 more d6 while gambling.",
+        "talent2":"<i>Comeback</i>: Gain vigilance +1 after Riposte resolves.",
+        "masteryname":"STRONG LEFT",
+        "masterdescription":"Refresh Riposte at the start of your turn. Uses of Dire Parry can stack up to 3 times, and you can bank these uses."
+    },
+    {
+        "job": "Knave",
+        "name": "Dark Knight",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "stance"}
+        ],
+        "description": "<b>Stance</b>: While in this stance:<ul><li>You gain <i>hatred</i>+ of the closet foe to you at the start of your turn or when you enter this stance. If multiple foes are equidistant, you may choose.</li><li>You are <i>sturdy</i></li><li>You gain vigilance +1 at the end of your turn</li></ul><b>Heroic</b>: On entering this stance, you may gain 2 vigor per status affecting you, including from this stance.<br><b>Refresh</b>: You may refresh or exit this stance at the start of your turn",
+        "blurb": "You give into the heat of battle, becoming a creature of violence and instinct.",
+        "talent1":"You may <i>rush</i> 2 towards your hated foe at the start of their turn, but only once a round.",
+        "talent2":"While in this stance, you have <i>regeneration</i>.",
+        "masteryname":"INFECTIOUS HATRED",
+        "masterdescription":"While in Dark Knight, you have Aura 1. Foes that end their turn in the aura must save or gain <i>hatred</i> of you."
+    },
+    {
+        "job": "Knave",
+        "name": "Strongarm",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "<b>Effect</b>: Shove an adjacent foe in a full circle either clockwise or counter clockwise through each space around you, <i>phasing</i> through characters. Stop and <i>collide</i> if your foe would hit an obstruction.<br><b>Effect</b>: Your foe takes 2 damage once for each foe or ally they pass through, to a maximum of 3 times, and those characters are shoved 1. Then, shove your foe 1.<br><b>Collide</b>: Foes are <i>weakened</i>.<br><b>Heroic</b>: Shove your foe 1 space, then 1 additional space for every character they passed through instead, to a maximum of 4 extra spaces.",
+        "blurb": "Grappling is a common and brutal strategy among the knaves, who will happily hurl their foes into trees, rocks, or their own allies.",
+        "talent1":"<i>Comeback</i>: this ability gains range 2. Remove your target and place them into adjacency before activating this effect.",
+        "talent2":"During the spin, you can cause your target to take damage and <i>phase</i> through objects the same way as characters, though those objects are not shoved.",
+        "masteryname":"PERFECT STRONGARM",
+        "masterdescription":"Perform two full circles instead, and you may rush 2 before the second circle."
+    },
+    {
+        "job": "Knave",
+        "name": "Intimidate",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "mark"}
+        ],
+        "description": "<b>End your turn</b> and <b>Mark</b>: Choose a foe at or further away than range 4.<br><b>Effect</b>: Each time that foe damages you or an ally with an ability, you may <i>rush</i> 1, ending closer to them if possible, then you may shove any adjacent character 1. This effect can activate any number of times. If you start your turn adjacent to your marked foe, deal fray damage to them, <i>stun</i> them, and then this mark ends. You may also end it at the start of your turn.<br><b>Heroic</b>: Choose a foe at or further away than range 2.",
+        "blurb": "Swatting interlopers out of the way, you make it your personal vendetta to make someone’s day as miserable as possible.",
+        "talent1":"<i>Comeback</i>: Rush 2 instead",
+        "talent2":"Your foe also takes 2 damage, once, for every status they are afflicted by when intimidate’s stun triggers, up to a maximum of three times.",
+        "masteryname":"IRON SKULL",
+        "masterdescription":"After Intimidate’s stun triggers, also become <i>unstoppable</i> until the end of your next turn."
+    },
+    {
+        "job": "Knave",
+        "name": "Sucker Punch",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: An enemy adjacent to you rolls a save and you see the result<br><b>Effect</b>: The enemy must re-roll the save, keeping the second result.<br><b>Heroic</b>: The character rolls the new save with +1 curse",
+        "blurb": "There’s nothing that can’t be solved with the liberal application of fists to faces.",
+        "talent1":"You can <i>sacrifice</i> 2 after using this interrupt to immediately regain it.",
+        "talent2":"<i>Comeback</i>: This ability is interrupt 2.",
+        "masteryname":"STRONG RIGHT",
+        "masterdescription":"You can <i>rush</i> 2 before activating sucker punch, it triggers from within range 2, and you may give it shove 1."
+    },
+    {
+        "job": "Knave",
+        "name": "Bleak Mercy",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"},
+			{"tag_name": "melee"},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Bleak Mercy gains <i>true strike</i> and ignores defiance, armor, and vigor if its target is suffering from 3 or more statuses. <b>Slay</b> or <b>Heroic</b>: <i>Cure</i> yourself, then shove all foes in range 2 1 space in any direction.",
+        "blurb": "Crush your foes and see them driven before you.",
+        "talent1":"Against characters at 25% hp or lower, this ability cannot miss (turn any miss into a hit).",
+        "talent2":"This ability gains range 2 against characters 25% hp or lower and you may rush 2 before using it against those characters.",
+        "masteryname":"PAINKILLER",
+        "masterdescription":"Once gained, Sweet Torment’s aura lasts indefinitely. If you use Sweet Torment again while the aura is active, deal 2 damage, once, to all foes in the aura within for every status they are suffering from, to a maximum of three times."
+    },
+    {
         "job": "Sealer",
         "name": "Godly Smite",
         "chapter": 1,
