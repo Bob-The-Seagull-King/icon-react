@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 import abilityData from '../resources/data/ability.json';
 import AbilityDisplay from '../components/AbilityDisplay'
@@ -43,7 +44,7 @@ const TraitsDisplay = (props: any) => {
     // Return render -------------------------------
     return (
         <div>
-            <h1 style={{color: getColour(job)}}>Traits</h1>
+            <h1 className={'titleShape title'+getColour(job)}>Traits</h1>
             <div>
             {traitsData.map((item: any) => (
                     <div key={item.name}>

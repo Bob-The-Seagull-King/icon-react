@@ -25,11 +25,26 @@
         box-shadow: 0 0 10px 2px #CCC;
     }
 }
+
 .abilityStructure {
     border-radius: 1em;
     opacity: 0.8;
     box-shadow: 0 0 5px 1px #CCC;
     max-width: 25em;
+    padding: 2em;
+    padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.jobStructure {
+    border-radius: 1em;
+    opacity: 0.8;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 45em;
     padding: 2em;
     padding-bottom:0.01%;
     text-align: justify;
@@ -56,6 +71,13 @@
 .titleShape {
     padding: 0%;
     margin: 0%;
+    text-align: left;
+}
+
+.megatitleShape {
+    padding: 0%;
+    margin: 0%;
+    font-size: 4em;
 }
 // -------------------------------------------------
 
@@ -148,5 +170,23 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding-left: 1em;
+}
+
+.centerPosition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.jobFeaturePosition {
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+}
+
+.jobFeature {
+    width: 50%;
+    padding:2%;
 }
 // -------------------------------------------------

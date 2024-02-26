@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 import SummonDisplay from '../components/SummonDisplay'
 import TraitsDisplay from '../components/TraitsDisplay'
@@ -45,11 +46,12 @@ const JobDisplay = (props: any) => {
     function summonStructure() {
         if (summonAddonArray.length > 0) {
             return (
-            <div>
-                <h1 style={{color: getColour(jobData.name)}}>Summons</h1>
+            <div className='jobFeature' >
+                <h1 className={'titleShape title'+getColour(jobData.name)}>Summons</h1>
                 <div>
                     {summonAddonArray.map((item) => (
-                    <div key={item.name} style={{paddingLeft: "10%", paddingRight: "10%"}} >
+                    <div key={item.name}>
+                        <br/>
                         <SummonDisplay data={item}/>
                     </div>
                     ))}
@@ -62,16 +64,31 @@ const JobDisplay = (props: any) => {
 
     // Return result -------------------------------
     return (
-        <div>
-            <h1 style={{color: getColour(jobData.name), fontSize: '3em'}}>{capitalizeTag( jobData.name )}</h1>
-            <h3><b>{jobData.tagline}</b></h3>
+        <div className='jobStructure'>
+            <div className='centerPosition'>
+                <h1 className={'megatitleShape title'+getColour(jobData.name)}>{capitalizeTag( jobData.name )}</h1>
+            </div>
+            <div className='centerPosition'>
+                <h3><b>{jobData.tagline}</b></h3>
+            </div>
             <p><i><span dangerouslySetInnerHTML={{__html: (jobData.description || '')}}/></i></p>
-            <JobPlaystyleDisplay key={jobData.name + "Playstyle"} data={jobData}/>
-            <TraitsDisplay key={jobData.name + "Traits"} data={jobData}/>
-            <LimitBreakDisplay key={jobData.name + "LimitBreak"} data={jobData}/>
-            <span>
+
+            <div className='jobFeaturePosition'>
+                <div  className='jobFeature'>
+                    <JobPlaystyleDisplay key={jobData.name + "Playstyle"} data={jobData}/>
+                </div>
+                <div  className='jobFeature'>
+                    <TraitsDisplay className='jobFeature' key={jobData.name + "Traits"} data={jobData}/>
+                </div>
+            </div>
+            
+            <div className='jobFeaturePosition'>
+                <div  className='jobFeature'>
+                <LimitBreakDisplay className='jobFeature' key={jobData.name + "LimitBreak"} data={jobData}/>
+                </div>
                 {summonStructure()}
-            </span>
+            </div>
+            <br/>
         </div>
     )
     // ---------------------------------------------

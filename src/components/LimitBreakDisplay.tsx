@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 import addonData from '../resources/data/abilityaddon.json';
 import AddonDisplay from '../components/AddonDisplay'
@@ -119,7 +120,7 @@ const LimitBreakDisplay = (props: any) => {
     // Return render -------------------------------
     return (
         <div>
-            <h1 style={{color: getColour(limitBreakData.name)}}>LIMIT BREAK: {limitBreakData.limitbreak.name.toUpperCase()}</h1>
+            <h1 className={'titleShape title'+getColour(limitBreakData.name)}>LIMIT BREAK: {limitBreakData.limitbreak.name.toUpperCase()}</h1>
             
             <p>{tagsArray}</p>
             <span><i><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.blurb || '')}}/></i></span>
@@ -127,14 +128,14 @@ const LimitBreakDisplay = (props: any) => {
             
             <div>
                 {abilityAddonArray.map((item) => (
-                <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
+                <div key={item.name} className='abilityAddonPosition'>
                     <AddonDisplay data={item}/>
                 </div>  
                 ))}
             </div>
             <div>
                 {summonAddonArray.map((item) => (
-                <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
+                <div key={item.name} className='abilityAddonPosition' >
                     <SummonDisplay data={item}/>
                 </div>
                 ))}
@@ -144,7 +145,7 @@ const LimitBreakDisplay = (props: any) => {
                 <div><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.ultimate.desc || '')}}></p></div>
                 <div>
                     {masteryAddonArray.map((item) => (
-                    <div key={item.name} style={{paddingLeft: "20%", paddingRight: "20%"}} >
+                    <div key={item.name} className='abilityAddonPosition'>
                         <AddonDisplay data={item}/>
                     </div>
                     ))}

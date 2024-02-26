@@ -730,7 +730,7 @@
                 ],
                 "limitbreak": {
                     "name": "Gigaflare",
-                    "blurb":"I, who stand at the apex of things, <br/><br/> Thou, who are in the deepest pits of despair, <br/><br/> Let thy very bones become ash! <br/><br/> O Flame, let the air become death! <br/><br/> Ignite, and be banished to Hell!",
+                    "blurb":"I, who stand at the apex of things,<br/> Thou, who are in the deepest pits of despair, <br/> Let thy very bones become ash! <br/> O Flame, let the air become death! <br/> Ignite, and be banished to Hell!",
                     "description": "<b>Effect:</b> You summon the eldflame, the primeval force of creation, dealing [D]+Fray <i>divine</i> damage to <i>every</i> character, on the battlefield, ignoring line of sight. Characters in range 2 of you are exempt from this ability.",
                     "tags":[
                         {"tag_name": "resolve", "val": 4}, 
@@ -776,7 +776,7 @@
                 ],
                 "limitbreak": {
                     "name": "Cataclysm",
-                    "blurb":"I, protected by the holy trigram,<br/><br/>Summon the ten thousand molten metal kings.<br/><br/>Run amok with thy furies, and rend the immortal stone,<br/><br/>Turn Heaven and Earth!",
+                    "blurb":"I, protected by the holy trigram,<br/>Summon the ten thousand molten metal kings.<br/>Run amok with thy furies, and rend the immortal stone,<br/>Turn Heaven and Earth!",
                     "description": "<b>Effect: End your turn.</b> You dive into the earth and off the battlefield. Remove yourself from play. Target a line area 3 spaces wide from one side of the battlefield to the next. Then gain <b>Delay:</b> Your next turn must be slow. At the start of that turn, you cause a rolling wave of earth to sweep across this area, from one side to the next. Characters within tak [D] + fray as an effect and are shoved 1 in the direction of the line.<br/><br/><b>Effect:</b> After the first effect resolves, all objects in the area release an explosion for a medium blast area effect centered on them, dealing [D] + Fray as an area effect. Characters hit by two or more explosions take 2[D] + Fray instead.<br/><br/>When this ability resolves, place yourself in any unoccupied space in the area.",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
@@ -820,7 +820,7 @@
                 ],
                 "limitbreak": {
                     "name": "Gran Levincross",
-                    "blurb":"I summon thee, bloody gods of the cutting art, <br/><br/>Let the might of the divine realm crash upon the piteous earth,<br/><br/>Strike eighty thousand blows at once,<br/><br/>And split the air asunder!",
+                    "blurb":"I summon thee, bloody gods of the cutting art, <br/>Let the might of the divine realm crash upon the piteous earth,<br/>Strike eighty thousand blows at once,<br/>And split the air asunder!",
                     "description": "<b>Effect:</b> Your blade extends and you make two massive cuts across the map, splitting the walls between words. Draw a cross section across the map, splitting it into four sections of any size. Deal [D] + Fray <i>divine</i> damage to all characters caught in the cross, then remove all characters out of the affected area and place them in the nearest free space of your choice. Characters can pass a save to choose which side they end up on.<br/><br/>The affected area becomes a crackling wall of lightning that does not block line of sight, but blocks all movement except teleporting. This effect ends at the end of the next round.<br/><br/>Allies can use a <i>free action</i> to teleport across the wall from an adjacent space, placing them on the closest adjacent space on the other side.<br/><br/>If any version of this ability has no valid space in which to teleport a character to, still deal damage, but this ability doesn't create the lightning wall.",
                     "tags":[
                         {"tag_name": "action", "val": 2}, 
@@ -864,7 +864,7 @@
                 ],
                 "limitbreak": {
                     "name": "Elemental",
-                    "blurb":"On account of the magic that is in my body,<br/><br/>Turn aside, detested of Sea and Storm,<br/><br/>Thou wretch, go with thy face diverted!<br/><br/>I call the elements into the temple of my body.<br/><br/>Be scattered like dust, and feed the wind!",
+                    "blurb":"On account of the magic that is in my body,<br/>Turn aside, detested of Sea and Storm,<br/>Thou wretch, go with thy face diverted!<br/>I call the elements into the temple of my body.<br/>Be scattered like dust, and feed the wind!",
                     "description": "<b>Effect:</b> You take on a fearsome elemental form, gaining the following benefits for the rest of combat:<ul><li>You gain flying and phasing.</li><li>You release aura 2 around you. The area is a <i>terrain</i> effect that moves with you that is <i>difficult</i> and <i>dangerous</i> terrain for foes, and allies gain <i>cover</i> from all directions in the area.</li><li>You can share space with characters. You have <i>resistance</i> to any character sharing your space, and allies have <i>resistance</i> while sharing your space</li></ul>",
                     "tags":[
                         {"tag_name": "action", "val": 0}, 

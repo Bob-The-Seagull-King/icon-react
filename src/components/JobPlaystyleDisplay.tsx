@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 import addonData from '../resources/data/abilityaddon.json';
 import AddonDisplay from '../components/AddonDisplay'
@@ -16,7 +17,7 @@ const JobPlaystyleDisplay = (props: any) => {
     // Return result -------------------------------
     return (
         <div>
-            <h1 style={{color: getColour(jobPlaystyleData.name)}}>Playstyle</h1>
+            <h1 className={'titleShape title'+getColour(jobPlaystyleData.name)}>Playstyle</h1>
             <span dangerouslySetInnerHTML={{__html: (jobPlaystyleData.playstyle || '')}}/>
         </div>
     )
