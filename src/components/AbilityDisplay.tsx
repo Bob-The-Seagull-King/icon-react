@@ -2,6 +2,7 @@ import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
 import '../styles/iconcomponent.scss';
+import { useNavigate } from "react-router-dom";
 
 import addonData from '../resources/data/abilityaddon.json';
 import AddonDisplay from '../components/AddonDisplay'
@@ -137,6 +138,12 @@ const AbilityDisplay = (props: any) => {
     }
     // ---------------------------------------------
 
+    // Navigation ----------------------------------
+    function navClick (dir: string, name: string) {    
+        window.open(location.protocol + '//' + location.host +'/' + dir + '/'+ name, '_blank', 'noopener,noreferrer');
+    }
+    // ---------------------------------------------
+
     // Return result -------------------------------
     return (
         <div className='abilityStructure'>
@@ -153,7 +160,7 @@ const AbilityDisplay = (props: any) => {
             </div>
             <div>
                 {summonAddonArray.map((item) => (
-                <div key={item.name}  className='abilityAddonPosition'>
+                <div key={item.name}  onClick={() => navClick('summon', item.name)}   className='abilityAddonPosition'>
                     <SummonDisplay className='abiltyAddonSize' data={item}/>
                 </div>
                 ))}

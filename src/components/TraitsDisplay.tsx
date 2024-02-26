@@ -2,6 +2,7 @@ import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
 import '../styles/iconcomponent.scss';
+import { useNavigate } from "react-router-dom";
 
 import abilityData from '../resources/data/ability.json';
 import AbilityDisplay from '../components/AbilityDisplay'
@@ -34,10 +35,18 @@ const TraitsDisplay = (props: any) => {
         return (
             <div className='abilityAddonPosition'>
             {addonArray.map((item:any) => (
-                <AbilityDisplay key={item.name} data={{values:item, _talents:3, _mastery:true}}/>
+                <div onClick={() => navClickAbility(item.name)} key={item.name}>
+                    <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
+                </div>
                 ))}
             </div>
         )
+    }
+    // ---------------------------------------------
+
+    // Navigation ----------------------------------
+    function navClickAbility (name: string) {    
+        window.open(location.protocol + '//' + location.host +'/ability/'+name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 

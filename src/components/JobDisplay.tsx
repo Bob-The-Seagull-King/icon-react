@@ -2,6 +2,7 @@ import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag } from '../utility/functions';
 import '../styles/iconcomponent.scss';
+import { useNavigate } from "react-router-dom";
 
 import SummonDisplay from '../components/SummonDisplay'
 import TraitsDisplay from '../components/TraitsDisplay'
@@ -50,7 +51,7 @@ const JobDisplay = (props: any) => {
                 <h1 className={'titleShape title'+getColour(jobData.name)}>Summons</h1>
                 <div>
                     {summonAddonArray.map((item) => (
-                    <div key={item.name}>
+                    <div key={item.name} onClick={() => navClickSummon(item.name)}>
                         <br/>
                         <SummonDisplay data={item}/>
                     </div>
@@ -61,6 +62,12 @@ const JobDisplay = (props: any) => {
         }
     }
     // --------------------------------------------
+
+    // Navigation ----------------------------------
+    function navClickSummon (name: string) {    
+        window.open(location.protocol + '//' + location.host +'/summon/'+name, '_blank', 'noopener,noreferrer');
+    }
+    // ---------------------------------------------
 
     // Return result -------------------------------
     return (

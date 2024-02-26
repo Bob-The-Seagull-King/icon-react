@@ -2,6 +2,7 @@ import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag } from '../utility/functions';
 import '../styles/iconcomponent.scss';
+import { useNavigate } from "react-router-dom";
 
 import JobDisplay from '../components/JobDisplay'
 import AbilityDisplay from '../components/AbilityDisplay'
@@ -87,6 +88,18 @@ const JobDisplayFull = (props: any) => {
     }
     // --------------------------------------------
 
+    // Navigation ----------------------------------
+    function navClickAbility (name: string) {    
+        window.open(location.protocol + '//' + location.host +'/ability/'+name, '_blank', 'noopener,noreferrer');
+    }
+    // ---------------------------------------------
+
+    // Navigation ----------------------------------
+    function navClickSummon (name: string) {    
+        window.open(location.protocol + '//' + location.host +'/summon/'+name, '_blank', 'noopener,noreferrer');
+    }
+    // ---------------------------------------------
+
     // Return result ------------------------------
     return (
         <div className='jobcontainer'>
@@ -98,7 +111,7 @@ const JobDisplayFull = (props: any) => {
                 <h2>Chapter 1:</h2>
                 <div className='abilityContainer'>
                     {abilityChapter1.map((item) => (
-                    <div className='gridItem' key={item.name + "ability"}  >
+                    <div className='gridItem' onClick={() => navClickAbility(item.name)} key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
                     </div>
                     ))}
@@ -106,7 +119,7 @@ const JobDisplayFull = (props: any) => {
                 <h2>Chapter 2:</h2>
                 <div className='abilityContainer'>
                     {abilityChapter2.map((item) => (
-                    <div className='gridItem' key={item.name + "ability"}  >
+                    <div className='gridItem' onClick={() => navClickAbility(item.name)} key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
                     </div>
                     ))}
@@ -117,7 +130,7 @@ const JobDisplayFull = (props: any) => {
                 </div>
                 <div className='abilityContainer'>
                     {abilityChapter3.map((item) => (
-                    <div className='gridItem' key={item.name + "ability"}  >
+                    <div className='gridItem' onClick={() => navClickAbility(item.name)} key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
                     </div>
                     ))}
