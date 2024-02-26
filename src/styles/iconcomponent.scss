@@ -80,7 +80,7 @@
     border-radius: 1em;
     opacity: 0.8;
     box-shadow: 0 0 5px 1px #CCC;
-    max-width: 66%;
+    max-width: 75%;
     padding: 2em;
     padding-bottom:0.01%;
     text-align: justify;
@@ -88,6 +88,10 @@
     &:hover {
         box-shadow: 0 0 10px 2px #CCC;
     }
+}
+
+.classjobStructure {
+    max-width: 75%;
 }
 
 .statsStructure {
@@ -223,6 +227,7 @@
     justify-content: space-evenly; 
     grid-template-columns: 50% 50%;
     grid-auto-flow: row;
+    
 }
 
 .classContainer { 
@@ -265,6 +270,14 @@
     width: 100%;
 }
 
+
+
+.gridjobItem { 
+    width: 100%;
+    display: grid; 
+    place-items: center;
+}
+
 .jobFeaturePosition {
     display: flex;
     padding: 0%;
@@ -280,7 +293,7 @@
     padding: 1em;
 }
 
-.class2Feature {
-    padding: 2em;
+.classjobFeature {
+    margin: 10em;
 }
 // -------------------------------------------------

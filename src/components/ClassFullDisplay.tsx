@@ -1,8 +1,9 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag } from '../utility/functions';
+import { useNavigate } from "react-router-dom";
 
-import JobFullDisplay from '../components/JobFullDisplay'
+import JobDisplay from '../components/JobDisplay'
 import ClassDisplay from '../components/ClassDisplay'
 
 const ClassFullDisplay = (props: any) => {
@@ -10,14 +11,28 @@ const ClassFullDisplay = (props: any) => {
     const classData = props.data;
     // ---------------------------------------------
 
+    // Navigation ----------------------------------
+    function navClickJob (name: string) {    
+        window.open(location.protocol + '//' + location.host +'/job/'+name, '_blank', 'noopener,noreferrer');
+    }
+    // ---------------------------------------------
+
     // Return result -------------------------------
     return (
         <div>
-            <ClassDisplay key={classData.name + "base"} data={classData}/>
-            <div style={{paddingLeft: "10%", paddingRight: "10%"}}>
-            {classData.jobs.map((item: any) => (
-                    <JobFullDisplay key={item.name + "job"} data={item}/>
-                    ))}
+            <div className='centerPosition'>
+                <ClassDisplay key={classData.name + "base"} data={classData}/>
+            </div>
+            <br/>
+            <div className='gridjobItem'>
+                <div className='classjobStructure'>
+                    <div className='abilityContainer'>
+                    {classData.jobs.map((item: any) => (
+                        <div key={item.name + "job"} onClick={() => navClickJob(item.name)} className='gridItem'>
+                            <JobDisplay   data={item}/>
+                        </div>))}
+                    </div>
+                </div>
             </div>
         </div>
     )
