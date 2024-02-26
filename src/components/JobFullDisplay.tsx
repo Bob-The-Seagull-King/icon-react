@@ -94,35 +94,31 @@ const JobDisplayFull = (props: any) => {
                 <JobDisplay key={jobData.name} data={jobData}/>
             </div>
             <div className='jobitemb'>
-                <h1 style={{color: getColour(jobData.name)}}>Abilities:</h1>
+                <h1 className={'titleShape title'+getColour(jobData.name)}>Abilities:</h1>
                 <h2>Chapter 1:</h2>
-                <div>
+                <div className='abilityContainer'>
                     {abilityChapter1.map((item) => (
-                    <div key={item.name + "ability"}  >
+                    <div className='gridItem' key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
-                        <br/>
                     </div>
                     ))}
                 </div>
                 <h2>Chapter 2:</h2>
-                <div>
+                <div className='abilityContainer'>
                     {abilityChapter2.map((item) => (
-                    <div key={item.name + "ability"}  >
+                    <div className='gridItem' key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
-                        <br/>
                     </div>
                     ))}
                 </div>
                 <h2>Chapter 3:</h2>
-                <div>
+                <div className='bonustraitStructure gridItem'>
                     <p><b>{jobData.ultimatetrait.name}{tagReturn()}: </b><span dangerouslySetInnerHTML={{__html: (jobData.ultimatetrait.description || '')}} /></p>
-                        <br/>
                 </div>
-                <div>
+                <div className='abilityContainer'>
                     {abilityChapter3.map((item) => (
-                    <div key={item.name + "ability"}  >
+                    <div className='gridItem' key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
-                        <br/>
                     </div>
                     ))}
                 </div>

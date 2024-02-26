@@ -1,27 +1,5 @@
 // Basic Shape and Structure -----------------------
-.jobcontainer {
-    display: grid;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
 
-.jobitema { 
-    padding: 1em;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.jobitemb { 
-    padding: 1em;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
 
 .summonStructure {
     border-radius: 1em;
@@ -35,6 +13,10 @@
     &:hover {
         box-shadow: 0 0 10px 2px #CCC;
     }
+}
+
+.gridItem {
+    margin: 0.5em;
 }
 
 .relicStructure {
@@ -56,8 +38,23 @@
     opacity: 0.8;
     box-shadow: 0 0 5px 1px #CCC;
     max-width: 25em;
-    padding: 2em;
+    padding: 1em;
     padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.bonustraitStructure {
+    border-radius: 1em;
+    opacity: 0.8;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 50%;
+    padding: 1em;
+    padding-bottom:0.01%;
+    padding-top:0.01%;
     text-align: justify;
 
     &:hover {
@@ -190,6 +187,39 @@
 // -------------------------------------------------
 
 // Component positioning ---------------------------
+.jobcontainer {
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 50% 50%;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 1em;
+}
+
+.abilityContainer { 
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: row;
+}
+
+.jobitema { 
+    padding:0.5em;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.jobitemb { 
+    padding:0.5em;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
 .abilityAddonPosition {
     display: flex;
     align-items: flex-end;
