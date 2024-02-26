@@ -631,7 +631,7 @@
         "talent1":"If a foe is struck by two or more soul embers from this ability in the same turn, they become <i>vulnerable</i>.",
         "talent2":"Foes that end their turn adjacent to you while Soul Burn is active take 1 piercing damage are shoved 1.",
         "masteryname": "Soul Spark",
-        "masterdescription":"<b>Free Action:</i> You can willingly siphon off your burning life force to empower your next ability <i>sacrificing 4</i>, then ending the stance.<br/>The ability deals <i>bonus damage</i>, cannot miss (turn any attack miss into a hit), activates all <i>exceed</i> effects, and foes gain <i>+1 curse</i> on any saves."
+        "masterdescription":"<b>Free Action:</b> You can willingly siphon off your burning life force to empower your next ability <i>sacrificing 4</i>, then ending the stance.<br/>The ability deals <i>bonus damage</i>, cannot miss (turn any attack miss into a hit), activates all <i>exceed</i> effects, and foes gain <i>+1 curse</i> on any saves."
     },
     {
         "job": "Enochian",
