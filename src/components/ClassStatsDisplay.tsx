@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 const ClassStatsDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -9,8 +10,8 @@ const ClassStatsDisplay = (props: any) => {
 
     // Return result -------------------------------
     return (
-        <div>
-            <h1 style={{color: getColour(classStatsData.name)}}>Class Statistics</h1>
+        <div className='statsStructure'>
+            <h1 className={'titleShape title'+getColour(classStatsData.name)}>Class Statistics</h1>
             <p><b>VIT:</b> {classStatsData.stats.vitality}</p>
             <p><b>HP:</b> {classStatsData.stats.vitality*4}</p>
             <p><b>Defense:</b> {classStatsData.stats.defence}</p>

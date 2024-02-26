@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 import ClassDescriptionDisplay from '../components/ClassDescriptionDisplay'
 import ClassMechanicDisplay from '../components/ClassMechanicDisplay'
@@ -14,13 +15,24 @@ const ClassDisplay = (props: any) => {
 
     // Return result -------------------------------
     return (
-        <div>
-            <h1 style={{color: getColour(classData.name), fontSize: '3em'}}>{capitalizeTag( classData.name )}</h1>
-            <h3><b>{classData.description}</b></h3>
-            <ClassDescriptionDisplay key={classData.name + "description"} data={classData}/>
-            <ClassStatsDisplay key={classData.name + "stats"} data={classData}/>
-            <TraitsDisplay key={classData.name + "traits"} data={classData}/>
-            <ClassMechanicDisplay key={classData.name + "mechanic"} data={classData}/>
+        <div className='classStructure' >
+            <div className='centerPosition'>
+                <h1 className={'megatitleShape title'+getColour(classData.name)}>{capitalizeTag( classData.name )}</h1>
+            </div>
+            <div className='centerPosition'>
+                <h3><b>{classData.description}</b></h3>
+            </div>
+                <ClassDescriptionDisplay key={classData.name + "description"} data={classData}/>
+            <div className='classContainer'>
+                <div className='classFeature'>
+                    <ClassStatsDisplay key={classData.name + "stats"} data={classData}/>
+                    <br/>
+                    <TraitsDisplay key={classData.name + "traits"} data={classData}/>
+                </div>
+                <div className='classFeature'>
+                    <ClassMechanicDisplay key={classData.name + "mechanic"} data={classData}/>
+                </div>
+            </div>
         </div>
     )
     // ---------------------------------------------

@@ -687,7 +687,7 @@
         },
         "mechanic": {
             "name": "Aether",
-            "description": "All Wrights gather <b>Aether</b> during combat, represented by a d6 <b>power die</b>. They passively gain 1 at the start of their turn, starting with 0. Use a d6 to track Aether. Other abilities and <b>Chain Reaction</b> will generate Ather when used. All Aether disperses at the end of combat. <br/><br/> <h3>INFUSE X:</h3> Many wright abilities have upgraded versions that can only be cast by <b>Infusing</b> them by spending X Aether as part of that ability. Aether is consumed at the start of the action. Only one infusion can be chosen at once, and only once infuse effect can trigger at a time. <br/><br/> Infused abilities count as the same ability as the base ability and also benefit from all talents.",
+            "description": "All Wrights gather <b>Aether</b> during combat, represented by a d6 <b>power die</b>. They passively gain 1 at the start of their turn, starting with 0. Use a d6 to track Aether. Other abilities and <b>Chain Reaction</b> will generate Ather when used. All Aether disperses at the end of combat. <br/> <h3>INFUSE X:</h3> Many wright abilities have upgraded versions that can only be cast by <b>Infusing</b> them by spending X Aether as part of that ability. Aether is consumed at the start of the action. Only one infusion can be chosen at once, and only once infuse effect can trigger at a time. <br/><br/> Infused abilities count as the same ability as the base ability and also benefit from all talents.",
             "gambit": "If you take a Wright ability as a non-wright class, you get <b>Aether</b> and <b>Chain Reaction</b>."
         },
         "traits": [

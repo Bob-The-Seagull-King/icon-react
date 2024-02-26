@@ -76,6 +76,27 @@
     }
 }
 
+.classStructure {
+    border-radius: 1em;
+    opacity: 0.8;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 66%;
+    padding: 2em;
+    padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.statsStructure {
+    p {
+        margin: 0.25em;
+        margin-left: 0em;
+      }
+}
+
 .addonStructure {
     border-radius: 1em;
     opacity: 0.8;
@@ -204,6 +225,16 @@
     grid-auto-flow: row;
 }
 
+.classContainer { 
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 50% 50%;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 1em;
+}
+
 .jobitema { 
     padding:0.5em;
     grid-column-start: 1;
@@ -243,5 +274,13 @@
 .jobFeature {
     width: 50%;
     padding:2%;
+}
+
+.classFeature {
+    padding: 1em;
+}
+
+.class2Feature {
+    padding: 2em;
 }
 // -------------------------------------------------
