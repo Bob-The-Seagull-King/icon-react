@@ -89,9 +89,11 @@ const JobDisplayFull = (props: any) => {
 
     // Return result ------------------------------
     return (
-        <div className='centerPosition'>
-            <JobDisplay key={jobData.name} data={jobData}/>
-            <div>
+        <div className='jobcontainer'>
+            <div className='jobitema'>
+                <JobDisplay key={jobData.name} data={jobData}/>
+            </div>
+            <div className='jobitemb'>
                 <h1 style={{color: getColour(jobData.name)}}>Abilities:</h1>
                 <h2>Chapter 1:</h2>
                 <div>

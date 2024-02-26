@@ -1,4 +1,28 @@
 // Basic Shape and Structure -----------------------
+.jobcontainer {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.jobitema { 
+    padding: 1em;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.jobitemb { 
+    padding: 1em;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
 .summonStructure {
     border-radius: 1em;
     opacity: 0.8;
@@ -12,6 +36,7 @@
         box-shadow: 0 0 10px 2px #CCC;
     }
 }
+
 .relicStructure {
     border-radius: 1em;
     opacity: 0.8;
