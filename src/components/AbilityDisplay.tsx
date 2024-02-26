@@ -180,6 +180,7 @@ const AbilityDisplay = (props: any) => {
                 }
                 </span>
             }
+            <br/>
         </div>
     )
     // ------------------------------------------

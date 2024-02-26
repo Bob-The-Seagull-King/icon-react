@@ -1,6 +1,7 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag } from '../utility/functions';
+import '../styles/iconcomponent.scss';
 
 import JobDisplay from '../components/JobDisplay'
 import AbilityDisplay from '../components/AbilityDisplay'
@@ -88,37 +89,42 @@ const JobDisplayFull = (props: any) => {
 
     // Return result ------------------------------
     return (
-        <div>
+        <div className='centerPosition'>
             <JobDisplay key={jobData.name} data={jobData}/>
-            <h1 style={{color: getColour(jobData.name)}}>Abilities:</h1>
-            <h2>Chapter 1:</h2>
             <div>
-                {abilityChapter1.map((item) => (
-                <div key={item.name + "ability"} style={{paddingLeft: "10%", paddingRight: "10%"}} >
-                    <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
+                <h1 style={{color: getColour(jobData.name)}}>Abilities:</h1>
+                <h2>Chapter 1:</h2>
+                <div>
+                    {abilityChapter1.map((item) => (
+                    <div key={item.name + "ability"}  >
+                        <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
+                        <br/>
+                    </div>
+                    ))}
                 </div>
-                ))}
-            </div>
-            <h2>Chapter 2:</h2>
-            <div>
-                {abilityChapter2.map((item) => (
-                <div key={item.name + "ability"} style={{paddingLeft: "10%", paddingRight: "10%"}} >
-                    <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
+                <h2>Chapter 2:</h2>
+                <div>
+                    {abilityChapter2.map((item) => (
+                    <div key={item.name + "ability"}  >
+                        <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
+                        <br/>
+                    </div>
+                    ))}
                 </div>
-                ))}
-            </div>
-            <h2>Chapter 3:</h2>
-            <div>
-                <p><b>{jobData.ultimatetrait.name}{tagReturn()}: </b><span dangerouslySetInnerHTML={{__html: (jobData.ultimatetrait.description || '')}} /></p>
-            </div>
-            <div>
-                {abilityChapter3.map((item) => (
-                <div key={item.name + "ability"} style={{paddingLeft: "10%", paddingRight: "10%"}} >
-                    <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
+                <h2>Chapter 3:</h2>
+                <div>
+                    <p><b>{jobData.ultimatetrait.name}{tagReturn()}: </b><span dangerouslySetInnerHTML={{__html: (jobData.ultimatetrait.description || '')}} /></p>
+                        <br/>
                 </div>
-                ))}
+                <div>
+                    {abilityChapter3.map((item) => (
+                    <div key={item.name + "ability"}  >
+                        <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
+                        <br/>
+                    </div>
+                    ))}
+                </div>
             </div>
-
         </div>
     )
     // ---------------------------------------------
