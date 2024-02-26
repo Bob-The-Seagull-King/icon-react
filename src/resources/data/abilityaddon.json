@@ -44,6 +44,42 @@
         "description": "<b>Trigger</b>: You are defeated<br><b>Effect</b>: You fight on, remaining standing at 1 hp and do not become defeated until the end of your next turn, or if combat ends before then. During that time, damage cannot reduce you past 1 hp and you deal bonus damage with all abilities.<br><b>Heroic</b>: Also deal fray damage twice to all adjacent foes."
     },
     {
+        "job": "Knave",
+        "ability": "Low Blow",
+        "name": "The Hook",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "Gains <b>range 2</b> and <b>effect</b>: Shove character 1 towards you."
+    },
+    {
+        "job": "Knave",
+        "ability": "Revenge",
+        "name": "Indignation",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "Gains <i>True Strike</i> and replace the base effect with <b>effect</b>: gain +1 vigilance for every status your foe is suffering from, to a maximum of three times, then gain <i>counter</i> until the end of your next turn."
+    },
+    {
+        "job": "Knave",
+        "ability": "Riposte",
+        "name": "Dire Parry",
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: A foe targets an ally in range 2 with an ability.<br><b>Effect</b>: <i>Gamble</i>, then deal that much damage to your foe. On a 6, they are also <i>slashed</i> and shoved 1. If you have vigilance, you can spend any number of vigilance charges when gambling to roll one extra d6 per charge spent."
+    },
+    {
+        "job": "Knave",
+        "ability": "Bleak Mercy",
+        "name": "Sweet Torment",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "As above, but replace the base effect with <b>Effect</b>: until the end of your next turn, gain aura 1. Foes in the aura cannot be <i>cured</i> and cannot save to clear statuses."
+    },
+    {
         "job": "Enochian",
         "ability": "Gigaflare",
         "name": "Tetraflare",
