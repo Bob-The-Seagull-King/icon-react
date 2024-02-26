@@ -564,7 +564,7 @@
                         {"tag_name": "action", "val": 2},
                         {"tag_name": "uses", "val": "(1/expedition)"}
                     ],
-                    "description": "You call upon your power to forbid the natural order of lfie and death from working. Until the start of your next turn, characters cannot be reduced below 1 hp. <i>Divine</i> damage bypasses this ability."
+                    "description": "You call upon your power to forbid the natural order of life and death from working. Until the start of your next turn, characters cannot be reduced below 1 hp. <i>Divine</i> damage bypasses this ability."
                 }
             },
             {

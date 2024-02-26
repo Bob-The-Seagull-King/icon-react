@@ -113,7 +113,7 @@ const JobDisplayFull = (props: any) => {
                 </div>
                 <h2>Chapter 3:</h2>
                 <div className='bonustraitStructure gridItem'>
-                    <p><b>{jobData.ultimatetrait.name}{tagReturn()}: </b><span dangerouslySetInnerHTML={{__html: (jobData.ultimatetrait.description || '')}} /></p>
+                    <p><b>{jobData.ultimatetrait.name}: {tagReturn()} </b><span dangerouslySetInnerHTML={{__html: (jobData.ultimatetrait.description || '')}} /></p>
                 </div>
                 <div className='abilityContainer'>
                     {abilityChapter3.map((item) => (

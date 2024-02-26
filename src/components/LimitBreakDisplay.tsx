@@ -141,7 +141,7 @@ const LimitBreakDisplay = (props: any) => {
                 ))}
             </div> 
             <span>
-                <h2>Mastery: {capitalizeTag(limitBreakData.limitbreak.ultimate.name)}</h2>
+                <h2>Ultimate: {capitalizeTag(limitBreakData.limitbreak.ultimate.name)}</h2>
                 <div><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.ultimate.desc || '')}}></p></div>
                 <div>
                     {masteryAddonArray.map((item) => (

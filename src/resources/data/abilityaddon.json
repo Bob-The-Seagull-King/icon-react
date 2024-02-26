@@ -140,7 +140,7 @@
             {"tag_name": "blast", "val": "large"},
             {"tag_name": "attack"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b>Create a pit under your attack target.<b>Effect:</b>After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters.<br/><b>Comeback</b> or <b>Exceed:</b> The are explodes again, dealing 2 piercing damage to all characters."
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b>Create a pit under your attack target.<br/><b>Effect:</b>After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters.<br/><b>Comeback</b> or <b>Exceed:</b> The area explodes again, dealing 2 piercing damage to all characters."
     },
     {
         "job": "Enochian",
