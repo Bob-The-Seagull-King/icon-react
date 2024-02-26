@@ -6,7 +6,7 @@ import '../styles/iconcomponent.scss';
 const AddonDisplay = (props: any) => {
     // Declare Summon Variables --------------------
     const addonData = props.data;
-    const bannedAddonTags = ["slay", "infuse", "mastery"];
+    const bannedAddonTags = ["slay", "infuse", "mastery", "combo"];
     // ---------------------------------------------
 
     // Run evaluations -----------------------------
@@ -22,12 +22,20 @@ const AddonDisplay = (props: any) => {
     function titleReturn() {
         let _title = "";
 
+        if (containsTag(addonData.tags, "combo")) {
+            _title += "Combo"
+        }
+
         if (containsTag(addonData.tags, "slay")) {
             _title += "Slay or "
         }
 
         if (containsTag(addonData.tags, "infuse")) {
-            _title += "Infuse " + getTagValue(addonData.tags, "infuse").toString() + ": "; 
+            _title += "Infuse " + getTagValue(addonData.tags, "infuse").toString(); 
+        }
+
+        if (_title.length > 0) {
+            _title += ": "
         }
 
         _title += addonData.name;
