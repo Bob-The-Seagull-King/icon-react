@@ -80,6 +80,24 @@
         "description": "As above, but replace the base effect with <b>Effect</b>: until the end of your next turn, gain aura 1. Foes in the aura cannot be <i>cured</i> and cannot save to clear statuses."
     },
     {
+        "job": "Fool",
+        "ability": "Chronotemper",
+        "name": "Cheat Time",
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: The start or end of any turn other than yours<br><b>Effect</b>: <i>Gamble</i>, then the marked character dashes a number of spaces equal to the gamble result, 1 space at a time. Each time they finish a dash, they may deal 2 damage to an adjacent foe, but cannot damage the same foe more than once in the same turn."
+    },
+    {
+        "job": "Freelancer",
+        "ability": "Deus Ex Machina",
+        "name": "Divine Intervention",
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: The end of any turn<br><b>Effect</b>: Teleport 2 towards the target or teleport your target 1 towards you. The teleport must end with both of you closer together. Allies can choose whether to take this teleport."
+    },
+    {
         "job": "Enochian",
         "ability": "Gigaflare",
         "name": "Tetraflare",
@@ -172,7 +190,7 @@
             {"tag_name": "width", "val": 3},
             {"tag_name": "attack"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Line of sight can't be blocked by objects, and ignores cover greanted by objects or terrain.<br/><b>Effect:</b> After the ability resolves, every foe or ally in the area explodes, taking 2 piercing damage as an <i>area effect</i>. If you catch at least three foes or allies in the area, every foe or ally in the area takes 2 piercing damage twice instead."
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Line of sight can't be blocked by objects, and ignores cover granted by objects or terrain.<br/><b>Effect:</b> After the ability resolves, every foe or ally in the area explodes, taking 2 piercing damage as an <i>area effect</i>. If you catch at least three foes or allies in the area, every foe or ally in the area takes 2 piercing damage twice instead."
     },
     {
         "job": "Enochian",
