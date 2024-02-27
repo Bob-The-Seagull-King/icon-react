@@ -8,8 +8,6 @@ import { useNavigate } from "react-router-dom";
 import SummonDisplay from '../components/SummonDisplay'
 import RelicDisplay from '../components/RelicDisplay'
 import AbilityDisplay from '../components/AbilityDisplay'
-import JobFullDisplay from '../components/JobFullDisplay'
-import ClassFullDisplay from '../components/ClassFullDisplay'
 import ClassStatsDisplay from '../components/ClassStatsDisplay';
 import LimitBreakDisplay from '../components/LimitBreakDisplay';
 import ClassMechanicDisplay from '../components/ClassMechanicDisplay';
@@ -40,11 +38,12 @@ const BuildPage: React.FC = () => {
     const characterdata: any[] = [];
     const summondata: any[] = [];
     const traitdata: any[] = [];
+    const gambitdata: any[] = [];
 
     parseURL();
     const isValid = validateURL();
     gatherTraits();
-    
+    gatherGambits();s
 
     // Parse URL into Data --------------------------
 
@@ -187,6 +186,31 @@ const BuildPage: React.FC = () => {
         traitdata.push(obj);
     }
 
+    function gatherGambits() {
+        let i = 0;
+        const classes: string[] = [];
+
+        for (i = 0; i < abilitydata.length; i++) {
+            const colour = getColour(abilitydata[i][0].job);
+            if (!classes.includes(colour)) {
+                classes.push(colour);
+            }
+        }
+
+        for (i = 0; i < classes.length; i++) {
+            if (!(classes[i] == getColour(characterdata[0].name))) {
+                let j = 0;
+
+                for (j = 0; j < classData.length; j++) {
+                    console.log(classes[i]);
+                    if (classes[i] == getColour(classData[j].name)) {
+                        gambitdata.push({"name": classData[j].name, "data": classData[j].mechanic});
+                    }
+                }
+            }
+        }
+    }
+
     // -------------------------------------------
 
     // Validate Content --------------------------
@@ -277,7 +301,6 @@ const BuildPage: React.FC = () => {
     }
     function getAbilityData(data: any) {
         if (data[2].toLowerCase() == "y") {
-            console.log('yep');
             return {values:data[0], _talents:data[1], _mastery:true};
         } else {
             return {values:data[0], _talents:data[1], _mastery:false};
@@ -295,6 +318,9 @@ const BuildPage: React.FC = () => {
     function navClickAbility (name: string) {    
         window.open(location.protocol + '//' + location.host +'/ability/'+name, '_blank', 'noopener,noreferrer');
     }
+    function navClickJob (name: string) {    
+        window.open(location.protocol + '//' + location.host +'/job/'+name, '_blank', 'noopener,noreferrer');
+    }
     // ---------------------------------------------
 
     // Return result -----------------------------
@@ -305,7 +331,7 @@ const BuildPage: React.FC = () => {
 
 
                     <div className='pageitema'>
-                    <div className='baseStructure'>
+                    <div className='baseStructure' onClick={() => navClickJob(characterdata[1].name)}>
 
                         <div >
                             <div className='centerPosition'>
@@ -321,6 +347,20 @@ const BuildPage: React.FC = () => {
                                 <ClassStatsDisplay key={characterdata[0].name + "stats"} data={characterdata[0]}/>
                                 <br/>
                                 <ClassMechanicDisplay key={characterdata[0].name + "mechanic"} data={characterdata[0]}/>
+                                
+                                <div>
+                                    
+                                    <div>
+                                        {gambitdata.map((item) => (
+                                        <div key={item.name}>
+                                            <br/>
+                                            <h1 className={'titleShape title'+getColour(item.name)}>{item.name} Gambit:</h1>
+                                            <br/>
+                                            <span dangerouslySetInnerHTML={{__html: (item.data.gambit || '')}}/>
+                                        </div>
+                                        ))}
+                                    </div>
+                                </div>
                             </div>
                             <div className='gridItem'> 
                                 <TraitsDisplay key={characterdata[0].name + "traits"} data={traitdata[0]}/>
