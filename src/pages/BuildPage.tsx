@@ -276,8 +276,12 @@ const BuildPage: React.FC = () => {
         return {values:data[0], tier:data[1]};
     }
     function getAbilityData(data: any) {
-        const mastered = (data[2].toLowerCase == "y");
-        return {values:data[0], _talents:data[1], _mastery:mastered};
+        if (data[2].toLowerCase() == "y") {
+            console.log('yep');
+            return {values:data[0], _talents:data[1], _mastery:true};
+        } else {
+            return {values:data[0], _talents:data[1], _mastery:false};
+        }
     }
     // --------------------------------------------
 
