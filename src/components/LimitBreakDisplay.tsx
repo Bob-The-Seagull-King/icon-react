@@ -11,7 +11,8 @@ import SummonDisplay from '../components/SummonDisplay'
 
 const LimitBreakDisplay = (props: any) => {
     // Declare Summon Variables --------------------
-    const limitBreakData = props.data;
+    const limitBreakData = props.data.values;
+    const ultimateVal = props.data.ultimate;
     const bannedAbilityTags = ["slay", "infuse", "mastery", "trait"];
     // ---------------------------------------------
 
@@ -147,17 +148,20 @@ const LimitBreakDisplay = (props: any) => {
                 </div>
                 ))}
             </div> 
-            <span>
-                <h2>Ultimate: {capitalizeTag(limitBreakData.limitbreak.ultimate.name)}</h2>
-                <div><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.ultimate.desc || '')}}></p></div>
-                <div>
-                    {masteryAddonArray.map((item) => (
-                    <div key={item.name} className='abilityAddonPosition'>
-                        <AddonDisplay data={item}/>
+            {ultimateVal && <div>
+                <span>
+                    <h2>Ultimate: {capitalizeTag(limitBreakData.limitbreak.ultimate.name)}</h2>
+                    <div><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.ultimate.desc || '')}}></p></div>
+                    <div>
+                        {masteryAddonArray.map((item) => (
+                        <div key={item.name} className='abilityAddonPosition'>
+                            <AddonDisplay data={item}/>
+                        </div>
+                        ))}
                     </div>
-                    ))}
-                </div>
-            </span>
+                </span>
+            </div>
+            }
         </div>
     )
     // ---------------------------------------------

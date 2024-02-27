@@ -1,0 +1,82 @@
+// Basic Shape and Structure -----------------------------------
+
+.baseStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    padding: 1em;
+    padding-bottom:0.01%;
+    text-align: justify;
+    width: 100%;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.baseCleanStructure {
+    border-radius: 1em;
+    padding-bottom:0.01%;
+    text-align: justify;
+}
+// -------------------------------------------------------------
+
+
+// Colours -----------------------------------------------------
+
+// -------------------------------------------------------------
+
+
+// Grid Layout -------------------------------------------------
+
+.pagecontainer {
+    display: grid;
+    width: 100%;
+    justify-content: space-evenly; 
+    grid-template-columns: 50% 50%;
+    padding: 1em;
+}
+
+.jobfeaturecontainer {
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 50% 50%;
+    padding: 1em;
+}
+
+.reliccontainer {
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 33% 33% 33%;
+    grid-auto-flow: row;
+}
+
+.abilitycontainer {
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: row;
+}
+
+
+// -------------------------------------------------------------
+
+
+// Grid Items --------------------------------------------------
+
+
+.pageitema { 
+    padding:0.5em;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.pageitemb { 
+    padding:0.5em;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+// -------------------------------------------------------------

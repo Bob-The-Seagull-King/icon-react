@@ -91,7 +91,7 @@ const JobDisplay = (props: any) => {
             
             <div className='jobFeaturePosition'>
                 <div  className='jobFeature'>
-                <LimitBreakDisplay className='jobFeature' key={jobData.name + "LimitBreak"} data={jobData}/>
+                <LimitBreakDisplay className='jobFeature' key={jobData.name + "LimitBreak"} data={{values:jobData, ultimate:true}}/>
                 </div>
                 {summonStructure()}
             </div>
