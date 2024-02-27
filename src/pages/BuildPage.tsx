@@ -43,7 +43,7 @@ const BuildPage: React.FC = () => {
     parseURL();
     const isValid = validateURL();
     gatherTraits();
-    gatherGambits();s
+    gatherGambits();
 
     // Parse URL into Data --------------------------
 
