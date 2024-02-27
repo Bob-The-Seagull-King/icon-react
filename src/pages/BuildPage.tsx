@@ -304,10 +304,10 @@ const BuildPage: React.FC = () => {
                 <div className='pagecontainer'>
 
 
-
+                    <div className='pageitema'>
                     <div className='baseStructure'>
 
-                        <div className='pageitema'>
+                        <div >
                             <div className='centerPosition'>
                                 <h1 className={'megatitleShape title'+getColour(characterdata[1].name)}>{capitalizeTag( characterdata[1].name )}</h1>
                             </div>
@@ -345,32 +345,34 @@ const BuildPage: React.FC = () => {
                         </div>
                         
                     </div>
-
-
-
-                    <div className='pageitemb'>
-                        <div className='baseCleanStructure'>
-                                
-                            <div className='centerPosition'>
+                    <br/>
+                    <div className='baseCleanStructure'>
+                        
+                    <div className='centerPosition'>
                                 <h1 className={'medtitleShape title'+getColour(characterdata[1].name)}>Relics</h1>
                             </div>
-                            <br/>
                             <div className='reliccontainer'>
                                 {relicsdata.map((item) => (
-                                <div className='gridItem' onClick={() => navClickRelic(item[0].name)} key={item[0].name + "relic"}  >
+                                <div className='relicgriditem' onClick={() => navClickRelic(item[0].name)} key={item[0].name + "relic"}  >
                                     <RelicDisplay data={getRelicData(item)}/>
                                 </div>
                                 ))}
                             </div>
                             <br/>
-                            
+                    </div>
+                    </div>
+
+
+
+                    <div className='pageitemb'>
+                        <div className='baseCleanStructure'>                            
                             <div className='centerPosition'>
                                 <h1 className={'medtitleShape title'+getColour(characterdata[1].name)}>Abilities</h1>
                             </div>
                             <br/>
                             <div className='abilitycontainer'>
                                 {abilitydata.map((item) => (
-                                <div className='gridItem' onClick={() => navClickAbility(item[0].name)} key={item[0].name + "ability"}  >
+                                <div className='abilitygriditem' onClick={() => navClickAbility(item[0].name)} key={item[0].name + "ability"}  >
                                     <AbilityDisplay data={getAbilityData(item)}/>
                                 </div>
                                 ))}
