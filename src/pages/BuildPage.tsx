@@ -42,8 +42,10 @@ const BuildPage: React.FC = () => {
 
     parseURL();
     const isValid = validateURL();
-    gatherTraits();
-    gatherGambits();
+    if (isValid) {
+        gatherTraits();
+        gatherGambits();
+    }
 
     // Parse URL into Data --------------------------
 
@@ -92,6 +94,10 @@ const BuildPage: React.FC = () => {
 
     function parseCharacter(classVal: string, jobVal: string, levelVal: string) {
         let i = 0;
+        
+        classVal = classVal.replace('%20', ' ');
+        jobVal = jobVal.replace('%20', ' ');
+        levelVal = levelVal.replace('%20', ' ');
 
         for (i=0; i < classData.length; i++) {
             if (classData[i].name.toLowerCase() == classVal.toLowerCase()) {
