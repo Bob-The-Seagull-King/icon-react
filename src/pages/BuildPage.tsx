@@ -12,6 +12,7 @@ import ClassStatsDisplay from '../components/ClassStatsDisplay';
 import LimitBreakDisplay from '../components/LimitBreakDisplay';
 import ClassMechanicDisplay from '../components/ClassMechanicDisplay';
 import TraitsDisplay from '../components/TraitsDisplay';
+import BuildSearch from '../components/BuildSearch';
 
 import summonData from '../resources/data/summon.json';
 import relicData from '../resources/data/relic.json';
@@ -353,6 +354,9 @@ const BuildPage: React.FC = () => {
     // Return result -----------------------------
     return (
         <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <div style={{width: '100%', padding: '1.5em'}}>
+                <BuildSearch/>
+            </div>
             {isValid && 
                 <div className='pagecontainer'>
                     <div className='pageitema'>
