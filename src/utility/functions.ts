@@ -22,24 +22,24 @@ export function capitalizeTag(stringVal: string) {
  * @returns The colour associated with that job or class
  */
 export function getColour(name: string){
-    const yellow = ["yellow", "Vagabond", "Fool", "Freelancer", "Shade", "Warden"];
-    const red = ["red", "Stalwart", "Bastion", "Demon Slayer", "Colossus", "Knave"];
-    const green = ["green", "Mendicant", "Chanter", "Harvester", "Sealer", "Seer"];
-    const blue = ["blue", "Wright", "Enochian", "Geomancer", "Spellblade", "Stormbender"];
+    const yellow = ["yellow", "vagabond", "fool", "freelancer", "shade", "warden"];
+    const red = ["red", "stalwart", "bastion", "demon slayer", "colossus", "knave"];
+    const green = ["green", "mendicant", "chanter", "harvester", "sealer", "seer"];
+    const blue = ["blue", "wright", "enochian", "geomancer", "spellblade", "stormbender"];
 
-    if (yellow.includes(name)) {
+    if (yellow.includes(name.toLowerCase())) {
         return yellow[0];
     }
 
-    if (red.includes(name)) {
+    if (red.includes(name.toLowerCase())) {
         return red[0];
     }
 
-    if (green.includes(name)) {
+    if (green.includes(name.toLowerCase())) {
         return green[0];
     }
 
-    if (blue.includes(name)) {
+    if (blue.includes(name.toLowerCase())) {
         return blue[0];
     }
 

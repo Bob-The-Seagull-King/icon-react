@@ -39,12 +39,19 @@
 }
 
 .basesearchlightStructure {
-    border-radius: 0.75em;
+    border-radius: 1em;
     box-shadow: 0 0 5px 1px #bd89ac;
     background-color: rgb(219, 9, 219);
     color: white;
     text-align: justify;
-    width: 100%;
+    width: fit-content;
+    margin: 1em;
+    margin-right: 0em;
+    padding: 1em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    font-size: 0.75em;
+    margin-bottom: 0em;
 
     &:hover {
         box-shadow: 0 0 10px 2px #bd89ac;
