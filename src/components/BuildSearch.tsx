@@ -19,7 +19,6 @@ const BuildSearch = (props: any) => {
     const relicBase: string[] = [];
     const abilityBase: string[] = [];
     let isValid = true;
-    let errormsg = "";
     // ----------------------------------------------
 
     // Setup states --------------------------------
