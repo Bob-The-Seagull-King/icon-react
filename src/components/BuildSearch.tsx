@@ -28,37 +28,38 @@ const BuildSearch = (props: any) => {
     // ---------------------------------------------
 
     // ---------------------------------------------
+
+    /**
+     * Checks that the minimum values (job and level) are
+     * present and, if so, prompts the url-parse and window
+     * open process.
+     */
     function validateSearch() {
         _job = ((document.getElementById('searchJob') as HTMLInputElement).value);
-
         const colour = getColour(_job);
+
         if (colour == "blue") { _class = "wright"}
         else if (colour == "green") { _class = "mendicant"}
         else if (colour == "red") { _class = "stalwart"}
         else if (colour == "yellow") { _class = "vagabond"} 
-        else {
-            runToast("Your JOB was not found");
-        }
+        else { runToast("Your JOB was not found"); }
 
         if (isNumber((document.getElementById('searchLevel') as HTMLInputElement).value)) {
             _level = (document.getElementById('searchLevel') as HTMLInputElement).value
-        } else {
-            runToast("Your LV must be a number.");
-        }
+        } else { runToast("Your LV must be a number."); }
 
         if ((_job != "") && (_class != "") && (_level != "")) {
             isValid = true;
-            errormsg = "";
-        } else {
-            isValid = false;
-            errormsg = "Please provide a valid job and numeric level.";            
-        }
+        } else { isValid = false; }
 
-        if (isValid) {
-            gatherURL();
-        }
+        if (isValid) { gatherURL(); }
     }
 
+    /**
+     * Activates a toast error message with
+     * a provided message
+     * @param text The warning to be displayed
+     */
     function runToast(text: string) 
     {
         toast.error(text, {
@@ -73,50 +74,62 @@ const BuildSearch = (props: any) => {
         });
     }
 
+    /**
+     * Takes the collected values and then creates
+     * the url path parameter value for the build page
+     * to parse.
+     */
     function gatherURL() {
         let urlpath = "";
+        let i = 0;
 
         urlpath += "c=" + _class + ";";
         urlpath += "j=" + _job + ";";
         urlpath += "l=" + _level + ";";
 
-        let i = 0;
-
         urlpath += "r=";
-        for (i = 0; i < _relics.length; i++) {
-            urlpath += _relics[i] + ":"
-        }
-
+        for (i = 0; i < _relics.length; i++) { urlpath += _relics[i] + ":" }
         urlpath += ";";
 
         urlpath += "a=";
-        for (i = 0; i < _abilities.length; i++) {
-            urlpath += _abilities[i] + ":"
-        }
-
+        for (i = 0; i < _abilities.length; i++) { urlpath += _abilities[i] + ":" }
         urlpath += ";";
 
         navBuild(urlpath)
     }
 
+    /**
+     * Opens a new page in the same tab
+     * @param urlpath The params of the url
+     */
     function navBuild (urlpath : string) {    
         window.open(location.protocol + '//' + location.host +'/' + 'build'  + '/'+urlpath, '_self', 'noopener,noreferrer');
     }
 
-    function isNumber(value?: string | number): boolean
-    {
-    return ((value != null) &&
+    /**
+     * Checks if a given string is numeric
+     * @param value The string being evaluated
+     * @returns True if the string is a Number
+     */
+    function isNumber(value?: string | number): boolean {
+        return ((value != null) &&
             (value !== '') &&
             !isNaN(Number(value.toString())));
     }
 
+    /**
+     * Grabs the relic information, validates if its a real
+     * relic with a numeric tier, and if so adds it to the
+     * array of selected relics.
+     * @returns A string[] object that will be the
+     * new state of the _relics array
+     */
     function callRelic() {
         const tempRelicList: string[] = [];
         let exists = false;
         let i = 0; 
-        for (i = 0; i < _relics.length; i++){
-            tempRelicList.push(_relics[i]);
-        }
+
+        for (i = 0; i < _relics.length; i++){ tempRelicList.push(_relics[i]); }
 
         const tempname = ((document.getElementById('relicName') as HTMLInputElement).value);
         const tempLevel = ((document.getElementById('relicLevel') as HTMLInputElement).value);
@@ -133,34 +146,31 @@ const BuildSearch = (props: any) => {
             if ((isNumber(tempLevel))) {
                 if (!(_relics.includes(temprelic))) {
                     tempRelicList.push(temprelic);
-                } else {
-                    runToast("You already selected this relic");
-                }
-            } else {
-                runToast("Your relic level must be a number");
-            }
-        } else {
-            runToast("This relic was not found.");
-        }
+                } else { runToast("You already selected this relic"); }
+            } else { runToast("Your relic level must be a number"); }
+        } else { runToast("This relic was not found."); }
         return tempRelicList;
     }
 
+    /**
+     * Grabs the ability information, validates if its a real
+     * ability with a numeric talent and mastery selection,
+     * and if so adds it to the array of selected abilities.
+     * @returns A string[] object that will be the
+     * new state of the _abilities array
+     */
     function callAbility() {
         const tempAbilityList: string[] = [];
         let exists = false;
 
         let i = 0; 
-        for (i = 0; i < _abilities.length; i++){
-            tempAbilityList.push(_abilities[i]);
-        }
+        for (i = 0; i < _abilities.length; i++){ tempAbilityList.push(_abilities[i]); }
 
         const tempname = ((document.getElementById('abilityName') as HTMLInputElement).value);
         let temptalent = ((document.getElementById('abilityTalent') as HTMLInputElement).value);
         const tempmaster = ((document.getElementById('abilityMastery') as HTMLInputElement).value);
 
-        if (temptalent == "") {
-            temptalent = "0";
-        }
+        if (temptalent == "") { temptalent = "0"; }
 
         for (i = 0; i < abilityData.length; i++) {
             if (abilityData[i].name.toLowerCase() == tempname.toLowerCase()) {
@@ -169,9 +179,7 @@ const BuildSearch = (props: any) => {
             }
         }
 
-        if (!exists) {
-            runToast("The ability could not be found.");
-        }
+        if (!exists) { runToast("The ability could not be found."); }
         if (!isNumber(temptalent)) {
             runToast("The talent must be a number.");
             exists = false;
@@ -184,34 +192,40 @@ const BuildSearch = (props: any) => {
         const temprelic = tempname + "," + temptalent + "," + tempmaster;
         if (exists && (!(_abilities.includes(temprelic)))) {
             tempAbilityList.push(temprelic);
-        } else {
-            runToast("The ability was already chosen");
-        }
+        } else { runToast("The ability was already chosen"); }
 
         return tempAbilityList;
     }
 
+    /**
+     * Removes a relic item from the _relics array
+     * @param relicval The relic to be removed
+     * @returns A string[] object that will be the
+     * new state of the _relics array
+     */
     function removeRelic(relicval: string) {
         const tempRelicList: string[] = [];
 
         let i = 0; 
         for (i = 0; i < _relics.length; i++){
-            if (_relics[i] != relicval) {
-                tempRelicList.push(_relics[i]);
-            }
+            if (_relics[i] != relicval) { tempRelicList.push(_relics[i]); }
         }
 
         return tempRelicList
     }
 
+    /**
+     * Removes an ability item from the _abilities array
+     * @param relicval The ability to be removed
+     * @returns A string[] object that will be the
+     * new state of the _abilities array
+     */
     function removeAbility(abilityval: string) {
         const tempAbilityList: string[] = [];
 
         let i = 0; 
         for (i = 0; i < _abilities.length; i++){
-            if (_abilities[i] != abilityval) {
-                tempAbilityList.push(_abilities[i]);
-            }
+            if (_abilities[i] != abilityval) { tempAbilityList.push(_abilities[i]); }
         }
 
         return tempAbilityList
@@ -239,18 +253,18 @@ const BuildSearch = (props: any) => {
 
     return (
         <div className='basesearchStructure'>
-        <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-        />
+            <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            />
             <div className='searchContainer'>
                 <div className='searchgriditem'> 
                     <div className='searchSubContainer'>
@@ -288,18 +302,18 @@ const BuildSearch = (props: any) => {
                         </div>
                         <br/>
                         <div className='searchitemscontainer' id='relicList'>
-                                {_relics.map((item) => (
-                                            <div key={item}>
-                                                {renderRelic(item)}
-                                            </div>
-                                            ))}
+                            {_relics.map((item) => (
+                            <div key={item}>
+                                {renderRelic(item)}
+                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>
                 <div className='searchgriditem'>  
                     <div className='searchSubContainer'>
                         <div className='basesearchitemStructure searchgriditem'>
-                        <div className='centerPosition'>
+                            <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>ABILITY</h2>
                                 <input id='abilityName' type="text" placeholder="Ability Name" className='searchinputrelic'/>
                                 <input id='abilityTalent' type="text" placeholder="Talent" className='searchinputreliclevel'/>
@@ -311,11 +325,11 @@ const BuildSearch = (props: any) => {
                         </div>
                         <br/>
                         <div className='searchitemscontainer'>
-                                {_abilities.map((item) => (
-                                            <div key={item}>
-                                                {renderAbility(item)}
-                                            </div>
-                                            ))}
+                            {_abilities.map((item) => (
+                                <div key={item}>
+                                    {renderAbility(item)}
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
