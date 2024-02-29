@@ -5,6 +5,12 @@ import '../styles/iconcomponent.scss';
 import '../styles/iconbuild.scss';
 import { useNavigate } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import relicData from '../resources/data/relic.json';
+import abilityData from '../resources/data/ability.json';
+
 const BuildSearch = (props: any) => {
 
     // Declare Variables ---------------------------
@@ -26,12 +32,17 @@ const BuildSearch = (props: any) => {
 
         const colour = getColour(_job);
         if (colour == "blue") { _class = "wright"}
-        if (colour == "green") { _class = "mendicant"}
-        if (colour == "red") { _class = "stalwart"}
-        if (colour == "yellow") { _class = "vagabond"}
+        else if (colour == "green") { _class = "mendicant"}
+        else if (colour == "red") { _class = "stalwart"}
+        else if (colour == "yellow") { _class = "vagabond"} 
+        else {
+            runToast("Your JOB was not found");
+        }
 
         if (isNumber((document.getElementById('searchLevel') as HTMLInputElement).value)) {
             _level = (document.getElementById('searchLevel') as HTMLInputElement).value
+        } else {
+            runToast("Your LV must be a number.");
         }
 
         if ((_job != "") && (_class != "") && (_level != "")) {
@@ -39,12 +50,26 @@ const BuildSearch = (props: any) => {
             errormsg = "";
         } else {
             isValid = false;
-            errormsg = "Please provide a valid job and numeric level.";
+            errormsg = "Please provide a valid job and numeric level.";            
         }
 
         if (isValid) {
             gatherURL();
         }
+    }
+
+    function runToast(text: string) 
+    {
+        toast.error(text, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
 
     function gatherURL() {
@@ -86,7 +111,7 @@ const BuildSearch = (props: any) => {
 
     function callRelic() {
         const tempRelicList: string[] = [];
-
+        let exists = false;
         let i = 0; 
         for (i = 0; i < _relics.length; i++){
             tempRelicList.push(_relics[i]);
@@ -95,16 +120,33 @@ const BuildSearch = (props: any) => {
         const tempname = ((document.getElementById('relicName') as HTMLInputElement).value);
         const tempLevel = ((document.getElementById('relicLevel') as HTMLInputElement).value);
 
-        const temprelic = tempname + "," + tempLevel;
-        if ((isNumber(tempLevel)) && (!(_relics.includes(temprelic)))) {
-            tempRelicList.push(temprelic);
+        for (i = 0; i < relicData.length; i++) {
+            if (relicData[i].name.toLowerCase() == tempname.toLowerCase()) {
+            exists = true;
+            break;
+            }
         }
 
+        if (exists) {
+            const temprelic = tempname + "," + tempLevel;
+            if ((isNumber(tempLevel))) {
+                if (!(_relics.includes(temprelic))) {
+                    tempRelicList.push(temprelic);
+                } else {
+                    runToast("You already selected this relic");
+                }
+            } else {
+                runToast("Your relic level must be a number");
+            }
+        } else {
+            runToast("This relic was not found.");
+        }
         return tempRelicList;
     }
 
     function callAbility() {
         const tempAbilityList: string[] = [];
+        let exists = false;
 
         let i = 0; 
         for (i = 0; i < _abilities.length; i++){
@@ -112,12 +154,37 @@ const BuildSearch = (props: any) => {
         }
 
         const tempname = ((document.getElementById('abilityName') as HTMLInputElement).value);
-        const temptalent = ((document.getElementById('abilityTalent') as HTMLInputElement).value);
+        let temptalent = ((document.getElementById('abilityTalent') as HTMLInputElement).value);
         const tempmaster = ((document.getElementById('abilityMastery') as HTMLInputElement).value);
 
+        if (temptalent == "") {
+            temptalent = "0";
+        }
+
+        for (i = 0; i < abilityData.length; i++) {
+            if (abilityData[i].name.toLowerCase() == tempname.toLowerCase()) {
+            exists = true;
+            break;
+            }
+        }
+
+        if (!exists) {
+            runToast("The ability could not be found.");
+        }
+        if (!isNumber(temptalent)) {
+            runToast("The talent must be a number.");
+            exists = false;
+        }
+        if ((tempmaster.toLowerCase() != "y") && (tempmaster.toLowerCase() != "n")) {
+            runToast("Set the mastery to eiher Y or N.");
+            exists = false;
+        }
+
         const temprelic = tempname + "," + temptalent + "," + tempmaster;
-        if (isNumber(temptalent) && (!(_abilities.includes(temprelic)))) {
+        if (exists && (!(_abilities.includes(temprelic)))) {
             tempAbilityList.push(temprelic);
+        } else {
+            runToast("The ability was already chosen");
         }
 
         return tempAbilityList;
@@ -171,13 +238,25 @@ const BuildSearch = (props: any) => {
 
     return (
         <div className='basesearchStructure'>
+        <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        />
             <div className='searchContainer'>
                 <div className='searchgriditem'> 
                     <div className='searchSubContainer'>
                         <div className='basesearchitemStructure jobgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchTitle'>JOB</h2>
-                                <input id='searchJob' className='searchinput'/>
+                                <input id='searchJob' type="text" placeholder="Job Name" className='searchinput'/>
                             </div>
                         </div>
                         <br/>
@@ -185,7 +264,7 @@ const BuildSearch = (props: any) => {
                             <div className='basesearchitemStructure levelgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>LV</h2>
-                                <input id='searchLevel' className='searchinput'/>
+                                <input id='searchLevel' type="text" placeholder="Level" className='searchinput'/>
                             </div>
                             </div>
                             <div className='basesearchitemStructure searchgridbutton' onClick={() => validateSearch()}>
@@ -199,8 +278,8 @@ const BuildSearch = (props: any) => {
                         <div className='basesearchitemStructure searchgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>RELIC</h2>
-                                <input id='relicName' className='searchinputrelic'/>
-                                <input id='relicLevel' className='searchinputreliclevel'/>
+                                <input id='relicName' type="text" placeholder="Relic Name" className='searchinputrelic'/>
+                                <input id='relicLevel' type="text" placeholder="Tier" className='searchinputreliclevel'/>
                                 <div className='paddedSearchAdd' onClick={() => createRelic(callRelic())}>
                                     <h2 className='nakedpad'>ADD</h2>
                                 </div>
@@ -221,9 +300,9 @@ const BuildSearch = (props: any) => {
                         <div className='basesearchitemStructure searchgriditem'>
                         <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>ABILITY</h2>
-                                <input id='abilityName' className='searchinputrelic'/>
-                                <input id='abilityTalent' className='searchinputreliclevel'/>
-                                <input id='abilityMastery' className='searchinputabilitymastery'/>
+                                <input id='abilityName' type="text" placeholder="Ability Name" className='searchinputrelic'/>
+                                <input id='abilityTalent' type="text" placeholder="Talent" className='searchinputreliclevel'/>
+                                <input id='abilityMastery' type="text" placeholder="Mastery(Y/N)" className='searchinputabilitymastery'/>
                                 <div className='paddedSearchAdd' onClick={() => createAbility(callAbility())}>
                                     <h2 className='nakedpad'>ADD</h2>
                                 </div>
