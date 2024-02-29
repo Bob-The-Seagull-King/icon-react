@@ -11,7 +11,7 @@ import relicData from '../resources/data/relic.json';
 import abilityData from '../resources/data/ability.json';
 import classData from '../resources/data/class.json';
 
-const HomePage: React.FC = () => {
+const TacticsPlayerPage: React.FC = () => {
 
     // Get URL Path Content ----------------------
 
@@ -24,26 +24,26 @@ const HomePage: React.FC = () => {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
 
-        if (urlSplits.length >= 3) {
-            urlSplits[2] = urlSplits[2].replace('%20', ' ');
+        if (urlSplits.length >= 5) {
+            urlSplits[4] = urlSplits[4].replace('%20', ' ');
     
-            if (urlSplits[1].toLowerCase() == "class" ) {
-                return returnClassFull(urlSplits[2]);
+            if (urlSplits[3].toLowerCase() == "class" ) {
+                return returnClassFull(urlSplits[4]);
             }
-            if (urlSplits[1].toLowerCase() == "job" ) {
-                return returnJobFull(urlSplits[2]);
-            }
-    
-            if (urlSplits[1].toLowerCase() == "ability" ) {
-                return returnAbility(urlSplits[2]);
+            if (urlSplits[3].toLowerCase() == "job" ) {
+                return returnJobFull(urlSplits[4]);
             }
     
-            if (urlSplits[1].toLowerCase() == "relic" ) {
-                return returnRelic(urlSplits[2]);
+            if (urlSplits[3].toLowerCase() == "ability" ) {
+                return returnAbility(urlSplits[4]);
             }
     
-            if (urlSplits[1].toLowerCase() == "summon" ) {
-                return returnSummon(urlSplits[2]);
+            if (urlSplits[3].toLowerCase() == "relic" ) {
+                return returnRelic(urlSplits[4]);
+            }
+    
+            if (urlSplits[3].toLowerCase() == "summon" ) {
+                return returnSummon(urlSplits[4]);
             }  
         }
 
@@ -171,4 +171,4 @@ const HomePage: React.FC = () => {
     // -------------------------------------------
 }
 
-export default HomePage
+export default TacticsPlayerPage

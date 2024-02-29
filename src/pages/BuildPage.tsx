@@ -347,7 +347,7 @@ const BuildPage: React.FC = () => {
      * @param name The end-params for the route
     */
     function navClick (page: string, name: string) {    
-        window.open(location.protocol + '//' + location.host +'/' + page + '/'+name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/player/tactics/' + page + '/'+name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 

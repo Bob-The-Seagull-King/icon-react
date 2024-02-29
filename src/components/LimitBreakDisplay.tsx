@@ -121,7 +121,7 @@ const LimitBreakDisplay = (props: any) => {
 
     // Navigation ----------------------------------
     function navClick (dir: string, name: string) {    
-        window.open(location.protocol + '//' + location.host +'/' + dir + '/'+ name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/' + dir + '/player/tactics/'+ name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 

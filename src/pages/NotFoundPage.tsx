@@ -9,7 +9,7 @@ const NotFoundPage: React.FC = () => {
      * Call this function to redirect the user to the homepage.
      */
     const redirectToHomePage = () => {
-        navigate(ROUTES.HOMEPAGE_ROUTE)
+        navigate(ROUTES.TACTICS_PLAYERS_ROUTE)
     }
 
     return (

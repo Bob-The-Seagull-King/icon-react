@@ -90,13 +90,13 @@ const JobDisplayFull = (props: any) => {
 
     // Navigation ----------------------------------
     function navClickAbility (name: string) {    
-        window.open(location.protocol + '//' + location.host +'/ability/'+name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/player/tactics/ability/'+name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 
     // Navigation ----------------------------------
     function navClickSummon (name: string) {    
-        window.open(location.protocol + '//' + location.host +'/summon/'+name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/player/tactics/summon/'+name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 

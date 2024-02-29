@@ -46,7 +46,7 @@ const TraitsDisplay = (props: any) => {
 
     // Navigation ----------------------------------
     function navClickAbility (name: string) {    
-        window.open(location.protocol + '//' + location.host +'/ability/'+name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/player/tactics/ability/'+name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 

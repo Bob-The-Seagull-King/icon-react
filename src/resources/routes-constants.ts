@@ -1,4 +1,4 @@
 export const ROUTES = {
     BUILD_ROUTE: '/build/*',
-    HOMEPAGE_ROUTE: '/*'
+    TACTICS_PLAYERS_ROUTE: '/player/tactics/*'
 }

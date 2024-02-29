@@ -13,7 +13,7 @@ const ClassFullDisplay = (props: any) => {
 
     // Navigation ----------------------------------
     function navClickJob (name: string) {    
-        window.open(location.protocol + '//' + location.host +'/job/'+name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/player/tactics/job/'+name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 
