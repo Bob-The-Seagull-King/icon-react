@@ -440,7 +440,8 @@ const BuildPage: React.FC = () => {
                 <div>
                     <br/>
                     <div className='baseStructure'>
-                        <h1 style={{fontSize:'4em'}}>DATA ERROR</h1>
+                        <h1 className='centerPosition' style={{paddingLeft: '2em', paddingRight: '2em'}}>Enter your character details above and<br/>press search to view your build.</h1>
+                        <br/>
                     </div>
                 </div>
             }
