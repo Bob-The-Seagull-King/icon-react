@@ -4,7 +4,6 @@ import { capitalizeTag, getColour } from '../utility/functions';
 import '../styles/iconcomponent.scss';
 import '../styles/iconbuild.scss';
 import { useNavigate } from "react-router-dom";
-
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -19,12 +18,14 @@ const BuildSearch = (props: any) => {
     let _level = "";
     const relicBase: string[] = [];
     const abilityBase: string[] = [];
-
-    const [_relics, createRelic] = useState(relicBase);
-    const [_abilities, createAbility] = useState(abilityBase);
-
     let isValid = true;
     let errormsg = "";
+    // ----------------------------------------------
+
+    // Setup states --------------------------------
+    const [_relics, createRelic] = useState(relicBase);
+    const [_abilities, createAbility] = useState(abilityBase);
+    // ---------------------------------------------
 
     // ---------------------------------------------
     function validateSearch() {
@@ -99,7 +100,7 @@ const BuildSearch = (props: any) => {
     }
 
     function navBuild (urlpath : string) {    
-        window.open(location.protocol + '//' + location.host +'/' + 'build'  + '/'+urlpath, '', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/' + 'build'  + '/'+urlpath, '_self', 'noopener,noreferrer');
     }
 
     function isNumber(value?: string | number): boolean
