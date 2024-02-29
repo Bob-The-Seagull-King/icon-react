@@ -1,10 +1,10 @@
 import React from 'react'
 
-import SummonDisplay from '../components/SummonDisplay'
-import RelicDisplay from '../components/RelicDisplay'
-import AbilityDisplay from '../components/AbilityDisplay'
-import JobFullDisplay from '../components/JobFullDisplay'
-import ClassFullDisplay from '../components/ClassFullDisplay'
+import SummonDisplay from '../components/itemdisplaycomponents/SummonDisplay'
+import RelicDisplay from '../components/itemdisplaycomponents/RelicDisplay'
+import AbilityDisplay from '../components/itemdisplaycomponents/AbilityDisplay'
+import JobFullDisplay from '../components/itemdisplaycomponents/JobFullDisplay'
+import ClassFullDisplay from '../components/itemdisplaycomponents/ClassFullDisplay'
 
 import summonData from '../resources/data/summon.json';
 import relicData from '../resources/data/relic.json';

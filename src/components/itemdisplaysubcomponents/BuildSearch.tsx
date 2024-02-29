@@ -1,14 +1,14 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../utility/functions';
-import '../styles/iconcomponent.scss';
-import '../styles/iconbuild.scss';
+import { capitalizeTag, getColour } from '../../utility/functions';
+import '../../styles/iconcomponent.scss';
+import '../../styles/iconbuild.scss';
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import relicData from '../resources/data/relic.json';
-import abilityData from '../resources/data/ability.json';
+import relicData from '../../resources/data/relic.json';
+import abilityData from '../../resources/data/ability.json';
 
 const BuildSearch = (props: any) => {
 

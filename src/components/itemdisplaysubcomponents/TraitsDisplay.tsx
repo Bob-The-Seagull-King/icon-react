@@ -1,11 +1,11 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
-import '../styles/iconcomponent.scss';
+import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
+import '../../styles/iconcomponent.scss';
 import { useNavigate } from "react-router-dom";
 
-import abilityData from '../resources/data/ability.json';
-import AbilityDisplay from '../components/AbilityDisplay'
+import abilityData from '../../resources/data/ability.json';
+import AbilityDisplay from '../itemdisplaycomponents/AbilityDisplay'
 
 const TraitsDisplay = (props: any) => {
     // Declare Summon Variables --------------------

@@ -1,6 +1,6 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
+import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
 
 const ClassDescriptionDisplay = (props: any) => {
     // Declare Summon Variables --------------------

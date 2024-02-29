@@ -1,10 +1,10 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag } from '../utility/functions';
+import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
 import { useNavigate } from "react-router-dom";
 
-import JobDisplay from '../components/JobDisplay'
-import ClassDisplay from '../components/ClassDisplay'
+import JobDisplay from '../itemdisplaycomponents/JobDisplay'
+import ClassDisplay from '../itemdisplaycomponents/ClassDisplay'
 
 const ClassFullDisplay = (props: any) => {
     // Declare Summon Variables --------------------

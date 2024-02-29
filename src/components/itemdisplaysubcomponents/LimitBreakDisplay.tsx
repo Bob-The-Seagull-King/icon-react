@@ -1,13 +1,13 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag, getTagValue } from '../utility/functions';
-import '../styles/iconcomponent.scss';
+import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
+import '../../styles/iconcomponent.scss';
 import { useNavigate } from "react-router-dom";
 
-import addonData from '../resources/data/abilityaddon.json';
-import AddonDisplay from '../components/AddonDisplay'
-import summonData from '../resources/data/summon.json';
-import SummonDisplay from '../components/SummonDisplay'
+import addonData from '../../resources/data/abilityaddon.json';
+import AddonDisplay from '../itemdisplaysubcomponents/AddonDisplay'
+import summonData from '../../resources/data/summon.json';
+import SummonDisplay from '../itemdisplaycomponents/SummonDisplay'
 
 const LimitBreakDisplay = (props: any) => {
     // Declare Summon Variables --------------------

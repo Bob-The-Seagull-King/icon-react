@@ -1,12 +1,12 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag } from '../utility/functions';
-import '../styles/iconcomponent.scss';
+import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
+import '../../styles/iconcomponent.scss';
 
-import ClassDescriptionDisplay from '../components/ClassDescriptionDisplay'
-import ClassMechanicDisplay from '../components/ClassMechanicDisplay'
-import ClassStatsDisplay from '../components/ClassStatsDisplay'
-import TraitsDisplay from '../components/TraitsDisplay'
+import ClassDescriptionDisplay from '../itemdisplaysubcomponents/ClassDescriptionDisplay'
+import ClassMechanicDisplay from '../itemdisplaysubcomponents/ClassMechanicDisplay'
+import ClassStatsDisplay from '../itemdisplaysubcomponents/ClassStatsDisplay'
+import TraitsDisplay from '../itemdisplaysubcomponents/TraitsDisplay'
 
 const ClassDisplay = (props: any) => {
     // Declare Summon Variables --------------------

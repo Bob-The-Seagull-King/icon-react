@@ -5,14 +5,14 @@ import '../styles/iconcomponent.scss';
 import '../styles/iconbuild.scss';
 import { useNavigate } from "react-router-dom";
 
-import SummonDisplay from '../components/SummonDisplay'
-import RelicDisplay from '../components/RelicDisplay'
-import AbilityDisplay from '../components/AbilityDisplay'
-import ClassStatsDisplay from '../components/ClassStatsDisplay';
-import LimitBreakDisplay from '../components/LimitBreakDisplay';
-import ClassMechanicDisplay from '../components/ClassMechanicDisplay';
-import TraitsDisplay from '../components/TraitsDisplay';
-import BuildSearch from '../components/BuildSearch';
+import SummonDisplay from '../components/itemdisplaycomponents/SummonDisplay'
+import RelicDisplay from '../components/itemdisplaycomponents/RelicDisplay'
+import AbilityDisplay from '../components/itemdisplaycomponents/AbilityDisplay'
+import ClassStatsDisplay from '../components/itemdisplaysubcomponents/ClassStatsDisplay';
+import LimitBreakDisplay from '../components/itemdisplaysubcomponents/LimitBreakDisplay';
+import ClassMechanicDisplay from '../components/itemdisplaysubcomponents/ClassMechanicDisplay';
+import TraitsDisplay from '../components/itemdisplaysubcomponents/TraitsDisplay';
+import BuildSearch from '../components/itemdisplaysubcomponents/BuildSearch';
 
 import summonData from '../resources/data/summon.json';
 import relicData from '../resources/data/relic.json';

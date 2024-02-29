@@ -1,15 +1,15 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag } from '../utility/functions';
-import '../styles/iconcomponent.scss';
+import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
+import '../../styles/iconcomponent.scss';
 import { useNavigate } from "react-router-dom";
 
-import SummonDisplay from '../components/SummonDisplay'
-import TraitsDisplay from '../components/TraitsDisplay'
-import LimitBreakDisplay from '../components/LimitBreakDisplay'
-import JobPlaystyleDisplay from '../components/JobPlaystyleDisplay'
+import SummonDisplay from '../itemdisplaycomponents/SummonDisplay'
+import TraitsDisplay from '../itemdisplaysubcomponents/TraitsDisplay'
+import LimitBreakDisplay from '../itemdisplaysubcomponents/LimitBreakDisplay'
+import JobPlaystyleDisplay from '../itemdisplaysubcomponents/JobPlaystyleDisplay'
 
-import summonData from '../resources/data/summon.json';
+import summonData from '../../resources/data/summon.json';
 
 const JobDisplay = (props: any) => {
     // Declare Summon Variables --------------------

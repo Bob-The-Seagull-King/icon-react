@@ -1,13 +1,13 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag } from '../utility/functions';
-import '../styles/iconcomponent.scss';
+import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
+import '../../styles/iconcomponent.scss';
 import { useNavigate } from "react-router-dom";
 
-import JobDisplay from '../components/JobDisplay'
-import AbilityDisplay from '../components/AbilityDisplay'
+import JobDisplay from '../itemdisplaycomponents/JobDisplay'
+import AbilityDisplay from '../itemdisplaycomponents/AbilityDisplay'
 
-import abilityData from '../resources/data/ability.json';
+import abilityData from '../../resources/data/ability.json';
 
 const JobDisplayFull = (props: any) => {
     // Declare Summon Variables --------------------
