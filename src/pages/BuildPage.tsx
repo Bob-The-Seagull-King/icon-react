@@ -103,9 +103,9 @@ const BuildPage: React.FC = () => {
      * @param levelVal The player's current Level
      */
     function parseCharacter(classVal: string, jobVal: string, levelVal: string) {        
-        classVal = classVal.replace('%20', ' ');
-        jobVal = jobVal.replace('%20', ' ');
-        levelVal = levelVal.replace('%20', ' ');
+        classVal = classVal.replaceAll('%20', ' ');
+        jobVal = jobVal.replaceAll('%20', ' ');
+        levelVal = levelVal.replaceAll('%20', ' ');
         
         let i = 0;
         for (i=0; i < classData.length; i++) {
@@ -138,7 +138,7 @@ const BuildPage: React.FC = () => {
         let i = 0;
         for (i = 0; i < relicsplit.length; i++) {
             const relictemp = relicsplit[i].split(',');
-            relictemp[0] = relictemp[0].replace('%20', ' ');
+            relictemp[0] = relictemp[0].replaceAll('%20', ' ');
             const newrelic: any[] = [];
 
             let j = 0;
@@ -167,7 +167,7 @@ const BuildPage: React.FC = () => {
         let i = 0;
         for (i = 0; i < abilitysplit.length; i++) {
             const abilitytemp = abilitysplit[i].split(',');
-            abilitytemp[0] = abilitytemp[0].replace('%20', ' ');
+            abilitytemp[0] = abilitytemp[0].replaceAll('%20', ' ');
             const newability: any[] = [];
 
             let j = 0;

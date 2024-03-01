@@ -17,6 +17,17 @@
     margin: 0.5em;
 }
 
+.halfwise {
+    width: 45%;
+}
+
+.widthPT {
+    padding: 1em;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .relicStructure {
     border-radius: 1em;
     box-shadow: 0 0 5px 1px #CCC;
@@ -267,6 +278,11 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+.topPosition {
+    display: flex;
+    align-items: start;
 }
 
 
