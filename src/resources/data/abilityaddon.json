@@ -98,6 +98,42 @@
         "description": "<b>Trigger</b>: The end of any turn<br><b>Effect</b>: Teleport 2 towards the target or teleport your target 1 towards you. The teleport must end with both of you closer together. Allies can choose whether to take this teleport."
     },
     {
+        "job": "Shade",
+        "ability": "Umbra",
+        "name": "Penumbra",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "Teleport your foe up to 3 spaces towards you instead of teleporting yourself. A foe can save to avoid this effect. <i>Blinded</i> foes fail this save."
+    },
+    {
+        "job": "Shade",
+        "ability": "Death Blossom",
+        "name": "Flying Sleeves",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "Area becomes Arc 4<br><b>Effect</b>: If you catch an ally or allied summon in the area, you and your allies are immune to this ability’s damage and effects, and you may extend the area effect to arc 8."
+    },
+    {
+        "job": "Shade",
+        "ability": "Umbral Echo",
+        "name": "Soul Proxy",
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: You take damage from a foe.<br><b>Effect</b>: End this stance, consume and remove all shadows in range 2 of you, and immediately gain <i>defiance</i> against the incoming damage. Deal 2 damage, once, to the triggering foe for each shadow consumed this way. You cannot take this stance again for the rest of combat."
+    },
+    {
+        "job": "Shade",
+        "ability": "Incubus",
+        "name": "Succubus",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "Instead of the <b>Mark</b>, gain <b>Effect</b>: deal 3 damage to all characters marked by Incubus, and teleport them 2."
+    },
+    {
         "job": "Enochian",
         "ability": "Gigaflare",
         "name": "Tetraflare",
@@ -158,7 +194,7 @@
             {"tag_name": "blast", "val": "large"},
             {"tag_name": "attack"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b>Create a pit under your attack target.<br/><b>Effect:</b>After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters.<br/><b>Comeback</b> or <b>Exceed:</b> The area explodes again, dealing 2 piercing damage to all characters."
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Create a pit under your attack target.<br/><b>Effect:</b> After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters.<br/><b>Comeback</b> or <b>Exceed:</b> The area explodes again, dealing 2 piercing damage to all characters."
     },
     {
         "job": "Enochian",
