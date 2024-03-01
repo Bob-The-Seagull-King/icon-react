@@ -39,7 +39,7 @@
 			{"tag_name": "attack"},
             {"tag_name": "burst-target", "val": 1}			
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Area effect</b>: Foes take fray damage.<br><b>Effect</b>: Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1. <br><b>Heroic</b>: Gains <i>True Strike</i> and becomes Burst 2 (target).",
+        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Area effect</b>: Foes take fray damage.<br><b>Effect</b>: Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1.<br><b>Heroic</b>: Gains <i>True Strike</i> and becomes Burst 2 (target).",
         "blurb": "Crash your greatshield or weapon into the earth, sending up devastating shockwaves.",
         "talent1": "If Land Waster’s effect shockwave shoves 3 or more foes or allies, it shoves +1 and <i>stuns</i> your target.",
         "talent2": "If Land Waster’s effect shockwave shoves 2 or more foes or allies, <i>cure</i> yourself.",
@@ -83,7 +83,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}				
         ],
-        "description": "<b>Trigger</b>: An ally ends a movement in an adjacent space<br><b>Effect</b>: Shove that ally 2 in any direction.<b>Collide</b> or <b>Heroic</b>: That ally gains 2 vigor and may <i>rush</i> 1.",
+        "description": "<b>Trigger</b>: An ally ends a movement in an adjacent space<br><b>Effect</b>: Shove that ally 2 in any direction.<br><b>Collide</b> or <b>Heroic</b>: That ally gains 2 vigor and may <i>rush</i> 1.",
         "blurb": "Use your shield as a springboard to set up ally maneuvers or to deflect projectiles.",
         "talent1": "Your shield becomes a valid target for allied abilities. You can expend this interrupt to grant them <i>rebound</i>.",
         "talent2": "Catapult can also be triggered on foes. When triggered on foes, the effect becomes effect: shove 1. <i>Collide</i>: you may rush 1.",
@@ -454,7 +454,7 @@
 			{"tag_name": "combo"}
         ],
         "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Gain <i>unstoppable</i> and <i>counter</i> until the end of your next turn<br><b>Slay</b> or <b>Heroic</b>: While this ability’s effect is active, you can <i>rush</i> 1 as an effect if you are damaged by a foe’s ability, but no more than once a turn.",
-        "blurb": "",
+        "blurb": "No matter how hard pressed, your hands, feet, and armor are ready to retaliate.",
         "talent1":"While this ability’s effect is active, attacks against adjacent allies gain +1 curse",
         "talent2":"You may <i>sacrifice</i> 4 to gain or lose a combo token after using any version of this ability.",
         "masteryname":"IRON MAIDEN",
@@ -838,6 +838,250 @@
         "talent2": "At round 4 or greater, Soul Shot becomes Line 6",
         "masteryname": "GREAT ANGELOS",
         "masterdescription": "Allies Soul Shot passes through gain 3 <i>vigor</i> and may <i>fly</i> 3."
+    },
+    {
+        "job": "Shade",
+        "name": "Umbra",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+            {"tag_name": "range", "val": 3},
+			{"tag_name": "boon", "val": 1},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Effect</b>: You may teleport 3<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Finishing Blow</b>: Summon a <i>shadow</i> adjacent to your target.",
+        "blurb": "By the power of darkness.",
+        "talent1": "<i>Slay</i>: Gain <i>defiance</i>.",
+        "talent2": "You can <i>sacrifice</i> 2 or consume a <i>shadow</i> in range 2 of you to gain a combo token after using this move.",
+        "masteryname": "DEVIL FROG TECHNIQUE",
+        "masterdescription": "Increase Umbra and Penumbra’s range to 6 and it gains <i>unerring</i>."
+    },
+    {
+        "job": "Shade",
+        "name": "Harrow",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 3},
+			{"tag_name": "mark"}
+        ],
+        "description": "<b>Mark</b>: Flick an umbral seal at a character in range 3, marking them. While marked, once a round when you teleport, you can also teleport the marked character 1 spaces and deal 2 damage to them if they’re a foe.<br><b>Finishing Blow</b>: When marking a bloodied character, immediately trigger the effect, ignoring the round limit",
+        "blurb": "You mark your foe with a dire seal. Shadowy tendrils reach out from an unknown space and jerk them like a puppet.",
+        "talent1": "At the start of your turn, you may teleport to any space in range 2 of your target",
+        "talent2": "You can also <i>sacrifice</i> 2 or consume a <i>shadow</i> in range 2 of you when marking a foe to also create a <i>pit</i> under them.",
+        "masteryname": "BONE RAVEN TECHNIQUE",
+        "masterdescription": "This effect can trigger twice a round by default instead."
+    },
+    {
+        "job": "Shade",
+        "name": "Death Blossom",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"},
+            {"tag_name": "range", "val": 2},
+			{"tag_name": "burst", "val": 1},
+			{"tag_name": "unerring"}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Area Effect</b>: fray<br><b>Finishing Blow</b>: After this ability resolves, create a <i>pit</i> under your attack target. The pit is also a <i>shadow cloud</i>.",
+        "blurb": "From beneath a cloak, out from flying sleeves, or hidden in coils of hair - infinite blades. One more sweep, and shadowy bolts of cloth cut through your foes like razors.",
+        "talent1": "<i>Finishing Blow</i>: Teleport all characters in the area 1.",
+        "talent2": "<i>Slay</i>: Teleport 2, then throw knives, dealing 2 damage to up to three foes in range 3.",
+        "masteryname": "SHUKUCHI",
+        "masterdescription": "You can teleport 2 spaces before and after using this ability."
+    },
+    {
+        "job": "Shade",
+        "name": "Nightmare",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 2},
+			{"tag_name": "summon"},
+			{"tag_name": "aura"}
+        ],
+        "description": "<b>Summon</b>: Summon 2 <i>shadows</i> in range 2.<br><b>Effect</b>: Until the start of your next turn, you gain aura 2. You may consume a shadow in the aura when you or any ally in the aura is targeted by an attack to grant <i>evasion</i> against that attack.",
+        "blurb": "Draw out a fragment of true darkness, roaming and hunting for warmth.",
+        "talent1": "When you summon a shadow, you or an ally or allied summon in range 2 may teleport 1.",
+        "talent2": "While Umbra’s effect is active, you or allies can <i>rebound</i> abilities off shadows in the aura. Doing so consumes the shadow, removing it.",
+        "masteryname": "HELL CENTIPEDE TECHNIQUE",
+        "masterdescription": "Gain <b>effect</b>: until the start of your next turn, when a shadow is consumed in the aura, you may also create a <i>pit</i> in or adjacent to its space."
+    },
+    {
+        "job": "Shade",
+        "name": "Shadow Play",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 2}
+        ],
+        "description": "<b>Effect</b>: Choose a character other than yourself in range, then a different character other than yourself in range 3 of that character. Swap their places, removing and placing them. Allies swapped gain <i>stealth</i>. Foes swapped are <i>dazed</i>.<br><b>Finishing Blow</b>: Repeat the effect.",
+        "blurb": "Using forbidden scroll techniques, you confuse the senses of foes and allies alike.",
+        "talent1": "If you swap two foes, you may then teleport them 1 after this ability resolves.",
+        "talent2": "If you swap two allies, one of them can gain <i>evasion</i> until the start of their next turn.",
+        "masteryname": "PALE RAT TECHNIQUE",
+        "masterdescription": "At round 4 or later in combat, Shadow Play becomes a free action."
+    },
+    {
+        "job": "Shade",
+        "name": "Umbral Echo",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "stance"},
+			{"tag_name": "power die"}
+        ],
+        "description": "<b>Stance</b>: You create shadowy copies of yourself, granting a d4 power die, starting at 2. If the die ticks down to 0, end this stance. While in this stance:<ul><li>When you use an ability that targets a foe, you may trigger any <i>finishing blow</i> effects of that ability, then tick the die down by 1.</li><li>After you tick the die down, you may teleport 1 </li></ul><b>Refresh</b>: Refresh this stance if you end your turn with no foes adjacent. When you do, tick the die up by 1.",
+        "blurb": "You split echoes of your soul into clones that overlay your movements.",
+        "talent1": "While in this stance, your abilities gain <i>slay</i>: <i>summon</i> a <i>shadow</i>. This effect can only trigger once a round.",
+        "talent2": "While in Umbral Echo, you have <i>phasing</i> and entering the space of shadows always costs a maximum of 1 movement.",
+        "masteryname": "BUNSHIN",
+        "masterdescription": "Gain the following interrupt while in this stance:"
+    },
+    {
+        "job": "Shade",
+        "name": "Assassinate",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 3},
+			{"tag_name": "end turn"}
+        ],
+        "description": "<b>End your turn</b> and choose a foe in range. At the end of that foe’s turn, as long as they’re in range 3, teleport to any space adjacent to them and deal 2 damage, three times to them and inflict <i>blinded</i>. Reduce this damage to just 2 damage if they have an adjacent ally. Then, you may kick off them and fly 2.",
+        "blurb": "You step through the air, emerging from the shadow of your foe, where they find only gleaming knives.",
+        "talent1": "If you’re in <i>stealth</i>, increase all ranges by +2, and doesn’t break <i>stealth</i>.",
+        "talent2": "While you’re holding assassinate, you have <i>evasion</i>.",
+        "masteryname": "THOUSAND YEAR LIZARD TECHNIQUE",
+        "masterdescription": "At round 4 or later, you can choose two foes with this ability. Trigger its effects in any order."
+    },
+    {
+        "job": "Shade",
+        "name": "Nocturne",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: You trigger a <i>finishing blow</i> effect<br><b>Terrain Effect</b>: Mark a small blast centered on that character, then create a terrain effect in the area. All spaces of this terrain effect are <i>shadow clouds</i>. This area lasts until this ability is used again.",
+        "blurb": "You capture a thin silver thread of spilled life force of a foe and use it to tear open a space of night and cold.",
+        "talent1": "While Nocturne is active, you may teleport up to 2 spaces in or out of the area as a free action.",
+        "talent2": "You may <i>sacrifice</i> 2 when the area is created to increase the size of the area to medium blast, or <i>sacrifice</i> 4 to increase it to large blast.",
+        "masteryname": "TRAP DOOR SPIDER TECHNIQUE",
+        "masterdescription": "You can weave shadow magic when the area is created to teleport any characters in range 2 of you into any free space inside the area, as long as there is room for that character."
+    },
+    {
+        "job": "Shade",
+        "name": "Incubus",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+            {"tag_name": "mark"},
+			{"tag_name": "boon", "val": 1},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Mark</b>: Mark your foe. While marked, if any foe ends their turn adjacent to your marked foe, or your foe ends their turn adjacent to any other foe, then both the target and any adjacent foes take 2 damage and are <i>dazed</i>. This effect can only trigger once per round.<br><b>Finishing Blow</b>: Immediately trigger the mark effect, ignoring the round limit.",
+        "blurb": "The thirteenth scroll art, a void-sheathed blade that cuts away at the aether of the very soul, leaving a cut that creates slashed darkness.",
+        "talent1": "Incubus gains range 3. If you make it from <i>stealth</i>, gains range 5.",
+        "talent2": "Incubus deals bonus damage for every ally of your target adjacent to your target",
+        "masteryname": "TOXIC WIDOW TECHNIQUE",
+        "masterdescription": "Incubus’ mark stacks with other marks. You may mark any number of characters with Incubus. When a character takes damage from an Incubus mark, you may also mark them."
+    },
+    {
+        "job": "Warden",
+        "name": "Apex",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+            {"tag_name": "range", "val": 3},
+			{"tag_name": "boon", "val": 1}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>dazed</i>.<br><b>Effect</b>: Summon a <i>beast</i> in an adjacent space to your target after the attack resolves.<br><b>Finishing Blow</b> or <b>Charge</b>: Summon one more beast, then gain <i>stealth</i>.",
+        "blurb": "Your strike is a clarion call to the forest, the plains, and the deep places of the Green, bringing forth their denizens to fight for you.",
+        "talent1": "<i>Terrain effect</i>: You can replace any beast you summon with a space of <i>dangerous</i> terrain instead.",
+        "talent2": "If you attack a foe at exactly range 3, this ability gain <i>unerring</i> and you may shove your foe 1 in any direction after this ability resolves.",
+        "masteryname": "LOADED QUIVER",
+        "masterdescription": "If you end your turn without attacking, the next time you use Apex, summon +1 more beasts, and deal 2 damage, once, to your target for every beast you summon."
+    },
+    {
+        "job": "Warden",
+        "name": "Gwynt",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "<b>Effect</b> : Dash up to 2 spaces, then deal 2 damage to an adjacent foe.<br><b>Effect</b> : An ally or allied summon in range 3 of your foe may also dash 2. If that puts them adjacent to your target, they also deal 2 damage to them.<br><b>Finishing Blow</b> or <b>Charge</b>: You and all chosen allies or summons gain <i>stealth</i> after this ability resolves.",
+        "blurb": "With catlike reflexes, you pounce, spurring allies to action.",
+        "talent1": "If made from stealth, increase the dashes and range of this ability by +1",
+        "talent2": "You and your ally or summon may each shove your target 1 space.",
+        "masteryname": "GREAT GWYNT",
+        "masterdescription": "Increase dashes and ranges by +1, and the effect can be used on an additional ally or allied summon in range."
+    },
+    {
+        "job": "Warden",
+        "name": "Circle The Oak",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"}
+        ],
+        "description": "<b>Effect</b>: Dash 2<br><b>Attack</b>: <i>On hit</i>: 2[D]. <i>Miss</i>: 1 damage.<br><b>Effect</b>: If you’re adjacent to your foe, dash in a full circle clockwise through every adjacent space to your foe, phasing through allies or allied summons, or as far as possible until stopped. Each time you pass through an ally or summon’s space, deal fray damage to your foe, up to a maximum of four times. Stop if you would enter the space of a foe or obstruction.<br><b>Finishing Blow</b> or <b>Charge</b>: Increase initial dash to 5. After the ability resolves, you may shove your foe 2.",
+        "blurb": "Ten palm strikes with the heel of the hand or the haft of the axe will shatter even the most tenacious bark.",
+        "talent1": "Allies you pass through with Circle the Oak may dash 1 after this ability resolves.",
+        "talent2": "If you passed through two or more allies or allied summons, also gain <i>evasion</i> until the end of your next turn.",
+        "masteryname": "TIMBER SPLIT",
+        "masterdescription": "Enemies no longer stop this move, and you may phase through their spaces. Enemies you pass through are shoved 1, take fray damage, and are <i>dazed</i>."
+    },
+    {
+        "job": "Warden",
+        "name": "Mist Strider",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 3},
+			{"tag_name": "terrain effect"},
+			{"tag_name": "summon"}
+		],
+        "description": "<b>Terrain Effect</b>: Create small blast misty cloud in free space in range, with the following effects:<ul><li>The spaces of the area always cost a maximum of 1 movement for you and allies to move across, and characters have <i>phasing</i> while moving this way.</li><li>Foes inside are blinded+</li></ul>Clouds created with this ability last until this ability is used again.<br><b>Charge</b>: Create a second cloud.<br><b>Summon</b>: At the start of your turn, you can consume a cloud as a <i>free action</i> to condense it into a fey creature, summoning a <i>beast</i> in any of its spaces and ending this effect.",
+        "blurb": "Call on the beasts of the deep mists and rains, whose form is shadow and water.",
+        "talent1": "Once a round, when you enter or exit the area, you can gain <i>stealth</i>.",
+        "talent2": "Foes in the area count all characters as having <i>evasion</i>.",
+        "masteryname": "RIVER GUARDIANS",
+        "masterdescription": "This ability creates a beast inside when an area is created. Foes that start their turn inside the area that end their turn outside of it take 2 damage and are <i>dazed</i>."
+    },
+    {
+        "job": "Warden",
+        "name": "Stampede",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+			{"tag_name": "mark"},
+			{"tag_name": "summon"}
+        ],
+        "description": "<b>Mark</b>: You mark a foe in range. Once a round, at the end of that foe’s turn, a rampaging spirit beast, charges in from any edge of the battlefield. Create a line <i>area effect</i> drawn from the edge of the battlefield that includes your foe. The beast charges down the line until it enters an adjacent space to your foe, shoving all characters 1 to either side of the line.<br><b>Summon</b>: Then the beast deals 2 damage to your foe, shoves them 1, then coalesces into a real creature, becoming a <i>beast</i> summon.<br><b>Collide</b> or <b>Charge</b>: Foes affected take 2 damage after this ability resolves.",
+        "blurb": "With a bellow or a clenched fist, you summon an immense spirit to pound your enemies.",
+        "talent1": "When you trigger a finishing blow on a foe, you may transfer the mark to them as a <i>free action</i>.",
+        "talent2": "If the beast passes through two or more characters before reaching your foe it deals 4 damage and shoves them 2 instead.",
+        "masteryname": "LORD OF THE STEPPE",
+        "masterdescription": "Yourself and allies can ride the beast if it passes through their space, removing themselves from the battlefield instead of taking damage and shove. When it ends its movement, they hop off and must place themselves in an adjacent space, or as close as possible."
+    },
+    {
+        "job": "Warden",
+        "name": "Strength Of The Pack",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "stance"},
+			{"tag_name": "aura"}
+        ],
+        "description": "<b>Stance</b>: In this stance, gain aura 2.<ul><li>When entering this stance, or when it refreshes, summon a <i>beast</i> in free space in the aura, then you and all allies and summons in the aura may dash 1 space.</li><li>Foes in the aura take +1 damage from summons.</li></ul><b>Refresh</b>: Refresh this stance at the start of your turn.<br><b>Special</b>: While adjacent to 3 or more summons, the action cost of this ability is reduced to 1.",
+        "blurb": "Your senses sync with those of the herd, and you strike as one.",
+        "talent1": "When you first enter this stance, increase the dash granted to 4.",
+        "talent2": "While you have three or more summons in this aura, you have <i>evasion</i>.",
+        "masteryname": "CÚ CHULAINN",
+        "masterdescription": "Strength Of The Pack becomes a free action at round 4 or later and its aura affects the entire battlefield."
     },
     {
         "job": "Sealer",
