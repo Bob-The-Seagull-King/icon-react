@@ -295,7 +295,7 @@ const BuildSearch = (props: any) => {
                                 <input id='relicName' type="text" placeholder="Relic Name" className='searchinputrelic'/>
                                 <input id='relicLevel' type="text" placeholder="Tier" className='searchinputreliclevel'/>
                                 <div className='paddedSearchAdd' onClick={() => createRelic(callRelic())}>
-                                    <h2 className='nakedpad'>ADD</h2>
+                                    <h2 className='nakedpad'> &#x2795;&#xFE0E;</h2>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +318,7 @@ const BuildSearch = (props: any) => {
                                 <input id='abilityTalent' type="text" placeholder="Talent" className='searchinputreliclevel'/>
                                 <input id='abilityMastery' type="text" placeholder="Mastery(Y/N)" className='searchinputabilitymastery'/>
                                 <div className='paddedSearchAdd' onClick={() => createAbility(callAbility())}>
-                                    <h2 className='nakedpad'>ADD</h2>
+                                    <h2 className='nakedpad'> &#x2795;&#xFE0E; </h2>
                                 </div>
                             </div>
                         </div>
