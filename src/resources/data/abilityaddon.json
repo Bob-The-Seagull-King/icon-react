@@ -148,8 +148,8 @@
         "name": "Hades",
         "tags":[
             {"tag_name": "combo"},
-			{"tag_name": "true strike"},
-			{"tag_name": "blast", "val": "medium"}
+	    {"tag_name": "true strike"},
+	    {"tag_name": "blast", "val": "medium"}
         ],
         "description": "Gains <i>True Strike</i> and <i>Medium Blast</i><br><b>Attack</b>: <i>Autohit</i>: Fray damage<br><b>Area Effect</b>: Fray damage<br><b>Terrain Effect</b>: Create a pit under your target"
     },
