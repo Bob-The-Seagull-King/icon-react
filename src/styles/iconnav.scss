@@ -1,0 +1,53 @@
+
+.basenavitemStructure {
+    border-radius: 0.75em;
+    box-shadow: 0 0 5px 1px #bd89ac;
+    background-color: rgb(182, 0, 182);
+    color: white;
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #bd89ac;
+    }
+}
+
+.basenavStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    padding: 1em;
+    text-align: justify;
+    width: 100%;
+    display: flex;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.navpad {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+
+.navitemh2 {
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+
+.webtitle {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: rgb(182, 0, 182);
+    font-size: 3em;
+
+}
+
+.webtitlediv {
+    display: flex;
+    padding-right: 1em;
+    align-content: start;
+}

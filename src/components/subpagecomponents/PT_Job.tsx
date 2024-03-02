@@ -9,7 +9,7 @@ import JobDisplay from '../itemdisplaycomponents/JobDisplay';
 const PT_Job = (props: any) => {
     
     const searchVal = urlParse();
-    const isSearched = (value: any) => (((value.name.toLowerCase().includes(searchVal.toLowerCase()))));
+    const isSearched = (value: any) => (( (value.name.toLowerCase().includes(searchVal.toLowerCase()))));
     const jobData = getJobs();
 
     function urlParse() {

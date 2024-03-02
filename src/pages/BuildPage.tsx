@@ -12,7 +12,7 @@ import ClassStatsDisplay from '../components/itemdisplaysubcomponents/ClassStats
 import LimitBreakDisplay from '../components/itemdisplaysubcomponents/LimitBreakDisplay';
 import ClassMechanicDisplay from '../components/itemdisplaysubcomponents/ClassMechanicDisplay';
 import TraitsDisplay from '../components/itemdisplaysubcomponents/TraitsDisplay';
-import BuildSearch from '../components/itemdisplaysubcomponents/BuildSearch';
+import BuildSearch from '../components/pagecomponents/BuildSearch';
 
 import summonData from '../resources/data/summon.json';
 import relicData from '../resources/data/relic.json';
