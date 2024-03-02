@@ -17,3 +17,32 @@ $colour_grey_secondary: #D5D5D5;
     font-size: 5em;
     font-weight: 1500;
 }
+
+.homesubtitle {
+    color: $colour_purple_main;
+    font-size: 2em;
+    font-weight: 1500;
+}
+
+
+
+.homeParagraphStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 45em;
+    padding: 2em;
+    text-align: justify;
+    margin-top: -2em;
+
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+
+.homelink {
+    font-weight: 1000;
+    text-decoration: none;
+    color: $colour_purple_main;
+}
