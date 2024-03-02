@@ -4,9 +4,10 @@ import { ROUTES } from '../resources/routes-constants'
 import '../styles/iconcomponent.scss';
 import '../styles/iconbuild.scss';
 import '../styles/iconhome.scss';
+import testData from '../resources/data/ability.json';
 
 const HomePage: React.FC = () => {
-
+    console.log(testData);
     // Return result -----------------------------
     return (
         <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginTop: '-4em'}}>
