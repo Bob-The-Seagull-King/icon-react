@@ -167,7 +167,7 @@
         "ability": "Felicity",
         "name": "Fantasia",
         "tags":[
-            {"tag_name": "combo"}
+            {"tag_name": "combo"},
             {"tag_name": "action", "val": 2}
         ],
         "description": "<br><b>Effect</b>: Remove an ally in range 5 from the battlefield. Return them to the battlefield in their original location or as close as possible at the start of their turn, then they may fly 1.<br><b>Special</b>: Reduce the action cost of this ability by 1 for every two blessing tokens your target has, down to a minimum of a free action."
