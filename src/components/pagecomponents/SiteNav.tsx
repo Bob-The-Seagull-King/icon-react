@@ -34,7 +34,16 @@ const SiteNav = (props: any) => {
     function navSearch () { 
         
         const searchval = ((document.getElementById('navSearchSearch') as HTMLInputElement).value);   
-        window.open(location.protocol + '//' + location.host +''+ location.pathname + searchval, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +''+ RemoveLastDirectoryPartOf(location.pathname) + '/' + searchval, '_self', 'noopener,noreferrer');
+    }
+
+    function RemoveLastDirectoryPartOf(the_url: string)
+    {
+        const the_arr = the_url.split('/');
+        if (the_arr.length > 4) {
+            the_arr.pop();
+        }
+        return( the_arr.join('/') );
     }
   
     return (

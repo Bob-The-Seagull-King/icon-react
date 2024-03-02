@@ -1,3 +1,17 @@
+$colour_purple_main: #CA55EF;
+$colour_red_main: #EE220C;
+$colour_green_main: #61D836;
+$colour_yellow_main: #FEAE00;
+$colour_blue_main: #00A2FF;
+$colour_grey_main: #929292;
+
+$colour_purple_secondary: #fb8fff;
+$colour_red_secondary: #FF968D;
+$colour_yellow_secondary: #FFD932;
+$colour_green_secondary: #88FA4E;
+$colour_blue_secondary: #4CDDFE;
+$colour_grey_secondary: #D5D5D5;
+
 // Basic Shape and Structure -----------------------
 
 .summonStructure {
@@ -145,7 +159,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: blue;
+    background-color: $colour_blue_main;
     color: white;
 }
 
@@ -155,7 +169,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: rgb(0, 255, 255);
+    background-color: $colour_blue_secondary;
     color: white;
 }
 
@@ -165,7 +179,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: green;
+    background-color: $colour_green_main;
     color: white;
 }
 
@@ -175,7 +189,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: rgb(0, 255, 21);
+    background-color: $colour_green_secondary;
     color: white;
 }
 
@@ -185,7 +199,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: red;
+    background-color: $colour_red_main;
     color: white;
 }
 
@@ -195,7 +209,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: rgb(255, 81, 81);
+    background-color: $colour_red_secondary;
     color: white;
 }
 
@@ -205,7 +219,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: yellow;
+    background-color: $colour_yellow_main;
     color: white;
 }
 
@@ -215,7 +229,7 @@
     padding-bottom: 0.25em;
     border-radius: 0.15em;
     width: fit-content;
-    background-color: rgb(252, 255, 74);
+    background-color: $colour_yellow_secondary;
     color: white;
 }
 

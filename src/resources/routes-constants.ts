@@ -1,6 +1,7 @@
 export const ROUTES = {
     BUILD_ROUTE: '/build/*',
     TACTICS_PLAYERS_ROUTE: '/player/tactics/*',
+    HOME_ROUTE: '/',
 
     //TACTICS_PLAYERS_ROUTES
     PT_ABILITY: '/ability/*',
