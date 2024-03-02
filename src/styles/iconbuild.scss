@@ -1,3 +1,16 @@
+$colour_purple_main: #CA55EF;
+$colour_red_main: #EE220C;
+$colour_green_main: #61D836;
+$colour_yellow_main: #FEAE00;
+$colour_blue_main: #00A2FF;
+$colour_grey_main: #929292;
+
+$colour_purple_secondary: #fb8fff;
+$colour_red_secondary: #FF968D;
+$colour_yellow_secondary: #FFD932;
+$colour_green_secondary: #88FA4E;
+$colour_blue_secondary: #4CDDFE;
+$colour_grey_secondary: #D5D5D5;
 // Basic Shape and Structure -----------------------------------
 
 .baseStructure {
@@ -28,7 +41,7 @@
 .basesearchitemStructure {
     border-radius: 0.75em;
     box-shadow: 0 0 5px 1px #bd89ac;
-    background-color: rgb(182, 0, 182);
+    background-color: $colour_purple_main;
     color: white;
     text-align: justify;
     width: 100%;
@@ -41,7 +54,7 @@
 .basesearchlightStructure {
     border-radius: 1em;
     box-shadow: 0 0 5px 1px #bd89ac;
-    background-color: rgb(219, 9, 219);
+    background-color: $colour_purple_secondary;
     color: white;
     text-align: justify;
     width: fit-content;
