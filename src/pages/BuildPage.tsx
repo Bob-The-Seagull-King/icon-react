@@ -63,7 +63,11 @@ const BuildPage: React.FC = () => {
         // Grab Splits ------------------------------
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
-        const urlBuildParam = urlSplits[1];
+        
+        let urlBuildParam = "";
+        if (urlSplits.length >= 3) {
+            urlBuildParam = urlSplits[2];
+        }
         const buildSplits = urlBuildParam.split(';');
         // ------------------------------------------
 
