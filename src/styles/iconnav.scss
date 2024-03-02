@@ -19,7 +19,7 @@
     box-shadow: 0 0 5px 1px #CCC;
     padding: 1em;
     text-align: justify;
-    width: 100%;
+    width: fit-content;
     display: flex;
 
     &:hover {
@@ -50,4 +50,15 @@
     display: flex;
     padding-right: 1em;
     align-content: start;
+}
+
+.searchinputnav {
+    border-radius: 0.5em;
+    margin: 0.5em;
+    padding: 0.25em;
+    margin-left: 0em;
+}
+
+.searchpad {
+    margin-left: 1em;
 }

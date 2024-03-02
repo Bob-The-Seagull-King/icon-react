@@ -26,10 +26,29 @@ const SiteNav = (props: any) => {
     function navClick ( name: string) {    
         window.open(location.protocol + '//' + location.host +'/'+name, '_blank', 'noopener,noreferrer');
     }
+    
+    /**
+     * Opens a page based on the parameters
+     * @param name The end-params for the route
+    */
+    function navSearch () { 
+        
+        const searchval = ((document.getElementById('navSearchSearch') as HTMLInputElement).value);   
+        window.open(location.protocol + '//' + location.host +''+ location.pathname + searchval, '_blank', 'noopener,noreferrer');
+    }
   
     return (
     <div style={{width: '100%', padding: '1.5em'}}>
+        <div className='centerPosition'>
         <div className='basenavStructure'>
+            <div className=''>
+                    <div className='basenavitemStructure' onClick={() => navClick('')}>
+                        <button className="" aria-label="Customise options">
+                            <h2 className='navitemh2'>Home</h2>
+                        </button>
+                    </div>
+            </div>
+            <div className='navpad'/>
             <div className=''>
                     <div className='basenavitemStructure' onClick={() => navClick('build/')}>
                         <button className="" aria-label="Customise options">
@@ -82,16 +101,25 @@ const SiteNav = (props: any) => {
             </DropdownMenu.Root>
 
             <div>
-                
             <Routes>
                 <Route path={ROUTES.TACTICS_PLAYERS_ROUTE} element={
                     <div>
-                        TEST
-                    </div>
+                        <div className='navpad'/>
+                    
+                        <div className='basenavitemStructure searchpad'>
+                            <div className='centerPosition'>
+                                <input id='navSearchSearch' type="text" placeholder="Search" className='searchinputnav navitemh2'/>
+                                <div className='' >
+                                    <h2 className='navitemh2' onClick={() => navSearch()}>&#x1F50E;&#xFE0E;</h2>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                 } />
             </Routes>
             </div>
         </div>
+    </div>
     </div>
     );
       // ---------------------------------------------
