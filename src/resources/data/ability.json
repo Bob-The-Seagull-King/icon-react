@@ -1586,5 +1586,147 @@
         "talent2": "If Blackstar's special effect triggers, gain 5 vigor after this ability resolves.",
         "masteryname": "Great Spirit Bomb",
         "masterdescription": "When you use Blackstar, if it's special effect triggers, you can split sacrifice into 25% max hp to yourself, and 25% to an ally in range 4."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Bio",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 8},
+            {"tag_name": "attack"},
+            {"tag_name": "blast", "val": "small"}
+        ],
+        "description": "<b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Attack:</b> <i>On Hit:</i> [D] + Fray. <i>Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Charge:</b> Create a space of <i>dangerous</i> terrain in the center space of the area, and under every foe in the area.",
+        "blurb": "The earth splits, excising poison from its depths, belching poisonous metals and gases.",
+        "talent1": "You may also cause pits, objects you creates, and difficult terrain caught in the area to become <i>dangerous</i> terrain.",
+        "talent2": "You may cause existing <i>dangerous<i> terrain spaces in the area to boil with poison after this ability resolves. Characters in or adjacent to one or more of those spaces take 2 piercing damage as an <i>area effect</i>.",
+        "masteryname": "Magnabio",
+        "masterdescription": "Gain access to the <b>Magnabio</b> infusion. <i>Magnabio benefits from Bio talents</i>."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Dragon Dive",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 6},
+            {"tag_name": "end turn"},
+            {"tag_name": "delay"}
+        ],
+        "description": "<b>Effect:</b> Choose a character in range, <b>end your turn</b>, and gain <b>Delay:</b> You must take a slow turn next round. At the statr of that turn, you dive into the earth, removing yourself from the battlefield and placing yourself within range 3 of that character. They don't have to be in range or line of sight. <b>Area Effect:</b> When you explode upwards, you release a burst 1 area effect centered on you, shoving 1 and dealing 2 piercing damage to all characters.",
+        "blurb": "The earth is an old friend to geomancers, and will allow them passage as easily as slipping into water.",
+        "talent1": "Gain <i>Collide:</i> Character is <i>vulnerable</i>.",
+        "talent2": "You may burst out of the ground and fly 3 after Dragon Dive's delay effect resolves.",
+        "masteryname": "Double Dragon",
+        "masterdescription": "You can pull an adjacent willing ally with you during Dragon Dive, removing them when it triggers and placing them in any adjacent space after the ability resolves."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Geo",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "arc", "val": 6},
+            {"tag_name": "attack"}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Terrain Effect:</b> Create a height 1 boulder <i>object</i> in free space anywhere in the area after the attack resolves. <br/><b>Charge:</b> Attack target explodes in a medium blast <i>area effect</i>, dealing 2 piercing damage again to all characters and creating a <i>pit</i> under them.",
+        "blurb": "The stomp of a foot or the slap of a palm is magnified a hundered fold into rumbling death.",
+        "talent1": "When a boulder or pit is created with this ability, you may shove all adjacent characters 1 away from it. <i>Collide:</i> character has a space of <i>difficult</i> terrain created under them.",
+        "talent2": "Boulders can be created under characters, and you may choose to make characters you create boulders under immune to damage from this ability.",
+        "masteryname": "Magnageo",
+        "masterdescription": "Gain access to the <b>Magnageo</b> infusion. <i>Magnageo benefits from geo talents</i>."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Helix Heel",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "line", "val": 3}
+        ],
+        "description": "<b>Effect:</b> Release a shockwave in a line 3 <i>area effect</i>, dealing 2 piercing damage to all foes. <br/><b>Effect:</b> If an <i>object</i> is in the end space of the line, you can extend this line by 3 or more spaces in any direction, drawn from the object. If a new object is at the end space of <i>this line</i>, you can keep extending the line by 3 spaces this way each time, but can only extend it once per object.<br/><b>Effect:</b> Then, all objects this line passed through resonate, releasing a burst 1 <i>area effect</i> centered on them and dealing 2 piercing damage to all characters inside.<br/><b>Charge:</b> <i>Shatter</i> any foe damages by this ability.",
+        "blurb": "Striking deep into the earth, a wave of strength resonates with the very terrain around oneself.",
+        "talent1": "When Helix Heel bounces off an object, you can shove it 1 in any direction before extending the line.",
+        "talent2": "After Helix Heel resolves, fly 1 or teleport 1 space for each bounce (up to three times).",
+        "masteryname": "Spiral Crusher",
+        "masterdescription": "You can bounce Helix Heel off characters instead. Characters that it bounces off are shoved 1 away from you after the ability resolves. <i>Collide:</i> Create a pit under the colliding character."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Terraforming",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 6}
+        ],
+        "description": "<b>Effect:</b> Target a burst 2 (target) area in range and choose two of the following <i>terrain effects</i> to create in that area. You cannot select the same effect more than once. Effects cannot be created in spaces occupied by characters.<ul><li>Create two height 1 boulder <i>objects</i></li><li>Create two pits</li><li>Destroy any of your created objects in the area of raise the height of any existing objects by +1</li><li>Create a line 3 area of difficult terrain with at least one space in the area</li><li>Remove any difficult or dangerous terrain of your choice in the area</li></ul><br/><b>Charge:</b> Choose four effects",
+        "blurb": "The key of creation is turned, and the land is shaped like clay, as the Titans once did.",
+        "talent1": "<i>Charge:</i> Effects can also be placed in any space adjacent to the area.",
+        "talent2": "You can also create up to 3 spaces of dangerous terrain in the area as a choosable effect.",
+        "masteryname": "Ancient Eruption",
+        "masterdescription": "As part of using this ability, you may <b>end your turn</b>, and gain <b>Delay:</b> Your next turn must be slow, but at the start of that turn, you may shove <i>all</i> characters 2 spaces towards or away from the center space of the area created by Terraforming. It then explodes, dealing 2 piercing damage twice to all characters inside."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Obsidian Flesh",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "stance"},
+            {"tag_name": "power die"}
+        ],
+        "description": "<b>Stance:</b> While in this stance, set out a d6 power die at 1. Tick it up after a foe uses an ability that damages you. At 4+, gain <i>resistance</i> If the die is at maximum and you would tick it up again, this stance immediately ends and you become <i>stunned</i>.<br/><b>Refresh:</b> Refresh this stance at the start of your turn. When the stance refreshed, you may tick the die up or down by 1.",
+        "blurb": "Like the deepest magma in the earth's crust, your flesh becomes more stony when struck, eventually becoming covered in a gleaming obsidian shell.",
+        "talent1": "If this ability ticks over, it doesn't end until the end of the current turn.",
+        "talent2": "When this ability ends, you may have the shell explode off you, dealing 2 piercing damage in a range 2, burst 1 <i>area effect</i> and shoving characters inside 1.",
+        "masteryname": "Diamond Soul",
+        "masterdescription": "You have <i>regeneration</i> while in this stance, and when it refreshes, you can tick the die up or down by 2."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Realignment",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 2}
+        ],
+        "description": "<b>Effect:</b> You hit a precise pressure point on an adjacent character, purging toxins from their body. A character must be affected by at least 1 status to be targeted by this ability. End all statuses on the character and create a range 2, burst 1 <i>area effect</i> from your target. Characters within take piercing fray damage once for each effect purged, to a maximum of four times. If your target is a foe, you can also <i>shatter</i> them.<br/><b>Charge:</b> Also end any markes of your choice on your target, counting as purging an effect.",
+        "blurb": "Using your knowledge of innumerable anatomies, you quickly rearrange energy channels in your target to heal them - forcefully.",
+        "talent1": "Characters in the area take piercing fray damage again one more time if your target is bloodied.",
+        "talent2": "Create a space of <i>dangerous</i> or <i>difficult</i> terrain in the area for each effect purged.",
+        "masteryname": "Jade Needle",
+        "masterdescription": "Characters in the affected area must save or also be affected by every status that was just purged."
+    },
+    {
+        "job": "Geomancer",
+        "name": "Midas",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1},
+            {"tag_name": "range", "val": 5}
+        ],
+        "description": "<b>Trigger:</b> You or a willing ally in range is targeted by a foe's ability, that ability resolves, and they are not defeated.<br/><b>Effect:</b> You transmute yourself or your ally into solid stone, metal, or gemstone. After the triggering ability resolves, remove that character from the battlefield and replace them with a height 1 statue <i>object</i>. At the start of their next turn, or if the object is removed sooner, replace the object with the original character. Any characters or objects on top of the statue when it is replaced are placed in a free adjacent space or as close as possible.<br/><b>Special:</b> If you use this ability twice on the same character in the same combat, do not return them to the battlefield until the combat is over. Until then, they count as defeated.",
+        "blurb": "In a flash, flesh becomes unyielding stone.",
+        "talent1": "When your chosen character is returned, their statue remains on the battlefield as a <i>broken shell</i> object. Place them in an adjacent space to it instead.",
+        "talent2": "When your chosen character returns, the shell explodes off the, shoving all adjacent characters 1. If that character was at 25% hp or lower, also deal piercing fray damage to all characters in a burst 1 area centered on them as an <i>area effect</i>.",
+        "masteryname": "Stone Resonance",
+        "masterdescription": "Any time a statue created by this ability is caught in an area affect from any character, you may choose one of the following:<ul><li>Deal 2 piercing damage to all characters in the area effect again.</li><li>Shelter all adjacent characters to the statue from the area effect, granting them <i>cover</i> against its effects and +1 boon on any saves.</li></ul>"
+    },
+    {
+        "job": "Geomancer",
+        "name": "Quaking Palm",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 3},
+            {"tag_name": "attack"},
+            {"tag_name": "pierce"}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> [D] + 1. <i>Miss:</i> 1.<br/><b>Effect:</b>Foe is <i>vulnerable</i><br/><b>Effect:</b> Set up lethal vibrations in a foe's body. When they end their next turn, they take 1 piercing damage once for every object adjacent to them, up to a maximum of 4 times. Then, this effect ends.<br/><b>Charge:</b> Vibrations also damage all characters in a burst 1 <i>area effect</i> centered on the character.",
+        "blurb": "You hit your target with a pressure wave, setting up lethal vibrations in their body that are strong enough to crack the earth beneath their feet.",
+        "talent1": "While Quaking Palm's effect is active, after that character uses any ability that moves them, create a <i>difficult</i> terrain space in any free space adjacent to them.",
+        "talent2": "While Quaking Palm's effect is active, after that character uses any ability that moves them, deal 1 piercing damage to all foes adjacent to that character.",
+        "masteryname": "Pure Haeon",
+        "masterdescription": "Quaking Palm's effect triggers for each object in range 2 instead of adjacent."
     }
 ]

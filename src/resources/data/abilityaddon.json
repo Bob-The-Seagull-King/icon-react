@@ -374,5 +374,89 @@
             {"tag_name": "infuse", "val": 5}
         ],
         "description": "Ignore Blackstar's round requirement."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Bio",
+        "name": "Biotic",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Increase blast size to medium blast, and <i>shatters</i> all characters inside."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Bio",
+        "name": "Biotic",
+        "tags":[
+            {"tag_name": "infuse", "val": 6},
+            {"tag_name": "mastery"},
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 8},
+            {"tag_name": "blast", "val": "large"},
+            {"tag_name": "attack"}
+
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Terrain Effect:</b> Create a medium blast toxic cloud terrain effect centered on the center space. The area is <i>dangerous terrain<i> and characters inside the area are <i>shattered+</i>. The cloud lasts until this ability is used again."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Dragon Dive",
+        "name": "Boulder Kick",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "The area effect released becomes range 3, burst 1 (target). If only one character is caught in the area, they take 2 piercing damage twice and are shoved 2."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Geo",
+        "name": "Geotic",
+        "tags":[
+            {"tag_name": "infuse", "val": 4},
+            {"tag_name": "arc", "val": 8}
+        ],
+        "description": "Deals bonus damage to characters standing in difficult terrain, pits, or dangerous terrain, and automatically triggers the charge effect against a foe standing in those spaces."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Geo",
+        "name": "Magangeo",
+        "tags":[
+            {"tag_name": "infuse", "val": 6},
+            {"tag_name": "mastery"},
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "arc", "val": 10},
+            {"tag_name": "attack"}
+
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Effect:</b> Foe explodes in a large blast area, extending the area effect. <br/><b>Area Effect:</b> [D] + Fray.<br/><b>Terrain Effect:</b> Creates a massive crater. Create a boulder object in every side space of a small blast area centered on the attack target, with a pit in the center space. These terrain effects can be created under characters."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Terraforming",
+        "name": "Earthblood",
+        "tags":[
+            {"tag_name": "infuse", "val": 2}
+        ],
+        "description": "Sink into the ground, removing yourself from the battlefield and placing yourself in any space in the area after the ability resolves."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Realignment",
+        "name": "Medicine Palm",
+        "tags":[
+            {"tag_name": "infuse", "val": 2}
+        ],
+        "description": "The chosen character also immediately gains a <i>vigor surge</i>, but loses all vigor at the end of their next turn."
+    },
+    {
+        "job": "Geomancer",
+        "ability": "Quaking Palm",
+        "name": "Primal Burst",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "After this ability resolves, you may shove the affected character 1 space for each time the effect triggered. These shoves can be in any direction. <i>Collide:</i> Foe must save or be stunned."
     }
 ]
