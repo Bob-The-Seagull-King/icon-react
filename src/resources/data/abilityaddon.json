@@ -134,6 +134,108 @@
         "description": "Instead of the <b>Mark</b>, gain <b>Effect</b>: deal 3 damage to all characters marked by Incubus, and teleport them 2."
     },
     {
+        "job": "Warden",
+        "ability": "Underway",
+        "name": "Underway (Object)",
+        "tags":[
+            {"tag_name": "object", "val": 1}
+        ],
+        "description": "<b>Object Effect</b>: As a <i>free action</i> ability, you and allies can teleport from any space adjacent to an underway to a free adjacent space to any other underway. This ability does not interrupt movement or other action."
+    },
+    {
+        "job": "Chanter",
+        "ability": "Holy",
+        "name": "Hades",
+        "tags":[
+            {"tag_name": "combo"},
+	    {"tag_name": "true strike"},
+	    {"tag_name": "blast", "val": "medium"}
+        ],
+        "description": "Gains <i>True Strike</i> and <i>Medium Blast</i><br><b>Attack</b>: <i>Autohit</i>: Fray damage<br><b>Area Effect</b>: Fray damage<br><b>Terrain Effect</b>: Create a pit under your target"
+    },
+    {
+        "job": "Chanter",
+        "ability": "Felicity",
+        "name": "Fleet",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "Effect: An ally in range 5 is <i>blessed</i> and may fly 4. For every foe or ally they pass over during this movement, they gain 2 vigor."
+    },
+    {
+        "job": "Chanter",
+        "ability": "Felicity",
+        "name": "Fantasia",
+        "tags":[
+            {"tag_name": "combo"}
+            {"tag_name": "action", "val": 2}
+        ],
+        "description": "<br><b>Effect</b>: Remove an ally in range 5 from the battlefield. Return them to the battlefield in their original location or as close as possible at the start of their turn, then they may fly 1.<br><b>Special</b>: Reduce the action cost of this ability by 1 for every two blessing tokens your target has, down to a minimum of a free action."
+    },
+    {
+        "job": "Chanter",
+        "ability": "Pandaemonium",
+        "name": "Purgatorio",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "<br><b>Attack</b>: <i>Autohit</i>: [D]+fray<br><b>Area Effect</b>: Fray<br><b>Effect</b>: All pits in the area explode for a <i>medium blast</i>  area effect, centered on them. <i>Area Effect</i>: fray damage.<br><b>Effect</b> : Create a pit under the attack target"
+    },
+    {
+        "job": "Chanter",
+        "ability": "Dervish",
+        "name": "Dawn",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "<b>Effect</b>: Gain aura 1 until the end of your next turn. While in the aura, yourself and allies gain +1 boon on saves and can save to end statuses and other effects at the <i>start</i> of your turns instead of the end."
+    },
+    {
+        "job": "Chanter",
+        "ability": "Chastise",
+        "name": "Charism",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "<b>Effect</b>: Choose a foe in range. At the end of that foe’s next turn, either <i>cure</i> or <i>bless</i> allies in a small blast area centered on them (choose). If there were two or more allies in the area, then create a pit under that foe."
+    },
+    {
+        "job": "Harvester",
+        "ability": "Sow",
+        "name": "Reap",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Summon a Thrall adjacent to your target.<br><b>Slay</b>: Repeat the effect<br><b>Special</b>: You can make this melee attack against the target marked by Sow regardless of distance or line of sight. It also gains <i>unerring</i> if made this way."
+    },
+    {
+        "job": "Harvester",
+        "ability": "Rot",
+        "name": "Regrowth",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "<b>Mark</b>: Mark an ally in range. While marked, that character has <i>regeneration</i>. If that character is at 25% hp or lower when marked, they also gain <i>defiance</i>.<br><b>Special</b>: This mark can be placed even if Rot is already active."
+    },
+    {
+        "job": "Harvester",
+        "ability": "Rot",
+        "name": "Reap",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "<b>Mark</b>: Mark a character in range 4. If that character would be defeated before the start of your next turn, they are instantly <i>rescued</i> after being defeated, then gain a <i>vigor surge</i> and become <i>unstoppable</i> until the end of their next turn. Then, even if this effect didn’t trigger, summon a <i>plant</i> in an adjacent space to them and end this mark."
+    },
+    {
+        "job": "Harvester",
+        "ability": "Fairy Ring",
+        "name": "Spirit Away",
+        "tags":[
+            {"tag_name": "interrupt", "val": 2}
+        ],
+        "description": "<b>Trigger</b>: A foe enters or exits the area.<br><b>Effect</b>: Teleport that foe 2 and <i>seal</i> them. This interrupts but does not end their movement."
+    },
+    {
         "job": "Enochian",
         "ability": "Gigaflare",
         "name": "Tetraflare",
