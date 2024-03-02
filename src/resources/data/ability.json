@@ -1084,6 +1084,348 @@
         "masterdescription": "Strength Of The Pack becomes a free action at round 4 or later and its aura affects the entire battlefield."
     },
     {
+        "job": "Warden",
+        "name": "Underway",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "terrain effect"}
+        ],
+        "description": "<b>Terrain Effect</b>: Create a leafy portal object in a free adjacent space. At the end of your turn, create another portal in a free adjacent space. Portals last until this ability is used again. Portals don’t provide obstruction and can’t stack or be stacked on other objects.<br><b>Charge</b>: Summon a beast each time you create an underway this turn.",
+        "blurb": "You open the greenways to your allies, allowing them to step the branch-paths and cross distances in an instant.",
+        "talent1": "While you have stealth, you can create a third underway at any point during your turn as a <i>free action</i>. This underway is replaced if created again.",
+        "talent2": "When you create an underway, you may create up to three spaces of leafy <i>difficult terrain</i> in adjacent spaces. Allies adjacent to underways have <i>cover</i>.",
+        "masteryname": "BALE PORTAL",
+        "masterdescription": "Foes that are shoved into portals or that end their turn adjacent to an underway can be teleported to any free space adjacent to any other underway. A foe can pass a save to avoid it, and can only be successfully teleported this way once a round. Bloodied foes fail the save."
+    },
+    {
+        "job": "Warden",
+        "name": "Morrigan",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "delay"}
+        ],
+        "description": "<b>End your turn</b> and gain <b>Delay</b>: Your next turn must be slow. At the start of that turn, you summon a massive flock of winged beasts that lashes out at all characters in range 2. Yourself, allies, and allied summons in range can dash 2, then gain <i>stealth</i>. Foes in range are shoved 2, and are <i>blinded</i>.<br><b>Collide</b>: Summon a beast.",
+        "blurb": "You call in the winged warriors of the sky to smite your foes.",
+        "talent1": "While holding Morrigan, you have <i>cover</i> and ranged attacks against you take +1 difficulty.",
+        "talent2": "After Morrigan resolves, some of the winged creatures linger, creating two spaces of <i>dangerous terrain</i> in range 2.",
+        "masteryname": "DARK WING",
+        "masterdescription": "After Morrigan resolves, you can redirect the flock, creating a small blast terrain effect in range 3. The area is <i>dangerous terrain</i> for foes, and allies in the area have <i>cover</i>. It lasts until this effect is repeated."
+    },
+    {
+        "job": "Warden",
+        "name": "Sidhe",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+            {"tag_name": "melee"},
+			{"tag_name": "boon", "val": 1}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: [D]. <i>Miss</i>: 1 damage.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Effect</b>: Your target is injected with a catalyzing toxin. At the end of their next turn, they take 6 damage. Reduce this damage to 3 if they end that turn adjacent to an ally. Then, this effect ends.<br><b>Finishing Blow</b> or <b>Charge</b>: Shove your target 2",
+        "blurb": "Dip your weapons in the toxins of the deadliest creatures to roam the deep green. Mere preparation of this technique requires years of ritual, patience, and training.",
+        "talent1": "Also create a space of <i>dangerous terrain</i> adjacent to your foe after the effect expires.",
+        "talent2": "When the effect expires, your foe explodes with a medium blast area effect, dealing 2 damage to all other characters within.",
+        "masteryname": "GREAT FUME POISON",
+        "masterdescription": "While the toxin’s effect is active, your foe treats all other characters as having <i>cover</i>, <i>evasion</i> and <i>dodge</i>. This effect turns off while they are adjacent to an ally."
+    },
+    {
+        "job": "Chanter",
+        "name": "Holy",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+            {"tag_name": "range", "val": 5},
+            {"tag_name": "combo"}
+        ],
+        "description": "<b>Effect</b>: Foe is <i>pacified</i>.<br><b>Effect</b>: <i>Cure</i> a character in range 2 of that foe.<br><b>Charge</b>: Grant 3 vigor to all other characters of your choice in range 2 of your foe.",
+        "blurb": "You ring the bell of purity and a tone rings out that soothes the peaceful and chastises the violent. A second ring from the bell shatters the tone from the first, breaking open the earth.",
+        "talent1": "After Hades resolves, <i>gamble</i>, then all pits in the area explode for a <i>medium blast</i> area effect, centered on them. <i>Area Effect</i>: characters in at least one area take damage equal to half the gamble result.",
+        "talent2": "You may fly 1 before using Holy, or 3 when <i>charged</i>.",
+        "masteryname": "MAGNASANCTI",
+        "masterdescription": "Holy creates a small blast terrain effect after resolving. Only one of these areas can be placed at once. Allies have <i>flying</i> in the area, and allies that end their turn in the area may gain 2 vigor."
+    },
+    {
+        "job": "Chanter",
+        "name": "Felicity",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 5},
+            {"tag_name": "mark"},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Mark</b>: Mark an ally in range. That character gains a <i>blessing</i> and can <i>fly</i> 2. Whenever you spend a combo token, your marked character can <i>fly</i> 2.<br><b>Charge</b>: That ally gains two <i>blessings</i> instead.",
+        "blurb": "You ring the bell of fleeting guardians, and an ally feels their step lifted by invisible wings.",
+        "talent1": "When an ally ends any movement from this ability, they can shove all adjacent characters 1.",
+        "talent2": "You can fly 1, then shove an adjacent character 1 when granting movement from this ability.",
+        "masteryname": "FANTASIA",
+        "masterdescription": "Gain an alternate combo ability. You can choose this ability or Fleet when you spend a token:"
+    },
+    {
+        "job": "Chanter",
+        "name": "Pandaemonium",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"},
+            {"tag_name": "range", "val": 5},
+			{"tag_name": "blast", "val": "medium"},
+			{"tag_name": "combo"}
+        ],
+        "description": "<br><b>Attack</b>: <i>Autohit</i>: [D]+fray<br><b>Area Effect</b>: Remove all characters in the area, then place them back in any other space in the area.<br><b>Charge</b>: Increase area to Large Blast, and allies in the area gain 4 vigor.",
+        "blurb": "You sing a passage of the days of chaos and battle, where the tumult of the battlefield was like the churning of the sea, and divine lightning scathed the land.",
+        "talent1": "After Pandaemonium resolves, <i>gamble</i>. Shove all characters affected 1 space in any direction. On a 4+, shove them 1 again. On a 6, shove them 1 again.",
+        "talent2": "Purgatorio’s damage does not break <i>pacified</i> and its effect causes pits to appear under every <i>pacified</i> foe.",
+        "masteryname": "DULCE PURGATORIO",
+        "masterdescription": "This ability deals bonus damage. Pandaemonium’s area effect and Purgatorio’s pit explosion effect extend to <i>all</i> pits on the battlefield."
+    },
+    {
+        "job": "Chanter",
+        "name": "Aria",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "true strike"},
+			{"tag_name": "delay"}
+        ],
+        "description": "<b>End your turn</b> and gain <b>Delay</b>: your next turn must be slow. At the start of that turn, you deliver a stunning performance, affecting a small blast <b>area effect</b> centered on you. Foes in the area take fray damage twice and are <i>sealed</i>. <i>Sealed</i> or <i>Pacified</i> foes are shoved 1. Allies in the area are <i>cured</i>.<br><b>Special</b>: If you are damaged by a foe’s ability before the start of that turn, the area becomes a medium blast. If you are damaged again, it becomes a large blast.",
+        "blurb": "You pose, then deliver a striking performance that resonates through the soul.",
+        "talent1": "You may fly 1 when Aria’s special effect triggers.",
+        "talent2": "If Aria’s special effect triggers twice, gain <i>defiance</i> and also become <i>unstoppable</i> until the start of your turn.",
+        "masteryname": "POWER CHORD",
+        "masterdescription": "At round 4 or later, Aria gains <b>charge</b>: free action."
+    },
+    {
+        "job": "Chanter",
+        "name": "Dervish",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Effect</b>: You fly 1, then whisk an ally in range away with powerful winds, removing them from the battlefield and placing them in any space adjacent to you.<br><b>Charge</b>: Choose a second ally",
+        "blurb": "You sing of the comfort of companions, and the dawn that surely will follow.",
+        "talent1": "A swirling aura 1 of winds surrounds you after taking this ability until the start of your next turn, granting you and allies inside <i>counter</i>.",
+        "talent2": "Before you use this ability, you can cause a wind blast, shoving all adjacent foes 1 and dealing 2 damage to them.",
+        "masteryname": "BEACON OF HOPE",
+        "masterdescription": "You can empower this ability to gain both effects at once and automatically activate their charge effects. This also counts as spending a combo token, though you don’t actually need to spend one. If you empower the ability this way, it cannot be used for the rest of combat."
+    },
+    {
+        "job": "Chanter",
+        "name": "Symphony",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "true strike"}
+        ],
+        "description": "<b>Terrain Effect</b>: Remove up to four blessings from characters anywhere to create pulsing motes of energy that descend, creating terrain spaces in free space on the map. None can be placed adjacent to each other or overlap.<ul><li>Any character that enters an affected space or starts their turn there detonates the mote, removing it and creating a small blast explosion as an <i>area effect</i>, centered on them. Foes inside take fray damage, and allies inside gain 2 vigor.</li><li>If the character was yourself or an ally, they are <i>blessed</i> and can fly 1. If that character was a foe, they also have a <i>pit</i> created under them.</li></ul><b>Charge</b>: Create +2 more spaces.",
+        "blurb": "You ring the bell of thresholds, creating crystalline fragments of the ancient power that courses through the Chant.",
+        "talent1": "When motes explode, they deal 2 damage again to all foes inside and shove them 1 away from the center space if at least one other mote was already exploded this turn.",
+        "talent2": "Allies are <i>cured</i> after detonating their second mote in the same turn.",
+        "masteryname": "CRESCENDO",
+        "masterdescription": "If you create four or more motes with this ability, you can create a mote in range 5 as a <i>free action</i> as part of ending your turn for the rest of combat. This effect does not stack."
+    },
+    {
+        "job": "Chanter",
+        "name": "Gentleness",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "stance"}
+        ],
+        "description": "Gain <b>Stance</b>: When you take this stance, you have aura 1. All characters (including yourself) in the aura gain +1 curse on attacks and take 1 <i>divine</i> damage each time they deal damage to another character.<br><b>Refresh</b>: Refresh or exit this stance at the start of your turn.",
+        "blurb": "You radiate an aura of such powerful peace that all close to you, monster or man, find it impossible to raise a hand in violence.",
+        "talent1": "Yourself and allies inside the aura also have <i>counter</i> in this stance.",
+        "talent2": "Characters cannot critically hit or be critical hit inside Gentleness’ aura, and also cannot gain, deal, or take bonus damage.",
+        "masteryname": "GENTLE PRAYER",
+        "masterdescription": "Gains <i>Special Effect</i>: When the aura refreshes, you may increase or decrease the aura size by +1, to a maximum of 3 or a minimum of 1. When you do, foes inside must save or be <i>pacified</i>."
+    },
+    {
+        "job": "Chanter",
+        "name": "Monogatari",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "gamble"}
+        ],
+        "description": "<b>Effect</b>: Sing a short passage from the book of ages. At the end of your turn, <b>gamble</b> and consult the following table to see which tale you sing. The song resonates in the air until this ability is used again. Yourself or allies that complete the described course of action from the song passage are <i>blessed</i> at the end of their turn they complete it and may fly 2. Characters can only fulfill this condition once per song.<br><b>Charge</b>: Roll one extra d6 when gambling and choose <i>any</i> result.<ol><li><b>A Tale of Fury</b>: Reduce a character to 0 hp or reduce them below 50% hp if above.</li><li><b>A Tale of Travels</b>: Move more than 4 spaces from your starting point on your turn</li><li><b>A Tale of Green and Pleasant Times</b>: Do not attack</li><li><b>A Tale of Cunning</b>: Use an interrupt</li><li><b>A Tale of Boon Companions</b>: End your turn adjacent to an ally</li><li><b>A Tale of Triumph</b>: Use an ability on an ally</li></ol>",
+        "blurb": "Some chanters also study the Book of Ages, the great mythic chronicle of heroes from the time of the Doom. This unorthodox text inherits some of their ability to sing the chant, granting it tangible power.",
+        "talent1": "You can cause the effect to also apply to foes. Foes that fulfill the condition are <i>sealed</i>.",
+        "talent2": "You can spend any number of blessings on characters in range 2 to roll 1 extra d6 per blessing spent when gambling.",
+        "masteryname": "RACONTEUR",
+        "masterdescription": "Roll 1 extra d6 when gambling, and when gambling, you can choose any <i>two</i> results. Yourself and allies that complete both results in the same turn are also <i>cured</i>."
+    },
+    {
+        "job": "Chanter",
+        "name": "Chastise",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+            {"tag_name": "range", "val": 5},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Attack</b>: <i>Autohit</i>: Fray<br><b>Effect</b>: Foe is <i>sealed</i><br><b>Effect</b>: Choose either yourself or an ally in range. Until the end of your foe’s next turn, if they damage any character chosen with an ability, they take 1 <i>divine</i> damage three times at the end of that turn. Whether this ability triggered or not, this effect then ends.<br><b>Charge</b>: Choose yourself <i>and</i> an ally in range.",
+        "blurb": "You ring the bell of true names, forbidding your foes in august tones against harming an ally.",
+        "talent1": "While either effect from this ability is active, your foe takes 1 <i>divine</i> damage after using any ability that damages another character.",
+        "talent2": "While either effect from this ability is active, if your foe <i>defeats</i> any character, they take 1 <i>divine</i> damage three times.",
+        "masteryname": "SUPREME FORBIDDANCE",
+        "masterdescription": "The first time you use this ability in a combat, any character chosen is <i>immune</i> to all damage from the chosen foe until the start of your next turn."
+    },
+    {
+        "job": "Harvester",
+        "name": "Sow",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+            {"tag_name": "range", "val": 4},
+            {"tag_name": "mark"},
+			{"tag_name": "pierce"},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Attack</b>: <i>Autohit</i>: fray<br><b>Effect</b>: Your foe is <i>sealed</i>.<br><b>Mark</b>: You foe is marked. When marked, and after you attack your marked foe thereafter, bless yourself or an ally in range 3 of your target.",
+        "blurb": "You throw out a poison seed that bursts into thorny death.",
+        "talent1": "<i>Effect</i>: If Sow’s marked foe is defeated, it can be transferred to a different foe in range 3 from that foe.",
+        "talent2": "<i>Comeback</i>: Reap’s Slay effect triggers.",
+        "masteryname": "SPECTRAL SCYTHE",
+        "masterdescription": "Reap and Sow also create an arc 4 <i>area effect</i> drawn from your target as the origin space, that cannot include your target. Foes inside take 2 piercing damage, and allies inside gain 2 vigor."
+    },
+    {
+        "job": "Harvester",
+        "name": "Growing Season",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+            {"tag_name": "mark"}
+        ],
+        "description": "<b>Mark</b>: Mark a character in range. Once a round after that character ends their turn, create a <i>plant</i> adjacent to their space.<br><b>Effect</b>: If that character is bloodied, repeat this effect. Foes are additionally <i>pacified</i>.",
+        "blurb": "Blow magical spores in the air, which are disturbed by the chaos of combat. Where they fall, the fruit of life and death blooms.",
+        "talent1": "Abilities used against a character marked by growing season gain <i>slay</i>: create an <i>Eden vine</i> <i>terrain effect</i> in an adjacent space. The vine is <i>difficult terrain</i> and a <i>pit</i> and creates a <i>plant</i> in its space at the start of the round if there isn't already a plant there.",
+        "talent2": "Abilities used against a character marked by growing season gain <i>slay</i>: create a height 1 <i>blood tree</i> object in adjacent space. The tree creates a <i>plant</i> on top of it at the start of the round if there isn't already a plant there.",
+        "masteryname": "SOOTHING SPORE",
+        "masterdescription": "Foes marked by Growing Season are <i>pacified</i>+ while in or adjacent to spaces occupied by <i>plants</i>."
+    },
+    {
+        "job": "Harvester",
+        "name": "Gravebirth",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "stance"}
+        ],
+        "description": "<b>Stance</b>: When you enter this stance, or when it refreshes, <i>Summon</i> a thrall in free space in range 2. While in this stance, you have aura 2, with the following effects:<ul><li>At the end of your turn, you may consume any blessing tokens in the aura to summon one thrall in the aura per blessing consumed.</li><li>At the start of your turn, you can prevent up to three thralls in the area from collapsing into plants.</li></ul><b>Refresh</b>: Refresh this stance once a round when you trigger a <i>slay</i> effect.",
+        "blurb": "Vine and root coil through the deep soil, bringing forth the restless dead.",
+        "talent1": "When you end your turn, all thralls of your choice burrow, removing them from the battlefield, then you may place them in free space in your aura.",
+        "talent2": "At the end of your turn, you may <i>sacrifice</i> 2 to summon an additional thrall.",
+        "masteryname": "RECYCLE",
+        "masterdescription": "While Gravebirth’s aura is active, as a free action you can cause any two thralls in the aura to collapse into plants to <i>cure</i> an ally in range 4."
+    },
+    {
+        "job": "Harvester",
+        "name": "Harvest",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"},
+			{"tag_name": "arc", "val": 6}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray <i>Miss</i>: fray.<br><b>Area Effect</b>: Foes take fray damage. Allies are <i>blessed</i>.<br><b>Slay</b>: Summon a Thrall for each foe in the area, and deal 2 piercing damage again as an <i>area effect</i> to those foes.",
+        "blurb": "You swing with a blade as bright as the new moon.",
+        "talent1": "Allies in the area also gain 2 vigor, or 4 vigor if Harvest’s Slay effect triggers.",
+        "talent2": "Gains Range 2. <i>Comeback</i>: Range 5",
+        "masteryname": "HARVEST MOON",
+        "masterdescription": "When this ability passes through a <i>plant</i>, you can cause that plant to explode, dealing 2 piercing damage in a small blast <i>area effect</i> centered on each plant, and granting its blessing character to yourself or any other ally in range 3 of that plant. Characters can only be damaged by one of these explosions a turn."
+    },
+    {
+        "job": "Harvester",
+        "name": "Blood Grove",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 2},
+			{"tag_name": "terrain effect"},
+			{"tag_name": "summon"}
+        ],
+        "description": "<b>Terrain Effect</b>: Grow a <i>medium blast</i> area of undergrowth, with its center space in range. The area is <i>dangerous terrain</i> for foes and disappears if you use this ability again.<br><b>Effect</b>: As long as you are in the area, summon a <i>thrall</i> in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:<ul><li>Triggered a <i>slay</i> effect</li><li><i>Sacrificed</i> as part of an ability</li><li>Are bloodied</li></ul>Each condition can only trigger once.",
+        "blurb": "The wilderness boils with explosive growth, fed by the blood of the battlefield.",
+        "talent1": "All spaces of the area cost 0 movement for thralls to enter.",
+        "talent2": "Once on your turn you, while inside the area, you can <i>sacrifice</i> 2 to extend the area by 2 spaces, adding to its total area on any edge.",
+        "masteryname": "HUNGRY GROVE",
+        "masterdescription": "Each time you summon a thrall with Blood Grove, extend the area by 1 space, added to its total area, as long as those spaces are placed adjacent to the area when the effect is triggered."
+    },
+    {
+        "job": "Harvester",
+        "name": "Rot",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+            {"tag_name": "combo"},
+			{"tag_name": "mark"}
+        ],
+        "description": "<b>Mark</b>: Mark a foe in range. While marked, that character cannot be <i>cured</i>, cannot gain or benefit from vigor, and gains +1 curse on saves. If that character is at 25% hp or lower when marked, they also lose <i>defiance</i>.",
+        "blurb": "Leaves shrivel. Hair Curls. Wounds fail to heal.",
+        "talent1": "Characters marked by regenerate gain <i>comeback</i> : summon a <i>plant</i> in an adjacent space at the start of their turn.",
+        "talent2": "Foes that start their turn adjacent to a character marked by Rot take 2 piercing damage.",
+        "masteryname": "REGROWTH",
+        "masterdescription": "Gain an alternate combo action:"
+    },
+    {
+        "job": "Harvester",
+        "name": "Crimson Bloom",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+            {"tag_name": "mark"},
+			{"tag_name": "summon"},
+			{"tag_name": "power die"}
+        ],
+        "description": "<b>Mark</b>: Mark a character in range. At the end of any turn that character took damage, or after they attack, set out a d6 power die or increase the die by 1. When the die would tick to 6, consume it. The marked character <i>sacrifices</i> 6, but then gains 6 vigor, deals <i>bonus damage</i> with all abilities, and becomes <i>unstoppable</i> until the end of their next turn.<br><b>Effect</b>: When the die is consumed, <b>summon</b> a <i>plant</i>, and pass this mark to a new character of your choice in in range 3 of the original character. You must pass the mark if possible. If there are no valid characters, the mark ends.",
+        "blurb": "You release a rapidly growing seed of the Thornwillow, the blood-fatted plant of the harvesters whose sap is a powerful intoxicant.",
+        "talent1": "If Crimson Bloom’s damage would reduce an ally to 1 hp or below, they also gain <i>defiance</i>.",
+        "talent2": "Foes at 25% hp or lower sacrifice 10 instead.",
+        "masteryname": "MOTHER BLOODWILLOW",
+        "masterdescription": "At round 4 or later, Crimson Bloom becomes a <i>free action</i> and its power die starts at 3 ticks."
+    },
+    {
+        "job": "Harvester",
+        "name": "Fairy Ring",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "end turn"},
+			{"tag_name": "terrain effect"}
+        ],
+        "description": "<b>Terrain Effect</b>: <b>End your turn</b> and create a ring of mushrooms, a burst 2 (self) terrain effect. The ring can be created overlapping any terrain and underneath characters. While the ring is active, gain the following interrupt. The ring lasts until this ability is used again.",
+        "blurb": "You cast out a handful of aether-feeding fungi, holy spores that grow into a ringed garden of colorful and deadly mushrooms.",
+        "talent1": "Foes cannot gain vigor inside of the ring, and lose all vigor if they start their turn there.",
+        "talent2": "You can use Spirit Away on allies. If you do, it doesn’t <i>seal</i> them.",
+        "masteryname": "SPORE SHROUD",
+        "masterdescription": "Whenever the rings’ interrupt activates, create a height 1 <i>Megamushroom</i> object anywhere inside or adjacent to the area. The object has a blessing token on it and counts as a <i>plant</i>, but isn’t removed if the token is removed."
+    },
+    {
+        "job": "Harvester",
+        "name": "Dark Sliver",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+			{"tag_name": "range", "val": 2}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Terrain Effect</b>: Cut away a part of the target’s soul, choosing a free space in range 3 of your foe. If the foe is not occupying that space at the end of their next turn, they take 2 piercing damage, are <i>pacified</i>, and summon a <i>plant</i> in that space.<br><b>Slay</b>: Create a plant in range 3 of your foe.",
+        "blurb": "The blade edges of the harvesters are so sharp they can cut the very soul.",
+        "talent1": "<i>Comeback</i>: Deal bonus damage, and increase all ranges by +1",
+        "talent2": "<i>Sacrifice</i> 2: Ability gains range 6",
+        "masteryname": "RECYCLE",
+        "masterdescription": "Dark Sliver can summon a <i>mote of life</i> instead of any regular plant. A mote of life is a <i>plant</i>, but becomes a <i>terrain effect</i> when its blessing is removed. Inside, any ally gains <i>regeneration</i> while standing in its space."
+    },
+    {
         "job": "Sealer",
         "name": "Godly Smite",
         "chapter": 1,
