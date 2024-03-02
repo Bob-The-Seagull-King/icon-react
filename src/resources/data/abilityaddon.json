@@ -458,5 +458,81 @@
             {"tag_name": "infuse", "val": 3}
         ],
         "description": "After this ability resolves, you may shove the affected character 1 space for each time the effect triggered. These shoves can be in any direction. <i>Collide:</i> Foe must save or be stunned."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Blitz",
+        "name": "Gran Blitz",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "slay"}
+        ],
+        "description": "Repeat the first effect."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Nothung",
+        "name": "Gram",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "slay"}
+        ],
+        "description": "<b>Effect:</b> After the ability resolves, release a flurry of slashes in a burst 2 (self) <i>area effect</i>, dealing 1 piercing damage, twice, to all foes."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Atherwand",
+        "name": "Athersturm",
+        "tags":[
+            {"tag_name": "infuse", "val": "x"}
+        ],
+        "description": "Infuse X aether, and extend the area by 1 spaces for every Aether infused, up to a maximum of +3 spaces."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Bifrost",
+        "name": "Heimdall",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "slay"}
+        ],
+        "description": "Create a new line 3 terrain effect, which cannot overlap the first. This second effect does not deal damage but has the same terrain effect as the first."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Rampant Nail",
+        "name": "Lightning Spike",
+        "tags":[
+        ],
+        "description": "The spike has aura 2. Whenever you or an ally deals 3 or less damage to a character in the aura, gain a d6 power due at 1, or tick the power due up by 1. At the start of any turn the die is at maximum, the spike becomes charged with energy. While charged, you can cause the spike to explode as a <i>free action</i> ability, dealing 1 piercing damage, twice to all characters in the aura as an <i>area effect</i>, <i>shattering</i> them, and shoving them 1 away from it. The spike is then removed."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Rampant Nail",
+        "name": "Ruinos",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "slay"}
+        ],
+        "description": "Re-summon the nail after it detonantes, discarding the first power die."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Drifting Leaf",
+        "name": "Leaf on The Wind",
+        "tags":[
+            {"tag_name": "interrupt", "val": 2}
+        ],
+        "description": "<b>Trigger:</b> A foe enters a space adjacent to you.<br/><b>Effect:</b> Teleport 2, then deal 1 piercing damage to that foe."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Drifting Leaf",
+        "name": "Phantom Blade",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "slay"}
+        ],
+        "description": "Until the start of your next turn, this interrupt has unlimited uses."
     }
 ]

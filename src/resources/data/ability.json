@@ -1728,5 +1728,146 @@
         "talent2": "While Quaking Palm's effect is active, after that character uses any ability that moves them, deal 1 piercing damage to all foes adjacent to that character.",
         "masteryname": "Pure Haeon",
         "masterdescription": "Quaking Palm's effect triggers for each object in range 2 instead of adjacent."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Blitz",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 3},
+            {"tag_name": "attack"},
+            {"tag_name": "pierce"}
+        ],
+        "description": "<b>Effect:</b> Teleport 1, then deal 1 piercing damage to a foe in range 3, then teleport 1, then deal 1 piercing damage to a foe in range 3.<br/><b>Attack:</b><i>On Hit:</i> [D]. <i>Miss:</i> 1 damage.<br/><b>Effect:</b> Foe is <i>vulnerable</i>.",
+        "blurb": "A thousand needles of light, each striking a perfect blow.",
+        "talent1": "When used against a bloodied foe, blitz creates two lightning <i>dangerous</i> terrain spaces in free space in range 2 of them.",
+        "talent2": "You can grant Blitz's first effect to any ally in range 2 instead.",
+        "masteryname": "Gungnir",
+        "masterdescription": "The last teleport you make with Blitz creates a small blast <i>terrain effect</i> of crackling lightning in free space, with at least one space adjacent. The area is <i>dangerous</i> terrain. At the start and end of your turn, you may deal 1 piercing damage to all characters in the area. The area disappears if a new one is created."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Odinforce",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "power die"},
+            {"tag_name": "stance"}
+        ],
+        "description": "<b>Stance:</b> Shoot a flurry of lightning bolts into the air and set out a d6 power die, starting at 3. When you enter this stance, or any time you teleport, you may call a bolt down, dealing 1 piercing damage to a foe in range 3 as an <i>area effect</i>, then reducing your power die by 1. This effect can trigger any number of times a turn. If you run out of bolts, Odinforce ends.<br/><b>Effect:</b> When you trigger a <i>slay</i> effect, gain +2 more bolts.<br/><b>Refresh:</b> This stance automatically refreshes at the start of your turns. When this stance refreshes, gain 2 more bolts, to a maximum of 6.",
+        "blurb": "You thrust your weapon skyward, and pierce the heavens.",
+        "talent1": "If you end a turn without attacking, gain +2 more Odinforce bolts.",
+        "talent2": "<i>Comeback:</i> Odinforce gains 4 bolts instead of 2 on refressh.",
+        "masteryname": "Levinblades",
+        "masterdescription": "At round 4 or later, if you're in this stance, you may spend 1 action and end it to deal 1 piercing damage six times, to a character in range 6, ignoring cover. If you do so, you can't use the stance again for the rest of combat."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Nothung",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 2},
+            {"tag_name": "attack"},
+            {"tag_name": "arc", "val": 4}
+        ],
+        "description": "<b>Effect:</b> Teleport 1.<br/><b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Effect:</b> Teleport 1, then deal 1 piercing damage again to your target for every for or ally adjacent to them, to a maximum of four times.",
+        "blurb": "You summon a blade of pure lightning energy, sweeping it in a shining arc.",
+        "talent1": "When used against a bloodied foe, Nothung deals bonus damage, and deals 1 piercing damage again to its target on hit.",
+        "talent2": "<i>Comeback:</i> Increase teleport to 4.",
+        "masteryname": "Excalibur",
+        "masterdescription": "All 1 piercing damage listed by this ability becomes <i>divine</i>."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Atherwand",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+            {"tag_name": "terrain effect"}
+        ],
+        "description": "<b>Terrain Effect:</b> Swipe your weapon to create a line 3 area of crackling winds in range, with the following features:<ul><li>The area is <i>difficult terrain</i></li><li>Allies may use any space of the area for <i>cover</i> as if it were height 1 terrain.</li><li>Foes that end their turn in the area are <i>shattered</i></li><li>Once a rounde, when you include any space of the atherwand in an area effect, you can infure the triggering ability with stormy power, teleporting all characters targeted by that ability and any characters in the wall 1 space.</li></ul><br/>The are lasts until created again.",
+        "blurb": "You summon the highwinds to batter your foes.",
+        "talent1": "When you use this ability again, it doesn't replace the old area, but extends it, as long as at least once space of the new area is adjacent to the old.",
+        "talent2": "At the statr of your turn, you can move the area 1 space in any direction. If it moves into the space of a character, it shoves them 1.",
+        "masteryname": "Hellerwind",
+        "masterdescription": "You can create a powerful gale instead. If you do, you can't extend or move the area, but it becomes <i>impassable</i> terrain."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Fulminate",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "mark"}
+        ],
+        "description": "<b>Mark:</b> A character in range 6 is marked. The character gains aura 2 while marked. At the start of your turn, or when marking your character, you may teleport all characters in the aura 1 space, all ending either closer or further away from the character than they started.",
+        "blurb": "You charge your target with unstable magnetic energy, causing unstoppable attractive force.",
+        "talent1": "When marking a charcter, you can increase the area to 3, and the teleport to 2, but it only affects allies.",
+        "talent2": "When marking a character, you can condense the aura to 1, but increase the teleoprt to 2 spaces instead.",
+        "masteryname": "Hand of Tyr",
+        "masterdescription": "Ranged attacks against the target change depending on whether you marked a foe or ally.<ul><li>On a foe, attacks are pulled towards it. They have no maximum range if they have a listed range and target the foe, deal bonus damage, and ignore cover</li><li>On an ally, attacks made from range 2 or greater cannot critical hit (turn any critical hit into a regular hit), cannot deal bonus damage, and gain +1 curse.</li></ul>"
+    },
+    {
+        "job": "Spellblade",
+        "name": "Bifrost",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "<b>Area Effect:</b> Sweep your blade to cut a line 3 crackling lightning arch, dealing 2 piercing damage to all characters in the area.<br/><b>Terrain Effect:</b> The arch remains in the air. Yourself and allies that enter any space in or adjacent to the area can grab on to it as a <i>free action</i> ability to immediately teleport to any other free space in or adjacent to the area.<br/>Then the area is consumed, removing it.",
+        "blurb": "You slash a line of rampant multicolored lightning aether, a blinding arch of light that can carry you or your allies to safety.",
+        "talent1": "The teleport from Bifrost can interrupt other actions and does not stop movement.",
+        "talent2": "Bifrost areas grow by 2 spaces, added anywhere to the total area in any pattern, at the end of each round. When they grow, deal 1 piercing damage to all characters inside.",
+        "masteryname": "Path to Erenhelion",
+        "masterdescription": "Bifrost bounces if its end space lands in the space of an object, creating a second line 3 area that extends the total area effect and terrain effect area."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Rampant Nail",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 3},
+            {"tag_name": "power die"}
+        ],
+        "description": "<b>Terrain Effect:</b> You impale a firece spike of lightning ather in a space in range. The spike lasts until activated (see below) or a new spike is summoned.",
+        "blurb": "A weapon of pure lightning energy impales itself into the earth, flying froma a phantom arsenal, and crackling with potential.",
+        "talent1": "While the nail is active, a small blast area centered on the nail is <i>dangerous</i> terrain.",
+        "talent2": "At the start of your turn, tick the power die up by 1 for every bloodied foe or ally in the area.",
+        "masteryname": "Voracious Nail",
+        "masterdescription": "Characters that start their turn adjacent to the nail become <i>vulnerable</i>. Vulnerable characters are <i>vulnerable+</i> instead while inside the nail's aura."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Sturmreiten",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger:</b> You are damaged by a foe's ability, and the ability resolves.<br/><b>Effect:</b> Draw a line 3 <i>area effect</i>, then teleport to the end space. If you can't teleport there, this ability can't be used. All other characters in the area take 2 piercing damage.",
+        "blurb": "You transmute yourself and your gear into pure lightning Aether, coursing through the boundaries between worlds in a moment.",
+        "talent1": "You may teleport one adjacent ally with you to any free adjacent space after this interrupt resolves.",
+        "talent2": "<i>Comeback:</i> You may extend Sturmreiten's area by another line 3 area, drawn in a different direction.",
+        "masteryname": "Mjollnir",
+        "masterdescription": "Create an arc 5 area any time you would create an area with this ability instead."
+    },
+    {
+        "job": "Spellblade",
+        "name": "Drifting Leaf",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "attack"},
+            {"tag_name": "line", "val": 6}
+        ],
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> Fray.<br/><b>Effect:</b> Foe is <i>shattered</i><br/><b>Area Effect:</b> Fray.<br/><b>Effect:</b> After the attack resolves, teleport 1, then gain the Leaf of the Wind interrupt until the start of your next turn.",
+        "blurb": "Agile and alert, your swordcraft spells doom for your foe. When they go to relatiate, you were never there.",
+        "talent1": "Drifting Leaf deals bonus damage against bloodied foes, and its interrupt deals 1 piercing damage, twice to them instead.",
+        "talent2": "You may teleport your foe to any space adjacent to you instead of teleporting yourself 1 when this interrupt triggers.",
+        "masteryname": "Great Cyclone",
+        "masterdescription": "At round 4 or later, Drifting Leaf's <i>infuse</i> is always active."
     }
 ]
