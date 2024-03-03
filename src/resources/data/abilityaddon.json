@@ -236,6 +236,96 @@
         "description": "<b>Trigger</b>: A foe enters or exits the area.<br><b>Effect</b>: Teleport that foe 2 and <i>seal</i> them. This interrupts but does not end their movement."
     },
     {
+        "job": "Sealer",
+        "ability": "God Hand",
+        "name": "Devil Hand",
+        "tags":[
+            {"tag_name": "combo"},
+			{"tag_name": "boon", "val": 1}
+        ],
+        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: Character explodes in a medium blast <i>area effect</i> centered on them, dealing 1 <i>divine</i> damage to all foes.<br><b>Exceed</b>: Repeat the effect"
+    },
+    {
+        "job": "Sealer",
+        "ability": "God Hand",
+        "name": "Fists Of Heaven And Hell",
+        "tags":[
+            {"tag_name": "combo"},
+			{"tag_name": "boon", "val": 1}
+        ],
+        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: <i>Seal</i> your foe, then bless yourself or an ally in range 2<br><b>Effect</b>: Character explodes in a medium blast <i>area effect</i> centered on them, dealing 1 <i>divine</i> damage to all foes.<br><b>Exceed</b>: Repeat all effects"
+    },
+    {
+        "job": "Sealer",
+        "ability": "Spirit Shrine",
+        "name": "Shrine",
+        "tags":[
+            {"tag_name": "object", "val": 1}
+        ],
+        "description": "<b>Object Effect</b>: Aura 2. You can use this ability again while adjacent to your shrine to increase its size, increasing the height by +1. The shrine gains additional benefits equal to its total height, including other objects it is stacked on:<ul><li>1: Yourself and allies in the aura have <i>cover</i> from characters from the outside and gain +1 boon on attack rolls.</li><li>2: Yourself and allies in the aura gain 2 vigor when you end your turn there.</li><li>3+: Yourself and allies in the aura have <i>evasion</i>.</li></ul>"
+    },
+    {
+        "job": "Sealer",
+        "ability": "Spirit Shrine",
+        "name": "Grace Of The Spirits",
+        "tags":[
+			{"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: An ally in the aura is damaged by an foe’s ability<br><b>Effect</b>: Your ally becomes immune to all damage from the triggering ability. Destroy the shrine, then deal 2 divine damage, once, to the foe per height of the shrine. You cannot place shrines for the rest of combat."
+    },
+    {
+        "job": "Sealer",
+        "ability": "Justice",
+        "name": "Judgement",
+        "tags":[
+			{"tag_name": "combo"},
+			{"tag_name": "interrupt", "val": 1},
+			{"tag_name": "gamble"}
+        ],
+        "description": "<b>Trigger</b>: You score a Critical Hit or trigger an Exceed effect<br><b>Effect</b>: <b>Gamble</b>, then you may teleport yourself and each character in range 2 half that far. Foes are <i>pacified</i>."
+    },
+    {
+        "job": "Sealer",
+        "ability": "Justice",
+        "name": "Gran Judicata",
+        "tags":[
+            {"tag_name": "combo"},
+			{"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: You score a Critical Hit or trigger an Exceed effect<br><b>Effect</b>: Deal 4 <i>divine</i> damage to <i>all</i> foes on the battlefield above bloodied, and all bloodied allies are <i>blessed</i> and gain 2 vigor."
+    },
+    {
+        "job": "Sealer",
+        "ability": "Open The Gates",
+        "name": "Center The Temple",
+        "tags":[
+			{"tag_name": "combo"},
+			{"tag_name": "action", "val": 1},
+			{"tag_name": "attack"}
+        ],
+        "description": "<b>Effect</b>: Teleport spaces equal to the round number before the attack<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Exceed</b>: Deal 1 damage again to your target. At round 4 or later, increase this damage to 6."
+    },
+    {
+        "job": "Seer",
+        "ability": "Astra",
+        "name": "Fortuna",
+        "tags":[
+			{"tag_name": "combo"},
+			{"tag_name": "range", "val": 5},
+			{"tag_name": "blast", "val": "medium"}
+        ],
+        "description": "<b>Attack</b>: <i>Autohit</i>: [D]+fray<br><b>Area Effect</b>: Foes take fray damage. Allies gain 3 vigor and are <i>blessed</i>.<br><b>Summon</b>: Summon a wild card in the area"
+    },
+    {
+        "job": "Seer",
+        "ability": "Gran Reversa",
+        "name": "Reverse Fate",
+        "tags":[
+			{"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: An ally in the aura is targeted by a foe’s ability.<br><b>Effect</b>: Tick down your power die by any amount. <i>Gamble</i> with a number of d6s equal to the number of ticks you spent, then that ally gains vigor equal to double the gamble result. However, at the end of the current turn, your ally loses all vigor."
+    },
+    {
         "job": "Enochian",
         "ability": "Gigaflare",
         "name": "Tetraflare",
