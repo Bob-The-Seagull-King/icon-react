@@ -1436,6 +1436,295 @@
         "description": "<i>Trigger:</i> You or an ally make an attack roll, and you see the total result (after boons, curses, and other adjustments). <i>Effect:</i> Add the number on your mantra die to the attack roll, which changes the final result. That foe also takes damage again after the attack resolves equal to the number on your mantra die."
     },
     {
+        "job": "Sealer",
+        "name": "God Hand",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: <i>Seal</i> your foe, then bless yourself or an ally in range 2<br><b>Exceed</b>: You and allies in range 2 gain 3 vigor",
+        "blurb": "Divine energy infuses you, allowing hammer-like blows that would fell a demon with even your bare hands.",
+        "talent1": "All versions of this ability gain Exceed: Gain <i>evasion</i> until the end of your next turn",
+        "talent2": "Increase teleports to 2, and all version of this ability gain <i>Slay</i>: gain or lose a combo token.",
+        "masteryname": "FISTS OF HEAVEN AND HELL",
+        "masterdescription": "Add an alternate combo action. It gains all talent effects of this ability."
+    },
+    {
+        "job": "Sealer",
+        "name": "Grand Seal",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+			{"tag_name": "mark"}
+        ],
+        "description": "<b>Mark</b>: A foe in range becomes <i>sealed</i> and <i>marked</i>. While marked, after they use an ability that damages an ally of yours, they take 2 <i>divine</i> damage. A foe can pass a save at the end of their turn to end this mark.",
+        "blurb": "Bind an enemy in an astral seal, condemning them and crushing them under the weight of their own evil.",
+        "talent1": "Bloodied foes gain +1 curse on saves while marked.",
+        "talent2": "Bloodied foes are also <i>pacified</i>+ while marked.",
+        "masteryname": "MILK SUTRA",
+        "masterdescription": "When this mark ends, if there is a new foe in range 3 of your target, you may transfer it to that foe."
+    },
+    {
+        "job": "Sealer",
+        "name": "Matsuri",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"}
+        ],
+        "description": "<b>Effect</b>: Teleport 2. Allies in range 2 may teleport 1.<br><b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Exceed</b>: Create a large blast explosion <i>area effect</i> centered on your foe. Yourself and allies inside gain 3 vigor. Foes take 2 <i>divine</i> damage.",
+        "blurb": "Swing your weapon in a flaming arc that sends sprays of fire in bright displays, lighting up the sky.",
+        "talent1": "Increase teleports by +1 and gains <i>Slay</i>: Repeat the teleport effect.",
+        "talent2": "Bloodied foes take bonus damage and must also save or be <i>stunned</i>.",
+        "masteryname": "BLOOD FESTIVAL",
+        "masterdescription": "The first time you use Matsuri in a combat, you may increase all its teleports by +2, it deals bonus damage, and it triggers all <i>exceed</i> effects."
+    },
+    {
+        "job": "Sealer",
+        "name": "Spirit Shrine",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "Create a shrine in a free adjacent space. The shrine can be placed on other objects, and lasts until this ability is used again without increasing its height (see below).",
+        "blurb": "Many sealers carry portable shrines to the local spirits, adding on talismans, images, icons, or offerings to whichever small god holds dominion over the areas they travel through. In a pinch, they can set these shrines down and beseech the spirits for aid.",
+        "talent1": "If you or an ally ends their turn inside the Shrine’s aura and didn’t attack, they are <i>blessed</i> and gain 2 vigor.",
+        "talent2": "Foes that use any ability inside the shrine’s aura can be teleported 1 after the triggering ability resolves.",
+        "masteryname": "SPIRIT PATRONAGE",
+        "masterdescription": "Gain the following interrupt:"
+    },
+    {
+        "job": "Sealer",
+        "name": "Sanctify",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "range", "val": 2}
+        ],
+        "description": "Terrain Effect: You scatter salt in a medium blast <i>area effect</i> in range, creating a terrain effect in those spaces. Foes in the area effect take 1 <i>divine</i> damage. While in the area, foes take +1 curse on saves and are <i>pacified</i> if they start or end their turn there. Allies inside the area take +1 boon on saves. The area persists until you take this action again or until the end of combat.<br><b>Effect</b>: After using any ability that triggers an <i>exceed</i> effect, deal 1 <i>divine</i> damage to all foes in the area, and grant 2 vigor to all allies in the area.",
+        "blurb": "You throw out a handful of glittering salt, scorching the spiritually impure.",
+        "talent1": "Bloodied foes must save if they attempt to enter the area. On a failed save, they cannot voluntarily enter the area until the start of their next turn.",
+        "talent2": "Bloodied allies inside gain 4 vigor for ending their turn inside instead.",
+        "masteryname": "ELDEN SALT",
+        "masterdescription": "You can place two areas with Sanctify without replacing the first. At round 4+, Sanctify becomes 1 action."
+    },
+    {
+        "job": "Sealer",
+        "name": "Grand Banishment",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4}
+        ],
+        "description": "<b>Effect</b>: Teleport 1, <b>End your turn</b> and choose a foe in range, sealing their movement with force of will. Until the end of that foe’s next turn, they take 3 <i>divine</i> damage after they or an ally uses any ability that moves them closer to you.",
+        "blurb": "With a word and a quickly drawn talisman, you stomp your foot and forbid your foe from taking another step towards you.",
+        "talent1": "Your chosen character treats you and any allies in range 2 of you as having <i>cover</i>.",
+        "talent2": "Bloodied foes can be teleported 2 at the end of any turn this ability’s damage activates.",
+        "masteryname": "HORSE AND OX SEAL",
+        "masterdescription": "When you take this ability, you can also choose to invert the effect for the duration, dealing damage to the chosen foe if they move away from you instead."
+    },
+    {
+        "job": "Sealer",
+        "name": "Divine Aegis",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+            {"tag_name": "range", "val": 4},
+			{"tag_name": "mark"}
+        ],
+        "description": "<b>Mark</b>: Mark an ally in range 3. While marked, any foe that attempts to use an ability that includes that ally as a target must first save. On a successful save, there are no further effects, and the mark remains active. On a failed save, the chosen ally is <i>unstoppable</i> and gains <i>resistance</i> to all damage from the triggering ability for its duration, then the mark fades.",
+        "blurb": "You place a holy seal over your ally, enveloping them in divine protection.",
+        "talent1": "If your ally is at 25% hp or lower when marked, marking them becomes a <i>free action</i>.",
+        "talent2": "If your ally is at 25% hp or lower when marked, they also gain <i>defiance</i>.",
+        "masteryname": "SHROUD FROM HEAVEN",
+        "masterdescription": "This mark can be activated twice before it fades."
+    },
+    {
+        "job": "Sealer",
+        "name": "Justice",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Trigger</b>: You score a Critical Hit or trigger an Exceed effect<br><b>Area Effect</b>: <i>Burst 2 (self)</i>: Foes take 1 <i>divine</i> damage. Allies are <i>blessed</i>.<br><b>Effect</b>: Then, teleport 2.",
+        "blurb": "Invoking the spirits of the land and air, you move at impossible speed, doling out blows faster than the eye can see. A second blow scatters your foes and whisks away your allies.",
+        "talent1": "Allies affected by either interrupt gain 2 vigor.",
+        "talent2": "You can teleport 1 space before and after triggering either interrupt.",
+        "masteryname": "GRAN JUDICATA",
+        "masterdescription": "Add an alternate combo action:"
+    },
+    {
+        "job": "Sealer",
+        "name": "Open The Gates",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D]+fray and foe is <i>pacified</i>. <i>Miss</i>: fray<br><b>Exceed</b>: Shove your foe 1, then teleport 1, then shove your foe 1, then teleport 1<br><b>Effect</b>: This attack gains +1 boon, cannot miss (turn any miss into a hit) and triggers any <i>exceed</i> effects the first time it is used in combat.",
+        "blurb": "This aptly named technique can be used to deliver an extremely powerful blow - but focusing the body’s aether in such a way takes a long time to recharge.",
+        "talent1": "You may teleport an ally in range 2 instead of teleporting yourself with any of this ability’s teleports.",
+        "talent2": "Both versions of this ability gains a range equal to the round number.",
+        "masteryname": "BURIAL FIST",
+        "masterdescription": "Any version of this ability deals bonus damage and always triggers <i>exceed</i> effects at round 4 or later."
+    },
+    {
+        "job": "Seer",
+        "name": "Sleight Of Hand",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+			{"tag_name": "range", "val": 5},
+			{"tag_name": "blast", "val": "small"},
+			{"tag_name": "summon"}
+        ],
+        "description": "<b>Attack</b>: <i>Autohit</i>: fray damage<br><b>Effect</b>: Your foe is <i>pacified</i>.<br><b>Area Effect</b>: Fray damage.<br><b>Effect</b>: <i>Summon</i> a wild card in range 2 of your foe.",
+        "blurb": "A flash of bright color, and a card is stuck to your foe, bursting into arcane fire in a flash.",
+        "talent1": "This ability does not break the <i>pacified</i> condition and deals 2 damage again to any <i>pacified</i> foes in the area.",
+        "talent2": "After this ability resolves, roll 1 more d6 the next time you <i>gamble</i> this turn. <i>Charge</i>: 2 more d6s",
+        "masteryname": "KING OF SWORDS",
+        "masterdescription": "After using this ability, you gain six spectral blades that hover behind you, using a d6 power die starting at 6 to track them. At the end of your turn, <i>gamble</i>. If you roll under the number of blades remaining, a blade flies out and deals 2 <i>divine</i> damage to a foe in range 6. Using this ability again with blades active restocks them."
+    },
+    {
+        "job": "Seer",
+        "name": "Chaos Tarot",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "range", "val": 5},
+			{"tag_name": "blast", "val": "small"},
+			{"tag_name": "summon"}
+        ],
+        "description": "<b>Area Effect</b>: <i>Gamble</i>, then apply the listed effect in the area.<ol><li>Card explodes for fray damage.</li><li>All characters in the area are teleported 2</li><li>Create two spaces of difficult terrain in the area.</li><li><i>Bless</i> up to two characters in the area</li><li><i>Seal</i> up to two characters in the area.</li><li>Choose two</li></ol><b>Summon</b>: Then, summon a wild card in the area.",
+        "blurb": "You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential.You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential.",
+        "talent1": "You can consume any number of blessings on character in Chaos Tarot’s area before gambling to roll 1 extra d6 per blessing consumed.",
+        "talent2": "You can move Chaos Tarot’s area up to 2 spaces in any direction before applying the gamble effect. <i>Charge</i>: 4 spaces",
+        "masteryname": "ROYALTY GOLD",
+        "masterdescription": "Instead of summoning a wild card with this ability, you can instead <b>end your turn</b> and summon a Master Card. You can only have one Master Card active at once. The Master Card acts as a wild card, but also gains the gamble effect of Chaos Tarot, which it grants to any area ability that triggers it. It is consumed as normal after being activated."
+    },
+    {
+        "job": "Seer",
+        "name": "Astra",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2},
+			{"tag_name": "attack"},
+			{"tag_name": "line", "val": 5},
+			{"tag_name": "combo"}
+        ],
+        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Area Effect</b>: Fray<br><b>Effect</b>: Foe explodes in a medium blast <i>area effect</i>, centered on them. <i>Gamble</i>, then deal that much damage again to all characters in the area. On a 4+, create two spaces of difficult terrain in the area. On a 6, a meteor also lands, creating a height 1 <i>meteor</i> object in any part of the area and dealing 2 damage to adjacent characters when it lands.<br><b>Effect</b>: You can remove any number of blessings from allies in the area to roll 1 extra d6 per blessing removed when gambling.",
+        "blurb": "You call down the heavens themselves on your foes.",
+        "talent1": "Any version of this ability explodes with meteor showers when used, creating two spaces of <i>difficult terrain</i> in the area. <i>Charge</i>: Also create a height 1 <i>meteor</i> object in any part of the area, dealing 2 damage to adjacent foes when it lands.",
+        "talent2": "If two or more allies are caught in the area of this ability, increase all medium blasts to large blasts, and this ability deals bonus damage.",
+        "masteryname": "THE CHALICE",
+        "masterdescription": "After you use any version of this ability, deal 2 <i>divine</i> damage, once, to a foe in the area for each blessed ally in the area, up to a maximum of three times. Foes can be damaged more than once by this effect"
+    },
+    {
+        "job": "Seer",
+        "name": "Polaris",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "range", "val": 5}
+        ],
+        "description": "<b>Terrain Effect</b>: Choose a space on the battlefield in range 5. While you have at least one Polaris space active, you may <i>gamble</i> at the end of any turn after yours with the following effects:<br><b>Gamble</b>: A meteor lands in every space chosen by Polaris, exploding. The effects of each space vary depending on how many spaces are active. Each effect other than the blast size stacks:<ol><li><i>Small blast</i> area effect, deals damage equal to the gamble result.</li><li><i>Medium Blast</i>, deals +2 damage</li><li><i>Large Blast</i>, deals +2 damage, and characters in center spaces are <i>stunned</i>.</li></ol>Then, remove all spaces.",
+        "blurb": "A distant glint in the heavens, portents of the devastation to come.",
+        "talent1": "You can cause one of your Polaris to follow a character as a <i>mark</i> instead of a space.",
+        "talent2": "Create a space of difficult terrain under the center space of each Polaris space after it resolves. On a gamble result of 4+, create either a height 1 meteor <i>object</i> or a <i>pit</i> instead.",
+        "masteryname": "MOON SILVER PRINCESS",
+        "masterdescription": "At round 4+, Polaris becomes a <i>free action</i>."
+    },
+    {
+        "job": "Seer",
+        "name": "Sisyphus",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "range", "val": 5},
+			{"tag_name": "mark"}
+        ],
+        "description": "<b>Mark</b>: Mark a character in range. While marked, note their starting position at the start of their turn. If they’re in range 3 of their starting position at the end of their turn, you may remove them from the battlefield and return them to their starting position, or as close as possible if it’s occupied. Then, a foe can save, ending this mark on a success.",
+        "blurb": "You bend a character’s fate, reversing causality so that the very ground warps under their feet.",
+        "talent1": "If they’re bloodied, foes gain +1 curse on the save, and are also <i>pacified</i> after being returned to their starting location.",
+        "talent2": "Allies are <i>blessed</i> after being moved with Sisyphus and gain 2 vigor. If they’re at 25% hp or lower, they can also be <i>cured</i>.",
+        "masteryname": "BLACK KNIGHT GRAVE",
+        "masterdescription": "Sisyphus triggers no matter how far away a character is from their starting position at the end of their turn."
+    },
+    {
+        "job": "Seer",
+        "name": "Gran Reversa",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "stance"},
+			{"tag_name": "aura"},
+			{"tag_name": "interrupt"},
+			{"tag_name": "power die"}
+        ],
+        "description": "<b>Stance</b>: Gain aura 2, and a d4 power die, starting at 4. While in this stance, gain the following interrupt:<br><b>Refresh</b>: You may exit or refresh this stance at the start of your turn. When you refresh this stance, tick the die up by 1.",
+        "blurb": "Causality unmakes itself around you, as wounds heal instantly.",
+        "talent1": "Your power die from this ability starts at d6, with 6 charges.",
+        "talent2": "If your ally was bloodied, instantly regain a tick on this die after this ability resolves.",
+        "masteryname": "MISERICORDIA",
+        "masterdescription": "Vigor granted by Gran Reversa can increase a character’s total vigor over their maximum."
+    },
+    {
+        "job": "Seer",
+        "name": "Eclipse",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "range", "val": 6},
+			{"tag_name": "delay"},
+			{"tag_name": "end turn"},
+			{"tag_name": "terrain effect"}
+        ],
+        "description": "<b>End your turn</b> and create a <b>Terrain Effect</b>: Create a burning brand of star fire in range,  <i>dangerous terrain</i>, then gain <b>delay</b>: Your next turn must be slow. At the start of that turn, check if there is a character standing in that space:<ul><li>If there is, that character takes 2 <i>divine</i> damage and is <i>sealed</i>.</li><li>If there isn’t, it explodes for a large blast <i>area effect</i> centered on that space, scattering star fire everywhere. All characters in the area take 2 <i>divine</i> damage, and create a space of dangerous terrain under every foe in the area.</li></ul>Then, end the effect.",
+        "blurb": "No blurb.",
+        "talent1": "If Eclipse explodes, create a fiery pit in its center space. The pit is also dangerous terrain. Characters adjacent to the pit are <i>sealed</i> when it is created.",
+        "talent2": "If Eclipse explodes, it creates a shower of bolides, dealing 3 damage again to up to three characters in its <i>area effect</i>.",
+        "masteryname": "THE HELM",
+        "masterdescription": "If you choose, at the start of your turn, Eclipse’s effect does not expire after activating. Instead, you can repeat its delay effect at the end of your turn without ending your turn or creating a new area. The area also disappears if you use this ability again."
+    },
+    {
+        "job": "Seer",
+        "name": "Wish",
+        "chapter": 2,
+        "tags":[
+            {"tag_name": "interrupt", "val": 1}
+        ],
+        "description": "<b>Trigger</b>: An ally on the battlefield takes damage from a foe equal to 25% of their max hp or more<br><b>Effect</b>: Reverse the flow of causality. That damage cannot reduce your ally past 1 hp, and they are <i>cured</i> after it resolves. The stress of taking this action causes you to <i>sacrifice</i> 25% of your maximum HP.",
+        "blurb": "You struggle against fate itself, undoing causality and defying the stars.",
+        "talent1": "If your ally is bloodied, they are also <i>blessed</i> after this interrupt resolves and may dash 2",
+        "talent2": "If this damage would have reduced your ally to 0 hp, also <i>cure</i> yourself after this ability resolves",
+        "masteryname": "STAR SCORNED HERMIT",
+        "masterdescription": "If the damage would have reduced your ally to 0 hp, they also gain <i>defiance</i>, then become <i>unstoppable</i> until the end of their next turn."
+    },
+    {
+        "job": "Seer",
+        "name": "The Tower",
+        "chapter": 3,
+        "tags":[
+            {"tag_name": "action", "val": 1},
+			{"tag_name": "attack"},
+			{"tag_name": "range", "val": 5},
+			{"tag_name": "range", "val": 5},
+			{"tag_name": "gamble"}
+        ],
+        "description": "<b>Attack</b>: <i>Autohit</i>: 1 damage and foe is <i>sealed</i>.<br><b>Area Effect</b>: At the end of that foe’s turn, <i>gamble</i>. A massive meteor hits for a large blast area effect centered on them, dealing damage equal to the number on the gamble die +2 to all characters.<br><b>Terrain Effect</b>: Then, create a height 1 meteor object in the area.",
+        "blurb": "You invoke the ultimate power of the tower card, sealing a foe’s fate. In short order, untold calamity befalls them.",
+        "talent1": "Roll an extra 1d6 when gambling for this ability. <i>Charge</i>: Also gains range 10",
+        "talent2": "The meteor scatters debris when landing, creating two spaces of difficult terrain in the area, which could also be created under characters.",
+        "masteryname": "SUPERBOLIDE",
+        "masterdescription": "If the chosen character is at 25% hp or lower, they take double damage from Eclipse’s meteor effect, and the effect also ignores <i>defiance</i>."
+    },
+    {
         "job": "Spellblade",
         "name": "Aether Deflection",
         "chapter": 1,
