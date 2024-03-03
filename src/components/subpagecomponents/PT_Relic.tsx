@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
-import relicData from '../../resources/data/relic.json';
+import relicData from '../../resources/data/player/relic.json';
 import RelicDisplay from '../itemdisplaycomponents/RelicDisplay';
 
 const PT_Relic = (props: any) => {

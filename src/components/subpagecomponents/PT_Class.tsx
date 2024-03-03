@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
-import classData from '../../resources/data/class.json';
+import classData from '../../resources/data/player/class.json';
 import ClassDisplay from '../itemdisplaycomponents/ClassDisplay'
 
 const PT_Class = (props: any) => {

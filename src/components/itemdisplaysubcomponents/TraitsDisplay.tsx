@@ -4,7 +4,7 @@ import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utilit
 import '../../styles/iconcomponent.scss';
 import { useNavigate } from "react-router-dom";
 
-import abilityData from '../../resources/data/ability.json';
+import abilityData from '../../resources/data/player/ability.json';
 import AbilityDisplay from '../itemdisplaycomponents/AbilityDisplay'
 
 const TraitsDisplay = (props: any) => {

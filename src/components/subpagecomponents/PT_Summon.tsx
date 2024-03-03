@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
-import summonData from '../../resources/data/summon.json';
+import summonData from '../../resources/data/player/summon.json';
 import SummonDisplay from '../itemdisplaycomponents/SummonDisplay';
 
 const PT_Summon = (props: any) => {

@@ -4,9 +4,9 @@ import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utilit
 import '../../styles/iconcomponent.scss';
 import { useNavigate } from "react-router-dom";
 
-import addonData from '../../resources/data/abilityaddon.json';
+import addonData from '../../resources/data/player/abilityaddon.json';
 import AddonDisplay from '../itemdisplaysubcomponents/AddonDisplay'
-import summonData from '../../resources/data/summon.json';
+import summonData from '../../resources/data/player/summon.json';
 import SummonDisplay from '../itemdisplaycomponents/SummonDisplay'
 
 const LimitBreakDisplay = (props: any) => {

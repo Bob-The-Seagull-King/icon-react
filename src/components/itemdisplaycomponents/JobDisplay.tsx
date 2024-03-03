@@ -9,7 +9,7 @@ import TraitsDisplay from '../itemdisplaysubcomponents/TraitsDisplay'
 import LimitBreakDisplay from '../itemdisplaysubcomponents/LimitBreakDisplay'
 import JobPlaystyleDisplay from '../itemdisplaysubcomponents/JobPlaystyleDisplay'
 
-import summonData from '../../resources/data/summon.json';
+import summonData from '../../resources/data/player/summon.json';
 
 const JobDisplay = (props: any) => {
     // Declare Summon Variables --------------------

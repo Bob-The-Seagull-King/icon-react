@@ -7,8 +7,8 @@ import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import relicData from '../../resources/data/relic.json';
-import abilityData from '../../resources/data/ability.json';
+import relicData from '../../resources/data/player/relic.json';
+import abilityData from '../../resources/data/player/ability.json';
 
 const BuildSearch = (props: any) => {
 

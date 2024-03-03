@@ -14,10 +14,10 @@ import ClassMechanicDisplay from '../components/itemdisplaysubcomponents/ClassMe
 import TraitsDisplay from '../components/itemdisplaysubcomponents/TraitsDisplay';
 import BuildSearch from '../components/pagecomponents/BuildSearch';
 
-import summonData from '../resources/data/summon.json';
-import relicData from '../resources/data/relic.json';
-import abilityData from '../resources/data/ability.json';
-import classData from '../resources/data/class.json';
+import summonData from '../resources/data/player/summon.json';
+import relicData from '../resources/data/player/relic.json';
+import abilityData from '../resources/data/player/ability.json';
+import classData from '../resources/data/player/class.json';
 
 const BuildPage: React.FC = () => {
     /**

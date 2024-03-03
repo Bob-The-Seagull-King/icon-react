@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
-import abilityData from '../../resources/data/ability.json';
+import abilityData from '../../resources/data/player/ability.json';
 import AbilityDisplay from '../itemdisplaycomponents/AbilityDisplay';
 
 const PT_Ability = (props: any) => {
