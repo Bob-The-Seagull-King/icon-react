@@ -267,13 +267,12 @@ const BuildSearch = (props: any) => {
             <div className='searchContainer'>
                 <div className='searchgriditem'> 
                     <div className='searchSubSetContainer'>
-                        <div className='basesearchitemStructure jobgriditem'>
+                        <div className='basesearchitemStructure jobgriditem padSmall'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchTitle'>JOB</h2>
                                 <input id='searchJob' type="text" placeholder="Job Name" className='searchinput'/>
                             </div>
                         </div>
-                        <br/>
                         <div className='searchsubsubcontainer'>
                             <div className='basesearchitemStructure levelgriditem'>
                             <div className='centerPosition'>

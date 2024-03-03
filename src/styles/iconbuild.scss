@@ -129,6 +129,12 @@ $colour_grey_secondary: #D5D5D5;
     grid-template-columns: 100%;
     width: 100%;
 }
+
+.padSmall {
+
+    margin-bottom: 1em;
+}
+
 .searchSubSetContainer {
     display: grid;
     justify-content: space-evenly; 
