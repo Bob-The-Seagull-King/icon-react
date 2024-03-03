@@ -266,7 +266,7 @@ const BuildSearch = (props: any) => {
             />
             <div className='searchContainer'>
                 <div className='searchgriditem'> 
-                    <div className='searchSubContainer'>
+                    <div className='searchSubSetContainer'>
                         <div className='basesearchitemStructure jobgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchTitle'>JOB</h2>
