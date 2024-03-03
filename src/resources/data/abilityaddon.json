@@ -534,5 +534,104 @@
             {"tag_name": "slay"}
         ],
         "description": "Until the start of your next turn, this interrupt has unlimited uses."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Rime",
+        "name": "Dagon",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "This ability gains range 6, and gains <i>Collide:</i> create a watery <i>pit</i> under this character after this ability resolves."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Rime",
+        "name": "Magnarime",
+        "tags":[
+            {"tag_name": "infuse", "val": "x"},
+            {"tag_name": "mastery"}
+        ],
+        "description": "Rime can be infused with massive aether, becoming <b>Infuse X</b>. If so: <ul><li>The area gains range 6 and becomes Arc 4, plus one per aether infused.</li><li>Summon a <i>pit</i> in the area after the ability resolves for every two aether infused.</li><li>Deal 1 piercing damage to all characters in the area again after the ability resolves for every two aether infused.</li></ul>"
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Tsunami",
+        "name": "Stormlash",
+        "tags":[
+            {"tag_name": "infuse", "val": 1},
+            {"tag_name": "action", "val": 0}
+        ],
+        "description": "Choose an edge of the map. Your active tsunamis move 2 spaces in that direction."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Cryo",
+        "name": "Cryotic",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Change the area to Line 8, increase damage to fray damage, and gain <b>Effect:</b> Summon a <i>salt sprite</i> for every character in the area adjacent to those characters."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Cryo",
+        "name": "Magnacryo",
+        "tags":[
+            {"tag_name": "infuse", "val": "x"},
+            {"tag_name": "mastery"},
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "line", "val": 4},
+            {"tag_name": "attack"},
+            {"tag_name": "pierce"}
+
+        ],
+        "description": "<b>Special:</b> Increase the line length by 2 and attack deals bonus damage for every two aether spent.<br/><b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> The attack target is impaled with an icy harpoon, then shoved along the line as far as possible towards you, until they collide or are stopped by an obstruction."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Geyser",
+        "name": "Volcanic Geyser",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Create a Volcanic Geyser instead. When it erupts, it removes and places all characters in a medium blast area effect centered on it, and creates <i>dangerous terrain</i> under foes."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Gust",
+        "name": "Great Gust",
+        "tags":[
+            {"tag_name": "infuse", "val": 4}
+        ],
+        "description": "Gust can be created over characetrs, and immediately activates its effect when it is created, as if characters inside had entered its space."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Heave-Ho",
+        "name": "Tidal Smash",
+        "tags":[
+            {"tag_name": "infuse", "val": "x"},
+            {"tag_name": "mastery"}
+        ],
+        "description": "The shove spaces become shove X. <i>Collide:</i> Foes are <i>shattered</i>."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Waterspout",
+        "name": "Great Waterspout",
+        "tags":[
+            {"tag_name": "infuse", "val": 2}
+        ],
+        "description": "The waterspout can also suck in objects in the area, removing and placing them before all characters."
+    },
+    {
+        "job": "Stormbender",
+        "ability": "Eye of the Storm",
+        "name": "Aeoncloud",
+        "tags":[
+            {"tag_name": "infuse", "val": 3}
+        ],
+        "description": "Increase area effect to a large blast and damage to [D]+Fray. The center space is still clear."
     }
 ]
