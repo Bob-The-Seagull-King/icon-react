@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Aetherpearls",
+        "purchasecost": 6,
+        "upgradecost": 3,
+        "description": "This small set of pearls are etherically linked together, and can be inset into armor or worn as jewelry. There are always just enough for all player characters and no more.<br/><br/>Every character can add +1 to their charm or command rating, up to a max of 3.<br/><br/>Characters can add aetherpearls to their adventurer's kit. While wearing a pearl, characters can talk to any other character wearing a linked pearl within a mile. They must talk out loud and hear the other person's voice in their ear.",
+        "upgrades": [
+            {
+                "name": "Extended Pearls",
+                "costspecial": null,
+                "description": "Up to 6 additional pearls can also be given to NPC allies. Pearls can also be linked to any other pearl network within their range, connecting them together.",
+                "upgrades": []
+            },
+            {
+                "name": "Resonant Pearls",
+                "costspecial": null,
+                "description": "When in a populous location with an etheric field (like a city) the pearls don't have a maximum distance.",
+                "upgrades": []
+            },
+            {
+                "name": "Silent Pearls",
+                "costspecial": null,
+                "description": "Within the same room (or a very short distance) anyone wearing a linked pearl can communicate telepathically, without speaking out loud.",
+                "upgrades": []
+            }
+        ]
+    }
+]

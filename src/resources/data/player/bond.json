@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Pathfinder",
+        "description": "Discover new things, meet new people, learn new things. The Pathfinder is always looking to the horizon. They're the first to clamber up the mountain, leap across the river, or dash down the slope. The road is their friend and they can't wait to see what's around the corner.",
+        "bonus": [
+            "traverse",
+            "sense"
+        ],
+        "ideals": [
+            "I addressed challenges with curiosity, exploration, or understanding.",
+            "I expressed my heritage, background, or beliefs through my actions.",
+            "I saw, heard, or tasted something truly unique."
+        ],
+        "gear": [
+            {
+                "name": "Adventurer's Kit",
+                "default": true,
+                "items": [
+                    "lantern", "pack", "bedroll", "rope", "flint and tinder", "journal", "rations", "cooking pot", "knife", "canvas tent"
+                ]
+            },
+            {
+                "name": "Highland Kit",
+                "default": false,
+                "items": [
+                    "pitons", "climbing harness", "hooks", "zipline", "cold weather outfit", "preserved rations", "thermos", "foldable canvas glider that can carry one person"
+                ]
+            },
+            {
+                "name": "Lowland Kit",
+                "default": false,
+                "items": [
+                    "arkentech compass", "warm weather outfit", "shovel", "local maps", "a reliable one or two person mount (horse, dog, arkentech heliobike)"
+                ]
+            },
+            {
+                "name": "Extreme Kit",
+                "default": false,
+                "items": [
+                    "uncomfortable but safe hazard gear", "blight testing strips and curatives", "diving suit", "foldable kayak", "arkentech rebreather (1hr of clean air for water, gas, etc)", "two refills for rebreather"
+                ]
+            }
+        ],
+        "effort": 3,
+        "strain": 5,
+        "secondwind": "Regain 1 effort when you enter a new scene. This ability can activate any number of times a session.",
+        "specialability": "Leading a team action only costs 1 effort for you."
+    }
+]

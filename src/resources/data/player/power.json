@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Saddleborn",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "Get a <b>knack</b> for riding or piloting:<ul><li>Chapter I: Animals or Vehicles</li><li>Chapter II: Monsters</li><li>Chapter II: An entire herd of animals or monsters</li></ul>"
+    },
+    {
+        "name": "Windrider",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "When you push yourself to take a <b>traverse</b> or <b>sneak</b> action, you also get increased effect and choose one of the following for the action per chapter: <ul><li><i>You don't touch the ground</i></li><li><i>You don't make a sound</i></li><li><i>You can't be touched while moving</i></li></ul>"
+    },
+    {
+        "name": "Dabbler",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "Get +1 point to put in any action rating. At the start of an interlude, you must swap this point around to a new action. It can't take anyr ating higher than 1+ the chapter number."
+    },
+    {
+        "name": "Freesoul",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "You can escape from any restraint, grab, shackle, hold, or prison cell without rolling, appropriate to chapter. You can conceal this ability if you wish."
+    },
+    {
+        "name": "Lay Burdens",
+        "bond": "Pathfinder",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "When you enter a populated location, untick 1 segment on all burdens, and you may push your next action for free."
+    },
+    {
+        "name": "Airfeel",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "When you camp or start an expedition, you can ask any of the following questions about the next day or so of travel and get a thruthful yes or no answer from the GM. Get <i>increased effect</i> when next acting on the answers:<ul><li>Is it a long, dangerous, or arduous journey?</li><li>Is the journey defended or contested?</li><li>Are you currently being pursued, tracked, or hunted?</li></ul>"
+    },
+    {
+        "name": "Colortongue",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "You can understand and speak all languages and read all scripts. When you interact with a living creature that doesn't speak language, you can understand its intents and feelings and get a <i>knack</i> to interact with it socially. At chapter II or higher, you can use this to interact with even non-living creatures, such as magical constructs or the undead."
+    },
+    {
+        "name": "Horizon Sweeper",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "Your <i>sense</i> actions have increased effect and aren't affected by:<ul><li>Chapter I: Darkness or time of day</li><li>Weather or visibility</li><li>Distance of any kind</li></ul>"
+    },
+    {
+        "name": "Memory of the Sole",
+        "bond": "Pathfinder",
+        "tags": [        ],
+        "desc": "Name a location you last set up camp or spent an interlude. The GM will determine the difficulty of the journey there by answering the questions below. When the next scene starts, you and up to ten other willing people can choose to be safely there if you take 2 strain for each 'yes' answer, which could cause you to break. Work backwards to figure out how you got there (the scene doesn't necessarily have to take place the next hour or day, for example).<ul><li>Is it a long, dangerous, or arduous journey?</li><li>Is the location defended or contested?</li><li>Are you currently being pursued, tracked, or hunted?</li></ul>"
+    },
+    {
+        "name": "Lightspeed",
+        "bond": "Pathfinder",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Your next <b>traverse</b> action has superpowered effect."
+    },
+    {
+        "name": "Gambit of Gaia",
+        "bond": "Pathfinder",
+        "tags": [
+            {"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond"
+    }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Slashed",
+        "tags": [
+            {"tag_name": "status"}
+        ],
+        "description": "Take 4 damage after you or an ally uses an ability that moves you, but no more than once a turn."
+    }
+]
