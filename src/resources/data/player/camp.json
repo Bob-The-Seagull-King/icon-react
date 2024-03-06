@@ -24,5 +24,38 @@
                 "upgrades": []
             }
         ]
+    },
+    {
+        "name": "Aethervault",
+        "purchasecost": 3,
+        "upgradecost": 3,
+        "description": "You can keep up to 6 Dust inside this crystalline prism, where it is safely stored. Characters can deposite or withdraw Dust from it by touching it. Only characters attuned to the prism (your groups, and any NPCs you choose) can withdraw or deposite dust, and it is practically indestructible unless you hurl it into a high powered Aetherforge. <br/><br/>The vault has a clever but slow acting condenser inside. At the end of each interlude, if there is at least 1 Dust inside the Vaul, it attracts more Aether, adding 1 Dust to the vault. If there's no room int he vault, no more Dust is generated.",
+        "upgrades": [
+            {
+                "name": "Empowered attunement",
+                "costspecial": null,
+                "description": "Dust can be withdrawn or deposited into the Vault from anywhere, ending up in a specially attuned vial on each character's waist.",
+                "upgrades": []
+            },
+            {
+                "name": "Aether Sapphire",
+                "costspecial": null,
+                "description": "Increase the vault's capacity to 12.",
+                "upgrades": [
+                    {
+                        "name": "Aether Ruby",
+                        "costspecial": null,
+                        "description": "Increase the vault's capacity to 16.",
+                        "upgrades": []
+                    }
+                ]
+            },
+            {
+                "name": "Upgrade Condenser",
+                "costspecial": null,
+                "description": "If it's at least half full, the vault condenses 2 Dust instead of 1.",
+                "upgrades": []
+            }
+        ]
     }
 ]
