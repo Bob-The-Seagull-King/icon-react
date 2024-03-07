@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from './resources/routes-constants'
-import TacticsPlayerPage from './pages/TacticsPlayerPage'
+import TacticsPlayerPage from './pages/PlayerTacticalPage'
 import BuildPage from './pages/BuildPage'
 import HomePage from './pages/HomePage'
 import './styles/main.sass'
