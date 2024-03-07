@@ -65,7 +65,7 @@ const JobDisplay = (props: any) => {
 
     // Navigation ----------------------------------
     function navClickSummon (name: string) {    
-        window.open(location.protocol + '//' + location.host +'/player/tactics/summon/'+name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/player/tactics/summon/'+name, '_self', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 

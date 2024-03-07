@@ -70,7 +70,7 @@ const SummonDisplay = (props: any) => {
 
     // Navigation ----------------------------------
     function navClickSummon () {    
-        window.open(location.protocol + '//' + location.host +'/player/tactics/summon/'+summonData.name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/player/tactics/summon/'+summonData.name, '_self', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 

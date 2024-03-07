@@ -24,7 +24,7 @@ const SiteNav = (props: any) => {
      * @param name The end-params for the route
     */
     function navClick ( name: string) {    
-        window.open(location.protocol + '//' + location.host +'/'+name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/'+name, '_self', 'noopener,noreferrer');
     }
     
     /**
