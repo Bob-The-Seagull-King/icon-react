@@ -152,6 +152,26 @@ $colour_grey_secondary: #D5D5D5;
 // -------------------------------------------------
 
 // Colour Base -------------------------------------
+.titlePurple {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_purple_main;
+    color: white;
+}
+
+.subtitlePurple {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_purple_secondary;
+    color: white;
+}
+
 .titleblue {
     padding-left: 0.25em;
     padding-right: 0.25em;

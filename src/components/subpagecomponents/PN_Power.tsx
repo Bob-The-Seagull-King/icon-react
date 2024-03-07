@@ -3,10 +3,14 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
+import powerdata from '../../resources/data/player/power.json';
+import PowerDisplay from '../itemdisplaycomponents/PowerDisplay';
+
+
 const PN_Power = (props: any) => {
     
     const searchVal = urlParse();
-    const isSearched = (value: any) => (true);
+    const isSearched = (value: any) => ((value.name.toLowerCase().includes(searchVal.toLowerCase())) || (value.bond.toLowerCase().includes(searchVal.toLowerCase())));
 
     function urlParse() {
         const urlPath = window.location.pathname;
@@ -28,8 +32,12 @@ const PN_Power = (props: any) => {
 
     // Return render -------------------------------
     return (
-        <div>
-            Player Narrative Power
+        <div className='widthPT centerPosition topPosition'>
+            {powerdata.filter(isSearched).map((item) => (
+                <div className='gridItem' onClick={() => navClick('power', item.name)} key={item.name + "power"}  >
+                    <PowerDisplay data={item}/>
+                </div>
+                ))}
         </div>
     )
 }
