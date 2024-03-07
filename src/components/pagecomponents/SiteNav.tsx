@@ -211,7 +211,7 @@ const SiteNav = (props: any) => {
                             } element={ 
                                 <Routes>
                                     <Route path={ROUTES.GC_ITEM}>
-                                        returnSearchBar()
+                                       { returnSearchBar()}
                                     </Route>
                                 </Routes> } />
             </Routes>
