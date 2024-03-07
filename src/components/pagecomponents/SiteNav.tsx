@@ -105,6 +105,76 @@ const SiteNav = (props: any) => {
                             </DropdownMenu.Portal>
                         </DropdownMenu.Sub>
 
+                        <DropdownMenu.Sub>
+                            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+                                Narrative 
+                                <div className="RightSlot">
+                                    &#x25B6;
+                                </div>
+                            </DropdownMenu.SubTrigger>
+                            <DropdownMenu.Portal>
+                                <DropdownMenu.SubContent className="DropdownMenuSubContent" sideOffset={2} alignOffset={-5} >
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('player/narrative/bond/')}>
+                                        Bonds
+                                    </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('player/narrative/power/')}>
+                                        Powers
+                                    </DropdownMenu.Item>
+                                </DropdownMenu.SubContent>
+                            </DropdownMenu.Portal>
+                        </DropdownMenu.Sub>
+
+                    </DropdownMenu.Content>
+                </DropdownMenu.Portal>
+            </DropdownMenu.Root>
+            
+            <div className='navpad'/>
+            <DropdownMenu.Root>
+                <div className=''>
+                <DropdownMenu.Trigger className='basenavitemStructure' asChild>
+                    <button className="" aria-label="Customise options">
+                        <h2 className='navitemh2'>General Info</h2>
+                    </button>
+                </DropdownMenu.Trigger>
+                </div>
+
+                <DropdownMenu.Portal>
+                    <DropdownMenu.Content className="DropdownMenuContent" sideOffset={5}>
+                        <DropdownMenu.Sub>
+                            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+                                Camp 
+                                <div className="RightSlot">
+                                    &#x25B6;
+                                </div>
+                            </DropdownMenu.SubTrigger>
+                            <DropdownMenu.Portal>
+                                <DropdownMenu.SubContent className="DropdownMenuSubContent" sideOffset={2} alignOffset={-5} >
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('general/camp/rules/')}>
+                                        Rules
+                                    </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('general/camp/item/')}>
+                                        Items
+                                    </DropdownMenu.Item>
+                                </DropdownMenu.SubContent>
+                            </DropdownMenu.Portal>
+                        </DropdownMenu.Sub>
+
+                        <DropdownMenu.Sub>
+                            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+                                Tactical 
+                                <div className="RightSlot">
+                                    &#x25B6;
+                                </div>
+                            </DropdownMenu.SubTrigger>
+                            <DropdownMenu.Portal>
+                                <DropdownMenu.SubContent className="DropdownMenuSubContent" sideOffset={2} alignOffset={-5} >
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('general/tactics/glossary/')}>
+                                        Glossary
+                                    </DropdownMenu.Item>
+                                </DropdownMenu.SubContent>
+                            </DropdownMenu.Portal>
+                        </DropdownMenu.Sub>
+
                     </DropdownMenu.Content>
                 </DropdownMenu.Portal>
             </DropdownMenu.Root>
