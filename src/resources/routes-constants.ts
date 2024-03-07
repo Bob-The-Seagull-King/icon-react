@@ -1,6 +1,9 @@
 export const ROUTES = {
     BUILD_ROUTE: '/build/*',
     TACTICS_PLAYERS_ROUTE: '/player/tactics/*',
+    NARRATIVE_PLAYERS_ROUTE: '/player/narrative/*',
+    TACTICS_GENERAL_ROUTE: '/general/tactics/*',
+    CAMP_GENERAL_ROUTE: '/general/camp/*',
     HOME_ROUTE: '/',
 
     //TACTICS_PLAYERS_ROUTES
@@ -10,5 +13,17 @@ export const ROUTES = {
     PT_RELIC: '/relic/*',
     PT_SUMMON: '/summon/*',
     PT_CLASSFULL: '/classfull/*',
-    PT_JOBFULL: '/jobfull/*'
+    PT_JOBFULL: '/jobfull/*',
+
+    //NARRATIVE_PLAYERS_ROUTES
+    PN_BOND: '/bond/*',
+    PN_BONDFULL: '/bondfull/*',
+    PN_POWER: '/power/*',
+
+    //TACTICS_GENERAL_ROUTES
+    GT_GLOSSARY: '/glossary/*',
+
+    //CAMP_GENERAL_ROUTES
+    GC_RULES: '/rules/*',
+    GC_ITEM: '/item/*'
 }
