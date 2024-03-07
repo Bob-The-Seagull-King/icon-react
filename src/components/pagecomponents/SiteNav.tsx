@@ -207,9 +207,13 @@ const SiteNav = (props: any) => {
                 <Route path={
                                 ROUTES.TACTICS_GENERAL_ROUTE
                             } element={ returnSearchBar() } />
-                <Route path={
-                                (ROUTES.CAMP_GENERAL_ROUTE && ROUTES.GC_ITEM)
-                            } element={ returnSearchBar() } />
+                <Route path={ROUTES.CAMP_GENERAL_ROUTE
+                            } element={ 
+                                <Routes>
+                                    <Route path={ROUTES.GC_ITEM}>
+                                        returnSearchBar()
+                                    </Route>
+                                </Routes> } />
             </Routes>
             </div>
         </div>
