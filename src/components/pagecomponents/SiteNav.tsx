@@ -45,6 +45,23 @@ const SiteNav = (props: any) => {
         }
         return( the_arr.join('/') );
     }
+
+    function returnSearchBar() {
+        return (
+            <div>
+                        <div className='navpad'/>
+                    
+                        <div className='basenavitemStructure searchpad'>
+                            <div className='centerPosition'>
+                                <input id='navSearchSearch' type="text" placeholder="Search" className='searchinputnav navitemh2'/>
+                                <div className='' >
+                                    <h2 className='navitemh2' onClick={() => navSearch()}>&#x1F50E;&#xFE0E;</h2>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+        )
+    }
   
     return (
     <div style={{width: '100%', padding: '1.5em'}}>
@@ -182,24 +199,17 @@ const SiteNav = (props: any) => {
             <div>
             <Routes>
                 <Route path={
-                                ROUTES.TACTICS_PLAYERS_ROUTE || 
-                                ROUTES.NARRATIVE_PLAYERS_ROUTE || 
-                                ROUTES.TACTICS_GENERAL_ROUTE ||
+                                ROUTES.TACTICS_PLAYERS_ROUTE
+                            } element={ returnSearchBar() } />
+                <Route path={
+                                ROUTES.NARRATIVE_PLAYERS_ROUTE 
+                            } element={ returnSearchBar() } />
+                <Route path={
+                                ROUTES.TACTICS_GENERAL_ROUTE
+                            } element={ returnSearchBar() } />
+                <Route path={
                                 (ROUTES.CAMP_GENERAL_ROUTE && ROUTES.GC_ITEM)
-                            } element={
-                    <div>
-                        <div className='navpad'/>
-                    
-                        <div className='basenavitemStructure searchpad'>
-                            <div className='centerPosition'>
-                                <input id='navSearchSearch' type="text" placeholder="Search" className='searchinputnav navitemh2'/>
-                                <div className='' >
-                                    <h2 className='navitemh2' onClick={() => navSearch()}>&#x1F50E;&#xFE0E;</h2>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                } />
+                            } element={ returnSearchBar() } />
             </Routes>
             </div>
         </div>
