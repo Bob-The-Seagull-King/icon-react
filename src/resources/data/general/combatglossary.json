@@ -11,7 +11,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "An ability that applies area effects in a large, fixed pattern."
+        "description": "An ability that applies <i>area effects</i> in a large, fixed pattern."
     },
     {
         "name": "Aura X",
@@ -19,7 +19,7 @@
             {"tag_name": "general"},
 			{"tag_name": "ongoing"}
         ],
-        "description": "This ability is a continuous, ongoing (+) effect that affects all characters specified within range X of an origin point, usually a character. Characters are only affected by an aura while inside"
+        "description": "This ability is a continuous, <i>ongoing</i> (+) effect that affects all characters specified within range X of an origin point, usually a character. Characters are only affected by an aura while inside"
     },
 	{
         "name": "Auto-hit",
@@ -49,7 +49,7 @@
             {"tag_name": "general"},
 			{"tag_name": "triggered effect"}
         ],
-        "description": "Wright-only triggered effect. Triggers when a character damages two or more foes with this ability."
+        "description": "Wright-only <i>triggered effect</i>. Triggers when a character damages two or more foes with this ability."
     },
     {
         "name": "Charge",
@@ -57,7 +57,7 @@
             {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
-        "description": "A triggered effect that activates when the ability is used on a slow turn."
+        "description": "A <i>triggered effect</i> that activates when the ability is used on a slow turn."
     },
 	{
         "name": "Cure",
@@ -65,7 +65,7 @@
 			{"tag_name": "general"},
 			{"tag_name": "positive effect"}
         ],
-        "description": "A character that’s cured gains 4 vigor, or a vigor surge if they’re bloodied. Then, they may save agains all statuses."
+        "description": "A character that’s cured gains 4 vigor, or a <i>vigor surge</i> if they’re bloodied. Then, they may save agains all statuses."
     },
 	{
         "name": "Collide",
@@ -73,7 +73,7 @@
             {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
-        "description": "Triggers on any character that is shoved into an obstruction as part of this ability."
+        "description": "A <i>triggered effect</i> that occurs on any character shoved into an obstruction by this ability."
     },
 	{
         "name": "Combo",
@@ -89,7 +89,7 @@
             {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
-        "description": "A triggered effect that turns on if the character using this ability is bloodied."
+        "description": "A <i>triggered effect</i> that turns on if the character using this ability is bloodied."
     },
 	{
         "name": "Cover",
@@ -170,7 +170,7 @@
             {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
-        "description": "A triggered effect that takes place on a total attack roll of 15+."
+        "description": "A <i>triggered effect</i> that takes place on a total attack roll of 15+."
     },
 	{
         "name": "Finishing Blow",
@@ -178,7 +178,7 @@
             {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
-        "description": "Vagabond only. Triggered effect that triggers if this ability targets a bloodied foe."
+        "description": "Vagabond only. <i>Triggered effect</i> that triggers if this ability targets a <i>bloodied</i> foe."
     },
 	{
         "name": "Fray Damage",
@@ -200,7 +200,7 @@
             {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
-        "description": "Stalwart only triggered effect. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
+        "description": "Stalwart only <i>triggered effect</i>. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
     },
 	{
         "name": "Immune to X",
@@ -223,7 +223,7 @@
             {"tag_name": "general"},
             {"tag_name": "ongoing"}
         ],
-        "description": "Places a mark, an ongoing effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions."
+        "description": "Places a mark, an <i>ongoing</i> effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions."
     },
 	{
         "name": "Obstruction",
@@ -237,7 +237,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "A status or effect that is ongoing can’t be ended until the thing causing it (a mark, a stance) is ended. Indicated by a + symbol."
+        "description": "A status or effect that is <i>ongoing</i> can’t be ended until the thing causing it (a mark, a stance) is ended. Indicated by a + symbol."
     },
 	{
         "name": "Power Die",
@@ -266,7 +266,7 @@
             {"tag_name": "general"},
 			{"tag_name": "movement"}
         ],
-        "description": "Move X spaces. You are unstoppable and immune to all damage while moving."
+        "description": "Move X spaces. You are <i>unstoppable</i> and <i>immune</i> to all damage while moving."
     },
 	{
         "name": "Sacrifice X",
@@ -280,7 +280,7 @@
         "tags": [
             {"tag_name": "general"}            
         ],
-        "description": "Move a character involuntarily X spaces in a straight line away from you. If they would move into another character’s space, an object, or into a higher elevation space, they Collide and stop moving."
+        "description": "Move a character involuntarily X spaces in a straight line away from you. If they would move into another character’s space, an object, or into a higher elevation space, they <i>Collide</i> and stop moving."
     },
 	{
         "name": "Slay",
@@ -288,7 +288,7 @@
             {"tag_name": "general"},
 			{"tag_name": "triggered effect"}
         ],
-        "description": "A triggered effect that activates when this ability reduces a character to 0 hp."
+        "description": "A <i>triggered effect</i> that activates when this ability reduces a character to 0 hp."
     },
 	{
         "name": "Slow Turn",
@@ -304,7 +304,7 @@
 			{"tag_name": "ongoing"},
 			{"tag_name": "positive effect"}
         ],
-        "description": "An ongoing, positive effect. A character can only have one stance active at a time and can drop a stance by taking a new stance or as a free action at the start of their turn. When a stance refreshes, regain its effects."
+        "description": "An <i>ongoing</i>, positive effect. A character can only have one stance active at a time and can drop a stance by taking a new stance or as a free action at the start of their turn. When a stance refreshes, regain its effects."
     },
 	{
         "name": "Standard Move",
@@ -326,7 +326,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "A character controlled by its Summoner. Summons are intangible, and cannot be marked, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a summon action that they use on their summoner’s turn, or a summon effect that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated."
+        "description": "A character controlled by its Summoner. Summons are <i>intangible</i>, and cannot be marked, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a <b>summon action</b> that they use on their summoner’s turn, or a <b>summon effect</b> that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated."
     },
 	{
         "name": "Teleport",
@@ -348,7 +348,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "An effect that actives under a certain condition. Common effects are critical hit, slay, collide, finishing blow, and charge. Each unique effect can only trigger once per ability, and once per trigger."
+        "description": "An effect that actives under a certain condition. Common effects are <i>critical hit</i>, <i>slay</i>, <i>collide</i>, <i>finishing blow</i>, and <i>charge</i>. Each unique effect can only trigger once per ability, and once per trigger."
     },
     {
         "name": "Blind",
@@ -362,7 +362,7 @@
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "+1 curse on attacks"
+        "description": "+1 <i>curse</i> on attacks"
     },
 	{
         "name": "Hatred of X",
@@ -460,7 +460,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Damage from this ability cannot be reduced, mitigated, or negated in any way except immunity (ignores armor, weak, resistance, defiance, and bypasses vigor)."
+        "description": "Damage from this ability cannot be reduced, mitigated, or negated in any way except <i>immunity</i> (ignores armor, weak, resistance, defiance, and bypasses vigor)."
     },
 	{
         "name": "Dodge",
@@ -502,14 +502,14 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Damage cannot be reduced by armor or weakened."
+        "description": "Damage cannot be reduced by <i>armor</i> or <i>weakened</i>."
     },
 	{
         "name": "Rampart",
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Foes cannot enter or exit a space affected by a rampart effect by dashing, flying, or teleporting."
+        "description": "Foes cannot enter or exit a space affected by a <i>rampart</i> effect by dashing, flying, or teleporting."
     },
 	{
         "name": "Regeneration",
@@ -558,20 +558,20 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Immune to all statuses. Cannot be moved by foes, and movement ignores engagement and rampart."
+        "description": "Immune to all statuses. Cannot be moved by foes, and movement ignores <i>engagement</i> and <i>rampart</i>."
     },
 	{
         "name": "Vigilance X",
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "A special effect with X charges, each represented by a d6. Like triggered effects, vigilance can only be used once per trigger. Vigilance charges stack if a character gains more than one. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:<ul><li>When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with armor</li><li>When a foe breaks adjacency with you, deal that much damage to them.</li></ul>"
+        "description": "A special effect with X charges, each represented by a d6. Like triggered effects, vigilance can only be used once per trigger. Vigilance charges stack if a character gains more than one. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:<ul><li>When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with <i>armor</i></li><li>When a foe breaks adjacency with you, deal that much damage to them.</li></ul>"
     },
 	{
         "name": "Vigor",
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from armor and resistance. Vigor stacks, but cannot go past 25% of your hp. If you gain a vigor surge, gain maximum vigor. Lose all vigor at the end of combat."
+        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from armor and resistance. Vigor stacks, but cannot go past 25% of your hp. If you gain a <b>vigor surge</b>, gain maximum vigor. Lose all vigor at the end of combat."
     }
 ]
