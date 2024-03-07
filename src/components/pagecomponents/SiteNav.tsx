@@ -208,12 +208,7 @@ const SiteNav = (props: any) => {
                                 ROUTES.TACTICS_GENERAL_ROUTE
                             } element={ returnSearchBar() } />
                 <Route path={ROUTES.CAMP_GENERAL_ROUTE
-                            } element={ 
-                                <Routes>
-                                    <Route path={ROUTES.GC_ITEM}>
-                                       { returnSearchBar()}
-                                    </Route>
-                                </Routes> } />
+                            } element={ returnSearchBar()} />
             </Routes>
             </div>
         </div>
