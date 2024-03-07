@@ -185,7 +185,7 @@ const SiteNav = (props: any) => {
                                 ROUTES.TACTICS_PLAYERS_ROUTE || 
                                 ROUTES.NARRATIVE_PLAYERS_ROUTE || 
                                 ROUTES.TACTICS_GENERAL_ROUTE ||
-                                (ROUTES.CAMP_GENERAL_ROUTE + ROUTES.GC_ITEM)
+                                (ROUTES.CAMP_GENERAL_ROUTE && ROUTES.GC_ITEM)
                             } element={
                     <div>
                         <div className='navpad'/>
