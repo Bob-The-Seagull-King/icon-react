@@ -40,6 +40,20 @@ $colour_grey_secondary: #D5D5D5;
     }
 }
 
+.rulesParagraphStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 60em;
+    padding: 1em;
+    padding-bottom:0.01%;
+    text-align: justify;
+
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
 
 .homelink {
     font-weight: 1000;
