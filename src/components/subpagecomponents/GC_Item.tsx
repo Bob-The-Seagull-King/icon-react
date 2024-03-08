@@ -3,10 +3,13 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
+import campdata from '../../resources/data/general/camp.json';
+import CampItemDisplay from '../../components/itemdisplaycomponents/CampItemDisplay';
+
 const GC_Item = (props: any) => {
     
     const searchVal = urlParse();
-    const isSearched = (value: any) => (true);
+    const isSearched = (value: any) => ((value.name.toLowerCase().includes(searchVal.toLowerCase())) );
 
     function urlParse() {
         const urlPath = window.location.pathname;
@@ -21,15 +24,19 @@ const GC_Item = (props: any) => {
 
     // Navigation ----------------------------------
     function navClick (dir: string, name: string) {    
-        window.open(location.protocol + '//' + location.host + '/player/tactics/' + dir + '/' + name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host + '/general/camp/' + dir + '/' + name, '_self', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 
 
     // Return render -------------------------------
     return (
-        <div>
-            General_Camp_Items
+        <div className='widthPT centerPosition topPosition'>
+            {campdata.filter(isSearched).map((item) => (
+                <div className='gridItem' onClick={() => navClick('item', item.name)} key={item.name + "camp"}  >
+                    <CampItemDisplay data={item}/>
+                </div>
+                ))}
         </div>
     )
 }
