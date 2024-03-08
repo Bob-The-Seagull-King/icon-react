@@ -32,9 +32,9 @@ const PN_Power = (props: any) => {
 
     // Return render -------------------------------
     return (
-        <div className='widthPT centerPosition topPosition'>
+        <div className='widthPN centerPosition topPosition'>
             {powerdata.filter(isSearched).map((item) => (
-                <div className='gridItem' onClick={() => navClick('power', item.name)} key={item.name + "power"}  >
+                <div className='gridItemPower' onClick={() => navClick('power', item.name)} key={item.name + "power"}  >
                     <PowerDisplay data={item}/>
                 </div>
                 ))}

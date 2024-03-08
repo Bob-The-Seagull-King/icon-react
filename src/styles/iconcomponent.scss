@@ -31,6 +31,11 @@ $colour_grey_secondary: #D5D5D5;
     margin: 0.5em;
 }
 
+.gridItemPower {
+    margin: 0.5em;
+    min-width: 25em;
+}
+
 .halfwise {
     width: 45%;
 }
@@ -38,6 +43,13 @@ $colour_grey_secondary: #D5D5D5;
 .widthPT {
     padding: 1em;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widthPN {
+    padding: 1em;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
 }
