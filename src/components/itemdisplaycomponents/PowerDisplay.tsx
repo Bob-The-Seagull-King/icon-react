@@ -13,7 +13,7 @@ const PowerDisplay = (props: any) => {
 
     // Navigation ----------------------------------
     function navClick (dir: string, name: string) {    
-        window.open(location.protocol + '//' + location.host +'/' + '/player/narrative/power' + dir + name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/' + '/player/narrative/' + dir + name, '_blank', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 
@@ -56,7 +56,7 @@ const PowerDisplay = (props: any) => {
 
     // Return result -------------------------------
     return (
-        <div className='abilityStructure'>
+        <div className='powerStructure'>
             <h1 className={'titleShape titlePurple'}>{powerinfo.name}</h1>
             <p>{tagsArray}</p>
             <div><p dangerouslySetInnerHTML={{__html: (powerinfo.desc || '')}}></p></div>

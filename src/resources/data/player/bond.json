@@ -263,7 +263,7 @@
             },
             {
                 "name": "Cloister Kit",
-                "default": false,
+                "default": true,
                 "items": [
                     "simple ritual gear - candles, bowl, talismans, protective ward", "traveling staff or walking stick", "good hat", "badge of a scholarly, wright, or religious order - proving membership", "old arkentech relic of unknown use"
                 ]
@@ -464,7 +464,7 @@
     },
     {
         "name": "Outsider",
-        "description": "You’re not from around here. You’re a little strange or unique in appearance, customs, or culture, and it can make people cautious or uneasy, but also curious. You may have come from a chronicler monastery, or a hermit village at the edge of the world, or you might literally be a fish out of water, from a town on the sea floor. Your perspective on things can be refreshing and you have powerful talents you can bring to bear.<br><b>NOTE:</b> You only have the <b>outsider’s kit</b>. However, you can take <i>four</i> pieces of loose gear with you on an expedition, at the end of an interlude can take <b>any other piece of gear</b> from any other bond used by player character in your party and add it to your loose gear list.",
+        "description": "You’re not from around here. You’re a little strange or unique in appearance, customs, or culture, and it can make people cautious or uneasy, but also curious. You may have come from a chronicler monastery, or a hermit village at the edge of the world, or you might literally be a fish out of water, from a town on the sea floor. Your perspective on things can be refreshing and you have powerful talents you can bring to bear.<br/><br/><b>NOTE:</b> You only have the <b>outsider’s kit</b>. However, you can take <i>four</i> pieces of loose gear with you on an expedition, at the end of an interlude can take <b>any other piece of gear</b> from any other bond used by player character in your party and add it to your loose gear list.",
         "bonus": [
             "sense",
             "traverse"

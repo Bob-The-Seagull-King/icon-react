@@ -68,6 +68,32 @@ $colour_grey_secondary: #D5D5D5;
     }
 }
 
+.powerStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 25em;
+    padding: 1em;
+    padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.bondStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 35em;
+    padding: 1em;
+    padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
 .bonustraitStructure {
     border-radius: 1em;
     box-shadow: 0 0 5px 1px #CCC;
@@ -149,6 +175,15 @@ $colour_grey_secondary: #D5D5D5;
     margin: 0%;
     font-size: 2.5em;
 }
+
+.listitemsmallgap {
+    margin: -0.75em; 
+    padding: 0em;
+}
+
+.listulsmallgap {
+    margin-top: 0em;
+}
 // -------------------------------------------------
 
 // Colour Base -------------------------------------
@@ -170,6 +205,11 @@ $colour_grey_secondary: #D5D5D5;
     width: fit-content;
     background-color: $colour_purple_secondary;
     color: white;
+}
+
+.boldtextPurple {   
+    font-weight: 650;
+    font-size: 1.25em;
 }
 
 .titleblue {

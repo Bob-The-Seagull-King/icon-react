@@ -3,10 +3,14 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
+
+import bonddata from '../../resources/data/player/bond.json';
+import BondDisplay from '../itemdisplaycomponents/BondDisplay';
+
 const PN_Bond = (props: any) => {
     
     const searchVal = urlParse();
-    const isSearched = (value: any) => (true);
+    const isSearched = (value: any) => ((value.name.toLowerCase().includes(searchVal.toLowerCase())) );
 
     function urlParse() {
         const urlPath = window.location.pathname;
@@ -21,15 +25,19 @@ const PN_Bond = (props: any) => {
 
     // Navigation ----------------------------------
     function navClick (dir: string, name: string) {    
-        window.open(location.protocol + '//' + location.host + '/player/tactics/' + dir + '/' + name, '_blank', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host + '/player/narrative/' + dir + '/' + name, '_self', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 
 
     // Return render -------------------------------
     return (
-        <div>
-            Player_Narrative_Bond
+        <div className='widthPT centerPosition topPosition'>
+            {bonddata.filter(isSearched).map((item) => (
+                <div className='gridItem' onClick={() => navClick('bondfull', item.name)} key={item.name + "bond"}  >
+                    <BondDisplay data={item}/>
+                </div>
+                ))}
         </div>
     )
 }
