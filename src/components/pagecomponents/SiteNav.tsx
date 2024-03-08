@@ -75,13 +75,30 @@ const SiteNav = (props: any) => {
                     </div>
             </div>
             <div className='navpad'/>
-            <div className=''>
-                    <div className='basenavitemStructure' onClick={() => navClick('build/')}>
-                        <button className="" aria-label="Customise options">
-                            <h2 className='navitemh2'>Build</h2>
-                        </button>
-                    </div>
-            </div>
+
+            <DropdownMenu.Root>
+                <div className=''>
+                <DropdownMenu.Trigger className='basenavitemStructure' asChild>
+                    <button className="" aria-label="Customise options">
+                        <h2 className='navitemh2'>Build</h2>
+                    </button>
+                </DropdownMenu.Trigger>
+                </div>
+
+                <DropdownMenu.Portal>
+                    <DropdownMenu.Content className="DropdownMenuContent" sideOffset={5}>
+                        <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('build/tactics/')}>
+                            Tactical
+                        </DropdownMenu.Item>
+                        <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('build/narrative/')}>
+                            Narrative
+                        </DropdownMenu.Item>
+
+                    </DropdownMenu.Content>
+                </DropdownMenu.Portal>
+            </DropdownMenu.Root>
+            
+
             <div className='navpad'/>
             <DropdownMenu.Root>
                 <div className=''>

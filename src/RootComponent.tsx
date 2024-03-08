@@ -3,7 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from './resources/routes-constants'
 
 import TacticsPlayerPage from './pages/PlayerTacticalPage'
-import BuildPage from './pages/BuildPage'
+import BuildTacticalPage from './pages/BuildTacticalPage'
+import BuildNarrativePage from './pages/BuildNarrativePage'
 import HomePage from './pages/HomePage'
 import CampGeneralPage from './pages/GeneralCampPage'
 import TacticalGeneralPage from './pages/GeneralTacticalPage'
@@ -20,7 +21,8 @@ const RootComponent: React.FC = () => {
         <Router>
             <SiteNav/>
             <Routes>
-                <Route path={ROUTES.BUILD_ROUTE} element={<BuildPage />} />
+                <Route path={ROUTES.BUILD_TACTICS_ROUTE} element={<BuildTacticalPage />} />
+                <Route path={ROUTES.BUILD_NARRATIVE_ROUTE} element={<BuildNarrativePage />} />
                 <Route path={ROUTES.TACTICS_PLAYERS_ROUTE} element={<TacticsPlayerPage/>} />
                 <Route path={ROUTES.NARRATIVE_PLAYERS_ROUTE} element={<NarrativePlayerPage/>} />
                 <Route path={ROUTES.TACTICS_GENERAL_ROUTE} element={<TacticalGeneralPage/>} />

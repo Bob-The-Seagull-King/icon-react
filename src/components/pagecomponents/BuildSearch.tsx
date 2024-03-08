@@ -102,7 +102,7 @@ const BuildSearch = (props: any) => {
      * @param urlpath The params of the url
      */
     function navBuild (urlpath : string) {    
-        window.open(location.protocol + '//' + location.host +'/' + 'build'  + '/'+urlpath, '_self', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host +'/' + 'build/tactics'  + '/'+urlpath, '_self', 'noopener,noreferrer');
     }
 
     /**

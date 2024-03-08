@@ -19,7 +19,7 @@ import relicData from '../resources/data/player/relic.json';
 import abilityData from '../resources/data/player/ability.json';
 import classData from '../resources/data/player/class.json';
 
-const BuildPage: React.FC = () => {
+const BuildTacticalPage: React.FC = () => {
     /**
      * URL FORMAT
      * 
@@ -65,8 +65,8 @@ const BuildPage: React.FC = () => {
         const urlSplits = urlPath.split('/');
         
         let urlBuildParam = "";
-        if (urlSplits.length >= 3) {
-            urlBuildParam = urlSplits[2];
+        if (urlSplits.length >= 4) {
+            urlBuildParam = urlSplits[3];
         }
         const buildSplits = urlBuildParam.split(';');
         // ------------------------------------------
@@ -454,4 +454,4 @@ const BuildPage: React.FC = () => {
     // -------------------------------------------
 }
 
-export default BuildPage
+export default BuildTacticalPage
