@@ -69,6 +69,170 @@
         "tags": [
             {"tag_name": "requires", "val": "4 powers"}
         ],
-        "desc": "Take a power from another Bond"
+        "desc": "Take a power from another Bond."
+    },
+    {
+        "name": "Heartsight",
+        "bond": "Seeker",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Close your eyes. You can view a location for 1 minute, anywhere: • I: Close by, within shouting distance • II: Within a few miles • III: Anywhere in Arden Eld You view the location as if an invisible observer, hearing and seeing everything. You cannot move your point of vision, and your body is immobile and vulnerable while taking this action. You can end it any time. You don’t have to be able to see the location you’re trying to view."
+    },
+	{
+        "name": "Library Organ",
+        "bond": "Seeker",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Get +1d on study and sense for the rest of the scene, but all other actions are at 0d. At chapter III, also increase all effect from study and sense."
+    },
+	{
+        "name": "Argus",
+        "bond": "Seeker",
+        "tags": [        ],
+        "desc": "You get a knack for sensing: • I: Hidden objects, paths, tracks, or traps • II: Hidden people, monsters, or ambushes • III: Invisible or metaphysical objects or forces, such as the flow of magic"
+    },
+	{
+        "name": "Midnight Eyes",
+        "bond": "Seeker",
+        "tags": [        ],
+        "desc": "You can see in the dark, which could make your risk and effect better. Your study and sense actions get increased effect in darkness. At Chapter III or higher, you can see anything close by in good detail without the use of your eyes."
+    },
+	{
+        "name": "Unhinge",
+        "bond": "Seeker",
+        "tags": [        ],
+        "desc": "When you push a desperate action, it also gains increased effect."
+    },
+	{
+        "name": "Dark Clarity",
+        "bond": "Seeker",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "You may study the ambient emotional state of: • I: One person close by • II: One person or monster close by • III: All people or monsters close by You get an impression of how they are feeling and what the strongest emotion they are feeling is. Your next action including your target(s) that can act on this information gets +1 boon or increased effect."
+    },
+	{
+        "name": "Possession",
+        "bond": "Seeker",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "Ask a presence inside you for advice. The GM will answer as the presence. Get +1d on the next action that follows that advice."
+    },
+	{
+        "name": "Instinctive",
+        "bond": "Seeker",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "Describe a course of action to the GM you plan to take this session. You will receive an answer that is truthful, if unclear, that comes from a feeling. The GM can choose from the following options: Wheel (good/positive outcomes), Stone (bad/negative outcomes), and Chaos (a mix of good and bad outcomes)."
+    },
+	{
+        "name": "Geist",
+        "bond": "Seeker",
+        "tags": [        ],
+        "desc": "When you are able to touch someone skin to skin, even if you break contact, you can see through their eyes and experience their sensations and ambient emotional state, though you can do little but observe, and they are not aware of your presence. The effect can be accessed: • I: Until the end of the scene • II: Until the end of the expedition • III: Indefinitely The effect is canceled when you use this ability again, and while you’re concentrating on it, you cannot do anything yourself except sit in quiet focus, otherwise the effect breaks. A player character must be willing, and you may need a roll to be able to touch a hostile, unaware, or unwilling character."
+    },
+	{
+        "name": "Terrible Truth",
+        "bond": "Seeker",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the effect of your next Study action to Superpowered"
+    },
+	{
+        "name": "Gambit of the Outsider",
+        "bond": "Seeker",
+        "tags": [
+			{"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+    {
+        "name": "True Grit",
+        "bond": "Mighty",
+        "tags": [        ],
+        "desc": "When you break, you remain in control of your character for the rest of the scene. If you would remain broken longer than that (you have 3 burdens for example) this effect ends at the end of the scene."
+    },
+	{
+        "name": "",
+        "bond": "Mighty",
+        "tags": [        ],
+        "desc": "You can’t suffer critical strain (take 4 strain instead)"
+    },
+	{
+        "name": "Volcanic",
+        "bond": "Mighty",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "When someone or something harms an ally in your presence, you can trigger this ability to get +1d or increased effect (choose) on all actions against them for the rest of the scene"
+    },
+	{
+        "name": "Hammersoul",
+        "bond": "Mighty",
+        "tags": [        ],
+        "desc": "Your Smash actions have increased effect when you’re exhausted."
+    },
+	{
+        "name": "Overpower",
+        "bond": "Mighty",
+        "tags": [        ],
+        "desc": "You can push by taking 2 strain instead of spending effort for Endure and Smash actions"
+    },
+	{
+        "name": "The Tower",
+        "bond": "Mighty",
+        "tags": [        ],
+        "desc": "While you’re at maximum strain, characters can aid you without spending effort. If you break, all characters that witness it recover 1 effort."
+    },
+	{
+        "name": "Force of Will",
+        "bond": "Mighty",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "You can choose to automatically treat your next Command action roll against another character as a 6. The GM can decide a character is too strong willed for this to work on them, forcing you to roll normally, but if they do, regain 2 effort after that roll resolves. It always works on foes from a lower chapter than you."
+    },
+	{
+        "name": "Half Light",
+        "bond": "Mighty",
+        "tags": [        ],
+        "desc": "When you gather information about violence or possible threats, you can use Endure, Smash, or Command"
+    },
+	{
+        "name": "The Wall",
+        "bond": "Mighty",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "This scene only, reduce all strain suffered by you or an ally of your choice by 1, to a minimum of 1"
+    },
+	{
+        "name": "Make Total Destroy",
+        "bond": "Mighty",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "- Increase the effect of your next Smash action to superpowered"
+    },
+	{
+        "name": "Gambit of The Storm Lord",
+        "bond": "Mighty",
+        "tags": [
+            {"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+    {
+        "name": "Gambit of The Wanderers",
+        "bond": "Dreamer",
+        "tags": [
+			{"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
     }
 ]
