@@ -43,7 +43,7 @@ const GT_Glossary = (props: any) => {
 
     // Navigation ----------------------------------
     function navClick (dir: string, name: string) {    
-        window.open(location.protocol + '//' + location.host + '/general/tactics/' + dir + '/' + name, '_selfs', 'noopener,noreferrer');
+        window.open(location.protocol + '//' + location.host + '/general/tactics/' + dir + '/' + name, '_self', 'noopener,noreferrer');
     }
     // ---------------------------------------------
 
