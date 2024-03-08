@@ -71,7 +71,7 @@
         ],
         "desc": "Take a power from another Bond."
     },
-    {
+		{
         "name": "Heartsight",
         "bond": "Seeker",
         "tags": [
@@ -226,6 +226,668 @@
             {"tag_name": "requires", "val": "4 powers"}
         ],
         "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Clarity",
+        "bond": "Wolf",
+        "tags": [        ],
+        "desc": "If you break, regain all effort, and you can push your next action for free"
+    },
+	{
+        "name": "Scargoat",
+        "bond": "Wolf",
+        "tags": [        ],
+        "desc": "+1 max strain per Burden you have"
+    },
+	{
+        "name": "Blood Scent",
+        "bond": "Wolf",
+        "tags": [        ],
+        "desc": "You get a knack for tracking or intimidating anyone or anything that’s wounded"
+    },
+	{
+        "name": "Go for a Walk",
+        "bond": "Wolf",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "When you separate from the group to do something alone, you can trigger this ability to get +1d and increased effect on your action. ‘Cut to black’ and roll the action ‘off-screen’, then cut back to when you return to the group, describing what happened."
+    },
+	{
+        "name": "Cornered",
+        "bond": "Wolf",
+        "tags": [        ],
+        "desc": "When you are outnumbered in a tense or violent situation, leading team actions does not cost effort for you."
+    },
+	{
+        "name": "Lurk",
+        "bond": "Wolf",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "When the GM describes a scene, you can choose to be there, hidden, appropriate to chapter. Don’t worry about how you got there."
+    },
+	{
+        "name": "It's Nothing",
+        "bond": "Wolf",
+        "tags": [        ],
+        "desc": "During Heal Burdens, heal 2 extra ticks on a burden of your choice if nobody helps you heal burdens. Heal 1 tick on two burdens if someone does help you heal, instead of just one burden. If you do so, you can’t help other people heal burdens."
+    },
+	{
+        "name": "Crack Shell",
+        "bond": "Wolf",
+        "tags": [        ],
+        "desc": "When you’re exhausted, you can take aid actions without spending effort"
+    },
+	{
+        "name": "Bishop",
+        "bond": "Wolf",
+        "tags": [        ],
+        "desc": "When you set someone up, that person gets both +1d and increased effect on the set up roll."
+    },
+	{
+        "name": "Wick",
+        "bond": "Wolf",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the power of your next Excel action to superpowered"
+    },
+	{
+        "name": "Gambit of Arenheir",
+        "bond": "Wolf",
+        "tags": [
+            {"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Mirrormask",
+        "bond": "Harlequin",
+        "tags": [        ],
+        "desc": "You can always tell if someone is lying if you can see their face, though the nature of the lie is unclear. At chapter III, you only need to hear someone’s voice or read something they have written."
+    },
+	{
+        "name": "Mercurio",
+        "bond": "Harlequin",
+        "tags": [        ],
+        "desc": "You can change your appearance completely in only a few moments by spending 1 effort, including height, weight, gender presentation, etc. Anyone in view of you can witness you change. You must appear as Kin (a person), but you could be a different Kintype, and otherwise everything else is up to you. This effect lasts until you camp, or until you eat or drink something, and while active you get a knack for impersonating your new form, although if you’re trying to impersonate a specific person, people who know them will see through your disguise up close. At chapter III, this effect no longer costs effort if it's only used once a scene."
+    },
+	{
+        "name": "Mockingbird",
+        "bond": "Harlequin",
+        "tags": [        ],
+        "desc": "You get a knack for mimicking sounds or voices."
+    },
+	{
+        "name": "Fast Friends",
+        "bond": "Harlequin",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "You can choose to automatically treat your next charm action roll as a 6. If you do, its effects only last: • I: 1 minute • II: an hour • III a whole day After the duration expires, its target(s) realize they were manipulated."
+    },
+	{
+        "name": "The Big Show",
+        "bond": "Harlequin",
+        "tags": [        ],
+        "desc": "Critical hits on excel, charm, or sneak actions regain 2 effort for all party members who witness your feats"
+    },
+	{
+        "name": "Habitual Line Stepper",
+        "bond": "Harlequin",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "You instantly disappear from sight and re-appear somewhere: • I: Nearby • II: Within two or three hundred paces • IIII: Within a mile You don’t have to see your destination, but you are shunted back to your starting point if it’s occupied or obstructed (like trying to hop into solid rock, for example)."
+    },
+	{
+        "name": "Quickfingers",
+        "bond": "Harlequin",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Name a number of objects nearby equal to the chapter number that you can see that could fit or carry in one or both hands. By the start of the next scene, you have possession of them. If you stole them, the person you stole it from will find out within the hour"
+    },
+	{
+        "name": "Ridi Pagliacci",
+        "bond": "Harlequin",
+        "tags": [        ],
+        "desc": "You can invoke each of your burdens instead of spending 1 effort, once a session for each burden"
+    },
+	{
+        "name": "Exuent",
+        "bond": "Harlequin",
+        "tags": [        ],
+        "desc": "When you lead an action to flee or escape trouble, don’t spend effort."
+    },
+	{
+        "name": "Step of the Smiling Few",
+        "bond": "Harlequin",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the power of your next Sneak action to superpowered"
+    },
+	{
+        "name": "Gambit of the Laughing God",
+        "bond": "Harlequin",
+        "tags": [
+            {"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+	},
+	{
+        "name": "Rarefied",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "You have a knack for actions involving people considered highborn or high class. However, if you use this knack, all actions involving people considered low class or lowborn are 0d at best until the end of the session."
+    },
+	{
+        "name": "Private Tutor",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "You've had specialized training. Choose any action. You can re-roll any ‘1’s you roll as part of that action, keeping the new result. However, choose one other action that you neglected - you must re-roll any ‘6’s as part of this action, keeping the new result."
+    },
+	{
+        "name": "Silver Spoon",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "You can never be accused of trespassing except by someone considered high rank or high class (a manager, a noble, a military officer, etc), appropriate to chapter. This effect does not extend to anyone else with you, but get +1d on rolls to cover for them. At chapter II, you can cover for one extra person without question, and at chapter III you can cover for anyone you like within reason."
+    },
+	{
+        "name": "Trust the Fund",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "You always have enough in your pockets to sway someone when you try to gain access, assets, or information. If you do, gain +1d or increased effect, but it’s incredibly obvious that you’re bribing them."
+    },
+	{
+        "name": "Special Reserve",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "Get +1d or increased effect when you gather information or recall info on something rare, expensive, or hard to find."
+    },
+	{
+        "name": "Ivory Tower",
+        "bond": "Highborn",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "When the GM describes a location, monster, person, or historical event, you can ask the GM for an additional detail only an expert would know and get a truthful answer. Get +1d the next time you act on the answer."
+    },
+	{
+        "name": "Honor Student",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "If you forgo healing burdens, you can tick an extra segment on an ambition. If you take one other character along with you to observe, they can also tick a segment on their own ambitions."
+    },
+	{
+        "name": "Passionate",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "You always have a secret passion ambition you can work on, something you’ve wanted to try but never been able to. It’s a 12 segment ambition clock that gives 3 xp for completing it, and can be worked on for free each interlude. If you complete your passion, you can pursue a new one."
+    },
+	{
+        "name": "Unflappable",
+        "bond": "Highborn",
+        "tags": [        ],
+        "desc": "Leading actions to Command or Charm a large group costs no effort for you"
+    },
+	{
+        "name": "Perfect Grace",
+        "bond": "Highborn",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the effect of your next Charm action to superpowered."
+    },
+	{
+        "name": "Gambit of the Bronze Queen",
+        "bond": "Highborn",
+        "tags": [
+            {"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Push Through",
+        "bond": "Mender",
+        "tags": [        ],
+        "desc": "You can take 1 strain instead of spending effort to take aid actions, which cannot be reduced or ignored."
+    },
+	{
+        "name": "Divine Luck",
+        "bond": "Mender",
+        "tags": [        ],
+        "desc": "When you take strain as a consequence, roll a 1d6 fortune roll. On 6, reduce the strain suffered to 0 (even critical strain)."
+    },
+	{
+        "name": "Illuminate",
+        "bond": "Mender",
+        "tags": [        ],
+        "desc": "Your actions have +1 boon or increased effect (choose) with or against characters or creatures that trust you."
+    },
+	{
+        "name": "Untangle",
+        "bond": "Mender",
+        "tags": [        ],
+        "desc": "When you help someone else lift burdens, you increase their segments healed by +1, and heal 1 segment yourself"
+    },
+	{
+        "name": "Pangloss",
+        "bond": "Mender",
+        "tags": [        ],
+        "desc": "When you fail a desperate action, your next action can be pushed without spending effort."
+    },
+	{
+        "name": "A Better Way",
+        "bond": "Mender",
+        "tags": [        ],
+        "desc": "When you study to understand how something or someone is hurt or broken, or tinker to fix something, get +1d or increased effect. This ability works without effect loss on: • I: One person or a small object • II: A whole group of people or a large object • III: A whole town, or a massive object such as a train, huge machine, etc"
+    },
+	{
+        "name": "Mender",
+        "bond": "Mender",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "You can charm or tinker to heal someone’s strain. Check the final result: • 0-3 - Characters can spend 1 effort to heal 1 strain • 4-5 - Character heals 1 strain • 6 - Character heals 2 strain • 6,6 - Character heals 4 strain"
+    },
+	{
+        "name": "Encourage",
+        "bond": "Mender",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "Spend a use of this ability to use aid without spending effort or exposing yourself to consequences"
+    },
+	{
+        "name": "Iron Cutting",
+        "bond": "Mender",
+        "tags": [        ],
+        "desc": "At the end of each interlude, you can tick 2 segments total, split between any ambition, project clock, or ritual clock of your choice, even those belonging to another character."
+    },
+	{
+        "name": "Heart Forge",
+        "bond": "Mender",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the effect of your next Tinker action to superpowered"
+    },
+	{
+        "name": "Gambit of the Forge Titan",
+        "bond": "Mender",
+        "tags": [
+            {"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Strike the Road",
+        "bond": "Brave",
+        "tags": [        ],
+        "desc": "The first team action you lead in a session costs you 0 effort"
+    },
+	{
+        "name": "Crush Limiter",
+        "bond": "Brave",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "You can give your next action superpowered effect, but take a burden at the end of the scene."
+    },
+	{
+        "name": "Luck as a Constant",
+        "bond": "Brave",
+        "tags": [        ],
+        "desc": "When you critical hit, regain all effort, heal all strain, and mark 1 xp • All in - Using Aid to help a character taking a desperate action costs 0 effort for you"
+    },
+	{
+        "name": "All In",
+        "bond": "Brave",
+        "tags": [        ],
+        "desc": "Using Aid to help a character taking a desperate action costs 0 effort for you"
+    },
+	{
+        "name": "Joyluck Wind Thrower",
+        "bond": "Brave",
+        "tags": [        ],
+        "desc": "When you take a desperate action, you can take +1d on the action. If you do, treat any die less than a 6 as a 1."
+    },
+	{
+        "name": "The Sun",
+        "bond": "Brave",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Gain increased effect on all actions for the rest of the scene"
+    },
+	{
+        "name": "Coordinate",
+        "bond": "Brave",
+        "tags": [        ],
+        "desc": "Aiding you on team actions costs 0 effort"
+    },
+	{
+        "name": "Heart of Hearts",
+        "bond": "Brave",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "You can flash back to a scene from your past or hometown and describe how your memory of that time inspires you in the current moment. You can treat your next roll as though you rolled a critical hit (6,6). You can only use this ability three times ever, and when you expend its third use, replace this power with another one."
+    },
+	{
+        "name": "Team Player",
+        "bond": "Brave",
+        "tags": [        ],
+        "desc": "When any ally sets you up, you have increased effect on the roll"
+    },
+	{
+        "name": "Brave Destiny",
+        "bond": "Brave",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the effect of the next team action you take to superpowered."
+    },
+    {
+        "name": "Gambit of The Hundred Sword God",
+        "bond": "Brave",
+        "tags": [
+			{"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Contingency",
+        "bond": "Broker",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "You can use this power to ‘flash back’ in time to tell the GM how you prepared for a situation. You can use this ability before or after any action roll to do one of the following: Set up a character for the next action (even yourself), resist consequences of something that just happened by taking strain, even for another character, increase effect or lower risk. To do so, however, you need to be able to tell the GM how you prepared and also make fortune roll using one of your actions to see how well your preparation went. On a 4+ gain the expected effect, on a 6 choose an extra effect, and on a 1-3 you had to abandon the plan (this ability has no effect this scene and regain 1 use)."
+    },
+	{
+        "name": "Swoon",
+        "bond": "Broker",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "When you would take consequences as a result of your actions, you have may another willing character nearby take the consequences instead of you after you learn what they are. If they do, they take 1 xp."
+    },
+	{
+        "name": "Immaculate",
+        "bond": "Broker",
+        "tags": [        ],
+        "desc": "Get a knack for situations where being dressed appropriately would help you (disguises, uniforms, outfits, formalwear, etc), appropriate to chapter."
+    },
+	{
+        "name": "Beg, Borrow, or Steal",
+        "bond": "Broker",
+        "tags": [        ],
+        "desc": "When you need the right tool for the job (a disguise, a tool, a weapon, a portable boat, a ladder) you can choose to have it right now. The tool’s power, type, and rarity depends on chapter, and it lasts until the end of the session, or until you use this ability again. Gain +1d on actions using the tool, but the GM chooses one: • It was stolen from someone, who will track you down by next interlude • It’s poor quality and breaks after the scene is over • It gets you into trouble after the scene is over (it attracts attention, there’s an unwanted side effect, it leads you somewhere you weren’t expecting to go)"
+    },
+	{
+        "name": "Fruitful",
+        "bond": "Broker",
+        "tags": [        ],
+        "desc": "You have a contact or family member in every populated location. Define this person with the GM and pick one (choose carefully): not in trouble with the law, reliable, won’t need a favor. Roll +1d on actions where your contact could help you."
+    },
+	{
+        "name": "Faust",
+        "bond": "Broker",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "The next time you roll, treat all 1s as 6s. The next time you roll after that, treat all 6s as 1s."
+    },
+	{
+        "name": "Make It Work",
+        "bond": "Broker",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "You may use your highest rated action for any single action with normal effectiveness (charming a door to open for example). Explain to the GM how you’re doing this. At chapter III, you don’t need to explain."
+    },
+	{
+        "name": "Coordinator",
+        "bond": "Broker",
+        "tags": [        ],
+        "desc": "You get 2 xp for pursuing a group ambition instead of 1, and gain +1d when working on a group ambition."
+    },
+	{
+        "name": "Ladder Climber",
+        "bond": "Broker",
+        "tags": [        ],
+        "desc": "You can pursue ambitions twice during an interlude, but only if you pursue different ambitions."
+    },
+	{
+        "name": "Golden Hand",
+        "bond": "Broker",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the effect of your next Command action to superpowered."
+    },
+	{
+        "name": "Gambit of the Weeper",
+        "bond": "Broker",
+        "tags": [
+            {"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Parable",
+        "bond": "Elder",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "Twice a session, you can ask the GM about any path of action ahead of you. The GM will answer as truthfully as possible with the phrase ‘This is the path of ____”, with the blank part being an animal, plant, or natural element (fire/water/earth/wind) that the GM feels best fits the situation. Gain +1d when next acting on the answer."
+    },
+	{
+        "name": "Pacifist",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "If you leave a scene of violence without harming anyone, heal 1 strain and regain 1 effort."
+    },
+	{
+        "name": "Long Memory",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "Gain +1d on rolls to gather information about any event that happened more than ten years ago. At chapter III, if it happened in your lifetime, you can also tell the GM you remember it clearly or were actually there and can’t fail the roll (treat a 1-3 as a 4+)."
+    },
+	{
+        "name": "Been Around",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "Unless they draw a weapon, nobody younger than you can harm, restrain, or touch you in any way unless you let them. This effect ignores chapter."
+    },
+	{
+        "name": "Spinner of Tales",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "You get a 12 segment ambition clock that you can work on for free each interlude, to tell a story from your past. When the clock is complete, a character of your choice that listened to you can improve an action by 1. A character can only gain this benefit once."
+    },
+	{
+        "name": "Pillar of Rock",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "Until you use violence or coerce someone or something in a session, reduce all strain taken from other people by 1, to a minimum of 1."
+    },
+	{
+        "name": "Saltbelly",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "Gain +1d for the rest of the session against anyone that shares a meal, shares a drink, or plays a game of skill against you."
+    },
+	{
+        "name": "Mentor",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "You can forgo working on your own ambitions to come along and help someone else with theirs. If you do, they tick 1 more segment and gain +1d."
+    },
+	{
+        "name": "Reputation",
+        "bond": "Elder",
+        "tags": [        ],
+        "desc": "When you enter a populated area you haven’t visited before, you can decide that people there have heard of you. This gives you +1d to interact with them socially for the rest of the session, but anyone who wants to find or track you can find you easily. This works on: • I. Any town • II. Any city or small village • III. Anywhere"
+    },
+	{
+        "name": "The Mountain",
+        "bond": "Elder",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the effect of your next Endure action to superpowered."
+    },
+	{
+        "name": "Gambit of Tsumi",
+        "bond": "Elder",
+        "tags": [
+			{"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Xenoclash",
+        "bond": "Outsider",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Choose two actions. Once a session, you can push each of these actions without spending effort. Describe the unique talents or abilities that allow you to do this."
+    },
+	{
+        "name": "Gaia Compass",
+        "bond": "Outsider",
+        "tags": [        ],
+        "desc": "You have a knack for navigation. You always know the distance and direction of the nearest (I) village (II) town (III) settlement of any kind. You can sense dungeons within a few miles, and get a bad feeling when one is about to surface."
+    },
+	{
+        "name": "Open Up",
+        "bond": "Outsider",
+        "tags": [        ],
+        "desc": "You can spend time with one other character during an interlude trying to understand each other. If you do, you can each aid each other once without spending effort during the next expedition."
+    },
+	{
+        "name": "Bloom",
+        "bond": "Outsider",
+        "tags": [        ],
+        "desc": "Any character can set out a unique ambition clock once with 4 segments to try and learn a little of your language and customs. If they finish the clock, they gain 1 xp and they can understand your language, allowing you to communicate with them privately. You can decide whether an NPC speaks your language or not."
+    },
+	{
+        "name": "Earth Glide",
+        "bond": "Outsider",
+        "tags": [        ],
+        "desc": "You have an unusual way of moving due to skills, magical talent, or anatomy. You gain a knack for movement through certain terrain and don’t suffer reduced effect moving through it. Pick one per chapter: Forests, Oceans, Mountains, Snow, Swamps, Deserts."
+    },
+	{
+        "name": "Tour Guide",
+        "bond": "Outsider",
+        "tags": [        ],
+        "desc": "When a character works on ambitions or a project, they can bring you along. Roll a 1d6 fortune roll. On a 1, despite your best efforts you don’t help, giving -1d on the roll. On a 2-5, your unique insights help, giving +1d on the roll. On a 6, you offer a perspective that both gives +1d and allows them to tick 1 more segment."
+    },
+	{
+        "name": "Earth Speech",
+        "bond": "Outsider",
+        "tags": [        ],
+        "desc": "You can speak and understand something unusual, and have normal effect while doing so. Your conversation partners might not speak language, or be particularly eloquent. Whether they are actually talking back or not is up to the tone of your game. Pick one per chapter: Animals, Plants, Rocks, Weapons, Tools, Vehicles"
+    },
+	{
+        "name": "Centered",
+        "bond": "Outsider",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "You have a unique cuisine, or a unique eating or drinking stricture or habit. When you share it with someone or explain it to them, they gain +1d to set you up for the rest of the session, and you get +1d on the next roll involving them."
+    },
+	{
+        "name": "Resourceful",
+        "bond": "Outsider",
+        "tags": [        ],
+        "desc": "You can bring one more piece of loose gear with you on an expedition."
+    },
+	{
+        "name": "The Wave",
+        "bond": "Outsider",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Increase the effect of your next sense action to superpowered."
+    },
+	{
+        "name": "Gambit of the Formless",
+        "bond": "Outsider",
+        "tags": [
+			{"tag_name": "requires", "val": "4 powers"}
+        ],
+        "desc": "Take a power from another Bond."
+    },
+	{
+        "name": "Improvise",
+        "bond": "Dreamer",
+        "tags": [
+            {"tag_name": "session", "val": 2}
+        ],
+        "desc": "You can push a smash roll for free if you can somehow use something that’s not a weapon from your environment. This could also increase or decrease effect, depending on the item. You can use something: • I: Small, like a vase or stool • II: Large, like a piece of furniture or a door • III: Massive, like a horse cart or boulder"
+    },
+	{
+        "name": "Punching Bag",
+        "bond": "Dreamer",
+        "tags": [        ],
+        "desc": "If you take strain from anything, everyone else gets increased effect against that thing for the rest of the scene."
+    },
+	{
+        "name": "Best Efforts",
+        "bond": "Dreamer",
+        "tags": [        ],
+        "desc": "If you fail a set-up roll, you can take 1 strain to re-roll it, taking the second result. You can do this any number of times."
+    },
+	{
+        "name": "Bright Eyed",
+        "bond": "Dreamer",
+        "tags": [        ],
+        "desc": "At the start of each session, you may choose another character to look up to. You can aid that character without spending effort this session (you still share in any consequences), but aiding other characters costs 2 effort."
+    },
+	{
+        "name": "Follow the Leader",
+        "bond": "Dreamer",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Make an action roll using any character’s action rating for that action. Describe how that character taught or inspired you."
+    },
+	{
+        "name": "Lost Cat",
+        "bond": "Dreamer",
+        "tags": [        ],
+        "desc": "If you invoked your burdens to get into trouble during a session, you can choose a character that came to your aid and let them mark 1 xp at the end of a session."
+    },
+	{
+        "name": "Rash",
+        "bond": "Dreamer",
+        "tags": [
+            {"tag_name": "session", "val": 1}
+        ],
+        "desc": "Once a session, if you boast about your success on a roll before you roll, you can force yourself to roll at a max of 0d, but you regain 1 effort after the roll. If you actually succeed (4+), everyone else can regain 1 effort as well."
+    },
+	{
+        "name": "Underdog",
+        "bond": "Dreamer",
+        "tags": [        ],
+        "desc": "When you become exhausted, your next action gains +1d and increased effect."
+    },
+	{
+        "name": "heart Held Dream",
+        "bond": "Dreamer",
+        "tags": [        ],
+        "desc": "You gain +1d to work on any ambition clock that’s 10 segments or longer. When you finish such a clock, you can lift a burden, or allow an ally to lift a burden."
+    },
+	{
+        "name": "The Lobster",
+        "bond": "Dreamer",
+        "tags": [        ],
+        "desc": "If you break, your next action can be made normally, even while broken, and gains superpowered effect."
     },
     {
         "name": "Gambit of The Wanderers",
