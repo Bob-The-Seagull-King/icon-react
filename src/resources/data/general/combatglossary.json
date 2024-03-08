@@ -16,7 +16,6 @@
     {
         "name": "Aura X",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "ongoing"}
         ],
         "description": "This ability is a continuous, <i>ongoing</i> (+) effect that affects all characters specified within range X of an origin point, usually a character. Characters are only affected by an aura while inside"
@@ -31,7 +30,6 @@
 	{
         "name": "Blessing",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "token"}
         ],
         "description": "Certain abilities give yourself or allies a Blessing token, and ways to spend those tokens for powerful effects. By default a character can use a blessing token to gain +1 boon when they make a save. All blessings are discarded at the end of combat."
@@ -46,7 +44,6 @@
     {
         "name": "Chain Reaction",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "triggered effect"}
         ],
         "description": "Wright-only <i>triggered effect</i>. Triggers when a character damages two or more foes with this ability."
@@ -54,7 +51,6 @@
     {
         "name": "Charge",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
         "description": "A <i>triggered effect</i> that activates when the ability is used on a slow turn."
@@ -62,7 +58,6 @@
 	{
         "name": "Cure",
         "tags": [
-			{"tag_name": "general"},
 			{"tag_name": "positive effect"}
         ],
         "description": "A character that’s cured gains 4 vigor, or a <i>vigor surge</i> if they’re bloodied. Then, they may save agains all statuses."
@@ -70,7 +65,6 @@
 	{
         "name": "Collide",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
         "description": "A <i>triggered effect</i> that occurs on any character shoved into an obstruction by this ability."
@@ -78,7 +72,6 @@
 	{
         "name": "Combo",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "token"}
         ],
         "description": "Actions with Combo have two versions, a base version and combo version. When you use the base ability, gain a combo token. Any time you use a combo ability and have a token, you use the combo version instead, discarding the token . You can only have one combo token at once, and discard all tokens at the end of combat."
@@ -86,7 +79,6 @@
 	{
         "name": "Comeback",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
         "description": "A <i>triggered effect</i> that turns on if the character using this ability is bloodied."
@@ -108,7 +100,6 @@
 	{
         "name": "Dangerous Terrain",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "terrain"}
         ],
         "description": "Entering or exiting a dangerous terrain space causes a character to take 2 piercing damage. Characters can only take this damage once a turn."
@@ -116,7 +107,6 @@
 	{
         "name": "Difficult Terrain",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "terrain"}
         ],
         "description": "Costs +1 space of movement to exit."
@@ -131,7 +121,6 @@
 	{
         "name": "Dash",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "movement"}
         ],
         "description": "Special movement that ignores engagement."
@@ -167,7 +156,6 @@
 	{
         "name": "Exceed",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
         "description": "A <i>triggered effect</i> that takes place on a total attack roll of 15+."
@@ -175,7 +163,6 @@
 	{
         "name": "Finishing Blow",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
         "description": "Vagabond only. <i>Triggered effect</i> that triggers if this ability targets a <i>bloodied</i> foe."
@@ -197,7 +184,6 @@
 	{
         "name": "Heroic",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
         "description": "Stalwart only <i>triggered effect</i>. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
@@ -212,7 +198,6 @@
 	{
         "name": "Infuse",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "triggered effect"}
         ],
         "description": "Wright only triggered effect. Triggers when Aether is spent on an ability."
@@ -220,7 +205,6 @@
 	{
         "name": "Mark",
         "tags": [
-            {"tag_name": "general"},
             {"tag_name": "ongoing"}
         ],
         "description": "Places a mark, an <i>ongoing</i> effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions."
@@ -263,7 +247,6 @@
 	{
         "name": "Rush X",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "movement"}
         ],
         "description": "Move X spaces. You are <i>unstoppable</i> and <i>immune</i> to all damage while moving."
@@ -285,7 +268,6 @@
 	{
         "name": "Slay",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "triggered effect"}
         ],
         "description": "A <i>triggered effect</i> that activates when this ability reduces a character to 0 hp."
@@ -300,7 +282,6 @@
 	{
         "name": "Stance",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "ongoing"},
 			{"tag_name": "positive effect"}
         ],
@@ -309,7 +290,6 @@
 	{
         "name": "Standard Move",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "movement"}
         ],
         "description": "An ability all characters can take as a free action to move their speed."
@@ -331,7 +311,6 @@
 	{
         "name": "Teleport",
         "tags": [
-            {"tag_name": "general"},
 			{"tag_name": "movement"}
         ],
         "description": "Special movement that allows you to instantly move to unoccupied space within range X."
@@ -439,7 +418,7 @@
         "tags": [
             {"tag_name": "special state"}
         ],
-        "description": "pg. 94: When a character is reduced to 0 hp, they are incapacitated and can’t do anything. Any effects or statuses on them end or turn off, and they don’t take a turn. Any summons, objects, or other effects they have created disappear.<br>pg.104: An incapacitated character doesn’t take turns, doesn’t provide obstruction or engagement, can’t move, take actions, or use abilities or traits. All effects on that character end. All effects, marks and summons created by that character are removed. Objects and terrain effects remain."
+        "description": " When a character is reduced to 0 hp, they are incapacitated and can’t do anything. Any effects or statuses on them end or turn off. Any summons, or other effects they have created disappear, objects and terrain effects remain. A defeated character doesn't take turns, doesn’t provide obstruction or engagement, can’t move, take actions, or use abilities or traits."
     },
 	{
         "name": "Counter",

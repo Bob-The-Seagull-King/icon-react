@@ -36,6 +36,12 @@ $colour_grey_secondary: #D5D5D5;
     min-width: 25em;
 }
 
+.gridItemRule {
+    margin: 0.5em;
+    min-width: 25em;
+    max-width: 25em;
+}
+
 .halfwise {
     width: 45%;
 }
@@ -73,6 +79,19 @@ $colour_grey_secondary: #D5D5D5;
     max-width: 25em;
     padding: 1em;
     padding-bottom:0.01%;
+    text-align: justify;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.ruleStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    max-width: 25em;
+    padding: 1em;
+    padding-bottom: 0.25em;
     text-align: justify;
 
     &:hover {
