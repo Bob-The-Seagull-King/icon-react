@@ -305,6 +305,16 @@ $colour_grey_secondary: #D5D5D5;
     padding: 1em;
 }
 
+.bondfullcontainer {
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 40% 60%;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 1em;
+}
+
 .abilityContainer { 
     display: grid;
     justify-content: space-evenly; 

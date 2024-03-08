@@ -3,10 +3,14 @@ import React, { useEffect, useState } from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
+import bonddata from '../../resources/data/player/bond.json';
+
+import BondFullDisplay from '../itemdisplaycomponents/BondFullDisplay';
+
 const PN_BondFull = (props: any) => {
     
     const searchVal = urlParse();
-    const isSearched = (value: any) => (true);
+    const isSearched = (value: any) => (((value.name.toLowerCase() == (searchVal.toLowerCase()))));
 
     function urlParse() {
         const urlPath = window.location.pathname;
@@ -28,8 +32,12 @@ const PN_BondFull = (props: any) => {
 
     // Return render -------------------------------
     return (
-        <div>
-            Player_Narrative_Bond_Full
+        <div className='widthPT centerPosition topPosition'>
+            {bonddata.filter(isSearched).map((item) => (
+                <div className='gridItem' key={item.name + "bondfull"}  >
+                    <BondFullDisplay data={item}/>
+                </div>
+                ))}
         </div>
     )
 }
