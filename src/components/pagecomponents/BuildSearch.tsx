@@ -249,6 +249,19 @@ const BuildSearch = (props: any) => {
         )
     }
 
+    
+    const handleKeyDownRelic = (event: any) => {
+        if (event.key === 'Enter') {
+            createRelic(callRelic())
+        }
+      };
+
+    const handleKeyDownAbility = (event: any) => {
+        if (event.key === 'Enter') {
+            createAbility(callAbility())
+        }
+    };
+
 
     return (
         <div className='basesearchStructure'>
@@ -291,8 +304,8 @@ const BuildSearch = (props: any) => {
                         <div className='basesearchitemStructure searchgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>RELIC</h2>
-                                <input id='relicName' type="text" placeholder="Relic Name" className='searchinputrelic'/>
-                                <input id='relicLevel' type="text" placeholder="Tier" className='searchinputreliclevel'/>
+                                <input id='relicName' type="text"  onKeyDown={handleKeyDownRelic}  placeholder="Relic Name" className='searchinputrelic'/>
+                                <input id='relicLevel'  onKeyDown={handleKeyDownRelic}  type="text" placeholder="Tier" className='searchinputreliclevel'/>
                                 <div className='paddedSearchAdd' onClick={() => createRelic(callRelic())}>
                                     <h2 className='nakedpad'> &#x2795;&#xFE0E;</h2>
                                 </div>
@@ -313,9 +326,9 @@ const BuildSearch = (props: any) => {
                         <div className='basesearchitemStructure searchgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>ABILITY</h2>
-                                <input id='abilityName' type="text" placeholder="Ability Name" className='searchinputrelic'/>
-                                <input id='abilityTalent' type="text" placeholder="Talent" className='searchinputreliclevel'/>
-                                <input id='abilityMastery' type="text" placeholder="Mastery(Y/N)" className='searchinputabilitymastery'/>
+                                <input id='abilityName' type="text"  onKeyDown={handleKeyDownAbility}  placeholder="Ability Name" className='searchinputrelic'/>
+                                <input id='abilityTalent' type="text"  onKeyDown={handleKeyDownAbility}  placeholder="Talent" className='searchinputreliclevel'/>
+                                <input id='abilityMastery' type="text"  onKeyDown={handleKeyDownAbility}  placeholder="Mastery(Y/N)" className='searchinputabilitymastery'/>
                                 <div className='paddedSearchAdd' onClick={() => createAbility(callAbility())}>
                                     <h2 className='nakedpad'> &#x2795;&#xFE0E; </h2>
                                 </div>

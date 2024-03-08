@@ -46,6 +46,12 @@ const SiteNav = (props: any) => {
         return( the_arr.join('/') );
     }
 
+    const handleKeyDown = (event: any) => {
+        if (event.key === 'Enter') {
+            navSearch()
+        }
+      };
+
     function returnSearchBar() {
         return (
             <div>
@@ -53,7 +59,7 @@ const SiteNav = (props: any) => {
                     
                         <div className='basenavitemStructure searchpad'>
                             <div className='centerPosition'>
-                                <input id='navSearchSearch' type="text" placeholder="Search" className='searchinputnav navitemh2'/>
+                                <input id='navSearchSearch'  onKeyDown={handleKeyDown} type="text" placeholder="Search" className='searchinputnav navitemh2'/>
                                 <div className='' >
                                     <h2 className='navitemh2' onClick={() => navSearch()}>&#x1F50E;&#xFE0E;</h2>
                                 </div>
