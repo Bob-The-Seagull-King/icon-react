@@ -38,7 +38,33 @@ $colour_grey_secondary: #D5D5D5;
     }
 }
 
+.basenarrativesearchStructure {
+    border-radius: 1em;
+    box-shadow: 0 0 5px 1px #CCC;
+    padding: 1em;
+    text-align: justify;
+    width: 75%;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
 .basesearchitemStructure {
+    border-radius: 0.75em;
+    box-shadow: 0 0 5px 1px #bd89ac;
+    background-color: $colour_purple_main;
+    color: white;
+    text-align: justify;
+    width: 100%;
+    padding-bottom: 0em;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #bd89ac;
+    }
+}
+
+.basesearchbuttonStructure {
     border-radius: 0.75em;
     box-shadow: 0 0 5px 1px #bd89ac;
     background-color: $colour_purple_main;
@@ -157,6 +183,15 @@ $colour_grey_secondary: #D5D5D5;
 }
 
 
+.narrativesearchContainer {
+    display: grid;
+    justify-content: space-evenly; 
+    grid-template-columns: 25% 20% 45% 10%;
+    padding: 1em;
+}
+
+
+
 // -------------------------------------------------------------
 
 
@@ -194,6 +229,12 @@ $colour_grey_secondary: #D5D5D5;
     justify-self: center;
 }
 
+.midgriditem {
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    width: 100%;
+}
+
 .levelgriditem {
     margin-right: 0.5em;
     margin-top: 1em;
@@ -201,7 +242,6 @@ $colour_grey_secondary: #D5D5D5;
 
 .searchgridbutton {
     margin-left: 0.5em;
-    margin-top: 1em;
 }
 
 .jobgriditem {
@@ -213,6 +253,13 @@ $colour_grey_secondary: #D5D5D5;
     border-radius: 1em;
     margin: 1em;
     width: 100%;
+    padding: 0.5em;
+}
+
+.searchbondinput {
+    border-radius: 1em;
+    margin: 1em;
+    width: 10%;
     padding: 0.5em;
 }
 
@@ -237,10 +284,29 @@ $colour_grey_secondary: #D5D5D5;
     padding: 0.5em;
 }
 
+.searchinputpower {
+    border-radius: 1em;
+    margin: 1em 0em 1em 1em;
+    width: 80%;
+    padding: 0.5em;
+}
+
+.lowpad {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .paddedSearchTitle {
     padding-left: 1em;
     width: 30%;
 }
+
+.paddedSearchNarTitle {
+    padding-left: 1em;
+    margin-right: 0.75em;
+    width: 30%;
+}
+
 
 .paddedSearchLevel {
     padding-left: 1em;

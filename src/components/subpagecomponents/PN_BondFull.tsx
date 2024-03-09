@@ -34,7 +34,7 @@ const PN_BondFull = (props: any) => {
     return (
         <div className='widthPT centerPosition topPosition'>
             {bonddata.filter(isSearched).map((item) => (
-                <div className='gridItem' key={item.name + "bondfull"}  >
+                <div className='centerPosition' key={item.name + "bondfull"}  >
                     <BondFullDisplay data={item}/>
                 </div>
                 ))}
