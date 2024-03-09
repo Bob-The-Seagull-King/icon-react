@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.15.12",
     "@radix-ui/react-dropdown-menu": "^2.0.6",
     "@reduxjs/toolkit": "^2.2.1",
     "@testing-library/jest-dom": "^6.4.2",

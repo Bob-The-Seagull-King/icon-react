@@ -6,9 +6,13 @@ import '../../styles/iconbuild.scss';
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Autocomplete from '@mui/material/Autocomplete';
 
 import relicData from '../../resources/data/player/relic.json';
 import abilityData from '../../resources/data/player/ability.json';
+import classData from '../../resources/data/player/class.json';
 
 const BuildSearch = (props: any) => {
 
@@ -26,6 +30,46 @@ const BuildSearch = (props: any) => {
     const [_abilities, createAbility] = useState(abilityBase);
     // ---------------------------------------------
 
+    const relicnames = getrelicnames();
+    const abilitynames = getabilitynames();
+    const jobnames = getjobnames();
+
+    // ---------------------------------------------
+    function getrelicnames() {
+        const temp: string[] = [];
+
+        let i = 0;
+        for (i = 0; i < relicData.length; i++) {
+            temp.push(relicData[i].name);
+        }
+
+        return temp;
+    }
+
+    function getabilitynames() {
+        const temp: string[] = [];
+
+        let i = 0;
+        for (i = 0; i < abilityData.length; i++) {
+            temp.push(abilityData[i].name);
+        }
+
+        return temp;
+    }
+
+    function getjobnames() {
+        const temp: string[] = [];
+
+        let i = 0;
+        for (i = 0; i < classData.length; i++) {
+            let j = 0;
+            for (j = 0; j < classData[i].jobs.length; j++) {
+                temp.push(classData[i].jobs[j].name);
+            }
+        }
+
+        return temp;
+    }
     // ---------------------------------------------
 
     /**
@@ -283,7 +327,15 @@ const BuildSearch = (props: any) => {
                         <div className='basesearchitemStructure jobgriditem padSmall'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchTitle'>JOB</h2>
-                                <input id='searchJob' type="text" placeholder="Job Name" className='searchinput'/>
+                                <Autocomplete
+                                    className='searchinputbox'
+                                    disablePortal
+                                    id="searchJob"
+                                    sx={{ width: 300 }}
+                                    options={jobnames.sort((a, b) => -b.localeCompare(a))}
+                                    style={{ textDecoration: "none"}}
+                                    renderInput={(params) => <TextField {...params} style={{height:"50%",  width: "85%", backgroundColor:"white",paddingLeft:"0.5em", textDecoration:"none"}} id='searchBond' type="text" variant="standard" label="" className='searchinputpower'/>}
+                                />
                             </div>
                         </div>
                         <div className='searchsubsubcontainer'>
@@ -293,7 +345,7 @@ const BuildSearch = (props: any) => {
                                 <input id='searchLevel' type="text" placeholder="Level" className='searchinput'/>
                             </div>
                             </div>
-                            <div className='basesearchitemStructure searchgridbutton' onClick={() => validateSearch()}>
+                            <div className='basesearchbuttonStructure searchgridtacticsbutton' onClick={() => validateSearch()}>
                                 <h2 className='centerPosition'>&#x1F50E;&#xFE0E;</h2>
                             </div>
                         </div>
@@ -304,7 +356,15 @@ const BuildSearch = (props: any) => {
                         <div className='basesearchitemStructure searchgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>RELIC</h2>
-                                <input id='relicName' type="text"  onKeyDown={handleKeyDownRelic}  placeholder="Relic Name" className='searchinputrelic'/>
+                                <Autocomplete
+                                    className='searchinputbox'
+                                    disablePortal
+                                    id="relicName"
+                                    sx={{ width: 300 }}
+                                    options={relicnames.sort((a, b) => -b.localeCompare(a))}
+                                    style={{ textDecoration: "none"}}
+                                    renderInput={(params) => <TextField {...params} onKeyDown={handleKeyDownRelic}  style={{height:"50%", backgroundColor:"white", width:"90%", paddingLeft:"0.5em", textDecoration:"none"}} id='searchBond' type="text" variant="standard" label="" className='searchinputpower'/>}
+                                />
                                 <input id='relicLevel'  onKeyDown={handleKeyDownRelic}  type="text" placeholder="Tier" className='searchinputreliclevel'/>
                                 <div className='paddedSearchAdd' onClick={() => createRelic(callRelic())}>
                                     <h2 className='nakedpad'> &#x2795;&#xFE0E;</h2>
@@ -326,7 +386,16 @@ const BuildSearch = (props: any) => {
                         <div className='basesearchitemStructure searchgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>ABILITY</h2>
-                                <input id='abilityName' type="text"  onKeyDown={handleKeyDownAbility}  placeholder="Ability Name" className='searchinputrelic'/>
+                                
+                                <Autocomplete
+                                    className='searchinputbox'
+                                    disablePortal
+                                    id="abilityName"
+                                    sx={{ width: 300 }}
+                                    options={abilitynames.sort((a, b) => -b.localeCompare(a))}
+                                    style={{ textDecoration: "none"}}
+                                    renderInput={(params) => <TextField {...params} onKeyDown={handleKeyDownAbility}  style={{height:"50%", backgroundColor:"white", width:"90%", paddingLeft:"0.5em", textDecoration:"none"}} id='searchBond' type="text" variant="standard" label="" className='searchinputpower'/>}
+                                />
                                 <input id='abilityTalent' type="text"  onKeyDown={handleKeyDownAbility}  placeholder="Talent" className='searchinputreliclevel'/>
                                 <input id='abilityMastery' type="text"  onKeyDown={handleKeyDownAbility}  placeholder="Mastery(Y/N)" className='searchinputabilitymastery'/>
                                 <div className='paddedSearchAdd' onClick={() => createAbility(callAbility())}>

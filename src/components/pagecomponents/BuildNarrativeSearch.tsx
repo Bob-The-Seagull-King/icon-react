@@ -6,6 +6,9 @@ import '../../styles/iconbuild.scss';
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Autocomplete from '@mui/material/Autocomplete';
 
 import bonddata from '../../resources/data/player/bond.json';
 import powerdata from '../../resources/data/player/power.json';
@@ -24,9 +27,34 @@ const BuildNarrativeSearch = (props: any) => {
     const [_powers, createAbility] = useState(abilityBase);
     // ---------------------------------------------
 
+    const powernames = getpowernames();
+    const bondnames = getbondnames();
+
     // ---------------------------------------------
+    function getbondnames() {
+        const temp: string[] = [];
+
+        let i = 0;
+        for (i = 0; i < bonddata.length; i++) {
+            temp.push(bonddata[i].name);
+        }
+
+        return temp;
+    }
+
+    function getpowernames() {
+        const temp: string[] = [];
+
+        let i = 0;
+        for (i = 0; i < powerdata.length; i++) {
+            temp.push(powerdata[i].name);
+        }
+
+        return temp;
+    }
 
     /**
+     * 
      * Checks that the minimum values (job and level) are
      * present and, if so, prompts the url-parse and window
      * open process.
@@ -209,7 +237,15 @@ const BuildNarrativeSearch = (props: any) => {
                     <div className='basesearchitemStructure'>
                         <div className='centerPosition'>
                             <h2 className='paddedSearchNarTitle'>BOND</h2>
-                            <input id='searchBond' type="text" placeholder="Bond Name" className='searchinput'/>
+                                <Autocomplete
+                                    className='searchinputbox'
+                                    disablePortal
+                                    id="searchBond"
+                                    sx={{ width: 300 }}
+                                    options={bondnames.sort((a, b) => -b.localeCompare(a))}
+                                    style={{ textDecoration: "none"}}
+                                    renderInput={(params) => <TextField {...params} style={{height:"50%",  width: "85%", backgroundColor:"white",paddingLeft:"0.5em", textDecoration:"none"}} id='searchBond' type="text" variant="standard" label="" className='searchinputpower'/>}
+                                />
                         </div>
                     </div>
                 </div>
@@ -227,7 +263,15 @@ const BuildNarrativeSearch = (props: any) => {
                         <div className='basesearchitemStructure'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>POWER</h2>
-                                <input id='powerName' type="text"  onKeyDown={handleKeyDownAbility}  placeholder="Power" className='searchinputpower'/>
+                                <Autocomplete
+                                    className='searchinputbox'
+                                    disablePortal
+                                    id="powerName"
+                                    sx={{ width: 300 }}
+                                    options={powernames.sort((a, b) => -b.localeCompare(a))}
+                                    style={{ textDecoration: "none"}}
+                                    renderInput={(params) => <TextField {...params} style={{height:"50%", backgroundColor:"white",paddingLeft:"0.5em", textDecoration:"none"}} id='powerName' type="text" onKeyDown={handleKeyDownAbility} variant="standard" label="" className='searchinputpower'/>}
+                                />
                                 <div className='paddedSearchAdd' onClick={() => createAbility(callAbility())}>
                                     <h2 className='nakedpad'> &#x2795;&#xFE0E; </h2>
                                 </div>
