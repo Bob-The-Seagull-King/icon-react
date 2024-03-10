@@ -77,9 +77,11 @@ const BuildSearch = (props: any) => {
             }
             if (tempSplit[0] == "r") {
                 relicsName = tempSplit[1];
+                relicsName = relicsName.replaceAll('%20', ' ');
             }
             if (tempSplit[0] == "a") {
                 abilitiesName = tempSplit[1];
+                abilitiesName = abilitiesName.replaceAll('%20', ' ');
             }
         }
     }
