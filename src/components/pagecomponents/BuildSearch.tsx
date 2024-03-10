@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
+import Cookies from 'js-cookie'
 
 import relicData from '../../resources/data/player/relic.json';
 import abilityData from '../../resources/data/player/ability.json';
@@ -23,16 +24,89 @@ const BuildSearch = (props: any) => {
     const relicBase: string[] = [];
     const abilityBase: string[] = [];
     let isValid = true;
+
+    const urlString = grabURL();
+    let jobName = "";
+    let levelName = "";
+    let abilitiesName = "";
+    let relicsName = "";
     // ----------------------------------------------
 
+    
+    setSearchFromParam();
     // Setup states --------------------------------
-    const [_relics, createRelic] = useState(relicBase);
-    const [_abilities, createAbility] = useState(abilityBase);
+    const [_relics, createRelic] = useState(parseBaseRelics());
+    const [_abilities, createAbility] = useState(parseBaseAbilities());
     // ---------------------------------------------
 
     const relicnames = getrelicnames();
     const abilitynames = getabilitynames();
     const jobnames = getjobnames();
+
+    function grabURL() {
+        const urlPath = window.location.pathname;
+        const urlSplits = urlPath.split('/');
+        let urlBuildParam = "";
+        if (urlSplits.length >= 4) {
+            urlBuildParam = urlSplits[3];
+            if (urlBuildParam.length > 0) {
+                return urlBuildParam;
+            }
+        }
+
+        urlBuildParam = Cookies.get('tacticsbuildparam') ?? "";
+        
+        return urlBuildParam;
+    }
+
+    function setSearchFromParam() {
+        const buildSplits = urlString.split(';');
+        // ------------------------------------------
+        // ------------------------------------------
+
+        let i = 0;
+        for (i = 0; i < buildSplits.length; i++) {
+            const tempSplit = buildSplits[i].split('=');
+            console.log(tempSplit);
+            if (tempSplit[0] == "j") {
+                jobName = tempSplit[1];
+                jobName = jobName.replaceAll('%20', ' ');
+            }
+            if (tempSplit[0] == "l") {
+                levelName = tempSplit[1];
+            }
+            if (tempSplit[0] == "r") {
+                relicsName = tempSplit[1];
+            }
+            if (tempSplit[0] == "a") {
+                abilitiesName = tempSplit[1];
+            }
+        }
+    }
+
+    function parseBaseRelics() {
+        const buildSplits = relicsName.split(':');
+        const temp: string[] = [];
+        let i = 0;
+        for (i = 0; i < buildSplits.length; i++) {
+            if (buildSplits[i].length > 0) {
+                temp.push(buildSplits[i]);
+            }
+        }
+        return temp;
+    }
+
+    function parseBaseAbilities() {
+        const temp: string[] = [];
+        const buildSplits = abilitiesName.split(':');
+        let i = 0;
+        for (i = 0; i < buildSplits.length; i++) {
+            if (buildSplits[i].length > 0) {
+                temp.push(buildSplits[i]);
+            }
+        }
+        return temp;
+    }
 
     // ---------------------------------------------
     function getrelicnames() {
@@ -71,6 +145,7 @@ const BuildSearch = (props: any) => {
         return temp;
     }
     // ---------------------------------------------
+
 
     /**
      * Checks that the minimum values (job and level) are
@@ -333,6 +408,7 @@ const BuildSearch = (props: any) => {
                                     id="searchJob"
                                     sx={{ width: 300 }}
                                     options={jobnames.sort((a, b) => -b.localeCompare(a))}
+                                    defaultValue={jobName}
                                     style={{ textDecoration: "none"}}
                                     renderInput={(params) => <TextField {...params} style={{height:"50%",  width: "85%", backgroundColor:"white",paddingLeft:"0.5em", textDecoration:"none"}} id='searchBond' type="text" variant="standard" label="" className='searchinputpower'/>}
                                 />
@@ -342,7 +418,7 @@ const BuildSearch = (props: any) => {
                             <div className='basesearchitemStructure levelgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>LV</h2>
-                                <input id='searchLevel' type="text" placeholder="Level" className='searchinput'/>
+                                <input id='searchLevel' type="text" value={levelName} placeholder="Level" className='searchinput'/>
                             </div>
                             </div>
                             <div className='basesearchbuttonStructure searchgridtacticsbutton' onClick={() => validateSearch()}>

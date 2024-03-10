@@ -255,7 +255,6 @@ const BuildTacticalPage: React.FC = () => {
                 let j = 0;
 
                 for (j = 0; j < classData.length; j++) {
-                    console.log(classes[i]);
                     if (classes[i] == getColour(classData[j].name)) {
                         gambitdata.push({"name": classData[j].name, "data": classData[j].mechanic});
                     }
