@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
+import Cookies from 'js-cookie'
 
 import bonddata from '../../resources/data/player/bond.json';
 import powerdata from '../../resources/data/player/power.json';
@@ -21,14 +22,73 @@ const BuildNarrativeSearch = (props: any) => {
     const relicBase: string[] = [];
     const abilityBase: string[] = [];
     let isValid = true;
+    
+    const urlString = grabURL();
+    let bondName = "";
+    let levelName = "";
+    let powersName = "";
     // ----------------------------------------------
 
+    setSearchFromParam();
     // Setup states --------------------------------
-    const [_powers, createAbility] = useState(abilityBase);
+    const [_powers, createAbility] = useState(parseBasePowers());
     // ---------------------------------------------
 
     const powernames = getpowernames();
     const bondnames = getbondnames();
+
+    
+    function grabURL() {
+        const urlPath = window.location.pathname;
+        const urlSplits = urlPath.split('/');
+        let urlBuildParam = "";
+        if (urlSplits.length >= 4) {
+            urlBuildParam = urlSplits[3];
+            if (urlBuildParam.length > 0) {
+                return urlBuildParam;
+            }
+        }
+
+        urlBuildParam = Cookies.get('narrativebuildparam') ?? "";
+        
+        return urlBuildParam;
+    }
+
+    function setSearchFromParam() {
+        const buildSplits = urlString.split(';');
+        // ------------------------------------------
+        // ------------------------------------------
+
+        let i = 0;
+        for (i = 0; i < buildSplits.length; i++) {
+            const tempSplit = buildSplits[i].split('=');
+            if (tempSplit[0] == "b") {
+                bondName = tempSplit[1];
+                bondName = bondName.replaceAll('%20', ' ');
+            }
+            if (tempSplit[0] == "l") {
+                levelName = tempSplit[1];
+            }
+            if (tempSplit[0] == "p") {
+                powersName = tempSplit[1];
+                powersName = powersName.replaceAll('%20', ' ');
+            }
+        }
+    }
+
+
+
+    function parseBasePowers() {
+        const buildSplits = powersName.split(':');
+        const temp: string[] = [];
+        let i = 0;
+        for (i = 0; i < buildSplits.length; i++) {
+            if (buildSplits[i].length > 0) {
+                temp.push(buildSplits[i]);
+            }
+        }
+        return temp;
+    }
 
     // ---------------------------------------------
     function getbondnames() {
@@ -243,6 +303,7 @@ const BuildNarrativeSearch = (props: any) => {
                                     id="searchBond"
                                     sx={{ width: 300 }}
                                     options={bondnames.sort((a, b) => -b.localeCompare(a))}
+                                    defaultValue={bondName}
                                     style={{ textDecoration: "none"}}
                                     renderInput={(params) => <TextField {...params} style={{height:"50%",  width: "85%", backgroundColor:"white",paddingLeft:"0.5em", textDecoration:"none"}} id='searchBond' type="text" variant="standard" label="" className='searchinputpower'/>}
                                 />
@@ -254,7 +315,7 @@ const BuildNarrativeSearch = (props: any) => {
                     <div className='basesearchitemStructure'>
                         <div className='centerPosition'>
                             <h2 className='paddedSearchLevel'>LV</h2>
-                            <input id='searchLevel' type="text" placeholder="Level" className='searchinput'/>
+                            <input id='searchLevel' type="text" value={levelName} placeholder="Level" className='searchinput'/>
                         </div>
                     </div>
                 </div>

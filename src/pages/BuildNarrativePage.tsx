@@ -31,8 +31,6 @@ const BuildNarrativePage: React.FC = () => {
     // Reads URL and gathers appropriate data ---------------
     parseURL();
     const isValid = validateURL();
-    console.log(characterdata);
-    console.log(powersdata)
     // ------------------------------------------------------
 
     // Parse URL into Data --------------------------

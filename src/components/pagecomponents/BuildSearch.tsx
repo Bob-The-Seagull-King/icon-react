@@ -67,7 +67,6 @@ const BuildSearch = (props: any) => {
         let i = 0;
         for (i = 0; i < buildSplits.length; i++) {
             const tempSplit = buildSplits[i].split('=');
-            console.log(tempSplit);
             if (tempSplit[0] == "j") {
                 jobName = tempSplit[1];
                 jobName = jobName.replaceAll('%20', ' ');

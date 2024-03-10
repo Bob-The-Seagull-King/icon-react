@@ -15,7 +15,6 @@ const PT_ClassFull = (props: any) => {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
         urlSplits[4] = urlSplits[4].replaceAll('%20', ' ');
-        console.log(urlSplits[4]);
 
         return urlSplits[4];
     }
