@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Sneak",
+        "desc_short": "Move with stealth and silence. Perform actions without notice. Spring an Ambush.",
+        "example_short": "<b>Sneak</b> past the sleeping Wyrm without it waking.",
+        "desc_long_start": "The rish and effect of Sneak actions is usually dependent on how alert the target of the action is, and what the scale of the task is.",
+        "desc_long_end": "At lower chapters, a character needs some cover or distraction to effectively do something sneaky, such as darkness or misdirection. They can probably only do it slowly. At higher chapters, they need less cover and can do it faster.<br/><br/>Sneaking can represent using your natural skill or magical abilities that turn you invisible or unseen to the eye.",
+        "chapter_desc": [
+            {"name": "Chapter I", "val": ["Sneak into a camp or building.", "Fish an item out of someone's pocket, or plant something there.", "Use sleight of hand to fool someone.", "Spring an ambush on a single person."]},
+            {"name": "Chapter II", "val": ["Sneak into a large or guarded location like a castle.", "Pickpocket or ambush a whole group of people."]},
+            {"name": "Chapter III", "val": ["Sneak past a guarded location in broad daylight.", "Stelath by a monster with unusual senses.", "Steal something someone is actively holding while they're looking at you."]}
+        ]
+    }
+]

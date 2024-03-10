@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Frost Enchantment",
+        "desc": "Use this enchantment at the start of combat to wreathe your weapon in shimmering frist. Any time you attack a character this combat, you create <i>difficult terrain</i> under them.",
+        "faction": "general",
+        "use": [
+            {"number": 3},
+            {"duration": "combat"}
+        ]
+    },
+    {
+        "name": "Flame Enchantment",
+        "desc": "Your attacks this combat gain <i>exceed:</i> release a brust 1 (target) explosion, dealing 3 damage to all characters inside.",
+        "faction": "general",
+        "use": [
+            {"number": 3},
+            {"duration": "combat"}
+        ]
+    },
+    {
+        "name": "Lightning Enchantment",
+        "desc": "Your attacks this combat deal 1 piercing damage to any foe damaged after they resolve.",
+        "faction": "general",
+        "use": [
+            {"number": 3},
+            {"duration": "combat"}
+        ]
+    },
+    {
+        "name": "Poison Enchantment",
+        "desc": "Your attacks this combat gain <i>pierce</i>.",
+        "faction": "general",
+        "use": [
+            {"number": 3},
+            {"duration": "combat"}
+        ]
+    },
+    {
+        "name": "Gnarled Horn",
+        "desc": "You can blow this horn as a free action ability to allow all allies to <i>rush 3</i>.",
+        "faction": "general",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Displacement Cloak",
+        "desc": "Wrap this cloak around you and blink in and out of existence. This expedition, you may make your standard move as a 4 space teleport.",
+        "faction": "general",
+        "use": [
+            {"number": 2},
+            {"duration": "expedition"}
+        ]
+    },
+    {
+        "name": "Boots of Speed",
+        "desc": "Use these sleek boots to take the dash action as a free action.",
+        "faction": "general",
+        "use": [
+            {"number": 6},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Valkyre's Mantle",
+        "desc": "This expedition, you may <i>fly</i> with any of your movement.",
+        "faction": "general",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+    {
+        "name": "Crystal Skull",
+        "desc": "Crush the skull as a 1 action ability. A foe in range 6 must save or <i>sacrifice 50%</i> of its max hp, or <i>25%</i> of its max hp on a successful save. If this reduces it to 1 hp, it is also <i>stunned</i>. Has no effect on legends.",
+        "faction": "general",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Whisper Cloak",
+        "desc": "Pull this cloak over you at the start of combat to gain <i>dodge, evasion,</i> and <i>stealth+</i> for the first round.",
+        "faction": "general",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Stave of Flame",
+        "desc": "Point this stave at a space on the ground in range 6 as an action to release a spark of flame as a <i>medium blast</i> area effect, inflicting 4 damage to characters within.",
+        "faction": "general",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Helm of the Ram",
+        "desc": "Use this heavy, horned helm as a free action to shove an adjacent character 2 spaces, then <i>rush 2</i>",
+        "faction": "general",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Phase Shard",
+        "desc": "As a 1 action ability, remove yourself from the battlefield, then return in any free space.",
+        "faction": "general",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Gangariant's Stavve",
+        "desc": "As a 2 action ability, force a foe in range 3 to save. On a failed save, they take 10 damage and are <i>stunned</i> and have a pit created under them. On a successful save, they are shoved 5.",
+        "faction": "general",
+        "use": [
+            {"number": 6},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Broken Key to Numenea",
+        "desc": "Use this key as a free action ability to travel briefly to the Titan City of Numenea, removing yourself from the battlefield and ending your turn. You return at the start of your next turn, in a free space in range 3 from your original location.",
+        "faction": "general",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Jotunn Mead",
+        "desc": "Drink this potent mead as a 1 action ability to gain 15 vigor. This vigor could put you over the maximum. However, at the start of your next turn, you are <i>stunned</i>.",
+        "faction": "general",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Axe of Mork",
+        "desc": "Swing this ace at an adjacent foe at 8hp or lower as a 1 action ability to instantly <i>defeat</i> them.",
+        "faction": "general",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Warding Armor",
+        "desc": "Start every combat this expedition with <i>defiance</i> and <i>5 vigor</i>.",
+        "faction": "general",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+    {
+        "name": "Tears of the Weeper",
+        "desc": "Feed this silky black liquid to any character with 4 wounds and <i>fallen</i>. During combat, this is a 1 action ability, after combat this can take place in narrative play. That character can return from being defeated if in combat, and recovers 2 wounds. They are no longer <i>fallen</i>. However, their soul aether begins to slowly drain away from them over the coming weeks, to a dark temple below the earth. Without intervention, they will become a soulless husk.",
+        "faction": "general",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Fragment of the Ur-Spell",
+        "desc": "Spend 2 actions to read this fragment of terrifying Ur-magic and inflict 999 divine damage to a foe anywhere on the battlefield. Legends must save or take 25% of their maximum hp as <i>divine</i> damage instead, or 13 <i>divine</i> on a successful save.",
+        "faction": "general",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    }
+]
