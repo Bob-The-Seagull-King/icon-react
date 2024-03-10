@@ -4,6 +4,7 @@ import { capitalizeTag, getColour, containsTag } from '../utility/functions';
 import '../styles/iconcomponent.scss';
 import '../styles/iconbuild.scss';
 import { useNavigate } from "react-router-dom";
+import Cookies from 'js-cookie'
 
 import BuildNarrativeSearch from '../components/pagecomponents/BuildNarrativeSearch';
 
@@ -36,6 +37,22 @@ const BuildNarrativePage: React.FC = () => {
 
     // Parse URL into Data --------------------------
 
+    function grabURL() {
+        const urlPath = window.location.pathname;
+        const urlSplits = urlPath.split('/');
+        let urlBuildParam = "";
+        if (urlSplits.length >= 4) {
+            urlBuildParam = urlSplits[3];
+            if (urlBuildParam.length > 0) {
+                Cookies.set('narrativebuildparam', urlBuildParam);
+                return urlBuildParam;
+            }
+        }
+
+        urlBuildParam = Cookies.get('narrativebuildparam') ?? "";
+        
+        return urlBuildParam;
+    }
     /**
      * Takes the URL, splits it into the needed components,
      * and sends the right value into the relavent parsing
@@ -43,13 +60,8 @@ const BuildNarrativePage: React.FC = () => {
      */
     function parseURL() {
         // Grab Splits ------------------------------
-        const urlPath = window.location.pathname;
-        const urlSplits = urlPath.split('/');
         
-        let urlBuildParam = "";
-        if (urlSplits.length >= 4) {
-            urlBuildParam = urlSplits[3];
-        }
+        const urlBuildParam = grabURL();
         const buildSplits = urlBuildParam.split(';');
         // ------------------------------------------
 
