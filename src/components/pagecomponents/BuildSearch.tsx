@@ -364,7 +364,7 @@ const BuildSearch = (props: any) => {
     function renderAbility(abilityval: string) {
         const splitsability = abilityval.split(',');
         return (
-            <div className='basesearchlightStructure' onClick={() => createRelic(removeAbility(abilityval))}>
+            <div className='basesearchlightStructure' onClick={() => createAbility(removeAbility(abilityval))}>
                 <p><b>{splitsability[0].toUpperCase()} (Talent {splitsability[1]}, Mastery {splitsability[2]})</b></p>
             </div>
         )
