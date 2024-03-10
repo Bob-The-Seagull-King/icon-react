@@ -310,14 +310,15 @@ const BuildNarrativeSearch = (props: any) => {
                         </div>
                     </div>
                 </div>
-
+ 
                 <div className='searchgriditem'> 
                     <div className='basesearchitemStructure'>
                         <div className='centerPosition'>
                             <h2 className='paddedSearchLevel'>LV</h2>
-                            <input id='searchLevel' type="text" value={levelName} placeholder="Level" className='searchinput'/>
+                            <input id='searchLevel' type="text" defaultValue={levelName} placeholder="Level" className='searchinput'/>
                         </div>
                     </div>
+                    
                 </div>
                 
                 <div className='midgriditem'>  

@@ -338,6 +338,7 @@ const BuildSearch = (props: any) => {
      * @param relicval The ability to be removed
      * @returns A string[] object that will be the
      * new state of the _abilities array
+     * 
      */
     function removeAbility(abilityval: string) {
         const tempAbilityList: string[] = [];
@@ -419,7 +420,7 @@ const BuildSearch = (props: any) => {
                             <div className='basesearchitemStructure levelgriditem'>
                             <div className='centerPosition'>
                                 <h2 className='paddedSearchLevel'>LV</h2>
-                                <input id='searchLevel' type="text" value={levelName} placeholder="Level" className='searchinput'/>
+                                <input id='searchLevel' type="text" defaultValue={levelName} placeholder="Level" className='searchinput'/>
                             </div>
                             </div>
                             <div className='basesearchbuttonStructure searchgridtacticsbutton' onClick={() => validateSearch()}>
