@@ -3,7 +3,7 @@
         "name": "Saddleborn",
         "bond": "Pathfinder",
         "tags": [        ],
-        "desc": "Get a <b>knack</b> for riding or piloting:<ul><li>Chapter I: Animals or Vehicles</li><li>Chapter II: Monsters</li><li>Chapter II: An entire herd of animals or monsters</li></ul>"
+        "desc": "Get a <b>knack</b> for riding or piloting:<ul><li>Chapter I: Animals or Vehicles</li><li>Chapter II: Monsters</li><li>Chapter III: An entire herd of animals or monsters</li></ul>"
     },
     {
         "name": "Windrider",
@@ -47,7 +47,7 @@
         "name": "Horizon Sweeper",
         "bond": "Pathfinder",
         "tags": [        ],
-        "desc": "Your <i>sense</i> actions have increased effect and aren't affected by:<ul><li>Chapter I: Darkness or time of day</li><li>Weather or visibility</li><li>Distance of any kind</li></ul>"
+        "desc": "Your <i>sense</i> actions have increased effect and aren't affected by:<ul><li>Chapter I: Darkness or time of day</li><li>Chapter II: Weather or visibility</li><li>Chapter III: Distance of any kind</li></ul>"
     },
     {
         "name": "Memory of the Sole",
@@ -61,7 +61,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Your next <b>traverse</b> action has superpowered effect."
+        "desc": "Your next <b>Traverse</b> action has <i>superpowered</i> effect."
     },
     {
         "name": "Gambit of Gaia",
@@ -77,7 +77,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Close your eyes. You can view a location for 1 minute, anywhere: • I: Close by, within shouting distance • II: Within a few miles • III: Anywhere in Arden Eld You view the location as if an invisible observer, hearing and seeing everything. You cannot move your point of vision, and your body is immobile and vulnerable while taking this action. You can end it any time. You don’t have to be able to see the location you’re trying to view."
+        "desc": "Close your eyes. You can view a location for 1 minute, anywhere:<ul><li>I: Close by, within shouting distance</li><li>II: Within a few miles</li><li>III: Anywhere in Arden Eld</li></ul>You view the location as if an invisible observer, hearing and seeing everything. You cannot move your point of vision, and your body is immobile and vulnerable while taking this action. You can end it any time. You don’t have to be able to see the location you’re trying to view."
     },
 	{
         "name": "Library Organ",
@@ -91,13 +91,13 @@
         "name": "Argus",
         "bond": "Seeker",
         "tags": [        ],
-        "desc": "You get a knack for sensing: • I: Hidden objects, paths, tracks, or traps • II: Hidden people, monsters, or ambushes • III: Invisible or metaphysical objects or forces, such as the flow of magic"
+        "desc": "You get a <b>knack</b> for sensing:<ul><li>I: Hidden objects, paths, tracks, or traps</li><li>II: Hidden people, monsters, or ambushes</li><li>III: Invisible or metaphysical objects or forces, such as the flow of magic</li></ul>"
     },
 	{
         "name": "Midnight Eyes",
         "bond": "Seeker",
         "tags": [        ],
-        "desc": "You can see in the dark, which could make your risk and effect better. Your study and sense actions get increased effect in darkness. At Chapter III or higher, you can see anything close by in good detail without the use of your eyes."
+        "desc": "You can see in the dark, which could make your risk and effect better. Your <b>study</b> and <b>sense</b> actions get <b>increased effect</b> in darkness. At Chapter III or higher, you can see anything close by in good detail without the use of your eyes."
     },
 	{
         "name": "Unhinge",
@@ -111,7 +111,7 @@
         "tags": [
             {"tag_name": "session", "val": 2}
         ],
-        "desc": "You may study the ambient emotional state of: • I: One person close by • II: One person or monster close by • III: All people or monsters close by You get an impression of how they are feeling and what the strongest emotion they are feeling is. Your next action including your target(s) that can act on this information gets +1 boon or increased effect."
+        "desc": "You may <b>study</b> the ambient emotional state of:<ul><li>I: One person close by</li><li>II: One person or monster close by</li><li>III: All people or monsters close by</li></ul>You get an impression of how they are feeling and what the strongest emotion they are feeling is. Your next action including your target(s) that can act on this information gets +1 boon or increased effect."
     },
 	{
         "name": "Possession",
@@ -127,13 +127,13 @@
         "tags": [
             {"tag_name": "session", "val": 2}
         ],
-        "desc": "Describe a course of action to the GM you plan to take this session. You will receive an answer that is truthful, if unclear, that comes from a feeling. The GM can choose from the following options: Wheel (good/positive outcomes), Stone (bad/negative outcomes), and Chaos (a mix of good and bad outcomes)."
+        "desc": "Describe a course of action to the GM you plan to take this session. You will receive an answer that is truthful, if unclear, that comes from a feeling. The GM can choose from the following options:<ul><li>Wheel (good/positive outcomes)</li><li>Stone (bad/negative outcomes)</li><li>Chaos (a mix of good and bad outcomes)</li></ul>"
     },
 	{
         "name": "Geist",
         "bond": "Seeker",
         "tags": [        ],
-        "desc": "When you are able to touch someone skin to skin, even if you break contact, you can see through their eyes and experience their sensations and ambient emotional state, though you can do little but observe, and they are not aware of your presence. The effect can be accessed: • I: Until the end of the scene • II: Until the end of the expedition • III: Indefinitely The effect is canceled when you use this ability again, and while you’re concentrating on it, you cannot do anything yourself except sit in quiet focus, otherwise the effect breaks. A player character must be willing, and you may need a roll to be able to touch a hostile, unaware, or unwilling character."
+        "desc": "When you are able to touch someone skin to skin, even if you break contact, you can see through their eyes and experience their sensations and ambient emotional state, though you can do little but observe, and they are not aware of your presence. The effect can be accessed:<ul><li>I: Until the end of the scene</li><li>II: Until the end of the expedition</li><li>III: Indefinitely</li></ul>The effect is canceled when you use this ability again, and while you’re concentrating on it, you cannot do anything yourself except sit in quiet focus, otherwise the effect breaks. A player character must be willing, and you may need a roll to be able to touch a hostile, unaware, or unwilling character."
     },
 	{
         "name": "Terrible Truth",
@@ -141,7 +141,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of your next Study action to Superpowered"
+        "desc": "Increase the effect of your next <b>Study</b> action to <i>superpowered</i>"
     },
 	{
         "name": "Gambit of the Outsider",
@@ -175,13 +175,13 @@
         "name": "Hammersoul",
         "bond": "Mighty",
         "tags": [        ],
-        "desc": "Your Smash actions have increased effect when you’re exhausted."
+        "desc": "Your <b>Smash</b> actions have increased effect when you’re exhausted."
     },
 	{
         "name": "Overpower",
         "bond": "Mighty",
         "tags": [        ],
-        "desc": "You can push by taking 2 strain instead of spending effort for Endure and Smash actions"
+        "desc": "You can push by taking 2 strain instead of spending effort for <b>Endure</b> and <b>Smash</b> actions"
     },
 	{
         "name": "The Tower",
@@ -195,13 +195,13 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "You can choose to automatically treat your next Command action roll against another character as a 6. The GM can decide a character is too strong willed for this to work on them, forcing you to roll normally, but if they do, regain 2 effort after that roll resolves. It always works on foes from a lower chapter than you."
+        "desc": "You can choose to automatically treat your next <b>Command</b> action roll against another character as a 6. The GM can decide a character is too strong willed for this to work on them, forcing you to roll normally, but if they do, regain 2 effort after that roll resolves. It always works on foes from a lower chapter than you."
     },
 	{
         "name": "Half Light",
         "bond": "Mighty",
         "tags": [        ],
-        "desc": "When you gather information about violence or possible threats, you can use Endure, Smash, or Command"
+        "desc": "When you gather information about violence or possible threats, you can use <b>Endure</b>, <b>Smash</b>, or <b>Command</b>"
     },
 	{
         "name": "The Wall",
@@ -217,7 +217,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of your next Smash action to superpowered"
+        "desc": "Increase the effect of your next <b>Smash</b> action to <i>superpowered</i>"
     },
 	{
         "name": "Gambit of The Storm Lord",
@@ -231,7 +231,7 @@
         "name": "Clarity",
         "bond": "Wolf",
         "tags": [        ],
-        "desc": "If you break, regain all effort, and you can push your next action for free"
+        "desc": "If you <b>break</b>, regain all effort, and you can <b>push</b> your next action for free"
     },
 	{
         "name": "Scargoat",
@@ -243,7 +243,7 @@
         "name": "Blood Scent",
         "bond": "Wolf",
         "tags": [        ],
-        "desc": "You get a knack for tracking or intimidating anyone or anything that’s wounded"
+        "desc": "You get a <b>knack</b> for tracking or intimidating anyone or anything that’s wounded"
     },
 	{
         "name": "Go for a Walk",
@@ -251,7 +251,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "When you separate from the group to do something alone, you can trigger this ability to get +1d and increased effect on your action. ‘Cut to black’ and roll the action ‘off-screen’, then cut back to when you return to the group, describing what happened."
+        "desc": "When you separate from the group to do something alone, you can trigger this ability to get <b>+1d and increased effect</b> on your action. ‘Cut to black’ and roll the action ‘off-screen’, then cut back to when you return to the group, describing what happened."
     },
 	{
         "name": "Cornered",
@@ -283,7 +283,7 @@
         "name": "Bishop",
         "bond": "Wolf",
         "tags": [        ],
-        "desc": "When you set someone up, that person gets both +1d and increased effect on the set up roll."
+        "desc": "When you <b>set someone up</b>, that person gets both +1d <i>and</i> increased effect on the set up roll."
     },
 	{
         "name": "Wick",
@@ -291,7 +291,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the power of your next Excel action to superpowered"
+        "desc": "Increase the power of your next <b>Excel</b> action to <i>superpowered</i>"
     },
 	{
         "name": "Gambit of Arenheir",
@@ -311,7 +311,7 @@
         "name": "Mercurio",
         "bond": "Harlequin",
         "tags": [        ],
-        "desc": "You can change your appearance completely in only a few moments by spending 1 effort, including height, weight, gender presentation, etc. Anyone in view of you can witness you change. You must appear as Kin (a person), but you could be a different Kintype, and otherwise everything else is up to you. This effect lasts until you camp, or until you eat or drink something, and while active you get a knack for impersonating your new form, although if you’re trying to impersonate a specific person, people who know them will see through your disguise up close. At chapter III, this effect no longer costs effort if it's only used once a scene."
+        "desc": "You can change your appearance completely in only a few moments by spending 1 effort, including height, weight, gender presentation, etc. Anyone in view of you can witness you change. You must appear as Kin (a person), but you could be a different Kintype, and otherwise everything else is up to you. This effect lasts until you camp, or until you eat or drink something, and while active you get a <b>knack</b> for impersonating your new form, although if you’re trying to impersonate a specific person, people who know them will see through your disguise up close. At chapter III, this effect no longer costs effort if it's only used once a scene."
     },
 	{
         "name": "Mockingbird",
@@ -325,13 +325,13 @@
         "tags": [
             {"tag_name": "session", "val": 2}
         ],
-        "desc": "You can choose to automatically treat your next charm action roll as a 6. If you do, its effects only last: • I: 1 minute • II: an hour • III a whole day After the duration expires, its target(s) realize they were manipulated."
+        "desc": "You can choose to automatically treat your next <b>charm</b> action roll as a 6. If you do, its effects only last:<ul><li>I: 1 minute</li><li>II: an hour</li><li>III a whole day</li></ul>After the duration expires, its target(s) realize they were manipulated."
     },
 	{
         "name": "The Big Show",
         "bond": "Harlequin",
         "tags": [        ],
-        "desc": "Critical hits on excel, charm, or sneak actions regain 2 effort for all party members who witness your feats"
+        "desc": "Critical hits on <b>excel</b>, <b>charm</b>, or <b>sneak</b> actions regain 2 effort for all party members who witness your feats"
     },
 	{
         "name": "Habitual Line Stepper",
@@ -339,7 +339,7 @@
         "tags": [
             {"tag_name": "session", "val": 2}
         ],
-        "desc": "You instantly disappear from sight and re-appear somewhere: • I: Nearby • II: Within two or three hundred paces • IIII: Within a mile You don’t have to see your destination, but you are shunted back to your starting point if it’s occupied or obstructed (like trying to hop into solid rock, for example)."
+        "desc": "You instantly disappear from sight and re-appear somewhere:<ul><li>I: Nearby</li><li>II: Within two or three hundred paces</li><li>III: Within a mile</li></ul>You don’t have to see your destination, but you are shunted back to your starting point if it’s occupied or obstructed (like trying to hop into solid rock, for example)."
     },
 	{
         "name": "Quickfingers",
@@ -367,7 +367,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the power of your next Sneak action to superpowered"
+        "desc": "Increase the power of your next <b>Sneak</b> action to <i>superpowered</i>"
     },
 	{
         "name": "Gambit of the Laughing God",
@@ -381,7 +381,7 @@
         "name": "Rarefied",
         "bond": "Highborn",
         "tags": [        ],
-        "desc": "You have a knack for actions involving people considered highborn or high class. However, if you use this knack, all actions involving people considered low class or lowborn are 0d at best until the end of the session."
+        "desc": "You have a <b>knack</b> for actions involving people considered highborn or high class. However, if you use this knack, all actions involving people considered low class or lowborn are 0d at best until the end of the session."
     },
 	{
         "name": "Private Tutor",
@@ -393,13 +393,13 @@
         "name": "Silver Spoon",
         "bond": "Highborn",
         "tags": [        ],
-        "desc": "You can never be accused of trespassing except by someone considered high rank or high class (a manager, a noble, a military officer, etc), appropriate to chapter. This effect does not extend to anyone else with you, but get +1d on rolls to cover for them. At chapter II, you can cover for one extra person without question, and at chapter III you can cover for anyone you like within reason."
+        "desc": "You can never be accused of trespassing except by someone considered high rank or high class (a manager, a noble, a military officer, etc), appropriate to chapter. This effect does not extend to anyone else with you, but get <b>+1d</b> on rolls to cover for them. At chapter II, you can cover for one extra person without question, and at chapter III you can cover for anyone you like within reason."
     },
 	{
         "name": "Trust the Fund",
         "bond": "Highborn",
         "tags": [        ],
-        "desc": "You always have enough in your pockets to sway someone when you try to gain access, assets, or information. If you do, gain +1d or increased effect, but it’s incredibly obvious that you’re bribing them."
+        "desc": "You always have enough in your pockets to sway someone when you try to gain access, assets, or information. If you do, gain <b>+1d</b> or <b>increased effect</b>, but it’s incredibly obvious that you’re bribing them."
     },
 	{
         "name": "Special Reserve",
@@ -439,7 +439,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of your next Charm action to superpowered."
+        "desc": "Increase the effect of your next <b>Charm</b> action to <i>superpowered</i>."
     },
 	{
         "name": "Gambit of the Bronze Queen",
@@ -477,13 +477,13 @@
         "name": "Pangloss",
         "bond": "Mender",
         "tags": [        ],
-        "desc": "When you fail a desperate action, your next action can be pushed without spending effort."
+        "desc": "When you fail a desperate action, your next action can be <b>pushed</b> without spending effort."
     },
 	{
         "name": "A Better Way",
         "bond": "Mender",
         "tags": [        ],
-        "desc": "When you study to understand how something or someone is hurt or broken, or tinker to fix something, get +1d or increased effect. This ability works without effect loss on: • I: One person or a small object • II: A whole group of people or a large object • III: A whole town, or a massive object such as a train, huge machine, etc"
+        "desc": "When you <b>study</b> to understand how something or someone is hurt or broken, or <b>tinker</b> to fix something, get +1d or increased effect. This ability works without effect loss on:<ul><li>I: One person or a small object</li><li>II: A whole group of people or a large object</li><li>III: A whole town, or a massive object such as a train, huge machine, etc</li></ul>"
     },
 	{
         "name": "Mender",
@@ -491,7 +491,7 @@
         "tags": [
             {"tag_name": "session", "val": 2}
         ],
-        "desc": "You can charm or tinker to heal someone’s strain. Check the final result: • 0-3 - Characters can spend 1 effort to heal 1 strain • 4-5 - Character heals 1 strain • 6 - Character heals 2 strain • 6,6 - Character heals 4 strain"
+        "desc": "You can <b>charm</b> or <b>tinker</b> to heal someone’s strain. Check the final result:<ul><li>0-3 - Characters can spend 1 effort to heal 1 strain</li><li> 4-5 - Character heals 1 strain</li><li>6 - Character heals 2 strain</li><li>6,6 - Character heals 4 strain</li></ul>"
     },
 	{
         "name": "Encourage",
@@ -513,7 +513,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of your next Tinker action to superpowered"
+        "desc": "Increase the effect of your next <b>Tinker</b> action to <i>superpowered</i>"
     },
 	{
         "name": "Gambit of the Forge Titan",
@@ -527,7 +527,7 @@
         "name": "Strike the Road",
         "bond": "Brave",
         "tags": [        ],
-        "desc": "The first team action you lead in a session costs you 0 effort"
+        "desc": "The first <b>team action</b> you lead in a session costs you 0 effort"
     },
 	{
         "name": "Crush Limiter",
@@ -535,7 +535,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "You can give your next action superpowered effect, but take a burden at the end of the scene."
+        "desc": "You can give your next action <i>superpowered</i> effect, but take a burden at the end of the scene."
     },
 	{
         "name": "Luck as a Constant",
@@ -547,7 +547,7 @@
         "name": "All In",
         "bond": "Brave",
         "tags": [        ],
-        "desc": "Using Aid to help a character taking a desperate action costs 0 effort for you"
+        "desc": "Using <b>Aid</b> to help a character taking a desperate action costs 0 effort for you"
     },
 	{
         "name": "Joyluck Wind Thrower",
@@ -581,7 +581,7 @@
         "name": "Team Player",
         "bond": "Brave",
         "tags": [        ],
-        "desc": "When any ally sets you up, you have increased effect on the roll"
+        "desc": "When any ally <b>sets you up</b>, you have <b>increased effect</b> on the roll"
     },
 	{
         "name": "Brave Destiny",
@@ -589,7 +589,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of the next team action you take to superpowered."
+        "desc": "Increase the effect of the next team action you take to <i>superpowered</i>."
     },
     {
         "name": "Gambit of The Hundred Sword God",
@@ -605,7 +605,7 @@
         "tags": [
             {"tag_name": "session", "val": 2}
         ],
-        "desc": "You can use this power to ‘flash back’ in time to tell the GM how you prepared for a situation. You can use this ability before or after any action roll to do one of the following: Set up a character for the next action (even yourself), resist consequences of something that just happened by taking strain, even for another character, increase effect or lower risk. To do so, however, you need to be able to tell the GM how you prepared and also make fortune roll using one of your actions to see how well your preparation went. On a 4+ gain the expected effect, on a 6 choose an extra effect, and on a 1-3 you had to abandon the plan (this ability has no effect this scene and regain 1 use)."
+        "desc": "You can use this power to ‘flash back’ in time to tell the GM how you prepared for a situation. You can use this ability before or after any action roll to do one of the following: <b>Set up</b> a character for the next action (even yourself), <b>resist</b> consequences of something that just happened by taking strain, even for another character, increase <b>effect</b> or <b>lower risk</b>. To do so, however, you need to be able to tell the GM how you prepared and also make fortune roll using one of your actions to see how well your preparation went. On a 4+ gain the expected effect, on a 6 choose an extra effect, and on a 1-3 you had to abandon the plan (this ability has no effect this scene and regain 1 use)."
     },
 	{
         "name": "Swoon",
@@ -619,19 +619,19 @@
         "name": "Immaculate",
         "bond": "Broker",
         "tags": [        ],
-        "desc": "Get a knack for situations where being dressed appropriately would help you (disguises, uniforms, outfits, formalwear, etc), appropriate to chapter."
+        "desc": "Get a <b>knack</b> for situations where being dressed appropriately would help you (disguises, uniforms, outfits, formalwear, etc), appropriate to chapter."
     },
 	{
         "name": "Beg, Borrow, or Steal",
         "bond": "Broker",
         "tags": [        ],
-        "desc": "When you need the right tool for the job (a disguise, a tool, a weapon, a portable boat, a ladder) you can choose to have it right now. The tool’s power, type, and rarity depends on chapter, and it lasts until the end of the session, or until you use this ability again. Gain +1d on actions using the tool, but the GM chooses one: • It was stolen from someone, who will track you down by next interlude • It’s poor quality and breaks after the scene is over • It gets you into trouble after the scene is over (it attracts attention, there’s an unwanted side effect, it leads you somewhere you weren’t expecting to go)"
+        "desc": "When you need the right tool for the job (a disguise, a tool, a weapon, a portable boat, a ladder) you can choose to have it right now. The tool’s power, type, and rarity depends on chapter, and it lasts until the end of the session, or until you use this ability again. Gain +1d on actions using the tool, but the GM chooses one:<ul><li>It was stolen from someone, who will track you down by next interlude</li><li>It’s poor quality and breaks after the scene is over</li><li>It gets you into trouble after the scene is over (it attracts attention, there’s an unwanted side effect, it leads you somewhere you weren’t expecting to go)</li></ul>"
     },
 	{
         "name": "Fruitful",
         "bond": "Broker",
         "tags": [        ],
-        "desc": "You have a contact or family member in every populated location. Define this person with the GM and pick one (choose carefully): not in trouble with the law, reliable, won’t need a favor. Roll +1d on actions where your contact could help you."
+        "desc": "You have a contact or family member in every populated location. Define this person with the GM and pick one (choose carefully):<ul><li><i>not in trouble with the law<i></li><li><i>reliable</i></li><li><i>won’t need a favor</i></li></ul>Roll +1d on actions where your contact could help you."
     },
 	{
         "name": "Faust",
@@ -647,7 +647,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "You may use your highest rated action for any single action with normal effectiveness (charming a door to open for example). Explain to the GM how you’re doing this. At chapter III, you don’t need to explain."
+        "desc": "You may use your highest rated action for any single action with normal effectiveness (<i>charming</i> a door to open for example). Explain to the GM how you’re doing this. At chapter III, you don’t need to explain."
     },
 	{
         "name": "Coordinator",
@@ -667,7 +667,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of your next Command action to superpowered."
+        "desc": "Increase the effect of your next <b>Command</b> action to <i>superpowered</i>."
     },
 	{
         "name": "Gambit of the Weeper",
@@ -731,7 +731,7 @@
         "name": "Reputation",
         "bond": "Elder",
         "tags": [        ],
-        "desc": "When you enter a populated area you haven’t visited before, you can decide that people there have heard of you. This gives you +1d to interact with them socially for the rest of the session, but anyone who wants to find or track you can find you easily. This works on: • I. Any town • II. Any city or small village • III. Anywhere"
+        "desc": "When you enter a populated area you haven’t visited before, you can decide that people there have heard of you. This gives you +1d to interact with them socially for the rest of the session, but anyone who wants to find or track you can find you easily. This works on:<ul><li>I. Any town</li><li>II. Any city or small village</li><li>III. Anywhere</li></ul>"
     },
 	{
         "name": "The Mountain",
@@ -739,7 +739,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of your next Endure action to superpowered."
+        "desc": "Increase the effect of your next <b>Endure</b> action to <i>superpowered</i>."
     },
 	{
         "name": "Gambit of Tsumi",
@@ -761,7 +761,7 @@
         "name": "Gaia Compass",
         "bond": "Outsider",
         "tags": [        ],
-        "desc": "You have a knack for navigation. You always know the distance and direction of the nearest (I) village (II) town (III) settlement of any kind. You can sense dungeons within a few miles, and get a bad feeling when one is about to surface."
+        "desc": "You have a <b>knack</b> for navigation. You always know the distance and direction of the nearest<ul><li>(I) village</li><li>(II) town</li><li>(III) settlement</li></ul>of any kind. You can sense dungeons within a few miles, and get a bad feeling when one is about to surface."
     },
 	{
         "name": "Open Up",
@@ -779,7 +779,7 @@
         "name": "Earth Glide",
         "bond": "Outsider",
         "tags": [        ],
-        "desc": "You have an unusual way of moving due to skills, magical talent, or anatomy. You gain a knack for movement through certain terrain and don’t suffer reduced effect moving through it. Pick one per chapter: Forests, Oceans, Mountains, Snow, Swamps, Deserts."
+        "desc": "You have an unusual way of moving due to skills, magical talent, or anatomy. You gain a <b>knack</b> for movement through certain terrain and don’t suffer reduced effect moving through it. Pick one per chapter: <ul><li><i>Forests</i></li><li><i>Oceans</i></li><li><i>Mountains</i></li><li><i>Snow</i></li><li><i>Swamps</i></li><li><i>Deserts</i></li></ul>"
     },
 	{
         "name": "Tour Guide",
@@ -791,7 +791,7 @@
         "name": "Earth Speech",
         "bond": "Outsider",
         "tags": [        ],
-        "desc": "You can speak and understand something unusual, and have normal effect while doing so. Your conversation partners might not speak language, or be particularly eloquent. Whether they are actually talking back or not is up to the tone of your game. Pick one per chapter: Animals, Plants, Rocks, Weapons, Tools, Vehicles"
+        "desc": "You can speak and understand something unusual, and have normal effect while doing so. Your conversation partners might not speak language, or be particularly eloquent. Whether they are actually talking back or not is up to the tone of your game. Pick one per chapter:<ul><li>Animals</li><li>Plants</li><li>Rocks</li><li>Weapons</li><li>Tools</li><li>Vehicles</li></ul>"
     },
 	{
         "name": "Centered",
@@ -813,7 +813,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Increase the effect of your next sense action to superpowered."
+        "desc": "Increase the effect of your next <b>Sense</b> action to <i>superpowered</i>."
     },
 	{
         "name": "Gambit of the Formless",
@@ -829,13 +829,13 @@
         "tags": [
             {"tag_name": "session", "val": 2}
         ],
-        "desc": "You can push a smash roll for free if you can somehow use something that’s not a weapon from your environment. This could also increase or decrease effect, depending on the item. You can use something: • I: Small, like a vase or stool • II: Large, like a piece of furniture or a door • III: Massive, like a horse cart or boulder"
+        "desc": "You can push a <b>smash</b> roll for free if you can somehow use something that’s not a weapon from your environment. This could also increase or decrease effect, depending on the item. You can use something:<ul><li>I: Small, like a vase or stool</li><li>II: Large, like a piece of furniture or a door</li><li>III: Massive, like a horse cart or boulder</li></ul>"
     },
 	{
         "name": "Punching Bag",
         "bond": "Dreamer",
         "tags": [        ],
-        "desc": "If you take strain from anything, everyone else gets increased effect against that thing for the rest of the scene."
+        "desc": "If you take strain from <i>anything</i>, everyone else gets increased effect against that thing for the rest of the scene."
     },
 	{
         "name": "Best Efforts",
@@ -855,7 +855,7 @@
         "tags": [
             {"tag_name": "session", "val": 1}
         ],
-        "desc": "Make an action roll using any character’s action rating for that action. Describe how that character taught or inspired you."
+        "desc": "Make an action roll using <i>any</i> character’s action rating for that action. Describe how that character taught or inspired you."
     },
 	{
         "name": "Lost Cat",
@@ -887,7 +887,7 @@
         "name": "The Lobster",
         "bond": "Dreamer",
         "tags": [        ],
-        "desc": "If you break, your next action can be made normally, even while broken, and gains superpowered effect."
+        "desc": "If you break, your next action can be made normally, even while broken, and gains <i>superpowered</i> effect."
     },
     {
         "name": "Gambit of The Wanderers",
