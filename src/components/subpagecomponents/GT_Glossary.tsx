@@ -1,6 +1,5 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag} from '../../utility/functions';
+import React  from 'react'
+import { capitalizeTag, containsTag} from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
 import rulesdata from '../../resources/data/general/combatglossary.json';
@@ -10,11 +9,14 @@ const GT_Glossary = (props: any) => {
     
     const searchVal = urlParse();
     const isSearched = (value: any) => ((value.name.toLowerCase().includes(searchVal.toLowerCase())));
-
     const searchedrules = rulesdata.filter(isSearched).sort((a, b) => a.name.localeCompare(b.name));
 
     const foundTags = findTags();
-
+    
+    /**
+     * Takes the path and returns the rule
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -50,9 +52,8 @@ const GT_Glossary = (props: any) => {
 
     function returnTagCat(category: string) {
 
-
         return (
-            <div className='widthPN centerPosition topPosition'>
+            <div className='widthPT centerPosition topPosition'>
             {searchedrules.filter(isSearched).map((item: any) => (
                 <div key={item.name+category}>
                     {containsTag(item.tags, category) &&
@@ -75,7 +76,10 @@ const GT_Glossary = (props: any) => {
                 <div className='centerPosition'>
                     <h1 className={'megatitleShape titlePurple'}>{capitalizeTag(item)}</h1>
                 </div>
+                <div className='centerPosition'>
                 {returnTagCat(item)}
+                </div>
+                <br/>
                 </div>
                 
             ))}

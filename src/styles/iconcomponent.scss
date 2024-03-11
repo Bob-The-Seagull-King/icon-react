@@ -27,39 +27,6 @@ $colour_grey_secondary: #D5D5D5;
     }
 }
 
-.gridItem {
-    margin: 0.5em;
-}
-
-.gridItemPower {
-    margin: 0.5em;
-    min-width: 25em;
-}
-
-.gridItemRule {
-    margin: 0.5em;
-    min-width: 25em;
-    max-width: 25em;
-}
-
-.halfwise {
-    width: 45%;
-}
-
-.widthPT {
-    padding: 1em;
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.widthPN {
-    padding: 1em;
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .relicStructure {
     border-radius: 1em;
     box-shadow: 0 0 5px 1px #CCC;
@@ -195,7 +162,7 @@ $colour_grey_secondary: #D5D5D5;
 .classStructure {
     border-radius: 1em;
     box-shadow: 0 0 5px 1px #CCC;
-    max-width: 75%;
+    max-width: 100%;
     padding: 2em;
     padding-bottom:0.01%;
     text-align: justify;
@@ -245,15 +212,6 @@ $colour_grey_secondary: #D5D5D5;
     padding: 0%;
     margin: 0%;
     font-size: 2.5em;
-}
-
-.listitemsmallgap {
-    margin: -0.75em; 
-    padding: 0em;
-}
-
-.listulsmallgap {
-    margin-top: 0em;
 }
 // -------------------------------------------------
 
@@ -366,6 +324,29 @@ $colour_grey_secondary: #D5D5D5;
 // -------------------------------------------------
 
 // Component positioning ---------------------------
+
+
+.abilityAddonPosition {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 1em;
+}
+
+.centerPosition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.topPosition {
+    display: flex;
+    align-items: start;
+}
+
+// Grid Containers ------------------------------
+
 .jobcontainer {
     display: grid;
     justify-content: space-evenly; 
@@ -391,8 +372,7 @@ $colour_grey_secondary: #D5D5D5;
     display: grid;
     justify-content: space-evenly; 
     grid-template-columns: 50% 50%;
-    grid-auto-flow: row;
-    
+    grid-auto-flow: row; 
 }
 
 .classContainer { 
@@ -403,6 +383,23 @@ $colour_grey_secondary: #D5D5D5;
     grid-row-start: 1;
     grid-row-end: 2;
     padding: 1em;
+}
+
+// Grid Items ----------------------------------
+
+.gridItem {
+    margin: 0.5em;
+}
+
+.gridItemPower {
+    margin: 0.5em;
+    min-width: 25em;
+}
+
+.gridItemRule {
+    margin: 0.5em;
+    min-width: 25em;
+    max-width: 25em;
 }
 
 .jobitema { 
@@ -421,32 +418,18 @@ $colour_grey_secondary: #D5D5D5;
     grid-row-end: 1;
 }
 
-.abilityAddonPosition {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-left: 1em;
-}
-
-.centerPosition {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.topPosition {
-    display: flex;
-    align-items: start;
-}
-
-
-
 .gridjobItem { 
     width: 100%;
     display: grid; 
     place-items: center;
 }
+
+.gridjoblistItem {
+    max-width: 50%;
+    padding: 0.5em;
+}
+
+// Spacing ----------------------------------
 
 .jobFeaturePosition {
     display: flex;
@@ -465,5 +448,36 @@ $colour_grey_secondary: #D5D5D5;
 
 .classjobFeature {
     margin: 10em;
+}
+
+.listitemsmallgap {
+    margin: -0.75em; 
+    padding: 0em;
+}
+
+.listulsmallgap {
+    margin-top: 0em;
+}
+
+.halfwise {
+    width: 45%;
+}
+
+.classwise {
+    width: 100%;
+}
+
+.widthPT {
+    padding: 1em;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.widthPN {
+    padding: 1em;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
 }
 // -------------------------------------------------

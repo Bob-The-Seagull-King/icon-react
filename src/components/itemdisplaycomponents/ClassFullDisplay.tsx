@@ -1,7 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
-import { useNavigate } from "react-router-dom";
+import React from 'react'
 
 import JobDisplay from '../itemdisplaycomponents/JobDisplay'
 import ClassDisplay from '../itemdisplaycomponents/ClassDisplay'
@@ -21,7 +18,9 @@ const ClassFullDisplay = (props: any) => {
     return (
         <div>
             <div className='centerPosition'>
-                <ClassDisplay key={classData.name + "base"} data={classData}/>
+                <div style={{maxWidth:"75%"}}>
+                    <ClassDisplay key={classData.name + "base"} data={classData}/>
+                </div>
             </div>
             <br/>
             <div className='gridjobItem'>

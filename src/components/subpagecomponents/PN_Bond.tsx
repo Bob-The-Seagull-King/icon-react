@@ -1,6 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 
 
@@ -11,7 +9,11 @@ const PN_Bond = (props: any) => {
     
     const searchVal = urlParse();
     const isSearched = (value: any) => ((value.name.toLowerCase().includes(searchVal.toLowerCase())) );
-
+    
+    /**
+     * Takes the path and returns the Bond
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');

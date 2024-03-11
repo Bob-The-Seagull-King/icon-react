@@ -1,6 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 import '../../styles/iconhome.scss';
 import '../../styles/iconnav.scss';

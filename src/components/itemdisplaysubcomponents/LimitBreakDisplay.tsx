@@ -1,8 +1,6 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
-import { useNavigate } from "react-router-dom";
 
 import addonData from '../../resources/data/player/abilityaddon.json';
 import AddonDisplay from '../itemdisplaysubcomponents/AddonDisplay'

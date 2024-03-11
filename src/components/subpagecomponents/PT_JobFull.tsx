@@ -11,6 +11,10 @@ const PT_JobFull = (props: any) => {
     const searchVal = urlParse();
     const jobData = getJobs();
 
+    /**
+     * Takes the path and returns the job full
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -22,12 +26,15 @@ const PT_JobFull = (props: any) => {
         return "";
     }
 
+    /**
+     * Finds all Jobs that meet the search criteria
+     * @returns array of {} data
+     */
     function getJobs() {
         const _jobs: any[] = [];
 
         let i = 0;
         for (i = 0; i < classData.length; i++) {
-            
             let j = 0;
             for (j = 0; j < classData[i].jobs.length; j++) {
                 if (classData[i].jobs[j].name.toLowerCase() == searchVal.toLowerCase()) {
@@ -47,14 +54,14 @@ const PT_JobFull = (props: any) => {
     // ---------------------------------------------
 
     function renderList() {
-
         return (
-            <div className='widthPT centerPosition topPosition'>
-                {jobData.map((item) => (
-                    <div className='gridItem' key={item.name + "job"}  >
-                        <JobFullDisplay data={item}/>
-                    </div>
-                    ))}
+            <div className='centerPosition'>
+                <div className='widthPT centerPosition topPosition'>
+                    {jobData.map((item) => (
+                        <div className='gridItem' key={item.name + "job"}  >
+                            <JobFullDisplay data={item}/>
+                        </div> ))}
+                </div>
             </div>
         )
     }

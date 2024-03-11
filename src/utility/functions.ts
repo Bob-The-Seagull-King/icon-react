@@ -46,6 +46,13 @@ export function getColour(name: string){
     return "";
 }
 
+/**
+ * Checks if a tag-set contains a specific value
+ * @param tag the array of {} tags
+ * @param value the value of the tag_name to be checked
+ * @returns Boolean, if one of the tags has tag_name
+ * that matches the value.
+ */
 export function containsTag(tag:any, value:string) {
     let i = 0;
 
@@ -57,6 +64,13 @@ export function containsTag(tag:any, value:string) {
     return false;
 }
 
+/**
+ * Gets the value of a tage from a tag array
+ * @param tag the array of {} tags
+ * @param value the tag_name to get the value of
+ * @returns the val of a given tag, returns ""
+ * if no tag exists within the param tag.
+ */
 export function getTagValue(tag:any, value:string) {
     let i = 0;
 

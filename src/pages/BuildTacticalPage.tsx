@@ -1,9 +1,7 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { capitalizeTag, getColour, containsTag } from '../utility/functions';
 import '../styles/iconcomponent.scss';
 import '../styles/iconbuild.scss';
-import { useNavigate } from "react-router-dom";
 import Cookies from 'js-cookie'
 
 import SummonDisplay from '../components/itemdisplaycomponents/SummonDisplay'
@@ -55,6 +53,12 @@ const BuildTacticalPage: React.FC = () => {
 
     // Parse URL into Data --------------------------
 
+    /**
+     * Grabs the URL and if it contains params, converts
+     * that into build-readable-format and sets the cookie
+     * to it. If none can be found, it instead uses the
+     * cookie if possible.
+     */
     function grabURL() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -68,7 +72,6 @@ const BuildTacticalPage: React.FC = () => {
         }
 
         urlBuildParam = Cookies.get('tacticsbuildparam') ?? "";
-        
         return urlBuildParam;
     }
 
@@ -79,7 +82,6 @@ const BuildTacticalPage: React.FC = () => {
      */
     function parseURL() {
         // Grab Splits ------------------------------
-        
         const urlBuildParam = grabURL();
         const buildSplits = urlBuildParam.split(';');
         // ------------------------------------------

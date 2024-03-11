@@ -12,6 +12,23 @@ $colour_green_secondary: #88FA4E;
 $colour_blue_secondary: #4CDDFE;
 $colour_grey_secondary: #D5D5D5;
 
+// Text Content -------------------------------------
+
+.navitemh2 {
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+
+.webtitle {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: $colour_purple_main;
+    font-size: 3em;
+
+}
+
+// Body Style ---------------------------------------
+
 .basenavitemStructure {
     border-radius: 0.75em;
     box-shadow: 0 0 5px 1px $colour_purple_secondary;
@@ -40,23 +57,11 @@ $colour_grey_secondary: #D5D5D5;
     }
 }
 
+// Spacing -------------------------------------------
+
 .navpad {
     padding-left: 0.5em;
     padding-right: 0.5em;
-}
-
-
-.navitemh2 {
-    margin-top: 0.4em;
-    margin-bottom: 0.5em;
-}
-
-.webtitle {
-    margin-top: 0em;
-    margin-bottom: 0em;
-    color: $colour_purple_main;
-    font-size: 3em;
-
 }
 
 .webtitlediv {

@@ -1,11 +1,7 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 import '../../styles/iconbuild.scss';
 import '../../styles/iconnav.scss';
-import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import '../../styles/styles.scss';
@@ -17,7 +13,6 @@ const SiteNav = (props: any) => {
     const [bookmarksChecked, setBookmarksChecked] = React.useState(true);
     const [urlsChecked, setUrlsChecked] = React.useState(false);
     const [person, setPerson] = React.useState('pedro');
-
     
     /**
      * Opens a page based on the parameters
@@ -31,41 +26,45 @@ const SiteNav = (props: any) => {
      * Opens a page based on the parameters
      * @param name The end-params for the route
     */
-    function navSearch () { 
-        
+    function navSearch () {  
         const searchval = ((document.getElementById('navSearchSearch') as HTMLInputElement).value);   
         window.open(location.protocol + '//' + location.host +''+ RemoveLastDirectoryPartOf(location.pathname) + '/' + searchval, '_self', 'noopener,noreferrer');
     }
 
+    /**
+     * Cleans the path of the final section
+     * if no search param exists, no change it made.
+     * @param the_url the original url
+     * @returns the url stripped of the search param
+     */
     function RemoveLastDirectoryPartOf(the_url: string)
     {
         const the_arr = the_url.split('/');
-        if (the_arr.length > 4) {
-            the_arr.pop();
-        }
+        if (the_arr.length > 4) { the_arr.pop(); }
         return( the_arr.join('/') );
     }
 
+    /**
+     * Performs a search of the enter key is pressed
+     * @param event 
+     */
     const handleKeyDown = (event: any) => {
-        if (event.key === 'Enter') {
-            navSearch()
-        }
-      };
+        if (event.key === 'Enter') { navSearch() }
+    };
 
     function returnSearchBar() {
         return (
             <div>
-                        <div className='navpad'/>
-                    
-                        <div className='basenavitemStructure searchpad'>
-                            <div className='centerPosition'>
-                                <input id='navSearchSearch'  onKeyDown={handleKeyDown} type="text" placeholder="Search" className='searchinputnav navitemh2'/>
-                                <div className='' >
-                                    <h2 className='navitemh2' onClick={() => navSearch()}>&#x1F50E;&#xFE0E;</h2>
-                                </div>
-                            </div>
+                <div className='navpad'/>
+                <div className='basenavitemStructure searchpad'>
+                    <div className='centerPosition'>
+                        <input id='navSearchSearch'  onKeyDown={handleKeyDown} type="text" placeholder="Search" className='searchinputnav navitemh2'/>
+                        <div className='' >
+                            <h2 className='navitemh2' onClick={() => navSearch()}>&#x1F50E;&#xFE0E;</h2>
                         </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
         )
     }
   
@@ -74,11 +73,11 @@ const SiteNav = (props: any) => {
         <div className='centerPosition'>
         <div className='basenavStructure'>
             <div className=''>
-                    <div className='basenavitemStructure' onClick={() => navClick('')}>
-                        <button className="" aria-label="Customise options">
-                            <h2 className='navitemh2'>Home</h2>
-                        </button>
-                    </div>
+                <div className='basenavitemStructure' onClick={() => navClick('')}>
+                    <button className="" aria-label="Customise options">
+                        <h2 className='navitemh2'>Home</h2>
+                    </button>
+                </div>
             </div>
             <div className='navpad'/>
 
@@ -90,7 +89,6 @@ const SiteNav = (props: any) => {
                     </button>
                 </DropdownMenu.Trigger>
                 </div>
-
                 <DropdownMenu.Portal>
                     <DropdownMenu.Content className="DropdownMenuContent" sideOffset={5}>
                         <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('build/tactics/')}>
@@ -99,7 +97,6 @@ const SiteNav = (props: any) => {
                         <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('build/narrative/')}>
                             Narrative
                         </DropdownMenu.Item>
-
                     </DropdownMenu.Content>
                 </DropdownMenu.Portal>
             </DropdownMenu.Root>

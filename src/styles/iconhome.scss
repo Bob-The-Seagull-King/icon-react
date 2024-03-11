@@ -12,6 +12,8 @@ $colour_green_secondary: #88FA4E;
 $colour_blue_secondary: #4CDDFE;
 $colour_grey_secondary: #D5D5D5;
 
+// Text Contents --------------------------
+
 .hometitle {
     color: $colour_purple_main;
     font-size: 5em;
@@ -24,7 +26,13 @@ $colour_grey_secondary: #D5D5D5;
     font-weight: 1500;
 }
 
+.homelink {
+    font-weight: 1000;
+    text-decoration: none;
+    color: $colour_purple_main;
+}
 
+// Content Bodies -------------------------
 
 .homeParagraphStructure {
     border-radius: 1em;
@@ -33,7 +41,6 @@ $colour_grey_secondary: #D5D5D5;
     padding: 2em;
     text-align: justify;
     margin-top: -2em;
-
 
     &:hover {
         box-shadow: 0 0 10px 2px #CCC;
@@ -48,15 +55,7 @@ $colour_grey_secondary: #D5D5D5;
     padding-bottom:0.01%;
     text-align: justify;
 
-
     &:hover {
         box-shadow: 0 0 10px 2px #CCC;
     }
-}
-
-
-.homelink {
-    font-weight: 1000;
-    text-decoration: none;
-    color: $colour_purple_main;
 }

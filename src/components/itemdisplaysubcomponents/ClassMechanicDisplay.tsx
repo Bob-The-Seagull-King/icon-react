@@ -1,6 +1,5 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
+import React from 'react'
+import { getColour} from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
 const ClassMechanicDisplay = (props: any) => {

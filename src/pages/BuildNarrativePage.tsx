@@ -1,9 +1,6 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag } from '../utility/functions';
+import React from 'react'
 import '../styles/iconcomponent.scss';
 import '../styles/iconbuild.scss';
-import { useNavigate } from "react-router-dom";
 import Cookies from 'js-cookie'
 
 import BuildNarrativeSearch from '../components/pagecomponents/BuildNarrativeSearch';
@@ -20,8 +17,6 @@ const BuildNarrativePage: React.FC = () => {
      * 
      * b=[Bond Name];l=[Level];p=[Powers]
      */
-    
-    const bannedUltimateTags: string[] = [];
 
     // JSON data used in this build -------------------------
     const characterdata: any[] = [];
@@ -35,6 +30,12 @@ const BuildNarrativePage: React.FC = () => {
 
     // Parse URL into Data --------------------------
 
+    /**
+     * Grabs the URL and if it contains params, converts
+     * that into build-readable-format and sets the cookie
+     * to it. If none can be found, it instead uses the
+     * cookie if possible.
+     */
     function grabURL() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -48,7 +49,6 @@ const BuildNarrativePage: React.FC = () => {
         }
 
         urlBuildParam = Cookies.get('narrativebuildparam') ?? "";
-        
         return urlBuildParam;
     }
     /**
@@ -58,20 +58,16 @@ const BuildNarrativePage: React.FC = () => {
      */
     function parseURL() {
         // Grab Splits ------------------------------
-        
         const urlBuildParam = grabURL();
         const buildSplits = urlBuildParam.split(';');
         // ------------------------------------------
 
-
         // Store Values For Params ------------------
-        
         let bondval = '';
         let levelVal = '';
         let powerVal = '';
         // ------------------------------------------
         
-
         let i = 0;
         for (i = 0; i < buildSplits.length; i++) {
             const tempSplit = buildSplits[i].split('=');
@@ -83,28 +79,34 @@ const BuildNarrativePage: React.FC = () => {
 
         parseBond(bondval, levelVal);
         parsePowers(powerVal);
-
     }
 
+    /**
+     * Sets the character info based on the
+     * provided build info.
+     * @param bond The bond suggested
+     * @param level The character level suggested
+     */
     function parseBond(bond: string, level: string) {
         bond = bond.replaceAll('%20', ' ');
         level = level.replaceAll('%20', ' ');
 
-        
         let i = 0;
         for (i=0; i < bondData.length; i++) {
             if (bondData[i].name.toLowerCase() == bond.toLowerCase()) {
                 characterdata[0] = bondData[i];
-
             }
         }
         characterdata[1] = level;
-
     }
 
+    /**
+     * Takes the string of powers and
+     * converts it into a set of actual power
+     * data {} structures.
+     */
     function parsePowers(powers: string) {
         powers = powers.replaceAll('%20', ' ');
-
         const powersplit = powers.split(':');
         
         let i = 0;
@@ -124,14 +126,13 @@ const BuildNarrativePage: React.FC = () => {
 
     }
 
+    /**
+     * Takes the level and converts it
+     * into the chapter number of the character
+     */
     function levelToChapter(level: string) {
-
-        if (parseInt(level) < 5) {
-            return 1;
-        }
-        if (parseInt(level) > 8) {
-            return 3;
-        }
+        if (parseInt(level) < 5) { return 1; }
+        if (parseInt(level) > 8) { return 3; }
         return 2;
     }
 
@@ -142,10 +143,7 @@ const BuildNarrativePage: React.FC = () => {
      */
     function validateURL() {
         if ((characterdata[0] != undefined)
-        && (characterdata[1] != "")
-        ) {
-            return true;
-        }
+            && (characterdata[1] != "")) { return true; }
         return false;
     }
 
@@ -178,7 +176,7 @@ const BuildNarrativePage: React.FC = () => {
                     <div className='jobitemb'>
                         <div className=''>
                             <div className='abilityContainer'>
-                            {powersdata.map((item: any) => (
+                                {powersdata.map((item: any) => (
                                 <div key={item.name + "power"} onClick={() => navClick('power/', item.name)} className='gridItem'>
                                     <PowerDisplay   data={item}/>
                                 </div>))}

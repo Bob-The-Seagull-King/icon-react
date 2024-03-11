@@ -1,13 +1,9 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React, {  useState } from 'react'
 import '../../styles/iconcomponent.scss';
 import '../../styles/iconbuild.scss';
-import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 import Cookies from 'js-cookie'
 
@@ -32,12 +28,15 @@ const BuildNarrativeSearch = (props: any) => {
     setSearchFromParam();
     // Setup states --------------------------------
     const [_powers, createAbility] = useState(parseBasePowers());
-    // ---------------------------------------------
-
     const powernames = getpowernames();
     const bondnames = getbondnames();
+    // ---------------------------------------------
 
-    
+    /**
+     * Grabs the URL and if it contains params, converts
+     * that into build-readable-format. If none can be 
+     * found, it instead uses the cookie if possible.
+     */    
     function grabURL() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -50,13 +49,15 @@ const BuildNarrativeSearch = (props: any) => {
         }
 
         urlBuildParam = Cookies.get('narrativebuildparam') ?? "";
-        
         return urlBuildParam;
     }
 
+    /**
+     * Takes the urlstring and assigns the build
+     * params the appropriate value based on it.
+     */
     function setSearchFromParam() {
         const buildSplits = urlString.split(';');
-        // ------------------------------------------
         // ------------------------------------------
 
         let i = 0;
@@ -76,8 +77,11 @@ const BuildNarrativeSearch = (props: any) => {
         }
     }
 
-
-
+    /**
+     * Takes the power buildsplit and creates
+     * the power objects for the power array
+     * @returns 
+     */
     function parseBasePowers() {
         const buildSplits = powersName.split(':');
         const temp: string[] = [];
@@ -91,6 +95,11 @@ const BuildNarrativeSearch = (props: any) => {
     }
 
     // ---------------------------------------------
+    /**
+     * Get the names of all bonds stored
+     * in the data resource
+     * @returns 
+     */
     function getbondnames() {
         const temp: string[] = [];
 
@@ -102,6 +111,11 @@ const BuildNarrativeSearch = (props: any) => {
         return temp;
     }
 
+    /**
+     * Get the names of all powers stored
+     * in the data resource
+     * @returns 
+     */
     function getpowernames() {
         const temp: string[] = [];
 

@@ -1,13 +1,10 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React, { useState } from 'react'
+import { getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 import '../../styles/iconbuild.scss';
-import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import TextField from '@mui/material/TextField';
-import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 import Cookies from 'js-cookie'
 
@@ -32,17 +29,21 @@ const BuildSearch = (props: any) => {
     let relicsName = "";
     // ----------------------------------------------
 
-    
-    setSearchFromParam();
     // Setup states --------------------------------
-    const [_relics, createRelic] = useState(parseBaseRelics());
-    const [_abilities, createAbility] = useState(parseBaseAbilities());
-    // ---------------------------------------------
-
+    setSearchFromParam();
     const relicnames = getrelicnames();
     const abilitynames = getabilitynames();
     const jobnames = getjobnames();
 
+    const [_relics, createRelic] = useState(parseBaseRelics());
+    const [_abilities, createAbility] = useState(parseBaseAbilities());
+    // ---------------------------------------------
+    
+    /**
+     * Grabs the URL and if it contains params, converts
+     * that into build-readable-format. If none can be 
+     * found, it instead uses the cookie if possible.
+     */
     function grabURL() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -55,13 +56,15 @@ const BuildSearch = (props: any) => {
         }
 
         urlBuildParam = Cookies.get('tacticsbuildparam') ?? "";
-        
         return urlBuildParam;
     }
 
+    /**
+     * Takes the urlstring and assigns the build
+     * params the appropriate value based on it.
+     */
     function setSearchFromParam() {
         const buildSplits = urlString.split(';');
-        // ------------------------------------------
         // ------------------------------------------
 
         let i = 0;
@@ -85,6 +88,11 @@ const BuildSearch = (props: any) => {
         }
     }
 
+    /**
+     * Takes the relic buildsplit and creates
+     * the relic objects for the relic array
+     * @returns 
+     */
     function parseBaseRelics() {
         const buildSplits = relicsName.split(':');
         const temp: string[] = [];
@@ -97,6 +105,11 @@ const BuildSearch = (props: any) => {
         return temp;
     }
 
+    /**
+     * Takes the ability buildsplit and creates
+     * the ability objects for the ability array
+     * @returns 
+     */
     function parseBaseAbilities() {
         const temp: string[] = [];
         const buildSplits = abilitiesName.split(':');
@@ -110,6 +123,11 @@ const BuildSearch = (props: any) => {
     }
 
     // ---------------------------------------------
+    /**
+     * Get the names of all relics stored
+     * in the data resource
+     * @returns 
+     */
     function getrelicnames() {
         const temp: string[] = [];
 
@@ -121,6 +139,11 @@ const BuildSearch = (props: any) => {
         return temp;
     }
 
+    /**
+     * Get the names of all abilities stored
+     * in the data resource
+     * @returns 
+     */
     function getabilitynames() {
         const temp: string[] = [];
 
@@ -132,6 +155,11 @@ const BuildSearch = (props: any) => {
         return temp;
     }
 
+    /**
+     * Get the names of all jobs stored
+     * in the data resource
+     * @returns 
+     */
     function getjobnames() {
         const temp: string[] = [];
 
@@ -146,7 +174,6 @@ const BuildSearch = (props: any) => {
         return temp;
     }
     // ---------------------------------------------
-
 
     /**
      * Checks that the minimum values (job and level) are
@@ -370,13 +397,22 @@ const BuildSearch = (props: any) => {
         )
     }
 
-    
+    /**
+     * Creates a relic when the enter key is
+     * pressed
+     * @param event 
+     */
     const handleKeyDownRelic = (event: any) => {
         if (event.key === 'Enter') {
             createRelic(callRelic())
         }
-      };
+    };
 
+    /**
+     * Creates an ability when the enter key
+     * is pressed
+     * @param event 
+     */
     const handleKeyDownAbility = (event: any) => {
         if (event.key === 'Enter') {
             createAbility(callAbility())

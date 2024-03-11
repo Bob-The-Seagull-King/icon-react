@@ -1,6 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 
 import powerdata from '../../resources/data/player/power.json';
@@ -12,6 +10,10 @@ const PN_Power = (props: any) => {
     const searchVal = urlParse();
     const isSearched = (value: any) => ((value.name.toLowerCase().includes(searchVal.toLowerCase())) || (value.bond.toLowerCase().includes(searchVal.toLowerCase())));
 
+    /**
+     * Takes the path and returns the power
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -32,12 +34,16 @@ const PN_Power = (props: any) => {
 
     // Return render -------------------------------
     return (
-        <div className='widthPN centerPosition topPosition'>
-            {powerdata.filter(isSearched).map((item) => (
-                <div className='gridItemPower' onClick={() => navClick('power', item.name)} key={item.name + "power"}  >
-                    <PowerDisplay data={item}/>
+        <div style={{width:"100%"}}>
+            <div className='centerPosition'>
+                <div className='widthPT centerPosition topPosition'>
+                    {powerdata.filter(isSearched).map((item) => (
+                        <div className='gridItemPower' onClick={() => navClick('power', item.name)} key={item.name + "power"}  >
+                            <PowerDisplay data={item}/>
+                        </div>
+                        ))}
                 </div>
-                ))}
+            </div>
         </div>
     )
 }

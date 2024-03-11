@@ -11,6 +11,7 @@ $colour_yellow_secondary: #FFD932;
 $colour_green_secondary: #88FA4E;
 $colour_blue_secondary: #4CDDFE;
 $colour_grey_secondary: #D5D5D5;
+
 // Basic Shape and Structure -----------------------------------
 
 .baseStructure {
@@ -98,16 +99,26 @@ $colour_grey_secondary: #D5D5D5;
     }
 }
 
+.paddedSearchAdd {
+    margin: 1em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+    border-radius: 1em;
+    box-shadow: 0 0 5px 0px #fff;
+    background-color: rgb(219, 9, 219);
+    &:hover {
+        box-shadow: 0 0 5px 2px #fff;
+    }
+}
+
 .baseCleanStructure {
     border-radius: 1em;
     padding-bottom:0.01%;
     text-align: justify;
 }
-// -------------------------------------------------------------
-
-
-// Colours -----------------------------------------------------
-
 // -------------------------------------------------------------
 
 
@@ -157,11 +168,6 @@ $colour_grey_secondary: #D5D5D5;
     width: 100%;
 }
 
-.padSmall {
-
-    margin-bottom: 1em;
-}
-
 .searchSubSetContainer {
     display: grid;
     justify-content: space-evenly; 
@@ -181,7 +187,6 @@ $colour_grey_secondary: #D5D5D5;
     display: flex;
     flex-wrap: wrap;    
 }
-
 
 .narrativesearchContainer {
     display: grid;
@@ -255,6 +260,17 @@ $colour_grey_secondary: #D5D5D5;
     padding: 0em;
 }
 
+// Spacing --------------------------------------
+
+.padSmall {
+    margin-bottom: 1em;
+}
+
+.lowpad {
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .searchinput {
     border-radius: 1em;
     margin: 1em;
@@ -302,11 +318,6 @@ $colour_grey_secondary: #D5D5D5;
     margin: 0em 0em 0em 1em;
 }
 
-.lowpad {
-    margin-left: 0.5em;
-    margin-bottom: 0.5em;
-}
-
 .paddedSearchTitle {
     padding-left: 1em;
     width: 30%;
@@ -318,7 +329,6 @@ $colour_grey_secondary: #D5D5D5;
     width: 30%;
 }
 
-
 .paddedSearchLevel {
     padding-left: 1em;
     width: 30%;
@@ -329,18 +339,4 @@ $colour_grey_secondary: #D5D5D5;
     margin: 0.1em;
 }
 
-.paddedSearchAdd {
-    margin: 1em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: center;
-    border-radius: 1em;
-    box-shadow: 0 0 5px 0px #fff;
-    background-color: rgb(219, 9, 219);
-    &:hover {
-        box-shadow: 0 0 5px 2px #fff;
-    }
-}
 // -------------------------------------------------------------

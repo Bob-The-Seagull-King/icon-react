@@ -1,6 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 
 import classData from '../../resources/data/player/class.json';
@@ -11,6 +9,10 @@ const PT_ClassFull = (props: any) => {
     const searchVal = urlParse();
     const isSearched = (value: any) => (((value.name.toLowerCase() == (searchVal.toLowerCase()))));
 
+    /**
+     * Takes the path and returns the job full
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -19,28 +21,23 @@ const PT_ClassFull = (props: any) => {
         return urlSplits[4];
     }
 
-    // Navigation ----------------------------------
-    function navClick (dir: string, name: string) {    
-        window.open(location.protocol + '//' + location.host + '/player/tactics/' + dir + '/' + name, '_self', 'noopener,noreferrer');
-    }
-    // ---------------------------------------------
-
     function renderList() {
-
         return (
-            <div className='widthPT centerPosition topPosition'>
-                {classData.filter(isSearched).map((item) => (
-                    <div className='gridItem' key={item.name + "class"}  >
-                        <ClassFullDisplay data={item}/>
-                    </div>
-                    ))}
+            <div className='centerPosition'>
+                <div className='centerPosition topPosition'>
+                    {classData.filter(isSearched).map((item) => (
+                        <div className='gridItem' key={item.name + "class"}  >
+                            <ClassFullDisplay data={item}/>
+                        </div>
+                        ))}
+                </div>
             </div>
         )
     }
 
     // Return render -------------------------------
     return (
-        <div>
+        <div style={{width:"100%"}}>
             {renderList()}
         </div>
     )

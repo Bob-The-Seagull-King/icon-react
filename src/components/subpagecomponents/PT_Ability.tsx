@@ -1,6 +1,5 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
+import React from 'react'
+import { containsTag } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 
 import abilityData from '../../resources/data/player/ability.json';
@@ -10,7 +9,11 @@ const PT_Ability = (props: any) => {
     
     const searchVal = urlParse();
     const isSearched = (value: any) => ((!containsTag(value.tags, "trait")) && ((value.name.toLowerCase().includes(searchVal.toLowerCase())) || (value.job.toLowerCase().includes(searchVal.toLowerCase()))));
-
+    
+    /**
+     * Takes the path and returns the ability
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -31,19 +34,20 @@ const PT_Ability = (props: any) => {
     function renderList() {
 
         return (
-            <div className='widthPT centerPosition topPosition'>
-                {abilityData.filter(isSearched).map((item) => (
+            <div className='centerPosition'>
+                <div className='widthPT centerPosition topPosition'>
+                    {abilityData.filter(isSearched).map((item) => (
                     <div className='gridItem' onClick={() => navClick('ability', item.name)} key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
-                    </div>
-                    ))}
+                    </div>))}
+                </div>
             </div>
         )
     }
 
     // Return render -------------------------------
     return (
-        <div>
+        <div style={{width:"100%"}}>
             {renderList()}
         </div>
     )

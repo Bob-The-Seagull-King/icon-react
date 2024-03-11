@@ -1,10 +1,17 @@
 export const ROUTES = {
+    //BUILD_ROUTES
     BUILD_TACTICS_ROUTE: '/build/tactics/*',
     BUILD_NARRATIVE_ROUTE: '/build/narrative/*',
+
+    //PLAYER_ROUTES
     TACTICS_PLAYERS_ROUTE: '/player/tactics/*',
     NARRATIVE_PLAYERS_ROUTE: '/player/narrative/*',
+
+    //GENERAL_ROUTES
     TACTICS_GENERAL_ROUTE: '/general/tactics/*',
     CAMP_GENERAL_ROUTE: '/general/camp/*',
+
+    //HOME_ROUTES
     HOME_ROUTE: '/',
 
     //TACTICS_PLAYERS_ROUTES

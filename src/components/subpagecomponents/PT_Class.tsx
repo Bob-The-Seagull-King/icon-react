@@ -1,6 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 
 import classData from '../../resources/data/player/class.json';
@@ -31,19 +29,21 @@ const PT_Class = (props: any) => {
     function renderList() {
 
         return (
-            <div className='widthPT centerPosition topPosition'>
-                {classData.filter(isSearched).map((item) => (
-                    <div className='gridItem halfwise centerPosition' onClick={() => navClick('classfull', item.name)} key={item.name + "class"}  >
-                        <ClassDisplay data={item}/>
-                    </div>
-                    ))}
+            <div className='centerPosition'>
+                <div className='widthPT topPosition classContainer'>
+                    {classData.filter(isSearched).map((item) => (
+                            <div className='gridjoblistItem centerPosition' onClick={() => navClick('classfull', item.name)} key={item.name + "class"}  >
+                                <ClassDisplay data={item}/>
+                            </div>
+                        ))}
+                </div>
             </div>
         )
     }
 
     // Return render -------------------------------
     return (
-        <div>
+        <div style={{width:"100%"}}>
             {renderList()}
         </div>
     )

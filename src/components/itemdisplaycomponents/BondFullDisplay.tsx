@@ -1,8 +1,5 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
-import { useNavigate } from "react-router-dom";
 
 import powerdata from '../../resources/data/player/power.json'
 

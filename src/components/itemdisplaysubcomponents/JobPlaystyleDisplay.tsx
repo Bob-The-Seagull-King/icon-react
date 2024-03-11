@@ -1,12 +1,6 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
+import React from 'react'
+import { getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
-
-import addonData from '../../resources/data/player/abilityaddon.json';
-import AddonDisplay from '../itemdisplaysubcomponents/AddonDisplay'
-import summonData from '../../resources/data/player/summon.json';
-import SummonDisplay from '../itemdisplaycomponents/SummonDisplay'
 
 const JobPlaystyleDisplay = (props: any) => {
     // Declare Summon Variables --------------------

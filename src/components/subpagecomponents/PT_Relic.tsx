@@ -1,6 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 
 import relicData from '../../resources/data/player/relic.json';
@@ -11,6 +9,10 @@ const PT_Relic = (props: any) => {
     const searchVal = urlParse();
     const isSearched = (value: any) => (((value.name.toLowerCase().includes(searchVal.toLowerCase()))));
 
+    /**
+     * Takes the path and returns the relic
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -31,12 +33,14 @@ const PT_Relic = (props: any) => {
     function renderList() {
 
         return (
-            <div className='widthPT centerPosition topPosition'>
-                {relicData.filter(isSearched).map((item) => (
-                    <div className='gridItem' onClick={() => navClick('relic', item.name)} key={item.name + "relic"}  >
-                        <RelicDisplay data={{values:item, tier:4}}/>
-                    </div>
-                    ))}
+            <div className='centerPosition'>
+                <div className='widthPT centerPosition topPosition'>
+                    {relicData.filter(isSearched).map((item) => (
+                        <div className='gridItem' onClick={() => navClick('relic', item.name)} key={item.name + "relic"}  >
+                            <RelicDisplay data={{values:item, tier:4}}/>
+                        </div>
+                        ))}
+                </div>
             </div>
         )
     }

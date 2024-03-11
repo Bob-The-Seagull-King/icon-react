@@ -1,6 +1,4 @@
-import moment from 'moment'
-import React, { useEffect, useState } from 'react'
-import { capitalizeTag, getColour } from '../../utility/functions';
+import React from 'react'
 import '../../styles/iconcomponent.scss';
 
 import campdata from '../../resources/data/general/camp.json';
@@ -10,7 +8,11 @@ const GC_Item = (props: any) => {
     
     const searchVal = urlParse();
     const isSearched = (value: any) => ((value.name.toLowerCase().includes(searchVal.toLowerCase())) );
-
+    
+    /**
+     * Takes the path and returns the camp item
+     * page search, or "" if none is provided.
+     */
     function urlParse() {
         const urlPath = window.location.pathname;
         const urlSplits = urlPath.split('/');
@@ -33,10 +35,9 @@ const GC_Item = (props: any) => {
     return (
         <div className='widthPT centerPosition topPosition'>
             {campdata.filter(isSearched).map((item) => (
-                <div className='gridItem' onClick={() => navClick('item', item.name)} key={item.name + "camp"}  >
-                    <CampItemDisplay data={item}/>
-                </div>
-                ))}
+            <div className='gridItem' onClick={() => navClick('item', item.name)} key={item.name + "camp"}  >
+                <CampItemDisplay data={item}/>
+            </div>))}
         </div>
     )
 }
