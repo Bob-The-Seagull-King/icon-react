@@ -178,5 +178,1121 @@
             {"number": 1},
             {"duration": ""}
         ]
+    },
+	{
+        "name": "Helm of Command",
+        "desc": "<b>Trophy of the Vessel Knight.</b><br>You can use the power of this helm to issue a dread command as a Round Action at the start of any round in combat. The command is so powerful that you may shove all foes and allies 2 spaces in a direction of your choice, and all foes are <i>weakened</i>+ for the duration of the round.",
+        "faction": "Legend",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Darklight Infuser",
+        "desc": "<b>Trophy of the Vessel Knight.</b><br>You dip your weapon or implements in the dread essence of Divine Death. For the duration of this expedition, your attacks gain <i>slay</i>: cure yourself, and any attack you make that would reduce a character to 0 hp before any reductions or other effects becomes <i>divine</i> damage.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "The Black Rook",
+        "desc": "<b>Trophy of the Arkenlich.</b><br>As 2 actions, a character can read aloud from the Black Book of the dead, choosing a character in range 4. That character gains aura 2. At the end of that character’s turn, a flurry of tormented souls sweeps across the battlefield, forcing all characters outside the aura to <i>sacrifice</i> 25% of their maximum hp, then this effect ends. This has no effect on Legends.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Golden Mask",
+        "desc": "<b>Trophy of the Arkenlich.</b><br>This mask allows one to peer into dark futures. At the start of any expedition you use this mask, roll a d20, d10, d8, d6, and d4 and record the numbers. You can substitute the number when you gain or roll any die (such as a damage die, attack roll, gamble, or power die) made by you, your allies, or the GM for the rest of the expedition during tactical combat. Doing so consumes the die. This doesn’t take an action or interrupt and doesn’t count as using an ability, but each time you do, you must <i>sacrifice 3</i>.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Grasp of Iron",
+        "desc": "<b>Trophy of the Dread Lord Evictor.</b><br>Clutching this heavy iron gauntlet, when worn, can summon any foe. As 1 action, you may use this gauntlet and choose any foe on the battlefield. That foe is shoved until adjacent to you.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Key to Iz",
+        "desc": "<b>Trophy of the Dread Lord Prelictor.</b><br>This dagger-like key allows one to slip to a forbidden and writhing interstitial space. For the duration of an expedition, you can call upon its power to gain the ability to create a swirling rift pit space in any space in range 6 with 1 action, and also to teleport to any pit on the battlefield as a free action.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Shivering Arrow",
+        "desc": "<b>Trophy of the Dread Lord Vexator.</b><br>This arrow is made of cold, dead titan- killing steel. You can declare you are using it with any ranged attack. If you do, all the attack’s damage becomes <i>divine</i> and the attack cannot miss. Additionally, it gains <i>slay</i>: gain 1 resolve.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Circlet of Command",
+        "desc": "This sinister helm can only be used against Relict, and only once per combat. To use this helm, you must spend 1 action and save. On a successful save, target a relict without the elite or legend tag. You control that relict’s next turn. On a failed save, regain the charge for this ability, but you are <i>stunned</i>, and can’t attempt to use it again this combat.",
+        "faction": "Relict",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Soul Gem",
+        "desc": "Use this gem as an action to summon 3 Relict Husks. They fight as allied summons, acting on your turn.",
+        "faction": "Relict",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Relict Arbalest",
+        "desc": "An ancient Relict weapon that still barely functions, shooting bolts of lightning. You can make a 1 action attack with it (1 action, ranged attack, line 8, on hit: [D]+fray, area effect: fray effect: all foes in the area take 1 piercing damage)",
+        "faction": "Relict",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Whispering Pendant",
+        "desc": "Speak the name of your foe into this pendant as a free action to inflict the <i>sealed</i> status on that foe anywhere on the map. That foe also cannot benefit from stealth or evasion for the rest of the round.",
+        "faction": "Relict",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Gem of Spirit Severing",
+        "desc": "Crush this gem as a free action to sever your soul temporarily from your body. Your soul is an <i>intangible</i> size 1 summon that is created in free space within range 5 of your body. While your soul is out, your body is <i>unstoppable</i> but otherwise can still take damage and be targeted normally. You take all actions and movement from your soul instead of your body, and your soul additionally has <i>flying</i> and <i>phasing</i>. Your soul reunites with your body if you end a turn with it adjacent to your body, or at the end of combat.",
+        "faction": "Relict",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Decayed Arkentech Armor",
+        "desc": "Strap on a piece of decaying relict armor for extra protection. As an interrupt when you’re hit by any attack but before damage is applied, you can expend the plate to reduce the damage by 3, as if from armor",
+        "faction": "Relict",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Telekinetic Rod",
+        "desc": "While holding this rod, you gain the Levitation trait (immune to terrain damage and movement penalties)",
+        "faction": "Relict",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Shock Grasp",
+        "desc": "When strapped to a hilt of a weapon, this clasp causes all attacks to deal 1 piercing damage to their target after the ability resolves, hit or miss.",
+        "faction": "Relict",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Ghost Weave",
+        "desc": "Weaving these metallic strands into a cloak or armor grants you <i>phasing</i>.",
+        "faction": "Relict",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Chimaeric Ichor",
+        "desc": "<b>Trophy of the Chimera.</b><br>You coat your weapon in Chimaera ichor. While coated, your attacks turn into a triple strike, causing two aetheric copies of your weapon to strike out after the ability resolves, each copy dealing 3 piercing damage to a foe in range 3 of you.",
+        "faction": "Legend",
+        "use": [
+            {"number": 2},
+            {"duration": "expeditions"}
+        ]
+    },
+	{
+        "name": "Chimaera Bile",
+        "desc": "<b>Trophy of the Chimera.</b><br>Drinking a vial of purified Chimaera bile is a powerful curative. It can be drunk as a free action to cure yourself and grant yourself regeneration and defiance.<br>However, it also causes cosmetic mutation, and prolonged use can be fatal. After drinking a vial of Chimaera blood, roll 1d10 and consult the heads table. You gain minor beastlike mutations that are similar to the chosen beast (like claws, hair, slit eyes, fangs, scales, etc). The mutations last until the end of the following interlude.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Apex Fang",
+        "desc": "<b>Trophy of the Apex.</b><br>At the start of combat you may call on the power of this fang to temporarily magically transform into a beastlike form, spending one or more uses of this ability. Roll 1d12 per use spent. You gain the use of the rolled ability from the Might of the Wild table and any associate traits for the rest of combat.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Apex Mantle",
+        "desc": "<b>Trophy of the Apex.</b><br>You can don this cloak of Apex hide to show your dominance during this expedition. You deal bonus damage to beasts, and at the start of one combat, you may summon a beast pack mob with 6 members. The mob is allied to you.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Wyrm Gut",
+        "desc": "<b>Trophy of the Wyrm.</b><br>Wrap your armor or weapon with the power of the wyrm, imbuing you with its fury. For this expedition, at the start of any combat, you can choose your own path of ruin edge. At the end of the round, you may choose to shove all characters 1 space towards that edge, then deal fray damage to them if they are in range 4 of that edge.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Tail Sword",
+        "desc": "<b>Trophy of the Wyrm.</b><br>The tailbone of a Wyrm has a remarkable sword shape and is razor sharp. While wielding such a magnificent weapon, your attacks against bloodied characters inflict dragonfire. Legends are immune to this effect.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Yellow Spore Sack",
+        "desc": "As an action, you may toss this sack of spores. Characters in a small blast area in range 3 are sealed and you may shove them 1 in any direction.",
+        "faction": "Beast",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Drift Oil",
+        "desc": "Use as an action to splash the oil about, reversing gravity and drifting into the air. You and every other character in range 2 may fly 3 in a direction of their choice.",
+        "faction": "Beast",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Howler Venom",
+        "desc": "Venom from a howler beast. You can apply during any attack to grant it bonus damage, pierce, and inflicts slashed.",
+        "faction": "Beast",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Screecher Gland",
+        "desc": "Step on the screecher gland as an action to make a horrible screeching noise. Characters in a medium blast area centered on you, including you, must save or become stunned",
+        "faction": "Beast",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Landshark Cape",
+        "desc": "You may use this cape as a free action and dive into the earth. Dash 4 spaces in a straight line with phasing. You are intangible while dashing.",
+        "faction": "Beast",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Kelpie Head",
+        "desc": "As an action, you can hold this severed head up. It spurts fetid water at all foes in range 4. Those foes are shoved 1. Collide: They take [D]+fray and are also blinded.",
+        "faction": "Beast",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Stalker Scales",
+        "desc": "This expedition, when ending your turn adjacent to an object or inside difficult or dangerous terrain, gain stealth",
+        "faction": "Beast",
+        "use": [
+            {"number": 2},
+            {"duration": "expeditions"}
+        ]
+    },
+	{
+        "name": "Gigantapede Stinger",
+        "desc": "This huge stinger is big enough to be used as an offhand weapon. Your attacks this expedition gain Effect: Deal 2 piercing damage to an adjacent foe.",
+        "faction": "Beast",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Chimaera Hide",
+        "desc": "Wrap yourself in tough, rippling, Chimaera hide. This expedition, you automatically succeed on all saves against statuses or other effects at the end of your turn.",
+        "faction": "Beast",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Twinblade Charm",
+        "desc": "<b>Trophy of the Twinblades.</b><br>You and a chosen ally attach these charms to your armor or weapon. While attached, you or your ally may expend a charge and swap places with each other as a free action as long as you are both within range 5 of each other, removing and placing both characters. When you land, you may both deal 2 damage to all foes.",
+        "faction": "Legend",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Battle Blade",
+        "desc": "<b>Trophy of the Twinblades.</b><br>Summon a twirling blade in free space in range 3, as per the round action. At the start of your turn, you may shove the blade 1 space in any direction.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Blood Rune",
+        "desc": "<b>Trophy of the Blood Bound Band.</b><br>Use this remnant of runic power at the start of any combat. Roll 2d10 and pick either result, choosing the brother that matches that result. For the rest of the combat, you gain the blood bound blessing of the chosen brother.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+{
+        "name": "Boot's Boots",
+        "desc": "<b>Trophy of the Blood Bound Band.</b><br>Immediately use Boot’s The Boot ability:<br><b>The Boot (free action):</b> An adjacent foe is shoved 1. If they’re bloody, they are instead shoved 3. <i>Collide</i>: Foe is <i>weakened</i>.",
+        "faction": "Legend",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Gilthand",
+        "desc": "<b>Trophy of the Midan.</b><br>Use this golden hand as a 1 action ability to immediately transmute a non-legend foe into a golden statue. They are removed from the battlefield and replaced with a golden statue object with a height equal to their size. The object has 10 hp. When it is destroyed, return the foe to the battlefield. If that foe was the last foe, they are instead defeated.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+    {
+        "name": "Crystallized Greed",
+        "desc": "<b>Trophy of the Midan.</b><br>Shatter this Midan crystal during any interlude to instantly gain 1d6 dust. For every interlude that passes while you hold on to the crystal, roll one more die and choose the highest result, up to a maximum of 4.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Scav Badge",
+        "desc": "Deal bonus damage to any character holding a valuables token.<br><b>Valuables:</b> If fighting scavengers, the GM places valuables tokens on the battlefield equal to the number of players +1. Valuables can be picked up by any character by moving into their space. They don’t provide obstruction, can’t be targeted, and can share space with anything except other valuables tokens. Characters drop them in adjacent spaces when defeated, or can drop them voluntarily as 1 action. Any character that ends a fight holding two or more valuables tokens gains 1 dust. Valuables tokens left on the battlefield don’t count.",
+        "faction": "Scavenger",
+        "use": [
+            {"number": null},
+            {"duration": "unlimited"}
+        ]
+    },
+	{
+        "name": "Gold Tooth",
+        "desc": "Take the following action:<br><b>Gang Up (1 action):</b> Up to three allies in range 5 can dash 3 spaces. If they end their turn adjacent to the same character, each of them deals 2 damage to that character.",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Shank's Cross Hilt",
+        "desc": "During the next combat, abilities you use against foes standing next to your allies gain true strike and deal bonus damage.",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Ruffian's Boots",
+        "desc": "Free action: Gain stealth",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Glittercloak",
+        "desc": "Don a sparkling cloak that shifts and obscures your location. During the next combat, gain evasion. Any foe that ends their turn in range 2 of you gains hatred of you.",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Sparkling Gem",
+        "desc": "Spend a charge to use the following Interrupt: Trick of the Light (Interrupt 1): Trigger: An ally is targeted by an attack or ability from a foe. Effect: That ally gains evasion against that attack or ability. After it resolves, teleport that ally 3 spaces to their ‘real’ location.",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Junk Mage Talisman",
+        "desc": "This expedition, the first time you take damage in any combat, reduce it to 0.",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Plunder Blade",
+        "desc": "This blade has the ability to magically create wealth from nowhere. All your attacks gain (as a relic) Invoke (attack 15+): Create 2 valuables tokens adjacent to your target foe",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Midan Shard",
+        "desc": "This cursed icon causes weapons to transmute their foes temporarily into gold. All foes you defeat are removed from the battlefield and replaced with an object equal to their size. After combat, they either revert to normal (with the gold sloughing off) or stay frozen, depending on the tone of your game. For every two foes defeated this way during an expedition, gain 1 dust.",
+        "faction": "Scavenger",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+    {
+        "name": "Hellforged Armor",
+        "desc": "<b>Trophy of the Crimson Weapon.</b><br>This armor grants immunity to dangerous terrain. While bloodied during this expedition, the armor becomes wreathed in flames. All terrain adjacent to you counts as dangerous terrain.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Hades Cannon",
+        "desc": "<b>Trophy of the Crimson Weapon.</b><br>Spend a charge of this ability and one action to immediately use the Hades Cannon, as per the Round action.<br><b>Hades Cannon (Round action, unerring, true strike):</b> At the start of the round, the Weapon charges up a massive flame cannon. At the end of the round, it fires a searing blast from the cannon.<ul><li>Assign each side of the weapon a number, from 1 to 4, then roll 1d4. The weapon blasts a line area effect 2 spaces wide that is exactly lined up with the rolled edge of the weapon and goes the entire battlefield.</li><li>Foes inside the explosion are weakened and must save or take 2[D]+fray, or [D]+fray on a successful save. This damage cannot reduce a character below 1 hp.</li><li>Munition inside explode.</li><li>The Weapon takes 8 damage if it’s caught inside an explosion.</li><li>Then, create a space of burning dangerous terrain under every foe, then 2 more spaces anywhere in the area, even if there were no foes inside.</li></ul>",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Targeting Flare",
+        "desc": "<b>Trophy of the Azurian Weapon.</b><br>At the start of any round, fire this flare at a space in range 6 to call in off map artillery. At the end of that round, a cannon strike hits the area as a large blast area effect. Characters inside must save or take 2[D]+fray damage and be stunned, or just fray damage on a successful save. Then create a pit in the center space.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Landship Drill",
+        "desc": "<b>Trophy of the Azurian Weapon.</b><br>For the use of this expedition, you ignore terrain penalties for being in pits. You may create a pit underneath yourself at the start of any of your turns, and may spend 1 action and end your turn to remove yourself from the battlefield, then re-appear inside any free pit on the battlefield.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Retooled Combat Automaton",
+        "desc": "<b>Trophy of the Veridian Weapon.</b><br>By spending 1 action, can unfold and deploy a <i>combat automaton</i>, as per this legend’s action. It can act during your turn.<br><b>Combat Automaton (Size 1, 5 defense, 5 hp)</b><br><b>Summon Action:</b> Once a round, during the summoner's turn (including when summoned) the automaton can move 3 spaces, then make the following <i>attack</i>: <b>Automaton gun (free action, attack, range 4):</b> <i>On hit</i>: 5 damage. <i>Miss</i>: 2 damage.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Doom Key",
+        "desc": "<b>Trophy of the Veridian Weapon.</b><br>You have access to a portable version of an Arkentech mega weapon. It takes a long time to charge, but is incredibly potent and can end fights even with just the threat of firing. All fights this expedition automatically result in a victory for you at the end of round 6. However, once this effect is used, it is used up and is no longer active for the rest of the expedition.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Imperial Arquebus",
+        "desc": "The Arquebus gives you a basic heavy ranged attack with a range of 8 this expedition.",
+        "faction": "Imperial",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Arkentech Mine",
+        "desc": "As an action, you may place an intangible size 1 summon in a space in range 3 not adjacent to any character. If any character exits or enters any space adjacent to the mine, it explodes for [D]+fray in a medium blast area effect and dazes characters within.",
+        "faction": "Imperial",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Flame Hurler",
+        "desc": "Spend a charge for the following action: Flame hurler (1 action, range 2, medium blast, unerring, true strike): Area effect: 5 damage",
+        "faction": "Imperial",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Arkentech Force Shield",
+        "desc": "As an action, you may spend a charge to activate this energy shield and gain aura 2 until the end of your next turn. Yourself and allies have resistance against abilities originating from characters outside the aura.",
+        "faction": "Imperial",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Imperial Sidearm",
+        "desc": "As free action during your turn this expedition, you may deal 1 piercing damage to a foe in range 4",
+        "faction": "Imperial",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Imperial Rocket Pack",
+        "desc": "As an action, you may spend a charge to rush 3 spaces in a straight line, ignoring terrain and height penalties. All adjacent foes when you land are weakened and shoved 1.",
+        "faction": "Imperial",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Arkentech Power Armor",
+        "desc": "This expedition, start every combat with vigor 1.",
+        "faction": "Imperial",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Arkentech Power Gauntlet",
+        "desc": "This expedition, all shoves your abilities inflict are increased by 1, and your attacks gain exceed: shove your foe 1 (+1) spaces.",
+        "faction": "Imperial",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Arkentech Googles",
+        "desc": "This expedition, your abilities gain unerring.",
+        "faction": "Imperial",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "White Flesh Strip",
+        "desc": "<b>Trophy of the Limb Demon.</b><br>Consume this rubbery white flesh at the start of any combat to gain regeneration and the amorphous trait for the rest of the combat.<br><b>Amorphous:</b> Can share space with other characters and objects. Any foes that end their turn inside its space take 2 damage. Does not provide obstruction, but characters treat its space as difficult terrain. Area effects this character creates can overlap its space, and it is immune to damage and effects from its own attacks.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Clasped Hand Ring",
+        "desc": "<b>Trophy of the Limb Demon.</b><br>During this expedition, you can use the power in this ring to unnaturally puppet your enemies’ limbs. You gain the <i>control limbs</i> ability, as a <i>mark</i> instead of a multi mark.<br><b>Control Limbs (1 action, mark, 1/ round):</b> The user chooses a character in range 4 and gains control over their limbs. After that character rolls a d20, the user can choose to roll its own d20, substituting the user’s result as the final result. A character can resist this effect by <i>sacrificing</i> 6, also ending this mark.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Seventh Sword",
+        "desc": "<b>Trophy of the Violence Demon.</b><br>Swing the seventh sword, instantly defeating a character in range 4, then defeating yourself. You cannot be rescued for the remainder of combat and cannot ignore any wounds gained from being defeated. Legend characters take 25% of their maximum hp as divine damage instead. You gain a cosmetic, twisting scar (describe it to your party and the GM) as the result of the cut to your soul aether from swinging this sword. Swinging a seventh sword again causes you to die.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Bone Chakram",
+        "desc": "<b>Trophy of the Violence Demon.</b><br>Activate this cursed talisman at the start of any combat. For the rest of combat, at the end of your turn, you are filled with unbelievable bloodlust. You deal 3 damage to all characters, including yourself, in range 2 of you at the end of your turn. This damage cannot reduce you below 1 hp.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Clasp of the Flagellant",
+        "desc": "<b>Trophy of the Majesty Demon.</b><br>This knight’s badge digs into your flesh. For this combat, you gain the <i>Flagellant’s Guard</i> trait.<br><b>Flagellant’s Guard:</b> Reduce all damage to self and adjacent allies by 3, as if from armor, but you must sacrifice 3 at the end of your turns.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Death XIII",
+        "desc": "<b>Trophy of the Majesty Demon.</b><br>This tome of dark magic can be called upon in combat. Choose a foe in range 6. That foe pulses with dark energy. At the end of that foe’s turn, they take 20 damage, or 10 damage and they deal 10 damage to an adjacent ally. They cannot choose to split the damage if there is no adjacent ally available.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Void Shard",
+        "desc": "As a free action ability, create a Void Rift terrain effect in free space in range 3, which counts as a pit to everyone but demons.",
+        "faction": "Demon",
+        "use": [
+            {"number": 6},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Natal Slime",
+        "desc": "Slippery and foul smelling. Apply at the beginning of combat to, gain counter for that combat. Foes that trigger counter are also shoved 1.",
+        "faction": "Demon",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Empty Bone",
+        "desc": "This bone is hollow but seems bigger on the inside. Free action ability: End turn. Become intangible until the start of your next turn",
+        "faction": "Demon",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Purified Demon Blood",
+        "desc": "Swig before combat to gain regeneration, but at the start of your turn gain hatred of the closest foe.",
+        "faction": "Demon",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Pale Man Eye",
+        "desc": "Point this swiveling eye at a foe as a 1 action ability for the following Effect: Deals [D]+fray to that character, removes all created objects in a medium blast area effect, and shoves all other characters 1 away from that character.",
+        "faction": "Demon",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Warping Flesh",
+        "desc": "A chunk of flesh from a chaos demon. Squeeze it as a free action ability to remove yourself from the battlefield, then return in any space in range 8. When you come back, you are slightly wrong for a few days (extra fingers, face askew, limbs slightly crooked, etc)",
+        "faction": "Demon",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Chaos Shard",
+        "desc": "This expedition, your attacks gain (as a relic) Invoke: Attack, 16+: Inflict any status of your choice",
+        "faction": "Demon",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Judicator Heart Valve",
+        "desc": "This expedition only, gain aura 2. Whenever a foe gains vigor in the aura, you may gain the same amount of vigor, but only once a round.",
+        "faction": "Demon",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Unstable Demon Bone",
+        "desc": "This expedition only, you may teleport 2 as a free action ability on your turn",
+        "faction": "Demon",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Corruptive Ichor",
+        "desc": "<b>Trophy of the Fetid Idol.</b><br>You may smash this skin of fluid on to the ground during tactical combat as a Round Action to summon an unholy manifestation (as per the ability), serving you.<br><b>Manifestations (Round Action):</b> At the start of each round, the Idol creates one of the following terrain effects (roll 1d6). Manifestations must be created in free spaces. There is no maximum number active.<ul><li><b>1-2: Blight Geyser:</b> Create a <i>pit</i>. At the end of each round, the pit erupts. Characters in a medium blast <i>area effect</i> centered on it take 6 piercing damage.</li><li><b>3-4: Spewing Growth:</b> Creates a height 1 destructible object (10 hp). The area around it is difficult terrain. During the Idol’s turn, the Idol can use the following ability once a round for each pillar, made from a pillar’s location: <b>Disorienting Vomit: (Free action, range 6, unerring):</b> 3 damage and shove 2</li><li><b>5-6: Pillar of Filth:</b> Create a height 3 pillar. Destructible (10 hp), and when destroyed, or when a character collides with it, falls over. Create a line 3 area effect next to it in a direction chosen by the character that destroyed it. Characters inside must save or take 2[D]+fray and be <i>stunned</i>, or [D]+fray on a successful save. The area becomes <i>difficult terrain</i> for the rest of combat.</li></ul>",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Icon of the Pit",
+        "desc": "<b>Trophy of the Fetid Idol.</b><br>Holding this icon of an eye within a wheel grants you the power of the deep and dark powers of the blight lands, the corruptive influence of the Black Sun. During this expedition, you cannot sleep, but nor do you require it. In any tactical combat, you have resistance while standing in pits, and deal divine damage to any character standing inside a pit.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Cataclysm Weapon",
+        "desc": "<b>Trophy of the Head Lopper.</b><br>This oversized weapon is incredibly hard to even swing or shoot, but packs a punch. During this expedition, your attacks deal bonus damage and create a pit under your target after you attack them.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Belt of the Champion",
+        "desc": "<b>Trophy of the Head Lopper.</b><br>Buckle on this impressive belt and spend a charge to use the Demon Pankration ability.<br><b>Demon Pankration (1 action, range 3, 2/round, end turn):</b> The user attempts to grab a foe of its choice in range. At the of the <i>very next</i> enemy turn, if that foe is still in range 3, the user removes itself from the battlefield, places itself adjacent, then performs one of the following moves, dealing 6 damage and ending this effect:<ul><li><b>DDT:</b> The foe is <i>stunned</i>, <i>weakened</i>, <i>slashed</i>, and shoved 1</li><li><b>Spinning Piledriver:</b> The user and the foe <i>rush</i> 2 together, then the foe takes piercing fray damage again and has a pit created underneath them.</li><li><b>Backbreaker:</b> The foe becomes <i>immobile</i> for their next turn</li></ul>",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Lesser Wormspore",
+        "desc": "<b>Trophy of the Hurian Worm Rider.</b><br>This unique Red Worm gland pulses like a living thing and fuses to flesh. Though a weaker version of the real thing, attaching this to a living body takes preparation and bravery. Once attached, for the duration of an expedition, you automatically rescue yourself at the start of your turn if defeated. In addition, only the first wound you take reduces your maximum hp (you are still fallen if you suffer 4 wounds).",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Hurian Spear",
+        "desc": "<b>Trophy of the Hurian Worm Rider.</b><br>This agile spear can be used as a pole vault. You may spend a charge to fly 3 as a free action ability. If you end that flight on an object or adjacent to a character, you may fly 3 again.",
+        "faction": "Legend",
+        "use": [
+            {"number": 6},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Mancatcher",
+        "desc": "This huge hooked pole can be used as a free action on your turn to shove a character in range 3 as close to you as possible.",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Antidote",
+        "desc": "You are immune to lowlander toxin.<br><b>Lowlander Toxin:</b> At the start of each round in any combat featuring lowlanders, all non-lowlander characters sacrifice 2 hp.",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Ruin Icon",
+        "desc": "Small iron icon of the dungeons underneath the blight lands. As free action ability you can call on the ruins to surface. Create a height 1 ruin object in range 6. Characters adjacent to it when its created take 2 damage and are shoved 1 away from it.",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Pit Poison",
+        "desc": "Rub this incredible potent poison on your weapon as a free action. Your next attack’s damage cannot be reduced in any way (by armor, resistance, statuses, cover, etc)",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Monster Spine Launcher",
+        "desc": "A potent improvised weapon. As a free action ability, deal 1 piercing damage to and inflict vulnerable on a character in range 6",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 6},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Ointment",
+        "desc": "Thick, foul smelling, and greasy medicine distilled from blight lands beasts. Use as a free action ability to cure yourself but take 1 piercing damage after the cure resolves.",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Lowlander Toxin",
+        "desc": "During any fight in this expedition, you can cause the fight to have the Lowlander Toxin effect (as the faction trait).<br><b>Lowlander Toxin:</b> At the start of each round in any combat featuring lowlanders, all non-lowlander characters sacrifice 2 hp.",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Grappling Hook",
+        "desc": "This expedition, as a free action ability you may fly 3, but must end this movement adjacent to an object or character.",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Survival Suit",
+        "desc": "This expedition you are immune to lowlander toxin, dangerous terrain, and damage from terrain effects.<br><b>Lowlander Toxin:</b> At the start of each round in any combat featuring lowlanders, all non-lowlander characters sacrifice 2 hp.",
+        "faction": "Lowlander",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Aegis of Erenhelion",
+        "desc": "<b>The Rider of the Primal Storm's trophy.</b><br>This shield-shaped brooch wards against pernicious runes and hexes. For the duration of this expedition, you may choose to become immune to the effects of foe abilities that check if you are adjacent to an ally, or not adjacent to an ally.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Bridle Shard",
+        "desc": "<b>The Rider of the Primal Storm's trophy.</b><br>Hold this bridle shard aloft at the start of any combat to summon a titansteed to ride for the rest of combat, gaining the benefits of the Rider’s Call Steed trait for the rest of this combat.<br><b>Call Steed:</b> The user gains a massive Titansteed, granting them the following benefits:<ul><li>Increase the user’s speed to 5</li><li>The user gains flying.</li><li>The user may break up <i>any</i> of their movement with actions.</li></ul>",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Quicksilver Draught",
+        "desc": "<b>The Keeper of the Eldflame's trophy.</b><br>Drink this magic draught to neutralize all aether affecting your body. You end all effects, positive or negative, currently affecting you, including marks, statuses, stances, delay effects, etc.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Star of the Creator",
+        "desc": "<b>The Keeper of the Eldflame's trophy.</b><br>This blinding star can be embedded into armor temporarily, granting incredible power. Call on its divine power as a free action ability during your turn to temporarily become immune to all damage and effects. This effect ends at the start of your next turn.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "First Key to the Gates",
+        "desc": "<b>The Warden of the Aeongate's trophy.</b><br>Turning this key at the end of your turn allows you to slow the flow of time for everyone but yourself. You gain an additional turn this round, which you take directly after this turn. The key then disintegrates and is destroyed.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Second Key to the Gates",
+        "desc": "<b>The Warden of the Aeongate's trophy.</b><br>Turn this key as an interrupt ability. Trigger: An ally is defeated. Effect: Reverse the flow of time slightly and alter causality. That character is reduced to 1 hp instead. End the current turn. Then the key disintegrates.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Third Key to the Gates",
+        "desc": "<b>The Warden of the Aeongate's trophy.</b><br>Turn this key as an interrupt ability. Trigger: A foe uses a non-basic ability on its turn, and the ability resolves. Effect: End that foe’s turn. After three uses, this key disintegrates.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Titan Blade",
+        "desc": "Swing this enormous blade for the following attack:<br><b>Titan Blade (2 actions, attack, +1 curse):</b> On hit: 3[D]+fray. Miss: [D]+fray. Effect: Foe is stunned.",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Mead of Erenhelion",
+        "desc": "This mead may be administered to a dead character, even after combat, to bring them back to life (also restore all wounds). If you do so, their soul is bound to the ancient, ruined hall of the Storm Titan and will return there, or to its ruins, after death, binding them as a formless shade. It might be possible to undo this fate.",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Thannir Greatscythe",
+        "desc": "Swing this scythe to cure all allies in range 3 and remove all vigor from foes in range 3",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Elder Titanrune",
+        "desc": "This combat only, become size 2",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Titan Hammer",
+        "desc": "As a 1 action ability, slam this huge hammer into a small blast area in range 3. Characters inside are weakened and take 4 damage.",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Blackblood",
+        "desc": "Thick, potent blood of the Holy Body. Consume to gain 20 vigor, which could put you over your maximum.",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Titanforge Greatbow",
+        "desc": "This expedition, your ranged attacks gain pierce and shove 1, but you cannot dash, rush, fly or teleport.",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Great Wolf Mantle",
+        "desc": "This expedition, gain the skirmisher trait if you don’t already have it",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Nilfling Tooth",
+        "desc": "This expedition, your attacks deal maximum damage to foes at 25% hp or lower.",
+        "faction": "Jotunn",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Mask of Summer",
+        "desc": "<b>Trophy of the Summer Flame Aesi.</b><br>While wearing this mask, you gain a supernatural tolerance for intoxicants of any kind. In addition, you may shove yourself 3 at the start of your turns, then shove all adjacent foes 1.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Pure Ambrosia",
+        "desc": "<b>Trophy of the Summer Flame Aesi.</b><br>Sip from the divine wine to cure yourself as a free action ability and become unstoppable until the end of your next turn.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Mask of Autumn",
+        "desc": "<b>Trophy of the Falling Leaf Aesi.</b><br>While wearing this gnarled, oiled mask, you gain phasing and the use of the Swirling Leaves Round Action (as per this legend).<br><b>Swirling Leaves (Round Action):</b> At the start of each round, the Aesi puts down a space of swirling wind, a 1 space terrain effect, adjacent to its space. Characters that enter such a space, including the Aesi, can fly 3 spaces as an effect, but only once a turn. Spaces persist until the end of combat.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Wind Cloak",
+        "desc": "<b>Trophy of the Falling Leaf Aesi.</b><br>Wrap this swirling cloak of leaves around yourself to remove yourself from the battlefield, then place yourself anywhere in range 4. When you land, all allies in range 3 may fly 2.",
+        "faction": "Legend",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Frozen Fetish",
+        "desc": "<b>Trophy of the Deep Snow Aesi.</b><br>Smash this small icon as a Round Action to create 4 spaces of icy black deep frost anywhere on the battlefield. These spaces have the same effects as <i>creeping cold</i> (as per the ability).<br><b>Creeping Cold (Round Action):</b> At the start of combat, the Aesi creates a Creeping Cold effect in every space along the edge of the map, a creeping black frost <i>terrain effect</i>. The Aesi ignores its effects, but cannot voluntarily enter the area and must end its turn outside it if possible.<ul><li>The area is difficult terrain, even for flying characters</li><li>Foes that either start or end their turn in Creeping Cold sacrifice 25% of their maximum hp. Foes at 1 hp are defeated instantly, and removed from the battlefield as they freeze solid and replaced with a <i>frozen statue</i> object with 10 hp. When the statue is destroyed, return that foe to the battlefield, in its space, still defeated.</li></ul>At the start of every two rounds thereafter (3, 5, 7, etc), the effect creeps in by 1 space on all sides, shrinking the available battlefield space until it covers all spaces.",
+        "faction": "Legend",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Mask of Winter",
+        "desc": "<b>Trophy of the Deep Snow Aesi.</b><br>While wearing this mask, your body temperature dips to supernatural lows, your flesh becomes blueish and icy, and you are no longer affected by the cold. You become immune to difficult terrain, and shove, teleport, or remove from the battlefield effects for the duration of this expedition.",
+        "faction": "Legend",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Yunmes Blossom",
+        "desc": "Summon an allied Sprigg mob with 3 members. The Spriggs disappear at the end of combat.<br><b>Sprigg (Mob)</b><br><b>Members:</b> 3<br><b>Barely There:</b> Spriggs are intangible and don’t cause engagement or obstruction. Characters can’t collide with them and can share their space. They disappear when combat ends, or all other non-sprigg allies have been defeated.<br><b>Frolic (2 actions):</b> The acting Sprigg swaps places with an ally in range 3, removing and placing both characters.<br><b>Mischief (2 actions):</b> The acting Sprigg swaps the places of two other characters in range 2 of the Sprigg, removing and placing both of them.",
+        "faction": "Hob",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Wissan Root Splinter",
+        "desc": "Create a wissan root object as a free action ability, a height 1 object in range 5. The area around the root is difficult terrain, and the root emits aura 1 around it. Foes in the aura are vulnerable+",
+        "faction": "Hob",
+        "use": [
+            {"number": 2},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Winter Berry",
+        "desc": "Eat this frozen berry at the start of combat to gain aura 1. Characters in the aura have cover and foes that end their turn there are sealed.",
+        "faction": "Hob",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Geryan's Pipe",
+        "desc": "Take a puff from this pipe as a free action ability to gain +1 boon on all rolls until the start of your following turn. During your following turn, take +1 curse on all rolls instead.",
+        "faction": "Hob",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Boulder Hob Pebble",
+        "desc": "Throw this pebble as a free action ability to shove a character in range 3 1 space, then create a height boulder object adjacent to them.",
+        "faction": "Hob",
+        "use": [
+            {"number": 5},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Transmogrifying Mushroom",
+        "desc": "Eat this mushroom to transform into a frog until the end of your next turn. While a frog, you have evasion 20 and dodge but cannot deal damage or inflict statuses.",
+        "faction": "Hob",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Banderhob Fur Mantle",
+        "desc": "This expedition, while adjacent to an ally you have counter and evasion.",
+        "faction": "Hob",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Spirit Hob Charm",
+        "desc": "This expedition, you may swap place with any adjacent ally as a free action ability on your turn.",
+        "faction": "Hob",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Mark of the Forest God",
+        "desc": "This expedition, gain dodge, evasion, and cover while inside the area of a terrain effect, difficult terrain, or dangerous terrain, and additionally become immune to all damage and movement penalties from terrain and terrain effects.",
+        "faction": "Hob",
+        "use": [
+            {"number": 1},
+            {"duration": "expedition"}
+        ]
+    },
+	{
+        "name": "Helm of Mist",
+        "desc": "<i>Free action ability</i>: You and all adjacent characters gain <i>stealth</i>. Foes take 2 piercing damage.",
+        "faction": "Deeptower",
+        "use": [
+            {"number": 3},
+            {"duration": ""}
+        ]
+    },
+	{
+        "name": "Dread Mace",
+        "desc": "Use for <b>Obliterate:</b><br><i>2 actions, attack, range 2</i><br><b>Attack</b>: <i>On hit</i>: deal 4[D]+fray and foe must save or be stunned. <i>Miss</i>: 2[D]+fray. <i>Critical Hit</i>: Foe fails the save",
+        "faction": "",
+        "use": [
+            {"number": 1},
+            {"duration": ""}
+        ]
     }
 ]
