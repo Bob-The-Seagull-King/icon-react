@@ -10,9 +10,6 @@ import { ROUTES } from '../../resources/routes-constants'
 
 
 const SiteNav = (props: any) => {
-    const [bookmarksChecked, setBookmarksChecked] = React.useState(true);
-    const [urlsChecked, setUrlsChecked] = React.useState(false);
-    const [person, setPerson] = React.useState('pedro');
     
     /**
      * Opens a page based on the parameters

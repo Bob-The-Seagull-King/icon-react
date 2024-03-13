@@ -4,6 +4,7 @@ import '../../styles/iconcomponent.scss';
 
 import rulesdata from '../../resources/data/general/combatglossary.json';
 import GlossaryRuleDisplay from '../../components/itemdisplaycomponents/GlossaryRuleDisplay';
+import InfoSubset from '../pagecomponents/InfoSubset';
 
 const GT_Glossary = (props: any) => {
     
@@ -43,45 +44,13 @@ const GT_Glossary = (props: any) => {
         return temp.sort((a, b) => a.localeCompare(b));
     }
 
-    // Navigation ----------------------------------
-    function navClick (dir: string, name: string) {    
-        window.open(location.protocol + '//' + location.host + '/general/tactics/' + dir + '/' + name, '_self', 'noopener,noreferrer');
-    }
-    // ---------------------------------------------
-
-
-    function returnTagCat(category: string) {
-
-        return (
-            <div className='widthPT centerPosition topPosition'>
-            {searchedrules.filter(isSearched).map((item: any) => (
-                <div key={item.name+category}>
-                    {containsTag(item.tags, category) &&
-                        <div className='gridItemRule' onClick={() => navClick('glossary', item.name)} key={item.name + "rule"}  >
-                            <GlossaryRuleDisplay data={item}/>
-                        </div>
-                    }
-                </div>
-                ))}
-            </div>
-        )
-    }
-
     // Return render -------------------------------
     return (
         <div className=''>
             {foundTags.map((item: string) => (
                 <div key={item}>
-                    
-                <div className='centerPosition'>
-                    <h1 className={'megatitleShape titlePurple'}>{capitalizeTag(item)}</h1>
+                    <InfoSubset data={{name:item, items:searchedrules.filter(isSearched).filter((product) => containsTag(product.tags, item)), type: 'glossary', visible: true}}/>
                 </div>
-                <div className='centerPosition'>
-                {returnTagCat(item)}
-                </div>
-                <br/>
-                </div>
-                
             ))}
         </div>
     )
