@@ -1280,7 +1280,7 @@
 	{
         "name": "Helm of Mist",
         "desc": "<i>Free action ability</i>: You and all adjacent characters gain <i>stealth</i>. Foes take 2 piercing damage.",
-        "faction": "Deeptower",
+        "faction": ["general"],
         "use": [
             {"number": 3},
             {"duration": ""}
@@ -1289,7 +1289,7 @@
 	{
         "name": "Dread Mace",
         "desc": "Use for <b>Obliterate:</b><br><i>2 actions, attack, range 2</i><br><b>Attack</b>: <i>On hit</i>: deal 4[D]+fray and foe must save or be stunned. <i>Miss</i>: 2[D]+fray. <i>Critical Hit</i>: Foe fails the save",
-        "faction": "",
+        "faction": ["general"],
         "use": [
             {"number": 1},
             {"duration": ""}
