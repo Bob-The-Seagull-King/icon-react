@@ -190,7 +190,7 @@
     },
 	{
         "name": "Darklight Infuser",
-        "desc": "<b>Trophy of the Vessel Knight.</b><br>You dip your weapon or implements in the dread essence of Divine Death. For the duration of this expedition, your attacks gain <i>slay</i>: cure yourself, and any attack you make that would reduce a character to 0 hp before any reductions or other effects becomes <i>divine</i> damage.",
+        "desc": "<b>Trophy of the Vessel Knight.</b><br>You dip your weapon or implements in the dread essence of Divine Death. For the duration of this expedition, your attacks gain <i>slay</i>: <i>cure</i> yourself, and any attack you make that would reduce a character to 0 hp before any reductions or other effects becomes <i>divine</i> damage.",
         "faction": ["relict", "legend", "vessel knight"],
         "use": [
             {"number": 1},
@@ -262,7 +262,7 @@
     },
 	{
         "name": "Relict Arbalest",
-        "desc": "An ancient Relict weapon that still barely functions, shooting bolts of lightning. You can make a 1 action attack with it (1 action, ranged attack, line 8, on hit: [D]+fray, area effect: fray effect: all foes in the area take 1 piercing damage)",
+        "desc": "An ancient Relict weapon that still barely functions, shooting bolts of lightning. You can make a 1 action attack with it.<br><b>Attack (1 action, ranged attack, Line 8)</b>: <i>On hit</i>: [D]+fray, <i>area effect</i>: fray. <i>Effect</i>: all foes in the area take 1 piercing damage)",
         "faction": ["relict"],
         "use": [
             {"number": 3},
@@ -334,7 +334,7 @@
     },
 	{
         "name": "Chimaera Bile",
-        "desc": "<b>Trophy of the Chimaera.</b><br>Drinking a vial of purified Chimaera bile is a powerful curative. It can be drunk as a free action to cure yourself and grant yourself regeneration and defiance.<br>However, it also causes cosmetic mutation, and prolonged use can be fatal. After drinking a vial of Chimaera blood, roll 1d10 and consult the heads table. You gain minor beastlike mutations that are similar to the chosen beast (like claws, hair, slit eyes, fangs, scales, etc). The mutations last until the end of the following interlude.",
+        "desc": "<b>Trophy of the Chimaera.</b><br>Drinking a vial of purified Chimaera bile is a powerful curative. It can be drunk as a <i>free action</i> to <i>cure</i> yourself and grant yourself <i>regeneration</i> and <i>defiance</i>.<br>However, it also causes cosmetic mutation, and prolonged use can be fatal. After drinking a vial of Chimaera blood, roll 1d10 and consult the heads table. You gain minor beastlike mutations that are similar to the chosen beast (like claws, hair, slit eyes, fangs, scales, etc). The mutations last until the end of the following interlude.",
         "faction": ["beast", "legend", "chimaera"],
         "use": [
             {"number": 3},
@@ -343,7 +343,7 @@
     },
 	{
         "name": "Apex Fang",
-        "desc": "<b>Trophy of the Apex.</b><br>At the start of combat you may call on the power of this fang to temporarily magically transform into a beastlike form, spending one or more uses of this ability. Roll 1d12 per use spent. You gain the use of the rolled ability from the Might of the Wild table and any associate traits for the rest of combat.",
+        "desc": "<b>Trophy of the Apex.</b><br>At the start of combat you may call on the power of this fang to temporarily magically transform into a beastlike form, spending one or more uses of this ability. Roll 1d12 per use spent. You gain the use of the rolled ability from the Might of the Wild table and any associate traits for the rest of combat.<br><b>MIGHT OF THE WILD</b><ol><li><u><b>Toxic</b></u><br><b>Toxic Cloud (1 action, range 5):</b> The user creates a small blast area of dangerous terrain (which the user ignores) in free space in range. Foes inside the area are <i>blinded</i>+. If the user uses this ability again, they can either create a new cloud, or blow their existing clouds 2 spaces in any direction, which could cause them to overlap characters. They can have up to 2 clouds at once. Clouds last indefinitely, but evaporate if this ability is weakened.</li><li><u><b>Thick Hide</b></u><br><b>Harden (1 action):</b> The user gains 10 vigor as their armor hardens. The next time the user takes damage from a foe’s ability, the armor explodes, ending all vigor, and <i>dazing</i> and dealing 4 piercing damage to all foes in range 2 as an <i>area effect</i>.</li><li><u><b>Spines</b></u><br><b>Sanguine Barb (1 action, range 6):</b> The user impales a character in range with a barb. While this effect is active, that character takes 1 piercing damage for each space they move, dash, or are shoved. The effect can be removed if a character doesn’t move for their entire turn, or if they are <i>cured</i>.</li><li><u><b>Horned</b></u><br><b>Primal Charge (1 action):</b> The user <i>rushes</i> 3, then shoves an adjacent foe 2 spaces. <i>Collide</i>: Foe takes fray damage twice and is <i>slashed</i>.</li><li><u><b>Brutal Strength</b></u><br><b>Stone Toss (1 action, range 3):</b> Effect: A foe in range takes 3 damage and is shoved 1, then create a height 1 boulder <i>object</i> next to them. <i>Collide</i>: Foe is <i>stunned</i>.</li><li><u><b>Burrowing</b></u><br><b>Earthglide:</b> The user has <i>phasing</i>.<br><b>Seismic Geyser (1 action, range 5):</b> The user chooses a foe in range that has not acted yet. At the end of that foe’s turn, a geyser erupts under them, dealing fray damage and inflicting <i>weakened</i> as a medium blast <i>area effect</i> centered on them. <i>Weakened</i> foes take [D]+fray instead.</li><li><u><b>Chameleonic</b></u><br><b>Blend In:</b> If the user starts their turn in difficult or dangerous terrain, the user gains <i>stealth</i>.<br><b>Primal Ambush (1 action):</b> The user disappears from sight, removing themselves from the battlefield. The user then re-appears adjacent to any foe in range 3, placing themselves in a free adjacent space. The foe must save or take 2 damage, four times and be <i>dazed</i>, or just 2 damage, twice on a successful save.</li><li><u><b>Winged</b></u><br><b>Winged:</b> The user’s standard move is <i>fly</i> 5, and all their dashes or rushes may be replaced with a <i>fly</i>. This trait deactivates if weakened.<br><b>Talon Snatch (1 action):</b> The user soars into the air, removing it from the battlefield, then returns with at least one space in range 2. When the user takes off, it can pick up an adjacent foe, dealing fray damage and forcing them to save. On a failed save, they are removed with the user, then placed adjacent after it lands. On a successful save, they are shoved 1.</li><li><u><b>Lashing Tail</b></u><br><b>Tail Sweep (1 action, arc 4):</b> The user sweeps their tail in an arc 4 <i>area effect</i>. Foes inside take 2 damage and are all shoved 2 in a direction of the user’s choice. <i>Collide</i>: Foes take 2 damage again.</li><li><u><b>Carrion Eater</b></u><br><b>Carrion Stash (1 action, end turn):</b> The user digs up some stashed carrion and eats it. Create a pit in an adjacent space. During their next turn, all their abilities deal <i>bonus damage</i> and their attacks gain +1 boon and may critical hit (+[D]).</li><li><u><b>Sonic Shriek</b></u><br><b>Shriek (1 action, range 2):</b> The user releases a shriek, affecting all foes in range as an <i>area effect</i>. Foes take 2 damage, once, for each space between them and the user (so foes at range 2 would take 2 damage, twice etc). If the user is inside a Hunting Ground, this effect increases to range 3.<br><i>Hunting Grounds:</i> Before the fight, the GM places three small blast difficult terrain areas on the map. None can be placed in range 2 of each other. Each area is a hunting ground. The Apex (Legend) gains +1 boon on attacks and deals bonus damage to characters in hunting grounds.</li><li><u><b>Element Breath</b></u><br><b>Primal Elements (1 action, medium blast, range 2):</b> The user releases a blast of ice, fire, sand, or some other element, creating a medium blast <i>area effect</i>. Foes inside take 2 damage, then must save or be shoved 2 and <i>blinded</i>, or just shoved 1 on a successful save. Then create up to two <i>dangerous terrain</i> pit spaces in the area (fire, water, quicksand, etc).</li></ol>",
         "faction": ["beast", "legend", "apex"],
         "use": [
             {"number": 3},
@@ -352,7 +352,7 @@
     },
 	{
         "name": "Apex Mantle",
-        "desc": "<b>Trophy of the Apex.</b><br>You can don this cloak of Apex hide to show your dominance during this expedition. You deal bonus damage to beasts, and at the start of one combat, you may summon a beast pack mob with 6 members. The mob is allied to you.",
+        "desc": "<b>Trophy of the Apex.</b><br>You can don this cloak of Apex hide to show your dominance during this expedition. You deal bonus damage to beasts, and at the start of one combat, you may summon a beast pack mob with 6 members. The mob is allied to you.<br><b>Beast Pack (Mob)</b><br><b>Cornered:</b> When half its members are remaining or less, this pack gains +1 action.<br><b>Pack Attack (1 actions, attack):</b> <i>On hit</i>: [D] +fray. <i>Miss</i>: fray. <i>Effect</i>: Up to three other members can dash 2, then deal 2 damage to the attack target.<br><b>Hunting Tactics (1 actions):</b> A beast in range 3 of a pack member gains <i>stealth</i> and can dash 2.<br><b>Vicious Howl (1 actions, repeatable):</b> A foe in range 3 of a pack member is <i>weakened</i>. <i>Weakened</i> foes take 2 piercing damage instead.<br><b>Drag Down (1 action, range 2, mark):</b> A foe in range of a pack member is <i>marked</i>. While marked, they are <i>weakened</i>+ while adjacent to any pack members.",
         "faction": ["beast", "legend", "apex"],
         "use": [
             {"number": 1},
@@ -361,7 +361,7 @@
     },
 	{
         "name": "Wyrm Gut",
-        "desc": "<b>Trophy of the Wyrm.</b><br>Wrap your armor or weapon with the power of the wyrm, imbuing you with its fury. For this expedition, at the start of any combat, you can choose your own path of ruin edge. At the end of the round, you may choose to shove all characters 1 space towards that edge, then deal fray damage to them if they are in range 4 of that edge.",
+        "desc": "<b>Trophy of the Wyrm.</b><br>Wrap your armor or weapon with the power of the wyrm, imbuing you with its fury. For this expedition, at the start of any combat, you can choose your own <i>path of ruin</i> edge. At the end of the round, you may choose to shove all characters 1 space towards that edge, then deal fray damage to them if they are in range 4 of that edge.<br><b>Path of Ruin:</b> Many of the Wyrm’s abilities key off a particular map edge, called the Path of Ruin. The GM decides and announces the initial Path of Ruin edge at the beginning of combat, then it moves clockwise at the start of each round.",
         "faction": ["beast", "legend", "wyrm"],
         "use": [
             {"number": 1},
@@ -370,7 +370,7 @@
     },
 	{
         "name": "Tail Sword",
-        "desc": "<b>Trophy of the Wyrm.</b><br>The tailbone of a Wyrm has a remarkable sword shape and is razor sharp. While wielding such a magnificent weapon, your attacks against bloodied characters inflict dragonfire. Legends are immune to this effect.",
+        "desc": "<b>Trophy of the Wyrm.</b><br>The tailbone of a Wyrm has a remarkable sword shape and is razor sharp. While wielding such a magnificent weapon, your attacks against bloodied characters inflict <i>dragonfire</i>. Legends are immune to this effect.<br><b>Dragonfire:</b> The wyrm’s divine fire scorches the very soul. When an ability inflicts <i>dragonfire</i>, all of its targets <i>sacrifice</i> 25% of their max hp.",
         "faction": ["beast", "legend", "wyrm"],
         "use": [
             {"number": 1},
@@ -379,7 +379,7 @@
     },
 	{
         "name": "Yellow Spore Sack",
-        "desc": "As an action, you may toss this sack of spores. Characters in a small blast area in range 3 are sealed and you may shove them 1 in any direction.",
+        "desc": "As an action, you may toss this sack of spores. Characters in a small blast area in range 3 are <i>sealed</i> and you may shove them 1 in any direction.",
         "faction": ["beast"],
         "use": [
             {"number": 5},
@@ -397,7 +397,7 @@
     },
 	{
         "name": "Howler Venom",
-        "desc": "Venom from a howler beast. You can apply during any attack to grant it bonus damage, pierce, and inflicts slashed.",
+        "desc": "Venom from a howler beast. You can apply during any attack to grant it bonus damage, pierce, and inflicts <i>slashed</i>.",
         "faction": ["beast"],
         "use": [
             {"number": 2},
@@ -406,7 +406,7 @@
     },
 	{
         "name": "Screecher Gland",
-        "desc": "Step on the screecher gland as an action to make a horrible screeching noise. Characters in a medium blast area centered on you, including you, must save or become stunned",
+        "desc": "Step on the screecher gland as an action to make a horrible screeching noise. Characters in a medium blast area centered on you, including you, must save or become <i>stunned</i>",
         "faction": ["beast"],
         "use": [
             {"number": 3},
@@ -424,7 +424,7 @@
     },
 	{
         "name": "Kelpie Head",
-        "desc": "As an action, you can hold this severed head up. It spurts fetid water at all foes in range 4. Those foes are shoved 1. Collide: They take [D]+fray and are also blinded.",
+        "desc": "As an action, you can hold this severed head up. It spurts fetid water at all foes in range 4. Those foes are shoved 1. Collide: They take [D]+fray and are also <i>blinded</i>.",
         "faction": ["beast"],
         "use": [
             {"number": 3},
@@ -433,7 +433,7 @@
     },
 	{
         "name": "Stalker Scales",
-        "desc": "This expedition, when ending your turn adjacent to an object or inside difficult or dangerous terrain, gain stealth",
+        "desc": "This expedition, when ending your turn adjacent to an object or inside difficult or dangerous terrain, gain <i>stealth</i>",
         "faction": ["beast"],
         "use": [
             {"number": 2},
@@ -469,7 +469,7 @@
     },
 	{
         "name": "Battle Blade",
-        "desc": "<b>Trophy of the Twinblades.</b><br>Summon a twirling blade in free space in range 3, as per the round action. At the start of your turn, you may shove the blade 1 space in any direction.",
+        "desc": "<b>Trophy of the Twinblades.</b><br>Summon a <i>twirling blade</i> in free space in range 3, as per the round action. At the start of your turn, you may shove the blade 1 space in any direction.<br><b>Twirling Blade (Round Action):</b> At the start of the round, the twins summon a <i>twirling blade</i> in range 3 of one of the twins. The blade is a <i>summon</i>. Foes that collide with a blade or start their turn adjacent to a blade take 2 piercing damage. If a blade collides with a character, it also deals 2 <i>piercing</i> damage to them. Characters can be damaged by multiple blades at once.",
         "faction": ["scavenger", "legend", "twinblades"],
         "use": [
             {"number": 3},
@@ -478,7 +478,7 @@
     },
     {
         "name": "Blood Rune",
-        "desc": "<b>Trophy of the Blood Bound Band.</b><br>Use this remnant of runic power at the start of any combat. Roll 2d10 and pick either result, choosing the brother that matches that result. For the rest of the combat, you gain the blood bound blessing of the chosen brother.",
+        "desc": "<b>Trophy of the Blood Bound Band.</b><br>Use this remnant of runic power at the start of any combat. Roll 2d10 and pick either result, choosing the brother that matches that result. For the rest of the combat, you gain the <i>blood bound blessing</i> of the chosen brother.<br><b>Blood-Bound Blessing:</b> Each time a Blood Brother is defeated, all active brothers immediately gain the <i>Blood-Bound Blessing</i> of the fallen brother, empowering them.<br><b>Blood Brothers</b><ol><li><u><b>Boots</b></u><br><b>Traits:</b> Guard<br><b>The Boot (free action):</b> An adjacent foe is shoved 1. If they’re bloody, they are instead shoved 3. Collide: Foe is <i>weakened</i>.<br><b>Flying Dropkick (2 actions):</b> Boots <i>rushes</i> 3 towards a foe. Then, if they are adjacent to that foe, that foe takes take [D]+fray and is shoved 3. Collide: Foe is <i>stunned</i>.<br><b>Blood-Bound Blessing:</b> All remaining Brothers become <i>sturdy</i> and gain <i>The Boot.</i></li><li><u><b>Fixer</b></u><br><b>Traits:</b> Guard<br><b>Iron Blade:</b> Attacks against bloodied foes gain <i>true strike</i> and <i>slash</i> them.<br><b>Grapple (1 actions, mark):</b> Fixer marks an adjacent foe. While marked, that foe must save if it attempts to break adjacency the first time in a round. On a failed save, it becomes unable to exit adjacency with Fixer by any means for the rest of the current round. On a successful save, the mark and this effect ends, but the foe is <i>weakened</i>.<br><b>Blood-Bound Blessing:</b> One brother can use <i>Grapple</i> once a round.</li><li><u><b>Filth</b></u><br><b>Traits:</b> Skirmisher, Dodge<br><b>Dripping Blade:</b> Attacks force the attack target to <i>sacrifice</i> 3 after dealing damage.<br><b>Poison Gas (2 actions):</b> <i>Area Effect</i>: small blast. Characters in the area take 6 damage. Then, they must save or take 6 damage again and become <i>blinded</i>. Blinded characters fail this save.<br><b>Blood-Bound Blessing:</b> All remaining Brothers gain <i>Dripping Blade</i>.</li><li><u><b>Cats</b></u><br><b>Traits:</b> Skirmisher, Dodge<br><b>Feline Felicity (Free action):</b> Teleport 3, then may deal 2 damage to an adjacent foe. Bloodied foes take 2 damage twice.<br><b>Fan of Nya-ives (1 action):</b> <i>Area Effect</i>: Medium Blast. <i>Effect</i>: Foes take 3 damage. Bloodied foes take 3 damage twice. Then, Cats may teleport 2.<br><b>Blood-Bound Blessing:</b> All Brothers gain <i>Feline Felicity</i>.</li><li><u><b>Sharkie</b></u><br><b>Traits:</b> Diaga<br><b>Great Aura of Skulduggery (1 action, end turn):</b> Until the start of their next turn, Sharkie is <i>immobile</i> and gains Aura 2. Sharkie and allies in the aura have <i>evasion</i> and <i>counter</i>. Foes that trigger <i>counter</i> or <i>evasion</i> are also shoved 2 after the triggering ability resolves.<br><b>Great Swindle (free action):</b> A foe in range 3 is <i>sealed</i>, then must save or swap places with Sharkie, teleporting. Bloodied characters fail the save.<br><b>Blood-Bound Blessing:</b> All Brothers gain <i>Great Swindle</i>.</li><li><u><b>Pale</b></u><br><b>Traits:</b> Skirmisher, Dodge<br><b>Nighthaunt (2 actions, end turn, combo):</b> Pale teleports 3, then becomes <i>intangible</i> and gains <i>phasing</i> until the start of their next turn. This action grants <i>evasion</i> instead if they are the only Brother active.<br><b>Midnight Blade (2 actions, attack, combo):</b> <i>On hit</i>: 3[D]+fray. <i>Miss</i>: [D]+fray. Effect: Deals half damage if foe has any amount of vigor. Deals bonus damage if foe is bloodied.<br><b>Blood-Bound Blessing:</b> All Brothers go to speed 5 and gain <i>phasing</i>.</li><li><u><b>Sharp</b></u><br><b>Traits:</b> Aetherwall, Slip<br><b>Keen Eye:</b> All attacks can critical hit (+[D])<br><b>Ricochet Shot (1 action, attack, pierce, range 10):</b> <i>On hit</i>: [D]+fray and foe is <i>shattered</i>. <i>Miss</i>: fray. Effect: A different foe in range 3 from the original target takes fray damage. <i>Effect</i>: Deals bonus damage against bloodied foes.<br><b>Blood-Bound Blessing:</b> All Brothers gain <i>Keen Eye</i>, and one brother can use <i>Ricochet Shot</i> once a round.</li><li><u><b>Fanatic</b></u><br><b>Traits:</b> Aetherwall, Slip<br><b>Spark (free action):</b> Choose a foe in range 6 that has not acted this round. At the end of that foe’s next turn, they explode in a small blast area effect for [D]+fray piercing damage, dealing damage to all foes <i>other</i> than them in the area. Summon a pit under them. If they are standing in a pit when the explosion happens, they are <i>stunned</i> and also take damage.<br><b>Blood Pyre (1 actions, attack, range 6, medium blast):</b> <i>On hit</i>: [D]+fray, <i>Miss or area effect</i>: fray. <i>Effect</i>: Summon a pit under every bloodied character in the area. Deals bonus damage to characters inside pits.<br><b>Blood-Bound Blessing:</b> One brother can use <i>Spark</i> once a round.</li><li><u><b>Broker</b></u><br><b>Traits:</b> Diaga, Defiance<br><b>Aura of Bloodletting:</b> Aura 2. All foes that use an ability in the area, including basic abilities, must <i>sacrifice</i> 2 after the ability resolves. <i>Bloodied</i> foes <i>sacrifice</i> 5 instead.<br><b>Bloody Bond (1 action, mark):</b> Mark an ally in range 4. While marked and in range, that ally has <i>resistance</i> to all damage, but Broker must <i>sacrifice</i> 3 at the end of that ally’s turn.<br><b>Blood-Bound Blessing:</b> All Brothers gain <i>defiance</i>.</li><li><u><b>Monger</b></u><br><b>Traits:</b> Diaga<br><b>Bounty Hunt (1 action, mark):</b> A foe in range 6 is marked. While marked, abilities against the target gain <i>true strike</i>, and allies gain +1 boon to attack the foe. Using this mark again transfers it. A foe can end this mark by ending their turn more than 2 spaces away from any Brother.<br><b>Weakening Venom (1 action):</b> A foe in range 6 is <i>pacified</i>+. They can purge the venom from their system at the end of any turn they attack, ending this effect.<br><b>Blood-Bound Blessing:</b> All foes are marked by <i>Bounty Hunt</i>.</li></ol>",
         "faction": ["scavenger", "legend", "blood bound band"],
         "use": [
             {"number": 3},
@@ -487,7 +487,7 @@
     },
 {
         "name": "Boot's Boots",
-        "desc": "<b>Trophy of the Blood Bound Band.</b><br>Immediately use Boot’s The Boot ability:<br><b>The Boot (free action):</b> An adjacent foe is shoved 1. If they’re bloody, they are instead shoved 3. <i>Collide</i>: Foe is <i>weakened</i>.",
+        "desc": "<b>Trophy of the Blood Bound Band.</b><br>Immediately use Boot’s <b>The Boot</b> ability:<br><b>The Boot (free action):</b> An adjacent foe is shoved 1. If they’re bloody, they are instead shoved 3. <i>Collide</i>: Foe is <i>weakened</i>.",
         "faction": ["scavenger", "legend", "blood bound band"],
         "use": [
             {"number": 5},
