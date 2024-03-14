@@ -212,6 +212,21 @@ const SiteNav = (props: any) => {
                             </DropdownMenu.Portal>
                         </DropdownMenu.Sub>
 
+                        <DropdownMenu.Sub>
+                            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+                                Narrative 
+                                <div className="RightSlot">
+                                    &#x25B6;
+                                </div>
+                            </DropdownMenu.SubTrigger>
+                            <DropdownMenu.Portal>
+                                <DropdownMenu.SubContent className="DropdownMenuSubContent" sideOffset={2} alignOffset={-5} >
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('general/narrative/action/')}>
+                                        Actions
+                                    </DropdownMenu.Item>
+                                </DropdownMenu.SubContent>
+                            </DropdownMenu.Portal>
+                        </DropdownMenu.Sub>
                     </DropdownMenu.Content>
                 </DropdownMenu.Portal>
             </DropdownMenu.Root>
@@ -228,6 +243,8 @@ const SiteNav = (props: any) => {
                                 ROUTES.TACTICS_GENERAL_ROUTE
                             } element={ returnSearchBar() } />
                 <Route path={ROUTES.CAMP_GENERAL_ROUTE
+                            } element={ returnSearchBar()} />
+                <Route path={ROUTES.NARRATIVE_GENERAL_ROUTE
                             } element={ returnSearchBar()} />
             </Routes>
             </div>

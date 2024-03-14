@@ -10,6 +10,7 @@ export const ROUTES = {
     //GENERAL_ROUTES
     TACTICS_GENERAL_ROUTE: '/general/tactics/*',
     CAMP_GENERAL_ROUTE: '/general/camp/*',
+    NARRATIVE_GENERAL_ROUTE: '/general/narrative/*',
 
     //HOME_ROUTES
     HOME_ROUTE: '/',
@@ -34,5 +35,8 @@ export const ROUTES = {
 
     //CAMP_GENERAL_ROUTES
     GC_RULES: '/rules/*',
-    GC_ITEM: '/item/*'
+    GC_ITEM: '/item/*',
+
+    //NARRATIVE_GENERAL_ROUTES
+    GN_ACTIONS: '/action/*'
 }

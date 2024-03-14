@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage'
 import CampGeneralPage from './pages/GeneralCampPage'
 import TacticalGeneralPage from './pages/GeneralTacticalPage'
 import NarrativePlayerPage from './pages/PlayerNarrativePage'
+import NarrativeGeneralPage from './pages/GeneralNarrativePage'
 
 import './styles/main.sass'
 import './styles/iconcomponent.scss'
@@ -25,6 +26,7 @@ const RootComponent: React.FC = () => {
                 <Route path={ROUTES.BUILD_NARRATIVE_ROUTE} element={<BuildNarrativePage />} />
                 <Route path={ROUTES.TACTICS_PLAYERS_ROUTE} element={<TacticsPlayerPage/>} />
                 <Route path={ROUTES.NARRATIVE_PLAYERS_ROUTE} element={<NarrativePlayerPage/>} />
+                <Route path={ROUTES.NARRATIVE_GENERAL_ROUTE} element={<NarrativeGeneralPage/>} />
                 <Route path={ROUTES.TACTICS_GENERAL_ROUTE} element={<TacticalGeneralPage/>} />
                 <Route path={ROUTES.CAMP_GENERAL_ROUTE} element={<CampGeneralPage/>} />
                 <Route path={ROUTES.HOME_ROUTE} element={<HomePage/>} />
