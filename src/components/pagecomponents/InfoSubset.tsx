@@ -84,7 +84,7 @@ const InfoSubset = (props: any) => {
     return (
         <div>   
             <div  onClick={() => changeVisible(switchVisibility())} className='centerPosition'>
-                <h1 className={'megatitleShape titlePurple'}>{capitalizeTag(propname)} 
+                <h1 className={'medtitleShape titlePurple'}>{capitalizeTag(propname)} 
                 {propvisible == true && <span>&#x2B9F;&#xFE0E;</span>}
                 {propvisible == false && <span>&#x2B9D;&#xFE0E;</span>}
                 </h1>
