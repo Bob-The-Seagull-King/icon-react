@@ -6,6 +6,7 @@ export const ROUTES = {
     //PLAYER_ROUTES
     TACTICS_PLAYERS_ROUTE: '/player/tactics/*',
     NARRATIVE_PLAYERS_ROUTE: '/player/narrative/*',
+    CHARACTER_PLAYERS_ROUTE: '/player/character/*',
 
     //GENERAL_ROUTES
     TACTICS_GENERAL_ROUTE: '/general/tactics/*',
@@ -28,6 +29,10 @@ export const ROUTES = {
     PN_BOND: '/bond/*',
     PN_BONDFULL: '/bondfull/*',
     PN_POWER: '/power/*',
+
+    //CHARACTER_PLAYERS_ROUTES
+    PC_KIN: '/kin/*',
+    PC_CULTURE: '/culture/*',
 
     //TACTICS_GENERAL_ROUTES
     GT_GLOSSARY: '/glossary/*',

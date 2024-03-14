@@ -158,6 +158,25 @@ const SiteNav = (props: any) => {
                             </DropdownMenu.Portal>
                         </DropdownMenu.Sub>
 
+                        <DropdownMenu.Sub>
+                            <DropdownMenu.SubTrigger className="DropdownMenuSubTrigger">
+                                Character 
+                                <div className="RightSlot">
+                                    &#x25B6;
+                                </div>
+                            </DropdownMenu.SubTrigger>
+                            <DropdownMenu.Portal>
+                                <DropdownMenu.SubContent className="DropdownMenuSubContent" sideOffset={2} alignOffset={-5} >
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('player/character/kin/')}>
+                                        Kin
+                                    </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('player/character/culture/')}>
+                                        Cultures
+                                    </DropdownMenu.Item>
+                                </DropdownMenu.SubContent>
+                            </DropdownMenu.Portal>
+                        </DropdownMenu.Sub>
+
                     </DropdownMenu.Content>
                 </DropdownMenu.Portal>
             </DropdownMenu.Root>

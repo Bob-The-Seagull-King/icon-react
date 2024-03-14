@@ -10,6 +10,7 @@ import CampGeneralPage from './pages/GeneralCampPage'
 import TacticalGeneralPage from './pages/GeneralTacticalPage'
 import NarrativePlayerPage from './pages/PlayerNarrativePage'
 import NarrativeGeneralPage from './pages/GeneralNarrativePage'
+import PlayerCharacterPage from './pages/PlayerCharacterPage'
 
 import './styles/main.sass'
 import './styles/iconcomponent.scss'
@@ -29,6 +30,7 @@ const RootComponent: React.FC = () => {
                 <Route path={ROUTES.NARRATIVE_GENERAL_ROUTE} element={<NarrativeGeneralPage/>} />
                 <Route path={ROUTES.TACTICS_GENERAL_ROUTE} element={<TacticalGeneralPage/>} />
                 <Route path={ROUTES.CAMP_GENERAL_ROUTE} element={<CampGeneralPage/>} />
+                <Route path={ROUTES.CHARACTER_PLAYERS_ROUTE} element={<PlayerCharacterPage/>} />
                 <Route path={ROUTES.HOME_ROUTE} element={<HomePage/>} />
             </Routes>
         </Router>

@@ -25,8 +25,6 @@ const InfoSubset = (props: any) => {
     const proptype = props.data.type; 
     const [propvisible, changeVisible] = useState(props.data.visible);
 
-    console.log(propitems);
-
     /**
      * Opens a page based on the parameters
      * @param name The end-params for the route
