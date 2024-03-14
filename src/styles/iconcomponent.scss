@@ -481,3 +481,12 @@ $colour_grey_secondary: #D5D5D5;
     flex-wrap: wrap;
 }
 // -------------------------------------------------
+
+// Display -----------------------------------------
+.hidden-text { 
+    display: none; 
+  } 
+   
+.show-text:hover .hidden-text { 
+display: block; 
+} 
