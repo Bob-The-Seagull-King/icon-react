@@ -37,7 +37,7 @@
     },
     {
         "name": "Gnarled Horn",
-        "desc": "You can blow this horn as a free action ability to allow all allies to <i>rush 3</i>.",
+        "desc": "You can blow this horn as a <i>free action</i> ability to allow all allies to <i>rush 3</i>.",
         "faction": ["general"],
         "use": [
             {"number": 5},
@@ -100,7 +100,7 @@
     },
     {
         "name": "Helm of the Ram",
-        "desc": "Use this heavy, horned helm as a free action to shove an adjacent character 2 spaces, then <i>rush 2</i>",
+        "desc": "Use this heavy, horned helm as a <i>free action</i> to shove an adjacent character 2 spaces, then <i>rush 2</i>.",
         "faction": ["general"],
         "use": [
             {"number": 3},
@@ -127,7 +127,7 @@
     },
     {
         "name": "Broken Key to Numenea",
-        "desc": "Use this key as a free action ability to travel briefly to the Titan City of Numenea, removing yourself from the battlefield and ending your turn. You return at the start of your next turn, in a free space in range 3 from your original location.",
+        "desc": "Use this key as a <i>free action</i> ability to travel briefly to the Titan City of Numenea, removing yourself from the battlefield and ending your turn. You return at the start of your next turn, in a free space in range 3 from your original location.",
         "faction": ["general"],
         "use": [
             {"number": 1},
@@ -235,7 +235,7 @@
     },
 	{
         "name": "Shivering Arrow",
-        "desc": "<b>Trophy of the Dread Lord Vexator.</b><br>This arrow is made of cold, dead titan- killing steel. You can declare you are using it with any ranged attack. If you do, all the attack’s damage becomes <i>divine</i> and the attack cannot miss. Additionally, it gains <i>slay</i>: gain 1 resolve.",
+        "desc": "<b>Trophy of the Dread Lord Vexator.</b><br>This arrow is made of cold, dead titan-killing steel. You can declare you are using it with any ranged attack. If you do, all the attack’s damage becomes <i>divine</i> and the attack cannot miss. Additionally, it gains <i>slay</i>: gain 1 resolve.",
         "faction": ["relict", "legend", "dread lords"],
         "use": [
             {"number": 1},
@@ -253,7 +253,7 @@
     },
 	{
         "name": "Soul Gem",
-        "desc": "Use this gem as an action to summon 3 Relict Husks. They fight as allied summons, acting on your turn.",
+        "desc": "Use this gem as an action to summon 3 Relict Husks. They fight as allied summons, acting on your turn.<br><br/> <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\"><b>Husk (Mob)</b><br>This mob is always present in Relict fights. When new husks are summoned, they add to the current mob, or create a new one that can act on the following round if there isn’t one.<br><b>Speed:</b> 2 (dash 1).<br><b>Endless Dead:</b> Add to this mob by 1 at the start of every round, placing a new member anywhere on the battlefield not adjacent to a foe.<br><b>Fading:</b> This mob is defeated if all of its allies is defeated, and disintegrates.<br><b>Soul Frenzy (2 actions, attack):</b> Effect: All husks may <i>rush</i> 1 space. Then foes adjacent to one or more husks take 2 piercing damage.<br><b>Soul Sacrifice (2 actions):</b> Choose a bloodied character adjacent to one or more husks, then destroy all husks adjacent to that character. If that character is an ally, they gain 2 vigor per husk destroyed. If that character was a foe, they must <i>sacrifice</i> 2 per husk destroyed.</div></div>",
         "faction": ["relict"],
         "use": [
             {"number": 2},
@@ -262,7 +262,7 @@
     },
 	{
         "name": "Relict Arbalest",
-        "desc": "An ancient Relict weapon that still barely functions, shooting bolts of lightning. You can make a 1 action attack with it.<br><b>Attack (1 action, ranged attack, Line 8)</b>: <i>On hit</i>: [D]+fray, <i>area effect</i>: fray. <i>Effect</i>: all foes in the area take 1 piercing damage)",
+        "desc": "An ancient Relict weapon that still barely functions, shooting bolts of lightning. You can make a 1 action attack with it.<br><b>Attack (1 action, ranged attack, Line 8)</b>: <i>On hit</i>: [D]+fray, <i>area effect</i>: fray. <i>Effect</i>: all foes in the area take 1 piercing damage).",
         "faction": ["relict"],
         "use": [
             {"number": 3},
@@ -289,7 +289,7 @@
     },
 	{
         "name": "Decayed Arkentech Armor",
-        "desc": "Strap on a piece of decaying relict armor for extra protection. As an interrupt when you’re hit by any attack but before damage is applied, you can expend the plate to reduce the damage by 3, as if from armor",
+        "desc": "Strap on a piece of decaying relict armor for extra protection. As an interrupt when you’re hit by any attack but before damage is applied, you can expend the plate to reduce the damage by 3, as if from armor.",
         "faction": ["relict"],
         "use": [
             {"number": 3},
@@ -298,7 +298,7 @@
     },
 	{
         "name": "Telekinetic Rod",
-        "desc": "While holding this rod, you gain the Levitation trait (immune to terrain damage and movement penalties)",
+        "desc": "While holding this rod, you gain the Levitation trait.<br><b>Levitation:</b> <i>immunity</i> to terrain damage and movement penalties.",
         "faction": ["relict"],
         "use": [
             {"number": 1},
@@ -406,7 +406,7 @@
     },
 	{
         "name": "Screecher Gland",
-        "desc": "Step on the screecher gland as an action to make a horrible screeching noise. Characters in a medium blast area centered on you, including you, must save or become <i>stunned</i>",
+        "desc": "Step on the screecher gland as an action to make a horrible screeching noise. Characters in a medium blast area centered on you, including you, must save or become <i>stunned</i>.",
         "faction": ["beast"],
         "use": [
             {"number": 3},
@@ -415,7 +415,7 @@
     },
 	{
         "name": "Landshark Cape",
-        "desc": "You may use this cape as a free action and dive into the earth. Dash 4 spaces in a straight line with phasing. You are intangible while dashing.",
+        "desc": "You may use this cape as a free action and dive into the earth. Dash 4 spaces in a straight line with phasing. You are <i>intangible</i> while dashing.",
         "faction": ["beast"],
         "use": [
             {"number": 3},
@@ -433,7 +433,7 @@
     },
 	{
         "name": "Stalker Scales",
-        "desc": "This expedition, when ending your turn adjacent to an object or inside difficult or dangerous terrain, gain <i>stealth</i>",
+        "desc": "This expedition, when ending your turn adjacent to an object or inside difficult or dangerous terrain, gain <i>stealth</i>.",
         "faction": ["beast"],
         "use": [
             {"number": 2},
@@ -532,7 +532,7 @@
     },
 	{
         "name": "Shank's Cross Hilt",
-        "desc": "During the next combat, abilities you use against foes standing next to your allies gain true strike and deal bonus damage.",
+        "desc": "During the next combat, abilities you use against foes standing next to your allies gain <i>true strike</i> and deal <i>bonus damage</i>.",
         "faction": ["scavenger"],
         "use": [
             {"number": 1},
@@ -541,7 +541,7 @@
     },
 	{
         "name": "Ruffian's Boots",
-        "desc": "Free action: Gain <i>stealth</i>",
+        "desc": "Free action: Gain <i>stealth</i>.",
         "faction": ["scavenger"],
         "use": [
             {"number": 5},
@@ -595,7 +595,7 @@
     },
     {
         "name": "Hellforged Armor",
-        "desc": "<b>Trophy of the Crimson Weapon.</b><br>This armor grants <i>immunity</i> to dangerous terrain. While bloodied during this expedition, the armor becomes wreathed in flames. <i>All terrain</i> adjacent to you counts as dangerous terrain.",
+        "desc": "<b>Trophy of the Crimson Weapon.</b><br>This armor grants <i>immunity</i> to dangerous terrain. While bloodied during this expedition, the armor becomes wreathed in flames. <i>All terrain</i> adjacent to you counts as <i>dangerous terrain</i>.",
         "faction": ["imperial", "legend", "crimson weapon"],
         "use": [
             {"number": 1},
@@ -631,7 +631,7 @@
     },
 	{
         "name": "Retooled Combat Automaton",
-        "desc": "<b>Trophy of the Veridian Weapon.</b><br>By spending 1 action, can unfold and deploy a <i>combat automaton</i>, as per this legend’s action. It can act during your turn.<br><br/> <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\"><b>Combat Automaton (Size 1, 5 defense, 5 hp)</b><br><b>Summon Action:</b> Once a round, during the summoner's turn (including when summoned) the automaton can move 3 spaces, then make the following <i>attack</i>: <b>Automaton gun (free action, attack, range 4):</b> <i>On hit</i>: 5 damage. <i>Miss</i>: 2 damage.</div></div>",
+        "desc": "<b>Trophy of the Veridian Weapon.</b><br>By spending 1 action, can unfold and deploy a <i>combat automaton</i>, as per this legend’s action. It can act during your turn.<br><br/> <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\"><b>Combat Automaton (Size 1, 5 defense, 5 hp)</b><br><b>Summon Action:</b> Once a round, during the summoner's turn (including when summoned) the automaton can move 3 spaces, then make the following <i>attack</i>: <b>Automaton Gun (free action, attack, range 4):</b> <i>On hit</i>: 5 damage. <i>Miss</i>: 2 damage.</div></div>",
         "faction": ["imperial", "legend", "veridian weapon"],
         "use": [
             {"number": 3},
@@ -802,7 +802,7 @@
     },
 	{
         "name": "Empty Bone",
-        "desc": "This bone is hollow but seems bigger on the inside. Free action ability: <b>End turn.</b> Become <i>intangible</i> until the start of your next turn",
+        "desc": "This bone is hollow but seems bigger on the inside. <i>Free action</i> ability: <b>End turn.</b> Become <i>intangible</i> until the start of your next turn.",
         "faction": ["demon"],
         "use": [
             {"number": 2},
@@ -856,7 +856,7 @@
     },
 	{
         "name": "Unstable Demon Bone",
-        "desc": "This expedition only, you may teleport 2 as a <i>free action</i> ability on your turn",
+        "desc": "This expedition only, you may teleport 2 as a <i>free action</i> ability on your turn.",
         "faction": ["demon"],
         "use": [
             {"number": 1},
@@ -946,7 +946,7 @@
     },
 	{
         "name": "Pit Poison",
-        "desc": "Rub this incredible potent poison on your weapon as a <i>free action</i>. Your next attack’s damage cannot be reduced in any way (by armor, resistance, statuses, cover, etc)",
+        "desc": "Rub this incredible potent poison on your weapon as a <i>free action</i>. Your next attack’s damage cannot be reduced in any way (by armor, resistance, statuses, cover, etc).",
         "faction": ["lowlander"],
         "use": [
             {"number": 3},
@@ -1288,7 +1288,7 @@
     },
 	{
         "name": "Dread Mace",
-        "desc": "Use for <b>Obliterate:</b><br><i>2 actions, attack, range 2</i><br><b>Attack</b>: <i>On hit</i>: deal 4[D]+fray and foe must save or be stunned. <i>Miss</i>: 2[D]+fray. <i>Critical Hit</i>: Foe fails the save",
+        "desc": "Use for <b>Obliterate:</b><br><i>2 actions, attack, range 2</i><br><b>Attack</b>: <i>On hit</i>: deal 4[D]+fray and foe must save or be stunned. <i>Miss</i>: 2[D]+fray. <i>Critical Hit</i>: Foe fails the save.",
         "faction": ["general"],
         "use": [
             {"number": 1},
