@@ -30,6 +30,7 @@ export const ROUTES = {
 
     //TACTICS_GENERAL_ROUTES
     GT_GLOSSARY: '/glossary/*',
+    GT_TROPHIES: '/trophy/*',
 
     //CAMP_GENERAL_ROUTES
     GC_RULES: '/rules/*',

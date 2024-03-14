@@ -11,6 +11,7 @@ import { capitalizeTag, containsTag} from '../../utility/functions';
 
 
 import GlossaryRuleDisplay from '../itemdisplaycomponents/GlossaryRuleDisplay';
+import TrophyDisplay from '../itemdisplaycomponents/TrophyDisplay';
 
 const InfoSubset = (props: any) => {
     /**
@@ -24,6 +25,8 @@ const InfoSubset = (props: any) => {
     const proptype = props.data.type; 
     const [propvisible, changeVisible] = useState(props.data.visible);
 
+    console.log(propitems);
+
     /**
      * Opens a page based on the parameters
      * @param name The end-params for the route
@@ -34,6 +37,7 @@ const InfoSubset = (props: any) => {
   
     function returnTagCat() {
         return (
+            <div style={{width:"100%"}}>
             <div className='centerPosition'>
                 {propvisible &&
                 <div className='widthPT centerPosition topPosition'>
@@ -42,9 +46,13 @@ const InfoSubset = (props: any) => {
                             {proptype == 'glossary' &&
                             returnglossary(item)
                             }
+                            {proptype == 'trophy' &&
+                            returnTrophy(item)
+                            }
                         </div>
                         ))}
                 </div> }
+            </div>
             </div>
         )
     }
@@ -53,6 +61,14 @@ const InfoSubset = (props: any) => {
         return (
             <div className='gridItemRule' onClick={() => navClick('general/tactics/glossary/'+ item.name)} key={item.name + "rule"}  >
                 <GlossaryRuleDisplay data={item}/>
+            </div>
+        )
+    }
+
+    function returnTrophy(item: any) {
+        return (
+            <div className='gridItemRule' onClick={() => navClick('general/tactics/trophy/'+ item.name)} key={item.name + "rule"}  >
+                <TrophyDisplay data={{val:item, faction: propname}}/>
             </div>
         )
     }

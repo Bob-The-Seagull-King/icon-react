@@ -205,6 +205,9 @@ const SiteNav = (props: any) => {
                                     <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('general/tactics/glossary/')}>
                                         Glossary
                                     </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('general/tactics/trophy/')}>
+                                        Trophies
+                                    </DropdownMenu.Item>
                                 </DropdownMenu.SubContent>
                             </DropdownMenu.Portal>
                         </DropdownMenu.Sub>
