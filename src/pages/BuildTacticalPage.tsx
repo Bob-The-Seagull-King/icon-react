@@ -66,7 +66,7 @@ const BuildTacticalPage: React.FC = () => {
         if (urlSplits.length >= 4) {
             urlBuildParam = urlSplits[3];
             if (urlBuildParam.length > 0) {
-                Cookies.set('tacticsbuildparam', urlBuildParam);
+                Cookies.set('tacticsbuildparam', urlBuildParam, { expires: 365 });
                 return urlBuildParam;
             }
         }

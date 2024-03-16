@@ -43,7 +43,7 @@ const BuildNarrativePage: React.FC = () => {
         if (urlSplits.length >= 4) {
             urlBuildParam = urlSplits[3];
             if (urlBuildParam.length > 0) {
-                Cookies.set('narrativebuildparam', urlBuildParam);
+                Cookies.set('narrativebuildparam', urlBuildParam, { expires: 365 });
                 return urlBuildParam;
             }
         }
