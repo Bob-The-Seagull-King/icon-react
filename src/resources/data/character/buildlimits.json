@@ -1,0 +1,22 @@
+[
+    {
+        "name": "abilities",
+        "val": 6
+    },
+    {
+        "name": "relics",
+        "val": 3
+    },
+    {
+        "name": "jobs",
+        "val": 1
+    },
+    {
+        "name": "maxratings",
+        "val": 1
+    },
+    {
+        "name": "trophies",
+        "val": 3
+    }
+]
