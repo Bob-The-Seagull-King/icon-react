@@ -2,6 +2,7 @@ export const ROUTES = {
     //BUILD_ROUTES
     BUILD_TACTICS_ROUTE: '/build/tactics/*',
     BUILD_NARRATIVE_ROUTE: '/build/narrative/*',
+    BUILD_CHARACTER_ROUTE: '/buildcharacter/*',
 
     //PLAYER_ROUTES
     TACTICS_PLAYERS_ROUTE: '/player/tactics/*',

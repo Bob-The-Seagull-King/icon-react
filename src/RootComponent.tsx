@@ -11,6 +11,7 @@ import TacticalGeneralPage from './pages/GeneralTacticalPage'
 import NarrativePlayerPage from './pages/PlayerNarrativePage'
 import NarrativeGeneralPage from './pages/GeneralNarrativePage'
 import PlayerCharacterPage from './pages/PlayerCharacterPage'
+import BuildCharacter from './pages/BuildCharacter'
 
 import './styles/main.sass'
 import './styles/iconcomponent.scss'
@@ -25,6 +26,7 @@ const RootComponent: React.FC = () => {
             <Routes>
                 <Route path={ROUTES.BUILD_TACTICS_ROUTE} element={<BuildTacticalPage />} />
                 <Route path={ROUTES.BUILD_NARRATIVE_ROUTE} element={<BuildNarrativePage />} />
+                <Route path={ROUTES.BUILD_CHARACTER_ROUTE} element={<BuildCharacter />} />
                 <Route path={ROUTES.TACTICS_PLAYERS_ROUTE} element={<TacticsPlayerPage/>} />
                 <Route path={ROUTES.NARRATIVE_PLAYERS_ROUTE} element={<NarrativePlayerPage/>} />
                 <Route path={ROUTES.NARRATIVE_GENERAL_ROUTE} element={<NarrativeGeneralPage/>} />

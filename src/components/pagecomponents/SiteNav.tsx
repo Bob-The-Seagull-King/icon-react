@@ -88,11 +88,8 @@ const SiteNav = (props: any) => {
                 </div>
                 <DropdownMenu.Portal>
                     <DropdownMenu.Content className="DropdownMenuContent" sideOffset={5}>
-                        <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('build/tactics/')}>
-                            Tactical
-                        </DropdownMenu.Item>
-                        <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('build/narrative/')}>
-                            Narrative
+                        <DropdownMenu.Item className="DropdownMenuItem"  onClick={() => navClick('buildcharacter/')}>
+                            New Character
                         </DropdownMenu.Item>
                     </DropdownMenu.Content>
                 </DropdownMenu.Portal>
