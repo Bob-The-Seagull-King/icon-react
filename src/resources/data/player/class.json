@@ -6,7 +6,7 @@
             "strengths": "Tough, good at punishing foes, protecting allies, and controlling the battlefield.",
             "weaknesses": "Lower mobility and weak to ranged attackers.",
             "complexity": "Low",
-            "description": "Stalwarts are <b>tough and vigorous warriors</b>, with heavy armor and abilities that let them stand their ground, protect their allies, and control space. They largely eschew the use of ranged attacks but are mythic soldiers and gods of the battlefield, able to perform incredible feats of physical prowess and resilience. <br/><br/>Stalwarts boast <b>Slashed</b> and <b>Weakened</b>, which allow them to slow down speedy foes and lower their damage, and have acces to <b>Rampart</b> and <b>Vigilance</b>, which makes it much more risky for characters to move around them. They also easily gain <b>Sturdy</b>, making them resistance to being moved, and can in turn <b>Shove</b> their foes, knocking them around the battlefield. <br/><br/>Stalwarts are <b>strong</b> again <i>skirmisher</i> foes and <b>weaker</b> against <i>artillery</i> foes."
+            "description": "Stalwarts are <b>tough and vigorous warriors</b>, with heavy armor and abilities that let them stand their ground, protect their allies, and control space. They largely eschew the use of ranged attacks but are mythic soldiers and gods of the battlefield, able to perform incredible feats of physical prowess and resilience. <br/><br/>Stalwarts boast {{{{Slashed}}}} and {{{{Weakened}}}}, which allow them to slow down speedy foes and lower their damage, and have access to {{{{Rampart}}}} and {{{{Vigilance}}}}, which makes it much more risky for characters to move around them. They also easily gain {{{{Sturdy}}}}, making them resistant to being moved, and can in turn {{{{Shove}}}} their foes, knocking them around the battlefield. <br/><br/>Stalwarts are <b>strong</b> against <i>skirmisher</i> foes and <b>weaker</b> against <i>artillery</i> foes."
         },
         "stats": {
             "vitality": 10,
@@ -19,21 +19,21 @@
         },
         "mechanic": {
             "name": "Heroics",
-            "description": "Stalwarts can push themselves beyond their normal limits, performing <b>heroics</b> and activaitng any <b>heroic</b> triggered effects of an ability. Each job has different ways of performing heroics.",
+            "description": "Stalwarts can push themselves beyond their normal limits, performing <b>heroics</b> and activating any <b>heroic</b> triggered effects of an ability. Each job has different ways of performing heroics.",
             "gambit": "If you take a Stalwart ability as a non-Stalwart class, you get Heroics, and the ability to trigger a Heroic ability for free once a combat."
         },
         "traits": [
             {
                 "name": "Armor 2",
-                "desc": "Reduce all damage taken by 2"
+                "desc": "Reduce all damage taken by 2."
             },
             {
                 "name": "Fortify",
-                "desc": "Spaces adjacent to you have <i>Rampart</i>. Gain <i>Vigilance</i> +1 at the end of your turn."
+                "desc": "Spaces adjacent to you have {{{{Rampart}}}}. Gain {{{{Vigilance}}}} +1 at the end of your turn."
             },
             {
                 "name": "Rush X",
-                "desc": "Stalwarts can <i>rush</i> as part of their abilities. When you rush, you move X spaces and are <i>unstoppable</i> and <i>immune</i> to all damage during that move."
+                "desc": "Stalwarts can {{{{Rush}}}} as part of their abilities. When you rush, you move X spaces and are {{{{Unstoppable}}}} and {{{{Immune}}}} to all damage during that move."
             }
         ],
         "jobs": [
