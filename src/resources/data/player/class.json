@@ -41,23 +41,23 @@
                 "name": "Bastion",
                 "tagline": "Unbreakable Knight",
                 "description": "The Bastions are the shield lords of Arden Eld, larger than life figures that tread the ancient imperial roads with their heads held high and armor gleaming. From town to town they act as errant knights and mercenaries, protecting the weak and vulnerable, and driving back the Blights with hammer-like blows from their greatshields, which they throw like a discus with incredible force. The imperious and mighty presence of a Bastion in town is a stabilizing force and can become an event for a whole village. All Bastions follow an ancient and long-forgotten hero’s code, an old oath to stand against chaos in all its forms.",
-                "playstyle": "Bastions are powerful knights and tacticians and focus on <b>shoving</b> their enemies and moving their allies into position with thier <i>Press the Advantage</i> trait. Almost everything they do changes the shape of the battlefield in some way, and they get extra benefits for smashing foes into obstacles or other characters wiht <b>collide</b>. They benefit from good positioning, since shoves typically have to be away from you.<br/><br/>Bastions also have a fair number of <b>interrupts</b> and can react off their turn to enemy actions, and also benefit from <b>auras</b>.<br/><br/>Their Limit Break, <b>Helion</b>, is relatively cheap, but can rearrange everyone's position and can potentially stun and daze a huge number of foes.",
+                "playstyle": "Bastions are powerful knights and tacticians and focus on <b>shoving</b> their enemies and moving their allies into position with their <i>Press the Advantage</i> trait. Almost everything they do changes the shape of the battlefield in some way, and they get extra benefits for smashing foes into obstacles or other characters with {{{{collide}}}}. They benefit from good positioning, since shoves typically have to be away from you.<br/><br/>Bastions also have a fair number of <b>interrupts</b> and can react off their turn to enemy actions, and also benefit from <b>auras</b>.<br/><br/>Their Limit Break, <b>Helion</b>, is relatively cheap, but can rearrange everyone's position and can potentially stun and daze a huge number of foes.",
                 "traits": [
                     {
                         "name": "Strive",
-                        "desc": "You may cause any ability to trigger its heroic effects when you use it, and increase the distance of any shoves by +1. If you do, after that ability resolves, you can’t use heroics until the end of your next turn, and deal half damage during that turn"
+                        "desc": "You may cause any ability to trigger its heroic effects when you use it, and increase the distance of any shoves by +1. If you do, after that ability resolves, you can’t use heroics until the end of your next turn, and deal half damage during that turn."
                     },
                     {
                         "name": "Press the Advantage",
-                        "desc": "Once a round, when you shove a character, you and an ally of your choice anywhere can each rush 1"
+                        "desc": "Once a round, when you shove a character, you and an ally of your choice anywhere can each {{{{rush}}}} 1."
                     },
                     {
                         "name": "Bull’s Strength",
-                        "desc": "All your abilities gain collide: deal 2 damage. Characters can’t take this damage more than once a turn."
+                        "desc": "All your abilities gain {{{{collide}}}}: deal 2 damage. Characters can’t take this damage more than once a turn."
                     },
                     {
                         "name": "Shieldmaster",
-                        "desc": " You have aura 1. If you end your turn with an ally in the aura, gain vigilance +1 and become sturdy until the start of your turn."
+                        "desc": " You have {{{{aura}}}} 1. If you end your turn with an ally in the aura, gain {{{{vigilance}}}} +1 and become {{{{sturdy}}}} until the start of your turn."
                     }
                 ],
                 "limitbreak": {
@@ -77,18 +77,18 @@
                     "name" : "Black Rock Vanguard",
                     "tags":[
                     ],
-                    "description": "You can take any number of interrupts per turn. When you take an interrupt, you may <i>rush 1</i> after it resolves."
+                    "description": "You can take any number of interrupts per turn. When you take an interrupt, you may {{{{rush}}}} 1 after it resolves."
                 }
             },
             {
                 "name": "Demon Slayer",
                 "tagline": "Master of the Forbidden Arts",
                 "description": "Warriors of impossible strength and insane bravado, demon slayers are warriors that specialize in fighting the largest and most dangerous monsters to crawl out of the pits that riddle the land. They relish in fighting against impossible odds, training themselves in forbidden techniques, arcane arts, and oversized weaponry that normal Kin would quake at wielding. They organize themselves into loose orders and train and hunt together, sharing tales and trophies of the colossal horrors they have slain. Some say in order to fight their quarries, the slayers must ingest demon blood to gain their strength, giving them dark and forbidden power that makes other Kin fear and respect them in equal measure.",
-                "playstyle": "Demon Slayers are mobile, heavy hitting stalwarts that use their powerful traits to get a lot out of <b>slow turns</b> and <b>charge effects</b>.<br/><br/> Their <i>Hissatsu</i> trait powers up Demon Slayers when spending a turn not attacking and focusing their strength, like a quick-draw samurai or someone winding upa  huge blow with an oversized weapon. Therefore they benefit from <b>attacking every other turn</b>, and waiting to strike, giving them a slow but realiable tempo. While waiting to act, they automatically become <b>sturdy</b>, making them very hard to displace.<br/><br/>Their Limit Break, <b>Split Heaven and Hell</b>, is a very powerful AoE slice that is relatively easy to avoid for foes without assistance from your allies, but can be held and even canceled.",
+                "playstyle": "Demon Slayers are mobile, heavy hitting stalwarts that use their powerful traits to get a lot out of {{{{slow turn}}}}s and {{{{charge}}}} <b>effects</b>.<br/><br/> Their <i>Hissatsu</i> trait powers up Demon Slayers when spending a turn not attacking and focusing their strength, like a quick-draw samurai or someone winding up a huge blow with an oversized weapon. Therefore they benefit from <b>attacking every other turn</b>, and waiting to strike, giving them a slow but realiable tempo. While waiting to act, they automatically become {{{{sturdy}}}}, making them very hard to displace.<br/><br/>Their Limit Break, <b>Split Heaven and Hell</b>, is a very powerful AoE slice that is relatively easy to avoid for foes without assistance from your allies, but can be held and even canceled.",
                 "traits": [
                     {
                         "name": "Demon Edge",
-                        "desc": "If you elect to take a slow turn or use a delay effect, gain <i>vigilance +1</i>, and all your abilities deal <i>bonus damage</i> and gain <i>true strike</i> until the end of your next turn."
+                        "desc": "If you elect to take a {{{{slow turn}}}} or use a {{{{delay}}}} effect, gain {{{{vigilance}}}} +1, and all your abilities deal {{{{bonus damage}}}} and gain {{{{true strike}}}} until the end of your next turn."
                     },
                     {
                         "name": "Demon Strength",
@@ -96,17 +96,17 @@
                     },
                     {
                         "name": "Hissatsu",
-                        "desc": "If you don't attack during your turn, your next attack ability gains +1 boon, <i>true strike</i>, and upgrades its damage die to <i>d10</i>. This effect ends after you hit with an attack."
+                        "desc": "If you don't attack during your turn, your next attack ability gains +1 boon, {{{{true strike}}}}, and upgrades its damage die to <i>d10</i>. This effect ends after you hit with an attack."
                     },
                     {
                         "name": "True Horn",
-                        "desc": "You are <i>sturdy</i> from the start of each round until the start of your turn."
+                        "desc": "You are {{{{sturdy}}}} from the start of each round until the start of your turn."
                     }
                 ],
                 "limitbreak": {
                     "name": "Split Heaven and Hell",
                     "blurb":"Sever Divinity and cut through the threads of possibility. Pour all your rage into one blow and topple the Gods.",
-                    "description": "<b>End your turn,</b> and start charging up a god cutting blow. <b>Delay:</b> Your next turn must be slow. At the start of that turn, you may take one of the following options. <ul><li><b>Sever Divine Thread:</b> Swing your weapon a line 5 <b>area effect</b> drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their distance on the line from you. <ul><li><b>1 space:</b> 100% of max hp</li><li><b>2-4 space:</b> 50% of max hp</li><li><b>5+ spaces:</b> 25% of max HP</li></ul></li><li><b>Divine Cancel:</b> You may cancel this ability, refunding the resolve cost, and <i>rush 1</i>. You can limit break again this combat, but not this turn.</li><li><b>Divine Delay:</b> You continue to hold this baility. Your next turn must be slow and repeat this delay effect. Each time you do this, increase the width of the line by 1 space, to a maximum of 3 width, and its length by 3 spaces. You cannot attack while holding Divine Delay.</li></ul> Legend characters always take 25% of max hp from this ability instead of other effects.",
+                    "description": "{{{{End Turn}}}}: <b>End your turn,</b> and start charging up a god cutting blow. {{{{Delay}}}}: Your next turn must be slow. At the start of that turn, you may take one of the following options. <ul><li><b>Sever Divine Thread:</b> Swing your weapon a line 5 {{{{area effect}}}} drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their distance on the line from you. <ul><li><b>1 space:</b> 100% of max hp</li><li><b>2-4 space:</b> 50% of max hp</li><li><b>5+ spaces:</b> 25% of max HP</li></ul></li><li><b>Divine Cancel:</b> You may cancel this ability, refunding the resolve cost, and {{{{rush}}}} 1. You can limit break again this combat, but not this turn.</li><li><b>Divine Delay:</b> You continue to hold this ability. Your next turn must be slow and repeat this delay effect. Each time you do this, increase the width of the line by 1 space, to a maximum of 3 width, and its length by 3 spaces. You cannot attack while holding Divine Delay.</li></ul> Legend characters always take 25% of max hp from this ability instead of other effects.",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
                         {"tag_name": "action", "val": 1}, 
@@ -117,43 +117,43 @@
                     ],
                     "ultimate":{
                         "name": "God Waster",
-                        "desc": "While holding a God Cutting Blow, you can <i>rush 2</i> at the start or end of any other turn thatn yours, but no more than twice a round."
+                        "desc": "While holding a God Cutting Blow, you can {{{{rush}}}} 2 at the start or end of any other turn than yours, but no more than twice a round."
                     }
                 },
                 "ultimatetrait":{
                     "name" : "Rangiri",
                     "tags":[
                     ],
-                    "description": "If you trigger Hissatsu twice in a row, your attack ability becomes upgraded further. The entire ability now deals <i>double damage</i>. Roll and determine all damage on the atatcker's end when making it, then double the total before applying it."
+                    "description": "If you trigger Hissatsu twice in a row, your attack ability becomes upgraded further. The entire ability now deals <i>double damage</i>. Roll and determine all damage on the attacker's end when making it, then double the total before applying it."
                 }
             },
             {
                 "name": "Colossus",
                 "tagline": "High Flying Grappler",
                 "description": "Ferocious followers of Arenheir, the Wolf Titan, the Colossi are a martial order of berserkers, pankrationists, and warriors that reaches across all of Arden Eld. They travel throughout the land seeking powerful foes, and taking trophies to return to their great lodges to offer in tribute to Arenheir in fierce hope of resurrecting their god. At their lodges they feast and drink to their deeds, companions, and boasts. <br/><br/>Colossi seek glory and challenge through battle, and will often go for only the absolute strongest warriors and monsters, heedless of their own safety. They fight with wild abandon and unconventional techniques that would make even the dirtiest Knave raise an eyebrow.",
-                "playstyle": "Colossi are hard-hitting grapplers and wrestlers that ride the knife's edge to inflict maximum pain on their foes. They have unique access to <b>fly</b>, allowing them to vault up higher elevation and move aorund, and they get extra benefits such as <b>exceed</b> for launching themselves off <b>higher terrain</b>.<br/><br/>The lower colossi's health is, the string they become, and they benefit from many <b>comeback</b> effects. At very low health, they gain <b>regeneration</b> and they can become absolute monsters at 1 hp. They can spend their own health to power up their abilities, but risk sending themselves into too vulnerable a state.<br/><br/>Their Limit Break, <b>Gigantas Crusher</b>, is a massive grab that can instantly destroy high value targets, such as elites, or deliver the killing blow to a legend. Since it does % based damage, it is an excellent finishing move.",
+                "playstyle": "Colossi are hard-hitting grapplers and wrestlers that ride the knife's edge to inflict maximum pain on their foes. They have unique access to {{{{fly}}}}, allowing them to vault up higher elevation and move aorund, and they get extra benefits such as {{{{exceed}}}} for launching themselves off <b>higher terrain</b>.<br/><br/>The lower colossi's health is, the stronger they become, and they benefit from many {{{{comeback}}}} effects. At very low health, they gain {{{{regeneration}}}} and they can become absolute monsters at 1 hp. They can spend their own health to power up their abilities, but risk sending themselves into too vulnerable a state.<br/><br/>Their Limit Break, <b>Gigantas Crusher</b>, is a massive grab that can instantly destroy high value targets, such as elites, or deliver the killing blow to a legend. Since it does % based damage, it is an excellent finishing move.",
                 "traits": [
                     {
                         "name": "Furious Berserk",
-                        "desc": "You go into a furious blood rage as you take damage, giving you the following benefits: <ul><li>You start combat with <i>defiance</i></li><li>You have <i>regeneration</i>, and regain regeneration if defeated and rescued.</li><li>While you're <i>bloodied</i>, you are <i>sturdy</i>, and gain <i>vigilance +1</i> at the end of your turn.</li></ul>"
+                        "desc": "You go into a furious blood rage as you take damage, giving you the following benefits: <ul><li>You start combat with {{{{defiance}}}}.</li><li>You have {{{{regeneration}}}}, and regain regeneration if defeated and rescued.</li><li>While you're {{{{bloodied}}}}, you are {{{{sturdy}}}}, and gain {{{{vigilance}}}} +1 at the end of your turn.</li></ul>"
                     },
                     {
                         "name": "Wolfheart",
-                        "desc": "Once a round, you may <i>sacrifice 25%</i> of your max hp to make an ability <i>Heroic</i> and increase the distance of any flight, rush, or dash as part of that move by +1."
+                        "desc": "Once a round, you may {{{{sacrifice}}}} 25% of your max hp to make an ability <i>Heroic</i> and increase the distance of any {{{{flying}}}}, {{{{rush}}}}, or {{{{dash}}}} as part of that move by +1."
                     },
                     {
                         "name": "Pulverize",
-                        "desc": "When you start an attack ability on higher elevation than your target, it deals bonus damage. If you are two or more levels higher, it also triggers all <i>exceed</i> effects."
+                        "desc": "When you start an attack ability on higher elevation than your target, it deals {{{{bonus damage}}}}. If you are two or more levels higher, it also triggers all {{{{exceed}}}} effects."
                     },
                     {
                         "name": "Great Leap",
-                        "desc": "When you would end any movement on a lower elevation than you started, you may gain <i>flying</i> for the duraction of that movement."
+                        "desc": "When you would end any movement on a lower elevation than you started, you may gain {{{{flying}}}} for the duration of that movement."
                     }
                 ],
                 "limitbreak": {
                     "name": "Gigantas Crusher",
                     "blurb":"Wrestle with the gods themselves",
-                    "description": "<b>Effect:</b> You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character's turn, you come spinning back to earth, slamming that character into the battlefield in an unoccupied space in range 2 of your original location. <br/>You <i>sacrifice</i> 25% of your hp. Your foe take 50% of their max hp as <i>divine</i> damage, or 25% as <i>divine</i> damage on a successful save. Ten place both of you back in or adjacent to that space. <br/> This ability can be used against Legends, but they may always save, taking <i>divine</i> fray damage on refunding this ability's resolve cost on asuccessful save, and only 25% hp as <i>divine</i> damage on a failed save.",
+                    "description": "<b>Effect:</b> You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character's turn, you come spinning back to earth, slamming that character into the battlefield in an unoccupied space in range 2 of your original location. <br/>You {{{{sacrifice}}}} 25% of your hp. Your foe takes 50% of their max hp as {{{{divine}}}} damage, or 25% as {{{{divine}}}} damage on a successful save. Then place both of you back in or adjacent to that space. <br/> This ability can be used against Legends, but they may always save, taking {{{{divine}}}} fray damage on refunding this ability's resolve cost on asuccessful save, and only 25% hp as {{{{divine}}}} damage on a failed save.",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
                         {"tag_name": "action", "val": 2},
@@ -169,50 +169,50 @@
                     "name" : "Unbreakable",
                     "tags":[
                     ],
-                    "description": "If defeated, you can <i>rescue</i> yourself and take a turn as normal. This doesn't take an action and takes place at the start of your turn. In addition, after being rescued in any way, including as part of this trait, you can <i>rush 1</i> and deal 2 damage to all adjacent characters."
+                    "description": "If defeated, you can <i>rescue</i> yourself and take a turn as normal. This doesn't take an action and takes place at the start of your turn. In addition, after being rescued in any way, including as part of this trait, you can {{{{rush}}}} 1 and deal 2 damage to all adjacent characters."
                 }
             },
             {
                 "name": "Knave",
                 "tagline": "Absolute Bastard",
                 "description": "The advent of the Churning Age has coincided with the rise of a certain class of person with heavy pockets and a long list of ‘problems’ to solve. The Knaves are the solution. Hedge knights, rogue warriors, duelists, deserters, and veterans, they roam the land offering their services to whoever has the dust to spare. Though some of them are altruistically minded, they tend to go where the work, food, and fighting is thickest, and never stay for long in one location. <br/><br/> Knaves operate under a loose moral code and an even looser no-holds-barred fighting style, using hilts, head butts, and gauntleted fists to inflict pain, punishment, and humiliation on their opponents in equal measure. These braggadocios warriors spare no effort in flexing their incredible strength - if the price is right. For a freshly roasted chicken, a pocket full of dust, and a polish of their boots, they’ll do just about anything.",
-                "playstyle": "Knaves are dark knights, mercenaries, and dirty fighters that have the easiest access to the very powerful <b>hatred</b> condition. They have numerous ways to punish foes that take the bait, such as <b>counter</b> and a suite of nasty <b>interrupts</b>. They becomes stronger the more foes are aroudn them and love being surrounded.<br/><br/>Knaves become more powerful when they are <b>suffering statuses</b>, and even have ways to inflict statuses on themselves, which they can then ignore by becoming <b>unstoppable</b>. They also have the unique ability to take two <b>stances</b> at once, allowing them to stack very powerful effects. <br/><br/> Knave's limit break, <b>Mock</b>, is a strong single target debuff, and makes it very hard for a foe to do anything but stand and focus on you.",
+                "playstyle": "Knaves are dark knights, mercenaries, and dirty fighters that have the easiest access to the very powerful {{{{hatred}}}} condition. They have numerous ways to punish foes that take the bait, such as {{{{counter}}}} and a suite of nasty <b>interrupts</b>. They becomes stronger the more foes are around them and love being surrounded.<br/><br/>Knaves become more powerful when they are <b>suffering statuses</b>, and even have ways to inflict statuses on themselves, which they can then ignore by becoming {{{{unstoppable}}}}. They also have the unique ability to take two {{{{stance}}}}s at once, allowing them to stack very powerful effects. <br/><br/> Knave's limit break, <b>Mock</b>, is a strong single target debuff, and makes it very hard for a foe to do anything but stand and focus on you.",
                 "traits": [
                     {
                         "name": "Martial Master",
-                        "desc": "You can take two stances at once."
+                        "desc": "You can take two {{{{stance}}}}s at once."
                     },
                     {
                         "name": "Blackheart",
-                        "desc": "While you're suffering from a status, gain <i>vigilance +1</i> at the end of your turn. If you are suffering from two or more, also deal <i>bonus damage</i> with all abilities."
+                        "desc": "While you're suffering from a status, gain {{{{vigilance}}}} +1 at the end of your turn. If you are suffering from two or more, also deal {{{{bonus damage}}}} with all abilities."
                     },
                     {
                         "name": "Taunt (1 action)",
-                        "desc": "A foe in range 3 gains <i>hatred</i> of you."
+                        "desc": "A foe in range 3 gains {{{{hatred}}}} of you."
                     },
                     {
                         "name": "Spite",
-                        "desc": "You can choose to use the Heroic effects of any ability when you use it. However, after it resolves, gain <i>Hatred+</i> of the closest foe to you until the end of your next turn and you can't use Heroics again for the same duraction. If multiple foes are equidistant, you can choose."
+                        "desc": "You can choose to use the Heroic effects of any ability when you use it. However, after it resolves, gain {{{{Hatred}}}}{{{{+}}}} of the closest foe to you until the end of your next turn and you can't use Heroics again for the same duraction. If multiple foes are equidistant, you can choose."
                     }
                 ],
                 "limitbreak": {
                     "name": "Mock",
                     "blurb":"There is no weapon greater than a well-timed and well-aimed insult.",
-                    "description": "<b>Effect:</b> A foe in range 3 becomes <i>slashed+, weakened+,</i>, cannot gain or benefit from <i>evasion, dodge,</i> or <i>stealth</i>, and gains <i>hatred+</i> of you. These effects continue until the end of their next turn. <br/><br/> <b>Special:</b> On elite and legend foes, this ability lasts two turns instead.",
+                    "description": "<b>Effect:</b> A foe in range 3 becomes {{{{slashed}}}}{{{{+}}}}, {{{{weakened}}}}{{{{+}}}}, cannot gain or benefit from {{{{evasion}}}}, {{{{dodge}}}}, or {{{{stealth}}}}, and gains {{{{Hatred}}}}{{{{+}}}} of you. These effects continue until the end of their next turn. <br/><br/> <b>Special:</b> On elite and legend foes, this ability lasts two turns instead.",
                     "tags":[
                         {"tag_name": "resolve", "val": 2}, 
                         {"tag_name": "action", "val": 1} 
                     ],
                     "ultimate":{
                         "name": "Dread Mock",
-                        "desc": "Gains range 5 and also deals <i>divine</i> fray damage to your foe."
+                        "desc": "Gains range 5 and also deals {{{{divine}}}} fray damage to your foe."
                     }
                 },
                 "ultimatetrait":{
                     "name" : "Way of the Crow",
                     "tags":[
                     ],
-                    "description": "If any ally is <i>defeated</i>, <i>cure</i> yourself and become <i>unstoppable</i> until the end of your next turn."
+                    "description": "If any ally is <i>defeated</i>, {{{{cure}}}} yourself and become {{{{unstoppable}}}} until the end of your next turn."
                 }
             }
         ]
