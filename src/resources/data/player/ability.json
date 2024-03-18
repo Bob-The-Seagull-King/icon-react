@@ -8,10 +8,10 @@
         ],
         "description": "Move your speed.",
         "blurb": "Move!",
-        "talent1": null,
-        "talent2": null,
-        "masteryname": null,
-        "masterdescription": null
+        "talent1": "NA",
+        "talent2": "NA",
+        "masteryname": "NA",
+        "masterdescription": "NA"
     },
     {
         "job": "Bastion",
@@ -22,10 +22,10 @@
         ],
         "description": "{{{{Dash}}}} half your speed, rounded up.",
         "blurb": "Dash!",
-        "talent1": null,
-        "talent2": null,
-        "masteryname": null,
-        "masterdescription": null
+        "talent1": "NA",
+        "talent2": "NA",
+        "masteryname": "NA",
+        "masterdescription": "NA"
     },
     {
         "job": "Bastion",
@@ -36,10 +36,10 @@
         ],
         "description": "Interact with something on the map that takes more than a few moments, such as pulling a lever, opening a heavy door, picking up a heavy object, etc.",
         "blurb": "Interact!",
-        "talent1": null,
-        "talent2": null,
-        "masteryname": null,
-        "masterdescription": null
+        "talent1": "NA",
+        "talent2": "NA",
+        "masteryname": "NA",
+        "masterdescription": "NA"
     },
     {
         "job": "Bastion",
@@ -50,10 +50,10 @@
         ],
         "description": "<i>Rescue</i> an adjacent {{{{defeated}}}} ally. An ally that is rescued ends the {{{{incapacitated}}}} state on themselves and heals to full hit points, minus any wounds they’ve taken.",
         "blurb": "Don't give up, skeleton!",
-        "talent1": null,
-        "talent2": null,
-        "masteryname": null,
-        "masterdescription": null
+        "talent1": "NA",
+        "talent2": "NA",
+        "masteryname": "NA",
+        "masterdescription": "NA"
     },
     {
         "job": "Bastion",
@@ -64,10 +64,10 @@
         ],
         "description": "Make an attack roll. <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray}}}}",
         "blurb": "Attack!",
-        "talent1": null,
-        "talent2": null,
-        "masteryname": null,
-        "masterdescription": null
+        "talent1": "NA",
+        "talent2": "NA",
+        "masteryname": "NA",
+        "masterdescription": "NA"
     },
     {
         "job": "Bastion",
@@ -78,10 +78,10 @@
         ],
         "description": "Make an attack roll. <i>On hit</i>: 2{{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray}}}}",
         "blurb": "Attack!!",
-        "talent1": null,
-        "talent2": null,
-        "masteryname": null,
-        "masterdescription": null
+        "talent1": "NA",
+        "talent2": "NA",
+        "masteryname": "NA",
+        "masterdescription": "NA"
     },
     {
         "job": "Bastion",
@@ -92,10 +92,10 @@
         ],
         "description": "{{{{Cure}}}} yourself. When a character is cured, they gain 4 vigor, or if they are bloodied, they gain a vigor surge. Then they may save against all statuses, ending them on a success.",
         "blurb": "Recover!",
-        "talent1": null,
-        "talent2": null,
-        "masteryname": null,
-        "masterdescription": null
+        "talent1": "NA",
+        "talent2": "NA",
+        "masteryname": "NA",
+        "masterdescription": "NA"
     },
     {
         "job": "Bastion",
