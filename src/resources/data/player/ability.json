@@ -1,5 +1,103 @@
 [
     {
+        "job": "Basic Ability",
+        "name": "Standard Move",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 0}
+        ],
+        "description": "Move your speed.",
+        "blurb": "Move!",
+        "talent1":"",
+        "talent2":"",
+        "masteryname": "",
+        "masterdescription":""
+    },
+    {
+        "job": "Basic Ability",
+        "name": "Dash",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "{{{{Dash}}}} half your speed, rounded up.",
+        "blurb": "Dash!",
+        "talent1":"",
+        "talent2":"",
+        "masteryname": "",
+        "masterdescription":""
+    },
+    {
+        "job": "Basic Ability",
+        "name": "Interact",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "Interact with something on the map that takes more than a few moments, such as pulling a lever, opening a heavy door, picking up a heavy object, etc.",
+        "blurb": "Interact!",
+        "talent1":"",
+        "talent2":"",
+        "masteryname": "",
+        "masterdescription":""
+    },
+    {
+        "job": "Basic Ability",
+        "name": "Rescue",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "<i>Rescue</i> an adjacent {{{{defeated}}}} ally. An ally that is rescued ends the {{{{incapacitated}}}} state on themselves and heals to full hit points, minus any wounds they’ve taken.",
+        "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
+        "talent1":"Heracule’s shoves can be in any direction",
+        "talent2":"Heracule’s second effect triggers +1 more time.",
+        "masteryname": "PERFECT HERACULE",
+        "masterdescription":"Heracule gains <i>rebound</i>, and its second effect triggers +1 more time."
+    },
+    {
+        "job": "Basic Ability",
+        "name": "Light Attack",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "Make an attack roll. <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray}}}}",
+        "blurb": "",
+        "talent1":"",
+        "talent2":"",
+        "masteryname": "",
+        "masterdescription":""
+    },
+    {
+        "job": "Basic Ability",
+        "name": "Heavy Attack",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2}
+        ],
+        "description": "Make an attack roll. <i>On hit</i>: 2{{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray}}}}",
+        "blurb": "Attack!!",
+        "talent1":"",
+        "talent2":"",
+        "masteryname": "",
+        "masterdescription":""
+    },
+    {
+        "job": "Basic Ability",
+        "name": "Recover",
+        "chapter": 1,
+        "tags":[
+            {"tag_name": "action", "val": 2}
+        ],
+        "description": "{{{{Cure}}}} yourself. When a character is cured, they gain 4 vigor, or if they are bloodied, they gain a vigor surge. Then they may save against all statuses, ending them on a success.",
+        "blurb": "Don't give up, skeleton!",
+        "talent1":"",
+        "talent2":"",
+        "masteryname": "",
+        "masterdescription":""
+    },
+    {
         "job": "Bastion",
         "name": "Heracule",
         "chapter": 1,
