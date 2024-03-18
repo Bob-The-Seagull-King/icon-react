@@ -1,11 +1,13 @@
 import React from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
+import {convertStringToContent} from '../../utility/util';
 import '../../styles/iconcomponent.scss';
 
 import addonData from '../../resources/data/player/abilityaddon.json';
 import AddonDisplay from '../itemdisplaysubcomponents/AddonDisplay'
 import summonData from '../../resources/data/player/summon.json';
 import SummonDisplay from '../itemdisplaycomponents/SummonDisplay'
+import GlossaryPopup from '../../components/pagecomponents/GlossaryPopup';
 
 const AbilityDisplay = (props: any) => {
     /**
@@ -142,13 +144,18 @@ const AbilityDisplay = (props: any) => {
     }
     // ---------------------------------------------
 
+
     // Return result -------------------------------
     return (
         <div className='abilityStructure'>
             <h1 className={'titleShape title'+getColour(abilityData.job)}>{abilityData.name}</h1>
             <p>{tagsArray}</p>
             <p><i>{abilityData.blurb}</i></p>
-            <div><p dangerouslySetInnerHTML={{__html: (abilityData.description || '')}}></p></div>
+            <div>
+                <p>
+                    {convertStringToContent(abilityData.description)}
+                </p>
+            </div>
             <div>
                 {abilityAddonArray.map((item) => (
                 <div key={item.name} className='abilityAddonPosition'>
@@ -165,15 +172,18 @@ const AbilityDisplay = (props: any) => {
             </div>
             {(isNotTrait == true)&& <span>
                 {(talents == 1 || talents == 3) &&
-                <p><b>I.</b>   <span dangerouslySetInnerHTML={{__html: (abilityData.talent1 || '')}}></span></p>
+                <p><b>I.</b>   
+                    <span>{convertStringToContent(abilityData.talent1)}</span></p>
                 }
                 {(talents == 2 || talents == 3) &&
-                <p><b>II.</b>  <span dangerouslySetInnerHTML={{__html: (abilityData.talent2 || '')}}></span></p>
+                <p><b>II.</b>  
+                    <span>{convertStringToContent(abilityData.talent2)}</span></p>
                 }
                 {(mastery == true) &&
                 <span>
                     <h2>Mastery: {capitalizeTag(abilityData.masteryname)}</h2>
-                    <div><p dangerouslySetInnerHTML={{__html: (abilityData.masterdescription || '')}}></p></div>
+                    <div>
+                        <p>{convertStringToContent(abilityData.masterdescription)}</p></div>
                     <div>
                         {masteryAddonArray.map((item) => (
                         <div key={item.name}  className='abilityAddonPosition' >

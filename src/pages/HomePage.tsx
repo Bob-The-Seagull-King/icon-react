@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
 
     // Return result -----------------------------
     return (
-        <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginTop: '-4em'}}>
+        <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', marginTop: '-2em'}}>
             <h1><span className='hometitle'>ICON</span><span className='homesubtitle'>PENDIUM</span></h1>
 
             <div className='homeParagraphStructure'>

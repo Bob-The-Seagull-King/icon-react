@@ -9,7 +9,7 @@
             {"tag_name": "range", "val": 3},
             {"tag_name": "true strike"}
         ],
-        "description": "<b>Attack:</b> <i>On hit:</i> [D] + fray. Miss: fray.<br><b>Effect:</b> Attack target is weakened and shoved 1<br> <b>Effect:</b> A different foe in range 3 from your target is shoved 1 away from your main target.<br><b>Collide or Heroic:</b> Repeat the above effect.",
+        "description": "<b>Attack:</b> <i>On hit:</i> {{{{[D]}}}} + fray. Miss: fray.<br><b>Effect:</b> Attack target is weakened and shoved 1<br> <b>Effect:</b> A different foe in range 3 from your target is shoved 1 away from your main target.<br><b>Collide or Heroic:</b> Repeat the above effect.",
         "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
         "talent1":"Heracule’s shoves can be in any direction",
         "talent2":"Heracule’s second effect triggers +1 more time.",
@@ -39,7 +39,7 @@
 			{"tag_name": "attack"},
             {"tag_name": "burst-target", "val": 1}			
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Area effect</b>: Foes take fray damage.<br><b>Effect</b>: Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1.<br><b>Heroic</b>: Gains <i>True Strike</i> and becomes Burst 2 (target).",
+        "description": "<b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>{{{{Area effect}}}}</b>: Foes take fray damage.<br><b>Effect</b>: Shove all characters in the area except you 1 space away from your attack target, then, shove your target 1.<br><b>Heroic</b>: Gains <i>True Strike</i> and becomes Burst 2 (target).",
         "blurb": "Crash your greatshield or weapon into the earth, sending up devastating shockwaves.",
         "talent1": "If Land Waster’s effect shockwave shoves 3 or more foes or allies, it shoves +1 and <i>stuns</i> your target.",
         "talent2": "If Land Waster’s effect shockwave shoves 2 or more foes or allies, <i>cure</i> yourself.",
@@ -98,10 +98,10 @@
             {"tag_name": "interrupt", "val": 2},
             {"tag_name": "aura"}			
         ],
-        "description": "<b>Trigger</b>: You are included in an allied <i>area effect</i>.<br><b>Effect</b>: You release an aura 1 effect centered on you that lasts for the duration of the triggering ability, extending the area effect to encompass the aura. You can choose to be immune to any part of the triggering ability.<br><b>Heroic</b>: Increase the aura size by +1.",
+        "description": "<b>Trigger</b>: You are included in an allied <i>{{{{Area effect}}}}</i>.<br><b>Effect</b>: You release an aura 1 effect centered on you that lasts for the duration of the triggering ability, extending the {{{{Area effect}}}} to encompass the aura. You can choose to be immune to any part of the triggering ability.<br><b>Heroic</b>: Increase the aura size by +1.",
         "blurb": "Your armor and shield become a mirror, channeling and amplifying the destructive power of your allies’ attacks.",
         "talent1": "You gain 4 vigor the first time in a round this ability triggers.",
-        "talent2": "You can extend the area as a line 5 <i>area effect</i> instead of an aura.",
+        "talent2": "You can extend the area as a line 5 <i>{{{{Area effect}}}}</i> instead of an aura.",
         "masteryname": "CHAOS FINISHER",
         "masterdescription":"When this interrupt triggers, after the triggering effect resolves, you may deal 2 damage to all affected foes from the triggering ability and shove them 1 in any direction."
     },
@@ -114,7 +114,7 @@
 			{"tag_name": "attack"},
             {"tag_name": "aura"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D]+fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: Shove 1<br><b>Effect</b>: You gain aura 1 until the end of your next turn. Any foe in the aura that is shoved is shoved +1. If any foe ends their turn in the aura, you may deal fray damage to them and shove them 1.<br><b>Collide</b>: Character is <i>slashed</i>.<br><b>Heroic</b>: Gains <i>true strike</i>, and increase aura to Aura 2",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}}+fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: Shove 1<br><b>Effect</b>: You gain aura 1 until the end of your next turn. Any foe in the aura that is shoved is shoved +1. If any foe ends their turn in the aura, you may deal fray damage to them and shove them 1.<br><b>Collide</b>: Character is <i>slashed</i>.<br><b>Heroic</b>: Gains <i>true strike</i>, and increase aura to Aura 2",
         "blurb": "Your stance is powerful as you strike, and stand tall, an armored sentinel. No enemy can safely set foot where your gaze falls.",
         "talent1":"You also have <i>counter</i> while Rook’s aura is active.",
         "talent2":"You can also inflict <i>hatred</i> on a foe that triggers Rook’s effect, but no more than once a round.",
@@ -146,7 +146,7 @@
 			{"tag_name": "line", "val": 3},
 			{"tag_name": "true strike"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D]+ fray. <i>Miss</i>: fray.<br><b>Effect</b>: Attack target is <i>slashed</i>.<br><b>Area effect</b>: Fray<br><b>Charge</b> or <b>Heroic</b>: Gains range 2, and repeat the area effect in a new line 3 area in range. The areas cannot overlap.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}}+ fray. <i>Miss</i>: fray.<br><b>Effect</b>: Attack target is <i>slashed</i>.<br><b>{{{{Area effect}}}}</b>: Fray<br><b>Charge</b> or <b>Heroic</b>: Gains range 2, and repeat the {{{{Area effect}}}} in a new line 3 area in range. The areas cannot overlap.",
         "blurb": "You slash your weapon in a deadly swing sending cutting shockwaves out that rip through enemy defenses.",
         "talent1":"<i>Exceed</i>: Gain 6 vigor.",
         "talent2":"You can <i>rush</i> 1 before using Demon Cutter. <i>Charge</i>: <i>Rush</i> 3 instead.",
@@ -163,7 +163,7 @@
 			{"tag_name": "range", "val": 3},
 			{"tag_name": "blast", "val": "medium"}
         ],
-        "description": "<b>Area Effect</b>: 2 damage<br><b>Effect</b>: After throwing your weapon, it becomes an object placed in the center space of the area, or as close as possible. <br><b>Charge</b> or <b>Heroic</b>: <i>Rush</i> 3 after throwing your weapon.",
+        "description": "<b>{{{{Area effect}}}}</b>: 2 damage<br><b>Effect</b>: After throwing your weapon, it becomes an object placed in the center space of the area, or as close as possible. <br><b>Charge</b> or <b>Heroic</b>: <i>Rush</i> 3 after throwing your weapon.",
         "blurb": "Your weapon becomes like a meteor, burning through the air as you hurl at at your foes and smash it into the earth.",
         "talent1":"If you end your turn adjacent to your thrown weapon, gain <i>vigilance +1</i>.",
         "talent2":"Yourself and allies that end their turn adjacent to your weapon gain <i>2 vigor</i>.",
@@ -180,7 +180,7 @@
 			{"tag_name": "range", "val": 3},
 			{"tag_name": "blast", "val": "small"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: 2[D]+ fray. <i>Miss</i>: fray.<br><b>Area effect</b>: Fray<br><b>Effect</b>: You may <i>rush</i> 1, then target another small blast area in range 3 with <i>area effect</i>: fray damage. The areas cannot overlap.<br><b>Charge</b> or <b>Heroic</b>:  Gains <i>true strike</i>, and may repeat the effect.",
+        "description": "<b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}}+ fray. <i>Miss</i>: fray.<br><b>{{{{Area effect}}}}</b>: Fray<br><b>Effect</b>: You may <i>rush</i> 1, then target another small blast area in range 3 with <i>{{{{Area effect}}}}</i>: fray damage. The areas cannot overlap.<br><b>Charge</b> or <b>Heroic</b>:  Gains <i>true strike</i>, and may repeat the effect.",
         "blurb": "Fill the air with the flurry of blades.",
         "talent1":"<i>Exceed</i>: Deal fray damage again to all characters in any area created by this ability.",
         "talent2":"<i>Charge</i>: Increase range to 5, and all areas may be increased to medium blasts instead.",
@@ -239,7 +239,7 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "stance"}
         ],
-        "description": "<b>Effect</b>: Stance: When entering this stance, gain a d6 power die, starting at 2.<ul><li>When the stance refreshes, tick the die up by 1.</li><li>When you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 <i>area effect</i> that must include your target, after the attack resolves. The area has <i>true strike</i>. Foes in the area take damage equal to the amount you ticked down.</li><li>If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.</li><li>If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.</li><li>If the die goes to 0, you exit this stance.</li></ul><b>Heroic</b>: Gain +1 tick on the die for every adjacent foe when you enter this stance.<br><b>Refresh</b>: This stance refreshes if you end a turn without attacking, or if you start a slow turn.",
+        "description": "<b>Effect</b>: Stance: When entering this stance, gain a d6 power die, starting at 2.<ul><li>When the stance refreshes, tick the die up by 1.</li><li>When you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 <i>{{{{Area effect}}}}</i> that must include your target, after the attack resolves. The area has <i>true strike</i>. Foes in the area take damage equal to the amount you ticked down.</li><li>If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.</li><li>If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.</li><li>If the die goes to 0, you exit this stance.</li></ul><b>Heroic</b>: Gain +1 tick on the die for every adjacent foe when you enter this stance.<br><b>Refresh</b>: This stance refreshes if you end a turn without attacking, or if you start a slow turn.",
         "blurb": "You imbue your weapon with aether, causing additional cuts at the very aether of your foe.",
         "talent1": "You may also increase the area of any line or arc effects by +1 in Soul Blade, including from this stance.",
         "talent2": "While in Soul Blade, your attacks gain <i>exceed</i>: tick the die up by 1.",
@@ -271,10 +271,10 @@
 			{"tag_name": "true strike"},
 			{"tag_name": "power die"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: fray and shove 1. <i>Miss</i>: fray.<br><b>Effect</b>: After you attack, your weapon becomes charged with energy. At the start of each round, gain a d4 power die at 1, or tick it up by 1. For each tick of the die:<ul><li>increase the base damage <i>on hit</i> of Wicked Sheath by [D] and the shove by 1</li><li>the attack gains +1 boon.</li></ul>Discard the power die after you <i>hit</i> with <i>any attack</i>.<br><b>Charge</b> or <b>Heroic</b>: You may also rush 1 before making the attack once for each charge on the die.",
+        "description": "<b>Attack</b>: <i>On hit</i>: fray and shove 1. <i>Miss</i>: fray.<br><b>Effect</b>: After you attack, your weapon becomes charged with energy. At the start of each round, gain a d4 power die at 1, or tick it up by 1. For each tick of the die:<ul><li>increase the base damage <i>on hit</i> of Wicked Sheath by {{{{[D]}}}} and the shove by 1</li><li>the attack gains +1 boon.</li></ul>Discard the power die after you <i>hit</i> with <i>any attack</i>.<br><b>Charge</b> or <b>Heroic</b>: You may also rush 1 before making the attack once for each charge on the die.",
         "blurb": "The master art of the demon slayers - holding a single blow with ultimate patience, until it can slay the most tenebrous of monsters in one stroke.",
         "talent1":"Also shove your foe 1 for every charge on the die. <i>Collide</i>: Your foe is <i>stunned</i>.",
-        "talent2":"<i>Exceed</i>: Draw a line 4 area effect that includes your target. Characters inside other than your target take 2 damage, once, for every charge on the die.",
+        "talent2":"<i>Exceed</i>: Draw a line 4 {{{{Area effect}}}} that includes your target. Characters inside other than your target take 2 damage, once, for every charge on the die.",
         "masteryname":"MUGEN SHOMETSU",
         "masterdescription":"If the die is 2 or higher and you would discard it, roll it instead of discarding it. On a 1 or 2, keep it, using the new number."
     },
@@ -287,7 +287,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "true strike"}
         ],
-        "description": "<b>Effect</b>: You may <i>fly</i> 1.<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Attack target is <i>weakened</i>.<br><b>Exceed</b> or <b>Heroic</b>: Create a <i>pit</i> under your target.",
+        "description": "<b>Effect</b>: You may <i>fly</i> 1.<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Attack target is <i>weakened</i>.<br><b>Exceed</b> or <b>Heroic</b>: Create a <i>pit</i> under your target.",
         "blurb": "Soaring through the air like a vengeful spirit, you crash into your enemy.",
         "talent1":"Valkyrie gains range 4.",
         "talent2":"You are <i>unstoppable</i> and <i>immune</i> to all damage while flying with Valkyrie. <i>Charge</i>: You may <i>fly</i> 3 instead.",
@@ -304,7 +304,7 @@
         ],
         "description": "<b>Terrain Effect</b>: Smash the battlefield, creating a height 1 boulder <i>object</i> in free space in range. Adjacent characters are shoved 1 away from the terrain when it appears.<br><b>Comeback</b> or <b>Heroic</b>: Create <i>difficult</i> terrain underneath any character shoved by this ability.",
         "blurb": "The disciples of the wolf titan exhibit such legendary strength that they can rip up the earth itself with their bare hands.",
-        "talent1":"The boulder bounces before landing, dealing 2 damage in a small blast <i>area effect</i> anywhere in range. <i>Charge</i>: Large blast",
+        "talent1":"The boulder bounces before landing, dealing 2 damage in a small blast <i>{{{{Area effect}}}}</i> anywhere in range. <i>Charge</i>: Large blast",
         "talent2":"The boulder bounces before landing, creating a <i>pit</i> anywhere in free space in range.",
         "masteryname":"TITAN STRENGTH",
         "masterdescription":"Gains range 5 and <i>Comeback</i>: Boulder may be placed as a height 2 pillar instead."
@@ -317,12 +317,12 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "sacrifice"}
         ],
-        "description": "<b>Effect</b>: Fly 1.<br><b>Effect</b>: <i>Sacrifice</i> 6. An adjacent foe takes [D] + fray damage.<br><b>Heroic</b>: You may <i>rush</i> 2 before or after using this ability.",
+        "description": "<b>Effect</b>: Fly 1.<br><b>Effect</b>: <i>Sacrifice</i> 6. An adjacent foe takes {{{{[D]}}}} + fray damage.<br><b>Heroic</b>: You may <i>rush</i> 2 before or after using this ability.",
         "blurb": "No blurb.",
         "talent1":"<i>Comeback</i>: Hit your foe so hard that you create 2 spaces of difficult terrain in adjacent spaces after this ability resolves.",
         "talent2":"Shove your foe 1, then shove yourself 1 away from your foe. <i>Charge</i>: Increase shoves to 2.",
         "masteryname":"GIANT KICKER",
-        "masterdescription":"At round 4 or later, Dropkick gains true strike and a line 4 <i>area effect</i> that must include your target. The area deals fray damage to all characters other than your target."
+        "masterdescription":"At round 4 or later, Dropkick gains true strike and a line 4 <i>{{{{Area effect}}}}</i> that must include your target. The area deals fray damage to all characters other than your target."
     },
     {
         "job": "Colossus",
@@ -332,7 +332,7 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "end turn"}
         ],
-        "description": "<b>End your turn</b>. Your next attack strikes with such force that it deals <i>bonus damage</i> and creates a <i>pit</i> under its target after it resolves.<br><b>Special Effect</b>: If your target was already in a pit before the triggering attack, it also activates all <i>exceed</i> effects.<br><b>Comeback</b> or <b>Heroic</b>: Attack may also create a small blast <i>area effect</i> on its target, dealing 2 damage to all characters inside.",
+        "description": "<b>End your turn</b>. Your next attack strikes with such force that it deals <i>bonus damage</i> and creates a <i>pit</i> under its target after it resolves.<br><b>Special Effect</b>: If your target was already in a pit before the triggering attack, it also activates all <i>exceed</i> effects.<br><b>Comeback</b> or <b>Heroic</b>: Attack may also create a small blast <i>{{{{Area effect}}}}</i> on its target, dealing 2 damage to all characters inside.",
         "blurb": "No blurb.",
         "talent1":"Attack gains <i>Exceed</i>: Also create a height 1 boulder object adjacent to your foe.",
         "talent2":"Attack gains <i>Exceed</i>: The pit also becomes <i>dangerous</i> terrain.",
@@ -347,7 +347,7 @@
             {"tag_name": "action", "val": 2},
 			{"tag_name": "attack"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Both you and your foe are <i>stunned</i>. You may <i>sacrifice</i> 4 to avoid this stun.<br><b>Exceed</b> or <b>Heroic</b>: Gains <i>true strike</i> and creates a <i>pit</i> under your target.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Both you and your foe are <i>stunned</i>. You may <i>sacrifice</i> 4 to avoid this stun.<br><b>Exceed</b> or <b>Heroic</b>: Gains <i>true strike</i> and creates a <i>pit</i> under your target.",
         "blurb": "You deliver a mighty blow with wild abandon, so strong that you yourself are left reeling.",
         "talent1":"You may <i>rush</i> 2 or <i>fly</i> 2 before using Takedown.",
         "talent2":"You can also choose to shove your target 2, then shove yourself 2. <i>Collide</i>: Deal fray damage.",
@@ -361,7 +361,7 @@
         "tags":[
             {"tag_name": "action", "val": 2}
         ],
-        "description": "<b>Effect</b>: You pick up an adjacent foe, removing them from the battlefield.<br><b>Effect</b>: <i>Sacrifice</i> up to 6, then fly half that many spaces. Place your foe in a free adjacent space. They take [D]+fray damage and are <i>slashed</i>. <i>Slashed</i> characters are <i>stunned</i>. If you can’t place the foe in a valid space this action can’t be taken.<br><b>Heroic</b>: Sacrifice cost costs 0 hp but counts as sacrificing 6",
+        "description": "<b>Effect</b>: You pick up an adjacent foe, removing them from the battlefield.<br><b>Effect</b>: <i>Sacrifice</i> up to 6, then fly half that many spaces. Place your foe in a free adjacent space. They take {{{{[D]}}}}+fray damage and are <i>slashed</i>. <i>Slashed</i> characters are <i>stunned</i>. If you can’t place the foe in a valid space this action can’t be taken.<br><b>Heroic</b>: Sacrifice cost costs 0 hp but counts as sacrificing 6",
         "blurb": "Wrapping your arms around your foe, you fling the two of you backwards with a force that liquifies rock.",
         "talent1":"This ability deals bonus damage to your target if you land them in a pit.",
         "talent2":"You can use this ability on allies. If you do, reduce its action cost to 1, they are immune to its damage and statuses, and both of you can rush 1 after it resolves.",
@@ -377,7 +377,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "true strike"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D]. <i>Miss</i>: 1 damage. <i>Effect</i>: shove 2.<br><b>Collide</b>: You bounce your foe, then and catch them mid air. Remove them from the battlefield, fly 1, then place them in any free adjacent space. They take fray damage.<br><b>Exceed</b> or <b>Heroic</b>: Smash the ground when you land, creating difficult terrain under your foe and in two adjacent spaces.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}}. <i>Miss</i>: 1 damage. <i>Effect</i>: shove 2.<br><b>Collide</b>: You bounce your foe, then and catch them mid air. Remove them from the battlefield, fly 1, then place them in any free adjacent space. They take fray damage.<br><b>Exceed</b> or <b>Heroic</b>: Smash the ground when you land, creating difficult terrain under your foe and in two adjacent spaces.",
         "blurb": "You fling your foe into a wall, catching them on the rebound.",
         "talent1":"If your target collides with another character, you may also shove that character 1 and deal 2 damage to them.",
         "talent2":"Fly 2 instead. <i>Charge</i>: Shove 3 and fly 3.",
@@ -423,7 +423,7 @@
 			{"tag_name": "combo"},
 			{"tag_name": "true strike"}
         ],
-        "description": "<b>Effect</b>: You may <i>Rush</i> 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>slashed</i>. If they are already slashed, they gain <i>hatred</i> of you.<br><b>Slay</b> or <b>Heroic</b>: You may <i>cure</i> yourself.",
+        "description": "<b>Effect</b>: You may <i>Rush</i> 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>slashed</i>. If they are already slashed, they gain <i>hatred</i> of you.<br><b>Slay</b> or <b>Heroic</b>: You may <i>cure</i> yourself.",
         "blurb": "Hit them right in the gronch.",
         "talent1":"Deals bonus damage if your foe is suffering from a status.",
         "talent2":"<i>Comeback</i>: Gain vigilance +1",
@@ -453,7 +453,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Gain <i>unstoppable</i> and <i>counter</i> until the end of your next turn<br><b>Slay</b> or <b>Heroic</b>: While this ability’s effect is active, you can <i>rush</i> 1 as an effect if you are damaged by a foe’s ability, but no more than once a turn.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Gain <i>unstoppable</i> and <i>counter</i> until the end of your next turn<br><b>Slay</b> or <b>Heroic</b>: While this ability’s effect is active, you can <i>rush</i> 1 as an effect if you are damaged by a foe’s ability, but no more than once a turn.",
         "blurb": "No matter how hard pressed, your hands, feet, and armor are ready to retaliate.",
         "talent1":"While this ability’s effect is active, attacks against adjacent allies gain +1 curse",
         "talent2":"You may <i>sacrifice</i> 4 to gain or lose a combo token after using any version of this ability.",
@@ -544,7 +544,7 @@
 			{"tag_name": "melee"},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Bleak Mercy gains <i>true strike</i> and ignores defiance, armor, and vigor if its target is suffering from 3 or more statuses. <b>Slay</b> or <b>Heroic</b>: <i>Cure</i> yourself, then shove all foes in range 2 1 space in any direction.",
+        "description": "<b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Bleak Mercy gains <i>true strike</i> and ignores defiance, armor, and vigor if its target is suffering from 3 or more statuses. <b>Slay</b> or <b>Heroic</b>: <i>Cure</i> yourself, then shove all foes in range 2 1 space in any direction.",
         "blurb": "Crush your foes and see them driven before you.",
         "talent1":"Against characters at 25% hp or lower, this ability cannot miss (turn any miss into a hit).",
         "talent2":"This ability gains range 2 against characters 25% hp or lower and you may rush 2 before using it against those characters.",
@@ -560,7 +560,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "<b>Effect</b>: Dash 3, then dash 1 space to the side of your movement. This movement ignores all movement penalties and has <i>phasing</i>. However:<ul><li>You must move if able</li><li>You must move as far as possible</li><li>You cannot move diagonally during this movement.</li></ul><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>dazed</i>.<br><b>Finishing Blow</b> or <b>Slay</b>: Summon a <b>bomb</b>",
+        "description": "<b>Effect</b>: Dash 3, then dash 1 space to the side of your movement. This movement ignores all movement penalties and has <i>phasing</i>. However:<ul><li>You must move if able</li><li>You must move as far as possible</li><li>You cannot move diagonally during this movement.</li></ul><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>dazed</i>.<br><b>Finishing Blow</b> or <b>Slay</b>: Summon a <b>bomb</b>",
         "blurb": "It is not enough to rudely and plainly strike your foe down. One must make it entertaining.",
         "talent1": "If you pass through an ally or summon during this movement, deal bonus damage",
         "talent2": "Allies you pass through during this movement can dash 1.",
@@ -607,7 +607,7 @@
 			{"tag_name": "line", "val": 6},
 			{"tag_name": "unerring"}
         ],
-        "description": "<b>Area Effect</b>: <b>Gamble</b>, then count the spaces out from you along the line. The space rolled is the attack space.<br><b>Attack</b>: <b>Autohit</b>: 2[D]+fray.<br><b>Area Effect</b>: fray <br><b>Finishing Blow</b> or <b>Slay</b>: Character explodes in a large blast <i>area effect</i> centered on them, dealing fray damage. Special Effect: Death deals 999 divine damage instead to your attack target if they are at 8 hp or less.",
+        "description": "<b>{{{{Area effect}}}}</b>: <b>Gamble</b>, then count the spaces out from you along the line. The space rolled is the attack space.<br><b>Attack</b>: <b>Autohit</b>: 2{{{{[D]}}}}+fray.<br><b>{{{{Area effect}}}}</b>: fray <br><b>Finishing Blow</b> or <b>Slay</b>: Character explodes in a large blast <i>{{{{Area effect}}}}</i> centered on them, dealing fray damage. Special Effect: Death deals 999 divine damage instead to your attack target if they are at 8 hp or less.",
         "blurb": "A shard of Divine Death, summoned with a snap of the finger.",
         "talent1": "If there’s a <i>bloodied</i> character in the area, roll 1 more d6 and choose any result.",
         "talent2": "<i>Slay</i>: create a pit under your target, and summon a <i>bomb</i> in the pit.",
@@ -638,7 +638,7 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "terrain effect"}
         ],
-        "description": "<b>Terrain Effect</b>: You throw an explosive mine into a free space in range 3. When any character enters the space, the mine explodes with a medium blast <i>area effect</i> centered on it. When activated, <i>gamble</i> to see the effects, which stack. Then, the mine is destroyed, ending the terrain effect.<ul><li>1-3: Yourself and allies in the area fly 1. Foes take 2 damage.</li><li>4-5: Foes are additionally <i>blinded</i>.</li><li>6: Yourself and allies also gain <i>stealth</i>.</li></ul><b>Finishing Blow</b>: Foes take 2 damage, twice.",
+        "description": "<b>Terrain Effect</b>: You throw an explosive mine into a free space in range 3. When any character enters the space, the mine explodes with a medium blast <i>{{{{Area effect}}}}</i> centered on it. When activated, <i>gamble</i> to see the effects, which stack. Then, the mine is destroyed, ending the terrain effect.<ul><li>1-3: Yourself and allies in the area fly 1. Foes take 2 damage.</li><li>4-5: Foes are additionally <i>blinded</i>.</li><li>6: Yourself and allies also gain <i>stealth</i>.</li></ul><b>Finishing Blow</b>: Foes take 2 damage, twice.",
         "blurb": "The Fool’s arsenal is deep, their mirth infinite, and their ability to turn nearly anything into an explosive is legendary..",
         "talent1": "Increase flight on yourself to 3",
         "talent2": "<i>Dazed</i> or <i>Blinded</i> foes activate the Finishing Blow effect.",
@@ -671,12 +671,12 @@
 			{"tag_name": "boon", "val": 1},
             {"tag_name": "unerring"}
         ],
-        "description": "<b>Special</b>: The attack space of this ability is your choice of one of the four edge spaces of the blast.<br><b>Attack</b>: <i>On hit</i>: [D]. <i>Miss</i>: 1 damage.<br><b>Effect</b>: Attack target is <i>blinded</i>.<br><b>Area Effect</b>: Deal 2 damage, once, to all foes in the area for every foe or ally in end spaces of the cross, including the attack space.<br><b>Finishing Blow</b> or <b>Slay</b>: Cross counts as having +1 foe in an end space.",
+        "description": "<b>Special</b>: The attack space of this ability is your choice of one of the four edge spaces of the blast.<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}}. <i>Miss</i>: 1 damage.<br><b>Effect</b>: Attack target is <i>blinded</i>.<br><b>{{{{Area effect}}}}</b>: Deal 2 damage, once, to all foes in the area for every foe or ally in end spaces of the cross, including the attack space.<br><b>Finishing Blow</b> or <b>Slay</b>: Cross counts as having +1 foe in an end space.",
         "blurb": "A snap of the finger summons the fool’s cross, the mark of the Laughing God, writ in hellish flames.",
         "talent1": "If you catch 2 or more foes or allies in the end spaces of the cross, summon a <i>bomb</i> in the center space if it is free.",
         "talent2": "Allies in the area can fly 1. <i>Charge</i>: Allies in the area can fly 3.",
         "masteryname": "HELL FESTIVAL",
-        "masterdescription": "You can also choose to <b>end your turn</b>, mark out the area effect and gain <b>delay</b>: You must take a slow turn next round. At the start of that turn, the area explodes again, dealing [D] damage to all characters within as an <i>area effect</i>, and summoning a <i>bomb</i> adjacent to each foe in the area."
+        "masterdescription": "You can also choose to <b>end your turn</b>, mark out the {{{{Area effect}}}} and gain <b>delay</b>: You must take a slow turn next round. At the start of that turn, the area explodes again, dealing {{{{[D]}}}} damage to all characters within as an <i>{{{{Area effect}}}}</i>, and summoning a <i>bomb</i> adjacent to each foe in the area."
     },
     {
         "job": "Fool",
@@ -704,7 +704,7 @@
 			{"tag_name": "range", "val": 3},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "<b>Effect</b>: You may dash 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Effect</b>: You may dash 1<br><b>Finishing Blow</b> or <b>Exceed</b>: Release a flurry of fire, dealing 2 <i>unerring</i> damage to all foes at exactly range 3 from you.",
+        "description": "<b>Effect</b>: You may dash 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Effect</b>: You may dash 1<br><b>Finishing Blow</b> or <b>Exceed</b>: Release a flurry of fire, dealing 2 <i>unerring</i> damage to all foes at exactly range 3 from you.",
         "blurb": "Faster than a speeding bullet.",
         "talent1": "<i>Exceed</i>: Gain evasion until the start of your next turn.",
         "talent2": "<i>Exceed</i>: Dash 3 again",
@@ -725,7 +725,7 @@
         "description": "<b>Mark</b>: You mark a foe in range, with the following effects:<ul><li>When you end your turn in range 3 from your foe, or that foe ends their turn in range 3 of you, set out a d4 power die, starting at 1, or tick it up by 1.</li><li>When you set out the die or tick it up, shoot a projectile at your foe, dealing 2 damage. The projectile remains, hovering in the air, and tracking your foe.</li><li>At the end of any turn the die is at maximum, every projectile shot flies at your foe, dealing 2 damage once for each charge on the die and ending this effect and mark.</li></ul><b>Finishing Blow</b>: When marking a bloodied foe, immediately gain the die at 1",
         "blurb": "The mantra of the exorcist. Every bullet or arrow shot is imbued with the soul aether of its master, and seeks its foe like a loyal hound.",
         "talent1": "While this mark is active, your attacks gain: <i>Exceed</i>: tick the die up by 1.",
-        "talent2": "If your target is defeated while marked by exorcism, the projectiles scatter, dealing 2 damage, once, per charge on the die to all foes in a large blast <i>area effect</i> centered on the foe.",
+        "talent2": "If your target is defeated while marked by exorcism, the projectiles scatter, dealing 2 damage, once, per charge on the die to all foes in a large blast <i>{{{{Area effect}}}}</i> centered on the foe.",
         "masteryname": "PURESILVER",
         "masterdescription": "If exorcism's target is defeated, you can cause the projectiles to fly and track a new target in range 3 of you or the original target, transferring the mark and keeping the power die."
     },
@@ -753,7 +753,7 @@
 			{"tag_name": "range", "val": 3},
 			{"tag_name": "mark"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Mark</b>: Your foe is marked. While marked, at the start of your turn, if they are in range 3, they take 2 <i>unerring</i> damage from you as bolt of celestial lightning shoots between you. If they are at exactly range 3, increase damage to 2 damage, twice instead.<br><b>Finishing Blow</b> or <b>Exceed</b>: You may <i>fly</i> 4",
+        "description": "<b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Mark</b>: Your foe is marked. While marked, at the start of your turn, if they are in range 3, they take 2 <i>unerring</i> damage from you as bolt of celestial lightning shoots between you. If they are at exactly range 3, increase damage to 2 damage, twice instead.<br><b>Finishing Blow</b> or <b>Exceed</b>: You may <i>fly</i> 4",
         "blurb": "With your heavenly chain skillfully whirling through the air, you dispense divine justice.",
         "talent1": "While marked, gain <i>evasion</i> against your marked foe while they are in range 3.",
         "talent2": "While marked, all attacks from you or allies against your marked foe may gain <i>rebound</i> and deal bonus damage if they are rebounded.",
@@ -787,7 +787,7 @@
         ],
         "description": "<b>End your turn</b> and gain <b>Stance</b>: When you take this stance, or when it refreshes, you may dash 1 and your next attack triggers all <i>exceed</i> effects, <i>dazes</i> your foe, and gains <i>unerring</i>.<br><b>Refresh</b>: Refresh this stance after you score a <i>finishing blow</i>.",
         "blurb": "The world goes still, and is split by a bolt of lightning.",
-        "talent1": "If your attack target is at exactly range 3, they explode with a <i>medium blast</i> area effect centered on them. Foes inside are <i>dazed</i>.",
+        "talent1": "If your attack target is at exactly range 3, they explode with a <i>medium blast</i> {{{{Area effect}}}} centered on them. Foes inside are <i>dazed</i>.",
         "talent2": "If your attack target is at exactly range 3, you may also teleport them 2 after the attack resolves.",
         "masteryname": "HOT CHAMBER",
         "masterdescription": "At round 4 or later, Ace becomes a free action to enter if you have not used it yet this combat. It also refreshes automatically at the start of your turn, and its dash increases to 3."
@@ -832,7 +832,7 @@
             {"tag_name": "line", "val": 3},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>blinded</i>.<br><b>Area Effect</b>: fray<br><b>Effect</b>: Allies are immune to damage from this ability. If it passes through two or more allies, automatically triggers all <i>exceed</i> effects.<br><b>Finishing Blow</b> or <b>Exceed</b>: Attack target explodes with a large blast <i>area effect</i> placed centered on them. Foes inside take 2 damage and are <i>blinded</i>. Blinded foes take 2 damage twice instead.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>blinded</i>.<br><b>{{{{Area effect}}}}</b>: fray<br><b>Effect</b>: Allies are immune to damage from this ability. If it passes through two or more allies, automatically triggers all <i>exceed</i> effects.<br><b>Finishing Blow</b> or <b>Exceed</b>: Attack target explodes with a large blast <i>{{{{Area effect}}}}</i> placed centered on them. Foes inside take 2 damage and are <i>blinded</i>. Blinded foes take 2 damage twice instead.",
         "blurb": "The ultimate freelancer technique - using the soul aether of their companions to supercharge astral bullets.",
         "talent1": "At round 4 or greater, Soul Shot considers all characters in the line to be at exactly range 3",
         "talent2": "At round 4 or greater, Soul Shot becomes Line 6",
@@ -850,7 +850,7 @@
 			{"tag_name": "boon", "val": 1},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Effect</b>: You may teleport 3<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Finishing Blow</b>: Summon a <i>shadow</i> adjacent to your target.",
+        "description": "<b>Effect</b>: You may teleport 3<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Finishing Blow</b>: Summon a <i>shadow</i> adjacent to your target.",
         "blurb": "By the power of darkness.",
         "talent1": "<i>Slay</i>: Gain <i>defiance</i>.",
         "talent2": "You can <i>sacrifice</i> 2 or consume a <i>shadow</i> in range 2 of you to gain a combo token after using this move.",
@@ -884,7 +884,7 @@
 			{"tag_name": "burst", "val": 1},
 			{"tag_name": "unerring"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Area Effect</b>: fray<br><b>Finishing Blow</b>: After this ability resolves, create a <i>pit</i> under your attack target. The pit is also a <i>shadow cloud</i>.",
+        "description": "<b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>{{{{Area effect}}}}</b>: fray<br><b>Finishing Blow</b>: After this ability resolves, create a <i>pit</i> under your attack target. The pit is also a <i>shadow cloud</i>.",
         "blurb": "From beneath a cloak, out from flying sleeves, or hidden in coils of hair - infinite blades. One more sweep, and shadowy bolts of cloth cut through your foes like razors.",
         "talent1": "<i>Finishing Blow</i>: Teleport all characters in the area 1.",
         "talent2": "<i>Slay</i>: Teleport 2, then throw knives, dealing 2 damage to up to three foes in range 3.",
@@ -980,7 +980,7 @@
 			{"tag_name": "boon", "val": 1},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Mark</b>: Mark your foe. While marked, if any foe ends their turn adjacent to your marked foe, or your foe ends their turn adjacent to any other foe, then both the target and any adjacent foes take 2 damage and are <i>dazed</i>. This effect can only trigger once per round.<br><b>Finishing Blow</b>: Immediately trigger the mark effect, ignoring the round limit.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray damage.<br><b>Mark</b>: Mark your foe. While marked, if any foe ends their turn adjacent to your marked foe, or your foe ends their turn adjacent to any other foe, then both the target and any adjacent foes take 2 damage and are <i>dazed</i>. This effect can only trigger once per round.<br><b>Finishing Blow</b>: Immediately trigger the mark effect, ignoring the round limit.",
         "blurb": "The thirteenth scroll art, a void-sheathed blade that cuts away at the aether of the very soul, leaving a cut that creates slashed darkness.",
         "talent1": "Incubus gains range 3. If you make it from <i>stealth</i>, gains range 5.",
         "talent2": "Incubus deals bonus damage for every ally of your target adjacent to your target",
@@ -997,7 +997,7 @@
             {"tag_name": "range", "val": 3},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>dazed</i>.<br><b>Effect</b>: Summon a <i>beast</i> in an adjacent space to your target after the attack resolves.<br><b>Finishing Blow</b> or <b>Charge</b>: Summon one more beast, then gain <i>stealth</i>.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Foe is <i>dazed</i>.<br><b>Effect</b>: Summon a <i>beast</i> in an adjacent space to your target after the attack resolves.<br><b>Finishing Blow</b> or <b>Charge</b>: Summon one more beast, then gain <i>stealth</i>.",
         "blurb": "Your strike is a clarion call to the forest, the plains, and the deep places of the Green, bringing forth their denizens to fight for you.",
         "talent1": "<i>Terrain effect</i>: You can replace any beast you summon with a space of <i>dangerous</i> terrain instead.",
         "talent2": "If you attack a foe at exactly range 3, this ability gain <i>unerring</i> and you may shove your foe 1 in any direction after this ability resolves.",
@@ -1026,7 +1026,7 @@
             {"tag_name": "action", "val": 2},
 			{"tag_name": "attack"}
         ],
-        "description": "<b>Effect</b>: Dash 2<br><b>Attack</b>: <i>On hit</i>: 2[D]. <i>Miss</i>: 1 damage.<br><b>Effect</b>: If you’re adjacent to your foe, dash in a full circle clockwise through every adjacent space to your foe, phasing through allies or allied summons, or as far as possible until stopped. Each time you pass through an ally or summon’s space, deal fray damage to your foe, up to a maximum of four times. Stop if you would enter the space of a foe or obstruction.<br><b>Finishing Blow</b> or <b>Charge</b>: Increase initial dash to 5. After the ability resolves, you may shove your foe 2.",
+        "description": "<b>Effect</b>: Dash 2<br><b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}}. <i>Miss</i>: 1 damage.<br><b>Effect</b>: If you’re adjacent to your foe, dash in a full circle clockwise through every adjacent space to your foe, phasing through allies or allied summons, or as far as possible until stopped. Each time you pass through an ally or summon’s space, deal fray damage to your foe, up to a maximum of four times. Stop if you would enter the space of a foe or obstruction.<br><b>Finishing Blow</b> or <b>Charge</b>: Increase initial dash to 5. After the ability resolves, you may shove your foe 2.",
         "blurb": "Ten palm strikes with the heel of the hand or the haft of the axe will shatter even the most tenacious bark.",
         "talent1": "Allies you pass through with Circle the Oak may dash 1 after this ability resolves.",
         "talent2": "If you passed through two or more allies or allied summons, also gain <i>evasion</i> until the end of your next turn.",
@@ -1060,7 +1060,7 @@
 			{"tag_name": "mark"},
 			{"tag_name": "summon"}
         ],
-        "description": "<b>Mark</b>: You mark a foe in range. Once a round, at the end of that foe’s turn, a rampaging spirit beast, charges in from any edge of the battlefield. Create a line <i>area effect</i> drawn from the edge of the battlefield that includes your foe. The beast charges down the line until it enters an adjacent space to your foe, shoving all characters 1 to either side of the line.<br><b>Summon</b>: Then the beast deals 2 damage to your foe, shoves them 1, then coalesces into a real creature, becoming a <i>beast</i> summon.<br><b>Collide</b> or <b>Charge</b>: Foes affected take 2 damage after this ability resolves.",
+        "description": "<b>Mark</b>: You mark a foe in range. Once a round, at the end of that foe’s turn, a rampaging spirit beast, charges in from any edge of the battlefield. Create a line <i>{{{{Area effect}}}}</i> drawn from the edge of the battlefield that includes your foe. The beast charges down the line until it enters an adjacent space to your foe, shoving all characters 1 to either side of the line.<br><b>Summon</b>: Then the beast deals 2 damage to your foe, shoves them 1, then coalesces into a real creature, becoming a <i>beast</i> summon.<br><b>Collide</b> or <b>Charge</b>: Foes affected take 2 damage after this ability resolves.",
         "blurb": "With a bellow or a clenched fist, you summon an immense spirit to pound your enemies.",
         "talent1": "When you trigger a finishing blow on a foe, you may transfer the mark to them as a <i>free action</i>.",
         "talent2": "If the beast passes through two or more characters before reaching your foe it deals 4 damage and shoves them 2 instead.",
@@ -1123,10 +1123,10 @@
             {"tag_name": "melee"},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D]. <i>Miss</i>: 1 damage.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Effect</b>: Your target is injected with a catalyzing toxin. At the end of their next turn, they take 6 damage. Reduce this damage to 3 if they end that turn adjacent to an ally. Then, this effect ends.<br><b>Finishing Blow</b> or <b>Charge</b>: Shove your target 2",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}}. <i>Miss</i>: 1 damage.<br><b>Effect</b>: Your foe is <i>blinded</i>.<br><b>Effect</b>: Your target is injected with a catalyzing toxin. At the end of their next turn, they take 6 damage. Reduce this damage to 3 if they end that turn adjacent to an ally. Then, this effect ends.<br><b>Finishing Blow</b> or <b>Charge</b>: Shove your target 2",
         "blurb": "Dip your weapons in the toxins of the deadliest creatures to roam the deep green. Mere preparation of this technique requires years of ritual, patience, and training.",
         "talent1": "Also create a space of <i>dangerous terrain</i> adjacent to your foe after the effect expires.",
-        "talent2": "When the effect expires, your foe explodes with a medium blast area effect, dealing 2 damage to all other characters within.",
+        "talent2": "When the effect expires, your foe explodes with a medium blast {{{{Area effect}}}}, dealing 2 damage to all other characters within.",
         "masteryname": "GREAT FUME POISON",
         "masterdescription": "While the toxin’s effect is active, your foe treats all other characters as having <i>cover</i>, <i>evasion</i> and <i>dodge</i>. This effect turns off while they are adjacent to an ally."
     },
@@ -1142,7 +1142,7 @@
         ],
         "description": "<b>Effect</b>: Foe is <i>pacified</i>.<br><b>Effect</b>: <i>Cure</i> a character in range 2 of that foe.<br><b>Charge</b>: Grant 3 vigor to all other characters of your choice in range 2 of your foe.",
         "blurb": "You ring the bell of purity and a tone rings out that soothes the peaceful and chastises the violent. A second ring from the bell shatters the tone from the first, breaking open the earth.",
-        "talent1": "After Hades resolves, <i>gamble</i>, then all pits in the area explode for a <i>medium blast</i> area effect, centered on them. <i>Area Effect</i>: characters in at least one area take damage equal to half the gamble result.",
+        "talent1": "After Hades resolves, <i>gamble</i>, then all pits in the area explode for a <i>medium blast</i> {{{{Area effect}}}}, centered on them. <i>{{{{Area effect}}}}</i>: characters in at least one area take damage equal to half the gamble result.",
         "talent2": "You may fly 1 before using Holy, or 3 when <i>charged</i>.",
         "masteryname": "MAGNASANCTI",
         "masterdescription": "Holy creates a small blast terrain effect after resolving. Only one of these areas can be placed at once. Allies have <i>flying</i> in the area, and allies that end their turn in the area may gain 2 vigor."
@@ -1175,12 +1175,12 @@
 			{"tag_name": "blast", "val": "medium"},
 			{"tag_name": "combo"}
         ],
-        "description": "<br><b>Attack</b>: <i>Autohit</i>: [D]+fray<br><b>Area Effect</b>: Remove all characters in the area, then place them back in any other space in the area.<br><b>Charge</b>: Increase area to Large Blast, and allies in the area gain 4 vigor.",
+        "description": "<br><b>Attack</b>: <i>Autohit</i>: {{{{[D]}}}}+fray<br><b>{{{{Area effect}}}}</b>: Remove all characters in the area, then place them back in any other space in the area.<br><b>Charge</b>: Increase area to Large Blast, and allies in the area gain 4 vigor.",
         "blurb": "You sing a passage of the days of chaos and battle, where the tumult of the battlefield was like the churning of the sea, and divine lightning scathed the land.",
         "talent1": "After Pandaemonium resolves, <i>gamble</i>. Shove all characters affected 1 space in any direction. On a 4+, shove them 1 again. On a 6, shove them 1 again.",
         "talent2": "Purgatorio’s damage does not break <i>pacified</i> and its effect causes pits to appear under every <i>pacified</i> foe.",
         "masteryname": "DULCE PURGATORIO",
-        "masterdescription": "This ability deals bonus damage. Pandaemonium’s area effect and Purgatorio’s pit explosion effect extend to <i>all</i> pits on the battlefield."
+        "masterdescription": "This ability deals bonus damage. Pandaemonium’s {{{{Area effect}}}} and Purgatorio’s pit explosion effect extend to <i>all</i> pits on the battlefield."
     },
     {
         "job": "Chanter",
@@ -1190,7 +1190,7 @@
             {"tag_name": "true strike"},
 			{"tag_name": "delay"}
         ],
-        "description": "<b>End your turn</b> and gain <b>Delay</b>: your next turn must be slow. At the start of that turn, you deliver a stunning performance, affecting a small blast <b>area effect</b> centered on you. Foes in the area take fray damage twice and are <i>sealed</i>. <i>Sealed</i> or <i>Pacified</i> foes are shoved 1. Allies in the area are <i>cured</i>.<br><b>Special</b>: If you are damaged by a foe’s ability before the start of that turn, the area becomes a medium blast. If you are damaged again, it becomes a large blast.",
+        "description": "<b>End your turn</b> and gain <b>Delay</b>: your next turn must be slow. At the start of that turn, you deliver a stunning performance, affecting a small blast <b>{{{{Area effect}}}}</b> centered on you. Foes in the area take fray damage twice and are <i>sealed</i>. <i>Sealed</i> or <i>Pacified</i> foes are shoved 1. Allies in the area are <i>cured</i>.<br><b>Special</b>: If you are damaged by a foe’s ability before the start of that turn, the area becomes a medium blast. If you are damaged again, it becomes a large blast.",
         "blurb": "You pose, then deliver a striking performance that resonates through the soul.",
         "talent1": "You may fly 1 when Aria’s special effect triggers.",
         "talent2": "If Aria’s special effect triggers twice, gain <i>defiance</i> and also become <i>unstoppable</i> until the start of your turn.",
@@ -1221,7 +1221,7 @@
             {"tag_name": "action", "val": 2},
 			{"tag_name": "true strike"}
         ],
-        "description": "<b>Terrain Effect</b>: Remove up to four blessings from characters anywhere to create pulsing motes of energy that descend, creating terrain spaces in free space on the map. None can be placed adjacent to each other or overlap.<ul><li>Any character that enters an affected space or starts their turn there detonates the mote, removing it and creating a small blast explosion as an <i>area effect</i>, centered on them. Foes inside take fray damage, and allies inside gain 2 vigor.</li><li>If the character was yourself or an ally, they are <i>blessed</i> and can fly 1. If that character was a foe, they also have a <i>pit</i> created under them.</li></ul><b>Charge</b>: Create +2 more spaces.",
+        "description": "<b>Terrain Effect</b>: Remove up to four blessings from characters anywhere to create pulsing motes of energy that descend, creating terrain spaces in free space on the map. None can be placed adjacent to each other or overlap.<ul><li>Any character that enters an affected space or starts their turn there detonates the mote, removing it and creating a small blast explosion as an <i>{{{{Area effect}}}}</i>, centered on them. Foes inside take fray damage, and allies inside gain 2 vigor.</li><li>If the character was yourself or an ally, they are <i>blessed</i> and can fly 1. If that character was a foe, they also have a <i>pit</i> created under them.</li></ul><b>Charge</b>: Create +2 more spaces.",
         "blurb": "You ring the bell of thresholds, creating crystalline fragments of the ancient power that courses through the Chant.",
         "talent1": "When motes explode, they deal 2 damage again to all foes inside and shove them 1 away from the center space if at least one other mote was already exploded this turn.",
         "talent2": "Allies are <i>cured</i> after detonating their second mote in the same turn.",
@@ -1292,7 +1292,7 @@
         "talent1": "<i>Effect</i>: If Sow’s marked foe is defeated, it can be transferred to a different foe in range 3 from that foe.",
         "talent2": "<i>Comeback</i>: Reap’s Slay effect triggers.",
         "masteryname": "SPECTRAL SCYTHE",
-        "masterdescription": "Reap and Sow also create an arc 4 <i>area effect</i> drawn from your target as the origin space, that cannot include your target. Foes inside take 2 piercing damage, and allies inside gain 2 vigor."
+        "masterdescription": "Reap and Sow also create an arc 4 <i>{{{{Area effect}}}}</i> drawn from your target as the origin space, that cannot include your target. Foes inside take 2 piercing damage, and allies inside gain 2 vigor."
     },
     {
         "job": "Harvester",
@@ -1334,12 +1334,12 @@
 			{"tag_name": "attack"},
 			{"tag_name": "arc", "val": 6}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: 2[D] + fray <i>Miss</i>: fray.<br><b>Area Effect</b>: Foes take fray damage. Allies are <i>blessed</i>.<br><b>Slay</b>: Summon a Thrall for each foe in the area, and deal 2 piercing damage again as an <i>area effect</i> to those foes.",
+        "description": "<b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}} + fray <i>Miss</i>: fray.<br><b>{{{{Area effect}}}}</b>: Foes take fray damage. Allies are <i>blessed</i>.<br><b>Slay</b>: Summon a Thrall for each foe in the area, and deal 2 piercing damage again as an <i>{{{{Area effect}}}}</i> to those foes.",
         "blurb": "You swing with a blade as bright as the new moon.",
         "talent1": "Allies in the area also gain 2 vigor, or 4 vigor if Harvest’s Slay effect triggers.",
         "talent2": "Gains Range 2. <i>Comeback</i>: Range 5",
         "masteryname": "HARVEST MOON",
-        "masterdescription": "When this ability passes through a <i>plant</i>, you can cause that plant to explode, dealing 2 piercing damage in a small blast <i>area effect</i> centered on each plant, and granting its blessing character to yourself or any other ally in range 3 of that plant. Characters can only be damaged by one of these explosions a turn."
+        "masterdescription": "When this ability passes through a <i>plant</i>, you can cause that plant to explode, dealing 2 piercing damage in a small blast <i>{{{{Area effect}}}}</i> centered on each plant, and granting its blessing character to yourself or any other ally in range 3 of that plant. Characters can only be damaged by one of these explosions a turn."
     },
     {
         "job": "Harvester",
@@ -1418,7 +1418,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "range", "val": 2}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Terrain Effect</b>: Cut away a part of the target’s soul, choosing a free space in range 3 of your foe. If the foe is not occupying that space at the end of their next turn, they take 2 piercing damage, are <i>pacified</i>, and summon a <i>plant</i> in that space.<br><b>Slay</b>: Create a plant in range 3 of your foe.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray damage.<br><b>Terrain Effect</b>: Cut away a part of the target’s soul, choosing a free space in range 3 of your foe. If the foe is not occupying that space at the end of their next turn, they take 2 piercing damage, are <i>pacified</i>, and summon a <i>plant</i> in that space.<br><b>Slay</b>: Create a plant in range 3 of your foe.",
         "blurb": "The blade edges of the harvesters are so sharp they can cut the very soul.",
         "talent1": "<i>Comeback</i>: Deal bonus damage, and increase all ranges by +1",
         "talent2": "<i>Sacrifice</i> 2: Ability gains range 6",
@@ -1444,7 +1444,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: <i>Seal</i> your foe, then bless yourself or an ally in range 2<br><b>Exceed</b>: You and allies in range 2 gain 3 vigor",
+        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: <i>Seal</i> your foe, then bless yourself or an ally in range 2<br><b>Exceed</b>: You and allies in range 2 gain 3 vigor",
         "blurb": "Divine energy infuses you, allowing hammer-like blows that would fell a demon with even your bare hands.",
         "talent1": "All versions of this ability gain Exceed: Gain <i>evasion</i> until the end of your next turn",
         "talent2": "Increase teleports to 2, and all version of this ability gain <i>Slay</i>: gain or lose a combo token.",
@@ -1475,7 +1475,7 @@
             {"tag_name": "action", "val": 2},
 			{"tag_name": "attack"}
         ],
-        "description": "<b>Effect</b>: Teleport 2. Allies in range 2 may teleport 1.<br><b>Attack</b>: <i>On hit</i>: 2[D] + fray. <i>Miss</i>: fray.<br><b>Exceed</b>: Create a large blast explosion <i>area effect</i> centered on your foe. Yourself and allies inside gain 3 vigor. Foes take 2 <i>divine</i> damage.",
+        "description": "<b>Effect</b>: Teleport 2. Allies in range 2 may teleport 1.<br><b>Attack</b>: <i>On hit</i>: 2{{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>Exceed</b>: Create a large blast explosion <i>{{{{Area effect}}}}</i> centered on your foe. Yourself and allies inside gain 3 vigor. Foes take 2 <i>divine</i> damage.",
         "blurb": "Swing your weapon in a flaming arc that sends sprays of fire in bright displays, lighting up the sky.",
         "talent1": "Increase teleports by +1 and gains <i>Slay</i>: Repeat the teleport effect.",
         "talent2": "Bloodied foes take bonus damage and must also save or be <i>stunned</i>.",
@@ -1504,7 +1504,7 @@
             {"tag_name": "action", "val": 2},
             {"tag_name": "range", "val": 2}
         ],
-        "description": "Terrain Effect: You scatter salt in a medium blast <i>area effect</i> in range, creating a terrain effect in those spaces. Foes in the area effect take 1 <i>divine</i> damage. While in the area, foes take +1 curse on saves and are <i>pacified</i> if they start or end their turn there. Allies inside the area take +1 boon on saves. The area persists until you take this action again or until the end of combat.<br><b>Effect</b>: After using any ability that triggers an <i>exceed</i> effect, deal 1 <i>divine</i> damage to all foes in the area, and grant 2 vigor to all allies in the area.",
+        "description": "Terrain Effect: You scatter salt in a medium blast <i>{{{{Area effect}}}}</i> in range, creating a terrain effect in those spaces. Foes in the {{{{Area effect}}}} take 1 <i>divine</i> damage. While in the area, foes take +1 curse on saves and are <i>pacified</i> if they start or end their turn there. Allies inside the area take +1 boon on saves. The area persists until you take this action again or until the end of combat.<br><b>Effect</b>: After using any ability that triggers an <i>exceed</i> effect, deal 1 <i>divine</i> damage to all foes in the area, and grant 2 vigor to all allies in the area.",
         "blurb": "You throw out a handful of glittering salt, scorching the spiritually impure.",
         "talent1": "Bloodied foes must save if they attempt to enter the area. On a failed save, they cannot voluntarily enter the area until the start of their next turn.",
         "talent2": "Bloodied allies inside gain 4 vigor for ending their turn inside instead.",
@@ -1550,7 +1550,7 @@
             {"tag_name": "interrupt", "val": 1},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Trigger</b>: You score a Critical Hit or trigger an Exceed effect<br><b>Area Effect</b>: <i>Burst 2 (self)</i>: Foes take 1 <i>divine</i> damage. Allies are <i>blessed</i>.<br><b>Effect</b>: Then, teleport 2.",
+        "description": "<b>Trigger</b>: You score a Critical Hit or trigger an Exceed effect<br><b>{{{{Area effect}}}}</b>: <i>Burst 2 (self)</i>: Foes take 1 <i>divine</i> damage. Allies are <i>blessed</i>.<br><b>Effect</b>: Then, teleport 2.",
         "blurb": "Invoking the spirits of the land and air, you move at impossible speed, doling out blows faster than the eye can see. A second blow scatters your foes and whisks away your allies.",
         "talent1": "Allies affected by either interrupt gain 2 vigor.",
         "talent2": "You can teleport 1 space before and after triggering either interrupt.",
@@ -1566,7 +1566,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D]+fray and foe is <i>pacified</i>. <i>Miss</i>: fray<br><b>Exceed</b>: Shove your foe 1, then teleport 1, then shove your foe 1, then teleport 1<br><b>Effect</b>: This attack gains +1 boon, cannot miss (turn any miss into a hit) and triggers any <i>exceed</i> effects the first time it is used in combat.",
+        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}}+fray and foe is <i>pacified</i>. <i>Miss</i>: fray<br><b>Exceed</b>: Shove your foe 1, then teleport 1, then shove your foe 1, then teleport 1<br><b>Effect</b>: This attack gains +1 boon, cannot miss (turn any miss into a hit) and triggers any <i>exceed</i> effects the first time it is used in combat.",
         "blurb": "This aptly named technique can be used to deliver an extremely powerful blow - but focusing the body’s aether in such a way takes a long time to recharge.",
         "talent1": "You may teleport an ally in range 2 instead of teleporting yourself with any of this ability’s teleports.",
         "talent2": "Both versions of this ability gains a range equal to the round number.",
@@ -1584,7 +1584,7 @@
 			{"tag_name": "blast", "val": "small"},
 			{"tag_name": "summon"}
         ],
-        "description": "<b>Attack</b>: <i>Autohit</i>: fray damage<br><b>Effect</b>: Your foe is <i>pacified</i>.<br><b>Area Effect</b>: Fray damage.<br><b>Effect</b>: <i>Summon</i> a wild card in range 2 of your foe.",
+        "description": "<b>Attack</b>: <i>Autohit</i>: fray damage<br><b>Effect</b>: Your foe is <i>pacified</i>.<br><b>{{{{Area effect}}}}</b>: Fray damage.<br><b>Effect</b>: <i>Summon</i> a wild card in range 2 of your foe.",
         "blurb": "A flash of bright color, and a card is stuck to your foe, bursting into arcane fire in a flash.",
         "talent1": "This ability does not break the <i>pacified</i> condition and deals 2 damage again to any <i>pacified</i> foes in the area.",
         "talent2": "After this ability resolves, roll 1 more d6 the next time you <i>gamble</i> this turn. <i>Charge</i>: 2 more d6s",
@@ -1601,7 +1601,7 @@
 			{"tag_name": "blast", "val": "small"},
 			{"tag_name": "summon"}
         ],
-        "description": "<b>Area Effect</b>: <i>Gamble</i>, then apply the listed effect in the area.<ol><li>Card explodes for fray damage.</li><li>All characters in the area are teleported 2</li><li>Create two spaces of difficult terrain in the area.</li><li><i>Bless</i> up to two characters in the area</li><li><i>Seal</i> up to two characters in the area.</li><li>Choose two</li></ol><b>Summon</b>: Then, summon a wild card in the area.",
+        "description": "<b>{{{{Area effect}}}}</b>: <i>Gamble</i>, then apply the listed effect in the area.<ol><li>Card explodes for fray damage.</li><li>All characters in the area are teleported 2</li><li>Create two spaces of difficult terrain in the area.</li><li><i>Bless</i> up to two characters in the area</li><li><i>Seal</i> up to two characters in the area.</li><li>Choose two</li></ol><b>Summon</b>: Then, summon a wild card in the area.",
         "blurb": "You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential.You flick a beautifully illustrated ethereal card onto the battlefield, laden with the threads of potential.",
         "talent1": "You can consume any number of blessings on character in Chaos Tarot’s area before gambling to roll 1 extra d6 per blessing consumed.",
         "talent2": "You can move Chaos Tarot’s area up to 2 spaces in any direction before applying the gamble effect. <i>Charge</i>: 4 spaces",
@@ -1618,7 +1618,7 @@
 			{"tag_name": "line", "val": 5},
 			{"tag_name": "combo"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Area Effect</b>: Fray<br><b>Effect</b>: Foe explodes in a medium blast <i>area effect</i>, centered on them. <i>Gamble</i>, then deal that much damage again to all characters in the area. On a 4+, create two spaces of difficult terrain in the area. On a 6, a meteor also lands, creating a height 1 <i>meteor</i> object in any part of the area and dealing 2 damage to adjacent characters when it lands.<br><b>Effect</b>: You can remove any number of blessings from allies in the area to roll 1 extra d6 per blessing removed when gambling.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + fray. <i>Miss</i>: fray.<br><b>{{{{Area effect}}}}</b>: Fray<br><b>Effect</b>: Foe explodes in a medium blast <i>{{{{Area effect}}}}</i>, centered on them. <i>Gamble</i>, then deal that much damage again to all characters in the area. On a 4+, create two spaces of difficult terrain in the area. On a 6, a meteor also lands, creating a height 1 <i>meteor</i> object in any part of the area and dealing 2 damage to adjacent characters when it lands.<br><b>Effect</b>: You can remove any number of blessings from allies in the area to roll 1 extra d6 per blessing removed when gambling.",
         "blurb": "You call down the heavens themselves on your foes.",
         "talent1": "Any version of this ability explodes with meteor showers when used, creating two spaces of <i>difficult terrain</i> in the area. <i>Charge</i>: Also create a height 1 <i>meteor</i> object in any part of the area, dealing 2 damage to adjacent foes when it lands.",
         "talent2": "If two or more allies are caught in the area of this ability, increase all medium blasts to large blasts, and this ability deals bonus damage.",
@@ -1633,7 +1633,7 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "range", "val": 5}
         ],
-        "description": "<b>Terrain Effect</b>: Choose a space on the battlefield in range 5. While you have at least one Polaris space active, you may <i>gamble</i> at the end of any turn after yours with the following effects:<br><b>Gamble</b>: A meteor lands in every space chosen by Polaris, exploding. The effects of each space vary depending on how many spaces are active. Each effect other than the blast size stacks:<ol><li><i>Small blast</i> area effect, deals damage equal to the gamble result.</li><li><i>Medium Blast</i>, deals +2 damage</li><li><i>Large Blast</i>, deals +2 damage, and characters in center spaces are <i>stunned</i>.</li></ol>Then, remove all spaces.",
+        "description": "<b>Terrain Effect</b>: Choose a space on the battlefield in range 5. While you have at least one Polaris space active, you may <i>gamble</i> at the end of any turn after yours with the following effects:<br><b>Gamble</b>: A meteor lands in every space chosen by Polaris, exploding. The effects of each space vary depending on how many spaces are active. Each effect other than the blast size stacks:<ol><li><i>Small blast</i> {{{{Area effect}}}}, deals damage equal to the gamble result.</li><li><i>Medium Blast</i>, deals +2 damage</li><li><i>Large Blast</i>, deals +2 damage, and characters in center spaces are <i>stunned</i>.</li></ol>Then, remove all spaces.",
         "blurb": "A distant glint in the heavens, portents of the devastation to come.",
         "talent1": "You can cause one of your Polaris to follow a character as a <i>mark</i> instead of a space.",
         "talent2": "Create a space of difficult terrain under the center space of each Polaris space after it resolves. On a gamble result of 4+, create either a height 1 meteor <i>object</i> or a <i>pit</i> instead.",
@@ -1685,10 +1685,10 @@
 			{"tag_name": "end turn"},
 			{"tag_name": "terrain effect"}
         ],
-        "description": "<b>End your turn</b> and create a <b>Terrain Effect</b>: Create a burning brand of star fire in range,  <i>dangerous terrain</i>, then gain <b>delay</b>: Your next turn must be slow. At the start of that turn, check if there is a character standing in that space:<ul><li>If there is, that character takes 2 <i>divine</i> damage and is <i>sealed</i>.</li><li>If there isn’t, it explodes for a large blast <i>area effect</i> centered on that space, scattering star fire everywhere. All characters in the area take 2 <i>divine</i> damage, and create a space of dangerous terrain under every foe in the area.</li></ul>Then, end the effect.",
+        "description": "<b>End your turn</b> and create a <b>Terrain Effect</b>: Create a burning brand of star fire in range,  <i>dangerous terrain</i>, then gain <b>delay</b>: Your next turn must be slow. At the start of that turn, check if there is a character standing in that space:<ul><li>If there is, that character takes 2 <i>divine</i> damage and is <i>sealed</i>.</li><li>If there isn’t, it explodes for a large blast <i>{{{{Area effect}}}}</i> centered on that space, scattering star fire everywhere. All characters in the area take 2 <i>divine</i> damage, and create a space of dangerous terrain under every foe in the area.</li></ul>Then, end the effect.",
         "blurb": "No blurb.",
         "talent1": "If Eclipse explodes, create a fiery pit in its center space. The pit is also dangerous terrain. Characters adjacent to the pit are <i>sealed</i> when it is created.",
-        "talent2": "If Eclipse explodes, it creates a shower of bolides, dealing 3 damage again to up to three characters in its <i>area effect</i>.",
+        "talent2": "If Eclipse explodes, it creates a shower of bolides, dealing 3 damage again to up to three characters in its <i>{{{{Area effect}}}}</i>.",
         "masteryname": "THE HELM",
         "masterdescription": "If you choose, at the start of your turn, Eclipse’s effect does not expire after activating. Instead, you can repeat its delay effect at the end of your turn without ending your turn or creating a new area. The area also disappears if you use this ability again."
     },
@@ -1717,7 +1717,7 @@
 			{"tag_name": "range", "val": 5},
 			{"tag_name": "gamble"}
         ],
-        "description": "<b>Attack</b>: <i>Autohit</i>: 1 damage and foe is <i>sealed</i>.<br><b>Area Effect</b>: At the end of that foe’s turn, <i>gamble</i>. A massive meteor hits for a large blast area effect centered on them, dealing damage equal to the number on the gamble die +2 to all characters.<br><b>Terrain Effect</b>: Then, create a height 1 meteor object in the area.",
+        "description": "<b>Attack</b>: <i>Autohit</i>: 1 damage and foe is <i>sealed</i>.<br><b>{{{{Area effect}}}}</b>: At the end of that foe’s turn, <i>gamble</i>. A massive meteor hits for a large blast {{{{Area effect}}}} centered on them, dealing damage equal to the number on the gamble die +2 to all characters.<br><b>Terrain Effect</b>: Then, create a height 1 meteor object in the area.",
         "blurb": "You invoke the ultimate power of the tower card, sealing a foe’s fate. In short order, untold calamity befalls them.",
         "talent1": "Roll an extra 1d6 when gambling for this ability. <i>Charge</i>: Also gains range 10",
         "talent2": "The meteor scatters debris when landing, creating two spaces of difficult terrain in the area, which could also be created under characters.",
@@ -1744,7 +1744,7 @@
             {"tag_name": "attack"},
             {"tag_name": "blast", "val": "medium"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Comback</b> or <b>Exceed:</b> After the ability resolves, the area explodes again, dealing 2 piercing damage to all characters.",
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + Fray. <i>On Miss:</i> Fray.<br/><b>{{{{Area effect}}}}:</b> Fray.<br/><b>Comback</b> or <b>Exceed:</b> After the ability resolves, the area explodes again, dealing 2 piercing damage to all characters.",
         "blurb": "Power curls into a writhing ball in your hand, before it's unleashed on your enemies.",
         "talent1":"<i>Comeback:</i> Allies are immune to damage from this ability.",
         "talent2":"<i>Exceed:</i> You may shove all characters in the area 2 spaces.",
@@ -1774,7 +1774,7 @@
             {"tag_name": "attack"},
             {"tag_name": "line", "val": 8}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> [D] + Fray. <i>Miss:</i> Fray.<br/><b>Effect:</b> Foe is <i>vulnerable</i>.<br/><b>Area Effect:</b> Fray.<br/><b>Effect:</b> Line of sight can't be blocked by objects, and ignores cover granted by objects or terrain.<br/><b>Comeback</b> or <b>Exceed:</b> Also deals bonus damage for every unique object it passed through.",
+        "description": "<b>Attack:</b> <i>On Hit:</i> {{{{[D]}}}} + Fray. <i>Miss:</i> Fray.<br/><b>Effect:</b> Foe is <i>vulnerable</i>.<br/><b>{{{{Area effect}}}}:</b> Fray.<br/><b>Effect:</b> Line of sight can't be blocked by objects, and ignores cover granted by objects or terrain.<br/><b>Comeback</b> or <b>Exceed:</b> Also deals bonus damage for every unique object it passed through.",
         "blurb": "A flash scorches the eyeballs, and a thin line burns through rock, flesh, and armor.",
         "talent1":"When this ability passes through an object, it released a soul ember, dealing 1 piercing damage to a character in range 3 of that object. Each character can only be struck by one ember by a single use of this ability.",
         "talent2":"If you are at 1 hp or lower, this ability deals maximum base damage (before critical hits).",
@@ -1836,7 +1836,7 @@
             {"tag_name": "end turn"},
             {"tag_name": "delay"}
         ],
-        "description": "<b>Effect: End your turn</b> and <b>Delay:</b> Choose a space in range. Your next turn must be slow, but at the start of that turn, that space explodes with gravitational energy, shoving all characters in a large blast <i>area effect</i> around it as close as possible towards it. Characters are shoved in any order you like. Any character that is in the center space when this ability activates must save or be <i>stunned</i>.<br/><b>Comeback:</b> Free action.",
+        "description": "<b>Effect: End your turn</b> and <b>Delay:</b> Choose a space in range. Your next turn must be slow, but at the start of that turn, that space explodes with gravitational energy, shoving all characters in a large blast <i>{{{{Area effect}}}}</i> around it as close as possible towards it. Characters are shoved in any order you like. Any character that is in the center space when this ability activates must save or be <i>stunned</i>.<br/><b>Comeback:</b> Free action.",
         "blurb": "You burn away the air itself, creating a sucking void that rips your foes into its howling embrace.",
         "talent1": "Any character in the center space is also <i>shattered</i> when this ability activates.",
         "talent2": "The center space also becomes a <i>pit</i>",
@@ -1856,7 +1856,7 @@
         "talent1": "Also cause a magma eruption adjacent to your target, creating 2 spaces of dangerous terrain.",
         "talent2": "You may <i>sacrifice 2</i> to immediately <i>shatter</i> your target as part of this ability.",
         "masteryname": "Magmotic",
-        "masterdescription": "Instead of creating a spire, you can create a magma-filled Pit. The pit is additionally dangerous terrain. When it appears, the eruption causes a medium blast area effect centered on your target that inflicts 2 piercing damage."
+        "masterdescription": "Instead of creating a spire, you can create a magma-filled Pit. The pit is additionally dangerous terrain. When it appears, the eruption causes a medium blast {{{{Area effect}}}} centered on your target that inflicts 2 piercing damage."
     },
     {
         "job": "Enochian",
@@ -1869,7 +1869,7 @@
             {"tag_name": "attack"},
             {"tag_name": "pierce"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Comeback</b> or <b>Exceed:</b> Deals bonus damage, creates a <i>pit</i> under the center space, and up to three spaces of difficult terrain in the area.<br/><b>Special Effect:</b> Also <i>Sacrifice 50%</i> of your max hp unless the round number is 6 or higher.",
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + Fray. <i>Miss:</i> {{{{[D]}}}} + Fray.<br/><b>{{{{Area effect}}}}:</b> {{{{[D]}}}} + Fray.<br/><b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Comeback</b> or <b>Exceed:</b> Deals bonus damage, creates a <i>pit</i> under the center space, and up to three spaces of difficult terrain in the area.<br/><b>Special Effect:</b> Also <i>Sacrifice 50%</i> of your max hp unless the round number is 6 or higher.",
         "blurb": "You burn and condense your own aether into super condensed form, creating a crackling black orb that inflicts maximum destruction. Without the time to stabilize this attack, its use can rip away your very life force.",
         "talent1": "If Blackstar's special effect triggers, capture your fleeing soul aether and gain 1 aether after this ability resolves.",
         "talent2": "If Blackstar's special effect triggers, gain 5 vigor after this ability resolves.",
@@ -1886,10 +1886,10 @@
             {"tag_name": "attack"},
             {"tag_name": "blast", "val": "small"}
         ],
-        "description": "<b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Attack:</b> <i>On Hit:</i> [D] + Fray. <i>Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Charge:</b> Create a space of <i>dangerous</i> terrain in the center space of the area, and under every foe in the area.",
+        "description": "<b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Attack:</b> <i>On Hit:</i> {{{{[D]}}}} + Fray. <i>Miss:</i> Fray.<br/><b>{{{{Area effect}}}}:</b> Fray.<br/><b>Charge:</b> Create a space of <i>dangerous</i> terrain in the center space of the area, and under every foe in the area.",
         "blurb": "The earth splits, excising poison from its depths, belching poisonous metals and gases.",
         "talent1": "You may also cause pits, objects you creates, and difficult terrain caught in the area to become <i>dangerous</i> terrain.",
-        "talent2": "You may cause existing <i>dangerous<i> terrain spaces in the area to boil with poison after this ability resolves. Characters in or adjacent to one or more of those spaces take 2 piercing damage as an <i>area effect</i>.",
+        "talent2": "You may cause existing <i>dangerous<i> terrain spaces in the area to boil with poison after this ability resolves. Characters in or adjacent to one or more of those spaces take 2 piercing damage as an <i>{{{{Area effect}}}}</i>.",
         "masteryname": "Magnabio",
         "masterdescription": "Gain access to the <b>Magnabio</b> infusion. <i>Magnabio benefits from Bio talents</i>."
     },
@@ -1903,7 +1903,7 @@
             {"tag_name": "end turn"},
             {"tag_name": "delay"}
         ],
-        "description": "<b>Effect:</b> Choose a character in range, <b>end your turn</b>, and gain <b>Delay:</b> You must take a slow turn next round. At the statr of that turn, you dive into the earth, removing yourself from the battlefield and placing yourself within range 3 of that character. They don't have to be in range or line of sight. <b>Area Effect:</b> When you explode upwards, you release a burst 1 area effect centered on you, shoving 1 and dealing 2 piercing damage to all characters.",
+        "description": "<b>Effect:</b> Choose a character in range, <b>end your turn</b>, and gain <b>Delay:</b> You must take a slow turn next round. At the statr of that turn, you dive into the earth, removing yourself from the battlefield and placing yourself within range 3 of that character. They don't have to be in range or line of sight. <b>{{{{Area effect}}}}:</b> When you explode upwards, you release a burst 1 {{{{Area effect}}}} centered on you, shoving 1 and dealing 2 piercing damage to all characters.",
         "blurb": "The earth is an old friend to geomancers, and will allow them passage as easily as slipping into water.",
         "talent1": "Gain <i>Collide:</i> Character is <i>vulnerable</i>.",
         "talent2": "You may burst out of the ground and fly 3 after Dragon Dive's delay effect resolves.",
@@ -1919,7 +1919,7 @@
             {"tag_name": "arc", "val": 6},
             {"tag_name": "attack"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Terrain Effect:</b> Create a height 1 boulder <i>object</i> in free space anywhere in the area after the attack resolves. <br/><b>Charge:</b> Attack target explodes in a medium blast <i>area effect</i>, dealing 2 piercing damage again to all characters and creating a <i>pit</i> under them.",
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + Fray. <i>Miss:</i> Fray.<br/><b>{{{{Area effect}}}}:</b> Fray.<br/><b>Terrain Effect:</b> Create a height 1 boulder <i>object</i> in free space anywhere in the area after the attack resolves. <br/><b>Charge:</b> Attack target explodes in a medium blast <i>{{{{Area effect}}}}</i>, dealing 2 piercing damage again to all characters and creating a <i>pit</i> under them.",
         "blurb": "The stomp of a foot or the slap of a palm is magnified a hundered fold into rumbling death.",
         "talent1": "When a boulder or pit is created with this ability, you may shove all adjacent characters 1 away from it. <i>Collide:</i> character has a space of <i>difficult</i> terrain created under them.",
         "talent2": "Boulders can be created under characters, and you may choose to make characters you create boulders under immune to damage from this ability.",
@@ -1934,7 +1934,7 @@
             {"tag_name": "action", "val": 1},
             {"tag_name": "line", "val": 3}
         ],
-        "description": "<b>Effect:</b> Release a shockwave in a line 3 <i>area effect</i>, dealing 2 piercing damage to all foes. <br/><b>Effect:</b> If an <i>object</i> is in the end space of the line, you can extend this line by 3 or more spaces in any direction, drawn from the object. If a new object is at the end space of <i>this line</i>, you can keep extending the line by 3 spaces this way each time, but can only extend it once per object.<br/><b>Effect:</b> Then, all objects this line passed through resonate, releasing a burst 1 <i>area effect</i> centered on them and dealing 2 piercing damage to all characters inside.<br/><b>Charge:</b> <i>Shatter</i> any foe damages by this ability.",
+        "description": "<b>Effect:</b> Release a shockwave in a line 3 <i>{{{{Area effect}}}}</i>, dealing 2 piercing damage to all foes. <br/><b>Effect:</b> If an <i>object</i> is in the end space of the line, you can extend this line by 3 or more spaces in any direction, drawn from the object. If a new object is at the end space of <i>this line</i>, you can keep extending the line by 3 spaces this way each time, but can only extend it once per object.<br/><b>Effect:</b> Then, all objects this line passed through resonate, releasing a burst 1 <i>{{{{Area effect}}}}</i> centered on them and dealing 2 piercing damage to all characters inside.<br/><b>Charge:</b> <i>Shatter</i> any foe damages by this ability.",
         "blurb": "Striking deep into the earth, a wave of strength resonates with the very terrain around oneself.",
         "talent1": "When Helix Heel bounces off an object, you can shove it 1 in any direction before extending the line.",
         "talent2": "After Helix Heel resolves, fly 1 or teleport 1 space for each bounce (up to three times).",
@@ -1968,7 +1968,7 @@
         "description": "<b>Stance:</b> While in this stance, set out a d6 power die at 1. Tick it up after a foe uses an ability that damages you. At 4+, gain <i>resistance</i> If the die is at maximum and you would tick it up again, this stance immediately ends and you become <i>stunned</i>.<br/><b>Refresh:</b> Refresh this stance at the start of your turn. When the stance refreshed, you may tick the die up or down by 1.",
         "blurb": "Like the deepest magma in the earth's crust, your flesh becomes more stony when struck, eventually becoming covered in a gleaming obsidian shell.",
         "talent1": "If this ability ticks over, it doesn't end until the end of the current turn.",
-        "talent2": "When this ability ends, you may have the shell explode off you, dealing 2 piercing damage in a range 2, burst 1 <i>area effect</i> and shoving characters inside 1.",
+        "talent2": "When this ability ends, you may have the shell explode off you, dealing 2 piercing damage in a range 2, burst 1 <i>{{{{Area effect}}}}</i> and shoving characters inside 1.",
         "masteryname": "Diamond Soul",
         "masterdescription": "You have <i>regeneration</i> while in this stance, and when it refreshes, you can tick the die up or down by 2."
     },
@@ -1979,7 +1979,7 @@
         "tags":[
             {"tag_name": "action", "val": 2}
         ],
-        "description": "<b>Effect:</b> You hit a precise pressure point on an adjacent character, purging toxins from their body. A character must be affected by at least 1 status to be targeted by this ability. End all statuses on the character and create a range 2, burst 1 <i>area effect</i> from your target. Characters within take piercing fray damage once for each effect purged, to a maximum of four times. If your target is a foe, you can also <i>shatter</i> them.<br/><b>Charge:</b> Also end any markes of your choice on your target, counting as purging an effect.",
+        "description": "<b>Effect:</b> You hit a precise pressure point on an adjacent character, purging toxins from their body. A character must be affected by at least 1 status to be targeted by this ability. End all statuses on the character and create a range 2, burst 1 <i>{{{{Area effect}}}}</i> from your target. Characters within take piercing fray damage once for each effect purged, to a maximum of four times. If your target is a foe, you can also <i>shatter</i> them.<br/><b>Charge:</b> Also end any markes of your choice on your target, counting as purging an effect.",
         "blurb": "Using your knowledge of innumerable anatomies, you quickly rearrange energy channels in your target to heal them - forcefully.",
         "talent1": "Characters in the area take piercing fray damage again one more time if your target is bloodied.",
         "talent2": "Create a space of <i>dangerous</i> or <i>difficult</i> terrain in the area for each effect purged.",
@@ -1997,9 +1997,9 @@
         "description": "<b>Trigger:</b> You or a willing ally in range is targeted by a foe's ability, that ability resolves, and they are not defeated.<br/><b>Effect:</b> You transmute yourself or your ally into solid stone, metal, or gemstone. After the triggering ability resolves, remove that character from the battlefield and replace them with a height 1 statue <i>object</i>. At the start of their next turn, or if the object is removed sooner, replace the object with the original character. Any characters or objects on top of the statue when it is replaced are placed in a free adjacent space or as close as possible.<br/><b>Special:</b> If you use this ability twice on the same character in the same combat, do not return them to the battlefield until the combat is over. Until then, they count as defeated.",
         "blurb": "In a flash, flesh becomes unyielding stone.",
         "talent1": "When your chosen character is returned, their statue remains on the battlefield as a <i>broken shell</i> object. Place them in an adjacent space to it instead.",
-        "talent2": "When your chosen character returns, the shell explodes off the, shoving all adjacent characters 1. If that character was at 25% hp or lower, also deal piercing fray damage to all characters in a burst 1 area centered on them as an <i>area effect</i>.",
+        "talent2": "When your chosen character returns, the shell explodes off the, shoving all adjacent characters 1. If that character was at 25% hp or lower, also deal piercing fray damage to all characters in a burst 1 area centered on them as an <i>{{{{Area effect}}}}</i>.",
         "masteryname": "Stone Resonance",
-        "masterdescription": "Any time a statue created by this ability is caught in an area affect from any character, you may choose one of the following:<ul><li>Deal 2 piercing damage to all characters in the area effect again.</li><li>Shelter all adjacent characters to the statue from the area effect, granting them <i>cover</i> against its effects and +1 boon on any saves.</li></ul>"
+        "masterdescription": "Any time a statue created by this ability is caught in an area affect from any character, you may choose one of the following:<ul><li>Deal 2 piercing damage to all characters in the {{{{Area effect}}}} again.</li><li>Shelter all adjacent characters to the statue from the {{{{Area effect}}}}, granting them <i>cover</i> against its effects and +1 boon on any saves.</li></ul>"
     },
     {
         "job": "Geomancer",
@@ -2011,7 +2011,7 @@
             {"tag_name": "attack"},
             {"tag_name": "pierce"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> [D] + 1. <i>Miss:</i> 1.<br/><b>Effect:</b>Foe is <i>vulnerable</i><br/><b>Effect:</b> Set up lethal vibrations in a foe's body. When they end their next turn, they take 1 piercing damage once for every object adjacent to them, up to a maximum of 4 times. Then, this effect ends.<br/><b>Charge:</b> Vibrations also damage all characters in a burst 1 <i>area effect</i> centered on the character.",
+        "description": "<b>Attack:</b> <i>On Hit:</i> {{{{[D]}}}} + 1. <i>Miss:</i> 1.<br/><b>Effect:</b>Foe is <i>vulnerable</i><br/><b>Effect:</b> Set up lethal vibrations in a foe's body. When they end their next turn, they take 1 piercing damage once for every object adjacent to them, up to a maximum of 4 times. Then, this effect ends.<br/><b>Charge:</b> Vibrations also damage all characters in a burst 1 <i>{{{{Area effect}}}}</i> centered on the character.",
         "blurb": "You hit your target with a pressure wave, setting up lethal vibrations in their body that are strong enough to crack the earth beneath their feet.",
         "talent1": "While Quaking Palm's effect is active, after that character uses any ability that moves them, create a <i>difficult</i> terrain space in any free space adjacent to them.",
         "talent2": "While Quaking Palm's effect is active, after that character uses any ability that moves them, deal 1 piercing damage to all foes adjacent to that character.",
@@ -2028,7 +2028,7 @@
             {"tag_name": "attack"},
             {"tag_name": "pierce"}
         ],
-        "description": "<b>Effect:</b> Teleport 1, then deal 1 piercing damage to a foe in range 3, then teleport 1, then deal 1 piercing damage to a foe in range 3.<br/><b>Attack:</b><i>On Hit:</i> [D]. <i>Miss:</i> 1 damage.<br/><b>Effect:</b> Foe is <i>vulnerable</i>.",
+        "description": "<b>Effect:</b> Teleport 1, then deal 1 piercing damage to a foe in range 3, then teleport 1, then deal 1 piercing damage to a foe in range 3.<br/><b>Attack:</b><i>On Hit:</i> {{{{[D]}}}}. <i>Miss:</i> 1 damage.<br/><b>Effect:</b> Foe is <i>vulnerable</i>.",
         "blurb": "A thousand needles of light, each striking a perfect blow.",
         "talent1": "When used against a bloodied foe, blitz creates two lightning <i>dangerous</i> terrain spaces in free space in range 2 of them.",
         "talent2": "You can grant Blitz's first effect to any ally in range 2 instead.",
@@ -2044,7 +2044,7 @@
             {"tag_name": "power die"},
             {"tag_name": "stance"}
         ],
-        "description": "<b>Stance:</b> Shoot a flurry of lightning bolts into the air and set out a d6 power die, starting at 3. When you enter this stance, or any time you teleport, you may call a bolt down, dealing 1 piercing damage to a foe in range 3 as an <i>area effect</i>, then reducing your power die by 1. This effect can trigger any number of times a turn. If you run out of bolts, Odinforce ends.<br/><b>Effect:</b> When you trigger a <i>slay</i> effect, gain +2 more bolts.<br/><b>Refresh:</b> This stance automatically refreshes at the start of your turns. When this stance refreshes, gain 2 more bolts, to a maximum of 6.",
+        "description": "<b>Stance:</b> Shoot a flurry of lightning bolts into the air and set out a d6 power die, starting at 3. When you enter this stance, or any time you teleport, you may call a bolt down, dealing 1 piercing damage to a foe in range 3 as an <i>{{{{Area effect}}}}</i>, then reducing your power die by 1. This effect can trigger any number of times a turn. If you run out of bolts, Odinforce ends.<br/><b>Effect:</b> When you trigger a <i>slay</i> effect, gain +2 more bolts.<br/><b>Refresh:</b> This stance automatically refreshes at the start of your turns. When this stance refreshes, gain 2 more bolts, to a maximum of 6.",
         "blurb": "You thrust your weapon skyward, and pierce the heavens.",
         "talent1": "If you end a turn without attacking, gain +2 more Odinforce bolts.",
         "talent2": "<i>Comeback:</i> Odinforce gains 4 bolts instead of 2 on refressh.",
@@ -2061,7 +2061,7 @@
             {"tag_name": "attack"},
             {"tag_name": "arc", "val": 4}
         ],
-        "description": "<b>Effect:</b> Teleport 1.<br/><b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Effect:</b> Teleport 1, then deal 1 piercing damage again to your target for every for or ally adjacent to them, to a maximum of four times.",
+        "description": "<b>Effect:</b> Teleport 1.<br/><b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + Fray. <i>Miss:</i> Fray.<br/><b>{{{{Area effect}}}}:</b> Fray.<br/><b>Effect:</b> Teleport 1, then deal 1 piercing damage again to your target for every for or ally adjacent to them, to a maximum of four times.",
         "blurb": "You summon a blade of pure lightning energy, sweeping it in a shining arc.",
         "talent1": "When used against a bloodied foe, Nothung deals bonus damage, and deals 1 piercing damage again to its target on hit.",
         "talent2": "<i>Comeback:</i> Increase teleport to 4.",
@@ -2077,7 +2077,7 @@
             {"tag_name": "range", "val": 4},
             {"tag_name": "terrain effect"}
         ],
-        "description": "<b>Terrain Effect:</b> Swipe your weapon to create a line 3 area of crackling winds in range, with the following features:<ul><li>The area is <i>difficult terrain</i></li><li>Allies may use any space of the area for <i>cover</i> as if it were height 1 terrain.</li><li>Foes that end their turn in the area are <i>shattered</i></li><li>Once a rounde, when you include any space of the atherwand in an area effect, you can infure the triggering ability with stormy power, teleporting all characters targeted by that ability and any characters in the wall 1 space.</li></ul><br/>The are lasts until created again.",
+        "description": "<b>Terrain Effect:</b> Swipe your weapon to create a line 3 area of crackling winds in range, with the following features:<ul><li>The area is <i>difficult terrain</i></li><li>Allies may use any space of the area for <i>cover</i> as if it were height 1 terrain.</li><li>Foes that end their turn in the area are <i>shattered</i></li><li>Once a rounde, when you include any space of the atherwand in an {{{{Area effect}}}}, you can infure the triggering ability with stormy power, teleporting all characters targeted by that ability and any characters in the wall 1 space.</li></ul><br/>The are lasts until created again.",
         "blurb": "You summon the highwinds to batter your foes.",
         "talent1": "When you use this ability again, it doesn't replace the old area, but extends it, as long as at least once space of the new area is adjacent to the old.",
         "talent2": "At the statr of your turn, you can move the area 1 space in any direction. If it moves into the space of a character, it shoves them 1.",
@@ -2106,12 +2106,12 @@
         "tags":[
             {"tag_name": "action", "val": 1}
         ],
-        "description": "<b>Area Effect:</b> Sweep your blade to cut a line 3 crackling lightning arch, dealing 2 piercing damage to all characters in the area.<br/><b>Terrain Effect:</b> The arch remains in the air. Yourself and allies that enter any space in or adjacent to the area can grab on to it as a <i>free action</i> ability to immediately teleport to any other free space in or adjacent to the area.<br/>Then the area is consumed, removing it.",
+        "description": "<b>{{{{Area effect}}}}:</b> Sweep your blade to cut a line 3 crackling lightning arch, dealing 2 piercing damage to all characters in the area.<br/><b>Terrain Effect:</b> The arch remains in the air. Yourself and allies that enter any space in or adjacent to the area can grab on to it as a <i>free action</i> ability to immediately teleport to any other free space in or adjacent to the area.<br/>Then the area is consumed, removing it.",
         "blurb": "You slash a line of rampant multicolored lightning aether, a blinding arch of light that can carry you or your allies to safety.",
         "talent1": "The teleport from Bifrost can interrupt other actions and does not stop movement.",
         "talent2": "Bifrost areas grow by 2 spaces, added anywhere to the total area in any pattern, at the end of each round. When they grow, deal 1 piercing damage to all characters inside.",
         "masteryname": "Path to Erenhelion",
-        "masterdescription": "Bifrost bounces if its end space lands in the space of an object, creating a second line 3 area that extends the total area effect and terrain effect area."
+        "masterdescription": "Bifrost bounces if its end space lands in the space of an object, creating a second line 3 area that extends the total {{{{Area effect}}}} and terrain effect area."
     },
     {
         "job": "Spellblade",
@@ -2136,7 +2136,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger:</b> You are damaged by a foe's ability, and the ability resolves.<br/><b>Effect:</b> Draw a line 3 <i>area effect</i>, then teleport to the end space. If you can't teleport there, this ability can't be used. All other characters in the area take 2 piercing damage.",
+        "description": "<b>Trigger:</b> You are damaged by a foe's ability, and the ability resolves.<br/><b>Effect:</b> Draw a line 3 <i>{{{{Area effect}}}}</i>, then teleport to the end space. If you can't teleport there, this ability can't be used. All other characters in the area take 2 piercing damage.",
         "blurb": "You transmute yourself and your gear into pure lightning Aether, coursing through the boundaries between worlds in a moment.",
         "talent1": "You may teleport one adjacent ally with you to any free adjacent space after this interrupt resolves.",
         "talent2": "<i>Comeback:</i> You may extend Sturmreiten's area by another line 3 area, drawn in a different direction.",
@@ -2152,7 +2152,7 @@
             {"tag_name": "attack"},
             {"tag_name": "line", "val": 6}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> Fray.<br/><b>Effect:</b> Foe is <i>shattered</i><br/><b>Area Effect:</b> Fray.<br/><b>Effect:</b> After the attack resolves, teleport 1, then gain the Leaf of the Wind interrupt until the start of your next turn.",
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + Fray. <i>Miss:</i> Fray.<br/><b>Effect:</b> Foe is <i>shattered</i><br/><b>{{{{Area effect}}}}:</b> Fray.<br/><b>Effect:</b> After the attack resolves, teleport 1, then gain the Leaf of the Wind interrupt until the start of your next turn.",
         "blurb": "Agile and alert, your swordcraft spells doom for your foe. When they go to relatiate, you were never there.",
         "talent1": "Drifting Leaf deals bonus damage against bloodied foes, and its interrupt deals 1 piercing damage, twice to them instead.",
         "talent2": "You may teleport your foe to any space adjacent to you instead of teleporting yourself 1 when this interrupt triggers.",
@@ -2169,10 +2169,10 @@
             {"tag_name": "attack"},
             {"tag_name": "summon"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> Fray.<br/><b>Area Effect:</b> Fray.<br/><b>Effect:</b> Shove all characters 1 to either side of the line, Youc an shove in different directions for all characters. Then shove the attack target 1 and summon a <i>salt sprite</i> in any space in range 2 from them.<br/><b>Collide:</b> Summon a <i>salt sprite</i>.",
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + Fray. <i>Miss:</i> Fray.<br/><b>{{{{Area effect}}}}:</b> Fray.<br/><b>Effect:</b> Shove all characters 1 to either side of the line, Youc an shove in different directions for all characters. Then shove the attack target 1 and summon a <i>salt sprite</i> in any space in range 2 from them.<br/><b>Collide:</b> Summon a <i>salt sprite</i>.",
         "blurb": "You pull an enormous weapon made out of pure ice out of the air, and hurl it through foes.",
-        "talent1": "If the end space of Rime hits a pit or object, the weapon bounces back and deals 1 piercing damage, twice as an <i>area effect</i> to all affected characters again.",
-        "talent2": "If the end space of Rime hits a pit or object, it explodes into a shower of icicles, dealing 1 piercing damage to one or two characters as an <i>area effect</i> in range 3 of that pit or object, and summing a salt sprite adjacent to each of those characters.",
+        "talent1": "If the end space of Rime hits a pit or object, the weapon bounces back and deals 1 piercing damage, twice as an <i>{{{{Area effect}}}}</i> to all affected characters again.",
+        "talent2": "If the end space of Rime hits a pit or object, it explodes into a shower of icicles, dealing 1 piercing damage to one or two characters as an <i>{{{{Area effect}}}}</i> in range 3 of that pit or object, and summing a salt sprite adjacent to each of those characters.",
         "masteryname": "Magnarime",
         "masterdescription": ""
     },
@@ -2200,7 +2200,7 @@
             {"tag_name": "line", "val": 8},
             {"tag_name": "pierce"}
         ],
-        "description": "<b>Effect:</b> Foe is <i>shattered</i> and shoved 1 towards you.<br/><b>Attack:</b> <i>Auto Hit:</i> 1 damage.<br/><b>Area Effect:</b> 1 damage. <br/><b>Effect:</b> Gain 1 Aether.<br/><b>Effect:</b> If any character is already <i>shattered</i>, create a <i>pit</i> under them.",
+        "description": "<b>Effect:</b> Foe is <i>shattered</i> and shoved 1 towards you.<br/><b>Attack:</b> <i>Auto Hit:</i> 1 damage.<br/><b>{{{{Area effect}}}}:</b> 1 damage. <br/><b>Effect:</b> Gain 1 Aether.<br/><b>Effect:</b> If any character is already <i>shattered</i>, create a <i>pit</i> under them.",
         "blurb": "You shoot a spear of frozen water aether at your foe, stirring up ambient water aether in the air.",
         "talent1": "At round 4 or later, this ability generates +1 Aether when used.",
         "talent2": "At round 4 or later, this ability <i>shatters</i> all characters in its area.",
@@ -2230,7 +2230,7 @@
         "tags":[
             {"tag_name": "terrain effect"}
         ],
-        "description": "<b>Terrain Effect:</b> Create a line 3 terrain effect. Characters that enter any end space of the line gain <i>phasing</i>, then are shoved to the other end space of the line, or as far as possible. Once they stop, they are flung out and shoved 1 in a direction of your choice outside of the area. Characters entering a middle space can be shoved in a direction of your choice.<br/><b>Collide:</b> Character releases a wind blast as a burst 1 <i>area effect</i> centered on them, shoving all characters inside 1 space away from them and dealing 2 piercing damage.<br/><br/>The area is replaced if this ability is used again.",
+        "description": "<b>Terrain Effect:</b> Create a line 3 terrain effect. Characters that enter any end space of the line gain <i>phasing</i>, then are shoved to the other end space of the line, or as far as possible. Once they stop, they are flung out and shoved 1 in a direction of your choice outside of the area. Characters entering a middle space can be shoved in a direction of your choice.<br/><b>Collide:</b> Character releases a wind blast as a burst 1 <i>{{{{Area effect}}}}</i> centered on them, shoving all characters inside 1 space away from them and dealing 2 piercing damage.<br/><br/>The area is replaced if this ability is used again.",
         "blurb": "The stormbenders are friend to breeze and gale, and have learned how to coax the wind into doing their bidding.",
         "talent1": "Gust can be used for <i>cover</i> by allies as if it were height 1 terrain.",
         "talent2": "Yourself and allies that are shoved by gust can fly 2 after stopping instead of being shoved.",
@@ -2244,7 +2244,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger:</b> A foe damages you or an ally adjacent to either you or a summon you control with an ability.<br/><b>Effect:</b> After the triggering ability resolves create a crashing wave in a medium blast <i>area effect</i> placed adjacent to you or your summon. Characters caught in the area are shoved 1, and foes become <i>vulnerable</i>.<br/><b>Collide:</b> Summon a salt sprite.",
+        "description": "<b>Trigger:</b> A foe damages you or an ally adjacent to either you or a summon you control with an ability.<br/><b>Effect:</b> After the triggering ability resolves create a crashing wave in a medium blast <i>{{{{Area effect}}}}</i> placed adjacent to you or your summon. Characters caught in the area are shoved 1, and foes become <i>vulnerable</i>.<br/><b>Collide:</b> Summon a salt sprite.",
         "blurb": "Better get your sea legs.",
         "talent1": "If only one foe is caught in the area of wave, also create a <i>pit</i> underneath them.",
         "talent2": "If you don't use this interrupt, stock up another use of it at the start of your turn. You can stock it up to interrupt 3.",
@@ -2291,10 +2291,10 @@
             {"tag_name": "attack"},
             {"tag_name": "pierce"}
         ],
-        "description": "This attack has no attack space. Instead, the attack space is clear and excempt from this area.<br/><b>Area Effect:</b> [D]<br/><b>Effect:</b> If any ally is in the center space, they may fly 4 after the ability resolves. If an enemy is in the center space, they become <i>vulnerable</i>.",
+        "description": "This attack has no attack space. Instead, the attack space is clear and excempt from this area.<br/><b>{{{{Area effect}}}}:</b> {{{{[D]}}}}<br/><b>Effect:</b> If any ally is in the center space, they may fly 4 after the ability resolves. If an enemy is in the center space, they become <i>vulnerable</i>.",
         "blurb": "A storm of vigorous tunder and acid rain descends at your command, but the center remains calm.",
         "talent1": "If there is no character in the center space, create a <i>pit</i> there. The pit is also <i>dangerous</i> terrain.",
-        "talent2": "The center character may also take 1 piercing damage, once, for every foe or ally in the area effect, up to three times.",
+        "talent2": "The center character may also take 1 piercing damage, once, for every foe or ally in the {{{{Area effect}}}}, up to three times.",
         "masteryname": "Great Aeoncloud",
         "masterdescription": "<b>Object:</b>If there is no character in the center space, you may also create a height 1 <i>aethercloud</i> object in the center space. At the start of your turn, the cloud drifts 3 spaces in a direction of your choice. Any character on top of the cloud when it moves moves with it, and is <i>unstoppable</i> while moving this way."
     }

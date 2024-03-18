@@ -55,6 +55,7 @@ $colour_grey_secondary: #D5D5D5;
 
 .ruleStructure {
     border-radius: 1em;
+    background: white;
     box-shadow: 0 0 5px 1px #CCC;
     max-width: 25em;
     padding: 1em;
@@ -247,6 +248,11 @@ $colour_grey_secondary: #D5D5D5;
     width: fit-content;
     background-color: $colour_purple_secondary;
     color: white;
+}
+
+.glossaryPurple {
+    color: $colour_purple_main;
+    font-weight: bold;
 }
 
 .boldtextPurple {   
