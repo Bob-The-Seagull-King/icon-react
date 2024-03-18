@@ -14,7 +14,7 @@
         "masterdescription": "NA"
     },
     {
-        "job": "Bastion",
+        "job": "Basic",
         "name": "Dash",
         "chapter": 1,
         "tags":[
@@ -28,7 +28,7 @@
         "masterdescription": "NA"
     },
     {
-        "job": "Bastion",
+        "job": "Basic",
         "name": "Interact",
         "chapter": 1,
         "tags":[
@@ -42,7 +42,7 @@
         "masterdescription": "NA"
     },
     {
-        "job": "Bastion",
+        "job": "Basic",
         "name": "Rescue",
         "chapter": 1,
         "tags":[
@@ -56,7 +56,7 @@
         "masterdescription": "NA"
     },
     {
-        "job": "Bastion",
+        "job": "Basic",
         "name": "Light Attack",
         "chapter": 1,
         "tags":[
@@ -70,7 +70,7 @@
         "masterdescription": "NA"
     },
     {
-        "job": "Bastion",
+        "job": "Basic",
         "name": "Heavy Attack",
         "chapter": 1,
         "tags":[
@@ -84,7 +84,7 @@
         "masterdescription": "NA"
     },
     {
-        "job": "Bastion",
+        "job": "Basic",
         "name": "Recover",
         "chapter": 1,
         "tags":[
