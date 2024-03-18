@@ -2,7 +2,7 @@ import React from 'react'
 import GlossaryPopup from "../components/pagecomponents/GlossaryPopup";
 
 export function convertStringToContent(contentstring: string) {
-    const split = contentstring.split(/({{{{.{0,}}}}})/g);
+    const split = contentstring.split(/({{{{[^}]{0,}}}}})/g);
     return (
         <span>
             {split.map((item) => (

@@ -7,7 +7,7 @@
         "description": "Reduce all damage taken by X. Always reduce by the highest value."
     },
     {
-        "name": "Area Ability",
+        "name": "Area Effect",
         "tags": [
             {"tag_name": "general"}
         ],
