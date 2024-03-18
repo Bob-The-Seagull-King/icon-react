@@ -1,5 +1,12 @@
 [
     {
+        "name": "Adverse Terrain",
+        "tags": [
+            {"tag_name": "terrain"}
+        ],
+        "description": "{{{{Difficult}}}} or {{{{dangerous}}}} terrain."
+    },
+    {
         "name": "Armor X",
         "tags": [
             {"tag_name": "general"}
@@ -39,7 +46,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "When an ability gains bonus damage, roll one more [D] for each instance of bonus damage and pick the highest result."
+        "description": "When an ability gains bonus damage, roll one more {{{{[D]}}}} for each instance of bonus damage and pick the highest result."
     },
     {
         "name": "Chain Reaction",
@@ -56,13 +63,6 @@
         "description": "A <i>triggered effect</i> that activates when the ability is used on a slow turn."
     },
 	{
-        "name": "Cure",
-        "tags": [
-			{"tag_name": "positive effect"}
-        ],
-        "description": "A character that’s cured gains 4 vigor, or a <i>vigor surge</i> if they’re bloodied. Then, they may save agains all statuses."
-    },
-	{
         "name": "Collide",
         "tags": [
             {"tag_name": "triggered effect"}
@@ -74,7 +74,7 @@
         "tags": [
             {"tag_name": "token"}
         ],
-        "description": "Actions with Combo have two versions, a base version and combo version. When you use the base ability, gain a combo token. Any time you use a combo ability and have a token, you use the combo version instead, discarding the token . You can only have one combo token at once, and discard all tokens at the end of combat."
+        "description": "Actions with Combo have two versions, a base version and combo version. When you use the base ability, gain a combo token. Any time you use a combo ability and have a token, you use the combo version instead, discarding the token. You can only have one combo token at once, and discard all tokens at the end of combat."
     },
 	{
         "name": "Comeback",
@@ -88,7 +88,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "If a character has cover from an ability, it halves all damage from that ability."
+        "description": "If a character has cover from an ability, it halves all damage from that ability.<br>(pg. 89) Characters gain resistance to damage from ranged abilities while they are in cover, halving damage.<br> (pg.92) Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:<ul><li>Characters in cover take <b>half damage</b>.</li><li>Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.</li><li>Characters don’t grant cover by default.</li><li>A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.</li><li>Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.</li></ul>"
     },
 	{
         "name": "Critical Hit",
@@ -97,19 +97,26 @@
         ],
         "description": "Increase total attack damage by + [D]. Can only apply to an attack, can only apply once, and can trigger normally on a total attack roll of 20+."
     },
+    {
+        "name": "Cure",
+        "tags": [
+			{"tag_name": "positive effect"}
+        ],
+        "description": "A character that’s cured gains 4 vigor, or a <i>vigor surge</i> if they’re bloodied. Then, they may save agains all statuses."
+    },
 	{
         "name": "Dangerous Terrain",
         "tags": [
             {"tag_name": "terrain"}
         ],
-        "description": "Entering or exiting a dangerous terrain space causes a character to take 2 piercing damage. Characters can only take this damage once a turn."
+        "description": "Entering or exiting a dangerous terrain space causes a character to take 2 {{{{piercing}}}} damage. Characters can only take this damage once a turn, even if they enter new dangerous terrain spaces. Can overlap other terrain types."
     },
 	{
         "name": "Difficult Terrain",
         "tags": [
             {"tag_name": "terrain"}
         ],
-        "description": "Costs +1 space of movement to exit."
+        "description": "Costs +1 space of movement to exit. Can overlap other terrain types."
     },
 	{
         "name": "[D]",
@@ -132,19 +139,26 @@
         ],
         "description": "Slow but powerful effect that typically ends your turn. When you use a delay effect, your next turn must be slow. The effect occurs at the start of that turn, before anything else happens."
     },
+    {
+        "name": "Effect",
+        "tags": [
+            {"tag_name": "general"}
+        ],
+        "description": "A part of an ability that simply happens and is applied to all targets, no roll or save required."
+    },
+    {
+        "name": "Elevation",
+        "tags": [
+            {"tag_name": "terrain"}
+        ],
+        "description": "(pg. 89) Each basic terrain space has elevation (suggested from 0-3, with 0 being ground level, but could be any elevation).<ul><li>It costs +1 movement per difference in height to move up elevation, to a max of +3. Spaces 4 or more spaces higher cannot be entered with normal movement.</li><li>Characters might be able to take {{{{cover}}}} behind terrain, and it might block line of sight (see more in the section below).</li><li><b>Height Advantage</b>: +1 boon on any attack against a target on lower elevation than you per level of height difference, and you ignore {{{{cover}}}} for lower elevation.</li><li><b>Height Disadvantage</b>: If you attack a character in higher elevation than you, get +1 curse per level of height difference.</li></ul>"
+    },
 	{
         "name": "End Turn",
         "tags": [
             {"tag_name": "general"}
         ],
         "description": "This ability ends your turn. If multiple abilities or effects would end your turn at the same time, you can only choose one."
-    },
-	{
-        "name": "Effect",
-        "tags": [
-            {"tag_name": "general"}
-        ],
-        "description": "A part of an ability that simply happens and is applied to all targets, no roll or save required."
     },
 	{
         "name": "Engagement",
@@ -165,7 +179,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "Vagabond only. <i>Triggered effect</i> that triggers if this ability targets a <i>bloodied</i> foe."
+        "description": "Vagabond-only. <i>Triggered effect</i> that triggers if this ability targets a {{{{bloodied}}}} foe."
     },
 	{
         "name": "Fray Damage",
@@ -174,19 +188,26 @@
         ],
         "description": "Fixed damage. Usually added to all attacks on hit or miss."
     },
+    {
+        "name": "Free Action",
+        "tags": [
+            {"tag_name": "general"}
+        ],
+        "description": "Some abilities take <b>Free Actions</b>. These abilities don’t take an action to use and must be used on your turn, but still follow the No Repeats rule. The most basic Free Action is a <b>standard move</b>, which all characters have by default."
+    },
 	{
         "name": "Gamble",
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "Roll 1d6, then trigger an effect on a certain result or higher"
+        "description": "Roll 1d6, then trigger an effect on a certain result or higher."
     },
 	{
         "name": "Heroic",
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "Stalwart only <i>triggered effect</i>. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
+        "description": "Stalwart-only <i>triggered effect</i>. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
     },
 	{
         "name": "Immune to X",
@@ -195,12 +216,26 @@
         ],
         "description": "Not affected by X in any way. A character that’s immune to damage or effects doesn’t even count as taking them."
     },
+    {
+        "name": "Impassable",
+        "tags": [
+            {"tag_name": "terrain"}
+        ],
+        "description": "Provides obstruction and cover, and blocks line of sight. Could be something like a pillar, cliff, or a solid wall that goes to the ceiling."
+    },
 	{
         "name": "Infuse",
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "Wright only triggered effect. Triggers when Aether is spent on an ability."
+        "description": "Wright-only <i>triggered effect</i>. Triggers when Aether is spent on an ability."
+    },
+    {
+        "name": "Interrupt",
+        "tags": [
+            {"tag_name": "general"}
+        ],
+        "description": "(pg. 85) Some abilities give you <b>interrupts</b>, which are abilities that trigger under certain circumstances and ‘interrupt’ whatever is going on. Each interrupt can only be used a certain number of times a round, and you can only use <b>one interrupt</b> on any turn (either your own or another characters). (pg. 81) You may also use interrupts before, after, or in the middle of any action, even off your turn, if you have them.<br>(pg. 91) Some abilities are called <b>interrupts</b> and can be used off your turn. You can use each interrupt a number of times indicated by the tag (Interrupt 1, Interrupt 2, for example) between your turns, <b>only one interrupt during any turn</b>, (yours or another character’s) and get them all back at the start of any of your turns. Imagine them like a card that you play and can draw again at the start of your turn.<br>Like they sound, interrupts have a <b>trigger</b> which <i>interrupts</i> any action currently being taken, and then immediately apply <b>effects</b>.<br>(pg. 107) Interrupts resolve with the most recently triggered interrupt first. For example, if a character’s effect deals damage to an enemy, and the enemy has an interrupt that reads ‘when this enemy takes damage’, the enemy’s interrupt would trigger first (even if they are killed by the damage), then the damage would be applied. Interrupts that have the same trigger and trigger at the same time resolve in the same order as turns (player character/npc, alternating).<br> (pg. 108) Interrupts activate when triggered, interrupting the normal flow of action until resolved, and always take priority."
     },
 	{
         "name": "Mark",
@@ -208,6 +243,13 @@
             {"tag_name": "ongoing"}
         ],
         "description": "Places a mark, an <i>ongoing</i> effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions."
+    },
+    {
+        "name": "Object",
+        "tags": [
+            {"tag_name": "terrain"}
+        ],
+        "description": "Characters can often summon or create objects and they can be used to represent boulders, piles of barrels, a cart, a wall, etc. They otherwise function as terrain. Categorized by height, 1-3. Provides obstruction. Characters can stand on objects and take {{{{cover}}}} behind them. Objects are {{{{immune}}}} to damage and effects unless specified. They can be removed from the battlefield by some abilities and effects.<br><b>Destroying Objects</b> - The GM can make objects destructible. Destructible objects are targetable by anything that targets characters, but don’t count as a character. They have 10 hp, can be targeted as if they were a character, are automatically hit by attacks and effects, and fail all saves. Once an object is destroyed, remove it."
     },
 	{
         "name": "Obstruction",
@@ -222,6 +264,13 @@
             {"tag_name": "general"}
         ],
         "description": "A status or effect that is <i>ongoing</i> can’t be ended until the thing causing it (a mark, a stance) is ended. Indicated by a + symbol."
+    },
+    {
+        "name": "Pit",
+        "tags": [
+            {"tag_name": "terrain"}
+        ],
+        "description": "(pg. 89) A pit space is just what it sounds like, but could also be deep water, mud, etc. Pits count as <b>one level lower of elevation</b> than their base space."
     },
 	{
         "name": "Power Die",
@@ -271,6 +320,13 @@
 			{"tag_name": "triggered effect"}
         ],
         "description": "A <i>triggered effect</i> that activates when this ability reduces a character to 0 hp."
+    },
+    {
+        "name": "Slope",
+        "tags": [
+            {"tag_name": "terrain"}
+        ],
+        "description": "(pg. 89) Slopes count as the same height as their base space, but exiting a slope space allows you to ignore the movement cost of one level of elevation. Could also be something like a staircase or ramp."
     },
 	{
         "name": "Slow Turn",
@@ -327,21 +383,21 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "An effect that actives under a certain condition. Common effects are <i>critical hit</i>, <i>slay</i>, <i>collide</i>, <i>finishing blow</i>, and <i>charge</i>. Each unique effect can only trigger once per ability, and once per trigger."
+        "description": "An effect that actives under a certain condition. Common effects are {{{{critical hit}}}}, {{{{slay}}}}, {{{{collide}}}}, {{{{finishing blow}}}}, and {{{{charge}}}}. Each unique effect can only trigger once per ability, and once per trigger."
     },
     {
         "name": "Blind",
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "Max range of all abilities is 2"
+        "description": "Max range of all abilities is 2."
     },
 	{
         "name": "Dazed",
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "+1 <i>curse</i> on attacks"
+        "description": "+1 <i>curse</i> on attacks."
     },
 	{
         "name": "Hatred of X",
@@ -405,6 +461,13 @@
             {"tag_name": "special state"}
         ],
         "description": "When a character is at or under 50% maximum HP, they are bloodied."
+    },
+    {
+        "name": "Defeated",
+        "tags": [
+            {"tag_name": "special state"}
+        ],
+        "description": "When a character is reduced to 0 hp, they are defeated. Defeated characters are {{{{incapacitated}}}} (can’t do anything).<br>A player character that’s defeated can be <b>rescued</b> by another character, returning them to the action.<br>A player character that’s defeated also takes a <b>wound</b>, which reduces their maximum hp by 25%. If they take 4 wounds, they instead are <b>fallen</b> and can no longer be a player character (they are dead or irrevocably changed)."
     },
     {
         "name": "Immobile",
