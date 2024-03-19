@@ -1,6 +1,7 @@
 [
     {
         "name": "Adverse Terrain",
+		"variants": [],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -8,6 +9,9 @@
     },
     {
         "name": "Armor X",
+		"variants": [
+			{"variant_name": "armor"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -15,6 +19,9 @@
     },
     {
         "name": "Area Effect",
+		"variants": [
+			{"variant_name": "area effects"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -22,6 +29,10 @@
     },
     {
         "name": "Aura X",
+		"variants": [
+			{"variant_name": "aura"}, 
+			{"variant_name": "auras"}
+		],
         "tags": [
 			{"tag_name": "ongoing"}
         ],
@@ -29,6 +40,7 @@
     },
 	{
         "name": "Auto-hit",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -36,6 +48,11 @@
     },
 	{
         "name": "Blessing",
+		"variants": [
+			{"variant_name": "blessings"}, 
+			{"variant_name": "bless"}, 
+			{"variant_name": "blessed"}
+		],
         "tags": [
 			{"tag_name": "token"}
         ],
@@ -43,6 +60,7 @@
     },
 	{
         "name": "Bonus Damage",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -50,6 +68,7 @@
     },
     {
         "name": "Chain Reaction",
+		"variants": [],
         "tags": [
 			{"tag_name": "triggered effect"}
         ],
@@ -57,6 +76,7 @@
     },
     {
         "name": "Charge",
+		"variants": [],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -64,6 +84,9 @@
     },
 	{
         "name": "Collide",
+		"variants": [
+			{"variant_name": "collides"}
+		],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -71,6 +94,9 @@
     },
 	{
         "name": "Combo",
+		"variants": [
+			{"variant_name": "combos"}
+		],
         "tags": [
             {"tag_name": "token"}
         ],
@@ -78,6 +104,7 @@
     },
 	{
         "name": "Comeback",
+		"variants": [],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -85,6 +112,10 @@
     },
 	{
         "name": "Cover",
+		"variants": [
+			{"variant_name": "covers"},
+			{"variant_name": "covered"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -92,6 +123,9 @@
     },
 	{
         "name": "Critical Hit",
+		"variants": [
+			{"variant_name": "crit"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -99,6 +133,10 @@
     },
     {
         "name": "Cure",
+		"variants": [
+			{"variant_name": "cures"},
+			{"variant_name": "cured"}
+		],
         "tags": [
 			{"tag_name": "positive effect"}
         ],
@@ -106,6 +144,9 @@
     },
 	{
         "name": "Dangerous Terrain",
+		"variants": [
+			{"variant_name": "dangerous"}
+		],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -113,6 +154,9 @@
     },
 	{
         "name": "Difficult Terrain",
+		"variants": [
+			{"variant_name": "difficult"}
+		],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -120,6 +164,7 @@
     },
 	{
         "name": "[D]",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -127,6 +172,10 @@
     },
 	{
         "name": "Dash",
+		"variants": [
+			{"variant_name": "dashes"},
+			{"variant_name": "dashed"}
+		],
         "tags": [
 			{"tag_name": "movement"}
         ],
@@ -134,6 +183,9 @@
     },
 	{
         "name": "Delay",
+		"variants": [
+			{"variant_name": "delayed"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -141,6 +193,7 @@
     },
     {
         "name": "Effect",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -148,6 +201,7 @@
     },
     {
         "name": "Elevation",
+		"variants": [],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -155,6 +209,9 @@
     },
 	{
         "name": "End Turn",
+		"variants": [
+			{"variant_name": "end your turn"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -162,6 +219,7 @@
     },
 	{
         "name": "Engagement",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -169,6 +227,7 @@
     },
 	{
         "name": "Exceed",
+		"variants": [],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -176,6 +235,9 @@
     },
 	{
         "name": "Finishing Blow",
+		"variants": [
+			{"variant_name": "finishing blows"}
+		],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -183,6 +245,9 @@
     },
 	{
         "name": "Fray Damage",
+		"variants": [
+			{"variant_name": "fray"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -190,6 +255,7 @@
     },
     {
         "name": "Free Action",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -197,6 +263,11 @@
     },
 	{
         "name": "Gamble",
+		"variants": [
+			{"variant_name": "gambles"},
+			{"variant_name": "gambled"},
+			{"variant_name": "gambling"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -204,6 +275,9 @@
     },
 	{
         "name": "Heroic",
+		"variants": [
+			{"variant_name": "heroics"}
+		],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -211,6 +285,10 @@
     },
 	{
         "name": "Immune to X",
+		"variants": [
+			{"variant_name": "immune"},
+			{"variant_name": "immunity"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -218,6 +296,7 @@
     },
     {
         "name": "Impassable",
+		"variants": [],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -225,6 +304,11 @@
     },
 	{
         "name": "Infuse",
+		"variants": [
+			{"variant_name": "infusion"}
+			{"variant_name": "infuses"}
+			{"variant_name": "infusing"}
+		],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -232,6 +316,10 @@
     },
     {
         "name": "Interrupt",
+		"variants": [
+			{"variant_name": "interrupts"},
+			{"variant_name": "interrupting"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -239,6 +327,10 @@
     },
 	{
         "name": "Mark",
+		"variants": [
+			{"variant_name": "marks"},
+			{"variant_name": "marked"}
+		],
         "tags": [
             {"tag_name": "ongoing"}
         ],
@@ -246,6 +338,9 @@
     },
     {
         "name": "Object",
+		"variants": [
+			{"variant_name": "objects"}
+		],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -253,6 +348,7 @@
     },
 	{
         "name": "Obstruction",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -260,6 +356,10 @@
     },
 	{
         "name": "Ongoing (+)",
+		"variants": [
+			{"variant_name": "ongoing"},
+			{"variant_name": "+"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -267,6 +367,9 @@
     },
     {
         "name": "Pit",
+		"variants": [
+			{"variant_name": "pits"}
+		],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -274,6 +377,7 @@
     },
 	{
         "name": "Power Die",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -281,6 +385,10 @@
     },
 	{
         "name": "Rebound",
+		"variants": [
+			{"variant_name": "rebounds"},
+			{"variant_name": "rebounding"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -288,6 +396,10 @@
     },
 	{
         "name": "Resistance",
+		"variants": [
+			{"variant_name": "resist"},
+			{"variant_name": "resisting"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -295,6 +407,11 @@
     },
 	{
         "name": "Rush X",
+		"variants": [
+			{"variant_name": "rush"},
+			{"variant_name": "rushes"},
+			{"variant_name": "rushing"}
+		],
         "tags": [
 			{"tag_name": "movement"}
         ],
@@ -302,6 +419,9 @@
     },
 	{
         "name": "Sacrifice X",
+		"variants": [
+			{"variant_name": "sacrifice"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -309,6 +429,12 @@
     },
 	{
         "name": "Shove X",
+		"variants": [
+			{"variant_name": "shove"},
+			{"variant_name": "shoves"},
+			{"variant_name": "shoved"},
+			{"variant_name": "shoving"}
+		],
         "tags": [
             {"tag_name": "general"}            
         ],
@@ -316,6 +442,7 @@
     },
 	{
         "name": "Slay",
+		"variants": [],
         "tags": [
 			{"tag_name": "triggered effect"}
         ],
@@ -323,6 +450,7 @@
     },
     {
         "name": "Slope",
+		"variants": [],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -330,6 +458,10 @@
     },
 	{
         "name": "Slow Turn",
+		"variants": [
+			{"variant_name": "slow turns"},
+			{"variant_name": "next turn must be slow"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -337,6 +469,7 @@
     },
 	{
         "name": "Stance",
+		"variants": [],
         "tags": [
 			{"tag_name": "ongoing"},
 			{"tag_name": "positive effect"}
@@ -345,6 +478,7 @@
     },
 	{
         "name": "Standard Move",
+		"variants": [],
         "tags": [
 			{"tag_name": "movement"}
         ],
@@ -352,6 +486,7 @@
     },
 	{
         "name": "Status",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -359,6 +494,9 @@
     },
 	{
         "name": "Summon",
+		"variants": [
+			{"variant_name": "summons"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -366,6 +504,10 @@
     },
 	{
         "name": "Teleport",
+		"variants": [
+			{"variant_name": "teleports"},
+			{"variant_name": "teleporting"}
+		],
         "tags": [
 			{"tag_name": "movement"}
         ],
@@ -373,6 +515,9 @@
     },
 	{
         "name": "Terrain Effect",
+		"variants": [
+			{"variant_name": "terrain effects"}
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -380,6 +525,7 @@
     },
 	{
         "name": "Triggered Effect",
+		"variants": [],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -387,6 +533,10 @@
     },
     {
         "name": "Blind",
+		"variants": [
+			{"variant_name": "blinded"},
+			{"variant_name": "blinding"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -394,6 +544,11 @@
     },
 	{
         "name": "Dazed",
+		"variants": [
+			{"variant_name": "daze"},
+			{"variant_name": "dazes"},
+			{"variant_name": "dazing"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -401,6 +556,9 @@
     },
 	{
         "name": "Hatred of X",
+		"variants": [
+			{"variant_name": "hatred"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -408,6 +566,9 @@
     },
 	{
         "name": "Pacified",
+		"variants": [
+			{"variant_name": "pacify"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -415,6 +576,9 @@
     },
 	{
         "name": "Sealed",
+		"variants": [
+			{"variant_name": "seals"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -422,6 +586,9 @@
     },
 	{
         "name": "Shattered",
+		"variants": [
+			{"variant_name": "shattering"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -429,6 +596,10 @@
     },
     {
         "name": "Slashed",
+		"variants": [
+			{"variant_name": "slash"},
+			{"variant_name": "slashing"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -436,6 +607,10 @@
     },
 	{
         "name": "Stunned",
+		"variants": [
+			{"variant_name": "stun"},
+			{"variant_name": "stuns"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -443,6 +618,10 @@
     },
 	{
         "name": "Weakened",
+		"variants": [
+			{"variant_name": "weaken"},
+			{"variant_name": "weakening"}
+		],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -450,6 +629,7 @@
     },
 	{
         "name": "Vulnerable",
+		"variants": [],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -457,6 +637,7 @@
     },
 	{
         "name": "Bloodied",
+		"variants": [],
         "tags": [
             {"tag_name": "special state"}
         ],
@@ -464,6 +645,7 @@
     },
     {
         "name": "Defeated",
+		"variants": [],
         "tags": [
             {"tag_name": "special state"}
         ],
@@ -471,6 +653,7 @@
     },
     {
         "name": "Immobile",
+		"variants": [],
         "tags": [
             {"tag_name": "special state"}
         ],
@@ -478,6 +661,7 @@
     },
     {
         "name": "Incapacitated",
+		"variants": [],
         "tags": [
             {"tag_name": "special state"}
         ],
@@ -485,6 +669,9 @@
     },
 	{
         "name": "Counter",
+		"variants": [
+			{"variant_name": "counters"}
+		],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -492,6 +679,7 @@
     },
 	{
         "name": "Defiance",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -499,6 +687,7 @@
     },
 	{
         "name": "Divine",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -506,6 +695,7 @@
     },
 	{
         "name": "Dodge",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -513,6 +703,7 @@
     },
 	{
         "name": "Evasion",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -520,13 +711,20 @@
     },
 	{
         "name": "Flying",
+		"variants": [
+			{"variant_name": "fly"},
+			{"variant_name": "flies"},
+			{"variant_name": "flying"}
+		],
         "tags": [
-            {"tag_name": "positive effect"}
+            {"tag_name": "positive effect"},
+			{"tag_name": "movement"}
         ],
         "description": "A flying character ignores terrain damage and movement penalties, height movement penalties, obstruction, and engagement."
     },
 	{
         "name": "Intangible",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -534,6 +732,10 @@
     },
 	{
         "name": "Phasing",
+		"variants": [
+			{"variant_name": "phase"},
+			{"variant_name": "phases"}
+		],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -541,6 +743,9 @@
     },
 	{
         "name": "Pierce",
+		"variants": [
+			{"variant_name": "piercing"}
+		],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -548,6 +753,7 @@
     },
 	{
         "name": "Rampart",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -555,6 +761,7 @@
     },
 	{
         "name": "Regeneration",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -562,6 +769,7 @@
     },
 	{
         "name": "Skirmisher",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -569,6 +777,7 @@
     },
 	{
         "name": "Stealth",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -576,6 +785,7 @@
     },
 	{
         "name": "Sturdy",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -583,6 +793,7 @@
     },
 	{
         "name": "True Strike",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -590,6 +801,7 @@
     },
 	{
         "name": "Unerring",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -597,6 +809,7 @@
     },
 	{
         "name": "Unstoppable",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -604,6 +817,9 @@
     },
 	{
         "name": "Vigilance X",
+		"variants": [
+			{"variant_name": "vigilance"}
+		],
         "tags": [
             {"tag_name": "positive effect"}
         ],
@@ -611,6 +827,7 @@
     },
 	{
         "name": "Vigor",
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
