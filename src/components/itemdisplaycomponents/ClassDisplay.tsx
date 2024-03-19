@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 import ClassDescriptionDisplay from '../itemdisplaysubcomponents/ClassDescriptionDisplay'
 import ClassMechanicDisplay from '../itemdisplaysubcomponents/ClassMechanicDisplay'

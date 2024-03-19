@@ -1,6 +1,7 @@
 import React from 'react'
 import { getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 const JobPlaystyleDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -12,7 +13,7 @@ const JobPlaystyleDisplay = (props: any) => {
     return (
         <div>
             <h1 className={'titleShape title'+getColour(jobPlaystyleData.name)}>Playstyle</h1>
-            <span dangerouslySetInnerHTML={{__html: (jobPlaystyleData.playstyle || '')}}/>
+            <span>{convertStringToContent(jobPlaystyleData.playstyle)}</span>
         </div>
     )
     // ---------------------------------------------

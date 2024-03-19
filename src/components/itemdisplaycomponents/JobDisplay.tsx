@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag, getColour, containsTag } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 import SummonDisplay from '../itemdisplaycomponents/SummonDisplay'
 import TraitsDisplay from '../itemdisplaysubcomponents/TraitsDisplay'
@@ -76,7 +77,7 @@ const JobDisplay = (props: any) => {
             <div className='centerPosition'>
                 <h3><b>{jobData.tagline}</b></h3>
             </div>
-            <p><i><span dangerouslySetInnerHTML={{__html: (jobData.description || '')}}/></i></p>
+            <p><i><span>{convertStringToContent(jobData.description)}</span> </i></p>
 
             <div className='jobFeaturePosition'>
                 <div  className='jobFeature'>

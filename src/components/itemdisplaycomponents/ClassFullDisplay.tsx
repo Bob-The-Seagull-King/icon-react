@@ -1,4 +1,5 @@
 import React from 'react'
+import {convertStringToContent} from '../../utility/util';
 
 import JobDisplay from '../itemdisplaycomponents/JobDisplay'
 import ClassDisplay from '../itemdisplaycomponents/ClassDisplay'

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 const CampItemDisplay = (props: any) => {
     const campdata = props.data;
@@ -19,7 +20,7 @@ const CampItemDisplay = (props: any) => {
                         <p><b>Upgrade Cost: </b>{upgradedata.costspecial}</p>
                     </div>
                 }
-                <div><p dangerouslySetInnerHTML={{__html: (upgradedata.description || '')}}></p></div>
+                <div><p>{convertStringToContent(upgradedata.description)}</p></div>
                 {upgradedata.upgrades.map((item: any) => (
                 <div className='gridItem' key={item.name + "upgrade"}  >
                     {returnUpgrade(item)}
@@ -42,7 +43,7 @@ const CampItemDisplay = (props: any) => {
                 <span className='boldtextPurple '>UPGRADE COST:</span>
                 <span className='boldtextPurple'> {campdata.upgradecost}</span>
             </div>
-            <div><p dangerouslySetInnerHTML={{__html: (campdata.description || '')}}></p></div>
+            <div><p>{convertStringToContent(campdata.description)}</p></div>
             {campdata.upgrades.map((item: any) => (
                 <div className='gridItem' onClick={() => navClick('item', item.name)} key={item.name + "upgrade"}  >
                     {returnUpgrade(item)}

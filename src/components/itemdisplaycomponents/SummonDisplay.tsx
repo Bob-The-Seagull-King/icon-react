@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 const SummonDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -77,7 +78,7 @@ const SummonDisplay = (props: any) => {
         <div className='summonStructure'>
             <h1 className={'titleShape title'+getColour(summonData.job)}>{summonData.name}</h1>
             <p>{tagsArray}</p>
-            <div><p dangerouslySetInnerHTML={{__html: (summonData.description || '')}}></p></div>
+            <div><p>{convertStringToContent(summonData.description)}</p></div>
             <p>{limitText}</p>
         </div>
     )

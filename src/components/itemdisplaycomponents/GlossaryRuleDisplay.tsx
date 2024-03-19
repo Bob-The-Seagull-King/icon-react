@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 const GlossaryRuleDisplay = (props: any) => {
     const ruledata = props.data;
@@ -14,7 +15,7 @@ const GlossaryRuleDisplay = (props: any) => {
     return (
         <div className='ruleStructure'>
             <h2 className={'titleShape subtitlePurple'}>{ruledata.name}</h2>
-            <div><p dangerouslySetInnerHTML={{__html: (ruledata.description || '')}}></p></div>
+            <div><p>{convertStringToContent(ruledata.description)}</p></div>
         </div>
     )
     // ------------------------------------------

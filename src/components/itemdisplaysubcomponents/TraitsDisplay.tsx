@@ -1,6 +1,7 @@
 import React from 'react'
 import {getColour, containsTag, getTagValue } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 import abilityData from '../../resources/data/player/ability.json';
 import AbilityDisplay from '../itemdisplaycomponents/AbilityDisplay'
@@ -55,7 +56,7 @@ const TraitsDisplay = (props: any) => {
             <div>
             {traitsData.map((item: any) => (
                     <div key={item.name}>
-                        <div><b>{item.name}:</b> <span dangerouslySetInnerHTML={{__html: (item.desc || '')}} />
+                        <div><b>{item.name}:</b> <span>{convertStringToContent(item.desc)}</span>
                         </div>
                         {returnAddons(item.name)}
                     </div>

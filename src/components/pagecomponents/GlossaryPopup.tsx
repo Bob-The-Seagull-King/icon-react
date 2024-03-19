@@ -23,7 +23,7 @@ const GlossaryPopup = (props: any) => {
         let i = 0;
 
         for (i = 0; i < combatglossary.length; i++) {
-            if (combatglossary[i].name.toLowerCase() == termname.toLowerCase()) {
+            if ((combatglossary[i].variants.includes(termname.toLowerCase())) || (combatglossary[i].name.toLowerCase() == termname.toLowerCase())) {
                 return combatglossary[i];
             }
         }

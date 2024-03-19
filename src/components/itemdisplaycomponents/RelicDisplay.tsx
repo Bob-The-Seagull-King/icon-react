@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag, getColour } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 const RelicDisplay = (props: any) => {
     /**
@@ -23,18 +24,18 @@ const RelicDisplay = (props: any) => {
             <h1 className={'titleShape title'+getColour(relicData.colour)}>{capitalizeTag( relicData.name )}</h1>
             <p><i>{relicData.desc}</i></p>
             {tier >= 1 &&
-                <p><b>I.</b>   <span dangerouslySetInnerHTML={{__html: (relicData.tier1 || '')}}></span></p>
+                <p><b>I.</b>   <span>{convertStringToContent(relicData.tier1)}</span></p>
             }
             {tier >= 2 &&
-                <p><b>II.</b>  <span dangerouslySetInnerHTML={{__html: (relicData.tier2 || '')}}></span></p>
+                <p><b>II.</b>  <span>{convertStringToContent(relicData.tier2)}</span></p>
             }
             {tier >= 3 &&
-                <p><b>III.</b> <span dangerouslySetInnerHTML={{__html: (relicData.tier3 || '')}}></span></p>
+                <p><b>III.</b> <span>{convertStringToContent(relicData.tier3)}</span></p>
             }
             {tier >= 4 &&
-                <p><b>Aspected:</b> <span dangerouslySetInnerHTML={{__html: (relicData.tier4 || '')}}></span></p>
+                <p><b>Aspected:</b> <span>{convertStringToContent(relicData.tier4)}</span></p>
             }
-            <p><i>Aspect quest: </i> <span dangerouslySetInnerHTML={{__html: (relicData.quest || '')}}></span></p>
+            <p><i>Aspect quest: </i> <span>{convertStringToContent(relicData.quest)}</span></p>
         </div>
     )
     // ---------------------------------------------

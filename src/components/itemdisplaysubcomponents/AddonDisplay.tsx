@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 const AddonDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -88,7 +89,7 @@ const AddonDisplay = (props: any) => {
         <div className='addonStructure'>
             <h3 className={'titleShape subtitle'+getColour(addonData.job)}>{title}</h3>
             <p>{tagsArray}</p>
-            <div><p dangerouslySetInnerHTML={{__html: (addonData.description || '')}}></p></div>
+            <div><p>{convertStringToContent(addonData.description)}</p></div>
         </div>
     )
     // ---------------------------------------------

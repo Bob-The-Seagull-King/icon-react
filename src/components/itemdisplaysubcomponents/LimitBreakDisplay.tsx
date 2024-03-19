@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag, getColour, containsTag, getTagValue } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 import addonData from '../../resources/data/player/abilityaddon.json';
 import AddonDisplay from '../itemdisplaysubcomponents/AddonDisplay'
@@ -129,8 +130,8 @@ const LimitBreakDisplay = (props: any) => {
             <h1 className={'titleShape title'+getColour(limitBreakData.name)}>LIMIT BREAK: {limitBreakData.limitbreak.name.toUpperCase()}</h1>
             
             <p>{tagsArray}</p>
-            <span><i><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.blurb || '')}}/></i></span>
-            <div><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.description || '')}}></p></div>
+            <span><i><p>{convertStringToContent(limitBreakData.limitbreak.blurb)}</p></i></span>
+            <div><p>{convertStringToContent(limitBreakData.limitbreak.description)}</p></div>
             
             <div>
                 {abilityAddonArray.map((item) => (
@@ -149,7 +150,7 @@ const LimitBreakDisplay = (props: any) => {
             {ultimateVal && <div>
                 <span>
                     <h2>Ultimate: {capitalizeTag(limitBreakData.limitbreak.ultimate.name)}</h2>
-                    <div><p dangerouslySetInnerHTML={{__html: (limitBreakData.limitbreak.ultimate.desc || '')}}></p></div>
+                    <div><p>{convertStringToContent(limitBreakData.limitbreak.ultimate.desc)}</p></div>
                     <div>
                         {masteryAddonArray.map((item) => (
                         <div key={item.name} className='abilityAddonPosition'>

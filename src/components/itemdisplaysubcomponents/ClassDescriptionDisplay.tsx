@@ -1,4 +1,5 @@
 import React from 'react'
+import {convertStringToContent} from '../../utility/util';
 
 const ClassDescriptionDisplay = (props: any) => {
     // Declare Summon Variables --------------------
@@ -8,11 +9,11 @@ const ClassDescriptionDisplay = (props: any) => {
     // Return result -------------------------------
     return (
         <div>
-            <div><b>Strengths:</b> <span dangerouslySetInnerHTML={{__html: (classDescriptionData.info.strengths || '')}}/></div>
-            <div><b>Weaknesses:</b> <span dangerouslySetInnerHTML={{__html: (classDescriptionData.info.weaknesses || '')}}/></div>
-            <div><b>Complexity:</b> <span dangerouslySetInnerHTML={{__html: (classDescriptionData.info.complexity || '')}}/></div>
+            <div><b>Strengths:</b> <span>{convertStringToContent(classDescriptionData.info.strengths)}</span></div>
+            <div><b>Weaknesses:</b> <span>{convertStringToContent(classDescriptionData.info.weaknesses)}</span></div>
+            <div><b>Complexity:</b> <span>{convertStringToContent(classDescriptionData.info.complexity)}</span></div>
             <br/>
-            <div><span dangerouslySetInnerHTML={{__html: (classDescriptionData.info.description || '')}}/></div>
+            <div><span>{convertStringToContent(classDescriptionData.info.description)}</span></div>
         </div>
     )
     // ---------------------------------------------

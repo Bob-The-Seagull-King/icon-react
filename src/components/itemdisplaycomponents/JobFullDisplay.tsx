@@ -4,6 +4,7 @@ import '../../styles/iconcomponent.scss';
 
 import JobDisplay from '../itemdisplaycomponents/JobDisplay'
 import AbilityDisplay from '../itemdisplaycomponents/AbilityDisplay'
+import {convertStringToContent} from '../../utility/util';
 
 import abilityData from '../../resources/data/player/ability.json';
 
@@ -124,7 +125,7 @@ const JobDisplayFull = (props: any) => {
                 </div>
                 <h2>Chapter 3:</h2>
                 <div className='bonustraitStructure gridItem'>
-                    <p><b>{jobData.ultimatetrait.name}: {tagReturn()} </b><span dangerouslySetInnerHTML={{__html: (jobData.ultimatetrait.description || '')}} /></p>
+                    <p><b>{jobData.ultimatetrait.name}: {tagReturn()} </b><span>{convertStringToContent(jobData.ultimatetrait.description)}</span> </p>
                 </div>
                 <div className='abilityContainer'>
                     {abilityChapter3.map((item) => (

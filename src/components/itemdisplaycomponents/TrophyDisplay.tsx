@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag, containsTag} from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import {convertStringToContent} from '../../utility/util';
 
 const TrophyDisplay = (props: any) => {
     const trophydata = props.data.val;
@@ -35,7 +36,7 @@ const TrophyDisplay = (props: any) => {
             </div>
             }
             <div><span><b>Uses: </b> {trophydata.use[0].number} {trophydata.use[1].duration}</span></div>
-            <div><p dangerouslySetInnerHTML={{__html: (trophydata.desc || '')}}></p></div>
+            <div><p>{convertStringToContent(trophydata.desc)}</p></div>
         </div>
     )
     // ------------------------------------------
