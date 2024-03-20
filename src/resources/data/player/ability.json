@@ -1,97 +1,104 @@
 [
     {
-        "job": "Basic",
+        "job": "purple",
         "name": "Standard Move",
         "chapter": 1,
         "tags":[
+            {"tag_name": "basic"},
             {"tag_name": "action", "val": 0}
         ],
-        "description": "Move your speed.",
-        "blurb": "Move!",
+        "description": "Move up your speed.",
+        "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
         "masteryname": "NA",
         "masterdescription": "NA"
     },
     {
-        "job": "Basic",
+        "job": "purple",
         "name": "Dash",
         "chapter": 1,
         "tags":[
+            {"tag_name": "basic"},
             {"tag_name": "action", "val": 1}
         ],
         "description": "{{{{Dash}}}} half your speed, rounded up.",
-        "blurb": "Dash!",
+        "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
         "masteryname": "NA",
         "masterdescription": "NA"
     },
     {
-        "job": "Basic",
+        "job": "purple",
         "name": "Interact",
         "chapter": 1,
         "tags":[
+            {"tag_name": "basic"},
             {"tag_name": "action", "val": 1}
         ],
         "description": "Interact with something on the map that takes more than a few moments, such as pulling a lever, opening a heavy door, picking up a heavy object, etc.",
-        "blurb": "Interact!",
+        "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
         "masteryname": "NA",
         "masterdescription": "NA"
     },
     {
-        "job": "Basic",
+        "job": "purple",
         "name": "Rescue",
         "chapter": 1,
         "tags":[
+            {"tag_name": "basic"},
             {"tag_name": "action", "val": 1}
         ],
         "description": "<i>Rescue</i> an adjacent {{{{defeated}}}} ally. An ally that is rescued ends the {{{{incapacitated}}}} state on themselves and heals to full hit points, minus any wounds they’ve taken.",
-        "blurb": "Don't give up, skeleton!",
+        "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
         "masteryname": "NA",
         "masterdescription": "NA"
     },
     {
-        "job": "Basic",
+        "job": "purple",
         "name": "Light Attack",
         "chapter": 1,
         "tags":[
+            {"tag_name": "basic"},
             {"tag_name": "action", "val": 1}
         ],
-        "description": "Make an attack roll. <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}",
-        "blurb": "Attack!",
+        "description": "<b>Effect:</b> The range of this attack is determined by your <i>class</i>.<br/><b>Attack:</b> <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}",
+        "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
         "masteryname": "NA",
         "masterdescription": "NA"
     },
     {
-        "job": "Basic",
+        "job": "purple",
         "name": "Heavy Attack",
         "chapter": 1,
         "tags":[
+            {"tag_name": "basic"},
             {"tag_name": "action", "val": 2}
         ],
-        "description": "Make an attack roll. <i>On hit</i>: 2{{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}",
-        "blurb": "Attack!!",
+        "description": "<b>Effect:</b> The range of this attack is determined by your <i>class</i>.<br/><b>Attack:</b> <i>On hit</i>: 2{{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}",
+        "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
         "masteryname": "NA",
         "masterdescription": "NA"
     },
     {
-        "job": "Basic",
+        "job": "purple",
         "name": "Recover",
         "chapter": 1,
         "tags":[
+            {"tag_name": "basic"},
             {"tag_name": "action", "val": 2}
         ],
         "description": "{{{{Cure}}}} yourself. When a character is cured, they gain 4 vigor, or if they are bloodied, they gain a vigor surge. Then they may save against all statuses, ending them on a success.",
-        "blurb": "Recover!",
+        "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
         "masteryname": "NA",

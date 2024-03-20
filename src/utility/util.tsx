@@ -6,7 +6,7 @@ export function convertStringToContent(contentstring: string) {
     return (
         <span>
             {split.map((item) => (
-                <span key={item}>{checkerStringToContent(item)}</span>
+                <span key={item + ( Math.random().toString())}>{checkerStringToContent(item)}</span>
             ))}
         </span>
     )

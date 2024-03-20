@@ -26,6 +26,7 @@ export function getColour(name: string){
     const red = ["red", "stalwart", "bastion", "demon slayer", "colossus", "knave"];
     const green = ["green", "mendicant", "chanter", "harvester", "sealer", "seer"];
     const blue = ["blue", "wright", "enochian", "geomancer", "spellblade", "stormbender"];
+    const purple = ["Purple", "purple"];
 
     if (yellow.includes(name.toLowerCase())) {
         return yellow[0];
@@ -41,6 +42,10 @@ export function getColour(name: string){
 
     if (blue.includes(name.toLowerCase())) {
         return blue[0];
+    }
+
+    if (purple.includes(name.toLowerCase())) {
+        return purple[0];
     }
 
     return "";

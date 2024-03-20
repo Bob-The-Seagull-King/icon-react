@@ -23,7 +23,7 @@ const AbilityDisplay = (props: any) => {
     const abilityData = props.data.values;
     const talents = props.data._talents;
     const mastery = props.data._mastery;
-    const bannedAbilityTags = ["slay", "infuse", "mastery", "trait"];
+    const bannedAbilityTags = ["slay", "infuse", "mastery", "trait", "basic"];
     // ---------------------------------------------
 
     // Run evaluations -----------------------------
@@ -32,6 +32,7 @@ const AbilityDisplay = (props: any) => {
     const summonAddonArray = summonAddonReturn();
     const masteryAddonArray = masteryAddonReturn();
     const isNotTrait = !isTrait();
+    const isNotBasic = !isBasic();
     // ---------------------------------------------
 
     // Evaluation functions ------------------------
@@ -41,6 +42,11 @@ const AbilityDisplay = (props: any) => {
      */
     function isTrait() {
         const isDisplay = containsTag(abilityData.tags, "trait");
+        return isDisplay;
+    }
+    
+    function isBasic() {
+        const isDisplay = containsTag(abilityData.tags, "basic");
         return isDisplay;
     }
 
@@ -170,7 +176,7 @@ const AbilityDisplay = (props: any) => {
                 </div>
                 ))}
             </div>
-            {(isNotTrait == true)&& <span>
+            {((isNotTrait == true) && (isNotBasic == true))&& <span>
                 {(talents == 1 || talents == 3) &&
                 <p><b>I.</b>   
                     <span>{convertStringToContent(abilityData.talent1)}</span></p>

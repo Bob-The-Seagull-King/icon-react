@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getColour } from '../../utility/functions';
+import { getColour, containsTag } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
 import '../../styles/iconbuild.scss';
 import { ToastContainer, toast } from 'react-toastify';
@@ -149,7 +149,9 @@ const BuildSearch = (props: any) => {
 
         let i = 0;
         for (i = 0; i < abilityData.length; i++) {
-            temp.push(abilityData[i].name);
+            if ((!containsTag(abilityData[i].tags, "basic")) && (!containsTag(abilityData[i].tags, "trait"))) {
+                temp.push(abilityData[i].name);
+            }
         }
 
         return temp;

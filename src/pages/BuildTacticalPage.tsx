@@ -32,7 +32,7 @@ const BuildTacticalPage: React.FC = () => {
      */
     
     const bannedUltimateTags: string[] = [];
-
+    const isBasic = (value: any) => ((containsTag(value.tags, "basic")));
     // JSON data used in this build -------------------------
     const relicsdata: any[] = [];
     const abilitydata: any[] = [];
@@ -423,7 +423,7 @@ const BuildTacticalPage: React.FC = () => {
                                 </div>
                             </div>
                         </div>
-                        <br/>
+                        <br/>{relicsdata.length > 0 &&
                         <div className='baseCleanStructure'>
                             <div className='centerPosition'>
                                 <h1 className={'medtitleShape title'+getColour(characterdata[1].name)}>Relics</h1>
@@ -434,6 +434,19 @@ const BuildTacticalPage: React.FC = () => {
                                     <RelicDisplay data={getRelicData(item)}/>
                                 </div> ))}
                             </div>
+                            <br/>
+                        </div>}
+                        <div className='baseCleanStructure'>
+                            <div className='centerPosition'>
+                                <h1 className={'medtitleShape title'+getColour(characterdata[1].name)}>Basic Abilities</h1>
+                            </div>
+                            <div className='abilitycontainer'>
+                                {abilityData.filter(isBasic).map((item:any) => (
+                                <div className='abilitygriditem' onClick={() => navClick('ability', item.name)} key={item.name + "ability"}  >
+                                    <AbilityDisplay data={{values: item, _talents:3, _mastery:true}}/>
+                                </div>
+                                ))}
+                            </div> 
                             <br/>
                         </div>
                     </div>
