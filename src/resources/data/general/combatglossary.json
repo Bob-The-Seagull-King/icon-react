@@ -32,7 +32,7 @@
         "tags": [
 			{"tag_name": "ongoing"}
         ],
-        "description": "This ability is a continuous, <i>ongoing</i> (+) effect that affects all characters specified within range X of an origin point, usually a character. Characters are only affected by an aura while inside"
+        "description": "This ability is a continuous, {{{{ongoing (+)}}}} effect that affects all characters specified within range X of an origin point, usually a character. Characters are only affected by an aura while inside."
     },
 	{
         "name": "Auto-hit",
@@ -49,7 +49,7 @@
         "tags": [
 			{"tag_name": "token"}
         ],
-        "description": "Certain abilities give yourself or allies a Blessing token, and ways to spend those tokens for powerful effects. By default a character can use a blessing token to gain +1 boon when they make a save. All blessings are discarded at the end of combat."
+        "description": "Certain abilities give yourself or allies a Blessing token, and ways to spend those tokens for powerful effects. By default a character can use a blessing token to gain +1 {{{{boon}}}} when they make a save. All blessings are discarded at the end of combat."
     },
 	{
         "name": "Bonus Damage",
@@ -58,6 +58,15 @@
             {"tag_name": "general"}
         ],
         "description": "When an ability gains bonus damage, roll one more {{{{[D]}}}} for each instance of bonus damage and pick the highest result."
+    },
+    {
+        "name": "Boon",
+		"variants": ["+1d", "bonus die", "bonus dice"
+        ],
+        "tags": [
+            {"tag_name": "general"}
+        ],
+        "description": "You might get bonus dice or dice penalties on a roll from allies helping you, in the form of Boons (+1d6) and Curses (-1d6). These cancel each other out 1 to 1.<br>These are sometimes written as +1D or -1D for simplicity.<br>The most important rule to remember is that you <b>can’t get more than +2 or -2 additional dice on any roll</b>, no matter how many dice you get otherwise."
     },
     {
         "name": "Chain Reaction",
@@ -73,7 +82,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that activates when the ability is used on a slow turn."
+        "description": "A <i>triggered effect</i> that activates when the ability is used on a {{{{slow turn}}}}."
     },
 	{
         "name": "Collide",
@@ -82,7 +91,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that occurs on any character shoved into an obstruction by this ability."
+        "description": "A <i>triggered effect</i> that occurs on any character {{{{shoved}}}} into an {{{{obstruction}}}} by this ability."
     },
 	{
         "name": "Combo",
@@ -99,7 +108,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that turns on if the character using this ability is bloodied."
+        "description": "A <i>triggered effect</i> that turns on if the character using this ability is {{{{bloodied}}}}."
     },
 	{
         "name": "Cover",
@@ -108,7 +117,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "If a character has cover from an ability, it halves all damage from that ability.<br>(pg. 89) Characters gain resistance to damage from ranged abilities while they are in cover, halving damage.<br> (pg.92) Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:<ul><li>Characters in cover take <b>half damage</b>.</li><li>Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.</li><li>Characters don’t grant cover by default.</li><li>A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.</li><li>Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.</li></ul>"
+        "description": "If a character has cover from an ability, it halves all damage from that ability.<br>(pg. 89) Characters gain {{{{resistance}}}} to damage from ranged abilities while they are in cover, halving damage.<br> (pg.92) Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:<ul><li>Characters in cover take <b>half damage</b>.</li><li>Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to {{{{fly}}}} or {{{{dash}}}} a short distance before attacking, or a character might throw a bomb that damages adjacent foes.</li><li>Characters don’t grant cover by default.</li><li>A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the {{{{elevation}}}} they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.</li><li>Characters on a higher {{{{elevation}}}} ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.</li></ul>"
     },
 	{
         "name": "Critical Hit",
@@ -117,7 +126,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "Increase total attack damage by + [D]. Can only apply to an attack, can only apply once, and can trigger normally on a total attack roll of 20+."
+        "description": "Increase total attack damage by + {{{{[D]}}}}. Can only apply to an attack, can only apply once, and can trigger normally on a total attack roll of 20+."
     },
     {
         "name": "Cure",
@@ -126,7 +135,16 @@
         "tags": [
 			{"tag_name": "positive effect"}
         ],
-        "description": "A character that’s cured gains 4 vigor, or a <i>vigor surge</i> if they’re bloodied. Then, they may save agains all statuses."
+        "description": "A character that’s cured gains 4 {{{{vigor}}}}, or a <i>vigor surge</i> if they’re {{{{bloodied}}}}. Then, they may save against all statuses."
+    },
+    {
+        "name": "Curse",
+		"variants": ["-1d", "die penalty", "dice penalties"
+        ],
+        "tags": [
+            {"tag_name": "general"}
+        ],
+        "description": "You might get bonus dice or dice penalties on a roll from allies helping you, in the form of Boons (+1d6) and Curses (-1d6). These cancel each other out 1 to 1.<br>These are sometimes written as +1D or -1D for simplicity.<br>The most important rule to remember is that you <b>can’t get more than +2 or -2 additional dice on any roll</b>, no matter how many dice you get otherwise."
     },
 	{
         "name": "Dangerous Terrain",
@@ -152,16 +170,16 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "Your class damage die. Roll that die when you see this symbol."
+        "description": "Your class damage die. Roll that die when you see this symbol.<ul><li><b>Stalwart:</b> d6</li><li><b>Vagabond:</b> d10</li><li><b>Mendicant:</b> d6</li><li><b>Wright:</b> d8</li></ul>"
     },
 	{
         "name": "Dash",
-		"variants": ["dashes", "dashed"
+		"variants": ["dashes", "dashed", "dashing"
 		],
         "tags": [
 			{"tag_name": "movement"}
         ],
-        "description": "Special movement that ignores engagement."
+        "description": "Special movement that ignores {{{{engagement}}}}."
     },
 	{
         "name": "Delay",
@@ -170,7 +188,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "Slow but powerful effect that typically ends your turn. When you use a delay effect, your next turn must be slow. The effect occurs at the start of that turn, before anything else happens."
+        "description": "Slow but powerful effect that typically {{{{ends your turn}}}}. When you use a delay effect, your {{{{next turn must be slow}}}}. The effect occurs at the start of that turn, before anything else happens."
     },
     {
         "name": "Effect",
@@ -186,11 +204,11 @@
         "tags": [
             {"tag_name": "terrain"}
         ],
-        "description": "(pg. 89) Each basic terrain space has elevation (suggested from 0-3, with 0 being ground level, but could be any elevation).<ul><li>It costs +1 movement per difference in height to move up elevation, to a max of +3. Spaces 4 or more spaces higher cannot be entered with normal movement.</li><li>Characters might be able to take {{{{cover}}}} behind terrain, and it might block line of sight (see more in the section below).</li><li><b>Height Advantage</b>: +1 boon on any attack against a target on lower elevation than you per level of height difference, and you ignore {{{{cover}}}} for lower elevation.</li><li><b>Height Disadvantage</b>: If you attack a character in higher elevation than you, get +1 curse per level of height difference.</li></ul>"
+        "description": "(pg. 89) Each basic terrain space has elevation (suggested from 0-3, with 0 being ground level, but could be any elevation).<ul><li>It costs +1 movement per difference in height to move up elevation, to a max of +3. Spaces 4 or more spaces higher cannot be entered with normal movement.</li><li>Characters might be able to take {{{{cover}}}} behind terrain, and it might block line of sight (see more in the section below).</li><li><b>Height Advantage</b>: +1 {{{{boon}}}} on any attack against a target on lower elevation than you per level of height difference, and you ignore {{{{cover}}}} for lower elevation.</li><li><b>Height Disadvantage</b>: If you attack a character in higher elevation than you, get +1 {{{{curse}}}} per level of height difference.</li></ul>"
     },
 	{
         "name": "End Turn",
-		"variants": ["end your turn"
+		"variants": ["end your turn", "ends your turn"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -272,7 +290,7 @@
         "tags": [
             {"tag_name": "terrain"}
         ],
-        "description": "Provides obstruction and cover, and blocks line of sight. Could be something like a pillar, cliff, or a solid wall that goes to the ceiling."
+        "description": "Provides {{{{obstruction}}}} and {{{{cover}}}}, and blocks line of sight. Could be something like a pillar, cliff, or a solid wall that goes to the ceiling."
     },
 	{
         "name": "Infuse",
@@ -292,6 +310,15 @@
         ],
         "description": "(pg. 85) Some abilities give you <b>interrupts</b>, which are abilities that trigger under certain circumstances and ‘interrupt’ whatever is going on. Each interrupt can only be used a certain number of times a round, and you can only use <b>one interrupt</b> on any turn (either your own or another characters). (pg. 81) You may also use interrupts before, after, or in the middle of any action, even off your turn, if you have them.<br>(pg. 91) Some abilities are called <b>interrupts</b> and can be used off your turn. You can use each interrupt a number of times indicated by the tag (Interrupt 1, Interrupt 2, for example) between your turns, <b>only one interrupt during any turn</b>, (yours or another character’s) and get them all back at the start of any of your turns. Imagine them like a card that you play and can draw again at the start of your turn.<br>Like they sound, interrupts have a <b>trigger</b> which <i>interrupts</i> any action currently being taken, and then immediately apply <b>effects</b>.<br>(pg. 107) Interrupts resolve with the most recently triggered interrupt first. For example, if a character’s effect deals damage to an enemy, and the enemy has an interrupt that reads ‘when this enemy takes damage’, the enemy’s interrupt would trigger first (even if they are killed by the damage), then the damage would be applied. Interrupts that have the same trigger and trigger at the same time resolve in the same order as turns (player character/npc, alternating).<br> (pg. 108) Interrupts activate when triggered, interrupting the normal flow of action until resolved, and always take priority."
     },
+    {
+        "name": "Line of Sight",
+		"variants": ["los"
+		],
+        "tags": [
+            {"tag_name": "general"}
+        ],
+        "description": "Line of sight means being able to see and interact with a character. Some effects like clouds of poison or smog can block lines of sight, or {{{{impassable}}}} terrain, like a dungeon wall. By default, objects, characters, and all terrain other than impassable terrain do not block line of sight.<br>Line of sight operates by two rules:<ul><li>If there’s any ambiguity about line of sight, draw a straight line from the any edge of your character’s space to the edge of another character’s space. If the line does not intersect with impassable terrain or an effect that explicitly blocks line of sight, then you have line of sight to that character.</li><li>If there’s any further ambiguity about line of sight, the GM can arbitrate according to their table.</li></ul>"
+    },
 	{
         "name": "Mark",
 		"variants": ["marks", "marked"
@@ -299,7 +326,7 @@
         "tags": [
             {"tag_name": "ongoing"}
         ],
-        "description": "Places a mark, an <i>ongoing</i> effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions."
+        "description": "Places a mark, an {{{{ongoing}}}} effect, on a specific character. Each ability can only place one mark at a time, and a character can mark another character with one mark at a time. If you place a new mark on a character with a mark from you, you can choose which to keep or which to discard. Marks end when the character that placed the mark is defeated, or under other listed conditions."
     },
     {
         "name": "Object",
@@ -308,7 +335,7 @@
         "tags": [
             {"tag_name": "terrain"}
         ],
-        "description": "Characters can often summon or create objects and they can be used to represent boulders, piles of barrels, a cart, a wall, etc. They otherwise function as terrain. Categorized by height, 1-3. Provides obstruction. Characters can stand on objects and take {{{{cover}}}} behind them. Objects are {{{{immune}}}} to damage and effects unless specified. They can be removed from the battlefield by some abilities and effects.<br><b>Destroying Objects</b> - The GM can make objects destructible. Destructible objects are targetable by anything that targets characters, but don’t count as a character. They have 10 hp, can be targeted as if they were a character, are automatically hit by attacks and effects, and fail all saves. Once an object is destroyed, remove it."
+        "description": "Characters can often summon or create objects and they can be used to represent boulders, piles of barrels, a cart, a wall, etc. They otherwise function as {{{{terrain}}}}. Categorized by height, 1-3. Provides {{{{obstruction}}}}. Characters can stand on objects and take {{{{cover}}}} behind them. Objects are {{{{immune}}}} to damage and effects unless specified. They can be removed from the battlefield by some abilities and effects.<br><b>Destroying Objects</b> - The GM can make objects destructible. Destructible objects are targetable by anything that targets characters, but don’t count as a character. They have 10 hp, can be targeted as if they were a character, are automatically hit by attacks and effects, and fail all saves. Once an object is destroyed, remove it."
     },
 	{
         "name": "Obstruction",
@@ -334,7 +361,7 @@
         "tags": [
             {"tag_name": "terrain"}
         ],
-        "description": "(pg. 89) A pit space is just what it sounds like, but could also be deep water, mud, etc. Pits count as <b>one level lower of elevation</b> than their base space."
+        "description": "(pg. 89) A pit space is just what it sounds like, but could also be deep water, mud, etc. Pits count as <b>one level lower of</b> {{{{elevation}}}} than their base space."
     },
 	{
         "name": "Power Die",
@@ -351,11 +378,11 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "An ability that is rebounded can be bounced off a character in range. The ability has no effect, but is instead redirected from that character’s space as the origin space, taking into account cover, line of sight, and other similar effects from their space. Any effects that apply to the original user of the ability still apply to them (such as sacrificing hp, or moving). Rebound does not stack."
+        "description": "An ability that is rebounded can be bounced off a character in range. The ability has no effect, but is instead redirected from that character’s space as the origin space, taking into account {{{{cover}}}}, {{{{line of sight}}}}, and other similar effects from their space. Any effects that apply to the original user of the ability still apply to them (such as sacrificing hp, or moving). Rebound does not stack."
     },
 	{
         "name": "Resistance",
-		"variants": ["resist", "resisting", "resists"
+		"variants": ["resist", "resisting", "resists", "resisted"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -369,7 +396,7 @@
         "tags": [
 			{"tag_name": "movement"}
         ],
-        "description": "Move X spaces. You are <i>unstoppable</i> and <i>immune</i> to all damage while moving."
+        "description": "Move X spaces. You are {{{{unstoppable}}}} and {{{{immune}}}} to all damage while moving."
     },
 	{
         "name": "Sacrifice X",
@@ -378,7 +405,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "Reduce your hp by X, usually as a cost for an ability. Sacrifice costs are paid at the start of an ability, cannot be reduced, ignored, transferred, or resisted, cannot bring your hp below 1, and you can pay them even if you don’t have enough hp left."
+        "description": "Reduce your hp by X, usually as a cost for an ability. Sacrifice costs are paid at the start of an ability, cannot be reduced, ignored, transferred, or {{{{resisted}}}}, cannot bring your hp below 1, and you can pay them even if you don’t have enough hp left."
     },
 	{
         "name": "Shove X",
@@ -387,7 +414,7 @@
         "tags": [
             {"tag_name": "general"}            
         ],
-        "description": "Move a character involuntarily X spaces in a straight line away from you. If they would move into another character’s space, an object, or into a higher elevation space, they <i>Collide</i> and stop moving."
+        "description": "Move a character involuntarily X spaces in a straight line away from you. If they would move into another character’s space, an object, or into a higher {{{{elevation}}}} space, they {{{{Collide}}}} and stop moving."
     },
 	{
         "name": "Slay",
@@ -403,7 +430,7 @@
         "tags": [
             {"tag_name": "terrain"}
         ],
-        "description": "(pg. 89) Slopes count as the same height as their base space, but exiting a slope space allows you to ignore the movement cost of one level of elevation. Could also be something like a staircase or ramp."
+        "description": "(pg. 89) Slopes count as the same height as their base space, but exiting a slope space allows you to ignore the movement cost of one level of {{{{elevation}}}}. Could also be something like a staircase or ramp."
     },
 	{
         "name": "Slow Turn",
@@ -412,7 +439,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "Go after all other characters. If multiple characters take slow turns, it takes the same order as regular turns (ally/enemy/ally)"
+        "description": "Go after all other characters. If multiple characters take slow turns, it takes the same order as regular turns (ally/enemy/ally)."
     },
 	{
         "name": "Stance",
@@ -421,7 +448,7 @@
 			{"tag_name": "ongoing"},
 			{"tag_name": "positive effect"}
         ],
-        "description": "An <i>ongoing</i>, positive effect. A character can only have one stance active at a time and can drop a stance by taking a new stance or as a free action at the start of their turn. When a stance refreshes, regain its effects."
+        "description": "An {{{{ongoing}}}}, positive effect. A character can only have one stance active at a time and can drop a stance by taking a new stance or as a {{{{free action}}}} at the start of their turn. When a stance refreshes, regain its effects."
     },
 	{
         "name": "Standard Move",
@@ -429,15 +456,16 @@
         "tags": [
 			{"tag_name": "movement"}
         ],
-        "description": "An ability all characters can take as a free action to move their speed."
+        "description": "An ability all characters can take as a {{{{free action}}}} to move their speed."
     },
 	{
         "name": "Status",
-		"variants": [],
+		"variants": ["statuses"
+        ],
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "A negative effect."
+        "description": "A negative effect. Includes slashed, blind, dazed, hatred, pacified, sealed, shattered, stunned, weakened, and vulnerable."
     },
 	{
         "name": "Summon",
@@ -446,7 +474,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "A character controlled by its Summoner. Summons are <i>intangible</i>, and cannot be marked, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a <b>summon action</b> that they use on their summoner’s turn, or a <b>summon effect</b> that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated."
+        "description": "A character controlled by its Summoner. Summons are {{{{intangible}}}}, and cannot be {{{{marked}}}}, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a <b>summon action</b> that they use on their summoner’s turn, or a <b>summon effect</b> that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated."
     },
 	{
         "name": "Teleport",
@@ -468,7 +496,8 @@
     },
 	{
         "name": "Triggered Effect",
-		"variants": [],
+		"variants": ["triggered effects"
+        ],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -490,7 +519,7 @@
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "+1 <i>curse</i> on attacks."
+        "description": "+1 {{{{curse}}}} on attacks."
     },
 	{
         "name": "Hatred of X",
@@ -499,7 +528,7 @@
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "Deal half damage to all foes other than foe X. End this status at the end of your turn, or if foe X becomes immune to damage or un-targetable."
+        "description": "Deal half damage to all foes other than foe X. End this status at the end of your turn, or if foe X becomes {{{{immune}}}} to damage or un-targetable."
     },
 	{
         "name": "Pacified",
@@ -517,7 +546,7 @@
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "Character cannot inflict statuses."
+        "description": "Character cannot inflict {{{{statuses}}}}."
     },
 	{
         "name": "Shattered",
@@ -526,7 +555,7 @@
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "Character cannot gain or benefit from vigor."
+        "description": "Character cannot gain or benefit from {{{{vigor}}}}."
     },
     {
         "name": "Slashed",
@@ -544,11 +573,11 @@
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "Can’t take interrupts. Your next ability used ends your turn, then end this status."
+        "description": "Can’t take {{{{interrupts}}}}. Your next ability used {{{{ends your turn}}}}, then end this status."
     },
 	{
         "name": "Weakened",
-		"variants": ["weaken", "weakening"
+		"variants": ["weaken", "weakening", "weak"
 		],
         "tags": [
             {"tag_name": "status"}
@@ -561,7 +590,7 @@
         "tags": [
             {"tag_name": "status"}
         ],
-        "description": "All damage taken increased by 1"
+        "description": "All damage taken increased by 1."
     },
 	{
         "name": "Bloodied",
@@ -593,7 +622,7 @@
         "tags": [
             {"tag_name": "special state"}
         ],
-        "description": " When a character is reduced to 0 hp, they are incapacitated and can’t do anything. Any effects or statuses on them end or turn off. Any summons, or other effects they have created disappear, objects and terrain effects remain. A defeated character doesn't take turns, doesn’t provide obstruction or engagement, can’t move, take actions, or use abilities or traits."
+        "description": " When a character is reduced to 0 hp, they are incapacitated and can’t do anything. Any effects or {{{{statuses}}}} on them end or turn off. Any {{{{summons}}}}, or other effects they have created disappear, {{{{objects}}}} and {{{{terrain effects}}}} remain. A defeated character doesn't take turns, doesn’t provide {{{{obstruction}}}} or {{{{engagement}}}}, can’t move, take actions, or use abilities or traits."
     },
 	{
         "name": "Counter",
@@ -610,7 +639,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes immune to all damage for the rest of the current turn."
+        "description": "Prevents hit points from being reduced past 1 hp. When this triggers, remove this effect and character becomes {{{{immune}}}} to all damage for the rest of the current turn."
     },
 	{
         "name": "Divine",
@@ -618,7 +647,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Damage from this ability cannot be reduced, mitigated, or negated in any way except <i>immunity</i> (ignores armor, weak, resistance, defiance, and bypasses vigor)."
+        "description": "Damage from this ability cannot be reduced, mitigated, or negated in any way except {{{{immunity}}}}. (Ignores {{{{armor}}}}, {{{{weak}}}}, {{{{resistance}}}}, {{{{defiance}}}}, and bypasses {{{{vigor}}}})."
     },
 	{
         "name": "Dodge",
@@ -626,7 +655,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Immune to all damage from misses, successful saves, and area effects."
+        "description": "{{{{Immune}}}} to all damage from misses, successful saves, and {{{{area effects}}}}."
     },
 	{
         "name": "Evasion",
@@ -644,7 +673,7 @@
             {"tag_name": "positive effect"},
 			{"tag_name": "movement"}
         ],
-        "description": "A flying character ignores terrain damage and movement penalties, height movement penalties, obstruction, and engagement."
+        "description": "A flying character ignores terrain damage and movement penalties, height movement penalties, {{{{obstruction}}}}, and {{{{engagement}}}}."
     },
 	{
         "name": "Intangible",
@@ -652,7 +681,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Immune to damage and effects from foes. Does not provide obstruction or engagement."
+        "description": "{{{{Immune}}}} to damage and effects from foes. Does not provide {{{{obstruction}}}} or {{{{engagement}}}}."
     },
 	{
         "name": "Phasing",
@@ -661,7 +690,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Can ignore obstruction and pass through, but not end your turn in, terrain, objects, or characters."
+        "description": "Can ignore {{{{obstruction}}}} and pass through, but not end your turn in, terrain, objects, or characters."
     },
 	{
         "name": "Pierce",
@@ -670,7 +699,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Damage cannot be reduced by <i>armor</i> or <i>weakened</i>."
+        "description": "Damage cannot be reduced by {{{{armor}}}} or {{{{weakened}}}}."
     },
 	{
         "name": "Rampart",
@@ -678,7 +707,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Foes cannot enter or exit a space affected by a <i>rampart</i> effect by dashing, flying, or teleporting."
+        "description": "Foes cannot enter or exit a space affected by a <i>rampart</i> effect by {{{{dashing}}}}, {{{{flying}}}}, or {{{{teleporting}}}}."
     },
 	{
         "name": "Regeneration",
@@ -686,7 +715,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "If bloodied, gain 4 vigor at the end of your turn."
+        "description": "If {{{{bloodied}}}}, gain 4 {{{{vigor}}}} at the end of your turn."
     },
 	{
         "name": "Skirmisher",
@@ -694,7 +723,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Can move diagonally, and dash is full speed"
+        "description": "Can move diagonally, and {{{{dash}}}} is full speed."
     },
 	{
         "name": "Stealth",
@@ -702,7 +731,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Cannot be directly targeted except from an adjacent space. Breaks on using any ability other than dash or standard move."
+        "description": "Cannot be directly targeted except from an adjacent space. Breaks on using any ability other than {{{{dash}}}} or {{{{standard move}}}}."
     },
 	{
         "name": "Sturdy",
@@ -718,7 +747,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Ignores dodge, blind, evasion, and stealth"
+        "description": "Ignores {{{{dodge}}}}, {{{{blind}}}}, {{{{evasion}}}}, and {{{{stealth}}}}."
     },
 	{
         "name": "Unerring",
@@ -726,7 +755,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Ignores cover and aetherwall"
+        "description": "Ignores {{{{cover}}}} and <i>aetherwall</i> (Wrights gain {{{{resistance}}}} against all abilities from characters that are outside of range 2 of them)."
     },
 	{
         "name": "Unstoppable",
@@ -734,7 +763,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Immune to all statuses. Cannot be moved by foes, and movement ignores <i>engagement</i> and <i>rampart</i>."
+        "description": "{{{{Immune}}}} to all {{{{statuses}}}}. Cannot be moved by foes, and movement ignores {{{{engagement}}}} and {{{{rampart}}}}."
     },
 	{
         "name": "Vigilance X",
@@ -743,7 +772,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "A special effect with X charges, each represented by a d6. Like triggered effects, vigilance can only be used once per trigger. Vigilance charges stack if a character gains more than one. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:<ul><li>When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with <i>armor</i></li><li>When a foe breaks adjacency with you, deal that much damage to them.</li></ul>"
+        "description": "A special effect with X charges, each represented by a d6. Like {{{{triggered effects}}}}, vigilance can only be used once per trigger. Vigilance charges stack if a character gains more than one. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:<ul><li>When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with {{{{armor}}}}</li><li>When a foe breaks adjacency with you, deal that much damage to them.</li></ul>"
     },
 	{
         "name": "Vigor",
@@ -751,6 +780,6 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from armor and resistance. Vigor stacks, but cannot go past 25% of your hp. If you gain a <b>vigor surge</b>, gain maximum vigor. Lose all vigor at the end of combat."
+        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from {{{{armor}}}} and {{{{resistance}}}}. Vigor stacks, but cannot go past 25% of your hp. If you gain a <b>vigor surge</b>, gain maximum vigor. Lose all vigor at the end of combat."
     }
 ]
