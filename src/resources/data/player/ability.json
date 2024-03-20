@@ -97,7 +97,7 @@
             {"tag_name": "basic"},
             {"tag_name": "action", "val": 2}
         ],
-        "description": "{{{{Cure}}}} yourself. When a character is cured, they gain 4 vigor, or if they are bloodied, they gain a vigor surge. Then they may save against all statuses, ending them on a success.",
+        "description": "{{{{Cure}}}} yourself.",
         "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
@@ -114,7 +114,7 @@
             {"tag_name": "range", "val": 3},
             {"tag_name": "true strike"}
         ],
-        "description": "<b>Attack:</b> <i>On hit:</i> {{{{[D]}}}} + {{{{Fray}}}}. Miss: {{{{Fray}}}}.<br><b>Effect:</b> Attack target is {{{{weakened}}}} and {{{{shoved}}}} 1<br> <b>Effect:</b> A different foe in range 3 from your target is {{{{shoved}}}} 1 away from your main target.<br><b>Collide or Heroic:</b> Repeat the above effect.",
+        "description": "<b>Attack:</b> <i>On hit:</i> {{{{[D]}}}} + {{{{Fray}}}}. Miss: {{{{Fray}}}}.<br><b>Effect:</b> Attack target is {{{{weakened}}}} and {{{{shoved}}}} 1<br> <b>Effect:</b> A different foe in range 3 from your target is {{{{shoved}}}} 1 away from your main target.<br><b>{{{{Collide}}}} or {{{{Heroic}}}}:</b> Repeat the above effect.",
         "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
         "talent1":"Heracule’s {{{{shoves}}}} can be in any direction",
         "talent2":"Heracule’s second effect triggers +1 more time.",
@@ -329,12 +329,12 @@
         "tags":[
             {"tag_name": "action", "val": 1}
         ],
-        "description": "<b>Effect</b>: {{{{Rush}}}} 2.<br><b>Effect</b>: Gain +1 vigilance. Until the start of your next turn, you gain <i>counter</i>, and may {{{{Rush}}}} 2 after activating <i>vigilance</i>. This effect can trigger any number of times a round, but only once a turn.<br><b>Heroic</b>: Gain +2 vigilance instead.",
+        "description": "{{{{Effect}}}}: {{{{Rush}}}} 2.<br>{{{{Effect}}}}: Gain +1 {{{{vigilance}}}}. Until the start of your next turn, you gain {{{{counter}}}}, and may {{{{Rush}}}} 2 after activating {{{{vigilance}}}}. This effect can trigger any number of times a round, but only once a turn.<br>{{{{Heroic}}}}: Gain +2 {{{{vigilance}}}} instead.",
         "blurb": "You move so quickly that even your afterimages are capable of deflecting blows.",
         "talent1":"Gain 2 vigor after any time Gates of Hell’s second effect activates.",
         "talent2":"Vigilance’s range increases by +1 while Gates of Hell is active.",
         "masteryname":"FLASH STEP",
-        "masterdescription":"After Gates of Hell resolves, you create an afterimage <i>terrain effect</i> in a free adjacent space. The afterimage is <i>dangerous</i> terrain, but only for foes. You also gain the following ability."
+        "masterdescription":"After Gates of Hell resolves, you create an afterimage {{{{terrain effect}}}} in a free adjacent space. The afterimage is {{{{dangerous}}}} terrain, but only for foes. You also gain the following ability."
     },
     {
         "job": "Demon Slayer",
@@ -344,12 +344,12 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "stance"}
         ],
-        "description": "<b>Effect</b>: Stance: When entering this stance, gain a d6 power die, starting at 2.<ul><li>When the stance refreshes, tick the die up by 1.</li><li>When you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 <i>area effect</i> that must include your target, after the attack resolves. The area has <i>true strike</i>. Foes in the area take damage equal to the amount you ticked down.</li><li>If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.</li><li>If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.</li><li>If the die goes to 0, you exit this stance.</li></ul><b>Heroic</b>: Gain +1 tick on the die for every adjacent foe when you enter this stance.<br><b>Refresh</b>: This stance refreshes if you end a turn without attacking, or if you start a slow turn.",
+        "description": "{{{{Effect}}}}: {{{{Stance}}}}: When entering this stance, gain a d6 {{{{power die}}}}, starting at 2.<ul><li>When the stance refreshes, tick the die up by 1.</li><li>When you attack, you can tick the die down by any amount to cause an additional aether slash as a line 3 <i>area effect</i> that must include your target, after the attack resolves. The area has <i>true strike</i>. Foes in the area take damage equal to the amount you ticked down.</li><li>If you tick the die down by 3 or more, you also gain vigor equal to the number on the die.</li><li>If you tick the die down by 6, the slash deals +3 more total damage and grants you +3 more total vigor.</li><li>If the die goes to 0, you exit this stance.</li></ul>{{{{Heroic}}}}: Gain +1 tick on the die for every adjacent foe when you enter this stance.<br><b>Refresh</b>: This stance refreshes if you end a turn without attacking, or if you start a {{{{slow turn}}}}.Listed terms: {{{{area effect}}}}, {{{{true strike}}}}, {{{{vigor}}}}",
         "blurb": "You imbue your weapon with aether, causing additional cuts at the very aether of your foe.",
         "talent1": "You may also increase the area of any line or arc effects by +1 in Soul Blade, including from this stance.",
-        "talent2": "While in Soul Blade, your attacks gain <i>exceed</i>: tick the die up by 1.",
+        "talent2": "While in Soul Blade, your attacks gain {{{{exceed}}}}: tick the die up by 1.",
         "masteryname": "WIND CALLING DEVIL BLADE",
-        "masterdescription": "At round 4 or later in combat, soul blade also refreshes at the start of your turn and any area created by it {{{{Shoves}}}} all characters inside 1 space."
+        "masterdescription": "At round 4 or later in combat, soul blade also refreshes at the start of your turn and any area created by it {{{{shoves}}}} all characters inside 1 space."
     },
     {
         "job": "Demon Slayer",
@@ -360,10 +360,10 @@
 			{"tag_name": "delay"},
 			{"tag_name": "terrain effect"}
         ],
-        "description": "<b>End your turn</b> and gain <b>Terrain effect</b>: Mark out a burst 2 (self) area, then gain <b>Delay</b>: Your next turn must be slow, but at the start of that turn, the trigram activates.<ul><li>When the trigram activates, all foes inside are {{{{weakened}}}}.</li><li>While active, any foes that attempt to exit the terrain effect during any turn must first pass a save, or become unable to do so until the start of their next turn. If they are moving, they don’t lose their movement but can’t consider the area outside valid space to move to.</li><li>This area lasts until this ability is used again.</li></ul><b>Heroic</b>: The area has <i>rampart</i> and foes in the are when it activates take {{{{fray damage}}}}.",
+        "description": "<b>End your turn</b> and gain <b>Terrain effect</b>: Mark out a burst 2 (self) area, then gain {{{{Delay}}}}: Your {{{{next turn must be slow}}}}, but at the start of that turn, the trigram activates.<ul><li>When the trigram activates, all foes inside are weakened.</li><li>While active, any foes that attempt to exit the terrain effect during any turn must first pass a save, or become unable to do so until the start of their next turn. If they are moving, they don’t lose their movement but can’t consider the area outside valid space to move to.</li><li>This area lasts until this ability is used again.</li></ul>{{{{Heroic}}}}: The area has {{{{rampart}}}} and foes in the are when it activates take {{{{fray damage}}}}.Listed terms: {{{{weakened}}}}",
         "blurb": "Using dark arts, you summon up a sliver of the demon world, blocking out a dark arena that traps enemies in its web.",
-        "talent1":"You have <i>counter</i> and are <i>sturdy</i> while inside the area.",
-        "talent2":"Allies inside the area reduce all damage by 2, as if from armor.",
+        "talent1":"You have {{{{counter}}}} and are {{{{sturdy}}}} while inside the area.",
+        "talent2":"Allies inside the area reduce all damage by 2, as if from {{{{armor}}}}.",
         "masteryname":"DARK WIND CHAIN",
         "masterdescription":"While inside the area, you gain the following ability."
     },
@@ -376,10 +376,10 @@
 			{"tag_name": "true strike"},
 			{"tag_name": "power die"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: {{{{Fray}}}} and {{{{shove}}}} 1. <i>Miss</i>: {{{{Fray}}}}.<br><b>Effect</b>: After you attack, your weapon becomes charged with energy. At the start of each round, gain a d4 power die at 1, or tick it up by 1. For each tick of the die:<ul><li>increase the base damage <i>on hit</i> of Wicked Sheath by {{{{[D]}}}} and the {{{{shove}}}} by 1</li><li>the attack gains +1 boon.</li></ul>Discard the power die after you <i>hit</i> with <i>any attack</i>.<br><b>Charge</b> or <b>Heroic</b>: You may also {{{{rush}}}} 1 before making the attack once for each charge on the die.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{Fray}}}} and {{{{shove}}}} 1. <i>Miss</i>: {{{{Fray}}}}.<br>{{{{Effect}}}}: After you attack, your weapon becomes charged with energy. At the start of each round, gain a d4 power die at 1, or tick it up by 1. For each tick of the die:<ul><li>increase the base damage <i>on hit</i> of Wicked Sheath by [D] and the shove by 1</li><li>the attack gains +1 boon.</li></ul>Discard the power die after you <i>hit</i> with <i>any attack</i>.<br>{{{{Charge}}}} or {{{{Heroic}}}}: You may also {{{{rush}}}} 1 before making the attack once for each charge on the die.<br>Listed terms: {{{{[D]}}}}, {{{{shove}}}}, {{{{boon}}}}",
         "blurb": "The master art of the demon slayers - holding a single blow with ultimate patience, until it can slay the most tenebrous of monsters in one stroke.",
-        "talent1":"Also {{{{shove}}}} your foe 1 for every charge on the die. <i>Collide</i>: Your foe is <i>stunned</i>.",
-        "talent2":"<i>Exceed</i>: Draw a line 4 area effect that includes your target. Characters inside other than your target take 2 damage, once, for every charge on the die.",
+        "talent1":"Also {{{{shove}}}} your foe 1 for every charge on the die. {{{{Collide}}}}: Your foe is {{{{stunned}}}}.",
+        "talent2":"{{{{Exceed}}}}: Draw a line 4 area effect that includes your target. Characters inside other than your target take 2 damage, once, for every charge on the die.",
         "masteryname":"MUGEN SHOMETSU",
         "masterdescription":"If the die is 2 or higher and you would discard it, roll it instead of discarding it. On a 1 or 2, keep it, using the new number."
     },
@@ -392,7 +392,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "true strike"}
         ],
-        "description": "<b>Effect</b>: You may <i>fly</i> 1.<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br><b>Effect</b>: Attack target is {{{{weakened}}}}.<br><b>Exceed</b> or <b>Heroic</b>: Create a <i>pit</i> under your target.",
+        "description": "{{{{Effect}}}}: You may <i>fly</i> 1.<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br>{{{{Effect}}}}: Attack target is {{{{weakened}}}}.<br><b>Exceed</b> or <b>Heroic</b>: Create a <i>pit</i> under your target.",
         "blurb": "Soaring through the air like a vengeful spirit, you crash into your enemy.",
         "talent1":"Valkyrie gains range 4.",
         "talent2":"You are <i>unstoppable</i> and <i>immune</i> to all damage while flying with Valkyrie. <i>Charge</i>: You may <i>fly</i> 3 instead.",
@@ -422,7 +422,7 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "sacrifice"}
         ],
-        "description": "<b>Effect</b>: Fly 1.<br><b>Effect</b>: <i>Sacrifice</i> 6. An adjacent foe takes {{{{[D]}}}} + {{{{Fray damage}}}}.<br><b>Heroic</b>: You may {{{{Rush}}}} 2 before or after using this ability.",
+        "description": "{{{{Effect}}}}: Fly 1.<br>{{{{Effect}}}}: <i>Sacrifice</i> 6. An adjacent foe takes {{{{[D]}}}} + {{{{Fray damage}}}}.<br><b>Heroic</b>: You may {{{{Rush}}}} 2 before or after using this ability.",
         "blurb": "No blurb.",
         "talent1":"<i>Comeback</i>: Hit your foe so hard that you create 2 spaces of difficult terrain in adjacent spaces after this ability resolves.",
         "talent2":"{{{{Shove}}}} your foe 1, then {{{{shove}}}} yourself 1 away from your foe. <i>Charge</i>: Increase {{{{shoves}}}} to 2.",
@@ -452,7 +452,7 @@
             {"tag_name": "action", "val": 2},
 			{"tag_name": "attack"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br><b>Effect</b>: Both you and your foe are <i>stunned</i>. You may <i>sacrifice</i> 4 to avoid this stun.<br><b>Exceed</b> or <b>Heroic</b>: Gains <i>true strike</i> and creates a <i>pit</i> under your target.",
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br>{{{{Effect}}}}: Both you and your foe are <i>stunned</i>. You may <i>sacrifice</i> 4 to avoid this stun.<br><b>Exceed</b> or <b>Heroic</b>: Gains <i>true strike</i> and creates a <i>pit</i> under your target.",
         "blurb": "You deliver a mighty blow with wild abandon, so strong that you yourself are left reeling.",
         "talent1":"You may {{{{Rush}}}} 2 or <i>fly</i> 2 before using Takedown.",
         "talent2":"You can also choose to {{{{shove}}}} your target 2, then {{{{shove}}}} yourself 2. <i>Collide</i>: Deal {{{{fray damage}}}}.",
@@ -589,12 +589,12 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "stance"}
         ],
-        "description": "<b>Stance</b>: While in this stance:<ul><li>You gain <i>hatred</i>+ of the closet foe to you at the start of your turn or when you enter this stance. If multiple foes are equidistant, you may choose.</li><li>You are <i>sturdy</i></li><li>You gain vigilance +1 at the end of your turn</li></ul><b>Heroic</b>: On entering this stance, you may gain 2 vigor per status affecting you, including from this stance.<br><b>Refresh</b>: You may refresh or exit this stance at the start of your turn",
+        "description": "{{{{Stance}}}}: While in this stance:<ul><li>You gain <i>hatred</i>+ of the closet foe to you at the start of your turn or when you enter this stance. If multiple foes are equidistant, you may choose.</li><li>You are <i>sturdy</i>.</li><li>You gain vigilance +1 at the end of your turn.</li></ul>{{{{Heroic}}}}: On entering this stance, you may gain 2 {{{{vigor}}}} per {{{{status}}}} affecting you, including from this stance.<br><b>Refresh</b>: You may refresh or exit this stance at the start of your turn.<br>Listed terms: {{{{hatred}}}}, {{{{ongoing (+)}}}}, {{{{sturdy}}}}, {{{{vigilance}}}}",
         "blurb": "You give into the heat of battle, becoming a creature of violence and instinct.",
         "talent1":"You may {{{{Rush}}}} 2 towards your hated foe at the start of their turn, but only once a round.",
-        "talent2":"While in this stance, you have <i>regeneration</i>.",
+        "talent2":"While in this stance, you have {{{{regeneration}}}}.",
         "masteryname":"INFECTIOUS HATRED",
-        "masterdescription":"While in Dark Knight, you have Aura 1. Foes that end their turn in the aura must save or gain <i>hatred</i> of you."
+        "masterdescription":"While in Dark Knight, you have {{{{Aura}}}} 1. Foes that end their turn in the aura must save or gain {{{{hatred}}}} of you."
     },
     {
         "job": "Knave",
@@ -665,12 +665,12 @@
 			{"tag_name": "attack"},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "<b>Effect</b>: Dash 3, then dash 1 space to the side of your movement. This movement ignores all movement penalties and has <i>phasing</i>. However:<ul><li>You must move if able</li><li>You must move as far as possible</li><li>You cannot move diagonally during this movement.</li></ul><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br><b>Effect</b>: Foe is <i>dazed</i>.<br><b>Finishing Blow</b> or <b>Slay</b>: Summon a <b>bomb</b>",
+        "description": "{{{{Effect}}}}: {{{{Dash}}}} 3, then {{{{dash}}}} 1 space to the side of your movement. This movement ignores all movement penalties and has {{{{phasing}}}}. However:<ul><li>You must move if able.</li><li>You must move as far as possible.</li><li>You cannot move diagonally during this movement.</li></ul><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br>{{{{Effect}}}}: Foe is {{{{dazed}}}}.<br>{{{{Finishing Blow}}}} or {{{{Slay}}}}: {{{{Summon}}}} a <b>bomb</b>.",
         "blurb": "It is not enough to rudely and plainly strike your foe down. One must make it entertaining.",
-        "talent1": "If you pass through an ally or summon during this movement, deal bonus damage",
-        "talent2": "Allies you pass through during this movement can dash 1.",
+        "talent1": "If you pass through an ally or {{{{summon}}}} during this movement, deal {{{{bonus damage}}}}.",
+        "talent2": "Allies you pass through during this movement can {{{{dash}}}} 1.",
         "masteryname": "Pegaso",
-        "masterdescription": "After Cavaliere resolves, you may fly 4."
+        "masterdescription": "After Cavaliere resolves, you may {{{{fly}}}} 4."
     },
     {
         "job": "Fool",
@@ -695,12 +695,12 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "gamble"}
         ],
-        "description": "<b>Effect</b>: <b>Gamble</b>, then dash that many spaces +2 in a whirling dance.<ul><li>You <i>must</i> move as far as possible before an obstruction causes you to stop</li><li>You must make all movement in the same direction.</li><li>You cannot move diagonally using this movement</li><li><i>However</i>, you can interrupt spinning top with any number of other abilities without causing the movement to end.</li></ul><b>Effect</b>: If you move the maximum distance rolled by Spinning top, gain <i>evasion</i> until the start of your next turn.",
+        "description": "{{{{Effect}}}}: {{{{Gamble}}}}, then {{{{dash}}}} that many spaces +2 in a whirling dance.<ul><li>You <i>must</i> move as far as possible before an obstruction causes you to stop.</li><li>You must make all movement in the same direction.</li><li>You cannot move diagonally using this movement.</li><li><i>However</i>, you can interrupt Spinning Top with any number of other abilities without causing the movement to end.</li></ul>{{{{Effect}}}}: If you move the maximum distance rolled by Spinning Top, gain {{{{evasion}}}} until the start of your next turn.<br>Listed terms: {{{{obstruction}}}}, {{{{interrupt}}}}",
         "blurb": "A blur of cape, a flash of color, the gleaming of blades.",
-        "talent1": "You can always choose to dash 3 spaces with spinning top after seeing your gamble result.",
-        "talent2": "<i>Charge</i>: Spinning top becomes fly instead.",
+        "talent1": "You can always choose to {{{{dash}}}} 3 spaces with Spinning Top after seeing your {{{{gamble}}}} result.",
+        "talent2": "<i>Charge</i>: Spinning Top becomes {{{{fly}}}} instead.",
         "masteryname": "VORTICE DI FOLLIA",
-        "masterdescription": "If you triggered a slay effect during your turn before using spinning top, it becomes a <i>free</i> action."
+        "masterdescription": "If you triggered a {{{{slay}}}} effect during your turn before using Spinning Top, it becomes a {{{{free action}}}}."
     },
     {
         "job": "Fool",
@@ -728,12 +728,12 @@
 			{"tag_name": "stance"},
 			{"tag_name": "power die"}
         ],
-        "description": "<b>Stance</b>: Set out a d6 power die, starting at 1. While in this stance:<ul><li>When this stance refreshes, or when you or an ally anywhere misses or is missed by an attack, tick the die up by 1.</li><li>When the die is at maximum, you may reset it to 1 when you or an ally uses an ability to empower it. The ability deals bonus damage and triggers any <b>slay</b> effects, hit or miss.</li></ul><b>Refresh</b>: This stance refreshes at the start of your turn.",
+        "description": "{{{{Stance}}}}: Set out a d6 {{{{power die}}}}, starting at 1. While in this stance:<ul><li>When this stance refreshes, or when you or an ally anywhere misses or is missed by an attack, tick the die up by 1.</li><li>When the die is at maximum, you may reset it to 1 when you or an ally uses an ability to empower it. The ability deals bonus damage and triggers any <b>slay</b> effects, hit or miss.</li></ul><b>Refresh</b>: This stance refreshes at the start of your turn.<br>Listed terms: {{{{bonus damage}}}}, {{{{slay}}}}",
         "blurb": "The power of Divine Death flows through you, empowering your strikes.",
-        "talent1": "Gallows humor instantly ticks up to maximum if an ally is defeated anywhere.",
-        "talent2": "The empowered ability gains <i>effect</i>: deal 4 damage again to any target at 25% hp or lower.",
+        "talent1": "Gallows Humor instantly ticks up to maximum if an ally is {{{{defeated}}}} anywhere.",
+        "talent2": "The empowered ability gains {{{{effect}}}}: deal 4 damage again to any target at 25% hp or lower.",
         "masteryname": "MAESTRIA MORTALE",
-        "masterdescription": "While in this stance, <i>all</i> your abilities with an action cost of 1 or 2 gain <b>slay</b>: <i>all</i> allies may dash 1, then foes adjacent to at least one ally that dashed this way take 2 damage."
+        "masterdescription": "While in this {{{{stance}}}}, <i>all</i> your abilities with an action cost of 1 or 2 gain {{{{slay}}}}: <i>all</i> allies may {{{{dash}}}} 1, then foes adjacent to at least one ally that dashed this way take 2 damage."
     },
     {
         "job": "Fool",
@@ -743,12 +743,12 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "terrain effect"}
         ],
-        "description": "<b>Terrain Effect</b>: You throw an explosive mine into a free space in range 3. When any character enters the space, the mine explodes with a medium blast <i>area effect</i> centered on it. When activated, <i>gamble</i> to see the effects, which stack. Then, the mine is destroyed, ending the terrain effect.<ul><li>1-3: Yourself and allies in the area fly 1. Foes take 2 damage.</li><li>4-5: Foes are additionally <i>blinded</i>.</li><li>6: Yourself and allies also gain <i>stealth</i>.</li></ul><b>Finishing Blow</b>: Foes take 2 damage, twice.",
-        "blurb": "The Fool’s arsenal is deep, their mirth infinite, and their ability to turn nearly anything into an explosive is legendary..",
-        "talent1": "Increase flight on yourself to 3",
-        "talent2": "<i>Dazed</i> or <i>Blinded</i> foes activate the Finishing Blow effect.",
+        "description": "{{{{Terrain Effect}}}}: You throw an explosive mine into a free space in range 3. When any character enters the space, the mine explodes with a medium blast {{{{area effect}}}} centered on it. When activated, {{{{gamble}}}} to see the effects, which stack. Then, the mine is destroyed, ending the {{{{terrain effect}}}}.<ul><li>1-3: Yourself and allies in the area fly 1. Foes take 2 damage.</li><li>4-5: Foes are additionally <i>blinded</i>.</li><li>6: Yourself and allies also gain <i>stealth</i>.</li></ul>{{{{Finishing Blow}}}}: Foes take 2 damage, twice.<br>Listed terms: {{{{fly}}}}, {{{{blinded}}}}, {{{{stealth}}}}",
+        "blurb": "The Fool’s arsenal is deep, their mirth infinite, and their ability to turn nearly anything into an explosive is legendary.",
+        "talent1": "Increase {{{{flight}}}} on yourself to 3",
+        "talent2": "{{{{Dazed}}}} or {{{{blinded}}}} foes activate the {{{{Finishing Blow}}}} effect.",
         "masteryname": "AMICO",
-        "masterdescription": "You can throw the party favor at any character in range instead, making it a <i>mark</i>. You can gamble at the end of any turn after yours to detonate it, ending the mark and effect."
+        "masterdescription": "You can throw the party favor at any character in range instead, making it a {{{{mark}}}}. You can {{{{gamble}}}} at the end of any turn after yours to detonate it, ending the mark and effect."
     },
     {
         "job": "Fool",
@@ -827,12 +827,12 @@
 			{"tag_name": "power die"},
 			{"tag_name": "unerring"}
         ],
-        "description": "<b>Mark</b>: You mark a foe in range, with the following effects:<ul><li>When you end your turn in range 3 from your foe, or that foe ends their turn in range 3 of you, set out a d4 power die, starting at 1, or tick it up by 1.</li><li>When you set out the die or tick it up, shoot a projectile at your foe, dealing 2 damage. The projectile remains, hovering in the air, and tracking your foe.</li><li>At the end of any turn the die is at maximum, every projectile shot flies at your foe, dealing 2 damage once for each charge on the die and ending this effect and mark.</li></ul><b>Finishing Blow</b>: When marking a bloodied foe, immediately gain the die at 1",
+        "description": "{{{{Mark}}}}: You mark a foe in range, with the following effects:<ul><li>When you end your turn in range 3 from your foe, or that foe ends their turn in range 3 of you, set out a d4 power die, starting at 1, or tick it up by 1.</li><li>When you set out the die or tick it up, shoot a projectile at your foe, dealing 2 damage. The projectile remains, hovering in the air, and tracking your foe.</li><li>At the end of any turn the die is at maximum, every projectile shot flies at your foe, dealing 2 damage once for each charge on the die and ending this effect and mark.</li></ul>{{{{Finishing Blow}}}}: When marking a {{{{bloodied}}}} foe, immediately gain the die at 1.<br>Listed terms: {{{{power die}}}}",
         "blurb": "The mantra of the exorcist. Every bullet or arrow shot is imbued with the soul aether of its master, and seeks its foe like a loyal hound.",
-        "talent1": "While this mark is active, your attacks gain: <i>Exceed</i>: tick the die up by 1.",
-        "talent2": "If your target is defeated while marked by exorcism, the projectiles scatter, dealing 2 damage, once, per charge on the die to all foes in a large blast <i>area effect</i> centered on the foe.",
+        "talent1": "While this {{{{mark}}}} is active, your attacks gain: {{{{Exceed}}}}: tick the die up by 1.",
+        "talent2": "If your target is defeated while marked by exorcism, the projectiles scatter, dealing 2 damage, once, per charge on the die to all foes in a large blast {{{{area effect}}}} centered on the foe.",
         "masteryname": "PURESILVER",
-        "masterdescription": "If exorcism's target is defeated, you can cause the projectiles to fly and track a new target in range 3 of you or the original target, transferring the mark and keeping the power die."
+        "masterdescription": "If exorcism's target is defeated, you can cause the projectiles to fly and track a new target in range 3 of you or the original target, transferring the {{{{mark}}}} and keeping the {{{{power die}}}}."
     },
     {
         "job": "Freelancer",
@@ -1037,12 +1037,12 @@
             {"tag_name": "stance"},
 			{"tag_name": "power die"}
         ],
-        "description": "<b>Stance</b>: You create shadowy copies of yourself, granting a d4 power die, starting at 2. If the die ticks down to 0, end this stance. While in this stance:<ul><li>When you use an ability that targets a foe, you may trigger any <i>finishing blow</i> effects of that ability, then tick the die down by 1.</li><li>After you tick the die down, you may teleport 1 </li></ul><b>Refresh</b>: Refresh this stance if you end your turn with no foes adjacent. When you do, tick the die up by 1.",
+        "description": "{{{{Stance}}}}: You create shadowy copies of yourself, granting a d4 {{{{power die}}}}, starting at 2. If the die ticks down to 0, end this stance. While in this stance:<ul><li>When you use an ability that targets a foe, you may trigger any <i>finishing blow</i> effects of that ability, then tick the die down by 1.</li><li>After you tick the die down, you may teleport 1.</li></ul><b>Refresh</b>: Refresh this stance if you end your turn with no foes adjacent. When you do, tick the die up by 1.<br>Listed terms: {{{{finishing blow}}}}, {{{{teleport}}}}",
         "blurb": "You split echoes of your soul into clones that overlay your movements.",
-        "talent1": "While in this stance, your abilities gain <i>slay</i>: <i>summon</i> a <i>shadow</i>. This effect can only trigger once a round.",
-        "talent2": "While in Umbral Echo, you have <i>phasing</i> and entering the space of shadows always costs a maximum of 1 movement.",
+        "talent1": "While in this {{{{stance}}}}, your abilities gain {{{{slay}}}}: {{{{summon}}}} a <i>shadow</i>. This effect can only trigger once a round.",
+        "talent2": "While in Umbral Echo, you have {{{{phasing}}}} and entering the space of shadows always costs a maximum of 1 movement.",
         "masteryname": "BUNSHIN",
-        "masterdescription": "Gain the following interrupt while in this stance:"
+        "masterdescription": "Gain the following {{{{interrupt}}}} while in this stance:"
     },
     {
         "job": "Shade",
@@ -1148,12 +1148,12 @@
 			{"tag_name": "terrain effect"},
 			{"tag_name": "summon"}
 		],
-        "description": "<b>Terrain Effect</b>: Create small blast misty cloud in free space in range, with the following effects:<ul><li>The spaces of the area always cost a maximum of 1 movement for you and allies to move across, and characters have <i>phasing</i> while moving this way.</li><li>Foes inside are blinded+</li></ul>Clouds created with this ability last until this ability is used again.<br><b>Charge</b>: Create a second cloud.<br><b>Summon</b>: At the start of your turn, you can consume a cloud as a <i>free action</i> to condense it into a fey creature, summoning a <i>beast</i> in any of its spaces and ending this effect.",
+        "description": "{{{{Terrain Effect}}}}: Create small blast misty cloud in free space in range, with the following effects:<ul><li>The spaces of the area always cost a maximum of 1 movement for you and allies to move across, and characters have <i>phasing</i> while moving this way.</li><li>Foes inside are blinded+</li></ul>Clouds created with this ability last until this ability is used again.<br>{{{{Charge}}}}: Create a second cloud.<br>{{{{Summon}}}}: At the start of your turn, you can consume a cloud as a {{{{free action}}}} to condense it into a fey creature, summoning a <i>beast</i> in any of its spaces and ending this effect.<br>Listed terms: {{{{phasing}}}}, {{{{blinded}}}}, {{{{ongoing (+)}}}}",
         "blurb": "Call on the beasts of the deep mists and rains, whose form is shadow and water.",
-        "talent1": "Once a round, when you enter or exit the area, you can gain <i>stealth</i>.",
-        "talent2": "Foes in the area count all characters as having <i>evasion</i>.",
+        "talent1": "Once a round, when you enter or exit the area, you can gain {{{{stealth}}}}.",
+        "talent2": "Foes in the area count all characters as having {{{{evasion}}}}.",
         "masteryname": "RIVER GUARDIANS",
-        "masterdescription": "This ability creates a beast inside when an area is created. Foes that start their turn inside the area that end their turn outside of it take 2 damage and are <i>dazed</i>."
+        "masterdescription": "This ability creates a beast inside when an area is created. Foes that start their turn inside the area that end their turn outside of it take 2 damage and are {{{{dazed}}}}."
     },
     {
         "job": "Warden",
@@ -1181,12 +1181,12 @@
 			{"tag_name": "stance"},
 			{"tag_name": "aura"}
         ],
-        "description": "<b>Stance</b>: In this stance, gain aura 2.<ul><li>When entering this stance, or when it refreshes, summon a <i>beast</i> in free space in the aura, then you and all allies and summons in the aura may dash 1 space.</li><li>Foes in the aura take +1 damage from summons.</li></ul><b>Refresh</b>: Refresh this stance at the start of your turn.<br><b>Special</b>: While adjacent to 3 or more summons, the action cost of this ability is reduced to 1.",
+        "description": "{{{{Stance}}}}: In this stance, gain {{{{aura}}}} 2.<ul><li>When entering this stance, or when it refreshes, summon a <i>beast</i> in free space in the aura, then you and all allies and summons in the aura may dash 1 space.</li><li>Foes in the aura take +1 damage from summons.</li></ul><b>Refresh</b>: Refresh this stance at the start of your turn.<br><b>Special</b>: While adjacent to 3 or more {{{{summons}}}}, the action cost of this ability is reduced to 1.<br>Listed terms: {{{{summon}}}}, {{{{dash}}}}",
         "blurb": "Your senses sync with those of the herd, and you strike as one.",
-        "talent1": "When you first enter this stance, increase the dash granted to 4.",
-        "talent2": "While you have three or more summons in this aura, you have <i>evasion</i>.",
+        "talent1": "When you first enter this {{{{stance}}}}, increase the {{{{dash}}}} granted to 4.",
+        "talent2": "While you have three or more {{{{summons}}}} in this aura, you have {{{{evasion}}}}.",
         "masteryname": "CÚ CHULAINN",
-        "masterdescription": "Strength Of The Pack becomes a free action at round 4 or later and its aura affects the entire battlefield."
+        "masterdescription": "Strength Of The Pack becomes a {{{{free action}}}} at round 4 or later and its {{{{aura}}}} affects the entire battlefield."
     },
     {
         "job": "Warden",
@@ -1326,12 +1326,12 @@
             {"tag_name": "action", "val": 2},
 			{"tag_name": "true strike"}
         ],
-        "description": "<b>Terrain Effect</b>: Remove up to four blessings from characters anywhere to create pulsing motes of energy that descend, creating terrain spaces in free space on the map. None can be placed adjacent to each other or overlap.<ul><li>Any character that enters an affected space or starts their turn there detonates the mote, removing it and creating a small blast explosion as an <i>area effect</i>, centered on them. Foes inside take {{{{fray damage}}}}, and allies inside gain 2 vigor.</li><li>If the character was yourself or an ally, they are <i>blessed</i> and can fly 1. If that character was a foe, they also have a <i>pit</i> created under them.</li></ul><b>Charge</b>: Create +2 more spaces.",
+        "description": "{{{{Terrain Effect}}}}: Remove up to four {{{{blessings}}}} from characters anywhere to create pulsing motes of energy that descend, creating terrain spaces in free space on the map. None can be placed adjacent to each other or overlap.<ul><li>Any character that enters an affected space or starts their turn there detonates the mote, removing it and creating a small blast explosion as an <i>area effect</i>, centered on them. Foes inside take <i>fray damage</i>, and allies inside gain 2 vigor.</li><li>If the character was yourself or an ally, they are <i>blessed</i> and can fly 1. If that character was a foe, they also have a <i>pit</i> created under them.</li></ul>{{{{Charge}}}}: Create +2 more spaces.<br>Listed terms: {{{{area effect}}}}, {{{{fray damage}}}}, {{{{vigor}}}}, {{{{blessed}}}}, {{{{fly}}}}, {{{{pit}}}}",
         "blurb": "You ring the bell of thresholds, creating crystalline fragments of the ancient power that courses through the Chant.",
         "talent1": "When motes explode, they deal 2 damage again to all foes inside and {{{{shove}}}} them 1 away from the center space if at least one other mote was already exploded this turn.",
-        "talent2": "Allies are <i>cured</i> after detonating their second mote in the same turn.",
+        "talent2": "Allies are {{{{cured}}}} after detonating their second mote in the same turn.",
         "masteryname": "CRESCENDO",
-        "masterdescription": "If you create four or more motes with this ability, you can create a mote in range 5 as a <i>free action</i> as part of ending your turn for the rest of combat. This effect does not stack."
+        "masterdescription": "If you create four or more motes with this ability, you can create a mote in range 5 as a {{{{free action}}}} as part of ending your turn for the rest of combat. This effect does not stack."
     },
     {
         "job": "Chanter",
@@ -1423,12 +1423,12 @@
             {"tag_name": "action", "val": 1},
 			{"tag_name": "stance"}
         ],
-        "description": "<b>Stance</b>: When you enter this stance, or when it refreshes, <i>Summon</i> a thrall in free space in range 2. While in this stance, you have aura 2, with the following effects:<ul><li>At the end of your turn, you may consume any blessing tokens in the aura to summon one thrall in the aura per blessing consumed.</li><li>At the start of your turn, you can prevent up to three thralls in the area from collapsing into plants.</li></ul><b>Refresh</b>: Refresh this stance once a round when you trigger a <i>slay</i> effect.",
+        "description": "{{{{Stance}}}}: When you enter this stance, or when it refreshes, {{{{Summon}}}} a thrall in free space in range 2. While in this stance, you have {{{{aura}}}} 2, with the following effects:<ul><li>At the end of your turn, you may consume any blessing tokens in the aura to summon one thrall in the aura per blessing consumed.</li><li>At the start of your turn, you can prevent up to three thralls in the area from collapsing into plants.</li></ul><b>Refresh</b>: Refresh this stance once a round when you trigger a {{{{slay}}}} effect.<br>Listed terms: {{{{blessing}}}}",
         "blurb": "Vine and root coil through the deep soil, bringing forth the restless dead.",
-        "talent1": "When you end your turn, all thralls of your choice burrow, removing them from the battlefield, then you may place them in free space in your aura.",
-        "talent2": "At the end of your turn, you may <i>sacrifice</i> 2 to summon an additional thrall.",
+        "talent1": "When you end your turn, all thralls of your choice burrow, removing them from the battlefield, then you may place them in free space in your {{{{aura}}}}.",
+        "talent2": "At the end of your turn, you may {{{{sacrifice}}}} 2 to summon an additional thrall.",
         "masteryname": "RECYCLE",
-        "masterdescription": "While Gravebirth’s aura is active, as a free action you can cause any two thralls in the aura to collapse into plants to <i>cure</i> an ally in range 4."
+        "masterdescription": "While Gravebirth’s {{{{aura}}}} is active, as a {{{{free action}}}} you can cause any two thralls in the aura to collapse into plants to {{{{cure}}}} an ally in range 4."
     },
     {
         "job": "Harvester",
@@ -1456,12 +1456,12 @@
 			{"tag_name": "terrain effect"},
 			{"tag_name": "summon"}
         ],
-        "description": "<b>Terrain Effect</b>: Grow a <i>medium blast</i> area of undergrowth, with its center space in range. The area is <i>dangerous terrain</i> for foes and disappears if you use this ability again.<br><b>Effect</b>: As long as you are in the area, summon a <i>thrall</i> in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:<ul><li>Triggered a <i>slay</i> effect</li><li><i>Sacrificed</i> as part of an ability</li><li>Are bloodied</li></ul>Each condition can only trigger once.",
+        "description": "{{{{Terrain Effect}}}}: Grow a <i>medium blast</i> area of undergrowth, with its center space in range. The area is {{{{dangerous terrain}}}} for foes and disappears if you use this ability again.<br>{{{{Effect}}}}: As long as you are in the area, {{{{summon}}}} a <i>thrall</i> in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:<ul><li>Triggered a <i>slay</i> effect</li><li><i>Sacrificed</i> as part of an ability</li><li>Are bloodied</li></ul>Each condition can only trigger once.<br>Listed terms: {{{{slay}}}}, {{{{sacrifice}}}}, {{{{bloodied}}}}",
         "blurb": "The wilderness boils with explosive growth, fed by the blood of the battlefield.",
         "talent1": "All spaces of the area cost 0 movement for thralls to enter.",
-        "talent2": "Once on your turn you, while inside the area, you can <i>sacrifice</i> 2 to extend the area by 2 spaces, adding to its total area on any edge.",
+        "talent2": "Once on your turn you, while inside the area, you can {{{{sacrifice}}}} 2 to extend the area by 2 spaces, adding to its total area on any edge.",
         "masteryname": "HUNGRY GROVE",
-        "masterdescription": "Each time you summon a thrall with Blood Grove, extend the area by 1 space, added to its total area, as long as those spaces are placed adjacent to the area when the effect is triggered."
+        "masterdescription": "Each time you {{{{summon}}}} a thrall with Blood Grove, extend the area by 1 space, added to its total area, as long as those spaces are placed adjacent to the area when the effect is triggered."
     },
     {
         "job": "Harvester",
