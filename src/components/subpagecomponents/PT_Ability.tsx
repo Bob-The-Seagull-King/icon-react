@@ -38,7 +38,7 @@ const PT_Ability = (props: any) => {
             <div className='centerPosition'>
                 <div className='widthPT centerPosition topPosition'>
                     {abilityData.filter(isSearched).map((item) => (
-                    <div className='gridItem' onClick={() => navClick('ability', item.name)} key={item.name + "ability"}  >
+                    <div className='gridItemPower' onClick={() => navClick('ability', item.name)} key={item.name + "ability"}  >
                         <AbilityDisplay data={{values:item, _talents:3, _mastery:true}}/>
                     </div>))}
                 </div>
