@@ -18,7 +18,7 @@
     },
     {
         "name": "Area Effect",
-		"variants": ["area effects"
+		"variants": ["area effects", "area ability"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -78,7 +78,8 @@
     },
     {
         "name": "Charge",
-		"variants": [],
+		"variants": ["charged"
+        ],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
@@ -86,7 +87,7 @@
     },
 	{
         "name": "Collide",
-		"variants": ["collides"
+		"variants": ["collides", "collided"
 		],
         "tags": [
             {"tag_name": "triggered effect"}
@@ -121,7 +122,7 @@
     },
 	{
         "name": "Critical Hit",
-		"variants": ["crit"
+		"variants": ["crit", "critically hit"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -200,7 +201,8 @@
     },
     {
         "name": "Elevation",
-		"variants": [],
+		"variants": ["height"
+        ],
         "tags": [
             {"tag_name": "terrain"}
         ],
@@ -400,7 +402,7 @@
     },
 	{
         "name": "Sacrifice X",
-		"variants": ["sacrifice", "sacrifices"
+		"variants": ["sacrifice", "sacrifices", "sacrificing"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -418,7 +420,8 @@
     },
 	{
         "name": "Slay",
-		"variants": [],
+		"variants": ["slays"
+        ],
         "tags": [
 			{"tag_name": "triggered effect"}
         ],
@@ -460,7 +463,7 @@
     },
 	{
         "name": "Status",
-		"variants": ["statuses"
+		"variants": ["statuses", "negative effect"
         ],
         "tags": [
             {"tag_name": "general"}
@@ -478,7 +481,7 @@
     },
 	{
         "name": "Teleport",
-		"variants": ["teleports", "teleporting"
+		"variants": ["teleports", "teleporting", "teleported"
 		],
         "tags": [
 			{"tag_name": "movement"}
@@ -550,7 +553,7 @@
     },
 	{
         "name": "Shattered",
-		"variants": ["shattering"
+		"variants": ["shattering", "shatters"
 		],
         "tags": [
             {"tag_name": "status"}
@@ -776,7 +779,8 @@
     },
 	{
         "name": "Vigor",
-		"variants": [],
+		"variants": ["vigor surge"
+        ],
         "tags": [
             {"tag_name": "positive effect"}
         ],
