@@ -36,7 +36,8 @@
     },
 	{
         "name": "Auto-hit",
-		"variants": [],
+		"variants": ["autohit"
+		],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -295,8 +296,8 @@
         "description": "Provides {{{{obstruction}}}} and {{{{cover}}}}, and blocks line of sight. Could be something like a pillar, cliff, or a solid wall that goes to the ceiling."
     },
 	{
-        "name": "Infuse",
-		"variants": ["infusion", "infuses", "infusing"
+        "name": "Infuse X",
+		"variants": ["infuse", "infusion", "infuses", "infusing",
 		],
         "tags": [
             {"tag_name": "triggered effect"}
@@ -499,7 +500,7 @@
     },
 	{
         "name": "Triggered Effect",
-		"variants": ["triggered effects"
+		"variants": ["trigger", "triggered effects"
         ],
         "tags": [
             {"tag_name": "general"}
@@ -544,7 +545,7 @@
     },
 	{
         "name": "Sealed",
-		"variants": ["seals"
+		"variants": ["seal, "seals"
 		],
         "tags": [
             {"tag_name": "status"}
@@ -553,7 +554,7 @@
     },
 	{
         "name": "Shattered",
-		"variants": ["shattering", "shatters"
+		"variants": ["shatter", "shattering", "shatters"
 		],
         "tags": [
             {"tag_name": "status"}
@@ -670,13 +671,13 @@
     },
 	{
         "name": "Flying",
-		"variants": ["fly", "flies", "flying"
+		"variants": ["fly", "flies", "flight"
 		],
         "tags": [
             {"tag_name": "positive effect"},
 			{"tag_name": "movement"}
         ],
-        "description": "A flying character ignores terrain damage and movement penalties, height movement penalties, {{{{obstruction}}}}, and {{{{engagement}}}}."
+        "description": "A flying character ignores terrain damage and movement penalties, {{{{height}}}} movement penalties, {{{{obstruction}}}}, and {{{{engagement}}}}."
     },
 	{
         "name": "Intangible",
