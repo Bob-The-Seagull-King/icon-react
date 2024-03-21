@@ -239,7 +239,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 2}
         ],
-        "description": "{{{{Trigger}}}}: A foe enters or exits the area.<br>{{{{Effect}}}}: {{{{{{{{Teleport}}}}}}}} that foe 2 and {{{{seal}}}} them. This interrupts but does not end their movement."
+        "description": "{{{{Trigger}}}}: A foe enters or exits the area.<br>{{{{Effect}}}}: {{{{Teleport}}}} that foe 2 and {{{{seal}}}} them. This interrupts but does not end their movement."
     },
     {
         "job": "Sealer",
