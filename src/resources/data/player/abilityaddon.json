@@ -6,7 +6,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger</b>: A foe targets your ally with an ability<br><b>Effect</b>: You soar into the air, removing yourself from the battlefield, then return in any space in the aura. Adjacent foes take 2 damage."
+        "description": "{{{{Trigger}}}}: A foe targets your ally with an ability<br>{{{{Effect}}}}: You soar into the air, removing yourself from the battlefield, then return in any space in the aura. Adjacent foes take 2 damage."
     },
 	{
         "job": "Demon Slayer",
@@ -15,25 +15,27 @@
         "tags":[
             {"tag_name": "height", "val": 1}
         ],
-        "description": "<b>Object</b>: Space adjacent to it have <i>rampart</i>. While this object is active, you cannot attack. You can pick your weapon up if you enter or exit any space adjacent to it or start your turn there, ending this effect and removing the object. You also pick it up if it’s removed for any other reason."
+        "description": "{{{{Object}}}}: Space adjacent to it have {{{{rampart}}}}. While this {{{{object}}}} is active, you cannot attack. You can pick your weapon up if you enter or exit any space adjacent to it or start your turn there, ending this effect and removing the {{{{object}}}}. You also pick it up if it’s removed for any other reason."
     },
 	{
         "job": "Demon Slayer",
         "ability": "Gates of Hell",
         "name": "Flash Step",
         "tags":[
-            {"tag_name": "action", "val": 0}
+            {"tag_name": "action", "val": 0},
+            {"tag_name": "mastery"}
         ],
-        "description": "<b>Effect</b>: Remove an afterimage that has no characters occupying it, then remove yourself and place yourself in its space."
+        "description": "{{{{Effect}}}}: Remove an afterimage that has no characters occupying it, then remove yourself and place yourself in its space."
     },
 	{
         "job": "Demon Slayer",
         "ability": "Six Hells Trigram",
         "name": "Dark Wind Chain",
         "tags":[
-            {"tag_name": "action", "val": 0}
+            {"tag_name": "action", "val": 0},
+            {"tag_name": "mastery"}
         ],
-        "description": "<i>Effect</i>: Deal 2 damage to any foe in range 4 and shove them 1 space towards you, then force them to save. On a failed save, they are shoved 2 more spaces towards you."
+        "description": "{{{{Effect}}}}: Deal 2 damage to any foe in range 4 and {{{{shove}}}} them 1 space towards you, then force them to save. On a failed save, they are {{{{shoved}}}} 2 more spaces towards you."
     },
     {
         "job": "Colossus",
@@ -41,16 +43,17 @@
         "name": "Defy Death",
         "tags":[
         ],
-        "description": "<b>Trigger</b>: You are defeated<br><b>Effect</b>: You fight on, remaining standing at 1 hp and do not become defeated until the end of your next turn, or if combat ends before then. During that time, damage cannot reduce you past 1 hp and you deal bonus damage with all abilities.<br><b>Heroic</b>: Also deal fray damage twice to all adjacent foes."
+        "description": "{{{{Trigger}}}}: You are {{{{defeated}}}}<br>{{{{Effect}}}}: You fight on, remaining standing at 1 hp and do not become {{{{defeated}}}} until the end of your next turn, or if combat ends before then. During that time, damage cannot reduce you past 1 hp and you deal {{{{bonus damage}}}} with all abilities.<br>{{{{Heroic}}}}: Also deal {{{{fray damage}}}} twice to all adjacent foes."
     },
     {
         "job": "Knave",
         "ability": "Low Blow",
         "name": "The Hook",
         "tags":[
-            {"tag_name": "combo"}
+            {"tag_name": "combo"},
+            {"tag_name": "range", "val": 2}
         ],
-        "description": "Gains <b>range 2</b> and <b>effect</b>: Shove character 1 towards you."
+        "description": "Gains <b>range 2</b> and {{{{effect}}}}: {{{{Shove}}}} character 1 towards you."
     },
     {
         "job": "Knave",
@@ -59,7 +62,7 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "Gains <i>True Strike</i> and replace the base effect with <b>effect</b>: gain +1 vigilance for every status your foe is suffering from, to a maximum of three times, then gain <i>counter</i> until the end of your next turn."
+        "description": "Gains {{{{True Strike}}}} and replace the base effect with {{{{effect}}}}: gain +1 {{{{vigilance}}}} for every {{{{status}}}} your foe is suffering from, to a maximum of three times, then gain {{{{counter}}}} until the end of your next turn."
     },
     {
         "job": "Knave",
@@ -68,7 +71,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger</b>: A foe targets an ally in range 2 with an ability.<br><b>Effect</b>: <i>Gamble</i>, then deal that much damage to your foe. On a 6, they are also <i>slashed</i> and shoved 1. If you have vigilance, you can spend any number of vigilance charges when gambling to roll one extra d6 per charge spent."
+        "description": "{{{{Trigger}}}}: A foe targets an ally in range 2 with an ability.<br>{{{{Effect}}}}: {{{{Gamble}}}}, then deal that much damage to your foe. On a 6, they are also {{{{slashed}}}} and {{{{shoved}}}} 1. If you have {{{{vigilance}}}}, you can spend any number of vigilance charges when {{{{gambling}}}} to roll one extra d6 per charge spent."
     },
     {
         "job": "Knave",
@@ -77,7 +80,7 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "As above, but replace the base effect with <b>Effect</b>: until the end of your next turn, gain aura 1. Foes in the aura cannot be <i>cured</i> and cannot save to clear statuses."
+        "description": "As above, but replace the base effect with {{{{Effect}}}}: until the end of your next turn, gain {{{{aura}}}} 1. Foes in the aura cannot be {{{{cured}}}} and cannot save to clear {{{{statuses}}}}."
     },
     {
         "job": "Fool",
@@ -86,7 +89,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger</b>: The start or end of any turn other than yours<br><b>Effect</b>: <i>Gamble</i>, then the marked character dashes a number of spaces equal to the gamble result, 1 space at a time. Each time they finish a dash, they may deal 2 damage to an adjacent foe, but cannot damage the same foe more than once in the same turn."
+        "description": "{{{{Trigger}}}}: The start or end of any turn other than yours<br>{{{{Effect}}}}: {{{{Gamble}}}}, then the {{{{marked}}}} character {{{{dashes}}}} a number of spaces equal to the {{{{gamble}}}} result, 1 space at a time. Each time they finish a {{{{dash}}}}, they may deal 2 damage to an adjacent foe, but cannot damage the same foe more than once in the same turn."
     },
     {
         "job": "Freelancer",
@@ -95,7 +98,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger</b>: The end of any turn<br><b>Effect</b>: Teleport 2 towards the target or teleport your target 1 towards you. The teleport must end with both of you closer together. Allies can choose whether to take this teleport."
+        "description": "{{{{Trigger}}}}: The end of any turn<br>{{{{Effect}}}}: {{{{Teleport}}}} 2 towards the target or {{{{teleport}}}} your target 1 towards you. The teleport must end with both of you closer together. Allies can choose whether to take this teleport."
     },
     {
         "job": "Shade",
@@ -104,16 +107,17 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "Teleport your foe up to 3 spaces towards you instead of teleporting yourself. A foe can save to avoid this effect. <i>Blinded</i> foes fail this save."
+        "description": "{{{{Teleport}}}} your foe up to 3 spaces towards you instead of {{{{teleporting}}}} yourself. A foe can save to avoid this effect. {{{{Blinded}}}} foes fail this save."
     },
     {
         "job": "Shade",
         "ability": "Death Blossom",
         "name": "Flying Sleeves",
         "tags":[
-            {"tag_name": "combo"}
+            {"tag_name": "combo"},
+            {"tag_name": "arc", "val": 4}
         ],
-        "description": "Area becomes Arc 4<br><b>Effect</b>: If you catch an ally or allied summon in the area, you and your allies are immune to this ability’s damage and effects, and you may extend the area effect to arc 8."
+        "description": "Area becomes Arc 4<br>{{{{Effect}}}}: If you catch an ally or allied {{{{summon}}}} in the area, you and your allies are {{{{immune}}}} to this ability’s damage and effects, and you may extend the {{{{area effect}}}} to Arc 8."
     },
     {
         "job": "Shade",
@@ -122,7 +126,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger</b>: You take damage from a foe.<br><b>Effect</b>: End this stance, consume and remove all shadows in range 2 of you, and immediately gain <i>defiance</i> against the incoming damage. Deal 2 damage, once, to the triggering foe for each shadow consumed this way. You cannot take this stance again for the rest of combat."
+        "description": "{{{{Trigger}}}}: You take damage from a foe.<br>{{{{Effect}}}}: End this {{{{stance}}}}, consume and remove all shadows in range 2 of you, and immediately gain {{{{defiance}}}} against the incoming damage. Deal 2 damage, once, to the triggering foe for each shadow consumed this way. You cannot take this {{{{stance}}}} again for the rest of combat."
     },
     {
         "job": "Shade",
@@ -131,7 +135,7 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "Instead of the <b>Mark</b>, gain <b>Effect</b>: deal 3 damage to all characters marked by Incubus, and teleport them 2."
+        "description": "Instead of the {{{{Mark}}}}, gain {{{{Effect}}}}: deal 3 damage to all characters marked by Incubus, and {{{{teleport}}}} them 2."
     },
     {
         "job": "Warden",
@@ -140,7 +144,7 @@
         "tags":[
             {"tag_name": "object", "val": 1}
         ],
-        "description": "<b>Object Effect</b>: As a <i>free action</i> ability, you and allies can teleport from any space adjacent to an underway to a free adjacent space to any other underway. This ability does not interrupt movement or other action."
+        "description": "{{{{Object}}}} {{{{Effect}}}}: As a {{{{free action}}}} ability, you and allies can {{{{teleport}}}} from any space adjacent to an underway to a free adjacent space to any other underway. This ability does not {{{{interrupt}}}} movement or other action."
     },
     {
         "job": "Chanter",
@@ -151,7 +155,7 @@
 	    {"tag_name": "true strike"},
 	    {"tag_name": "blast", "val": "medium"}
         ],
-        "description": "Gains <i>True Strike</i> and <i>Medium Blast</i><br><b>Attack</b>: <i>Autohit</i>: Fray damage<br><b>Area Effect</b>: Fray damage<br><b>Terrain Effect</b>: Create a pit under your target"
+        "description": "Gains {{{{True Strike}}}} and <i>Medium Blast</i><br><b>Attack</b>: {{{{Autohit}}}}: {{{{fray damage}}}}<br>{{{{Area Effect}}}}: {{{{fray damage}}}}<br>{{{{Terrain Effect}}}}: Create a {{{{pit}}}} under your target."
     },
     {
         "job": "Chanter",
@@ -160,7 +164,7 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "Effect: An ally in range 5 is <i>blessed</i> and may fly 4. For every foe or ally they pass over during this movement, they gain 2 vigor."
+        "description": "{{{{Effect}}}}: An ally in range 5 is {{{{blessed}}}} and may {{{{fly}}}} 4. For every foe or ally they pass over during this movement, they gain 2 {{{{vigor}}}}."
     },
     {
         "job": "Chanter",
@@ -168,9 +172,10 @@
         "name": "Fantasia",
         "tags":[
             {"tag_name": "combo"},
-            {"tag_name": "action", "val": 2}
+            {"tag_name": "action", "val": 2},
+            {"tag_name": "mastery"}
         ],
-        "description": "<br><b>Effect</b>: Remove an ally in range 5 from the battlefield. Return them to the battlefield in their original location or as close as possible at the start of their turn, then they may fly 1.<br><b>Special</b>: Reduce the action cost of this ability by 1 for every two blessing tokens your target has, down to a minimum of a free action."
+        "description": "<br>{{{{Effect}}}}: Remove an ally in range 5 from the battlefield. Return them to the battlefield in their original location or as close as possible at the start of their turn, then they may {{{{fly}}}} 1.<br><b>Special</b>: Reduce the action cost of this ability by 1 for every two {{{{blessing}}}} tokens your target has, down to a minimum of a {{{{free action}}}}."
     },
     {
         "job": "Chanter",
@@ -179,7 +184,7 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "<br><b>Attack</b>: <i>Autohit</i>: [D]+fray<br><b>Area Effect</b>: Fray<br><b>Effect</b>: All pits in the area explode for a <i>medium blast</i>  area effect, centered on them. <i>Area Effect</i>: fray damage.<br><b>Effect</b> : Create a pit under the attack target"
+        "description": "<br><b>Attack</b>: {{{{Autohit}}}}: [D] + {{{{fray}}}}<br>{{{{Area Effect}}}}: {{{{fray}}}}<br>{{{{Effect}}}}: All {{{{pits}}}} in the area explode for a <i>medium blast</i> {{{{area effect}}}}, centered on them. {{{{Area Effect}}}}: {{{{fray damage}}}}.<br>{{{{Effect}}}} : Create a {{{{pit}}}} under the attack target."
     },
     {
         "job": "Chanter",
@@ -188,7 +193,7 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "<b>Effect</b>: Gain aura 1 until the end of your next turn. While in the aura, yourself and allies gain +1 boon on saves and can save to end statuses and other effects at the <i>start</i> of your turns instead of the end."
+        "description": "{{{{Effect}}}}: Gain {{{{aura}}}} 1 until the end of your next turn. While in the aura, yourself and allies gain +1 {{{{boon}}}} on saves and can save to end {{{{statuses}}}} and other effects at the <i>start</i> of your turns instead of the end."
     },
     {
         "job": "Chanter",
@@ -197,7 +202,7 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "<b>Effect</b>: Choose a foe in range. At the end of that foe’s next turn, either <i>cure</i> or <i>bless</i> allies in a small blast area centered on them (choose). If there were two or more allies in the area, then create a pit under that foe."
+        "description": "{{{{Effect}}}}: Choose a foe in range. At the end of that foe’s next turn, either {{{{cure}}}} or {{{{bless}}}} allies in a small blast area centered on them (choose). If there were two or more allies in the area, then create a {{{{pit}}}} under that foe."
     },
     {
         "job": "Harvester",
@@ -206,25 +211,26 @@
         "tags":[
             {"tag_name": "combo"}
         ],
-        "description": "<b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Effect</b>: Summon a Thrall adjacent to your target.<br><b>Slay</b>: Repeat the effect<br><b>Special</b>: You can make this melee attack against the target marked by Sow regardless of distance or line of sight. It also gains <i>unerring</i> if made this way."
+        "description": "<b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray}}}}.<br>{{{{Effect}}}}: {{{{Summon}}}} a Thrall adjacent to your target.<br>{{{{Slay}}}}: Repeat the effect.<br><b>Special</b>: You can make this melee attack against the target {{{{marked}}}} by Sow regardless of distance or {{{{line of sight}}}}. It also gains {{{{unerring}}}} if made this way."
+    },
+    {
+        "job": "Harvester",
+        "ability": "Rot",
+        "name": "Regenerate",
+        "tags":[
+            {"tag_name": "combo"}
+        ],
+        "description": "{{{{Mark}}}}: Mark an ally in range. While marked, that character has {{{{regeneration}}}}. If that character is at 25% hp or lower when marked, they also gain {{{{defiance}}}}.<br><b>Special</b>: This {{{{mark}}}} can be placed even if Rot is already active."
     },
     {
         "job": "Harvester",
         "ability": "Rot",
         "name": "Regrowth",
         "tags":[
-            {"tag_name": "combo"}
+            {"tag_name": "combo"},
+            {"tag_name": "mastery"}
         ],
-        "description": "<b>Mark</b>: Mark an ally in range. While marked, that character has <i>regeneration</i>. If that character is at 25% hp or lower when marked, they also gain <i>defiance</i>.<br><b>Special</b>: This mark can be placed even if Rot is already active."
-    },
-    {
-        "job": "Harvester",
-        "ability": "Rot",
-        "name": "Reap",
-        "tags":[
-            {"tag_name": "combo"}
-        ],
-        "description": "<b>Mark</b>: Mark a character in range 4. If that character would be defeated before the start of your next turn, they are instantly <i>rescued</i> after being defeated, then gain a <i>vigor surge</i> and become <i>unstoppable</i> until the end of their next turn. Then, even if this effect didn’t trigger, summon a <i>plant</i> in an adjacent space to them and end this mark."
+        "description": "{{{{Mark}}}}: Mark a character in range 4. If that character would be {{{{defeated}}}} before the start of your next turn, they are instantly <i>rescued</i> after being defeated, then gain a {{{{vigor surge}}}} and become {{{{unstoppable}}}} until the end of their next turn. Then, even if this effect didn’t trigger, {{{{summon}}}} a <i>plant</i> in an adjacent space to them and end this {{{{mark}}}}."
     },
     {
         "job": "Harvester",
@@ -233,7 +239,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 2}
         ],
-        "description": "<b>Trigger</b>: A foe enters or exits the area.<br><b>Effect</b>: Teleport that foe 2 and <i>seal</i> them. This interrupts but does not end their movement."
+        "description": "{{{{Trigger}}}}: A foe enters or exits the area.<br>{{{{Effect}}}}: {{{{{{{{Teleport}}}}}}}} that foe 2 and {{{{seal}}}} them. This interrupts but does not end their movement."
     },
     {
         "job": "Sealer",
@@ -243,7 +249,7 @@
             {"tag_name": "combo"},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: Character explodes in a medium blast <i>area effect</i> centered on them, dealing 1 <i>divine</i> damage to all foes.<br><b>Exceed</b>: Repeat the effect"
+        "description": "{{{{Effect}}}}: {{{{Teleport}}}} 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray damage}}}}.<br>{{{{Effect}}}}: Character explodes in a medium blast {{{{area effect}}}} centered on them, dealing 1 {{{{divine}}}} damage to all foes.<br>{{{{Exceed}}}}: Repeat the effect."
     },
     {
         "job": "Sealer",
@@ -251,9 +257,10 @@
         "name": "Fists Of Heaven And Hell",
         "tags":[
             {"tag_name": "combo"},
-			{"tag_name": "boon", "val": 1}
+			{"tag_name": "boon", "val": 1},
+            {"tag_name": "mastery"}
         ],
-        "description": "<b>Effect</b>: Teleport 1<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray damage.<br><b>Effect</b>: <i>Seal</i> your foe, then bless yourself or an ally in range 2<br><b>Effect</b>: Character explodes in a medium blast <i>area effect</i> centered on them, dealing 1 <i>divine</i> damage to all foes.<br><b>Exceed</b>: Repeat all effects"
+        "description": "{{{{Effect}}}}: {{{{Teleport}}}} 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray damage}}}}.<br>{{{{Effect}}}}: <i>Seal</i> your foe, then {{{{bless}}}} yourself or an ally in range 2.<br>{{{{Effect}}}}: Character explodes in a medium blast {{{{area effect}}}} centered on them, dealing 1 {{{{divine}}}} damage to all foes.<br>{{{{Exceed}}}}: Repeat all effects."
     },
     {
         "job": "Sealer",
@@ -262,16 +269,17 @@
         "tags":[
             {"tag_name": "object", "val": 1}
         ],
-        "description": "<b>Object Effect</b>: Aura 2. You can use this ability again while adjacent to your shrine to increase its size, increasing the height by +1. The shrine gains additional benefits equal to its total height, including other objects it is stacked on:<ul><li>1: Yourself and allies in the aura have <i>cover</i> from characters from the outside and gain +1 boon on attack rolls.</li><li>2: Yourself and allies in the aura gain 2 vigor when you end your turn there.</li><li>3+: Yourself and allies in the aura have <i>evasion</i>.</li></ul>"
+        "description": "{{{{Object}}}} {{{{Effect}}}}: {{{{Aura}}}} 2. You can use this ability again while adjacent to your shrine to increase its size, increasing the {{{{height}}}} by +1. The shrine gains additional benefits equal to its total height, including other objects it is stacked on:<ul><li>1: Yourself and allies in the aura have <i>cover</i> from characters from the outside and gain +1 boon on attack rolls.</li><li>2: Yourself and allies in the aura gain 2 vigor when you end your turn there.</li><li>3+: Yourself and allies in the aura have <i>evasion</i>.</li></ul>Listed terms: {{{{cover}}}}, {{{{boon}}}}, {{{{vigor}}}}, {{{{evasion}}}}"
     },
     {
         "job": "Sealer",
         "ability": "Spirit Shrine",
         "name": "Grace Of The Spirits",
         "tags":[
-			{"tag_name": "interrupt", "val": 1}
+			{"tag_name": "interrupt", "val": 1},
+            {"tag_name": "mastery"}
         ],
-        "description": "<b>Trigger</b>: An ally in the aura is damaged by an foe’s ability<br><b>Effect</b>: Your ally becomes immune to all damage from the triggering ability. Destroy the shrine, then deal 2 divine damage, once, to the foe per height of the shrine. You cannot place shrines for the rest of combat."
+        "description": "{{{{Trigger}}}}: An ally in the {{{{aura}}}} is damaged by an foe’s ability<br>{{{{Effect}}}}: Your ally becomes {{{{immune}}}} to all damage from the triggering ability. Destroy the shrine, then deal 2 {{{{divine}}}} damage, once, to the foe per {{{{height}}}} of the shrine. You cannot place shrines for the rest of combat."
     },
     {
         "job": "Sealer",
@@ -282,7 +290,7 @@
 			{"tag_name": "interrupt", "val": 1},
 			{"tag_name": "gamble"}
         ],
-        "description": "<b>Trigger</b>: You score a Critical Hit or trigger an Exceed effect<br><b>Effect</b>: <b>Gamble</b>, then you may teleport yourself and each character in range 2 half that far. Foes are <i>pacified</i>."
+        "description": "{{{{Trigger}}}}: You score a {{{{Critical Hit}}}} or trigger an {{{{Exceed}}}} effect<br>{{{{Effect}}}}: {{{{Gamble}}}}, then you may {{{{teleport}}}} yourself and each character in range 2 half that far. Foes are {{{{pacified}}}}."
     },
     {
         "job": "Sealer",
@@ -290,9 +298,10 @@
         "name": "Gran Judicata",
         "tags":[
             {"tag_name": "combo"},
-			{"tag_name": "interrupt", "val": 1}
+			{"tag_name": "interrupt", "val": 1},
+            {"tag_name": "mastery"}
         ],
-        "description": "<b>Trigger</b>: You score a Critical Hit or trigger an Exceed effect<br><b>Effect</b>: Deal 4 <i>divine</i> damage to <i>all</i> foes on the battlefield above bloodied, and all bloodied allies are <i>blessed</i> and gain 2 vigor."
+        "description": "{{{{Trigger}}}}: You score a {{{{Critical Hit}}}} or trigger an {{{{Exceed}}}} effect<br>{{{{Effect}}}}: Deal 4 {{{{divine}}}} damage to <i>all</i> foes on the battlefield above {{{{bloodied}}}}, and all {{{{bloodied}}}} allies are {{{{blessed}}}} and gain 2 {{{{vigor}}}}."
     },
     {
         "job": "Sealer",
@@ -303,7 +312,7 @@
 			{"tag_name": "action", "val": 1},
 			{"tag_name": "attack"}
         ],
-        "description": "<b>Effect</b>: Teleport spaces equal to the round number before the attack<br><b>Attack</b>: <i>On hit</i>: [D] + fray. <i>Miss</i>: fray.<br><b>Exceed</b>: Deal 1 damage again to your target. At round 4 or later, increase this damage to 6."
+        "description": "{{{{Effect}}}}: {{{{Teleport}}}} spaces equal to the round number before the attack<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray}}}}.<br>{{{{Exceed}}}}: Deal 1 damage again to your target. At round 4 or later, increase this damage to 6."
     },
     {
         "job": "Seer",
@@ -314,7 +323,7 @@
 			{"tag_name": "range", "val": 5},
 			{"tag_name": "blast", "val": "medium"}
         ],
-        "description": "<b>Attack</b>: <i>Autohit</i>: [D]+fray<br><b>Area Effect</b>: Foes take fray damage. Allies gain 3 vigor and are <i>blessed</i>.<br><b>Summon</b>: Summon a wild card in the area"
+        "description": "<b>Attack</b>: {{{{Autohit}}}}: {{{{[D]}}}} + {{{{fray}}}}<br>{{{{Area Effect}}}}: Foes take {{{{fray damage}}}}. Allies gain 3 {{{{vigor}}}} and are {{{{blessed}}}}.<br>{{{{Summon}}}}: Summon a wild card in the area."
     },
     {
         "job": "Seer",
@@ -323,7 +332,7 @@
         "tags":[
 			{"tag_name": "interrupt", "val": 1}
         ],
-        "description": "<b>Trigger</b>: An ally in the aura is targeted by a foe’s ability.<br><b>Effect</b>: Tick down your power die by any amount. <i>Gamble</i> with a number of d6s equal to the number of ticks you spent, then that ally gains vigor equal to double the gamble result. However, at the end of the current turn, your ally loses all vigor."
+        "description": "{{{{Trigger}}}}: An ally in the {{{{aura}}}} is targeted by a foe’s ability.<br>{{{{Effect}}}}: Tick down your {{{{power die}}}} by any amount. {{{{Gamble}}}} with a number of d6s equal to the number of ticks you spent, then that ally gains {{{{vigor}}}} equal to double the {{{{gamble}}}} result. However, at the end of the current turn, your ally loses all {{{{vigor}}}}."
     },
     {
         "job": "Enochian",
@@ -332,7 +341,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 6}
         ],
-        "description": "Deal [D] + Fray twice instead."
+        "description": "Deal {{{{[D]}}}} + {{{{fray}}}} twice instead."
     },
     {
         "job": "Enochian",
@@ -343,27 +352,7 @@
             {"tag_name": "resolve", "val": 6},
             {"tag_name": "mastery"}
         ],
-        "description": "Deal [D] + Fray four times instead. <br/> <i>Special Effect:</i> You can pay the resolve, aether, and action cost of this spell with your entire life force, dying after this action resolves, obliterating your body and scattering your soul. If you do, it deals 999 divine damage instead."
-    },
-    {
-        "job": "Spellblade",
-        "ability": "Gran Levincross",
-        "name": "Ragnarok",
-        "tags":[
-            {"tag_name": "infuse", "val": 3},
-            {"tag_name": "slay"}
-        ],
-        "description": "<b>Area Effect:</b> After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take [D]+Fray Divine damage."
-    },
-    {
-        "job": "Spellblade",
-        "ability": "Gran Levincross",
-        "name": "Gotterdammerung",
-        "tags":[
-            {"tag_name": "infuse", "val": 3},
-            {"tag_name": "mastery"}
-        ],
-        "description": "<b>Area Effect:</b> After this ability resolves, scathing divine lightning hits aevery quarter of the map but one of your choice. Characters within take 2[D]+Fray Divine damage."
+        "description": "Deal {{{{[D]}}}} + {{{{fray}}}} four times instead. <br/> <i>Special Effect:</i> You can pay the resolve, aether, and action cost of this spell with your entire life force, dying after this action resolves, obliterating your body and scattering your soul. If you do, it deals 999 {{{{divine}}}} damage instead."
     },
     {
         "job": "Enochian",
@@ -372,7 +361,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "Increase range to 10 and blast size to <i>Large Blast</i>. Create a pit under the attack target after this ability resolves."
+        "description": "Increase range to 10 and blast size to <i>Large Blast</i>. Create a {{{{pit}}}} under the attack target after this ability resolves."
     },
     {
         "job": "Enochian",
@@ -386,7 +375,7 @@
             {"tag_name": "blast", "val": "large"},
             {"tag_name": "attack"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>On Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Create a pit under your attack target.<br/><b>Effect:</b> After the ability resolves, the area explodes again, inflicting 2 piercing damage to all characters.<br/><b>Comeback</b> or <b>Exceed:</b> The area explodes again, dealing 2 piercing damage to all characters."
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + {{{{fray}}}}. <i>On Miss:</i> {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Area Effect}}}}: {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Effect}}}}: Create a {{{{pit}}}} under your attack target.<br/>{{{{Effect}}}}: After the ability resolves, the area explodes again, inflicting 2 {{{{piercing}}}} damage to all characters.<br/>{{{{Comeback}}}} or {{{{Exceed}}}}: The area explodes again, dealing 2 {{{{piercing}}}} damage to all characters."
     },
     {
         "job": "Enochian",
@@ -395,7 +384,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "Grant the following effect to your rune: your attacks also <i>shatter</i> their main target while standing in this rune."
+        "description": "Grant the following effect to your rune: your attacks also {{{{shatter}}}} their main target while standing in this rune."
     },
     {
         "job": "Enochian",
@@ -418,7 +407,7 @@
             {"tag_name": "width", "val": 3},
             {"tag_name": "attack"}
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> Line of sight can't be blocked by objects, and ignores cover granted by objects or terrain.<br/><b>Effect:</b> After the ability resolves, every foe or ally in the area explodes, taking 2 piercing damage as an <i>area effect</i>. If you catch at least three foes or allies in the area, every foe or ally in the area takes 2 piercing damage twice instead."
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + {{{{fray}}}}. <i>Miss:</i> {{{{[D]}}}} + {{{{fray}}}}<br/>{{{{Area Effect}}}}: {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Effect}}}}: {{{{Line of sight}}}} can't be blocked by {{{{objects}}}}, and ignores {{{{cover}}}} granted by objects or terrain.<br/>{{{{Effect}}}}: After the ability resolves, every foe or ally in the area explodes, taking 2 {{{{piercing}}}} damage as an {{{{area effect}}}}. If you catch at least three foes or allies in the area, every foe or ally in the area takes 2 {{{{piercing}}}} damage twice instead."
     },
     {
         "job": "Enochian",
@@ -427,7 +416,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 4}
         ],
-        "description": "When entering this stance, shove all adjacent characters 3 and spark a soul ember at them, dealing 1 piercing damage to them. <i>Collide:</i> Characters are <i>vulnerable</i>."
+        "description": "When entering this {{{{stance}}}}, {{{{shove}}}} all adjacent characters 3 and spark a soul ember at them, dealing 1 {{{{piercing}}}} damage to them. {{{{Collide}}}}: Characters are {{{{vulnerable}}}}."
     },
     {
         "job": "Enochian",
@@ -436,7 +425,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 2}
         ],
-        "description": "<b>Trigger:</b> You or your ally takes damage or <i>sacrifices</i> hp.<br/><b>Effect:</b> You can choose to reduce that damage by 3, as if by armor, or the sacrifice cost by 3. If you do, the other partner <i>sacrifices 3</i>.<br/><b>Comeback:</b> Reduce partner sacrfice to 1."
+        "description": "{{{{Trigger}}}}: You or your ally takes damage or {{{{sacrifices}}}} hp.<br/>{{{{Effect}}}}: You can choose to reduce that damage by 3, as if by {{{{armor}}}}, or the {{{{sacrifice}}}} cost by 3. If you do, the other partner {{{{sacrifices}}}} 3.<br/>{{{{Comeback}}}}: Reduce partner {{{{sacrifice}}}} to 1."
     },
     {
         "job": "Enochian",
@@ -445,7 +434,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 4}
         ],
-        "description": "All characters adjacent to the area effect are also affected."
+        "description": "All characters adjacent to the {{{{area effect}}}} are also affected."
     },
     {
         "job": "Enochian",
@@ -454,7 +443,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "Terrian space becomes height 3"
+        "description": "Terrian space becomes {{{{height}}}} 3."
     },
     {
         "job": "Enochian",
@@ -472,12 +461,12 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "Increase blast size to medium blast, and <i>shatters</i> all characters inside."
+        "description": "Increase blast size to medium blast, and {{{{shatters}}}} all characters inside."
     },
     {
         "job": "Geomancer",
         "ability": "Bio",
-        "name": "Biotic",
+        "name": "Magnabio",
         "tags":[
             {"tag_name": "infuse", "val": 6},
             {"tag_name": "mastery"},
@@ -487,7 +476,7 @@
             {"tag_name": "attack"}
 
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Terrain Effect:</b> Create a medium blast toxic cloud terrain effect centered on the center space. The area is <i>dangerous terrain<i> and characters inside the area are <i>shattered+</i>. The cloud lasts until this ability is used again."
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + {{{{fray}}}}. <i>Miss:</i> {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Area Effect}}}}: {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Terrain Effect}}}}: Create a medium blast toxic cloud {{{{terrain effect}}}} centered on the center space. The area is {{{{dangerous terrain}}}} and characters inside the area are {{{{shattered}}}}{{{{+}}}}. The cloud lasts until this ability is used again."
     },
     {
         "job": "Geomancer",
@@ -496,7 +485,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "The area effect released becomes range 3, burst 1 (target). If only one character is caught in the area, they take 2 piercing damage twice and are shoved 2."
+        "description": "The {{{{area effect}}}} released becomes range 3, burst 1 (target). If only one character is caught in the area, they take 2 {{{{piercing}}}} damage twice and are {{{{shoved}}}} 2."
     },
     {
         "job": "Geomancer",
@@ -506,12 +495,12 @@
             {"tag_name": "infuse", "val": 4},
             {"tag_name": "arc", "val": 8}
         ],
-        "description": "Deals bonus damage to characters standing in difficult terrain, pits, or dangerous terrain, and automatically triggers the charge effect against a foe standing in those spaces."
+        "description": "Deals {{{{bonus damage}}}} to characters standing in {{{{difficult terrain}}}}, {{{{pits}}}}, or {{{{dangerous terrain}}}}, and automatically triggers the {{{{charge}}}} effect against a foe standing in those spaces."
     },
     {
         "job": "Geomancer",
         "ability": "Geo",
-        "name": "Magangeo",
+        "name": "Magnageo",
         "tags":[
             {"tag_name": "infuse", "val": 6},
             {"tag_name": "mastery"},
@@ -520,7 +509,7 @@
             {"tag_name": "attack"}
 
         ],
-        "description": "<b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Effect:</b> Foe explodes in a large blast area, extending the area effect. <br/><b>Area Effect:</b> [D] + Fray.<br/><b>Terrain Effect:</b> Creates a massive crater. Create a boulder object in every side space of a small blast area centered on the attack target, with a pit in the center space. These terrain effects can be created under characters."
+        "description": "<b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + {{{{fray}}}}. <i>Miss:</i> {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Effect}}}}: Foe explodes in a large blast area, extending the {{{{area effect}}}}. <br/>{{{{Area Effect}}}}: {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Terrain Effect}}}}: Creates a massive crater. Create a boulder {{{{object}}}} in every side space of a small blast area centered on the attack target, with a {{{{pit}}}} in the center space. These {{{{terrain effects}}}} can be created under characters."
     },
     {
         "job": "Geomancer",
@@ -538,7 +527,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 2}
         ],
-        "description": "The chosen character also immediately gains a <i>vigor surge</i>, but loses all vigor at the end of their next turn."
+        "description": "The chosen character also immediately gains a {{{{vigor surge}}}}, but loses all {{{{vigor}}}} at the end of their next turn."
     },
     {
         "job": "Geomancer",
@@ -547,7 +536,27 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "After this ability resolves, you may shove the affected character 1 space for each time the effect triggered. These shoves can be in any direction. <i>Collide:</i> Foe must save or be stunned."
+        "description": "After this ability resolves, you may {{{{shove}}}} the affected character 1 space for each time the effect triggered. These {{{{shoves}}}} can be in any direction. {{{{Collide}}}}: Foe must save or be {{{{stunned}}}}."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Gran Levincross",
+        "name": "Ragnarok",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "slay"}
+        ],
+        "description": "{{{{Area Effect}}}}: After this ability resolves, scathing divine lightning hits a quarter of the map of your choice. Characters within take {{{{[D]}}}} + {{{{fray}}}} {{{{divine}}}} damage."
+    },
+    {
+        "job": "Spellblade",
+        "ability": "Gran Levincross",
+        "name": "Gotterdammerung",
+        "tags":[
+            {"tag_name": "infuse", "val": 3},
+            {"tag_name": "mastery"}
+        ],
+        "description": "{{{{Area Effect}}}}: After this ability resolves, scathing divine lightning hits aevery quarter of the map but one of your choice. Characters within take 2{{{{[D]}}}} + {{{{fray}}}} {{{{divine}}}} damage."
     },
     {
         "job": "Spellblade",
@@ -567,7 +576,7 @@
             {"tag_name": "infuse", "val": 3},
             {"tag_name": "slay"}
         ],
-        "description": "<b>Effect:</b> After the ability resolves, release a flurry of slashes in a burst 2 (self) <i>area effect</i>, dealing 1 piercing damage, twice, to all foes."
+        "description": "{{{{Effect}}}}: After the ability resolves, release a flurry of slashes in a burst 2 (self) {{{{area effect}}}}, dealing 1 {{{{piercing}}}} damage, twice, to all foes."
     },
     {
         "job": "Spellblade",
@@ -576,7 +585,7 @@
         "tags":[
             {"tag_name": "infuse", "val": "x"}
         ],
-        "description": "Infuse X aether, and extend the area by 1 spaces for every Aether infused, up to a maximum of +3 spaces."
+        "description": "{{{{Infuse X}}}} aether, and extend the area by 1 spaces for every Aether infused, up to a maximum of +3 spaces."
     },
     {
         "job": "Spellblade",
@@ -586,7 +595,7 @@
             {"tag_name": "infuse", "val": 3},
             {"tag_name": "slay"}
         ],
-        "description": "Create a new line 3 terrain effect, which cannot overlap the first. This second effect does not deal damage but has the same terrain effect as the first."
+        "description": "Create a new line 3 {{{{terrain effect}}}}, which cannot overlap the first. This second effect does not deal damage but has the same {{{{terrain effect}}}} as the first."
     },
     {
         "job": "Spellblade",
@@ -594,7 +603,7 @@
         "name": "Lightning Spike",
         "tags":[
         ],
-        "description": "The spike has aura 2. Whenever you or an ally deals 3 or less damage to a character in the aura, gain a d6 power due at 1, or tick the power due up by 1. At the start of any turn the die is at maximum, the spike becomes charged with energy. While charged, you can cause the spike to explode as a <i>free action</i> ability, dealing 1 piercing damage, twice to all characters in the aura as an <i>area effect</i>, <i>shattering</i> them, and shoving them 1 away from it. The spike is then removed."
+        "description": "The spike has {{{{aura}}}} 2. Whenever you or an ally deals 3 or less damage to a character in the aura, gain a d6 {{{{power die}}}} at 1, or tick the {{{{power die}}}} up by 1. At the start of any turn the die is at maximum, the spike becomes charged with energy. While charged, you can cause the spike to explode as a {{{{free action}}}} ability, dealing 1 {{{{piercing}}}} damage, twice to all characters in the aura as an {{{{area effect}}}}, {{{{shattering}}}} them, and {{{{shoving}}}} them 1 away from it. The spike is then removed."
     },
     {
         "job": "Spellblade",
@@ -604,7 +613,7 @@
             {"tag_name": "infuse", "val": 3},
             {"tag_name": "slay"}
         ],
-        "description": "Re-summon the nail after it detonantes, discarding the first power die."
+        "description": "Re-summon the nail after it detonates, discarding the first {{{{power die}}}}."
     },
     {
         "job": "Spellblade",
@@ -613,7 +622,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 2}
         ],
-        "description": "<b>Trigger:</b> A foe enters a space adjacent to you.<br/><b>Effect:</b> Teleport 2, then deal 1 piercing damage to that foe."
+        "description": "{{{{Trigger}}}}: A foe enters a space adjacent to you.<br/>{{{{Effect}}}}: {{{{Teleport}}}} 2, then deal 1 {{{{piercing}}}} damage to that foe."
     },
     {
         "job": "Spellblade",
@@ -623,7 +632,7 @@
             {"tag_name": "infuse", "val": 3},
             {"tag_name": "slay"}
         ],
-        "description": "Until the start of your next turn, this interrupt has unlimited uses."
+        "description": "Until the start of your next turn, this {{{{interrupt}}}} has unlimited uses."
     },
     {
         "job": "Stormbender",
@@ -632,7 +641,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "This ability gains range 6, and gains <i>Collide:</i> create a watery <i>pit</i> under this character after this ability resolves."
+        "description": "This ability gains range 6, and gains {{{{Collide}}}}: create a watery {{{{pit}}}} under this character after this ability resolves."
     },
     {
         "job": "Stormbender",
@@ -642,7 +651,7 @@
             {"tag_name": "infuse", "val": "x"},
             {"tag_name": "mastery"}
         ],
-        "description": "Rime can be infused with massive aether, becoming <b>Infuse X</b>. If so: <ul><li>The area gains range 6 and becomes Arc 4, plus one per aether infused.</li><li>Summon a <i>pit</i> in the area after the ability resolves for every two aether infused.</li><li>Deal 1 piercing damage to all characters in the area again after the ability resolves for every two aether infused.</li></ul>"
+        "description": "Rime can be infused with massive aether, becoming {{{{Infuse X}}}}. If so: <ul><li>The area gains range 6 and becomes Arc 4, plus one per aether infused.</li><li>Summon a <i>pit</i> in the area after the ability resolves for every two aether infused.</li><li>Deal 1 piercing damage to all characters in the area again after the ability resolves for every two aether infused.</li></ul>Listed terms: {{{{summon}}}}, {{{{pit}}}}, {{{{piercing}}}}"
     },
     {
         "job": "Stormbender",
@@ -661,7 +670,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "Change the area to Line 8, increase damage to fray damage, and gain <b>Effect:</b> Summon a <i>salt sprite</i> for every character in the area adjacent to those characters."
+        "description": "Change the area to Line 8, increase damage to {{{{fray damage}}}}, and gain {{{{Effect}}}}: {{{{Summon}}}} a <i>salt sprite</i> for every character in the area adjacent to those characters."
     },
     {
         "job": "Stormbender",
@@ -676,7 +685,7 @@
             {"tag_name": "pierce"}
 
         ],
-        "description": "<b>Special:</b> Increase the line length by 2 and attack deals bonus damage for every two aether spent.<br/><b>Attack:</b> <i>On Hit:</i> 2[D] + Fray. <i>Miss:</i> [D] + Fray.<br/><b>Effect:</b> Attack target is <i>shattered</i>.<br/><b>Area Effect:</b> [D] + Fray.<br/><b>Effect:</b> The attack target is impaled with an icy harpoon, then shoved along the line as far as possible towards you, until they collide or are stopped by an obstruction."
+        "description": "<b>Special:</b> Increase the line length by 2 and attack deals {{{{bonus damage}}}} for every two aether spent.<br/><b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + {{{{fray}}}}. <i>Miss:</i> {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Effect}}}}: Attack target is {{{{shattered}}}}.<br/>{{{{Area Effect}}}}: {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Effect}}}}: The attack target is impaled with an icy harpoon, then {{{{shoved}}}} along the line as far as possible towards you, until they {{{{collide}}}} or are stopped by an {{{{obstruction}}}}."
     },
     {
         "job": "Stormbender",
@@ -685,7 +694,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "Create a Volcanic Geyser instead. When it erupts, it removes and places all characters in a medium blast area effect centered on it, and creates <i>dangerous terrain</i> under foes."
+        "description": "Create a Volcanic Geyser instead. When it erupts, it removes and places all characters in a medium blast {{{{area effect}}}} centered on it, and creates {{{{dangerous terrain}}}} under foes."
     },
     {
         "job": "Stormbender",
@@ -694,7 +703,7 @@
         "tags":[
             {"tag_name": "infuse", "val": 4}
         ],
-        "description": "Gust can be created over characetrs, and immediately activates its effect when it is created, as if characters inside had entered its space."
+        "description": "Gust can be created over characters, and immediately activates its effect when it is created, as if characters inside had entered its space."
     },
     {
         "job": "Stormbender",
@@ -704,7 +713,7 @@
             {"tag_name": "infuse", "val": "x"},
             {"tag_name": "mastery"}
         ],
-        "description": "The shove spaces become shove X. <i>Collide:</i> Foes are <i>shattered</i>."
+        "description": "The shove spaces become {{{{shove X}}}}. {{{{Collide}}}}: Foes are {{{{shattered}}}}."
     },
     {
         "job": "Stormbender",
@@ -722,6 +731,6 @@
         "tags":[
             {"tag_name": "infuse", "val": 3}
         ],
-        "description": "Increase area effect to a large blast and damage to [D]+Fray. The center space is still clear."
+        "description": "Increase {{{{area effect}}}} to a large blast and damage to {{{{[D]}}}} + {{{{fray}}}}. The center space is still clear."
     }
 ]
