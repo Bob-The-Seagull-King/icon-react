@@ -98,7 +98,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "{{{{Trigger}}}}: The end of any turn<br>{{{{Effect}}}}: {{{{Teleport}}}} 2 towards the target or {{{{teleport}}}} your target 1 towards you. The teleport must end with both of you closer together. Allies can choose whether to take this teleport."
+        "description": "{{{{Trigger}}}}: The end of any turn<br>{{{{Effect}}}}: {{{{Teleport}}}} 2 towards the target or {{{{teleport}}}} your target 1 towards you. The {{{{teleport}}}} must end with both of you closer together. Allies can choose whether to take this teleport."
     },
     {
         "job": "Shade",

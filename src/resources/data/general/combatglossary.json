@@ -75,7 +75,7 @@
         "tags": [
 			{"tag_name": "triggered effect"}
         ],
-        "description": "Wright-only <i>triggered effect</i>. Triggers when a character damages two or more foes with this ability."
+        "description": "Wright-only {{{{triggered effect}}}}. Triggers when a character damages two or more foes with this ability."
     },
     {
         "name": "Charge",
@@ -84,7 +84,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that activates when the ability is used on a {{{{slow turn}}}}."
+        "description": "A {{{{triggered effect}}}} that activates when the ability is used on a {{{{slow turn}}}}."
     },
 	{
         "name": "Collide",
@@ -93,7 +93,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that occurs on any character {{{{shoved}}}} into an {{{{obstruction}}}} by this ability."
+        "description": "A {{{{triggered effect}}}} that occurs on any character {{{{shoved}}}} into an {{{{obstruction}}}} by this ability."
     },
 	{
         "name": "Combo",
@@ -110,7 +110,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that turns on if the character using this ability is {{{{bloodied}}}}."
+        "description": "A {{{{triggered effect}}}} that turns on if the character using this ability is {{{{bloodied}}}}."
     },
 	{
         "name": "Cover",
@@ -119,11 +119,11 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "If a character has cover from an ability, it halves all damage from that ability.<br>(pg. 89) Characters gain {{{{resistance}}}} to damage from ranged abilities while they are in cover, halving damage.<br> (pg.92) Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:<ul><li>Characters in cover take <b>half damage</b>.</li><li>Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.</li><li>Characters don’t grant cover by default.</li><li>A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.</li><li>Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.</li></ul>Listed terms: {{{{fly}}}}, {{{{dash}}}}, {{{{elevation}}}}"
+        "description": "If a character has cover from an ability, it halves all damage from that ability.<br>(pg. 89) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Characters gain {{{{resistance}}}} to damage from ranged abilities while they are in cover, halving damage.</div><br> (pg.92) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:<ul><li>Characters in cover take <b>half damage</b>.</li><li>Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.</li><li>Characters don’t grant cover by default.</li><li>A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.</li><li>Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.</li></ul>Listed terms: {{{{fly}}}}, {{{{dash}}}}, {{{{elevation}}}}</div>"
     },
 	{
         "name": "Critical Hit",
-		"variants": ["crit", "critically hit"
+		"variants": ["crit", "critically hit", "critical hits"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -232,7 +232,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that takes place on a total attack roll of 15+."
+        "description": "A {{{{triggered effect}}}} that takes place on a total attack roll of 15+."
     },
 	{
         "name": "Finishing Blow",
@@ -241,7 +241,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "Vagabond-only. <i>Triggered effect</i> that triggers if this ability targets a {{{{bloodied}}}} foe."
+        "description": "Vagabond-only. {{{{Triggered effect}}}} that triggers if this ability targets a {{{{bloodied}}}} foe."
     },
 	{
         "name": "Fray Damage",
@@ -276,7 +276,7 @@
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "Stalwart-only <i>triggered effect</i>. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
+        "description": "Stalwart-only {{{{triggered effect}}}}. Triggers when its special condition is fulfilled, depending on job (shove a character, sacrifice health, etc)."
     },
 	{
         "name": "Immune to X",
@@ -297,12 +297,12 @@
     },
 	{
         "name": "Infuse X",
-		"variants": ["infuse", "infusion", "infuses", "infusing",
+		"variants": ["infuse", "infusion", "infuses", "infusing"
 		],
         "tags": [
             {"tag_name": "triggered effect"}
         ],
-        "description": "Wright-only <i>triggered effect</i>. Triggers when Aether is spent on an ability."
+        "description": "Wright-only {{{{triggered effect}}}}. Triggers when Aether is spent on an ability."
     },
     {
         "name": "Interrupt",
@@ -311,7 +311,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "(pg. 85) Some abilities give you <b>interrupts</b>, which are abilities that trigger under certain circumstances and ‘interrupt’ whatever is going on. Each interrupt can only be used a certain number of times a round, and you can only use <b>one interrupt</b> on any turn (either your own or another characters). (pg. 81) You may also use interrupts before, after, or in the middle of any action, even off your turn, if you have them.<br>(pg. 91) Some abilities are called <b>interrupts</b> and can be used off your turn. You can use each interrupt a number of times indicated by the tag (Interrupt 1, Interrupt 2, for example) between your turns, <b>only one interrupt during any turn</b>, (yours or another character’s) and get them all back at the start of any of your turns. Imagine them like a card that you play and can draw again at the start of your turn.<br>Like they sound, interrupts have a <b>trigger</b> which <i>interrupts</i> any action currently being taken, and then immediately apply <b>effects</b>.<br>(pg. 107) Interrupts resolve with the most recently triggered interrupt first. For example, if a character’s effect deals damage to an enemy, and the enemy has an interrupt that reads ‘when this enemy takes damage’, the enemy’s interrupt would trigger first (even if they are killed by the damage), then the damage would be applied. Interrupts that have the same trigger and trigger at the same time resolve in the same order as turns (player character/npc, alternating).<br> (pg. 108) Interrupts activate when triggered, interrupting the normal flow of action until resolved, and always take priority."
+        "description": "(pg. 85) Some abilities give you <b>interrupts</b>, which are abilities that trigger under certain circumstances and ‘interrupt’ whatever is going on. Each interrupt can only be used a certain number of times a round, and you can only use <b>one interrupt</b> on any turn (either your own or another characters).<br>(pg. 81) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">You may also use interrupts before, after, or in the middle of any action, even off your turn, if you have them.</div><br>(pg. 91) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Some abilities are called <b>interrupts</b> and can be used off your turn. You can use each interrupt a number of times indicated by the tag (Interrupt 1, Interrupt 2, for example) between your turns, <b>only one interrupt during any turn</b>, (yours or another character’s) and get them all back at the start of any of your turns. Imagine them like a card that you play and can draw again at the start of your turn.<br>Like they sound, interrupts have a <b>trigger</b> which <i>interrupts</i> any action currently being taken, and then immediately apply <b>effects</b>.</div><br>(pg. 107) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Interrupts resolve with the most recently triggered interrupt first. For example, if a character’s effect deals damage to an enemy, and the enemy has an interrupt that reads ‘when this enemy takes damage’, the enemy’s interrupt would trigger first (even if they are killed by the damage), then the damage would be applied. Interrupts that have the same trigger and trigger at the same time resolve in the same order as turns (player character/npc, alternating).</div><br>(pg. 108) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Interrupts activate when triggered, interrupting the normal flow of action until resolved, and always take priority.</div>"
     },
     {
         "name": "Line of Sight",
@@ -376,7 +376,7 @@
     },
 	{
         "name": "Rebound",
-		"variants": ["rebounds", "rebounding"
+		"variants": ["rebounds", "rebounding", "rebounded"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -426,7 +426,7 @@
         "tags": [
 			{"tag_name": "triggered effect"}
         ],
-        "description": "A <i>triggered effect</i> that activates when this ability reduces a character to 0 hp."
+        "description": "A {{{{triggered effect}}}} that activates when this ability reduces a character to 0 hp."
     },
     {
         "name": "Slope",
@@ -473,12 +473,12 @@
     },
 	{
         "name": "Summon",
-		"variants": ["summons"
+		"variants": ["summons", "summoning"
 		],
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "A character controlled by its Summoner. Summons are {{{{intangible}}}}, and cannot be {{{{marked}}}}, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a <b>summon action</b> that they use on their summoner’s turn, or a <b>summon effect</b> that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated."
+        "description": "A character controlled by its Summoner. Summons are {{{{intangible}}}}, and cannot be {{{{marked}}}}, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a <b>summon action</b> that they use on their summoner’s turn, or a <b>summon effect</b> that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated.<br>(pg. 92) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Summons don’t count as foes or allies and can only be targeted if an ability can target all characters, or if specifically mentioned.</div><br>(pg. 95) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Many abilities create summons. Summons are characters that are by default size 1 and intangible, so they can’t be affected by foes and don’t cause obstruction or engagement. Summons do not count as foes or allies for abilities or effects that count foes and allies, though abilities that specify summons or characters can target or count them normally. Unless specified, summons can only be placed in free space in line of sight and range. Summons may have have a summon action which they can take during their summoner’s turn, or a passive summon effect which can take place any time, or both. Summons are removed if their controller is defeated.</div>"
     },
 	{
         "name": "Teleport",
@@ -545,8 +545,8 @@
     },
 	{
         "name": "Sealed",
-		"variants": ["seal, "seals"
-		],
+		"variants": ["seal", "seals"
+        ],
         "tags": [
             {"tag_name": "status"}
         ],
@@ -606,7 +606,8 @@
     },
     {
         "name": "Defeated",
-		"variants": [],
+		"variants": ["defeats"
+        ],
         "tags": [
             {"tag_name": "special state"}
         ],
