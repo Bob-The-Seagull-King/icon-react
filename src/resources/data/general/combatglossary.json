@@ -18,7 +18,7 @@
     },
     {
         "name": "Area Effect",
-		"variants": ["area effects", "area ability"
+		"variants": ["area effects", "area ability", "AoE", "AoEs", "Area of Effect"
 		],
         "tags": [
             {"tag_name": "general"}
@@ -137,7 +137,7 @@
         "tags": [
 			{"tag_name": "positive effect"}
         ],
-        "description": "A character that’s cured gains 4 {{{{vigor}}}}, or a <i>vigor surge</i> if they’re {{{{bloodied}}}}. Then, they may save against all statuses."
+        "description": "A character that’s cured gains 4 {{{{vigor}}}}, or a {{{{vigor surge}}}} if they’re {{{{bloodied}}}}. Then, they may save against all {{{{statuses}}}}."
     },
     {
         "name": "Curse",
@@ -383,6 +383,16 @@
         ],
         "description": "An ability that is rebounded can be bounced off a character in range. The ability has no effect, but is instead redirected from that character’s space as the origin space, taking into account {{{{cover}}}}, {{{{line of sight}}}}, and other similar effects from their space. Any effects that apply to the original user of the ability still apply to them (such as sacrificing hp, or moving). Rebound does not stack."
     },
+    {
+        "name": "Rescue",
+		"variants": ["rescues", "rescued"
+		],
+        "tags": [
+            {"tag_name": "general"},
+            {"tag_name": "action", "val": 1}
+        ],
+        "description": "<b>A basic 1-action ability.</b><br><i>Rescue</i> an adjacent {{{{defeated}}}} ally. An ally that is rescued ends the {{{{incapacitated}}}} state on themselves and heals to full hit points, minus any wounds they’ve taken."
+    },
 	{
         "name": "Resistance",
 		"variants": ["resist", "resisting", "resists", "resisted"
@@ -447,7 +457,8 @@
     },
 	{
         "name": "Stance",
-		"variants": [],
+		"variants": ["stances"
+        ],
         "tags": [
 			{"tag_name": "ongoing"},
 			{"tag_name": "positive effect"}
@@ -464,7 +475,7 @@
     },
 	{
         "name": "Status",
-		"variants": ["statuses", "negative effect"
+		"variants": ["statuses", "negative effect", "negative effects"
         ],
         "tags": [
             {"tag_name": "general"}
@@ -506,6 +517,15 @@
             {"tag_name": "general"}
         ],
         "description": "An effect that actives under a certain condition. Common effects are {{{{critical hit}}}}, {{{{slay}}}}, {{{{collide}}}}, {{{{finishing blow}}}}, and {{{{charge}}}}. Each unique effect can only trigger once per ability, and once per trigger."
+    },
+    {
+        "name": "Wound",
+		"variants": ["wounds", "wounded"
+		],
+        "tags": [
+            {"tag_name": "general"}
+        ],
+        "description": "When you take a wound, fill in 25% of your HP (a value equal to your VIT value) from the right side of your hp bar, temporarily reducing your <b>maximum HP</b>. You normally get wounds from being {{{{defeated}}}}. You can’t typically recover or heal a wound until you finish an interlude. If you ever accumulate 4 wounds, you suffer total defeat and are <i>fallen</i>."
     },
     {
         "name": "Blind",
@@ -781,11 +801,18 @@
     },
 	{
         "name": "Vigor",
-		"variants": ["vigor surge"
-        ],
+		"variants": [],
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from {{{{armor}}}} and {{{{resistance}}}}. Vigor stacks, but cannot go past 25% of your hp. If you gain a <b>vigor surge</b>, gain maximum vigor. Lose all vigor at the end of combat."
+        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from {{{{armor}}}} and {{{{resistance}}}}. Vigor stacks, but cannot go past 25% of your hp. If you gain a {{{{vigor surge}}}}, gain maximum vigor. Lose all vigor at the end of combat.<br>(pg. 81) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Vigor is temporary health that goes over your maximum hp, like a shield. Any damage suffered goes to vigor before hit points, and all vigor disappears at the end of combat. When you gain vigor, it stacks up, but you can never have more vigor than 25% of your maximum hp 81 of 501 (equal to your VIT value). Sometimes you are granted a vigor surge, which fills your vigor up to full.</div>"
+    },
+    {
+        "name": "Vigor Surge",
+		"variants": [],
+        "tags": [
+            {"tag_name": "positive effect"}
+        ],
+        "description": "If you gain a <b>vigor surge</b>, gain full {{{{vigor}}}} (25% of your max hp)."
     }
 ]
