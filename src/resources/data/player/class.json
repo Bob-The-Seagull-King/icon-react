@@ -45,7 +45,7 @@
                 "traits": [
                     {
                         "name": "Strive",
-                        "desc": "You may cause any ability to trigger its heroic effects when you use it, and increase the distance of any shoves by +1. If you do, after that ability resolves, you can’t use heroics until the end of your next turn, and deal half damage during that turn."
+                        "desc": "You may cause any ability to trigger its {{{{heroic}}}} effects when you use it, and increase the distance of any {{{{shoves}}}} by +1. If you do, after that ability resolves, you can’t use heroics until the end of your next turn, and deal half damage during that turn."
                     },
                     {
                         "name": "Press the Advantage",
@@ -92,11 +92,11 @@
                     },
                     {
                         "name": "Demon Strength",
-                        "desc": "You can make any ability Heroic when you use it. If you do, you can't attack or use heroics until the end of your following turn."
+                        "desc": "You can make any ability {{{{Heroic}}}} when you use it. If you do, you can't attack or use heroics until the end of your following turn."
                     },
                     {
                         "name": "Hissatsu",
-                        "desc": "If you don't attack during your turn, your next attack ability gains +1 boon, {{{{true strike}}}}, and upgrades its damage die to <i>d10</i>. This effect ends after you hit with an attack."
+                        "desc": "If you don't attack during your turn, your next attack ability gains +1 {{{{boon}}}}, {{{{true strike}}}}, and upgrades its damage die to <i>d10</i>. This effect ends after you hit with an attack."
                     },
                     {
                         "name": "True Horn",
@@ -106,7 +106,7 @@
                 "limitbreak": {
                     "name": "Split Heaven and Hell",
                     "blurb":"Sever Divinity and cut through the threads of possibility. Pour all your rage into one blow and topple the Gods.",
-                    "description": "{{{{End Turn}}}}: <b>End your turn,</b> and start charging up a god cutting blow. {{{{Delay}}}}: Your {{{{next turn must be slow}}}}. At the start of that turn, you may take one of the following options. <ul><li><b>Sever Divine Thread:</b> Swing your weapon a line 5 {{{{area effect}}}} drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their distance on the line from you. <ul><li><b>1 space:</b> 100% of max hp</li><li><b>2-4 space:</b> 50% of max hp</li><li><b>5+ spaces:</b> 25% of max HP</li></ul></li><li><b>Divine Cancel:</b> You may cancel this ability, refunding the resolve cost, and {{{{rush}}}} 1. You can limit break again this combat, but not this turn.</li><li><b>Divine Delay:</b> You continue to hold this ability. Your {{{{next turn must be slow}}}} and repeat this {{{{delay}}}} effect. Each time you do this, increase the width of the line by 1 space, to a maximum of 3 width, and its length by 3 spaces. You cannot attack while holding Divine Delay.</li></ul> Legend characters always take 25% of max hp from this ability instead of other effects.",
+                    "description": "{{{{End Turn}}}}: <b>End your turn,</b> and start charging up a god cutting blow. {{{{Delay}}}}: Your {{{{next turn must be slow}}}}. At the start of that turn, you may take one of the following options. <ul><li><b>Sever Divine Thread:</b> Swing your weapon a line 5 area effect drawn from your position. This counts as using an attack this turn. Characters in the line take damage depending on their distance on the line from you. <ul><li><b>1 space:</b> 100% of max hp</li><li><b>2-4 space:</b> 50% of max hp</li><li><b>5+ spaces:</b> 25% of max HP</li></ul></li><li><b>Divine Cancel:</b> You may cancel this ability, refunding the resolve cost, and rush 1. You can limit break again this combat, but not this turn.</li><li><b>Divine Delay:</b> You continue to hold this ability. Your next turn must be slow and repeat this delay effect. Each time you do this, increase the width of the line by 1 space, to a maximum of 3 width, and its length by 3 spaces. You cannot attack while holding Divine Delay.</li></ul>Legend characters always take 25% of max hp from this ability instead of other effects.<br>Listed terms: {{{{area effect}}}}, {{{{rush}}}}, {{{{next turn must be slow}}}}, {{{{delay}}}}",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
                         {"tag_name": "action", "val": 1}, 
@@ -135,25 +135,25 @@
                 "traits": [
                     {
                         "name": "Furious Berserk",
-                        "desc": "You go into a furious blood rage as you take damage, giving you the following benefits: <ul><li>You start combat with {{{{defiance}}}}.</li><li>You have {{{{regeneration}}}}, and regain {{{{regeneration}}}} if defeated and {{{{rescued}}}}.</li><li>While you're {{{{bloodied}}}}, you are {{{{sturdy}}}}, and gain {{{{vigilance}}}} +1 at the end of your turn.</li></ul>"
+                        "desc": "You go into a furious blood rage as you take damage, giving you the following benefits: <ul><li>You start combat with <i>defiance</i>.</li><li>You have <i>regeneration</i>, and regain regeneration if defeated and rescued.</li><li>While you're <i>bloodied</i>, you are <i>sturdy</i>, and gain <i>vigilance</i> +1 at the end of your turn.</li></ul>Listed terms: {{{{defiance}}}}, {{{{regeneration}}}}, {{{{defeated}}}}, {{{{bloodied}}}}, {{{{sturdy}}}}, {{{{vigilance}}}}"
                     },
                     {
                         "name": "Wolfheart",
-                        "desc": "Once a round, you may {{{{sacrifice}}}} 25% of your max hp to make an ability <i>Heroic</i> and increase the distance of any {{{{flying}}}}, {{{{rush}}}}, or {{{{dash}}}} as part of that move by +1."
+                        "desc": "Once a round, you may {{{{sacrifice}}}} 25% of your max hp to make an ability {{{{Heroic}}}} and increase the distance of any {{{{flying}}}}, {{{{rush}}}}, or {{{{dash}}}} as part of that move by +1."
                     },
                     {
                         "name": "Pulverize",
-                        "desc": "When you start an attack ability on higher elevation than your target, it deals {{{{bonus damage}}}}. If you are two or more levels higher, it also triggers all {{{{exceed}}}} effects."
+                        "desc": "When you start an attack ability on higher {{{{elevation}}}} than your target, it deals {{{{bonus damage}}}}. If you are two or more levels higher, it also triggers all {{{{exceed}}}} effects."
                     },
                     {
                         "name": "Great Leap",
-                        "desc": "When you would end any movement on a lower elevation than you started, you may gain {{{{flying}}}} for the duration of that movement."
+                        "desc": "When you would end any movement on a lower {{{{elevation}}}} than you started, you may gain {{{{flying}}}} for the duration of that movement."
                     }
                 ],
                 "limitbreak": {
                     "name": "Gigantas Crusher",
                     "blurb":"Wrestle with the gods themselves",
-                    "description": "{{{{Effect}}}}: You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character's turn, you come spinning back to earth, slamming that character into the battlefield in an unoccupied space in range 2 of your original location. <br/>You {{{{sacrifice}}}} 25% of your hp. Your foe takes 50% of their max hp as {{{{divine}}}} damage, or 25% as {{{{divine}}}} damage on a successful save. Then place both of you back in or adjacent to that space. <br/> This ability can be used against Legends, but they may always save, taking {{{{divine}}}} {{{{fray}}}} damage on refunding this ability's resolve cost on asuccessful save, and only 25% hp as {{{{divine}}}} damage on a failed save.",
+                    "description": "{{{{Effect}}}}: You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character's turn, you come spinning back to earth, slamming that character into the battlefield in an unoccupied space in range 2 of your original location. <br/>You {{{{sacrifice}}}} 25% of your hp. Your foe takes 50% of their max hp as {{{{divine}}}} damage, or 25% as {{{{divine}}}} damage on a successful save. Then place both of you back in or adjacent to that space. <br/>This ability can be used against Legends, but they may always save, taking {{{{divine}}}} {{{{fray}}}} damage on refunding this ability's resolve cost on a successful save, and only 25% hp as {{{{divine}}}} damage on a failed save.",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
                         {"tag_name": "action", "val": 2},
@@ -169,7 +169,7 @@
                     "name" : "Unbreakable",
                     "tags":[
                     ],
-                    "description": "If defeated, you can {{{{rescue}}}} yourself and take a turn as normal. This doesn't take an action and takes place at the start of your turn. In addition, after being rescued in any way, including as part of this trait, you can {{{{rush}}}} 1 and deal 2 damage to all adjacent characters."
+                    "description": "If {{{{defeated}}}}, you can {{{{rescue}}}} yourself and take a turn as normal. This doesn't take an action and takes place at the start of your turn. In addition, after being rescued in any way, including as part of this trait, you can {{{{rush}}}} 1 and deal 2 damage to all adjacent characters."
                 }
             },
             {
