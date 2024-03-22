@@ -403,7 +403,7 @@
     },
 	{
         "name": "Sacrifice X",
-		"variants": ["sacrifice", "sacrifices", "sacrificing"
+		"variants": ["sacrifice", "sacrifices", "sacrificing", "sacrificed"
 		],
         "tags": [
             {"tag_name": "general"}
