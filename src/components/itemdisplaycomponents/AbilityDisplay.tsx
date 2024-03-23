@@ -155,7 +155,7 @@ const AbilityDisplay = (props: any) => {
     return (
         <div className='abilityStructure'>
             <h1 className={'titleShape title'+getColour(abilityData.job)}>{abilityData.name}</h1>
-            <p>{tagsArray}</p>
+            <p>{convertStringToContent(tagsArray)}</p>
             <p><i>{abilityData.blurb}</i></p>
             <div>
                 <p>

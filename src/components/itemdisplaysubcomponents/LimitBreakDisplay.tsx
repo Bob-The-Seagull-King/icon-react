@@ -129,7 +129,7 @@ const LimitBreakDisplay = (props: any) => {
         <div>
             <h1 className={'titleShape title'+getColour(limitBreakData.name)}>LIMIT BREAK: {limitBreakData.limitbreak.name.toUpperCase()}</h1>
             
-            <p>{tagsArray}</p>
+            <p>{convertStringToContent(tagsArray)}</p>
             <span><i><p>{convertStringToContent(limitBreakData.limitbreak.blurb)}</p></i></span>
             <div><p>{convertStringToContent(limitBreakData.limitbreak.description)}</p></div>
             

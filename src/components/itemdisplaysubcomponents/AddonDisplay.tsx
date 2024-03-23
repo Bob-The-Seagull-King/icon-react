@@ -88,7 +88,7 @@ const AddonDisplay = (props: any) => {
     return (
         <div className='addonStructure'>
             <h3 className={'titleShape subtitle'+getColour(addonData.job)}>{title}</h3>
-            <p>{tagsArray}</p>
+            <p>{convertStringToContent(tagsArray)}</p>
             <div><p>{convertStringToContent(addonData.description)}</p></div>
         </div>
     )

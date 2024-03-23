@@ -77,7 +77,7 @@ const SummonDisplay = (props: any) => {
     return (
         <div className='summonStructure'>
             <h1 className={'titleShape title'+getColour(summonData.job)}>{summonData.name}</h1>
-            <p>{tagsArray}</p>
+            <p>{convertStringToContent(tagsArray)}</p>
             <div><p>{convertStringToContent(summonData.description)}</p></div>
             <p>{limitText}</p>
         </div>

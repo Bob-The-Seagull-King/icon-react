@@ -56,7 +56,7 @@ const PowerDisplay = (props: any) => {
     return (
         <div className='powerStructure'>
             <h1 className={'titleShape titlePurple'}>{powerinfo.name}</h1>
-            <p>{tagsArray}</p>
+            <p>{convertStringToContent(tagsArray)}</p>
             <div><p dangerouslySetInnerHTML={{__html: (powerinfo.desc || '')}}></p></div>
             <br/>
         </div>
