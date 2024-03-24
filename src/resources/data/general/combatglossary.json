@@ -684,7 +684,8 @@
     },
 	{
         "name": "Evasion",
-		"variants": [],
+		"variants": ["evade", "evades"
+        ],
         "tags": [
             {"tag_name": "positive effect"}
         ],
