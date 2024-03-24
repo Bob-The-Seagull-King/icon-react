@@ -665,7 +665,7 @@
 			{"tag_name": "attack"},
 			{"tag_name": "boon", "val": 1}
         ],
-        "description": "{{{{Effect}}}}: {{{{Dash}}}} 3, then {{{{dash}}}} 1 space to the side of your movement. This movement ignores all movement penalties and has {{{{phasing}}}}. However:<ul><li>You must move if able.</li><li>You must move as far as possible.</li><li>You cannot move diagonally during this movement.</li></ul><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br>{{{{Effect}}}}: Foe is {{{{dazed}}}}.<br>{{{{Finishing Blow}}}} or {{{{Slay}}}}: {{{{Summon}}}} a <b>bomb</b>.",
+        "description": "{{{{Effect}}}}: {{{{Dash}}}} 3, then {{{{dash}}}} 1 space to the side of your movement. This movement ignores all movement penalties and has {{{{phasing}}}}. However:<ul><li>You must move if able.</li><li>You must move as far as possible.</li><li>You cannot move diagonally during this movement.</li></ul><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{Fray}}}}. <i>Miss</i>: {{{{Fray}}}}.<br>{{{{Effect}}}}: Foe is {{{{dazed}}}}.<br>{{{{Finishing Blow}}}} or {{{{Slay}}}}: {{{{Summon}}}} a <b>[[[[bomb]]]]</b>.",
         "blurb": "It is not enough to rudely and plainly strike your foe down. One must make it entertaining.",
         "talent1": "If you pass through an ally or {{{{summon}}}} during this movement, deal {{{{bonus damage}}}}.",
         "talent2": "Allies you pass through during this movement can {{{{dash}}}} 1.",
@@ -712,7 +712,7 @@
 			{"tag_name": "line", "val": 6},
 			{"tag_name": "unerring"}
         ],
-        "description": "{{{{Area Effect}}}}: {{{Gamble}}}, then count the spaces out from you along the line. The space rolled is the attack space.<br><b>Attack</b>: {{{{Autohit}}}}: 2{{{{[D]}}}} + {{{{Fray}}}}.<br>{{{{Area Effect}}}}: {{{{Fray}}}}.<br>{{{{Finishing Blow}}}} or {{{{Slay}}}}: Character explodes in a large blast {{{{area effect}}}} centered on them, dealing {{{{fray damage}}}}.<br><b><i>Special Effect</i></b>: Death deals 999 {{{{divine}}}} damage instead to your attack target if they are at 8 hp or less.",
+        "description": "{{{{Area Effect}}}}: {{{{Gamble}}}}, then count the spaces out from you along the line. The space rolled is the attack space.<br><b>Attack</b>: {{{{Autohit}}}}: 2{{{{[D]}}}} + {{{{Fray}}}}.<br>{{{{Area Effect}}}}: {{{{Fray}}}}.<br>{{{{Finishing Blow}}}} or {{{{Slay}}}}: Character explodes in a large blast {{{{area effect}}}} centered on them, dealing {{{{fray damage}}}}.<br><b><i>Special Effect</i></b>: Death deals 999 {{{{divine}}}} damage instead to your attack target if they are at 8 hp or less.",
         "blurb": "A shard of Divine Death, summoned with a snap of the finger.",
         "talent1": "If there’s a {{{{bloodied}}}} character in the area, roll 1 more d6 and choose any result.",
         "talent2": "{{{{Slay}}}}: create a pit under your target, and {{{{summon}}}} a <i>bomb</i> in the pit.",
@@ -1804,7 +1804,7 @@
         "tags":[
             {"tag_name": "interrupt", "val": 1}
         ],
-        "description": "{{{{Trigger}}}}: An ally on the battlefield takes damage from a foe equal to 25% of their max hp or more<br>{{{{Effect}}}}: Reverse the flow of causality. That damage cannot reduce your ally past 1 hp, and they are {{{cured}}} after it resolves. The stress of taking this action causes you to {{{{sacrifice}}}} 25% of your maximum HP.",
+        "description": "{{{{Trigger}}}}: An ally on the battlefield takes damage from a foe equal to 25% of their max hp or more<br>{{{{Effect}}}}: Reverse the flow of causality. That damage cannot reduce your ally past 1 hp, and they are {{{{cured}}}} after it resolves. The stress of taking this action causes you to {{{{sacrifice}}}} 25% of your maximum HP.",
         "blurb": "You struggle against fate itself, undoing causality and defying the stars.",
         "talent1": "If your ally is {{{{bloodied}}}}, they are also {{{{blessed}}}} after this {{{{interrupt}}}} resolves and may {{{{dash}}}} 2.",
         "talent2": "If this damage would have reduced your ally to 0 hp, also {{{{cure}}}} yourself after this ability resolves.",
