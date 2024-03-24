@@ -194,7 +194,8 @@
     },
     {
         "name": "Effect",
-		"variants": [],
+		"variants": ["effects"
+        ],
         "tags": [
             {"tag_name": "general"}
         ],
@@ -254,7 +255,8 @@
     },
     {
         "name": "Free Action",
-		"variants": [],
+		"variants": ["free actions"
+        ],
         "tags": [
             {"tag_name": "general"}
         ],
