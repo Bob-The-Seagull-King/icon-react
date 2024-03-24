@@ -112,7 +112,7 @@
             {"tag_name": "action", "val": 1}, 
             {"tag_name": "attack"},
             {"tag_name": "range", "val": 3},
-            {"tag_name": "true strike"}
+            {"tag_name": "{{{{true strike}}}}"}
         ],
         "description": "<b>Attack:</b> <i>On hit:</i> {{{{[D]}}}} + {{{{Fray}}}}. Miss: {{{{Fray}}}}.<br>{{{{Effect}}}}: Attack target is {{{{weakened}}}} and {{{{shoved}}}} 1<br> {{{{Effect}}}}: A different foe in range 3 from your target is {{{{shoved}}}} 1 away from your main target.<br>{{{{Collide}}}} or {{{{Heroic}}}}: Repeat the above effect.",
         "blurb": "Hurl your shield or weapon as a discus with irrepressible force.",
@@ -171,8 +171,8 @@
         "chapter": 1,
         "tags":[
             {"tag_name": "action", "val": 1},
-			{"tag_name": "stance"},
-			{"tag_name": "aura"}					
+			{"tag_name": "{{{{stance}}}}"},
+			{"tag_name": "{{{{aura}}}}"}					
         ],
         "description": "{{{{Stance}}}}: When you enter this stance, or when it refreshes, choose an ally in range 4. That ally gains {{{{aura}}}} 1 until the start of your next turn. The aura deactivates if your ally is out of range. While the aura is active, you can use the following interrupt:<br><b>Refresh</b>: Refresh this stance at the start of your turn.<br>{{{{Heroic}}}}: Immediately activate the interrupt effect.",
         "blurb": "The land itself is your castle, and you will never let its walls be breached. No matter where your allies step, your shield will be there.",
@@ -186,7 +186,7 @@
         "name": "Catapult",
         "chapter": 1,
         "tags":[
-            {"tag_name": "interrupt", "val": 1}				
+            {"tag_name": "{{{{interrupt}}}}", "val": 1}				
         ],
         "description": "{{{{Trigger}}}}: An ally ends a movement in an adjacent space<br>{{{{Effect}}}}: {{{{Shove}}}} that ally 2 in any direction.<br>{{{{Collide}}}} or {{{{Heroic}}}}: That ally gains 2 {{{{vigor}}}} and may {{{{rush}}}} 1.",
         "blurb": "Use your shield as a springboard to set up ally maneuvers or to deflect projectiles.",
