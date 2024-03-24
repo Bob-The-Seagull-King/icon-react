@@ -815,5 +815,32 @@
             {"tag_name": "positive effect"}
         ],
         "description": "If you gain a <b>vigor surge</b>, gain full {{{{vigor}}}} (25% of your max hp)."
+    },
+    {
+        "name": "Attack Invoke",
+		"variants": ["attack"
+        ],
+        "tags": [
+            {"tag_name": "relic"}
+        ],
+        "description": "When you make an attack, if the die used for the attack roll is a certain number or higher, you can invoke the relic’s power against your attack target. This only counts the d20, and not the total attack roll. For example, in an <b>(Attack, 15+)</b> invoke, you could invoke the relic’s power when you make any attack roll and the die is 15 or higher. This Invoke happens after the attack roll, but before damage and effects are applied. With attacks that don’t have a roll, such as an {{{{auto-hit}}}} attack, roll 1d20 anyway to check."
+    },
+    {
+        "name": "Gambit Invoke",
+		"variants": ["gambit"
+        ],
+        "tags": [
+            {"tag_name": "relic"}
+        ],
+        "description": "An invoke that can be triggered under the listed conditions, but only once per combat. For example, an invoke that says ‘gambit: your next attack is a critical hit on hit’ works automatically, but can’t be used again even if that attack misses. Gambits are usually always {{{{effects}}}} or {{{{free actions}}}}."
+    },
+    {
+        "name": "Round Invoke",
+		"variants": ["round"
+        ],
+        "tags": [
+            {"tag_name": "relic"}
+        ],
+        "description": "Automatically, at a certain round of combat or later. These effects are always active. For example <b>(Round 5+)</b> relics have effects that are always active at round 5 or later."
     }
 ]

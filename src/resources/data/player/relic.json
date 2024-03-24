@@ -3,7 +3,7 @@
         "name": "Ape God",
         "colour": "red",
         "desc": "This gauntlet or weapon is oversized, studded with metal, and incredibly heavy",
-        "tier1": "<b>Invoke (Attack, 17+)</b>: {{{{Stun}}}} your attack target.",
+        "tier1": "<b>Invoke (</b>{{{{Attack}}}}<b>, 17+)</b>: {{{{Stun}}}} your attack target.",
         "tier2": "Become {{{{immune}}}} to {{{{stun}}}}",
         "tier3": "When you {{{{stun}}}} a foe, you can also {{{{stun}}}} another foe within 2 spaces of that character.",
         "tier4": "If your Invoke goes off, your attack also deals {{{{bonus damage}}}}, {{{{shoves}}}} all foes adjacent to your target 1, and you may {{{{shove}}}} yourself 2 in any direction after it resolves.",
@@ -15,7 +15,7 @@
         "desc": "A blood red gem, similar to an Elixir Stone, is set into this weapon or armor.",
         "tier1": "When you’re at 25% hp or lower, you may reduce all {{{{sacrifice}}}} costs to {{{{sacrifice}}}} 2 if higher, even those based on % of your hp.",
         "tier2": "When you’d take any {{{{wound}}}}, roll a d6. On a 6, ignore the {{{{wound}}}}. If you’d already roll a d6 to ignore a {{{{wound}}}}, instead improve that roll by 1, to a minimum of 2+.",
-        "tier3": "<b>Gambit</b>{{{{Free Action}}}}: {{{{Sacrifice}}}} 4, then deal 4 damage to a foe in range 4.",
+        "tier3": "{{{{Gambit}}}}: {{{{Free Action}}}}: {{{{Sacrifice}}}} 4, then deal 4 damage to a foe in range 4.",
         "tier4": "Crimson King I reduces costs to {{{{sacrifice}}}} 1.",
         "quest": "Quench your relic in the abyssal blood of a powerful demon."
     }, 
@@ -23,7 +23,7 @@
         "name": "Erys",
         "colour": "red",
         "desc": "This helm, mantle, or pauldron is crowned with horns, spines, or a mantle of thick goat-like fur.",
-        "tier1": "<b>Invoke (Attack, 11+)</b>: You may {{{{shove}}}} your target 1.",
+        "tier1": "<b>Invoke (</b>{{{{Attack}}}}<b>, 11+)</b>: You may {{{{shove}}}} your target 1.",
         "tier2": "When you are {{{{shoved}}}}, you can choose to reduce the {{{{shove}}}} distance by 1.",
         "tier3": "While you’re {{{{bloodied}}}}, you may increase the distance of any your {{{{shoves}}}} by +1.",
         "tier4": "You can {{{{shove}}}} characters diagonally, as long as they move further away from the origin with each move.",
@@ -35,7 +35,7 @@
         "desc": "Your relic bears a statuette or image of the Weeping Titan, impaled by spears.",
         "tier1": "While you’re {{{{bloodied}}}}, gain {{{{counter}}}}.",
         "tier2": "While you have {{{{counter}}}}, you also grant all adjacent allies {{{{counter}}}}.",
-        "tier3": "<b>Invoke (Attack, 11+)</b>: You may deal 1 {{{{piercing}}}} damage to all adjacent foes.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 11+)</b>: You may deal 1 {{{{piercing}}}} damage to all adjacent foes.",
         "tier4": "Your {{{{counter}}}} effect becomes {{{{piercing}}}} damage.",
         "quest": "Gather and reforge true iron nails from the sarcophagus of a Relict Emperor."
     }, 
@@ -43,9 +43,9 @@
         "name": "Orpheo",
         "colour": "red",
         "desc": "This relic has a cracked mirror, set on a pendant or into a shield or weapon hilt.",
-        "tier1": "<b>Invoke (Attack, 17+)</b>: Gain {{{{defiance}}}}. If you already have {{{{defiance}}}}, gain 4 {{{{vigor}}}}.",
+        "tier1": "<b>Invoke (</b>{{{{Attack}}}}<b>, 17+)</b>: Gain {{{{defiance}}}}. If you already have {{{{defiance}}}}, gain 4 {{{{vigor}}}}.",
         "tier2": "When {{{{defiance}}}} triggers, you may deal {{{{fray damage}}}} to all adjacent foes.",
-        "tier3": "<b>Invoke (Gambit)</b>: When an ally in range 3 would be reduced below 1 hp, you can trigger your own {{{{defiance}}}} to grant its effects to that ally.",
+        "tier3": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: When an ally in range 3 would be reduced below 1 hp, you can trigger your own {{{{defiance}}}} to grant its effects to that ally.",
         "tier4": "When {{{{rescued}}}}, gain {{{{defiance}}}}.",
         "quest": "Bathe in the water of the river that leads to the underworld."
     },
@@ -56,7 +56,7 @@
         "tier1": "{{{{Charged}}}} attacks gain +1 {{{{boon}}}}.",
         "tier2": "{{{{Charged}}}} attacks also deal 2 damage to all foes adjacent to your attack target after the ability resolves.",
         "tier3": "When you choose to take a {{{{slow turn}}}}, you and all allies in range 3 can {{{{rush}}}} 1.",
-        "tier4": "<b>Invoke (Gambit) -</b> {{{{Free action}}}}: This turn only, all your actions trigger all {{{{charge}}}} effects.",
+        "tier4": "<b>Invoke (</b>{{{{Gambit}}}}<b>) -</b> {{{{Free action}}}}: This turn only, all your actions trigger all {{{{charge}}}} effects.",
         "quest": "Weave the aethersilk of an ancient Ur-spider into your relic."
     }, 
     {
@@ -65,7 +65,7 @@
         "desc": "This weapon or armor has carvings made from pure wyrmbone. It is hot to the touch.",
         "tier1": "While afflicted by a {{{{status}}}}, you no longer take {{{{bonus damage}}}} and cannot be {{{{critically hit}}}}.",
         "tier2": "While afflicted by three or more {{{{statuses}}}}, gain +1 {{{{boon}}}} on saves and deal {{{{bonus damage}}}} with all abilities.",
-        "tier3": "<b>Invoke (Attack, 13+)</b>: Inflict a {{{{status}}}} on your attack target that you are afflicted by.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 13+)</b>: Inflict a {{{{status}}}} on your attack target that you are afflicted by.",
         "tier4": "At the start of combat, you can choose to inflict one or two {{{{statuses}}}} of your choice on yourself.",
         "quest": "Carve the skull or horns of a wyrm and incorporate it into your relic."
     }, 
@@ -86,7 +86,7 @@
         "tier1": "When you use a {{{{delay}}}} effect, you can {{{{rush}}}} 1 before activating it. If you’re {{{{bloodied}}}}, you can {{{{rush}}}} 3 instead.",
         "tier2": "Your {{{{delay}}}} effects deal {{{{divine}}}} damage to characters at 25% health or lower.",
         "tier3": "You are {{{{sturdy}}}} while holding a {{{{delay}}}} effect.",
-        "tier4": "<b>Invoke (Attack, 19+)</b>: You may activate the next {{{{delay}}}} effect you use this turn immediately, including as part of this attack.",
+        "tier4": "<b>Invoke (</b>{{{{Attack}}}}<b>, 19+)</b>: You may activate the next {{{{delay}}}} effect you use this turn immediately, including as part of this attack.",
         "quest": "Pull and reforge a god-killing weapon from the corpse of a titan."
     }, 
     {
@@ -94,7 +94,7 @@
         "colour": "red",
         "desc": "A relic made of sturdy and thick star-iron, cool and comforting to the touch.",
         "tier1": "Gain +1 {{{{boon}}}} on attacks while adjacent to an ally.",
-        "tier2": "<b>Invoke (Gambit)</b>: Reduce all damage from an incoming ability targeting you or an adjacent ally by 2 per adjacent ally, as if from {{{{armor}}}}.",
+        "tier2": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: Reduce all damage from an incoming ability targeting you or an adjacent ally by 2 per adjacent ally, as if from {{{{armor}}}}.",
         "tier3": " Regain your Gambit when used if you or your ally are {{{{bloodied}}}}. However, it can’t be used more than twice a combat.",
         "tier4": "At the start of your turn, {{{{shove}}}} one ally in range 2 one space towards you, even diagonally.",
         "quest": "Find and smith the Primal Iron Soul, a legendary meteorite that fell deep in the blight lands."
@@ -104,16 +104,16 @@
         "colour": "yellow",
         "desc": "Your weapon is carved from supple but durable gaia wood, sharper than any metal.",
         "tier1": "Your attacks against foes standing next to an allied {{{{summon}}}} gain +1 {{{{boon}}}}.",
-        "tier2": "<b>Invoke (Attack, 11+)</b>: Move all allied {{{{summons}}}} in range 2 of you 1 space, ignoring all movement penalties. All foes adjacent to at least one allied {{{{summon}}}} that was moved this way then take 2 damage.",
+        "tier2": "<b>Invoke (</b>{{{{Attack}}}}<b>, 11+)</b>: Move all allied {{{{summons}}}} in range 2 of you 1 space, ignoring all movement penalties. All foes adjacent to at least one allied {{{{summon}}}} that was moved this way then take 2 damage.",
         "tier3": "It always costs at most 1 movement for you to enter the spaces of allied {{{{summons}}}}.",
-        "tier4": "<b>Invoke (Gambit)</b>: {{{{Free action}}}}: This turn only, entering the spaces of your allied {{{{summons}}}} costs at most 0 movement for you and allies.",
+        "tier4": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: This turn only, entering the spaces of your allied {{{{summons}}}} costs at most 0 movement for you and allies.",
         "quest": "Drink from the primeval Gaia pool."
     }, 
     {
         "name": "Gloam",
         "colour": "yellow",
         "desc": "This cloak or clothing appears to be made out of woven shadow. The cloth is richly textured.",
-        "tier1": "Invoke (Attack, 14+): {{{{Blind}}}} your foe. If your foe is already {{{{blinded}}}}, they take 2 damage.",
+        "tier1": "Invoke (</b>{{{{Attack}}}}<b>, 14+): {{{{Blind}}}} your foe. If your foe is already {{{{blinded}}}}, they take 2 damage.",
         "tier2": "+1 {{{{boon}}}} on attacks against {{{{blind}}}} targets.",
         "tier3": "{{{{Blind}}}} characters gain +1 {{{{curse}}}} on attacks against you, and you may {{{{dash}}}} 1 after they any ability they target with you resolves.",
         "tier4": " Any foe that starts or ends their turn adjacent to you and no other characters is {{{{blinded}}}}. {{{{Blinded}}}} foes take 2 damage.",
@@ -123,7 +123,7 @@
         "name": "Hermes",
         "colour": "yellow",
         "desc": "Intricate, curling silver wings are carved into this artifact, weapon, or armor.",
-        "tier1": "<b>Invoke (Gambit)</b>: {{{{Free action}}}}: {{{{Teleport}}}} 2.",
+        "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: {{{{Teleport}}}} 2.",
         "tier2": "When you use this relic’s Invoke, all other allies in range 2 of you can {{{{teleport}}}} 2 as well.",
         "tier3": "Increase range of all {{{{teleports}}}} granted by your abilities and as part of this relic by 1.",
         "tier4": "This relic’s invoke becomes: {{{{Free action}}}}: {{{{Teleport}}}} 1 space, then {{{{teleport}}}} 1 space. This {{{{teleport}}}} can be {{{{interrupted}}}} with other abilities.",
@@ -133,7 +133,7 @@
         "name": "Mistborn",
         "colour": "yellow",
         "desc": "Your weapon is made from seeping mist, and doesn’t seem to be entirely present.",
-        "tier1": "<b>Invoke (Gambit)</b>: {{{{Free action}}}}: Gain {{{{stealth}}}}.",
+        "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: Gain {{{{stealth}}}}.",
         "tier2": "Attacks from {{{{stealth}}}} deal {{{{bonus damage}}}}.",
         "tier3": "If you end your turn with no other foes or allies in range 2, gain {{{{stealth}}}}. If you already would gain {{{{stealth}}}}, {{{{dash}}}} 2.",
         "tier4": "{{{{Stealth}}}} now only breaks if you or an {{{{effect}}}} or {{{{summon}}}} you own deals damage to a foe.",
@@ -153,7 +153,7 @@
         "name": "Sleiphir",
         "colour": "yellow",
         "desc": "Odd wooden armor or a necklace of bones carved with the image of an eight legged horse.",
-        "tier1": "<b>Invoke (Gambit)</b>: {{{{Free action}}}}: {{{{Fly}}}} 2. This {{{{free action}}}} can {{{{interrupt}}}} abilities.",
+        "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: {{{{Fly}}}} 2. This {{{{free action}}}} can {{{{interrupt}}}} abilities.",
         "tier2": "Once a turn, after you end any {{{{flying}}}} movement on a lower {{{{elevation}}}} than you started, you can {{{{fly}}}} 1 again.",
         "tier3": "Increase all your {{{{flight}}}} effects by +1, including as part of this relic.",
         "tier4": "Your Invoke gambit can be taken twice a combat.",
@@ -166,7 +166,7 @@
         "tier1": "{{{{Evasion}}}} triggers for you on a 3+.",
         "tier2": "When you or an ally in range 2 successfully {{{{evades}}}} an attack, deal 2 damage to the attacker.",
         "tier3": "If you have {{{{evasion}}}}, you can also roll {{{{evasion}}}} for allies in range 2, but it only triggers on a 6.",
-        "tier4": "<b>Invoke (Gambit)</b>: Activate at the start of any turn. {{{{Effect}}}}: This turn only, your {{{{evasion}}}} is always successful.",
+        "tier4": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: Activate at the start of any turn. {{{{Effect}}}}: This turn only, your {{{{evasion}}}} is always successful.",
         "quest": "Beat the shadow of the Laughing God in a foot race. He cheats."
     }, 
     {
@@ -183,7 +183,7 @@
         "name": "Fragment of Iz",
         "colour": "yellow",
         "desc": "A shifting, crackling relic that seems out of sync with reality. Its color and shape seems to writhe and warp.",
-        "tier1": "<b>Invoke (Gambit)</b>: {{{{Free action}}}}: Gain {{{{phasing}}}} until the start of your next turn.",
+        "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: Gain {{{{phasing}}}} until the start of your next turn.",
         "tier2": "When you {{{{phase}}}} through a character, you may deal 2 damage to them. This effect can only trigger once a round for the same character.",
         "tier3": "While you have {{{{phasing}}}}, entering the space of other characters or objects costs a maximum of 1 movement for you.",
         "tier4": "You always have {{{{phasing}}}} when you {{{{dash}}}}.",
@@ -194,7 +194,7 @@
         "colour": "yellow",
         "desc": "A relic that most often takes the form of a crimson gauntlet. The surface is oddly slick.",
         "tier1": "All your attacks gain a new effect: {{{{Slay}}}}: {{{{Dash}}}} 2 after the ability resolves.",
-        "tier2": "<b>Invoke (Attack, 17+)</b>: Trigger any {{{{slay}}}} effects of your attack.",
+        "tier2": "<b>Invoke (</b>{{{{Attack}}}}<b>, 17+)</b>: Trigger any {{{{slay}}}} effects of your attack.",
         "tier3": "Increase Dominus I to {{{{dash}}}} 4.",
         "tier4": "Your {{{{slay}}}} effects also trigger if they reduce a character to at or below 25% hp.",
         "quest": "Beat another wielder of a Dominus relic in single combat."
@@ -204,7 +204,7 @@
         "colour": "green",
         "desc": "Goat horn engravings adorn this armor, weapon, or cloak, curling into intricate runes",
         "tier1": "When you refresh a {{{{stance}}}}, {{{{dash}}}} 1.",
-        "tier2": "<b>Invoke (Gambit)</b>: {{{{Effect}}}}: Refresh all your {{{{stances}}}}.",
+        "tier2": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Effect}}}}: Refresh all your {{{{stances}}}}.",
         "tier3": "On the first turn of combat, you may take any single {{{{stance}}}} that costs 1 action or less as a {{{{free action}}}}.",
         "tier4": "You can hold +1 more {{{{stance}}}} than normal.",
         "quest": "Find the resting place of the Wanderer Titan, take a splinter of one of their weapons, and reforge it."
@@ -223,7 +223,7 @@
         "name": "Esper",
         "colour": "green",
         "desc": "This gem is a void of space within. If you stare long enough, you can see stars.",
-        "tier1": "<b>Invoke (Attack, 16+)</b>: {{{{Cure}}}} a character in range 2 of your attack target.",
+        "tier1": "<b>Invoke (</b>{{{{Attack}}}}<b>, 16+)</b>: {{{{Cure}}}} a character in range 2 of your attack target.",
         "tier2": "Increase range of all {{{{cure}}}} effects by 2.",
         "tier3": "{{{{Cures}}}} can target foes and deal {{{{fray damage}}}} to them instead of any of its other effects.",
         "tier4": "{{{{Cures}}}} against foes gain {{{{true strike}}}} and {{{{pierce}}}}.",
@@ -245,7 +245,7 @@
         "desc": "This weapon emits a faint singing tone that can only be heard in a quiet room.",
         "tier1": "At the start of combat, gain 2 {{{{blessing}}}} tokens on yourself.",
         "tier2": "When you spend {{{{blessing}}}} tokens to gain a {{{{boon}}}} on a save against a {{{{status}}}}, it automatically clears the {{{{status}}}}, but no more than once a turn.",
-        "tier3": "<b>Invoke (Attack, 14+)</b>: {{{{Bless}}}} yourself after this attack resolves.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 14+)</b>: {{{{Bless}}}} yourself after this attack resolves.",
         "tier4": "The III effect also {{{{blesses}}}} an ally in range 3 when it triggers.",
         "quest": "Recover a genuine page fragment of the legendary Tale of Ages."
     }, 	
@@ -254,8 +254,8 @@
         "colour": "green",
         "desc": "This armor is wrapped in knotted holy cords and imagery of the sea during a storm.",
         "tier1": "At the end of any turn you didn’t attack, you may gain a {{{{combo}}}} token, or spend one to {{{{dash}}}} 1.",
-        "tier2": "WWhen you spend a {{{{combo}}}} token on an ability, you may deal 2 damage again to one of its targets, but only once per ability.",
-        "tier3": " You can expend {{{{combo}}}} tokens from any allies in range 2. Allies can also spend your {{{{combo}}}} tokens as long as they are in range 2.",
+        "tier2": "When you spend a {{{{combo}}}} token on an ability, you may deal 2 damage again to one of its targets, but only once per ability.",
+        "tier3": "You can expend {{{{combo}}}} tokens from any allies in range 2. Allies can also spend your {{{{combo}}}} tokens as long as they are in range 2.",
         "tier4": "You can keep two {{{{combo}}}} tokens.",
         "quest": "Ride the lightning to the palace of clouds and learn from the teachings of the long-dead Storm Lord."
     },
@@ -273,19 +273,19 @@
         "name": "Chime",
         "colour": "green",
         "desc": "This symbol of a bell shines with gentle power. A soft ringing can be heard in its presence, but only when it’s very quiet.",
-        "tier1": "<b>Invoke (Gambit)</b>: {{{{Pacify}}}} a foe in range 5.",
+        "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Pacify}}}} a foe in range 5.",
         "tier2": "You are {{{{immune}}}} to {{{{statuses}}}} caused by {{{{pacified}}}} foes.",
         "tier3": "Damage from your non-attack abilities does not break {{{{pacified}}}}.",
-        "tier4": "<b>Invoke (Gambit)</b>: When you {{{{pacify}}}} a foe, you or an ally in range 2 gains 3 {{{{vigor}}}}.",
+        "tier4": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: When you {{{{pacify}}}} a foe, you or an ally in range 2 gains 3 {{{{vigor}}}}.",
         "quest": "Ring the old temple bell of the hidden thirteenth chamber of the chroniclers."
     },
     {
         "name": "Gilded Finger",
         "colour": "green",
         "desc": "A golden finger of a saint or holy icon - real or carved - set into armor or weaponry.",
-        "tier1": "<b>Invoke (Gambit)</b>: {{{{Free action}}}}: You gain {{{{aura}}}} 1 until the end of your next turn. Foes inside the {{{{aura}}}} gain +1 {{{{curse}}}} on attacks, and allies gain +1 {{{{boon}}}} on attacks.",
+        "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: You gain {{{{aura}}}} 1 until the end of your next turn. Foes inside the {{{{aura}}}} gain +1 {{{{curse}}}} on attacks, and allies gain +1 {{{{boon}}}} on attacks.",
         "tier2": "Your gambit {{{{aura}}}} also gives foes +1 {{{{curse}}}} on saves, and grants allies +1 {{{{boon}}}} on saves.",
-        "tier3": "<b>Invoke (Attack, 14+)</b>: You may immediately activate your gambit {{{{aura}}}}.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 14+)</b>: You may immediately activate your gambit {{{{aura}}}}.",
         "tier4": "The effects of your {{{{auras}}}} may also extend to characters adjacent to the {{{{auras}}}}, even if they are not inside.",
         "quest": "Retrieve one of the thirteen forbidden Arks - holy reliquaries from before the Doom thought to be lost to time."
     },
@@ -293,9 +293,9 @@
         "name": "Silver Rabbit",
         "colour": "green",
         "desc": "A beautiful relic inlaid with a shining silver coin, embalmed with the image of the smiling Moon Titan, Tsumi.",
-        "tier1": "<b>Invoke (Gambit)</b>: {{{{Free action}}}}: {{{{Gamble}}}}, then {{{{dash}}}} exactly that far in a straight line.",
+        "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: {{{{Gamble}}}}, then {{{{dash}}}} exactly that far in a straight line.",
         "tier2": "After using this relic’s gambit, you may also deal that much damage to a foe in range 3.",
-        "tier3": "<b>Invoke (Attack, 16+)</b>: The next {{{{gamble}}}} you make can be any number from from 1 to 6.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 16+)</b>: The next {{{{gamble}}}} you make can be any number from from 1 to 6.",
         "tier4": "Silver Rabbit III can also be used on any single {{{{boon}}}} or curse die as part of your abilities, or any ability used against you.",
         "quest": "Travel to Arden Eld’s moon."
     },
@@ -305,7 +305,7 @@
         "desc": "Coiling serpents cradle the hilt of this weapon or curl around the base of this necklace.",
         "tier1": "At the start of your turn, create a poison pool {{{{dangerous terrain}}}} space in free space adjacent to you.",
         "tier2": "You are {{{{immune}}}} to {{{{dangerous terrain}}}}. If you start your turn in a {{{{dangerous terrain}}}} space, you may deal 1 {{{{piercing}}}} damage to all adjacent characters.",
-        "tier3": "<b>Invoke (Attack, 12+)</b>: Create a poison pool {{{{dangerous terrain}}}} space under your attack target after the ability resolves.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 12+)</b>: Create a poison pool {{{{dangerous terrain}}}} space under your attack target after the ability resolves.",
         "tier4": "When you damage foes standing in {{{{dangerous terrain}}}}, it gains {{{{piercing}}}}.",
         "quest": "Infuse your relic with three scales of the ancient Wyrm Nidhogg."
     },
@@ -316,7 +316,7 @@
         "tier1": "<b>Gain trait</b>: <i>Domain</i>: When you create a {{{{terrain effect}}}} or object, you can place your <i>Domain</i> over one of its spaces, a small blast {{{{terrain effect}}}}. Using this trait again moves the Domain instead of creating a new one.  Gain +1 {{{{boon}}}} on attacks against foes in your Domain.",
         "tier2": "Foes that end their turn in your Domain take 1 {{{{piercing}}}} damage.",
         "tier3": "{{{{Dangerous terrain}}}} deals +1 more damage to foes inside your Domain. {{{{Difficult terrain}}}} costs 2 spaces for foes to exit instead of 1.",
-        "tier4": "<b>Invoke (Round 4+)</b>: Your Domain becomes {{{{difficult}}}} and {{{{dangerous}}}} terrain for foes.",
+        "tier4": "<b>Invoke (</b>{{{{Round}}}}<b> 4+)</b>: Your Domain becomes {{{{difficult}}}} and {{{{dangerous}}}} terrain for foes.",
         "quest": "Gain a gemstone for your Domain relic from a ruler (dead or living)."
     },
     {
@@ -333,7 +333,7 @@
         "name": "Pleiades",
         "colour": "blue",
         "desc": "A set of six star-diamonds, flickering with a distance light, set into earrings or a neck piece.",
-        "tier1": "<b>Invoke (Attack, 11+)</b>: Create an icy patch of {{{{difficult terrain}}}} under your attack target.",
+        "tier1": "<b>Invoke (</b>{{{{Attack}}}}<b>, 11+)</b>: Create an icy patch of {{{{difficult terrain}}}} under your attack target.",
         "tier2": "You are {{{{immune}}}} to {{{{difficult terrain}}}}. If you start your turn in a {{{{difficult terrain}}}} space, you can create an icy patch of {{{{difficult terrain}}}} in a free adjacent space, including under characters.",
         "tier3": "Once a round, when you enter a {{{{difficult terrain}}}} space, you can slide and {{{{shove}}}} yourself 2 in the direction of your movement.",
         "tier4": "During Pleaides III’s slide, If you {{{{collide}}}} with a character, deal 2 damage to them and create an icy {{{{difficult terrain}}}} space under them.",
@@ -346,7 +346,7 @@
         "tier1": "Increase the listed range of all your abilities by +1.",
         "tier2": "Your attacks with a range gain {{{{rebound}}}}. The {{{{rebounded}}}} ability has a maximum range of 3.",
         "tier3": "When you bounce an attack, the attack explodes on its new target, creating a small blast {{{{area effect}}}} on them that deals 1 {{{{piercing}}}} damage to all characters, including the new target.",
-        "tier4": "<b>Invoke (Round 4+)</b>: Skipjack attacks can bounce twice, exploding each time. Characters can only be damage by one explosion.",
+        "tier4": "<b>Invoke (</b>{{{{Round}}}}<b> 4+)</b>: Skipjack attacks can bounce twice, exploding each time. Characters can only be damage by one explosion.",
         "quest": "Find and use the workshop of the Forge Titan in the heart of Arden Eld."
     },
     {
@@ -355,7 +355,7 @@
         "desc": "Coiling thorns have been set into this ranged weapon. The barbs sometimes curl towards your flesh.",
         "tier1": "Deal {{{{bonus damage}}}} if a character is at maximum range of your ranged attack or in the end space of a line or arc {{{{area effect}}}}.",
         "tier2": "Also gains {{{{unerring}}}} if a character is at maximum range.",
-        "tier3": "<b>Invoke (Gambit)</b>: Set the range and/or area of your next arc, line, or ranged attack to any number between 1 and 6.",
+        "tier3": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: Set the range and/or area of your next arc, line, or ranged attack to any number between 1 and 6.",
         "tier4": "Tower of Barbs III invoke becomes between 1 and 8, and can be used twice a combat.",
         "quest": " Climb to the top floor of the legendary dungeon the Tower of Barbs."
     },
@@ -365,7 +365,7 @@
         "desc": "This relic has a contorted shape set into at - an impossible geometry that confounds the mind.",
         "tier1": "You may cause any of your attack with {{{{area effects}}}} to include in the area any {{{{Pit}}}} spaces connected to them by adjacency, even diagonally.",
         "tier2": "You can ignore movement and {{{{height}}}} penalties from {{{{pits}}}}.",
-        "tier3": "<b>Invoke (Attack, 11+)</b>: Create a {{{{pit}}}} space in a free space adjacent to a target of your attack.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 11+)</b>: Create a {{{{pit}}}} space in a free space adjacent to a target of your attack.",
         "tier4": "When you move, you can spend 1 space of movement to {{{{teleport}}}} from any {{{{pit}}}} into any other {{{{pit}}}} in range 3, but no more than once a turn.",
         "quest": "Enter the Eternal Maze - a dangerous pocket dimension, and escape with its secrets."
     },
@@ -383,10 +383,10 @@
         "name": "Conquering King",
         "colour": "blue",
         "desc": "This relic has a regal bearing, with imagery of lightning bolts made of wrought gold.",
-        "tier1": "<b>Invoke (5th Round+)</b> - All abilities deal {{{{bonus damage}}}}.",
-        "tier2": "<b>Invoke (7th Round+)</b> - All attacks become {{{{critical hits}}}} on hit.",
-        "tier3": "<b>Invoke (Attack, 18+)</b> - Lower your threshold for any effects that rely on round number by 1, this combat only. This effect can stack multiple times. This applies to all abilities, traits, and relics.",
-        "tier4": "Conquering King III becomes <b>Invoke (Attack, 15+)</b>.",
+        "tier1": "<b>Invoke (5th </b>{{{{Round}}}}<b>+)</b> - All abilities deal {{{{bonus damage}}}}.",
+        "tier2": "<b>Invoke (7th </b>{{{{Round}}}}<b>+)</b> - All attacks become {{{{critical hits}}}} on hit.",
+        "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 18+)</b> - Lower your threshold for any effects that rely on round number by 1, this combat only. This effect can stack multiple times. This applies to all abilities, traits, and relics.",
+        "tier4": "Conquering King III becomes <b>Invoke (</b>{{{{Attack}}}}<b>, 15+)</b>.",
         "quest": "Find and commune with an entrance to the Highest House, the divine realm where the creators of the world are said to sleep."
     },
     {
@@ -394,9 +394,9 @@
         "colour": "blue",
         "desc": "This relic has inlays of pale bone, intricately carved. When infused, the inlays light up.",
         "tier1": "At the start of combat, gain a d4 {{{{power die}}}}, starting at 1. Tick it up by 1 at the end of each round. When the die is 4, you may expend it when you use any ability, discarding it, to grant that ability {{{{bonus damage}}}} and trigger <i>all</i> of the following triggered effects: {{{{charge}}}}, {{{{collide}}}}, {{{{comeback}}}}, {{{{chain reaction}}}}, {{{{exceed}}}}, {{{{finishing blow}}}}, {{{{slay}}}}.",
-        "tier2": "<b>Invoke (Attack, 16+)</b>: Tick a {{{{power die}}}} you have up or down by 1.",
+        "tier2": "<b>Invoke (</b>{{{{Attack}}}}<b>, 16+)</b>: Tick a {{{{power die}}}} you have up or down by 1.",
         "tier3": "Your {{{{power die}}}} is not expended but resets to 1.",
-        "tier4": "<b>Invoke</b> becomes <b>(Attack, 12+)</b>.",
+        "tier4": "<b>Invoke</b> becomes <b>(</b>{{{{Attack}}}}<b>, 12+)</b>.",
         "quest": "Slay a powerful monster and find a smith willing to work with its bones."
     }
 ]
