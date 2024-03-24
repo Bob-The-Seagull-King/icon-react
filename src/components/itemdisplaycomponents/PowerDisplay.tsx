@@ -1,6 +1,7 @@
 import React from 'react'
 import { capitalizeTag } from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
+import { convertStringToContent } from '../../utility/util';
 
 const PowerDisplay = (props: any) => {
     const powerinfo = props.data;
