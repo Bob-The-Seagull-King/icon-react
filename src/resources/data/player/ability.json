@@ -52,7 +52,7 @@
             {"tag_name": "basic"},
             {"tag_name": "action", "val": 1}
         ],
-        "description": "<i>Rescue</i> an adjacent {{{{defeated}}}} ally. An ally that is rescued ends the {{{{incapacitated}}}} state on themselves and heals to full hit points, minus any wounds they’ve taken.",
+        "description": "<i>Rescue</i> an adjacent {{{{defeated}}}} ally. An ally that is rescued ends the {{{{incapacitated}}}} state on themselves and heals to full hit points, minus any {{{{wounds}}}} they’ve taken.",
         "blurb": "",
         "talent1": "NA",
         "talent2": "NA",
@@ -358,7 +358,7 @@
         "tags":[
             {"tag_name": "action", "val": 1},
 			{"tag_name": "delay"},
-			{"tag_name": "terrain effect"}
+			{"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{End your turn}}}} and gain {{{{Terrain Effect}}}}: Mark out a burst 2 (self) area, then gain {{{{Delay}}}}: Your {{{{next turn must be slow}}}}, but at the start of that turn, the trigram activates.<ul><li>When the trigram activates, all foes inside are weakened.</li><li>While active, any foes that attempt to exit the terrain effect during any turn must first pass a save, or become unable to do so until the start of their next turn. If they are moving, they don’t lose their movement but can’t consider the area outside valid space to move to.</li><li>This area lasts until this ability is used again.</li></ul>{{{{Heroic}}}}: The area has {{{{rampart}}}} and foes in the are when it activates take {{{{fray damage}}}}.<br>Listed terms: {{{{weakened}}}}",
         "blurb": "Using dark arts, you summon up a sliver of the demon world, blocking out a dark arena that traps enemies in its web.",
@@ -516,7 +516,7 @@
         "talent1":"While Defy Death is active, all abilities also trigger all {{{{exceed}}}} effects.",
         "talent2":"You can {{{{rush}}}} or {{{{fly}}}} 1 before using any ability while Defy Death is active.",
         "masteryname":"GREAT HEMON",
-        "masterdescription":"When Defy Death would expire, you can take a wound to extend the duration by 1 turn. This effect can only be triggered once per combat."
+        "masterdescription":"When Defy Death would expire, you can take a {{{{wound}}}} to extend the duration by 1 turn. This effect can only be triggered once per combat."
     },
     {
         "job": "Knave",
@@ -741,7 +741,7 @@
         "chapter": 1,
         "tags":[
             {"tag_name": "action", "val": 1},
-			{"tag_name": "terrain effect"}
+			{"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{Terrain Effect}}}}: You throw an explosive mine into a free space in range 3. When any character enters the space, the mine explodes with a medium blast {{{{area effect}}}} centered on it. When activated, {{{{gamble}}}} to see the effects, which stack. Then, the mine is destroyed, ending the {{{{terrain effect}}}}.<ul><li>1-3: Yourself and allies in the area fly 1. Foes take 2 damage.</li><li>4-5: Foes are additionally <i>blinded</i>.</li><li>6: Yourself and allies also gain <i>stealth</i>.</li></ul>{{{{Finishing Blow}}}}: Foes take 2 damage, twice.<br>Listed terms: {{{{fly}}}}, {{{{blinded}}}}, {{{{stealth}}}}",
         "blurb": "The Fool’s arsenal is deep, their mirth infinite, and their ability to turn nearly anything into an explosive is legendary.",
@@ -1145,7 +1145,7 @@
         "tags":[
             {"tag_name": "action", "val": 1},
             {"tag_name": "range", "val": 3},
-			{"tag_name": "terrain effect"},
+			{"tag_name": "{{{{terrain effect}}}}"},
 			{"tag_name": "summon"}
 		],
         "description": "{{{{Terrain Effect}}}}: Create small blast misty cloud in free space in range, with the following effects:<ul><li>The spaces of the area always cost a maximum of 1 movement for you and allies to move across, and characters have <i>phasing</i> while moving this way.</li><li>Foes inside are blinded+</li></ul>Clouds created with this ability last until this ability is used again.<br>{{{{Charge}}}}: Create a second cloud.<br>{{{{Summon}}}}: At the start of your turn, you can consume a cloud as a {{{{free action}}}} to condense it into a fey creature, summoning a <i>beast</i> in any of its spaces and ending this effect.<br>Listed terms: {{{{phasing}}}}, {{{{blinded}}}}, {{{{ongoing (+)}}}}",
@@ -1194,7 +1194,7 @@
         "chapter": 2,
         "tags":[
             {"tag_name": "action", "val": 1},
-			{"tag_name": "terrain effect"}
+			{"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{Terrain Effect}}}}: Create a leafy portal object in a free adjacent space. At the end of your turn, create another portal in a free adjacent space. Portals last until this ability is used again. Portals don’t provide {{{{obstruction}}}} and can’t stack or be stacked on other objects.<br>{{{{Charge}}}}: Summon a beast each time you create an underway this turn.",
         "blurb": "You open the greenways to your allies, allowing them to step the branch-paths and cross distances in an instant.",
@@ -1453,12 +1453,12 @@
         "tags":[
             {"tag_name": "action", "val": 2},
             {"tag_name": "range", "val": 2},
-			{"tag_name": "terrain effect"},
+			{"tag_name": "{{{{terrain effect}}}}"},
 			{"tag_name": "summon"}
         ],
         "description": "{{{{Terrain Effect}}}}: Grow a <i>medium blast</i> area of undergrowth, with its center space in range. The area is {{{{dangerous terrain}}}} for foes and disappears if you use this ability again.<br>{{{{Effect}}}}: As long as you are in the area, {{{{summon}}}} a <i>thrall</i> in or adjacent to the area at the end of your turn for each of these conditions you fulfilled this turn:<ul><li>Triggered a <i>slay</i> effect</li><li><i>Sacrificed</i> as part of an ability</li><li>Are bloodied</li></ul>Each condition can only trigger once.<br>Listed terms: {{{{slay}}}}, {{{{sacrificed}}}}, {{{{bloodied}}}}",
         "blurb": "The wilderness boils with explosive growth, fed by the blood of the battlefield.",
-        "talent1": "All spaces of the area cost 0 movement for thralls to enter.",
+        "talent1": "All spaces of the area cost 0 movement for {{{{thralls}}}} to enter.",
         "talent2": "Once on your turn you, while inside the area, you can {{{{sacrifice}}}} 2 to extend the area by 2 spaces, adding to its total area on any edge.",
         "masteryname": "HUNGRY GROVE",
         "masterdescription": "Each time you {{{{summon}}}} a thrall with Blood Grove, extend the area by 1 space, added to its total area, as long as those spaces are placed adjacent to the area when the effect is triggered."
@@ -1475,7 +1475,7 @@
         ],
         "description": "{{{{Mark}}}}: Mark a foe in range. While marked, that character cannot be {{{{cured}}}}, cannot gain or benefit from {{{{vigor}}}}, and gains +1 {{{{curse}}}} on saves. If that character is at 25% hp or lower when marked, they also lose {{{{defiance}}}}.",
         "blurb": "Leaves shrivel. Hair Curls. Wounds fail to heal.",
-        "talent1": "Characters {{{{marked}}}} by Regenerate gain {{{{comeback}}}}: {{{{summon}}}} a <i>plant</i> in an adjacent space at the start of their turn.",
+        "talent1": "Characters {{{{marked}}}} by Regenerate gain {{{{comeback}}}}: {{{{summon}}}} a {{{{plant}}}} in an adjacent space at the start of their turn.",
         "talent2": "Foes that start their turn adjacent to a character {{{{marked}}}} by Rot take 2 {{{{piercing}}}} damage.",
         "masteryname": "REGROWTH",
         "masterdescription": "Gain an alternate {{{{combo}}}} action:"
@@ -1505,7 +1505,7 @@
         "tags":[
             {"tag_name": "action", "val": 1},
 			{"tag_name": "end turn"},
-			{"tag_name": "terrain effect"}
+			{"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{Terrain Effect}}}}: {{{{End your turn}}}} and create a ring of mushrooms, a burst 2 (self) {{{{terrain effect}}}}. The ring can be created overlapping any terrain and underneath characters. While the ring is active, gain the following {{{{interrupt}}}}. The ring lasts until this ability is used again.",
         "blurb": "You cast out a handful of aether-feeding fungi, holy spores that grow into a ringed garden of colorful and deadly mushrooms.",
@@ -1788,7 +1788,7 @@
 			{"tag_name": "range", "val": 6},
 			{"tag_name": "delay"},
 			{"tag_name": "end turn"},
-			{"tag_name": "terrain effect"}
+			{"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{End your turn}}}} and create a {{{{Terrain Effect}}}}: Create a burning brand of star fire in range, {{{{dangerous terrain}}}}, then gain {{{{delay}}}}: Your {{{{next turn must be slow}}}}. At the start of that turn, check if there is a character standing in that space:<ul><li>If there is, that character takes 2 divine damage and is <i>sealed</i>.</li><li>If there isn’t, it explodes for a large blast <i>area effect</i> centered on that space, scattering star fire everywhere. All characters in the area take 2 divine damage, and create a space of dangerous terrain under every foe in the area.</li></ul>Then, end the effect.<br>Listed terms: {{{{divine}}}}, {{{{sealed}}}}, {{{{area effect}}}}, {{{{dangerous terrain}}}}",
         "blurb": "No blurb.",
@@ -2180,7 +2180,7 @@
         "tags":[
             {"tag_name": "action", "val": 1},
             {"tag_name": "range", "val": 4},
-            {"tag_name": "terrain effect"}
+            {"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{Terrain Effect}}}}: Swipe your weapon to create a line 3 area of crackling winds in range, with the following features:<ul><li>The area is <i>difficult terrain</i></li><li>Allies may use any space of the area for <i>cover</i> as if it were height 1 terrain.</li><li>Foes that end their turn in the area are <i>shattered</i>.</li><li>Once a round, when you include any space of the atherwand in an area effect, you can infuse the triggering ability with stormy power, teleporting all characters targeted by that ability and any characters in the wall 1 space.</li></ul>The area lasts until created again.<br>Listed terms: {{{{difficult terrain}}}}, {{{{cover}}}}, {{{{height}}}}, {{{{shattered}}}},{{{{area effect}}}}, {{{{teleporting}}}}",
         "blurb": "You summon the highwinds to batter your foes.",
@@ -2287,7 +2287,7 @@
         "chapter": 1,
         "tags":[
             {"tag_name": "action", "val": 2},
-            {"tag_name": "terrain effect"}
+            {"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{Terrain Effect}}}}: Create a huge swell of elemental water. The area is a medium blast {{{{terrain effect}}}} that is {{{{difficult}}}} and {{{{dangerous}}}} terrain that you may place anywhere as long as its edge is adjacent to an edge of the map.<br/><br/>When you use this ability, choose another edge of the map. When you use this ability, and at the start of each of your turns, your tsunami moves 4 spaces in a straight line towards that edge. When a space of the tsunami would move off the map, the effect ends.<br/><br/>Any non-{{{{flying}}}} characters in Tsunami when it moves are dragged with it, shoving them. If they are blocked by {{{{obstructions}}}}, they {{{{collide}}}} which could cause Tsunami to move on without them<br/><br/>{{{{Collide}}}}: Character is {{{{shattered}}}}.<br/><br/>All your Tsunamis disappear if you use this ability again, or they reach an edge of the map.",
         "blurb": "The stormbenders can ride swells of water as easily as any terrestrial steed. For those not as gifted, the experience is less pleasant.",
@@ -2333,7 +2333,7 @@
         "name": "Gust",
         "chapter": 1,
         "tags":[
-            {"tag_name": "terrain effect"}
+            {"tag_name": "{{{{terrain effect}}}}"}
         ],
         "description": "{{{{Terrain Effect}}}}: Create a line 3 terrain effect. Characters that enter any end space of the line gain {{{{phasing}}}}, then are {{{{shoved}}}} to the other end space of the line, or as far as possible. Once they stop, they are flung out and {{{{shoved}}}} 1 in a direction of your choice outside of the area. Characters entering a middle space can be {{{{shoved}}}} in a direction of your choice.<br/>{{{{Collide}}}}: Character releases a wind blast as a burst 1 {{{{area effect}}}} centered on them, shoving all characters inside 1 space away from them and dealing 2 {{{{piercing}}}} damage.<br/><br/>The area is replaced if this ability is used again.",
         "blurb": "The stormbenders are friend to breeze and gale, and have learned how to coax the wind into doing their bidding.",
