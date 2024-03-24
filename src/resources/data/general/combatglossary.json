@@ -62,7 +62,7 @@
     },
     {
         "name": "Boon",
-		"variants": ["+1d", "bonus die", "bonus dice"
+		"variants": ["+1d", "bonus die", "bonus dice", "boons"
         ],
         "tags": [
             {"tag_name": "general"}
@@ -141,7 +141,7 @@
     },
     {
         "name": "Curse",
-		"variants": ["-1d", "die penalty", "dice penalties"
+		"variants": ["-1d", "die penalty", "dice penalties", "curses"
         ],
         "tags": [
             {"tag_name": "general"}

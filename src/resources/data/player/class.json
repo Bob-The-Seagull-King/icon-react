@@ -41,7 +41,7 @@
                 "name": "Bastion",
                 "tagline": "Unbreakable Knight",
                 "description": "The Bastions are the shield lords of Arden Eld, larger than life figures that tread the ancient imperial roads with their heads held high and armor gleaming. From town to town they act as errant knights and mercenaries, protecting the weak and vulnerable, and driving back the Blights with hammer-like blows from their greatshields, which they throw like a discus with incredible force. The imperious and mighty presence of a Bastion in town is a stabilizing force and can become an event for a whole village. All Bastions follow an ancient and long-forgotten hero’s code, an old oath to stand against chaos in all its forms.",
-                "playstyle": "Bastions are powerful knights and tacticians and focus on {{{{shoving}}}} their enemies and moving their allies into position with their <i>Press the Advantage</i> trait. Almost everything they do changes the shape of the battlefield in some way, and they get extra benefits for smashing foes into obstacles or other characters with {{{{collide}}}}. They benefit from good positioning, since {{{shoves}}}} typically have to be away from you.<br/><br/>Bastions also have a fair number of {{{interrupts}}}} and can react off their turn to enemy actions, and also benefit from {{{{auras}}}}.<br/><br/>Their Limit Break, <b>Helion</b>, is relatively cheap, but can rearrange everyone's position and can potentially {{{{stun}}}} and {{{{daze}}}} a huge number of foes.",
+                "playstyle": "Bastions are powerful knights and tacticians and focus on {{{{shoving}}}} their enemies and moving their allies into position with their <i>Press the Advantage</i> trait. Almost everything they do changes the shape of the battlefield in some way, and they get extra benefits for smashing foes into obstacles or other characters with {{{{collide}}}}. They benefit from good positioning, since {{{{shoves}}}} typically have to be away from you.<br/><br/>Bastions also have a fair number of {{{{interrupts}}}} and can react off their turn to enemy actions, and also benefit from {{{{auras}}}}.<br/><br/>Their Limit Break, <b>Helion</b>, is relatively cheap, but can rearrange everyone's position and can potentially {{{{stun}}}} and {{{{daze}}}} a huge number of foes.",
                 "traits": [
                     {
                         "name": "Strive",
@@ -63,7 +63,7 @@
                 "limitbreak": {
                     "name": "Helion",
                     "blurb":"Your shield becomes the sun: a discus of light and motion, shattering enemy ranks and spurring allies forth.",
-                    "description": "{{{{Effect}}}}: You hurl your shield, and every character on the battlefield is {{{shoved}}}} 1 space in a direction of your choice. You may {{{shove}}}} in any order, and may choose different directions for each character. <br> {{{{Effect}}}}: {{{{Bloodied}}}} foes are {{{{weakened}}}}. Foes at 25% hp or lower are {{{{stunned}}}}.",
+                    "description": "{{{{Effect}}}}: You hurl your shield, and every character on the battlefield is {{{{shoved}}}} 1 space in a direction of your choice. You may {{{{shove}}}} in any order, and may choose different directions for each character. <br> {{{{Effect}}}}: {{{{Bloodied}}}} foes are {{{{weakened}}}}. Foes at 25% hp or lower are {{{{stunned}}}}.",
                     "tags":[
                         {"tag_name": "resolve", "val": 2}, 
                         {"tag_name": "action", "val": 1} 
@@ -77,7 +77,7 @@
                     "name" : "Black Rock Vanguard",
                     "tags":[
                     ],
-                    "description": "You can take any number of {{{interrupts}}}} per turn. When you take an interrupt, you may {{{{rush}}}} 1 after it resolves."
+                    "description": "You can take any number of {{{{interrupts}}}} per turn. When you take an interrupt, you may {{{{rush}}}} 1 after it resolves."
                 }
             },
             {
@@ -152,7 +152,7 @@
                 ],
                 "limitbreak": {
                     "name": "Gigantas Crusher",
-                    "blurb":"Wrestle with the gods themselves",
+                    "blurb":"Wrestle with the gods themselves.",
                     "description": "{{{{Effect}}}}: You grab an adjacent character. That character must save. Even if that character saves successfully, you grab them, and you both soar into the air. Remove both of you from the battlefield. At the start of that character's turn, you come spinning back to earth, slamming that character into the battlefield in an unoccupied space in range 2 of your original location. <br/>You {{{{sacrifice}}}} 25% of your hp. Your foe takes 50% of their max hp as {{{{divine}}}} damage, or 25% as {{{{divine}}}} damage on a successful save. Then place both of you back in or adjacent to that space. <br/>This ability can be used against Legends, but they may always save, taking {{{{divine}}}} {{{{fray}}}} damage on refunding this ability's resolve cost on a successful save, and only 25% hp as {{{{divine}}}} damage on a failed save.",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
@@ -176,7 +176,7 @@
                 "name": "Knave",
                 "tagline": "Absolute Bastard",
                 "description": "The advent of the Churning Age has coincided with the rise of a certain class of person with heavy pockets and a long list of ‘problems’ to solve. The Knaves are the solution. Hedge knights, rogue warriors, duelists, deserters, and veterans, they roam the land offering their services to whoever has the dust to spare. Though some of them are altruistically minded, they tend to go where the work, food, and fighting is thickest, and never stay for long in one location. <br/><br/> Knaves operate under a loose moral code and an even looser no-holds-barred fighting style, using hilts, head butts, and gauntleted fists to inflict pain, punishment, and humiliation on their opponents in equal measure. These braggadocios warriors spare no effort in flexing their incredible strength - if the price is right. For a freshly roasted chicken, a pocket full of dust, and a polish of their boots, they’ll do just about anything.",
-                "playstyle": "Knaves are dark knights, mercenaries, and dirty fighters that have the easiest access to the very powerful {{{{hatred}}}} condition. They have numerous ways to punish foes that take the bait, such as {{{{counter}}}} and a suite of nasty {{{interrupts}}}}. They becomes stronger the more foes are around them and love being surrounded.<br/><br/>Knaves become more powerful when they are <b>suffering</b> {{{{statuses}}}}, and even have ways to inflict {{{{statuses}}}} on themselves, which they can then ignore by becoming {{{{unstoppable}}}}. They also have the unique ability to take two {{{{stances}}}} at once, allowing them to stack very powerful effects. <br/><br/>Knave's limit break, <b>Mock</b>, is a strong single target debuff, and makes it very hard for a foe to do anything but stand and focus on you.",
+                "playstyle": "Knaves are dark knights, mercenaries, and dirty fighters that have the easiest access to the very powerful {{{{hatred}}}} condition. They have numerous ways to punish foes that take the bait, such as {{{{counter}}}} and a suite of nasty {{{{interrupts}}}}. They becomes stronger the more foes are around them and love being surrounded.<br/><br/>Knaves become more powerful when they are <b>suffering</b> {{{{statuses}}}}, and even have ways to inflict {{{{statuses}}}} on themselves, which they can then ignore by becoming {{{{unstoppable}}}}. They also have the unique ability to take two {{{{stances}}}} at once, allowing them to stack very powerful effects. <br/><br/>Knave's limit break, <b>Mock</b>, is a strong single target debuff, and makes it very hard for a foe to do anything but stand and focus on you.",
                 "traits": [
                     {
                         "name": "Martial Master",
@@ -205,7 +205,7 @@
                     ],
                     "ultimate":{
                         "name": "Dread Mock",
-                        "desc": "Gains range 5 and also deals {{{{divine}}}} {{{{fray}}}} damage to your foe."
+                        "desc": "Gains range 5 and also deals {{{{divine}}}} {{{{fray damage}}}} to your foe."
                     }
                 },
                 "ultimatetrait":{
@@ -275,7 +275,7 @@
                     },
                     {
                         "name": "Cheap Trick",
-                        "desc": "When an attack misses you, you may {{{{teleport}}}} 1 space, then leave a <i>bomb</i> {{{{summon}}}} in an adjacent space."
+                        "desc": "When an attack misses you, you may {{{{teleport}}}} 1 space, then leave a {{{{bomb}}}} {{{{summon}}}} in an adjacent space."
                     },
                     {
                         "name": "Stack Dice",
@@ -295,7 +295,7 @@
                     ],
                     "ultimate":{
                         "name": "Ultima Curtain Call",
-                        "desc": "After this ability resolves, summon half as many bomb {{{{summons}}}} as your {{{{gamble}}}}> result anywhere on the battlefield."
+                        "desc": "After this ability resolves, summon half as many {{{{bomb}}}} {{{{summons}}}} as your {{{{gamble}}}} result anywhere on the battlefield."
                     }
                 },
                 "ultimatetrait":{
@@ -313,7 +313,7 @@
                 "traits": [
                     {
                         "name": "Bound Spirit",
-                        "desc": "At the start of combat, you may place your <i>seraph</i> in range 2 from you. This {{{{summon}}}} persists even if you're {{{{defeated}}}}."
+                        "desc": "At the start of combat, you may place your {{{{seraph}}}} in range 2 from you. This {{{{summon}}}} persists even if you're {{{{defeated}}}}."
                     },
                     {
                         "name": "Aether Shot",
@@ -365,11 +365,11 @@
                     },
                     {
                         "name": "Darkside",
-                        "desc": "When you first vacate a space on your turn, you may leave a <i>shadow</i> {{{{summon}}}}."
+                        "desc": "When you first vacate a space on your turn, you may leave a {{{{shadow}}}} {{{{summon}}}}."
                     },
                     {
                         "name": "Meld",
-                        "desc": "Once a round, before or after using any ability on your turn, you can swap places with any <i>shadow</i> {{{{summon}}}} in range 3, {{{{teleporting}}}}."
+                        "desc": "Once a round, before or after using any ability on your turn, you can swap places with any {{{{shadow}}}} {{{{summon}}}} in range 3, {{{{teleporting}}}}."
                     }
                 ],
                 "limitbreak": {
@@ -382,14 +382,14 @@
                     ],
                     "ultimate":{
                         "name": "Ultima Ecstasy",
-                        "desc": "Summon <i>shadow</i> {{{{summons}}}} adjacent to all allies."
+                        "desc": "Summon {{{{shadow}}}} {{{{summons}}}} adjacent to all allies."
                     }
                 },
                 "ultimatetrait":{
                     "name" : "Umbral Soul",
                     "tags":[
                     ],
-                    "description": "Once a round, one of your allies can swap places with any of your shadows before or after using any ability, {{{{teleporting}}}}."
+                    "description": "Once a round, one of your allies can swap places with any of your {{{{shadows}}}} before or after using any ability, {{{{teleporting}}}}."
                 }
             },
             {
@@ -400,7 +400,7 @@
                 "traits": [
                     {
                         "name": "Beast Master",
-                        "desc": "At the start of every combat, summon a <i>great beast</i> in range 2, a trained animal companion. This {{{{summon}}}} persists even if you're defeated."
+                        "desc": "At the start of every combat, summon a {{{{great beast}}}} in range 2, a trained animal companion. This {{{{summon}}}} persists even if you're defeated."
                     },
                     {
                         "name": "Path of the Aesi",
@@ -555,7 +555,7 @@
                     ],
                     "ultimate":{
                         "name": "Soul Bloom",
-                        "desc": "If the foe is {{{{defeated}}}} while their soul is out, summon 4 plant {{{{summons}}}} anywhere on the battlefield."
+                        "desc": "If the foe is {{{{defeated}}}} while their soul is out, summon 4 {{{{plant}}}} {{{{summons}}}} anywhere on the battlefield."
                     }
                 },
                 "ultimatetrait":{
@@ -631,7 +631,7 @@
                     },
                     {
                         "name": "Foretell",
-                        "desc": "You can discard 1 {{{{blessing}}}} token on yourself or an ally before that ally uses any ability to tell their fortune as an effect. You discard a card from your hand and immediately apply the effects to your target, no matter the distance or if you can see them or not. If you have no cards in hand, draw the top card of your deck instead, apply its effects, then discard it. <br/><br/> <b>The Great Wheel</b> <br/><br/> 2 - <b>The Fool</b> - Ally must {{{{dash}}}} 3 spaces in a straight line before using the ability. <br/><br/> 3 - <b>The Scepter</b> - {{{{Teleport}}}} your ally to an adjacent space to you after the action resolves. <br/><br/> 4 - <b>The Ewer</b> - {{{{Bless}}}} all allies in a small blast area centered on your ally. <br/><br/> 5 - <b>The Devil</b> - If the ability forces saves, foes get +2 curses to save against them. <br/><br/> 6 - <b>The Sword</b> - Ability gains {{{{pierce}}}}. <br/><br/> 7 - <b>Death</b> - Ally gains {{{{Defiance}}}}. <br/><br/> 8 - <b>The Chariot</b> - Ally becomes {{{{unstoppable}}}} and {{{{immune}}}} to all damage while moving during the ability. <br/><br/> 9 - <b>The Papessa</b> - Ally becomes {{{{pacified}}}} but is {{{{cured}}}} after the ability resolves. <br/><br/> 10 - <b>The Emperor</b> - Ally gains {{{{stealth}}}} after the ability resolves. <br/><br/> J - <b>The Star</b> - Ally makes all attacks and saves with +1 {{{{Boon}}}} until the start of their next turn, including with the triggering ability. <br/><br/> Q - <b>The Moon</b> - Ally gains {{{{Evasion}}}} until the start of their next turn. <br/><br/> K - <b>The Sun</b> - Ally gains {{{{Counter}}}} and {{{{Sturdy}}}}, but cannot gain or benefit from {{{{stealth}}}} or {{{{evasion}}}} until the start of their next turn. <br/><br/> A - <b>The World</b> - Ally becomes {{{{unstoppable}}}} until the start of their next turn."
+                        "desc": "You can discard 1 {{{{blessing}}}} token on yourself or an ally before that ally uses any ability to tell their fortune as an effect. You discard a card from your hand and immediately apply the effects to your target, no matter the distance or if you can see them or not. If you have no cards in hand, draw the top card of your deck instead, apply its effects, then discard it. <br/><br/> <b>The Great Wheel</b> <br/><br/> 2 - <b>The Fool</b> - Ally must {{{{dash}}}} 3 spaces in a straight line before using the ability. <br/><br/> 3 - <b>The Scepter</b> - {{{{Teleport}}}} your ally to an adjacent space to you after the action resolves. <br/><br/> 4 - <b>The Ewer</b> - {{{{Bless}}}} all allies in a small blast area centered on your ally. <br/><br/> 5 - <b>The Devil</b> - If the ability forces saves, foes get +2 {{{{curses}}}} to save against them. <br/><br/> 6 - <b>The Sword</b> - Ability gains {{{{pierce}}}}. <br/><br/> 7 - <b>Death</b> - Ally gains {{{{Defiance}}}}. <br/><br/> 8 - <b>The Chariot</b> - Ally becomes {{{{unstoppable}}}} and {{{{immune}}}} to all damage while moving during the ability. <br/><br/> 9 - <b>The Papessa</b> - Ally becomes {{{{pacified}}}} but is {{{{cured}}}} after the ability resolves. <br/><br/> 10 - <b>The Emperor</b> - Ally gains {{{{stealth}}}} after the ability resolves. <br/><br/> J - <b>The Star</b> - Ally makes all attacks and saves with +1 {{{{Boon}}}} until the start of their next turn, including with the triggering ability. <br/><br/> Q - <b>The Moon</b> - Ally gains {{{{Evasion}}}} until the start of their next turn. <br/><br/> K - <b>The Sun</b> - Ally gains {{{{Counter}}}} and {{{{Sturdy}}}}, but cannot gain or benefit from {{{{stealth}}}} or {{{{evasion}}}} until the start of their next turn. <br/><br/> A - <b>The World</b> - Ally becomes {{{{unstoppable}}}} until the start of their next turn."
                     },
                     {
                         "name": "Bend Fate",
@@ -645,7 +645,7 @@
                 "limitbreak": {
                     "name": "High Prophecy",
                     "blurb":"A burning third eye of pure etheric energy appears on your forehead. Possibilities unfurl befor eyou, laid out like infinite gleaming threads.",
-                    "description": "{{{{Aura}}}}: Until the start of your next turn, you gain {{{{Aura}}}} 2. Every d6 any character in the aura rolls for boons, curses, or {{{{gambling}}}} is either a 6 or a 1 (you choose).",
+                    "description": "{{{{Aura}}}}: Until the start of your next turn, you gain {{{{Aura}}}} 2. Every d6 any character in the aura rolls for {{{{boons}}}}, {{{{curses}}}}, or {{{{gambling}}}} is either a 6 or a 1 (you choose).",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
                         {"tag_name": "action", "val": 0},
@@ -674,7 +674,7 @@
             "strengths": "High damage an excellent range, strong area of effect, and become more powerful the longer fights go on.",
             "weaknesses": "Low durability and weak to foes that can engage them up close.",
             "complexity": "Medium",
-            "description": "Wrights are mages who have mastered the manipulation of the raw power of creations: Aether. All souls are connected to Aether, and everyone is able to connect to it and feel it to some degree. Those with training, potential, and ability can learn to form and shape Aether as natural as they move their own flesh and blood. Wrights weild terrifying power - and they know it. <br/><br/>Wrights become stronger the longer fights go on by the power of <b>Aether</b>, which they can use to {{{{Infuse}}}} their abilities to unleash some of the most spectacular attacks in the game. Wrights focus heavily on {{{{piercing}}}} damage, the {{{{shattered}}}} and {{{{vulnerable}}}} statuses, and {{{{Area of Effect}}}} abilities to punish foes that group up or rely on nearby allies. <br/><br/>Wrights are <b>strong</b> against <i>heavy</i> foes since they can bypass their armor, hit a broad area around them, and hit them from range, but are <b>weaker</b> against <i>skirmisher</i> foes that can quickly close the gap."
+            "description": "Wrights are mages who have mastered the manipulation of the raw power of creations: Aether. All souls are connected to Aether, and everyone is able to connect to it and feel it to some degree. Those with training, potential, and ability can learn to form and shape Aether as natural as they move their own flesh and blood. Wrights wield terrifying power - and they know it. <br/><br/>Wrights become stronger the longer fights go on by the power of <b>Aether</b>, which they can use to {{{{Infuse}}}} their abilities to unleash some of the most spectacular attacks in the game. Wrights focus heavily on {{{{piercing}}}} damage, the {{{{shattered}}}} and {{{{vulnerable}}}} statuses, and {{{{Area of Effect}}}} abilities to punish foes that group up or rely on nearby allies. <br/><br/>Wrights are <b>strong</b> against <i>heavy</i> foes since they can bypass their armor, hit a broad area around them, and hit them from range, but are <b>weaker</b> against <i>skirmisher</i> foes that can quickly close the gap."
         },
         "stats": {
             "vitality": 8,
@@ -693,7 +693,7 @@
         "traits": [
             {
                 "name": "Slip",
-                "desc": "Wright's movement does not trigger and ignores {{{{interrupts}}}}, {{{{vigilance}}}} and {{{{rampart}}}}."
+                "desc": "Wrights' movement does not trigger and ignores {{{{interrupts}}}}, {{{{vigilance}}}} and {{{{rampart}}}}."
             },
             {
                 "name": "Aetherwall",
@@ -725,7 +725,7 @@
                     },
                     {
                         "name": "Soulfire",
-                        "desc": "You abilities gain {{{{Comeback}}}}: Your threshold to {{{{critical hit}}}} becomes 18+, and your threshold to {{{{exceed}}}} becomes 13+. If you're at 1hp, these thresholds are reduced to 15+ and 10+."
+                        "desc": "You abilities gain {{{{Comeback}}}}: Your threshold to {{{{critical hit}}}} becomes 18+, and your threshold to {{{{exceed}}}} becomes 13+. If you're at 1 hp, these thresholds are reduced to 15+ and 10+."
                     }
                 ],
                 "limitbreak": {
@@ -847,7 +847,7 @@
                 "traits": [
                     {
                         "name": "Selkie",
-                        "desc": "You have a bound elemental. At the start of any combat, {{{{summon}}}} a Selkie in range 3."
+                        "desc": "You have a bound elemental. At the start of any combat, {{{{summon}}}} a {{{{Selkie}}}} in range 3."
                     },
                     {
                         "name": "Dash on the Rocks",

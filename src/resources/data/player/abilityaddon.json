@@ -230,7 +230,7 @@
             {"tag_name": "combo"},
             {"tag_name": "mastery"}
         ],
-        "description": "{{{{Mark}}}}: Mark a character in range 4. If that character would be {{{{defeated}}}} before the start of your next turn, they are instantly <i>rescued</i> after being defeated, then gain a {{{{vigor surge}}}} and become {{{{unstoppable}}}} until the end of their next turn. Then, even if this effect didn’t trigger, {{{{summon}}}} a <i>plant</i> in an adjacent space to them and end this {{{{mark}}}}."
+        "description": "{{{{Mark}}}}: Mark a character in range 4. If that character would be {{{{defeated}}}} before the start of your next turn, they are instantly {{{{rescued}}}} after being defeated, then gain a {{{{vigor surge}}}} and become {{{{unstoppable}}}} until the end of their next turn. Then, even if this effect didn’t trigger, {{{{summon}}}} a {{{{plant}}}} in an adjacent space to them and end this {{{{mark}}}}."
     },
     {
         "job": "Harvester",
@@ -260,7 +260,7 @@
 			{"tag_name": "boon", "val": 1},
             {"tag_name": "mastery"}
         ],
-        "description": "{{{{Effect}}}}: {{{{Teleport}}}} 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray damage}}}}.<br>{{{{Effect}}}}: <i>Seal</i> your foe, then {{{{bless}}}} yourself or an ally in range 2.<br>{{{{Effect}}}}: Character explodes in a medium blast {{{{area effect}}}} centered on them, dealing 1 {{{{divine}}}} damage to all foes.<br>{{{{Exceed}}}}: Repeat all effects."
+        "description": "{{{{Effect}}}}: {{{{Teleport}}}} 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray damage}}}}.<br>{{{{Effect}}}}: {{{{Seal}}}} your foe, then {{{{bless}}}} yourself or an ally in range 2.<br>{{{{Effect}}}}: Character explodes in a medium blast {{{{area effect}}}} centered on them, dealing 1 {{{{divine}}}} damage to all foes.<br>{{{{Exceed}}}}: Repeat all effects."
     },
     {
         "job": "Sealer",

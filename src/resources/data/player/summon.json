@@ -15,7 +15,8 @@
         "job":"Freelancer",
         "limit": 1,
         "name":"Astral Seraph",
-        "variants": [],
+        "variants": ["seraph"
+        ],
         "tags":[
             {"tag_name": "size", "val": 1}, 
             {"tag_name": "{{{{intangible}}}}"},
