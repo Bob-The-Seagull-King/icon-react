@@ -296,7 +296,7 @@
         "tier1": "<b>Invoke (</b>{{{{Gambit}}}}<b>)</b>: {{{{Free action}}}}: {{{{Gamble}}}}, then {{{{dash}}}} exactly that far in a straight line.",
         "tier2": "After using this relic’s gambit, you may also deal that much damage to a foe in range 3.",
         "tier3": "<b>Invoke (</b>{{{{Attack}}}}<b>, 16+)</b>: The next {{{{gamble}}}} you make can be any number from from 1 to 6.",
-        "tier4": "Silver Rabbit III can also be used on any single {{{{boon}}}} or curse die as part of your abilities, or any ability used against you.",
+        "tier4": "Silver Rabbit III can also be used on any single {{{{boon}}}} or {{{{curse}}}} die as part of your abilities, or any ability used against you.",
         "quest": "Travel to Arden Eld’s moon."
     },
     {
