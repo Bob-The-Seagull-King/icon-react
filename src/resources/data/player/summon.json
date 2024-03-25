@@ -41,7 +41,7 @@
         "job":"Shade",
         "limit": 0,
         "name":"Shadow Cloud",
-        "variants": ["shadow cloud"
+        "variants": ["shadow clouds"
         ],
         "tags":[
             {"tag_name": "{{{{terrain effect}}}}"}

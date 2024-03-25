@@ -263,7 +263,7 @@
                 "name": "Fool",
                 "tagline": "Masked Avenger",
                 "description": "Fools are dedicated defenders of the common people of Arden Eld, part folk hero, and part hired killer. They have no official organization, and cover their faces with masks to hide their identity, wearing bells and motley to cover their collections of deadly weapons and explosives. <br/><br/>Some people fear the Fools, calling them self-interested thugs or anarchic cultists of the Laughing God. They may not be entirely wrong, but none can deny their flair for the theatrical. <br/><br/>They are feared rightly by all would-be tyrants, under-barons, and aspiring imperial lords. Wherever kin labor under oppression, someone will take up the mask and knives and sent cold jolts of fear into the hearts of the rich and comfortable.",
-                "playstyle": "Fools are fast, tricky vagabonds that benefit heavily from setup. Their <i>Stack Dice</i> ability allows them to influence the outcome of {{{{gamble}}}} effects, including their <b>bomb</b> {{{{summons}}}}, making them very potent. Fools get stacked dice from attacking low health targets, and also have a suite of {{{{slay}}}} effects, so they get the most from zipping around the battlefield to finish off weak foes.<br/><br/>Fools spend less movement to move through the spaces of other characters, including their bomb {{{{summons}}}}, and can {{{{phase}}}} through foes, allowing them to move very far with proper setup. This can also allow them to hop through character's spaces to ignore movement penalties, such as climbing up {{{{elevation}}}}.<br/><br/>Fool's Limit Break, <b>Curtain Call</b>, is a very powerful, high damage move that can finish off a single foe easily in a pinch, but gets the most value out of setup and with a stacked die in the pocket.",
+                "playstyle": "Fools are fast, tricky vagabonds that benefit heavily from setup. Their <i>Stack Dice</i> ability allows them to influence the outcome of {{{{gamble}}}} effects, including their [[[[bomb]]]] {{{{summons}}}}, making them very potent. Fools get stacked dice from attacking low health targets, and also have a suite of {{{{slay}}}} effects, so they get the most from zipping around the battlefield to finish off weak foes.<br/><br/>Fools spend less movement to move through the spaces of other characters, including their [[[[bomb]]]] {{{{summons}}}}, and can {{{{phase}}}} through foes, allowing them to move very far with proper setup. This can also allow them to hop through character's spaces to ignore movement penalties, such as climbing up {{{{elevation}}}}.<br/><br/>Fool's Limit Break, <b>Curtain Call</b>, is a very powerful, high damage move that can finish off a single foe easily in a pinch, but gets the most value out of setup and with a stacked die in the pocket.",
                 "traits": [
                     {
                         "name": "Tumbling",
@@ -275,7 +275,7 @@
                     },
                     {
                         "name": "Cheap Trick",
-                        "desc": "When an attack misses you, you may {{{{teleport}}}} 1 space, then leave a {{{{bomb}}}} {{{{summon}}}} in an adjacent space."
+                        "desc": "When an attack misses you, you may {{{{teleport}}}} 1 space, then leave a [[[[bomb]]]] {{{{summon}}}} in an adjacent space."
                     },
                     {
                         "name": "Stack Dice",
@@ -295,7 +295,7 @@
                     ],
                     "ultimate":{
                         "name": "Ultima Curtain Call",
-                        "desc": "After this ability resolves, summon half as many {{{{bomb}}}} {{{{summons}}}} as your {{{{gamble}}}} result anywhere on the battlefield."
+                        "desc": "After this ability resolves, summon half as many [[[[bomb]]]] {{{{summons}}}} as your {{{{gamble}}}} result anywhere on the battlefield."
                     }
                 },
                 "ultimatetrait":{
@@ -309,11 +309,11 @@
                 "name": "Freelancer",
                 "tagline": "Divine Punisher",
                 "description": "Freelancers are free-roaming exorcists and hired guns, roaming the land and fighting blights, demons and bandits in the name of justice. They tend to act as wild cards: highly independent, highly effective, and sticking to their codes of honor. <br/><br/>Freelancers have their history in an ancient disgraced knightly order from one of the Seven Families of the Thrynn. They each wield a bright metal six gun, a bow, or a long rifle with extreme skill, the bullets, shot, or arrows of which they infuse with raw Aether drawn from their very souls. Each weapon is a relic passed down from master to student over the years, and can only be won in a duel with another freelancer. The freelancer’s ultimate weapon is the Astral Chain, a holy gauntlet which they use to purge and bind demons and rogue spirits into their service as Seraphim.",
-                "playstyle": "Freelancers are expert tempo fighters that prefer to fight around a certain range band and save their power for certain turns (the number 3 will be your friend).<br/><br/>Attacking characters at <b>exactly range 3</b> allows freelancers and their bound seraph to lay down withering punishment. To aid in this task, freelancers have a number of repositioning tools for foes and allies, including <i>Astral Binding</i>, which allows them to stack multiple {{{{marks}}}} and nudge those {{{{marked}}}} characters around the battlefield to get them into range.<br/><br/>Freelancers have numerous {{{{exceed}}}} effects and automatically trigger these effects on round 3 and 6, allowing them to have explosive turns.<br/><br/>Freelancer's Limit Break, <b>Paradiso</b>, creates a very potent {{{{aura}}}} that powers up all abilities used by you and allies, but can be turned off if foes get too close.",
+                "playstyle": "Freelancers are expert tempo fighters that prefer to fight around a certain range band and save their power for certain turns (the number 3 will be your friend).<br/><br/>Attacking characters at <b>exactly range 3</b> allows freelancers and their bound [[[[seraph]]]] to lay down withering punishment. To aid in this task, freelancers have a number of repositioning tools for foes and allies, including <i>Astral Binding</i>, which allows them to stack multiple {{{{marks}}}} and nudge those {{{{marked}}}} characters around the battlefield to get them into range.<br/><br/>Freelancers have numerous {{{{exceed}}}} effects and automatically trigger these effects on round 3 and 6, allowing them to have explosive turns.<br/><br/>Freelancer's Limit Break, <b>Paradiso</b>, creates a very potent {{{{aura}}}} that powers up all abilities used by you and allies, but can be turned off if foes get too close.",
                 "traits": [
                     {
                         "name": "Bound Spirit",
-                        "desc": "At the start of combat, you may place your {{{{seraph}}}} in range 2 from you. This {{{{summon}}}} persists even if you're {{{{defeated}}}}."
+                        "desc": "At the start of combat, you may place your [[[[seraph]]]] in range 2 from you. This {{{{summon}}}} persists even if you're {{{{defeated}}}}."
                     },
                     {
                         "name": "Aether Shot",
@@ -353,7 +353,7 @@
                 "name": "Shade",
                 "tagline": "Nocturnal Assassin",
                 "description": "Night-walkers, shadow-steppers, and masters of secret scroll arts, the Shades are spies, scouts, and assassins of unparalleled skill. Their number forms a secret and deadly society of Shadow Clans spread across Arden Eld, each practicing and refining the Night Venom Techniques. Joining the shades is presumed to be extremely difficult, but they tend to open their ranks to anyone that has been lost or abandoned. <br/><br/>The legends say Shades make a deal with the Weeper, the dead titan queen of night and air, and drink her tears, splitting their soul in two. Their shadow becomes animate, bestial and hungry. Over a week and a day, they must fast and train their shadow to obey them, transforming them into agile and silent warriors of the highest order. The Shades say the stories are rumors, and they get along with their Darksides. They do have a tendency to appear when least expected, in uncanny and unsettling ways.",
-                "playstyle": "Shades are agile vagabonds that can easily reposition themselves, foes, and allies to inflict maximum carnage. Their <b>shadow</b> {{{{summons}}}} create dangerous zones for foes and can grant {{{{stealth}}}} to allies. Shades to more damage to characters standing in {{{{adverse terrain}}}}, which includes shadows! They can also swap with these shadows for additional mobility.<br/><br/>Shade are excellent at {{{{teleporting}}}}, allowing them to ignore foes and terrain completely, and have easy ways to {{{{blind}}}} their foes and inflict {{{{finishing blows}}}}.<br/><br/>Shade's Limit Break, <b>Abyssal Ecstasy</b>, is a low cost but very potent ability that completely shuts down ranged attackers.",
+                "playstyle": "Shades are agile vagabonds that can easily reposition themselves, foes, and allies to inflict maximum carnage. Their [[[[shadow]]]] {{{{summons}}}} create dangerous zones for foes and can grant {{{{stealth}}}} to allies. Shades to more damage to characters standing in {{{{adverse terrain}}}}, which includes [[[[shadows]]]]! They can also swap with these [[[[shadows]]]] for additional mobility.<br/><br/>Shades are excellent at {{{{teleporting}}}}, allowing them to ignore foes and terrain completely, and have easy ways to {{{{blind}}}} their foes and inflict {{{{finishing blows}}}}.<br/><br/>Shade's Limit Break, <b>Abyssal Ecstasy</b>, is a low cost but very potent ability that completely shuts down ranged attackers.",
                 "traits": [
                     {
                         "name": "Shadow Arts",
@@ -365,11 +365,11 @@
                     },
                     {
                         "name": "Darkside",
-                        "desc": "When you first vacate a space on your turn, you may leave a {{{{shadow}}}} {{{{summon}}}}."
+                        "desc": "When you first vacate a space on your turn, you may leave a [[[[shadow]]]] {{{{summon}}}}."
                     },
                     {
                         "name": "Meld",
-                        "desc": "Once a round, before or after using any ability on your turn, you can swap places with any {{{{shadow}}}} {{{{summon}}}} in range 3, {{{{teleporting}}}}."
+                        "desc": "Once a round, before or after using any ability on your turn, you can swap places with any [[[[shadow]]]] {{{{summon}}}} in range 3, {{{{teleporting}}}}."
                     }
                 ],
                 "limitbreak": {
@@ -382,21 +382,21 @@
                     ],
                     "ultimate":{
                         "name": "Ultima Ecstasy",
-                        "desc": "Summon {{{{shadow}}}} {{{{summons}}}} adjacent to all allies."
+                        "desc": "Summon [[[[shadow]]]] {{{{summons}}}} adjacent to all allies."
                     }
                 },
                 "ultimatetrait":{
                     "name" : "Umbral Soul",
                     "tags":[
                     ],
-                    "description": "Once a round, one of your allies can swap places with any of your {{{{shadows}}}} before or after using any ability, {{{{teleporting}}}}."
+                    "description": "Once a round, one of your allies can swap places with any of your [[[[shadows]]]] before or after using any ability, {{{{teleporting}}}}."
                 }
             },
             {
                 "name": "Warden",
                 "tagline": "Friend to Beast and Bough",
                 "description": "The Wardens are the protectors and keepers of the Deep Green, the old and untamed parts of Arden Eld, lorded over by the beasts and the ancient trees. They are both the keepers and the servants of the herd and root, tending to their health, and culling them when it becomes necessary. They sleep under the stars and make their home under bough and root, making staunch allies of the ferocious beasts of the deep wilds through a combination of rigorous training and mutual respect. Their fierce defense of the wild sometimes puts them at odds with civilization, which they tend to have a distaste for. <br/><br/>Wardens are the keepers of the green kenning, the old ranger arts, that allow one to travel noiselessly, hide in plain sight, live off the land, and become immune to even the most deadly of toxins. They are solitary and powerful fighters. It is not uncommon for a Warden on a long sojourn to go without speaking the tongue of Kin for years at a time.",
-                "playstyle": "Wardens are masters of the wild that {{{{summon}}}} <b>beasts</b> with their actions. Beasts prowl around the battlefield until activated and have a high range. Activating a lot of them at once can pummel a foe with a lot of damage, but requires good positioning, which they can achieve with a small number of {{{{shove}}}} effects.<br/><br/>Wardens get a lot of benefits out of {{{{stealth}}}}, and numerous ways to enter it with {{{{finishing blows}}}}. They also have a large number of {{{{charge}}}} effects, allowing them to take stock of the battlefield before acting.<br/><br/>The {{{{dashes}}}} granted by Wardens are especially potent and can help move allies or {{{{summons}}}} around the battlefield faster. Warden's Limit Break, <b>Lycanthropy</b>, grants a powerful suite of benefits to their {{{{dash}}}} and allows your entire team to become much more mobile.",
+                "playstyle": "Wardens are masters of the wild that {{{{summon}}}} [[[[beasts]]]] with their actions. [[[[Beasts]]]] prowl around the battlefield until activated and have a high range. Activating a lot of them at once can pummel a foe with a lot of damage, but requires good positioning, which they can achieve with a small number of {{{{shove}}}} effects.<br/><br/>Wardens get a lot of benefits out of {{{{stealth}}}}, and numerous ways to enter it with {{{{finishing blows}}}}. They also have a large number of {{{{charge}}}} effects, allowing them to take stock of the battlefield before acting.<br/><br/>The {{{{dashes}}}} granted by Wardens are especially potent and can help move allies or {{{{summons}}}} around the battlefield faster. Warden's Limit Break, <b>Lycanthropy</b>, grants a powerful suite of benefits to their {{{{dash}}}} and allows your entire team to become much more mobile.",
                 "traits": [
                     {
                         "name": "Beast Master",
@@ -445,7 +445,7 @@
             "strengths": "Strong all-rounders, with many potent effects and the ability to heal allies and lift statuses.",
             "weaknesses": "Low damage and reliant on allies.",
             "complexity": "High",
-            "description": "Mendicants are the itenerant priests, exorcists, and healers of Arden Eld. They travel from town to town, healing sicknesses of the body and soul, cleansing the damage dealt by the ruins, consulting with local spirits, and setting up wards against evil. Many mendicants are highly learned scholars, but others come from folk practices, temple monks, green witch circles, or town priesthoods. They are a highly diverse lot, and attuned to the land and the people that they care for. <br/><br/>Mendicants are the only class that can consistently grant {{{{vigor}}}} and lift statuses with the potent {{{{cure}}}} effect. They protect allies and guide their attacks with the {{{{Sealed}}}} and {{{{Pacified}}}} statuses, while making use of powerful {{{{combos}}}}, {{{{auras}}}}, and {{{{marks}}}} to stack {{{{negative effects}}}} on foes while empowering allies. <br/><br/>Mendicants aren't <b>weak</b> or <b>strong</b> against any particular type of foe, but have different strengths and weaknesses depending on job. Thus can make them a little more complex than other jobs."
+            "description": "Mendicants are the itenerant priests, exorcists, and healers of Arden Eld. They travel from town to town, healing sicknesses of the body and soul, cleansing the damage dealt by the ruins, consulting with local spirits, and setting up wards against evil. Many mendicants are highly learned scholars, but others come from folk practices, temple monks, green witch circles, or town priesthoods. They are a highly diverse lot, and attuned to the land and the people that they care for. <br/><br/>Mendicants are the only class that can consistently grant {{{{vigor}}}} and lift {{{{statuses}}}} with the potent {{{{cure}}}} effect. They protect allies and guide their attacks with the {{{{Sealed}}}} and {{{{Pacified}}}} statuses, while making use of powerful {{{{combos}}}}, {{{{auras}}}}, and {{{{marks}}}} to stack {{{{negative effects}}}} on foes while empowering allies. <br/><br/>Mendicants aren't <b>weak</b> or <b>strong</b> against any particular type of foe, but have different strengths and weaknesses depending on job. Thus can make them a little more complex than other jobs."
         },
         "stats": {
             "vitality": 10,
@@ -472,7 +472,7 @@
             },
             {
                 "name": "Succor",
-                "desc": "Mendicants may use {{{{Rescue}}}} to bring up a defeated ally at range 4 instead of adjacent."
+                "desc": "Mendicants may use {{{{Rescue}}}} to bring up a {{{{defeated}}}} ally at range 4 instead of adjacent."
             }
         ],
         "jobs": [
@@ -526,7 +526,7 @@
                 "name": "Harvester",
                 "tagline": "Arbiter of Life and Death",
                 "description": "Servants of Tsumi, the Moon Titan, the Harvesters are the death priests of Arden Eld. They travel from land to land, sanctifying burial sites, performing funeral rites, and helping lingering spirits move on. The land is full of the malice and unfulfilled wishes of the long suffering dead, and so the services of the harvesters are in high demand. <br/><br/>Tsumi is the protector of cycles, and so the Harvesters also perform fertility blessings, oversee harvest festivals, and see to the cultivation and protection of the land and nature. They plant flowers over battlefields, and tend groves of beautiful fruit trees planted over graveyards. This dual nature makes Harvesters fierce warriors, able to make the battle bloom or rot with a single swipe of their greatscythes.",
-                "playstyle": "Harvesters are damaging medicants that get great benefits out of attacking, due to their <i>Balance</i> trait and their suite of powerful {{{{slay}}}} effects. Their {{{{blessings}}}} allow them to activate these effects on themselves or allies, and also grant the powerful {{{{pierce}}}} effect.<br/><br/>Harvesters can stack {{{{marks}}}}, allowing them to greatly power up an ally or crush a foe. Their <b>thrall</b> {{{{summons}}}} turn into <b>plants</b> after being activated, which present obstacles for foes and {{{{blessings}}}} for allies. Some of the harvester's talents also allow them to tap into the powers of life and death, gaining more power if the harvester or their targets are at low health.<br/><br/>Harvester's Limit Break, <b>Death Sentence</b>, makes even the most tenacious character {{{{vulnerable}}}}, and allows {{{{area effects}}}} to hit that character twice.",
+                "playstyle": "Harvesters are damaging medicants that get great benefits out of attacking, due to their <i>Balance</i> trait and their suite of powerful {{{{slay}}}} effects. Their {{{{blessings}}}} allow them to activate these effects on themselves or allies, and also grant the powerful {{{{pierce}}}} effect.<br/><br/>Harvesters can stack {{{{marks}}}}, allowing them to greatly power up an ally or crush a foe. Their [[[[thrall]]]] {{{{summons}}}} turn into [[[[plants]]]] after being activated, which present obstacles for foes and {{{{blessings}}}} for allies. Some of the harvester's talents also allow them to tap into the powers of life and death, gaining more power if the harvester or their targets are at low health.<br/><br/>Harvester's Limit Break, <b>Death Sentence</b>, makes even the most tenacious character {{{{vulnerable}}}}, and allows {{{{area effects}}}} to hit that character twice.",
                 "traits": [
                     {
                         "name": "Blessing of Rebirth",
@@ -548,14 +548,14 @@
                 "limitbreak": {
                     "name": "Death Sentence",
                     "blurb":"A flash of the scythe, and the line between life and death is blurred.",
-                    "description": "{{{{Summon}}}}: You slash an adjacent foe with your weapon, knocking their soul out of their body. Draw a line 4 {{{{area effect}}}} from your foe facing directly away from you and {{{{summon}}}} the <b>severed soul</b> in the last available space. <br/><br/> The soul lasts until the end of your next turn, or until the affected character is {{{{defeated}}}}.",
+                    "description": "{{{{Summon}}}}: You slash an adjacent foe with your weapon, knocking their soul out of their body. Draw a line 4 {{{{area effect}}}} from your foe facing directly away from you and {{{{summon}}}} the [[[[severed soul]]]] in the last available space. <br/><br/> The soul lasts until the end of your next turn, or until the affected character is {{{{defeated}}}}.",
                     "tags":[
                         {"tag_name": "resolve", "val": 3}, 
                         {"tag_name": "action", "val": 0} 
                     ],
                     "ultimate":{
                         "name": "Soul Bloom",
-                        "desc": "If the foe is {{{{defeated}}}} while their soul is out, summon 4 {{{{plant}}}} {{{{summons}}}} anywhere on the battlefield."
+                        "desc": "If the foe is {{{{defeated}}}} while their soul is out, summon 4 [[[[plant]]]] {{{{summons}}}} anywhere on the battlefield."
                     }
                 },
                 "ultimatetrait":{
@@ -619,7 +619,7 @@
                 "name": "Seer",
                 "tagline": "Fortune Teller and Master of Fate",
                 "description": "The Seers are made up of all the orders of hedge witches, stargazers, corner prophets, folk healers, shamans, and all manner of individuals that find themselves attracted to reading the Great Arcana, the esoteric practice of reading destiny itself, the Great Wheel of Arden Eld that determines the final fate of all things. <br/><br/>Through ritual, ceremony, and unrelenting practice, Seers gain the ability to predict and even defy a person’s fate, using their Aether infused card decks to influence the turning of the Great Wheel and empower their allies with foresight, precision, and uncanny accuracy.",
-                "playstyle": "Seers are manipulators of fate that have the potent ability to influence {{{{gamble}}}} effects and lay down powerful damaging {{{{AoE}}}} effects that do not damage their allies.<br/><br/>They benefit a lot from set up with their <b>wild cards</b>, which can extend these {{{{AoEs}}}} (and those of their allies), to hit massive areas, potentially creating huge chains. Wild cards can be used to extend the areas of any ability, not just attacks, so you can get creative with them.<br/><br/>Seers have access to nearly every effect in the game through the <b>Wheel of Fate</b>, but their resources are limited. Choosing when to spend these cards for effects, when to draw more cards, or when to spend them on {{{{gambling}}}} is critical.<br/><br/>Seer's Limit Break, <b>High Prophecy</b>, allows them to manipulate probability and makes {{{{gamble}}}} effects extremely powerful for its duration. The effect also applies to anything that targets you!",
+                "playstyle": "Seers are manipulators of fate that have the potent ability to influence {{{{gamble}}}} effects and lay down powerful damaging {{{{AoE}}}} effects that do not damage their allies.<br/><br/>They benefit a lot from set up with their [[[[wild cards]]]], which can extend these {{{{AoEs}}}} (and those of their allies), to hit massive areas, potentially creating huge chains. Wild cards can be used to extend the areas of any ability, not just attacks, so you can get creative with them.<br/><br/>Seers have access to nearly every effect in the game through the <b>Wheel of Fate</b>, but their resources are limited. Choosing when to spend these cards for effects, when to draw more cards, or when to spend them on {{{{gambling}}}} is critical.<br/><br/>Seer's Limit Break, <b>High Prophecy</b>, allows them to manipulate probability and makes {{{{gamble}}}} effects extremely powerful for its duration. The effect also applies to anything that targets you!",
                 "traits": [
                     {
                         "name": "The Wheel of Fate",
@@ -843,11 +843,11 @@
                 "name": "Stormbender",
                 "tagline": "Dire Navigator, Master of the Waves",
                 "description": "The seas of Arden Eld are its most treacherous terrain. Boiling over with monsters, and wracked with unnatural and freakish weather, most folk prefer to give them wide berth. However, there are still those brave and hardy souls that live on the islands around Arden Eld, and the merchants, sailors, and travelers that rely on the sea for fast passage and the movement of cargo, the lifeblood of the continent’s great cities.<br/><br/>The storm benders are the great masters of the sea, the supreme navigators that make sailing even possible around Arden Eld. Water-attuned wrights, they are most at home on a deck, or clambering the rigging. Each of them are sailors of the highest caliber, coming from all over - old trade guilds, islander clans, and nautical churner enclaves.<br/><br/>Bending the essence of the sea to their beck and call, the storm benders can clear the skies with a swipe of their hands, feel the currents ahead for aquatic monsters, turn weather away from the hull of the ship, and blow wind into its sails. It doesn’t matter that many of them dabble in a little light piracy on the side - they are the undisputed masters of their element, and they wouldn’t have it any other way.",
-                "playstyle": "Stormbenders are seafaring masters of battlefield {{{{terrain effects}}}}, deal more damage to characters in those effects, and can even use their <b>selkie</b> {{{{summon}}}} to carry foes into these effects, or carry allies out of them. Since storm benders {{{{fly}}}} inside their own terrain, they can ignore its adverse effects, and use it to travel over other {{{{adverse terrain}}}} and enemies.<br/><br/>It's other {{{{summons}}}}, <b>salt sprites</b>, are perfect combos with {{{{collide}}}} effects and can help move around allies. With setup, a storm bender can move allies around the entire map, and easily send enemies hurtling into {{{{dangerous terrain}}}} or {{{{pits}}}}.<br/><br/>Stormbender's Limit Break, <b>Elemental</b>, transforms them into a much larger form that is also a living {{{{terrain effect}}}}, allowing them to become much sturdier, {{{{fly}}}}, and greatly slow down enemies in their area.",
+                "playstyle": "Stormbenders are seafaring masters of battlefield {{{{terrain effects}}}}, deal more damage to characters in those effects, and can even use their [[[[Selkie]]]] {{{{summon}}}} to carry foes into these effects, or carry allies out of them. Since storm benders {{{{fly}}}} inside their own terrain, they can ignore its adverse effects, and use it to travel over other {{{{adverse terrain}}}} and enemies.<br/><br/>It's other {{{{summons}}}}, [[[[salt sprites]]]], are perfect combos with {{{{collide}}}} effects and can help move around allies. With setup, a stormbender can move allies around the entire map, and easily send enemies hurtling into {{{{dangerous terrain}}}} or {{{{pits}}}}.<br/><br/>Stormbender's Limit Break, <b>Elemental</b>, transforms them into a much larger form that is also a living {{{{terrain effect}}}}, allowing them to become much sturdier, {{{{fly}}}}, and greatly slow down enemies in their area.",
                 "traits": [
                     {
                         "name": "Selkie",
-                        "desc": "You have a bound elemental. At the start of any combat, {{{{summon}}}} a {{{{Selkie}}}} in range 3."
+                        "desc": "You have a bound elemental. At the start of any combat, {{{{summon}}}} a [[[[Selkie]]]] in range 3."
                     },
                     {
                         "name": "Dash on the Rocks",
