@@ -119,7 +119,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "If a character has cover from an ability, it halves all damage from that ability.<br>(pg. 89) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Characters gain {{{{resistance}}}} to damage from ranged abilities while they are in cover, halving damage.</div><br> (pg.92) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:<ul><li>Characters in cover take <b>half damage</b>.</li><li>Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.</li><li>Characters don’t grant cover by default.</li><li>A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.</li><li>Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.</li></ul>Listed terms: {{{{fly}}}}, {{{{dash}}}}, {{{{elevation}}}}</div>"
+        "description": "If a character has cover from an ability, it halves all damage from that ability.<br>(pg. 89) Listed terms: {{{{resistance}}}}<div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Characters gain resistance to damage from ranged abilities while they are in cover, halving damage.</div><br> (pg.92) Listed terms: {{{{fly}}}}, {{{{dash}}}}, {{{{elevation}}}}<div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Abilities deal half damage to characters in <b>cover</b>. These characters are hiding behind objects, walls, terrain, etc and are harder to hit. Cover follows the following rules:<ul><li>Characters in cover take <b>half damage</b>.</li><li>Cover is always determined when and where damage is applied, and not when the ability is actually used. For example a character might be able to fly or dash a short distance before attacking, or a character might throw a bomb that damages adjacent foes.</li><li>Characters don’t grant cover by default.</li><li>A character can take cover by moving adjacent to an object or terrain space that is 1 or more height higher than the elevation they are currently standing on. If they do, they gain cover against all characters past the row of spaces on that battlefield that their cover is currently occupying. They must be adjacent to that object or terrain to gain the effects of cover.</li><li>Characters on a higher elevation ignore cover against all characters on a lower elevation.</li><li>Characters cannot benefit from cover against <b>adjacent</b> foes.</li></ul></div>"
     },
 	{
         "name": "Critical Hit",
@@ -482,7 +482,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "A negative effect. Includes slashed, blind, dazed, hatred, pacified, sealed, shattered, stunned, weakened, and vulnerable."
+        "description": "A negative effect. Includes {{{{slashed}}}}, {{{{blind}}}}, {{{{dazed}}}}, {{{{hatred}}}}, {{{{pacified}}}}, {{{{sealed}}}}, {{{{shattered}}}}, {{{{stunned}}}}, {{{{weakened}}}}, and {{{{vulnerable}}}}."
     },
 	{
         "name": "Summon",
@@ -491,7 +491,7 @@
         "tags": [
             {"tag_name": "general"}
         ],
-        "description": "A character controlled by its Summoner. Summons are {{{{intangible}}}}, and cannot be {{{{marked}}}}, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a <b>summon action</b> that they use on their summoner’s turn, or a <b>summon effect</b> that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated.<br>(pg. 92) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Summons don’t count as foes or allies and can only be targeted if an ability can target all characters, or if specifically mentioned.</div><br>(pg. 95) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Many abilities create summons. Summons are characters that are by default size 1 and intangible, so they can’t be affected by foes and don’t cause obstruction or engagement. Summons do not count as foes or allies for abilities or effects that count foes and allies, though abilities that specify summons or characters can target or count them normally. Unless specified, summons can only be placed in free space in line of sight and range. Summons may have have a summon action which they can take during their summoner’s turn, or a passive summon effect which can take place any time, or both. Summons are removed if their controller is defeated.</div>"
+        "description": "A character controlled by its Summoner. Summons are {{{{intangible}}}}, and cannot be {{{{marked}}}}, and do not count as allies or foes for the purposes of abilities. Summons do not take turns. Instead, they have a <b>summon action</b> that they use on their summoner’s turn, or a <b>summon effect</b> that is always active, and otherwise don’t take actions or move on their own. Summons are removed from the battlefield when their summoner is defeated.<br>(pg. 92) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Summons don’t count as foes or allies and can only be targeted if an ability can target all characters, or if specifically mentioned.</div><br>(pg. 95) Listed terms: {{{{intangible}}}}, {{{{obstruction}}}}, {{{{engagement}}}}, {{{{line of sight}}}}, {{{{defeated}}}}<div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Many abilities create summons. Summons are characters that are by default size 1 and intangible, so they can’t be affected by foes and don’t cause obstruction or engagement. Summons do not count as foes or allies for abilities or effects that count foes and allies, though abilities that specify summons or characters can target or count them normally. Unless specified, summons can only be placed in free space in line of sight and range. Summons may have have a summon action which they can take during their summoner’s turn, or a passive summon effect which can take place any time, or both. Summons are removed if their controller is defeated.</div>"
     },
 	{
         "name": "Teleport",
@@ -620,7 +620,8 @@
     },
 	{
         "name": "Bloodied",
-		"variants": [],
+		"variants": ["bloody"
+        ],
         "tags": [
             {"tag_name": "special state"}
         ],
@@ -800,7 +801,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "A special effect with X charges, each represented by a d6. Like {{{{triggered effects}}}}, vigilance can only be used once per trigger. Vigilance charges stack if a character gains more than one. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:<ul><li>When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with armor.</li><li>When a foe breaks adjacency with you, deal that much damage to them.</li></ul>.Listed terms: {{{{armor}}}}"
+        "description": "A special effect with X charges, each represented by a d6. Like {{{{triggered effects}}}}, vigilance can only be used once per trigger. Vigilance charges stack if a character gains more than one. A character can spend any number of charges of Vigilance for one of the following effects, rolling 1d6 per charge spent and picking the highest result:<ul><li>When an ally in range 2 is damaged by a foe’s ability, reduce the damage by the amount rolled as if with armor.</li><li>When a foe breaks adjacency with you, deal that much damage to them.</li></ul>Listed terms: {{{{armor}}}}"
     },
 	{
         "name": "Vigor",
@@ -808,7 +809,7 @@
         "tags": [
             {"tag_name": "positive effect"}
         ],
-        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from {{{{armor}}}} and {{{{resistance}}}}. Vigor stacks, but cannot go past 25% of your hp. If you gain a {{{{vigor surge}}}}, gain maximum vigor. Lose all vigor at the end of combat.<br>(pg. 81) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Vigor is temporary health that goes over your maximum hp, like a shield. Any damage suffered goes to vigor before hit points, and all vigor disappears at the end of combat. When you gain vigor, it stacks up, but you can never have more vigor than 25% of your maximum hp 81 of 501 (equal to your VIT value). Sometimes you are granted a vigor surge, which fills your vigor up to full.</div>"
+        "description": "Gain a shield that goes over your hit points, equal to your VIT value. Damage goes to Vigor before Hit Points, and it benefits from {{{{armor}}}} and {{{{resistance}}}}. Vigor stacks, but cannot go past 25% of your hp. If you gain a {{{{vigor surge}}}}, gain maximum vigor. Lose all vigor at the end of combat.<br>(pg. 81) <div class=\"show-text\"><b>Hover to reveal data.</b><br/><div class=\"hidden-text\">Vigor is temporary health that goes over your maximum hp, like a shield. Any damage suffered goes to vigor before hit points, and all vigor disappears at the end of combat. When you gain vigor, it stacks up, but you can never have more vigor than 25% of your maximum hp (equal to your VIT value). Sometimes you are granted a vigor surge, which fills your vigor up to full.</div>"
     },
     {
         "name": "Vigor Surge",
