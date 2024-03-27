@@ -72,7 +72,7 @@ const JobDisplay = (props: any) => {
     return (
         <div className='jobStructure'>
             <div className='centerPosition'>
-                <h1 className={'megatitleShape title'+getColour(jobData.name)}>{capitalizeTag( jobData.name )}</h1>
+                <h1 className={'megatitleShape title'+getColour(jobData.name)}>{convertStringToContent( jobData.name )}</h1>
             </div>
             <div className='centerPosition'>
                 <h3><b>{jobData.tagline}</b></h3>

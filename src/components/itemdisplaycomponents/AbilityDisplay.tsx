@@ -187,7 +187,7 @@ const AbilityDisplay = (props: any) => {
                 }
                 {(mastery == true) &&
                 <span>
-                    <h2>Mastery: {capitalizeTag(abilityData.masteryname)}</h2>
+                    <h2>Mastery: {convertStringToContent(abilityData.masteryname)}</h2>
                     <div>
                         <p>{convertStringToContent(abilityData.masterdescription)}</p></div>
                     <div>

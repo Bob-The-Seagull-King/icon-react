@@ -21,7 +21,7 @@ const RelicDisplay = (props: any) => {
     // Return render -------------------------------
     return (
         <div className='relicStructure'>
-            <h1 className={'titleShape title'+getColour(relicData.colour)}>{capitalizeTag( relicData.name )}</h1>
+            <h1 className={'titleShape title'+getColour(relicData.colour)}>{convertStringToContent( relicData.name )}</h1>
             <p><i>{relicData.desc}</i></p>
             {tier >= 1 &&
                 <p><b>I.</b>   <span>{convertStringToContent(relicData.tier1)}</span></p>
