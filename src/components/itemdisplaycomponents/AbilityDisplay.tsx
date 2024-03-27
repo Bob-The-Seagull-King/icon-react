@@ -178,11 +178,11 @@ const AbilityDisplay = (props: any) => {
             </div>
             {((isNotTrait == true) && (isNotBasic == true))&& <span>
                 {(talents == 1 || talents == 3) &&
-                <p><b>I.</b>   
+                <p><b>I. </b>   
                     <span>{convertStringToContent(abilityData.talent1)}</span></p>
                 }
                 {(talents == 2 || talents == 3) &&
-                <p><b>II.</b>  
+                <p><b>II. </b>  
                     <span>{convertStringToContent(abilityData.talent2)}</span></p>
                 }
                 {(mastery == true) &&
