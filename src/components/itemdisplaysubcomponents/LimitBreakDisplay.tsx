@@ -149,7 +149,7 @@ const LimitBreakDisplay = (props: any) => {
             </div> 
             {ultimateVal && <div>
                 <span>
-                    <h2>Ultimate: {capitalizeTag(limitBreakData.limitbreak.ultimate.name)}</h2>
+                    <h2>Ultimate: {convertStringToContent(limitBreakData.limitbreak.ultimate.name)}</h2>
                     <div><p>{convertStringToContent(limitBreakData.limitbreak.ultimate.desc)}</p></div>
                     <div>
                         {masteryAddonArray.map((item) => (

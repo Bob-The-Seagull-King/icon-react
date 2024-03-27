@@ -23,7 +23,7 @@ const TrophyDisplay = (props: any) => {
             }
         }
 
-        return convertStringToContent(result);
+        return capitalizeTag(result);
     }
 
     // Return result -------------------------------
