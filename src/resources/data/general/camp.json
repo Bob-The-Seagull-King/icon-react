@@ -83,7 +83,7 @@
         "name": "Cauldron",
         "purchasecost": 6,
         "upgradecost": 3,
-        "description": "A heavy iron cauldron and apothecary where characters can brew flasks. Characters can brew one of the following <b>flasks</b> during an interlude by spending <b>2 dust</b>. Flasks can be drunk as part of making an action roll (in narrative play) or as a <i>free action</i> ability in combat. Characters can only hold on to three flasks, and up to one major flask.<ul><li><b>Flask of Action</b>: Gain +1 boon on their next narrative action</li><li><b>Flask of Resolve</b>: Regain 2 effort</li><li><b>Flask of Alacrity</b>: Dash 4</li><li><b>Power Flask</b>: Gain bonus damage on your next action</li><li><b>Major Phoenix flask</b>: An incapacitated character can drink a Phoenix Flask at the end of a round to Rescue themselves. They can do this even while incapacitated.</li><li><b>Major Healing flask</b>: <i>Cure</i> yourself</li><li><b>Major Power flask</b>: Gain bonus damage on all actions until the end of your next turn.</li></ul>GMs can offer flask ingredients as rewards for treasure collected during an expedition, or side tasks. If that's the case, forgo the dust cost for brewing a flask if you have the ingredients. Ingredients are usually for a specific flask.",
+        "description": "A heavy iron cauldron and apothecary where characters can brew flasks. Characters can brew one of the following <b>flasks</b> during an interlude by spending <b>2 dust</b>. Flasks can be drunk as part of making an action roll (in narrative play) or as a {{{{free action}}}} ability in combat. Characters can only hold on to three flasks, and up to one major flask.<ul><li><b>Flask of Action</b>: Gain +1 boon on their next narrative action</li><li><b>Flask of Resolve</b>: Regain 2 effort</li><li><b>Flask of Alacrity</b>: Dash 4</li><li><b>Power Flask</b>: Gain bonus damage on your next action</li><li><b>Major Phoenix flask</b>: An incapacitated character can drink a Phoenix Flask at the end of a round to Rescue themselves. They can do this even while incapacitated.</li><li><b>Major Healing flask</b>: <i>Cure</i> yourself</li><li><b>Major Power flask</b>: Gain bonus damage on all actions until the end of your next turn.</li></ul>Listed terms: {{{{boon}}}}, {{{{dash}}}}, {{{{bonus damage}}}}, {{{{incapacitated}}}}, {{{{rescue}}}}, {{{{cure}}}}<br>GMs can offer flask ingredients as rewards for treasure collected during an expedition, or side tasks. If that's the case, forgo the dust cost for brewing a flask if you have the ingredients. Ingredients are usually for a specific flask.",
         "upgrades": [
             {
                 "name": "Flask Belt",
@@ -106,13 +106,13 @@
 					{
 						"name": "Major Flask of Divine Speed",
 						"costspecial": null,
-						"description": "5 dust. Until the end of your next turn, increase all move, rush, dash, fly, and teleport amounts by +2",
+						"description": "5 dust. Until the end of your next turn, increase all move, {{{{rush}}}}, {{{{dash}}}}, {{{{fly}}}}, and {{{{teleport}}}} amounts by +2",
 						"upgrades": []
 					},
 					{
 						"name": "Major Flask of Divine Strength",
 						"costspecial": null,
-						"description": "5 dust. Your next action deals bonus damage and is a critical hit on hit if it is an attack.",
+						"description": "5 dust. Your next action deals {{{{bonus damage}}}} and is a {{{{critical hit}}}} on hit if it is an attack.",
 						"upgrades": []
 					},
 					{
@@ -124,7 +124,7 @@
 					{
 						"name": "Major Flask of Divine Health",
 						"costspecial": null,
-						"description": "5 dust. Clear all statues and gain a <i>vigor surge</i>.",
+						"description": "5 dust. Clear all {{{{statuses}}}} and gain a {{{{vigor surge}}}}.",
 						"upgrades": []
 					},
 					{
@@ -141,7 +141,7 @@
         "name": "Cooking Pot",
         "purchasecost": 6,
         "upgradecost": 3,
-        "description": "When you embark on an expedition, or when you camp, one character can cook a meal for everyone. A character’s <b>cooking skill</b> is a unique action, starting at 1d6. A character can improve their cooking by investing 2 xp to improve their cooking skill by 1, up to a maximum of 4. Xp invested in cooking has to be spent when you gain xp and not from your bar.<br>Roll 1d6 per level of cooking skill and choose any die as the final result. Meal effects apply to the <b>very next combat only</b> you get into.<table><tr><th>D6</th><th>Result</th></tr><tr><td>1</td><td><b>Burnt Meal</b> - No effect!</td></tr><tr><td>2</td><td><b>Nutritious Meal</b> - Ignore <i>difficult terrain</i></td></tr><tr><td>3</td><td><b>Refreshing Meal</b> - Saves are successful on an 9+ instead of a 10+</td></tr><tr><td>4</td><td><b>Invigorating Meal</b> - Deal bonus damage in the first round of combat</td></tr><tr><td>5</td><td><b>Healthy Meal</b> - Start that combat with 2 vigor, or +2 vigor if you already start with Vigor.</td></tr><tr><td>6</td><td><b>Hearty Meal</b> - Gain resistance to all damage in the first round of combat</td></tr></table>",
+        "description": "When you embark on an expedition, or when you camp, one character can cook a meal for everyone. A character’s <b>cooking skill</b> is a unique action, starting at 1d6. A character can improve their cooking by investing 2 xp to improve their cooking skill by 1, up to a maximum of 4. Xp invested in cooking has to be spent when you gain xp and not from your bar.<br>Roll 1d6 per level of cooking skill and choose any die as the final result. Meal effects apply to the <b>very next combat only</b> you get into.<table><tr><th>D6</th><th>Result</th></tr><tr><td>1</td><td><b>Burnt Meal</b> - No effect!</td></tr><tr><td>2</td><td><b>Nutritious Meal</b> - Ignore <i>difficult terrain</i></td></tr><tr><td>3</td><td><b>Refreshing Meal</b> - Saves are successful on an 9+ instead of a 10+</td></tr><tr><td>4</td><td><b>Invigorating Meal</b> - Deal bonus damage in the first round of combat</td></tr><tr><td>5</td><td><b>Healthy Meal</b> - Start that combat with 2 vigor, or +2 vigor if you already start with Vigor.</td></tr><tr><td>6</td><td><b>Hearty Meal</b> - Gain resistance to all damage in the first round of combat</td></tr></table>Listed terms: {{{{difficult terrain}}}}, {{{{bonus damage}}}}, {{{{vigor}}}}, {{{{resistance}}}}",
         "upgrades": [
             {
                 "name": "Foraging",
@@ -165,7 +165,7 @@
             {
                 "name": "Masterclass",
                 "costspecial": null,
-                "description": "If you get a critical hit on a cooking roll, the effects apply to <i>every combat</i> until you camp or go into an interlude.",
+                "description": "If you get a {{{{critical hit}}}} on a cooking roll, the effects apply to <i>every combat</i> until you camp or go into an interlude.",
                 "upgrades": []
             }
         ]
@@ -214,7 +214,7 @@
         "name": "Elixir Stone",
         "purchasecost": 6,
         "upgradecost": 3,
-        "description": "This unsettling and extremely valuable blood red stone, found in the very deepest depths of the arkenruins, is condensed Dust and life essence in its purest form. When exposed to Aether, it bleeds a substance that can be condensed into elixirs that can heal wounds.<br>A party embarks with one elixir. A character can drink an elixir any time outside of tactical combat to heal a wound. Healing a wound also replenishes 25% hp.",
+        "description": "This unsettling and extremely valuable blood red stone, found in the very deepest depths of the arkenruins, is condensed Dust and life essence in its purest form. When exposed to Aether, it bleeds a substance that can be condensed into elixirs that can heal wounds.<br>A party embarks with one elixir. A character can drink an elixir any time outside of tactical combat to heal a {{{{wound}}}}. Healing a {{{{wound}}}} also replenishes 25% hp.",
         "upgrades": [
             {
                 "name": "Elixir Brewing",
@@ -241,7 +241,7 @@
         "name": "Fishing Pole",
         "purchasecost": 6,
         "upgradecost": 3,
-        "description": "Once an expedition, if there’s a water source nearby, one character can fish. A character’s <b>fishing skill</b> is a unique action, starting at 1d6. A character can improve their fishing by investing 2 xp to improve their fishing skill by 1, up to a maximum of 4. Xp invested in fishing has to be spent when you gain xp and not from your bar.<br>Roll 1d6 per level of fishing skill and choose the highest result as the final result. <ul><li><b>1. Line Snapped:</b> No result.</li><li><b>2. Got Away:</b> No result. Next time you fish, add +1d to your roll.</li><li><b>3-5. Common Fish:</b> Collect 2 of these fish and they can be sold at market for 1 dust. Dungeon guppies, cave carp, and Arkentrout are all pretty common examples.</li><li><b>6. Rare Fish!:</b> Roll 1d6. Can be sold at market for 1 dust.<ol><li><b>Glibfish -</b> Eat to gain +1d and improved effect on all command and charm rolls for a scene</li><li><b>Musclefish -</b> Eat to gain +1d and improved effect on endure and smash actions for a scene.</li><li><b>Wrightfish -</b> Ask the fish for advice. If you follow it, gain +1d and improved effect on your next narrative action</li><li><b>Elixir Fish -</b> Can be drunk to gain a vigor surge.</li><li><b>Panaflounder -</b> Eat as a free action to end all statuses and foe's marks.</li><li><b>Golden Gizzet -</b> Can be sold at the market for 3 dust.</li></ol></li><li><b>6,6. Super Rare Fish!</b> This super hard to catch fish can be sold for 3 dust at market. Roll 1d6<ul><li><b>1-3. Wishfish -</b> This fish is infused with reality warping aether. You can use the fish to perform one action roll as superpowered, expending it</li><li><b>4-6. Goldenfish -</b> This magnificent specimen sells for 5 dust at market. Alternately, its scales are so tough it can be used as a shield. At the start of combat, expend the fish to give a character 10 vigor, which could put them over its maximum.</li></ul></li></ul>",
+        "description": "Once an expedition, if there’s a water source nearby, one character can fish. A character’s <b>fishing skill</b> is a unique action, starting at 1d6. A character can improve their fishing by investing 2 xp to improve their fishing skill by 1, up to a maximum of 4. Xp invested in fishing has to be spent when you gain xp and not from your bar.<br>Roll 1d6 per level of fishing skill and choose the highest result as the final result. <ul><li><b>1. Line Snapped:</b> No result.</li><li><b>2. Got Away:</b> No result. Next time you fish, add +1d to your roll.</li><li><b>3-5. Common Fish:</b> Collect 2 of these fish and they can be sold at market for 1 dust. Dungeon guppies, cave carp, and Arkentrout are all pretty common examples.</li><li><b>6. Rare Fish!:</b> Roll 1d6. Can be sold at market for 1 dust.<ol><li><b>Glibfish -</b> Eat to gain +1d and improved effect on all command and charm rolls for a scene</li><li><b>Musclefish -</b> Eat to gain +1d and improved effect on endure and smash actions for a scene.</li><li><b>Wrightfish -</b> Ask the fish for advice. If you follow it, gain +1d and improved effect on your next narrative action</li><li><b>Elixir Fish -</b> Can be drunk to gain a vigor surge.</li><li><b>Panaflounder -</b> Eat as a free action to end all statuses and foe's marks.</li><li><b>Golden Gizzet -</b> Can be sold at the market for 3 dust.</li></ol></li><li><b>6,6. Super Rare Fish!</b> This super hard to catch fish can be sold for 3 dust at market. Roll 1d6<ul><li><b>1-3. Wishfish -</b> This fish is infused with reality warping aether. You can use the fish to perform one action roll as superpowered, expending it</li><li><b>4-6. Goldenfish -</b> This magnificent specimen sells for 5 dust at market. Alternately, its scales are so tough it can be used as a shield. At the start of combat, expend the fish to give a character 10 vigor, which could put them over its maximum.</li></ul></li></ul>Listed terms: {{{{+1d}}}}, {{{{vigor surge}}}}, {{{{statuses}}}}, {{{{marks}}}}, {{{{vigor}}}}",
         "upgrades": [
             {
                 "name": "Bait",
@@ -251,7 +251,7 @@
 					{
 						"name": "Improved Tackle Box",
 						"costspecial": null,
-						"description": "Gain 1 free use of bait an expedition",
+						"description": "Gain 1 free use of Bait an expedition",
 						"upgrades": []
 					}
 				]
@@ -259,7 +259,7 @@
             {
                 "name": "Beginner's Luck",
                 "costspecial": null,
-                "description": "If a character fishes that was different from the previous time, they fish with +1d",
+                "description": "If a character fishes that was different from the previous time, they fish with {{{{+1d}}}}",
                 "upgrades": []
             },
             {
@@ -296,7 +296,7 @@
 					{
 						"name": "Improved Workshop",
 						"costspecial": null,
-						"description": "Gain +1d to fill in any clock involving crafting",
+						"description": "Gain {{{{+1d}}}} to fill in any clock involving crafting",
 						"upgrades": []
 					}
 				]
@@ -371,7 +371,7 @@
             {
                 "name": "Arkentomes",
                 "costspecial": null,
-                "description": "Characters can make rolls to recall or gather information about dungeon or monster lore at +1D",
+                "description": "Characters can make rolls to recall or gather information about dungeon or monster lore at {{{{+1D}}}}",
                 "upgrades": []
             },
             {
@@ -397,7 +397,7 @@
             {
                 "name": "Ruby Princess Card",
                 "costspecial": 1,
-                "description": "Gain +1d and increased effect on social rolls against anyone else with this card (anyone playing kapkat has about a 50% chance of having one, check with a d6).",
+                "description": "Gain {{{{+1d}}}} and increased effect on social rolls against anyone else with this card (anyone playing kapkat has about a 50% chance of having one, check with a d6).",
                 "upgrades": []
             },
             {
@@ -430,7 +430,7 @@
         "name": "Shrine",
         "purchasecost": 3,
         "upgradecost": 3,
-        "description": "Shrine to the Titans, the slain precursors. Grants Divine Mercy. When characters would take their last wound and die, roll a d6. On a 2+, they ignore the wound instead and miraculously heal all wounds and hit points. Divine Mercy can only occur once for a character ever in their life time.",
+        "description": "Shrine to the Titans, the slain precursors. Grants Divine Mercy. When characters would take their last {{{{wound}}}} and die, roll a d6. On a 2+, they ignore the {{{{wound}}}} instead and miraculously heal all {{{{wounds}}}} and hit points. Divine Mercy can only occur once for a character ever in their lifetime.",
         "upgrades": [
             {
                 "name": "Commune",
@@ -447,7 +447,7 @@
             {
                 "name": "Grace",
                 "costspecial": null,
-                "description": "A fallen character (someone who took 4 wounds) can be granted grace during an interlude by burning <b>10 dust</b>, as long as they fell in the next year, even if they are dead, retired, corrupted, or gone in some way. They return from being fallen, recovering all wounds, effort, strain, and hp. However, the character is living on borrowed time as the dust is fortifying their body and cleansing their soul and must undergo a journey or expedition to make things permanent. The GM can set up an expedition or an ambition for this.",
+                "description": "A fallen character (someone who took 4 {{{{wounds}}}}) can be granted grace during an interlude by burning <b>10 dust</b>, as long as they fell in the next year, even if they are dead, retired, corrupted, or gone in some way. They return from being fallen, recovering all {{{{wounds}}}}, effort, strain, and hp. However, the character is living on borrowed time as the dust is fortifying their body and cleansing their soul and must undergo a journey or expedition to make things permanent. The GM can set up an expedition or an ambition for this.",
                 "upgrades": []
             }
         ]
@@ -456,7 +456,7 @@
         "name": "Spirit Idol",
         "purchasecost": 6,
         "upgradecost": 3,
-        "description": "You can pray at this shrine to summon its etheric spirit - usually in the form of an animal, small creature, or fairy. The spirit is friendly to your group, and can be played two ways: either as <b>an NPC</b>, or as a <b>character</b> (for a player to control).<br>The spirit can only be summoned as a character if it’s controlled by someone who is not already playing a character, including the GM. Playing a spirit for a group is a good way for someone not familiar with role playing games, guesting for a session, or calling in remotely for a session to participate, since it is relatively simple.<br>As an NPC, the spirit has the following powers:<ul><li><b>Narrative</b>: The spirit has 2 effort, regains all of it when you camp, and can burn it to give someone <b>aid</b>. It doesn’t take strain and doesn’t take actions otherwise.</li><li><b>Combat</b>: The spirit is not a unit in battle, but can be invoked any time by a character as an interrupt to aid someone, letting them roll twice on any d20 roll and choose either result. This ability works once per battle.</li></ul>As a character, the spirit has the following powers:<ul><li><b>Narrative</b>: The spirit has 3 effort, 3 strain, and rolls 1 dice for all actions. It heals all effort and strain at camp. If the spirit takes maximum strain, it must disperse for a scene and can take no more action, then re-enters the next scene with 0 strain.</li><li><b>Combat</b>: The spirit is a size 1 allied summon lacking the <i>intangible</i> trait with 10 hp, 10 defense, 0 armor, and 4 speed. It heals to full HP after each combat. It can take a standard move and the following actions:<ul><li><b>Spirit Slash (1 action, attack, range 3)</b> <i>On hit</i>: 1d6+1 damage. <i>Miss</i>: 1 damage</li><li><b>Push (1 action)</b>: An adjacent character is shoved 1 space</li><li><b>Spirit Blast (1 action)</b>: A character in range 3 is <i>sealed</i> or <i>weakened</i> (spirit’s choice).</li><li><b>Dash (1 action)</b>: The spirit dashes 3 spaces If defeated in combat, the spirit disperses and reappears in a space in range 3 from an ally at the start of the next round with half hp.</li></ul></li></ul>",
+        "description": "You can pray at this shrine to summon its etheric spirit - usually in the form of an animal, small creature, or fairy. The spirit is friendly to your group, and can be played two ways: either as <b>an NPC</b>, or as a <b>character</b> (for a player to control).<br>The spirit can only be summoned as a character if it’s controlled by someone who is not already playing a character, including the GM. Playing a spirit for a group is a good way for someone not familiar with role playing games, guesting for a session, or calling in remotely for a session to participate, since it is relatively simple.<br>As an NPC, the spirit has the following powers:<ul><li><b>Narrative</b>: The spirit has 2 effort, regains all of it when you camp, and can burn it to give someone <b>aid</b>. It doesn’t take strain and doesn’t take actions otherwise.</li><li><b>Combat</b>: The spirit is not a unit in battle, but can be invoked any time by a character as an interrupt to aid someone, letting them roll twice on any d20 roll and choose either result. This ability works once per battle.</li></ul>As a character, the spirit has the following powers:<ul><li><b>Narrative</b>: The spirit has 3 effort, 3 strain, and rolls 1 dice for all actions. It heals all effort and strain at camp. If the spirit takes maximum strain, it must disperse for a scene and can take no more action, then re-enters the next scene with 0 strain.</li><li><b>Combat</b>: The spirit is a size 1 allied summon lacking the <i>intangible</i> trait with 10 hp, 10 defense, 0 armor, and 4 speed. It heals to full HP after each combat. It can take a standard move and the following actions:<ul><li><b>Spirit Slash (1 action, attack, range 3)</b> <i>On hit</i>: 1d6+1 damage. <i>Miss</i>: 1 damage</li><li><b>Push (1 action)</b>: An adjacent character is shoved 1 space</li><li><b>Spirit Blast (1 action)</b>: A character in range 3 is <i>sealed</i> or <i>weakened</i> (spirit’s choice).</li><li><b>Dash (1 action)</b>: The spirit dashes 3 spaces</li><li>If defeated in combat, the spirit disperses and reappears in a space in range 3 from an ally at the start of the next round with half hp.</li></ul></li></ul>Listed terms: {{{{summon}}}}, {{{{intangible}}}}, {{{{shoved}}}}, {{{{sealed}}}}, {{{{weakened}}}}, {{{{dashes}}}}",
         "upgrades": [
             {
                 "name": "Empowered Spirit",
@@ -467,13 +467,13 @@
             {
                 "name": "Great Spirit",
                 "costspecial": null,
-                "description": "As character the spirit can choose to become Size 2 when it starts battle. If so, its speed is reduced to 2, but it also gains +6 hp, becomes Sturdy, and deals 1d8 damage with its attack instead of 1d6. It can also reduce or enlarge itself as a 1 action ability during combat.",
+                "description": "As character the spirit can choose to become Size 2 when it starts battle. If so, its speed is reduced to 2, but it also gains +6 hp, becomes {{{{Sturdy}}}}, and deals 1d8 damage with its attack instead of 1d6. It can also reduce or enlarge itself as a 1 action ability during combat.",
                 "upgrades": []
             },
             {
                 "name": "Spirit Vengeance",
                 "costspecial": null,
-                "description": "As a character, the spirit can do each of the following once a session: take a superpowered action, or deal 2d damage with its spirit slash attack instead of 1d",
+                "description": "As a character, the spirit can do each of the following once a session: take a superpowered action, or deal 2d damage with its Spirit Slash attack instead of 1d",
 				"upgrades": []
             }
         ]
@@ -493,7 +493,7 @@
             {
                 "name": "Rangers",
                 "costspecial": null,
-                "description": "Start the first combat of any expedition with 4 vigor",
+                "description": "Start the first combat of any expedition with 4 {{{{vigor}}}}",
                 "upgrades": [
 					{
 						"name": "Toughened",
@@ -509,7 +509,7 @@
 							{
 								"name": "Advanced Footwork",
 								"costspecial": null,
-								"description": "On the first turn of combat only, characters can dash as a free action.",
+								"description": "On the first turn of combat only, characters can {{{{dash}}}} as a free action.",
 								"upgrades": []
 							}
 						]
@@ -527,7 +527,7 @@
             {
                 "name": "Thief Kit",
                 "costspecial": null,
-                "description": "Add pouch of chalk, lock pick, crowbar, extra rope, ball bearings to loose gear for all characters.",
+                "description": "Add pouch of chalk, lock pick, crowbar, extra rope, ball bearings to <i>loose gear</i> for all characters.",
                 "upgrades": []
             },
             {
@@ -539,7 +539,7 @@
             {
                 "name": "Shadow Cloaks",
                 "costspecial": null,
-                "description": "For the first combat after you embark on an expedition, start with <i>stealth</i>.",
+                "description": "For the first combat after you embark on an expedition, start with {{{{stealth}}}}.",
                 "upgrades": [
 					{
 						"name": "Whisper Cloaks",

@@ -4,7 +4,7 @@
         "ability": "Endless Battlement",
         "name": "Heroic Intervention",
         "tags":[
-            {"tag_name": "interrupt", "val": 1}
+            {"tag_name": "{{{{interrupt}}}}", "val": 1}
         ],
         "description": "{{{{Trigger}}}}: A foe targets your ally with an ability<br>{{{{Effect}}}}: You soar into the air, removing yourself from the battlefield, then return in any space in the aura. Adjacent foes take 2 damage."
     },
@@ -13,7 +13,7 @@
         "ability": "Comet",
         "name": "Thrown Weapon",
         "tags":[
-            {"tag_name": "height", "val": 1}
+            {"tag_name": "{{{{height}}}}", "val": 1}
         ],
         "description": "{{{{Object}}}}: Space adjacent to it have {{{{rampart}}}}. While this {{{{object}}}} is active, you cannot attack. You can pick your weapon up if you enter or exit any space adjacent to it or start your turn there, ending this effect and removing the {{{{object}}}}. You also pick it up if it’s removed for any other reason."
     },
@@ -69,7 +69,7 @@
         "ability": "Riposte",
         "name": "Dire Parry",
         "tags":[
-            {"tag_name": "interrupt", "val": 1}
+            {"tag_name": "{{{{interrupt}}}}", "val": 1}
         ],
         "description": "{{{{Trigger}}}}: A foe targets an ally in range 2 with an ability.<br>{{{{Effect}}}}: {{{{Gamble}}}}, then deal that much damage to your foe. On a 6, they are also {{{{slashed}}}} and {{{{shoved}}}} 1. If you have {{{{vigilance}}}}, you can spend any number of vigilance charges when {{{{gambling}}}} to roll one extra d6 per charge spent."
     },
@@ -87,7 +87,7 @@
         "ability": "Chronotemper",
         "name": "Cheat Time",
         "tags":[
-            {"tag_name": "interrupt", "val": 1}
+            {"tag_name": "{{{{interrupt}}}}", "val": 1}
         ],
         "description": "{{{{Trigger}}}}: The start or end of any turn other than yours<br>{{{{Effect}}}}: {{{{Gamble}}}}, then the {{{{marked}}}} character {{{{dashes}}}} a number of spaces equal to the {{{{gamble}}}} result, 1 space at a time. Each time they finish a {{{{dash}}}}, they may deal 2 damage to an adjacent foe, but cannot damage the same foe more than once in the same turn."
     },
@@ -96,7 +96,7 @@
         "ability": "Deus Ex Machina",
         "name": "Divine Intervention",
         "tags":[
-            {"tag_name": "interrupt", "val": 1}
+            {"tag_name": "{{{{interrupt}}}}", "val": 1}
         ],
         "description": "{{{{Trigger}}}}: The end of any turn<br>{{{{Effect}}}}: {{{{Teleport}}}} 2 towards the target or {{{{teleport}}}} your target 1 towards you. The {{{{teleport}}}} must end with both of you closer together. Allies can choose whether to take this teleport."
     },
@@ -124,7 +124,7 @@
         "ability": "Umbral Echo",
         "name": "Soul Proxy",
         "tags":[
-            {"tag_name": "interrupt", "val": 1}
+            {"tag_name": "{{{{interrupt}}}}", "val": 1}
         ],
         "description": "{{{{Trigger}}}}: You take damage from a foe.<br>{{{{Effect}}}}: End this {{{{stance}}}}, consume and remove all shadows in range 2 of you, and immediately gain {{{{defiance}}}} against the incoming damage. Deal 2 damage, once, to the triggering foe for each shadow consumed this way. You cannot take this {{{{stance}}}} again for the rest of combat."
     },
@@ -142,7 +142,7 @@
         "ability": "Underway",
         "name": "Underway (Object)",
         "tags":[
-            {"tag_name": "object", "val": 1}
+            {"tag_name": "{{{{object}}}}", "val": 1}
         ],
         "description": "{{{{Object}}}} {{{{Effect}}}}: As a {{{{free action}}}} ability, you and allies can {{{{teleport}}}} from any space adjacent to an underway to a free adjacent space to any other underway. This ability does not {{{{interrupt}}}} movement or other action."
     },
@@ -152,8 +152,8 @@
         "name": "Hades",
         "tags":[
             {"tag_name": "combo"},
-	    {"tag_name": "true strike"},
-	    {"tag_name": "blast", "val": "medium"}
+	        {"tag_name": "{{{{true strike}}}}"},
+	        {"tag_name": "blast", "val": "medium"}
         ],
         "description": "Gains {{{{True Strike}}}} and <i>Medium Blast</i><br><b>Attack</b>: {{{{Autohit}}}}: {{{{fray damage}}}}<br>{{{{Area Effect}}}}: {{{{fray damage}}}}<br>{{{{Terrain Effect}}}}: Create a {{{{pit}}}} under your target."
     },
@@ -237,7 +237,7 @@
         "ability": "Fairy Ring",
         "name": "Spirit Away",
         "tags":[
-            {"tag_name": "interrupt", "val": 2}
+            {"tag_name": "{{{{interrupt}}}}", "val": 2}
         ],
         "description": "{{{{Trigger}}}}: A foe enters or exits the area.<br>{{{{Effect}}}}: {{{{Teleport}}}} that foe 2 and {{{{seal}}}} them. This interrupts but does not end their movement."
     },
@@ -247,7 +247,7 @@
         "name": "Devil Hand",
         "tags":[
             {"tag_name": "combo"},
-			{"tag_name": "boon", "val": 1}
+			{"tag_name": "{{{{boon}}}}", "val": 1}
         ],
         "description": "{{{{Effect}}}}: {{{{Teleport}}}} 1<br><b>Attack</b>: <i>On hit</i>: {{{{[D]}}}} + {{{{fray}}}}. <i>Miss</i>: {{{{fray damage}}}}.<br>{{{{Effect}}}}: Character explodes in a medium blast {{{{area effect}}}} centered on them, dealing 1 {{{{divine}}}} damage to all foes.<br>{{{{Exceed}}}}: Repeat the effect."
     },
@@ -267,16 +267,16 @@
         "ability": "Spirit Shrine",
         "name": "Shrine",
         "tags":[
-            {"tag_name": "object", "val": 1}
+            {"tag_name": "{{{{object}}}}", "val": 1}
         ],
-        "description": "{{{{Object}}}} {{{{Effect}}}}: {{{{Aura}}}} 2. You can use this ability again while adjacent to your shrine to increase its size, increasing the {{{{height}}}} by +1. The shrine gains additional benefits equal to its total height, including other objects it is stacked on:<ul><li>1: Yourself and allies in the aura have <i>cover</i> from characters from the outside and gain +1 boon on attack rolls.</li><li>2: Yourself and allies in the aura gain 2 vigor when you end your turn there.</li><li>3+: Yourself and allies in the aura have <i>evasion</i>.</li></ul>Listed terms: {{{{cover}}}}, {{{{boon}}}}, {{{{vigor}}}}, {{{{evasion}}}}"
+        "description": "{{{{Object}}}} {{{{Effect}}}}: {{{{Aura}}}} 2. You can use this ability again while adjacent to your shrine to increase its size, increasing the {{{{height}}}} by +1. The shrine gains additional benefits equal to its total {{{{height}}}}, including other objects it is stacked on:<ul><li>1: Yourself and allies in the aura have <i>cover</i> from characters from the outside and gain +1 boon on attack rolls.</li><li>2: Yourself and allies in the aura gain 2 vigor when you end your turn there.</li><li>3+: Yourself and allies in the aura have <i>evasion</i>.</li></ul>Listed terms: {{{{cover}}}}, {{{{boon}}}}, {{{{vigor}}}}, {{{{evasion}}}}"
     },
     {
         "job": "Sealer",
         "ability": "Spirit Shrine",
         "name": "Grace Of The Spirits",
         "tags":[
-			{"tag_name": "interrupt", "val": 1},
+			{"tag_name": "{{{{interrupt}}}}", "val": 1},
             {"tag_name": "mastery"}
         ],
         "description": "{{{{Trigger}}}}: An ally in the {{{{aura}}}} is damaged by an foe’s ability<br>{{{{Effect}}}}: Your ally becomes {{{{immune}}}} to all damage from the triggering ability. Destroy the shrine, then deal 2 {{{{divine}}}} damage, once, to the foe per {{{{height}}}} of the shrine. You cannot place shrines for the rest of combat."
@@ -287,8 +287,8 @@
         "name": "Judgement",
         "tags":[
 			{"tag_name": "combo"},
-			{"tag_name": "interrupt", "val": 1},
-			{"tag_name": "gamble"}
+			{"tag_name": "{{{{interrupt}}}}", "val": 1},
+			{"tag_name": "{{{{gamble}}}}"}
         ],
         "description": "{{{{Trigger}}}}: You score a {{{{Critical Hit}}}} or trigger an {{{{Exceed}}}} effect<br>{{{{Effect}}}}: {{{{Gamble}}}}, then you may {{{{teleport}}}} yourself and each character in range 2 half that far. Foes are {{{{pacified}}}}."
     },
@@ -298,7 +298,7 @@
         "name": "Gran Judicata",
         "tags":[
             {"tag_name": "combo"},
-			{"tag_name": "interrupt", "val": 1},
+			{"tag_name": "{{{{interrupt}}}}", "val": 1},
             {"tag_name": "mastery"}
         ],
         "description": "{{{{Trigger}}}}: You score a {{{{Critical Hit}}}} or trigger an {{{{Exceed}}}} effect<br>{{{{Effect}}}}: Deal 4 {{{{divine}}}} damage to <i>all</i> foes on the battlefield above {{{{bloodied}}}}, and all {{{{bloodied}}}} allies are {{{{blessed}}}} and gain 2 {{{{vigor}}}}."
@@ -330,7 +330,7 @@
         "ability": "Gran Reversa",
         "name": "Reverse Fate",
         "tags":[
-			{"tag_name": "interrupt", "val": 1}
+			{"tag_name": "{{{{interrupt}}}}", "val": 1}
         ],
         "description": "{{{{Trigger}}}}: An ally in the {{{{aura}}}} is targeted by a foe’s ability.<br>{{{{Effect}}}}: Tick down your {{{{power die}}}} by any amount. {{{{Gamble}}}} with a number of d6s equal to the number of ticks you spent, then that ally gains {{{{vigor}}}} equal to double the {{{{gamble}}}} result. However, at the end of the current turn, your ally loses all {{{{vigor}}}}."
     },
@@ -423,7 +423,7 @@
         "ability": "Blazing Bond",
         "name": "Heartfire",
         "tags":[
-            {"tag_name": "interrupt", "val": 2}
+            {"tag_name": "{{{{interrupt}}}}", "val": 2}
         ],
         "description": "{{{{Trigger}}}}: You or your ally takes damage or {{{{sacrifices}}}} hp.<br/>{{{{Effect}}}}: You can choose to reduce that damage by 3, as if by {{{{armor}}}}, or the {{{{sacrifice}}}} cost by 3. If you do, the other partner {{{{sacrifices}}}} 3.<br/>{{{{Comeback}}}}: Reduce partner {{{{sacrifice}}}} to 1."
     },
@@ -620,7 +620,7 @@
         "ability": "Drifting Leaf",
         "name": "Leaf on The Wind",
         "tags":[
-            {"tag_name": "interrupt", "val": 2}
+            {"tag_name": "{{{{interrupt}}}}", "val": 2}
         ],
         "description": "{{{{Trigger}}}}: A foe enters a space adjacent to you.<br/>{{{{Effect}}}}: {{{{Teleport}}}} 2, then deal 1 {{{{piercing}}}} damage to that foe."
     },
@@ -682,7 +682,7 @@
             {"tag_name": "action", "val": 2},
             {"tag_name": "line", "val": 4},
             {"tag_name": "attack"},
-            {"tag_name": "pierce"}
+            {"tag_name": "{{{{pierce}}}}"}
 
         ],
         "description": "<b>Special:</b> Increase the line length by 2 and attack deals {{{{bonus damage}}}} for every two aether spent.<br/><b>Attack:</b> <i>On Hit:</i> 2{{{{[D]}}}} + {{{{fray}}}}. <i>Miss:</i> {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Effect}}}}: Attack target is {{{{shattered}}}}.<br/>{{{{Area Effect}}}}: {{{{[D]}}}} + {{{{fray}}}}.<br/>{{{{Effect}}}}: The attack target is impaled with an icy harpoon, then {{{{shoved}}}} along the line as far as possible towards you, until they {{{{collide}}}} or are stopped by an {{{{obstruction}}}}."
