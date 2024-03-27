@@ -14,12 +14,6 @@ export function convertStringToContent(contentstring: string) {
     )
 }
 
-export function toTitleCase(contentstring: string) {
-    return contentstring.toLowerCase().split(' ').map((word: string) => {
-        return (word.charAt(0).toUpperCase() + word.slice(1));
-    }).join(' ');
-}
-
 function checkerStringToContent(string: string) {
     if ((string.length > 8)) {
         if ((string.substring(0,4) == "{{{{")) {

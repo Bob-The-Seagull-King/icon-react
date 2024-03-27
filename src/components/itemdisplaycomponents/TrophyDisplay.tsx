@@ -23,7 +23,7 @@ const TrophyDisplay = (props: any) => {
             }
         }
 
-        return toTitleCase(result);
+        return capitalizeTag(result);
     }
 
     // Return result -------------------------------
