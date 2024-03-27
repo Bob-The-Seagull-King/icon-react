@@ -1,7 +1,7 @@
 import React from 'react'
 import { capitalizeTag, containsTag} from '../../utility/functions';
 import '../../styles/iconcomponent.scss';
-import {convertStringToContent} from '../../utility/util';
+import {convertStringToContent, toTitleCase} from '../../utility/util';
 
 const TrophyDisplay = (props: any) => {
     const trophydata = props.data.val;
@@ -23,7 +23,7 @@ const TrophyDisplay = (props: any) => {
             }
         }
 
-        return capitalizeTag(result);
+        return toTitleCase(result);
     }
 
     // Return result -------------------------------
