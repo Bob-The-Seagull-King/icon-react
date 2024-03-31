@@ -1,32 +1,32 @@
 import {IIconpendiumItemData, IconpendiumItem} from '../../IconpendiumItem'
 import {ItemType} from '../../Enum'
-import {IAbilityDescription, AbilityDescription} from './AbilityDescription'
-import { PlayerAddon } from '../addons/Addon'
+import {IAbilityDescription, AbilityDescription} from '../abilities/AbilityDescription'
 
-interface IPlayerAbility extends IIconpendiumItemData {
-    chapter: Number,
+interface IAddonParent {
+    type: string,
+    id: string
+}
+
+interface IPlayerAddon extends IIconpendiumItemData {
     class_id: string,
     job_id: string,
-    blurb: string,
+    parent: IAddonParent,
     description: []
 }
 
-class PlayerAbility extends IconpendiumItem {
-    public readonly Chapter;
+class PlayerAddon extends IconpendiumItem {
     public readonly Class;
     public readonly Job;
-    public readonly Blurb;
+    public readonly Parent;
     public readonly Description;
-    public Addons: PlayerAddon[] = [];
 
-    public constructor(data: IPlayerAbility)
+    public constructor(data: IPlayerAddon)
     {
         super(data)
-        this.ItemType = ItemType.Ability;
-        this.Chapter = data.chapter;
+        this.ItemType = ItemType.Addon;
         this.Class = data.class_id;
         this.Job = data.job_id;
-        this.Blurb = data.blurb;
+        this.Parent = data.parent;
         this.Description = this.DescriptionFactory(data.description);
     }
 
@@ -39,12 +39,8 @@ class PlayerAbility extends IconpendiumItem {
         }
         return array;
     }
-    
-    public AddAddons(list: PlayerAddon) {
-        this.Addons.push(list);
-    }
 
 }
 
-export {IPlayerAbility, PlayerAbility}
+export {IAddonParent, IPlayerAddon, PlayerAddon}
 

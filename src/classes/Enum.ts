@@ -1,6 +1,7 @@
 enum ItemType {
     None = '',
-    Ability = 'Ability'
+    Ability = 'Ability',
+    Addon = 'Addon'
 }
 
 export {ItemType}

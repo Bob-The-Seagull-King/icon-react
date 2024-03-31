@@ -9,7 +9,7 @@ interface IIconpendiumItemData {
 }
 
 abstract class IconpendiumItem {
-    public readonly ItemType;
+    public ItemType;
     public readonly Source;
     public readonly ID;
     public readonly Tags;

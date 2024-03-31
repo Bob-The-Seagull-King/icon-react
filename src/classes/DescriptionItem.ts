@@ -1,4 +1,5 @@
 import {ItemType} from './Enum'
+import {getTagValue} from '../utility/functions'
 
 interface IDescriptionItemData {
     tags: [],
@@ -33,6 +34,24 @@ class DescriptionItem {
         } else {
             return sublist;
         }
+    }
+
+    public ReturnTagValues(tag_name: string) {
+        let list = []
+        let tagval = getTagValue(this.Tags, tag_name)
+        if (tagval != undefined) {
+            list.push(tagval)
+        }
+        let i = 0;
+        if (this.SubContent){
+            for (i = 0; i < (this.SubContent?.length || 0); i++) {
+                let tempContent = this.SubContent[i].ReturnTagValues(tag_name)
+                if (tempContent != undefined) {
+                    list.push.apply(list, tempContent)
+                }
+            }
+        }
+        return list;
     }
 }
 
