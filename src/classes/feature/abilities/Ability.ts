@@ -7,6 +7,7 @@ interface IPlayerAbility extends IIconpendiumItemData {
     chapter: Number,
     class_id: string,
     job_id: string,
+    attachments: [],
     blurb: string,
     description: []
 }
@@ -15,6 +16,7 @@ class PlayerAbility extends IconpendiumItem {
     public readonly Chapter;
     public readonly Class;
     public readonly Job;
+    public readonly Attachments;
     public readonly Blurb;
     public readonly Description;
     public Addons: PlayerAddon[] = [];
@@ -26,6 +28,7 @@ class PlayerAbility extends IconpendiumItem {
         this.Chapter = data.chapter;
         this.Class = data.class_id;
         this.Job = data.job_id;
+        this.Attachments = data.attachments;
         this.Blurb = data.blurb;
         this.Description = this.DescriptionFactory(data.description);
     }

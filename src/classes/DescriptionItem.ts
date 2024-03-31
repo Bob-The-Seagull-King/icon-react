@@ -35,25 +35,6 @@ class DescriptionItem {
             return sublist;
         }
     }
-
-    public ReturnAddonValues() {
-        let list = []
-        let tagval = getTagValue(this.Tags, "desc_type")
-        if (tagval != undefined) {
-            if (tagval == "addon")
-            list.push(this.Content)
-        }
-        let i = 0;
-        if (this.SubContent){
-            for (i = 0; i < (this.SubContent?.length || 0); i++) {
-                let tempContent = this.SubContent[i].ReturnAddonValues()
-                if (tempContent != undefined) {
-                    list.push.apply(list, tempContent)
-                }
-            }
-        }
-        return list;
-    }
 }
 
 export {IDescriptionItemData, DescriptionItem}
