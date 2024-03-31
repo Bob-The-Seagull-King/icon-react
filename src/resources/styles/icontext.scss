@@ -1,0 +1,159 @@
+@import './_variables';
+
+.titleShape {
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+}
+
+.megatitleShape {
+    padding: 0%;
+    margin: 0%;
+    font-size: 4em;
+}
+
+.medtitleShape {
+    padding: 0%;
+    margin: 0%;
+    font-size: 2.5em;
+}
+
+.titlePurple {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_purple_main;
+    color: white;
+}
+
+.subtitlePurple {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_purple_secondary;
+    color: white;
+}
+
+.glossaryPurple {
+    color: $colour_purple_main;
+    font-weight: bold;
+}
+
+.boldtextPurple {   
+    font-weight: 650;
+    font-size: 1.25em;
+}
+
+.titleblue {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_blue_main;
+    color: white;
+}
+
+.subtitleblue {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_blue_secondary;
+    color: white;
+}
+
+.titlegreen {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_green_main;
+    color: white;
+}
+
+.subtitlegreen {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_green_secondary;
+    color: white;
+}
+
+.titlered {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_red_main;
+    color: white;
+}
+
+.subtitlered {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_red_secondary;
+    color: white;
+}
+
+.titleyellow {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_yellow_main;
+    color: white;
+}
+
+.subtitleyellow {
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.15em;
+    width: fit-content;
+    background-color: $colour_yellow_secondary;
+    color: white;
+}
+
+.hometitle {
+    color: $colour_purple_main;
+    font-size: 5em;
+    font-weight: 1500;
+}
+
+.homesubtitle {
+    color: $colour_purple_main;
+    font-size: 2em;
+    font-weight: 1500;
+}
+
+.homelink {
+    font-weight: 1000;
+    text-decoration: none;
+    color: $colour_purple_main;
+}
+.navitemh2 {
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+
+.webtitle {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: $colour_purple_main;
+    font-size: 3em;
+
+}
