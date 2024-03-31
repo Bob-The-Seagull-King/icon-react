@@ -34,7 +34,7 @@ class PlayerAddon extends IconpendiumItem {
         let i = 0;
         const array: AbilityDescription[] = []
         for (i = 0; i < data.length; i++) {
-            let tempAD = new AbilityDescription(data[i])
+            const tempAD = new AbilityDescription(data[i])
             array.push(tempAD)
         }
         return array;

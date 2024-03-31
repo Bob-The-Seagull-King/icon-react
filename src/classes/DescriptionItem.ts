@@ -27,7 +27,7 @@ class DescriptionItem {
         if (data) {
             let i = 0;
             for (i = 0; i < data.length; i++) {
-                let tempDI = new DescriptionItem(data[i])
+                const tempDI = new DescriptionItem(data[i])
                 sublist.push(tempDI);
             }
             return sublist;

@@ -4,7 +4,7 @@ import {IAbilityDescription, AbilityDescription} from './AbilityDescription'
 import { PlayerAddon } from '../addons/Addon'
 
 interface IPlayerAbility extends IIconpendiumItemData {
-    chapter: Number,
+    chapter: number,
     class_id: string,
     job_id: string,
     attachments: [],
@@ -37,7 +37,7 @@ class PlayerAbility extends IconpendiumItem {
         let i = 0;
         const array: AbilityDescription[] = []
         for (i = 0; i < data.length; i++) {
-            let tempAD = new AbilityDescription(data[i])
+            const tempAD = new AbilityDescription(data[i])
             array.push(tempAD)
         }
         return array;

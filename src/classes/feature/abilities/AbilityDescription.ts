@@ -18,7 +18,7 @@ class AbilityDescription extends DescriptionItem {
         if (data) {
             let i = 0;
             for (i = 0; i < data.length; i++) {
-                let tempDI = new AbilityDescription(data[i])
+                const tempDI = new AbilityDescription(data[i])
                 sublist.push(tempDI);
             }
             return sublist;

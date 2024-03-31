@@ -1,18 +1,15 @@
 import '../../resources/styles/_icon.scss'
 import React from 'react'
 
-import { DataResponder } from '../../resources/data/child/util/DataResponder'
+import { Requester } from '../../factories/Requester'
+import { IPlayerAbility, PlayerAbility } from '../../classes/feature/abilities/Ability'
+import { AbilityFactory } from '../../factories/features/AbilityFactory'
 
 const HomeRoute: React.FC = () => {
 
-    console.log(DataResponder.ComplexSearch({   type: "abilities",
-                                                request: {
-                                                        operator: "or",
-                                                        terms:[ 
-                                                            {item: "tags", value: "type", equals: true, istag: true, tagvalue: "attack"},
-                                                            {item: "tags", value: "range", equals: true, istag: true, tagvalue: ""}],
-                                                        subparams: []
-                                                    }}))
+    const playerdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "abilities", id: "ab_endlessbattlement"}}) as IPlayerAbility
+    const player: PlayerAbility = AbilityFactory.CreateAbility(playerdata)
+    console.log(player.Name)
 
     // Return result -----------------------------
     return (

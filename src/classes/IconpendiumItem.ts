@@ -13,6 +13,7 @@ abstract class IconpendiumItem {
     public readonly Source;
     public readonly ID;
     public readonly Tags;
+    public readonly Name;
 
     public constructor(data?: IIconpendiumItemData)
     {
@@ -20,6 +21,7 @@ abstract class IconpendiumItem {
         if (data) {
             this.ID = data.id;
             this.Source = data.source;
+            this.Name = data.name;
             this.Tags = data.tags;
             this.ItemType = data.type;
         }
