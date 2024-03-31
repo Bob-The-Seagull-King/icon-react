@@ -1,5 +1,6 @@
 import {IIconpendiumItemData, IconpendiumItem} from '../../IconpendiumItem'
 import {ItemType} from '../../Enum'
+import {IAbilityDescription, AbilityDescription} from './AbilityDescription'
 
 interface IPlayerAbility extends IIconpendiumItemData {
     chapter: Number,
@@ -23,21 +24,17 @@ class PlayerAbility extends IconpendiumItem {
         this.Class = data.class_id;
         this.Job = data.job_id;
         this.Blurb = data.blurb;
-        this.Description = data.description;
+        this.Description = this.DescriptionFactory(data.description);
     }
 
-    public Deserialize() {
-        return  {
-                    id: this.ID,
-                    type: this.ItemType,
-                    source: this.Source,
-                    tags: this.Tags,
-                    chapter: this.Chapter,
-                    class_id: this.Class,
-                    job_id: this.Job,
-                    blurb: this.Blurb,
-                    description: this.Description
-                }
+    private DescriptionFactory(data: []) {
+        let i = 0;
+        const array: AbilityDescription[] = []
+        for (i = 0; i < data.length; i++) {
+            let tempAD = new AbilityDescription(data[i])
+            array.push(tempAD)
+        }
+        return array;
     }
 }
 
