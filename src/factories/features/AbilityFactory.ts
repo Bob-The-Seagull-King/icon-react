@@ -10,7 +10,7 @@ class AbilityFactory {
 
         let i = 0;
         for (i = 0; i < ability.Description.length; i++) {
-            
+            let list = ability.Description[i].ReturnAddonValues();
         }
 
         return ability;

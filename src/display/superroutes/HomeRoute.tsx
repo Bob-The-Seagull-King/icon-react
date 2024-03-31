@@ -1,8 +1,9 @@
 import '../../resources/styles/_icon.scss'
 import React from 'react'
 
-const HomeRoute: React.FC = () => {
+import { DataResponder } from '../../resources/data/child/util/DataResponder'
 
+const HomeRoute: React.FC = () => {
 
 
     // Return result -----------------------------

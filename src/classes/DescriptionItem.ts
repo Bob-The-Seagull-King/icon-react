@@ -36,16 +36,17 @@ class DescriptionItem {
         }
     }
 
-    public ReturnTagValues(tag_name: string) {
+    public ReturnAddonValues() {
         let list = []
-        let tagval = getTagValue(this.Tags, tag_name)
+        let tagval = getTagValue(this.Tags, "desc_type")
         if (tagval != undefined) {
-            list.push(tagval)
+            if (tagval == "addon")
+            list.push(this.Content)
         }
         let i = 0;
         if (this.SubContent){
             for (i = 0; i < (this.SubContent?.length || 0); i++) {
-                let tempContent = this.SubContent[i].ReturnTagValues(tag_name)
+                let tempContent = this.SubContent[i].ReturnAddonValues()
                 if (tempContent != undefined) {
                     list.push.apply(list, tempContent)
                 }
