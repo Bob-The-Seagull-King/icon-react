@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from './resources/routes-constants'
 
-import './resources/styles/*'
+import './resources/styles/_icon'
 
 const RootComponent: React.FC = () => {
     return (
