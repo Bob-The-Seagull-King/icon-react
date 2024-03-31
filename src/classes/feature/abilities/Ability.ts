@@ -46,6 +46,13 @@ class PlayerAbility extends IconpendiumItem {
     public AddAddons(list: PlayerAddon) {
         this.Addons.push(list);
     }
+    
+    destructor() {
+        let i = 0;
+        for (i = 0; i < this.Addons.length; i++) {
+            delete this.Addons[i];
+        }
+    }
 
 }
 

@@ -1,15 +1,15 @@
 import '../../resources/styles/_icon.scss'
 import React from 'react'
 
-import { Requester } from '../../factories/Requester'
-import { IPlayerAbility, PlayerAbility } from '../../classes/feature/abilities/Ability'
-import { AbilityFactory } from '../../factories/features/AbilityFactory'
+import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/ViewAbilitiesCollections'
 
 const HomeRoute: React.FC = () => {
 
-    const playerdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "abilities", id: "ab_endlessbattlement"}}) as IPlayerAbility
-    const player: PlayerAbility = AbilityFactory.CreateAbility(playerdata)
-    console.log(player.Name)
+    const AbilitiesCollectionController = new ViewAbilitiesCollection()
+    AbilitiesCollectionController.UpdateSearchParams({searchtype: "id", searchparam: {type: "abilities", id: "ab_endlessbattlement"}})
+    AbilitiesCollectionController.RunSearch();
+    const data = AbilitiesCollectionController.ReturnAbilities();
+    console.log(data);
 
     // Return result -----------------------------
     return (
