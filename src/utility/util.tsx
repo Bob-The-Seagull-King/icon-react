@@ -1,6 +1,4 @@
 import React from 'react'
-import GlossaryPopup from "../components/pagecomponents/GlossaryPopup";
-import SummonPopup from '../components/pagecomponents/SummonPopup';
 
 export function convertStringToContent(contentstring: string) {
     const split = contentstring.split(/(\[\[\[\[[^\]]*\]\]\]\])|({{{{[^}]{0,}}}}})/g);
@@ -18,11 +16,11 @@ function checkerStringToContent(string: string) {
     if ((string.length > 8)) {
         if ((string.substring(0,4) == "{{{{")) {
             return (
-                <GlossaryPopup data={string.substring(4,string.length-4)} />
+                <span dangerouslySetInnerHTML={{__html: (string)}}></span>
             )
         } else if ((string.substring(0,4) == "[[[[")) {
             return (
-                <SummonPopup data={string.substring(4,string.length-4)} />
+                <span dangerouslySetInnerHTML={{__html: (string)}}></span>
             )
         } else {
             return (
