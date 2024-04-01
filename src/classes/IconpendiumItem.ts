@@ -1,11 +1,14 @@
 import {ItemType} from './Enum'
 
+/**
+ * Basic data package for any Iconpendium Item
+ */
 interface IIconpendiumItemData {
-    id: string,
-    type: string,
-    name: string,
-    source: string,
-    tags: []
+    id: string, // The id of the item
+    type: string, // The type of the item (ability, addon, summon, talent, relic, etc)
+    name: string, // The name of the item
+    source: string, // The source of the item (core book, homebrew, etc)
+    tags: [] // Tags associated with that item (used for sorting and synergies)
 }
 
 abstract class IconpendiumItem {
@@ -15,6 +18,10 @@ abstract class IconpendiumItem {
     public readonly Tags;
     public readonly Name;
 
+    /**
+     * Assigns data values to the parameters of the item
+     * @param data The item data
+     */
     public constructor(data?: IIconpendiumItemData)
     {
         this.ItemType = ItemType.None

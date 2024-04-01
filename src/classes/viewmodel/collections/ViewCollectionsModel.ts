@@ -5,14 +5,24 @@ abstract class ViewCollectionsModel {
     searchParam: any = {};
     dataresults: any = [];
 
+    /**
+     * Empty constructor
+     */
     constructor() {
         undefined;
     }
 
+    /**
+     * Updates the searchParam value
+     * @param request The IRequest formatted searchParam
+     */
     public UpdateSearchParams(request: IRequest) {
         this.searchParam = request;
     }
 
+    /**
+     * Make a request with the searchParam and store the resulting data
+     */
     public RunSearch() {
         this.dataresults = Requester.MakeRequest(this.searchParam as IRequest);
         if (this.dataresults.length == undefined) {
@@ -20,10 +30,16 @@ abstract class ViewCollectionsModel {
         }
     }
 
+    /**
+     * Basic get function
+     */
     public GetResults() {
         return this.dataresults
     }
 
+    /**
+     * Basic get function
+     */
     public GetParam() {
         return this.searchParam as IRequest
     }

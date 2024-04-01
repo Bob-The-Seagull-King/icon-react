@@ -6,7 +6,22 @@ import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/Vie
 const HomeRoute: React.FC = () => {
 
     const AbilitiesCollectionController = new ViewAbilitiesCollection()
-    AbilitiesCollectionController.UpdateSearchParams({searchtype: "id", searchparam: {type: "abilities", id: "ab_endlessbattlement"}})
+    AbilitiesCollectionController.UpdateSearchParams({searchtype: "complex", searchparam: {
+                                                                                            type: "abilities", 
+                                                                                            request: 
+                                                                                                {
+                                                                                                    operator: 'and',
+                                                                                                    terms: [
+                                                                                                        {
+                                                                                                            item: "name", // The string name of the key being checked
+                                                                                                            value: "tt", // The desired value of the key
+                                                                                                            equals: true, // true -> check if item == value, false -> check if item != value
+                                                                                                            strict: false, // true -> exact match of value, false -> item includes value
+                                                                                                        }
+                                                                                                    ],
+                                                                                                    subparams: []
+                                                                                                }
+                                                                                            }})
     AbilitiesCollectionController.RunSearch();
     const data = AbilitiesCollectionController.ReturnAbilities();
     console.log(data);

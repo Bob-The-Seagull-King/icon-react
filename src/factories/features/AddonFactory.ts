@@ -4,6 +4,11 @@ import {IAddonParent, IPlayerAddon, PlayerAddon} from '../../classes/feature/add
 
 class AddonFactory {
 
+    /**
+     * Creates a PlayerAddon object
+     * @param _addon Data on the addon to be sent to the constructor
+     * @returns The addon that was created
+     */
     static CreateAddon(_addon: IPlayerAddon) {
         const addon = new PlayerAddon(_addon)
         return addon;

@@ -1,18 +1,31 @@
 import {IDescriptionItemData, DescriptionItem} from '../../DescriptionItem'
 
+/**
+ * Interface for an ability description item
+ */
 interface IAbilityDescription extends IDescriptionItemData {
-    glossary: []
+    glossary?: [] // The glossary of a given description item
 }
 
 class AbilityDescription extends DescriptionItem {
     public readonly Glossary;
 
+    /**
+     * Assign parameter values
+     * @param data The data in IAbilityDescription format
+     */
     public constructor(data: IAbilityDescription)
     {
         super (data)
         this.Glossary = data.glossary;
     }
 
+    /**
+     * Deconstructs the description JSON object into an
+     * array of AbilityDescription objects.
+     * @param data The description array
+     * @returns Array of DescriptionItems
+     */
     SubConstructor(data?: []) {
         const sublist: DescriptionItem[] = []
         if (data) {

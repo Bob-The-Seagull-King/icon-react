@@ -20,7 +20,12 @@ class PlayerAbility extends IconpendiumItem {
     public readonly Blurb;
     public readonly Description;
     public Addons: PlayerAddon[] = [];
-
+    
+    /**
+     * Assigns parameters and creates a series of description
+     * objects with DescriptionFactory
+     * @param data Object data in IPlayerAbility format
+     */
     public constructor(data: IPlayerAbility)
     {
         super(data)
@@ -33,6 +38,12 @@ class PlayerAbility extends IconpendiumItem {
         this.Description = this.DescriptionFactory(data.description);
     }
 
+    /**
+     * Translates the description JSON objects into a collection
+     * of AbilityDescription objects
+     * @param data The array of description data objects
+     * @returns Array of AbilityDescription objects
+     */
     private DescriptionFactory(data: []) {
         let i = 0;
         const array: AbilityDescription[] = []
@@ -43,10 +54,18 @@ class PlayerAbility extends IconpendiumItem {
         return array;
     }
     
+    /**
+     * Add an addon to the ability
+     * @param list the PlayerAddon being created
+     */
     public AddAddons(list: PlayerAddon) {
         this.Addons.push(list);
     }
     
+    /**
+     * When destroyed, also delete all associated
+     * addon objects.
+     */
     destructor() {
         let i = 0;
         for (i = 0; i < this.Addons.length; i++) {
