@@ -26,6 +26,8 @@
     width: fit-content;
     background-color: $colour_purple_main;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .subtitlePurple {
@@ -36,6 +38,8 @@
     width: fit-content;
     background-color: $colour_purple_secondary;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .glossaryPurple {
@@ -56,6 +60,8 @@
     width: fit-content;
     background-color: $colour_blue_main;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .subtitleblue {
@@ -66,6 +72,8 @@
     width: fit-content;
     background-color: $colour_blue_secondary;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .titlegreen {
@@ -76,6 +84,8 @@
     width: fit-content;
     background-color: $colour_green_main;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .subtitlegreen {
@@ -86,16 +96,21 @@
     width: fit-content;
     background-color: $colour_green_secondary;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .titlered {
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0.15em;
-    width: fit-content;
+    border-radius: 0em 0em 0.5em 0.5em;
+    width: 100%;
+    text-align: center;
     background-color: $colour_red_main;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .subtitlered {
@@ -106,6 +121,8 @@
     width: fit-content;
     background-color: $colour_red_secondary;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .titleyellow {
@@ -116,6 +133,8 @@
     width: fit-content;
     background-color: $colour_yellow_main;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .subtitleyellow {
@@ -126,6 +145,8 @@
     width: fit-content;
     background-color: $colour_yellow_secondary;
     color: white;
+    font-size: 200%;
+    font-weight: bolder;
 }
 
 .hometitle {

@@ -1,353 +1,95 @@
 @import './_variables';
 
+// Border
 
-.summonStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    background: white;
-    max-width: 25em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
+.bordermainpurple {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_purple_main;
 }
 
-.relicStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 25em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
+.bordersubpurple {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_purple_secondary;
 }
+
+.bordermainblue {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_blue_main;
+}
+
+.bordersubblue {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_blue_secondary;
+}
+
+.bordermaingreen {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_green_main;
+}
+
+.bordersubgreen {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_green_secondary;
+}
+
+.bordermainred {
+    border-style: solid;
+    border-width: 2px;
+    border-color: $colour_red_main;
+}
+
+.bordersubred {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_red_secondary;
+}
+
+.bordermainyellow {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_yellow_main;
+}
+
+.bordersubyellow {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_yellow_secondary;
+}
+
+.bordermaingrey {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_grey_main;
+}
+
+.bordersubgrey {
+    border-style: solid;
+    border-width: 50%;
+    border-color: $colour_grey_secondary;
+}
+
+// Structure
+
 
 .abilityStructure {
-    border-radius: 1em;
+    border-radius: 0em 0em 1em 1em;
     box-shadow: 0 0 5px 1px #CCC;
-    max-width: 25em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.ruleStructure {
-    border-radius: 1em;
-    background: white;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 25em;
-    padding: 1em;
-    padding-bottom: 0.25em;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.powerStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 25em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.kinstructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 40em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.campStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 35em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.campupgradeStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 100%;
-    padding: 1em;
-    padding-bottom:0.5em;
-    margin-top: 1em;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.bondStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 35em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.bonustraitStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 50%;
-    padding: 1em;
-    padding-bottom:0.01%;
-    padding-top:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.ruleSubStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 100%;
-    padding: 1em;
-    margin: 0.5em;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.jobStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 45em;
-    padding: 2em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.classStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 100%;
-    padding: 2em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.classjobStructure {
-    max-width: 75%;
-}
-
-.statsStructure {
-    p {
-        margin: 0.25em;
-        margin-left: 0em;
-      }
-}
-
-.addonStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 25em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.baseStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
     width: 100%;
+    text-align: justify;
+    background-color: $colour_background_grey;
 
     &:hover {
         box-shadow: 0 0 10px 2px #CCC;
     }
 }
 
-.basesearchStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
+.abilityInternalStructure {
     padding: 1em;
-    text-align: justify;
-    width: 100%;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.basenarrativesearchStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    padding: 1em;
-    text-align: justify;
-    width: 75%;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.basesearchitemStructure {
-    border-radius: 0.75em;
-    box-shadow: 0 0 5px 1px #bd89ac;
-    background-color: $colour_purple_main;
-    color: white;
-    text-align: justify;
-    width: 100%;
-    padding-bottom: 0em;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #bd89ac;
-    }
-}
-
-.basesearchbuttonStructure {
-    border-radius: 0.75em;
-    box-shadow: 0 0 5px 1px #bd89ac;
-    background-color: $colour_purple_main;
-    color: white;
-    text-align: justify;
-    width: 100%;
-    padding-bottom: 0em;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #bd89ac;
-    }
-}
-
-.basesearchlightStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #bd89ac;
-    background-color: $colour_purple_secondary;
-    color: white;
-    text-align: justify;
-    width: fit-content;
-    margin: 1em;
-    margin-right: 0em;
-    padding: 1em;
-    padding-top: 0.1em;
-    padding-bottom: 0.1em;
-    font-size: 0.75em;
-    margin-bottom: 0em;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #bd89ac;
-    }
-}
-
-.paddedSearchAdd {
-    margin: 1em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: center;
-    border-radius: 1em;
-    box-shadow: 0 0 5px 0px #fff;
-    background-color: rgb(219, 9, 219);
-    &:hover {
-        box-shadow: 0 0 5px 2px #fff;
-    }
-}
-
-.homeParagraphStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 45em;
-    padding: 2em;
-    text-align: justify;
-    margin-top: -2em;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.rulesParagraphStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    max-width: 60em;
-    padding: 1em;
-    padding-bottom:0.01%;
-    text-align: justify;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
-}
-
-.basenavitemStructure {
-    border-radius: 0.75em;
-    box-shadow: 0 0 5px 1px $colour_purple_secondary;
-    background-color: $colour_purple_main;
-    color: white;
-    text-align: justify;
-    padding-left: 1em;
-    padding-right: 1em;
-
-
-    &:hover {
-        box-shadow: 0 0 10px 2px $colour_purple_secondary;
-    }
-}
-
-.basenavStructure {
-    border-radius: 1em;
-    box-shadow: 0 0 5px 1px #CCC;
-    padding: 1em;
-    text-align: justify;
-    width: fit-content;
-    display: flex;
-
-    &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
-    }
+    font-size: 0.85em;
 }
