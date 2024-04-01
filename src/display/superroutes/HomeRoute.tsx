@@ -3,6 +3,7 @@ import '../../resources/styles/_icon.scss'
 import React from 'react'
 
 import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/ViewAbilitiesCollections'
+import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 
 const HomeRoute: React.FC = () => {
 
@@ -17,9 +18,12 @@ const HomeRoute: React.FC = () => {
     // Return result -----------------------------
     return (
         <div className="container">
-            <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
+            <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
                 {AbilitiesCollectionController.ReturnAbilities().map((item) => (
-                        <div className="col" key={"abilityDisplay"+item.ID}>{item.Name}</div>
+                        <div className="col" key={"abilityDisplay"+item.ID}>
+                            <AbilityDisplay data={item}/>
+                            <br/>
+                        </div>
                     ))}
             </div>
         </div>
