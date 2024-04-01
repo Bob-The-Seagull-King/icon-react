@@ -7,21 +7,8 @@ import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/Vie
 const HomeRoute: React.FC = () => {
 
     const AbilitiesCollectionController = new ViewAbilitiesCollection()
-    AbilitiesCollectionController.UpdateSearchParams({searchtype: "complex", searchparam: {
-                                                                                            type: "abilities", 
-                                                                                            request: 
-                                                                                                {
-                                                                                                    operator: 'and',
-                                                                                                    terms: [
-                                                                                                        {
-                                                                                                            item: "name", // The string name of the key being checked
-                                                                                                            value: "tt", // The desired value of the key
-                                                                                                            equals: true, // true -> check if item == value, false -> check if item != value
-                                                                                                            strict: false, // true -> exact match of value, false -> item includes value
-                                                                                                        }
-                                                                                                    ],
-                                                                                                    subparams: []
-                                                                                                }
+    AbilitiesCollectionController.UpdateSearchParams({searchtype: "file", searchparam: {
+                                                                                            type: "abilities"
                                                                                             }})
     AbilitiesCollectionController.RunSearch();
     const data = AbilitiesCollectionController.ReturnAbilities();
@@ -30,11 +17,10 @@ const HomeRoute: React.FC = () => {
     // Return result -----------------------------
     return (
         <div className="container">
-            <div className="row row-cols-3">
-                <div className="col">Column</div>
-                <div className="col">Column</div>
-                <div className="col">Column</div>
-                <div className="col">Column</div>
+            <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-1">
+                {AbilitiesCollectionController.ReturnAbilities().map((item) => (
+                        <div className="col" key={"abilityDisplay"+item.ID}>{item.Name}</div>
+                    ))}
             </div>
         </div>
     )
