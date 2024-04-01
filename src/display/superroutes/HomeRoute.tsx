@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React from 'react'
 
@@ -28,8 +29,13 @@ const HomeRoute: React.FC = () => {
 
     // Return result -----------------------------
     return (
-        <div>
-            <p className="hometitle">Test</p>
+        <div className="container">
+            <div className="row row-cols-3">
+                <div className="col">Column</div>
+                <div className="col">Column</div>
+                <div className="col">Column</div>
+                <div className="col">Column</div>
+            </div>
         </div>
     )
     // -------------------------------------------
