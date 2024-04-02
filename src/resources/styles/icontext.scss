@@ -27,7 +27,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_purple_main;
@@ -40,7 +41,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_purple_secondary;
@@ -63,7 +65,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_blue_main;
@@ -76,7 +79,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_blue_secondary;
@@ -89,7 +93,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_green_main;
@@ -102,7 +107,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_green_secondary;
@@ -115,7 +121,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_red_main;
@@ -128,7 +135,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_red_secondary;
@@ -141,7 +149,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_yellow_main;
@@ -154,7 +163,8 @@
     padding-left: 0.25em;
     padding-right: 0.25em;
     padding-bottom: 0.25em;
-    border-radius: 0em 0em 0.25em 0.25em;
+    margin: 0em;
+    border-radius: 0em;
     width: 100%;
     text-align: center;
     background-color: $colour_yellow_secondary;
@@ -215,4 +225,14 @@
   
   .separator:not(:empty)::after {
     margin-left: .25em;
+  }
+
+  .itemlisttext {
+
+    font-size: 150%;
+    text-align: left;
+  }
+
+  .softpad {
+    padding: 0.25em !important
   }

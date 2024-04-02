@@ -2,28 +2,21 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React from 'react'
 
+import PlayerTacticsAbilities from '../../display/pages/PlayerTacticsAbilities'
 import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/ViewAbilitiesCollections'
-import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 
 const HomeRoute: React.FC = () => {
 
+    // Initialize Controller //
     const AbilitiesCollectionController = new ViewAbilitiesCollection()
     AbilitiesCollectionController.UpdateSearchParams({searchtype: "file", searchparam: {type: "abilities"}})
-    AbilitiesCollectionController.RunSearch();
-    const data = AbilitiesCollectionController.ReturnAbilities();
+    if (AbilitiesCollectionController.GetResults().length == 0){
+        AbilitiesCollectionController.RunSearch();
+    }
 
     // Return result -----------------------------
     return (
-        <div className="container">
-            <div className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1">
-                {AbilitiesCollectionController.ReturnAbilities().map((item) => (
-                        <div className="col" key={"abilityDisplay"+item.ID}>
-                            <AbilityDisplay data={item}/>
-                            <br/>
-                        </div>
-                    ))}
-            </div>
-        </div>
+        <PlayerTacticsAbilities controller={AbilitiesCollectionController}/>
     )
     // -------------------------------------------
 }

@@ -1,16 +1,19 @@
 import { ViewCollectionsModel } from "./ViewCollectionsModel";
 import { IPlayerAbility, PlayerAbility } from "../../../classes/feature/abilities/Ability";
 import { AbilityFactory } from "../../../factories/features/AbilityFactory";
+import { ViewTableItem } from "./ViewTableItem";
+import { getColour } from "../../../utility/functions";
 
 class ViewAbilitiesCollection extends ViewCollectionsModel {
 
-    private AbilitiesList: PlayerAbility[] = [];
-
+     AbilitiesList: PlayerAbility[] = [];
+    
     /**
      * Empty constructor
      */
-    constructor(){
+    constructor(){ 
         super()
+        this.AbilitiesList = []
     }
 
     /**
@@ -27,11 +30,14 @@ class ViewAbilitiesCollection extends ViewCollectionsModel {
      * and add it to the internal list.
      */
     PostSearch() {
-        this.CleanupAbilities;
+        this.CleanupAbilities();
+        this.CleanupCollection();
+        console.log("test")
         let i = 0;
         for (i = 0; i < this.dataresults.length; i++) {
             const abilityNew = AbilityFactory.CreateAbility(this.dataresults[i]);
-            this.AbilitiesList.push(abilityNew);
+            const ItemNew = new ViewTableItem(abilityNew, getColour(abilityNew.Class));
+            this.itemcollection.push(ItemNew);
         }
     }
 
@@ -53,11 +59,34 @@ class ViewAbilitiesCollection extends ViewCollectionsModel {
         this.AbilitiesList = []
     }
 
+    CleanupCollection() {
+        let i = 0;
+        for (i = 0; i < this.itemcollection.length; i ++) {
+            delete this.itemcollection[i]
+        }
+        this.itemcollection = []
+    }
+
     /**
      * Basic get function
      */
     public ReturnAbilities() {
+        this.UpdateList();
         return this.AbilitiesList;
+    }
+
+    public ReturnItems() {
+        return this.itemcollection;
+    }
+    
+    UpdateList() {
+        let i = 0;
+        this.AbilitiesList = []
+        for (i = 0; i < this.itemcollection.length; i++) {
+            if (this.itemcollection[i].IsActive) {
+                this.AbilitiesList.push(this.itemcollection[i].HeldItem)
+            }
+        }
     }
 }
 

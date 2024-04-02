@@ -4,6 +4,7 @@ abstract class ViewCollectionsModel {
 
     searchParam: any = {};
     dataresults: any = [];
+    itemcollection: any[] = [];
 
     /**
      * Empty constructor
@@ -42,6 +43,10 @@ abstract class ViewCollectionsModel {
      */
     public GetParam() {
         return this.searchParam as IRequest
+    }
+
+    UpdateList() {
+        undefined;
     }
 
 }
