@@ -9,6 +9,7 @@ interface IAbilityDescription extends IDescriptionItemData {
 
 class AbilityDescription extends DescriptionItem {
     public readonly Glossary;
+    public SubContent;
 
     /**
      * Assign parameter values
@@ -18,6 +19,7 @@ class AbilityDescription extends DescriptionItem {
     {
         super (data)
         this.Glossary = data.glossary;
+        this.SubContent = this.AbilitySubConstructor(data.subcontent)
     }
 
     /**
@@ -26,8 +28,8 @@ class AbilityDescription extends DescriptionItem {
      * @param data The description array
      * @returns Array of DescriptionItems
      */
-    SubConstructor(data?: []) {
-        const sublist: DescriptionItem[] = []
+    AbilitySubConstructor(data?: []) {
+        const sublist: AbilityDescription[] = []
         if (data) {
             let i = 0;
             for (i = 0; i < data.length; i++) {

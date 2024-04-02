@@ -3,14 +3,14 @@ import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
 import { getColour } from '../../../../utility/functions';
-import {PlayerAbility } from "../../../../classes/feature/abilities/Ability";
+import { PlayerAddon } from '../../../../classes/feature/addons/Addon';
 import {IIconpendiumItemTag} from '../../../../classes/IconpendiumItem'
 
 import TagDisplay from '../../subcomponents/TagDisplay'
 import AbilityDescriptionItemDisplay from '../../subcomponents/description/AbilityDescriptionItemDisplay';
 
-const AbilityDisplay = (props: any) => {
-    const AbilityObject: PlayerAbility = props.data
+const AddonDisplay = (props: any) => {
+    const AbilityObject: PlayerAddon = props.data
     const bannedAbilityTags = ["inflict"]
 
     function returnDescription() {
@@ -61,17 +61,13 @@ const AbilityDisplay = (props: any) => {
     }
 
     return (
-        <div className={'abilityStructure bordermain'+getColour(AbilityObject.Class)}>
-            <h1 className={'titleShape title'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
+        <div className={'abilityStructure bordersub'+getColour(AbilityObject.Class)}>
+            <h1 className={'titleShape subtitle'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
             <div className='abilityInternalStructure'>
                 <div>
                     {returnTags()}
                 </div>
                 <div className="verticalspacer"/>
-                <div>
-                    <i>{AbilityObject.Blurb || ""}</i>
-                </div> 
-                <div className="verticalspacer"/> 
                 <div>
                     <div className="separator">&#x27E1;</div>
                 </div> 
@@ -84,4 +80,4 @@ const AbilityDisplay = (props: any) => {
     )
 }
 
-export default AbilityDisplay;
+export default AddonDisplay;

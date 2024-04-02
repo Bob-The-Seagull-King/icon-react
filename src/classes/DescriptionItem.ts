@@ -11,7 +11,6 @@ interface IDescriptionItemData {
 }
 
 class DescriptionItem {
-    public readonly SubContent;
     public readonly Content;
     public readonly Tags;
 
@@ -25,7 +24,6 @@ class DescriptionItem {
         if (data) {
             this.Tags = data.tags;
             this.Content = data.content || "";
-            this.SubContent = this.SubConstructor(data.subcontent)
         }
 
     }
