@@ -21,7 +21,7 @@ const GlossaryDisplay = (props: any) => {
     }
 
     return (
-        <div className={'abilityStructure bordermainpurple popupBody'}>
+        <div className={'abilityStructure bordermainpurple'}>
             <h1 className={'titleShape titlepurple'}>{ruleObject.Name || ""}</h1>
             <div className='abilityInternalStructure'>
                 <div>

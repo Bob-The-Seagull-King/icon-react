@@ -19,7 +19,9 @@ const GlossaryHover = (props: any) => {
         </HoverCard.Trigger>
         <HoverCard.Portal>
           <HoverCard.Content className="HoverCardContent" sideOffset={5}>
-            <GlossaryDisplay data={ruleObject}/>
+              <div  className='popupBody'>
+                <GlossaryDisplay data={ruleObject}/>
+              </div>
             <HoverCard.Arrow className="HoverCardArrow" />
           </HoverCard.Content>
         </HoverCard.Portal>
