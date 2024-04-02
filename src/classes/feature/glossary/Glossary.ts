@@ -1,40 +1,23 @@
 import {IIconpendiumItemData, IconpendiumItem} from '../../IconpendiumItem'
 import {ItemType} from '../../Enum'
-import {IAbilityDescription, AbilityDescription} from './AbilityDescription'
-import { PlayerAddon } from '../addons/Addon'
+import {IAbilityDescription, AbilityDescription} from '../abilities/AbilityDescription'
 
-interface IPlayerAbility extends IIconpendiumItemData {
-    chapter: number,
-    class_id: string,
-    job_id: string,
-    attachments: [],
-    blurb: string,
+interface IGlossaryRule extends IIconpendiumItemData {
     description: []
 }
 
-class PlayerAbility extends IconpendiumItem {
-    public readonly Chapter;
-    public readonly Class;
-    public readonly Job;
-    public readonly Attachments;
-    public readonly Blurb;
+class GlossaryRule extends IconpendiumItem {
     public readonly Description;
-    public Addons: PlayerAddon[] = [];
     
     /**
      * Assigns parameters and creates a series of description
      * objects with DescriptionFactory
      * @param data Object data in IPlayerAbility format
      */
-    public constructor(data: IPlayerAbility)
+    public constructor(data: IGlossaryRule)
     {
         super(data)
-        this.ItemType = ItemType.Ability;
-        this.Chapter = data.chapter;
-        this.Class = data.class_id;
-        this.Job = data.job_id;
-        this.Attachments = data.attachments;
-        this.Blurb = data.blurb;
+        this.ItemType = ItemType.GlossaryRule;
         this.Description = this.DescriptionFactory(data.description);
     }
 
@@ -55,22 +38,11 @@ class PlayerAbility extends IconpendiumItem {
     }
     
     /**
-     * Add an addon to the ability
-     * @param list the PlayerAddon being created
-     */
-    public AddAddons(list: PlayerAddon) {
-        this.Addons.push(list);
-    }
-    
-    /**
      * When destroyed, also delete all associated
      * addon objects.
      */
     destructor() {
         let i = 0;
-        for (i = 0; i < this.Addons.length; i++) {
-            delete this.Addons[i];
-        }
         for (i = 0; i < this.Description.length; i++) {
             delete this.Description[i];
         }
@@ -78,5 +50,5 @@ class PlayerAbility extends IconpendiumItem {
 
 }
 
-export {IPlayerAbility, PlayerAbility}
+export {IGlossaryRule, GlossaryRule}
 

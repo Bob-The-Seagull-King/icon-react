@@ -1,35 +1,52 @@
 import React from 'react'
+import { Requester } from '../factories/Requester';
+import { IGlossaryRule, GlossaryRule } from '../classes/feature/glossary/Glossary';
+import GlossaryHover from '../display/components/subcomponents/glossary/GlossaryHover';
 
-export function convertStringToContent(contentstring: string) {
-    const split = contentstring.split(/(\[\[\[\[[^\]]*\]\]\]\])|({{{{[^}]{0,}}}}})/g);
-    console.log(split);
-    return (
-        <span>
-            {split.filter(item => item !== undefined).map((item) => (
-                <span key={item + ( Math.random().toString())}>{checkerStringToContent(item)}</span>
-            ))}
-        </span>
-    )
+export function ConvertContentWithGlossary(glossary: any[] | undefined, content: string) {
+    let i = 0;
+
+    if (glossary) {
+        for (i = 0; i < (glossary?.length || 0); i ++) {
+            const modifiers = "g"
+            const matchstring = "("+glossary[i].val.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')+")" //eslint-disable-line
+            const patt = new RegExp(matchstring,modifiers);
+            const split = content.split(patt);
+            
+            return (
+                <span>
+                    {split.map((item) => (
+                            <span key='glossarysplititem'>
+                                {ArrayItemIntoHtml(item, glossary[i])}
+                            </span>
+                        ))}
+                </span>
+            )
+        }
+    }
+    return content;
 }
 
-function checkerStringToContent(string: string) {
-    if ((string.length > 8)) {
-        if ((string.substring(0,4) == "{{{{")) {
+function ArrayItemIntoHtml(content: string, delim: any) {
+    if (content != "") {
+        if (content == delim.val) {
+
+            const GlossaryData: IGlossaryRule = Requester.MakeRequest(
+                                                        {searchtype: "id", searchparam: {type: "glossary", id: delim.id}}
+                                                        ) as IGlossaryRule
+            const GlossaryObject = new GlossaryRule(GlossaryData)
+
             return (
-                <span dangerouslySetInnerHTML={{__html: (string)}}></span>
-            )
-        } else if ((string.substring(0,4) == "[[[[")) {
-            return (
-                <span dangerouslySetInnerHTML={{__html: (string)}}></span>
+                <GlossaryHover data={GlossaryObject} titlename={content}/>
             )
         } else {
             return (
-                <span dangerouslySetInnerHTML={{__html: (string)}}></span>
+                <span>{content}</span>
             )
         }
-    } else {
-        return (
-            <span dangerouslySetInnerHTML={{__html: (string)}}></span>
-        )
     }
+    return (
+        <span>
+        </span>
+    )
 }

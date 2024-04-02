@@ -21,6 +21,7 @@ class AbilityDescription extends DescriptionItem {
         this.Glossary = data.glossary;
         this.SubContent = this.AbilitySubConstructor(data.subcontent)
     }
+    
 
     /**
      * Deconstructs the description JSON object into an
