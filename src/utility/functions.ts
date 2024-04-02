@@ -12,8 +12,11 @@ export const sayHello = (userName: string): string => {
  * @param stringVal The string to be capitalized
  * @returns The string with the first letter capitalized
  */
-export function capitalizeTag(stringVal: string) {
-    return stringVal[0].toUpperCase() + stringVal.slice(1).toLowerCase();
+export function capitalizeString(stringVal: string) {
+    if (stringVal.length > 0) {
+        return stringVal[0].toUpperCase() + stringVal.slice(1).toLowerCase();
+    }
+    return "";
 }
 
 /**

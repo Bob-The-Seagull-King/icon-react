@@ -8,12 +8,9 @@ import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 const HomeRoute: React.FC = () => {
 
     const AbilitiesCollectionController = new ViewAbilitiesCollection()
-    AbilitiesCollectionController.UpdateSearchParams({searchtype: "file", searchparam: {
-                                                                                            type: "abilities"
-                                                                                            }})
+    AbilitiesCollectionController.UpdateSearchParams({searchtype: "file", searchparam: {type: "abilities"}})
     AbilitiesCollectionController.RunSearch();
     const data = AbilitiesCollectionController.ReturnAbilities();
-    console.log(data);
 
     // Return result -----------------------------
     return (

@@ -1,5 +1,10 @@
 @import './_variables';
 
+.tagText {
+    font-weight: bolder;
+    color: $colour_grey_main;
+}
+
 .titleShape {
     padding: 0%;
     margin: 0%;
@@ -178,3 +183,27 @@
     font-size: 3em;
 
 }
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $colour_grey_secondary;
+    font-weight: bolder;
+    font-size: 2em;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid $colour_grey_secondary;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }

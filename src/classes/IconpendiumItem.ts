@@ -11,6 +11,14 @@ interface IIconpendiumItemData {
     tags: [] // Tags associated with that item (used for sorting and synergies)
 }
 
+/**
+ * Basic item tag
+ */
+interface IIconpendiumItemTag {
+    tag_name: any, // The name of the tag
+    val: any // The value of the tag
+}
+
 abstract class IconpendiumItem {
     public ItemType;
     public readonly Source;
@@ -36,4 +44,4 @@ abstract class IconpendiumItem {
     }
 }
 
-export {IIconpendiumItemData, IconpendiumItem}
+export {IIconpendiumItemData, IconpendiumItem, IIconpendiumItemTag}

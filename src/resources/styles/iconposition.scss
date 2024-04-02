@@ -1,5 +1,21 @@
 @import './_variables';
 
+.verticalspacer {
+    
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+
+.tagBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagItem {
+    padding-right: 1em;
+    margin: 0em;
+}
+
 .abilityAddonPosition {
     display: flex;
     align-items: flex-end;
