@@ -29,6 +29,9 @@ class Requester {
             case "complex": {
                 return DataResponder.ComplexSearch(request.searchparam);
             }
+            case "tags": {
+                return DataResponder.GetAllTagsInData(request.searchparam);
+            }
             default: {
                 return []
             }

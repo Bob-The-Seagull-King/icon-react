@@ -3,19 +3,28 @@ import '../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
 import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/ViewAbilitiesCollections'
+import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
+import { AbilitiesFilterManager } from '../../classes/viewmodel/collections/filters/AbilitiesFilterManager'
+
 import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 import ViewTableItemDisplay from '../../display/components/subcomponents/list/ViewTableItemDisplay'
 
 const PlayerTacticsAbilities = (prop: any) => {
+    // Initialize controllers and managers
+    const ViewPageController: AllAbilitiesListPage = prop.controller
+    const AbilitiesCollectionController: ViewAbilitiesCollection = ViewPageController.Collection;
+    const FilterManager: AbilitiesFilterManager = ViewPageController.FilterManager;
 
-    const AbilitiesCollectionController: ViewAbilitiesCollection = prop.controller;
-
-    const BaseActiveItems = AbilitiesCollectionController.AbilitiesList
-    const BaseFoundItems = AbilitiesCollectionController.itemcollection
+    console.log(FilterManager);
 
     // Initialize Use State
+    const BaseActiveItems = AbilitiesCollectionController.AbilitiesList;
+    const BaseFoundItems = AbilitiesCollectionController.itemcollection;
+
     const [_activeItems, returnstate] = useState(BaseActiveItems);
     const [_foundItems, returntable] = useState(BaseFoundItems)
+
+    // --------------------------------------------------------------------------------------------
 
     function ItemRecall() {
         returnstate(RecallAbilities())
