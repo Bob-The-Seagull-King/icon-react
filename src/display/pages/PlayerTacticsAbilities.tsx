@@ -60,7 +60,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                     <div className="row">
                         <div className='col-12'>
                             {_activeItems.length == 0 &&
-                                <div className="vh-100">
+                                <div className="">
                                     <div className='bordersubgrey emptyboxStructure'>
                                         <h1 className="subtletext">No Items Selected</h1>
                                     </div>
