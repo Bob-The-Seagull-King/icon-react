@@ -3,13 +3,12 @@ import { AbilityFactory } from "../../../../factories/features/AbilityFactory";
 import { getColour } from "../../../../utility/functions";
 import { IFilterItem, IFilterObject, IFilterTag, IFilterText, FilterTag, FilterItem, FilterText } from "./FilterInterfaces"
 import { Requester } from "../../../../factories/Requester";
+import { FilterManager } from "./FilterManager";
 
-class AbilitiesFilterManager {
-    TextOptions: FilterText[];
-    TagOptions: FilterTag[];
-    MiscOptions: FilterItem[];
+class AbilitiesFilterManager extends FilterManager {
 
     constructor() {
+        super()
         this.TextOptions = [new FilterText({group: "name", val: "", isstrict: false})]
         this.TagOptions = this.FindTags();
         this.MiscOptions = this.FindMisc();
