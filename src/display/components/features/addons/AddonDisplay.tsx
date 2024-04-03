@@ -11,7 +11,7 @@ import AbilityDescriptionItemDisplay from '../../subcomponents/description/Abili
 
 const AddonDisplay = (props: any) => {
     const AbilityObject: PlayerAddon = props.data
-    const bannedAbilityTags = ["inflict"]
+    const bannedAbilityTags = ["inflict", "type"]
 
     function returnDescription() {
         return (
@@ -46,10 +46,6 @@ const AddonDisplay = (props: any) => {
         for (i = 0; i < (AbilityObject.Tags?.length || 0); i++) {
             if (AbilityObject.Tags != undefined) {
                 const temptag: IIconpendiumItemTag = AbilityObject.Tags[i]
-
-                if (temptag.tag_name == "type") {
-                    temptag.tag_name = temptag.val;
-                    temptag.val = ""; }
 
                 if ((temptag.tag_name == "blast_size") || (temptag.tag_name == "blast_distance")) {
                     temptag.tag_name = "blast"; }
