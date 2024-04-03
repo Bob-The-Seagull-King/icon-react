@@ -30,6 +30,14 @@ const PlayerTacticsAbilities = (prop: any) => {
         return table;
     }
 
+    function ReturnSearchFilterBox() {
+        return (
+            <div className='bordermainpurple roundBody'>
+                TEST
+            </div>
+        )
+    }
+
     // Return result -----------------------------
     return (
         <div className="container">
@@ -44,8 +52,18 @@ const PlayerTacticsAbilities = (prop: any) => {
                         </div>
                     </div>
                     <div className="row">
+                        <div className='col-12 no-padding '>
+                            {ReturnSearchFilterBox()}
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className='col-12'>
+                            <br/>
+                        </div>
+                    </div>
+                    <div className="row bordermainpurple roundBody">
                         {_foundItems.map((item) => (
-                            <div className="col-12 my-0 py-0" key={"tableItemDisplay"+item.HeldItem.ID}>
+                            <div className="col-12 my-0 py-0 no-padding" key={"tableItemDisplay"+item.HeldItem.ID}>
                                 <ViewTableItemDisplay data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>
                             </div>
                         ))}
