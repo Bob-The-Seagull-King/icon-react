@@ -52,7 +52,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                         </div>
                     </div>
                     <div className="row">
-                        <div className='col-12 no-padding '>
+                        <div className='col-12'>
                             {ReturnSearchFilterBox()}
                         </div>
                     </div>
@@ -61,12 +61,16 @@ const PlayerTacticsAbilities = (prop: any) => {
                             <br/>
                         </div>
                     </div>
-                    <div className="row bordermainpurple roundBody">
-                        {_foundItems.map((item) => (
-                            <div className="col-12 my-0 py-0 no-padding" key={"tableItemDisplay"+item.HeldItem.ID}>
-                                <ViewTableItemDisplay data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>
+                    <div className="row">
+                        <div className='col-12'>
+                            <div className='bordermainpurple roundBody no-padding'>
+                                {_foundItems.map((item) => (
+                                    <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID}>
+                                        <ViewTableItemDisplay data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>
+                                    </div>
+                                ))}
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </div>
                 <div className="col-lg-7 col-md-6 col-sm-12 col-xs-12 col-12">
