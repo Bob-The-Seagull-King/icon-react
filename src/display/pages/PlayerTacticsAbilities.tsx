@@ -57,6 +57,17 @@ const PlayerTacticsAbilities = (prop: any) => {
                             <br/>
                         </div>
                     </div>
+                    <div className="row">
+                        <div className='col-12'>
+                            {_activeItems.length == 0 &&
+                                <div className="vh-100">
+                                    <div className='bordersubgrey emptyboxStructure'>
+                                        <h1 className="subtletext">No Items Selected</h1>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
                     <div className="row row-cols-lg-2 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                         {_activeItems.map((item) => (
                             <div className="col" key={"abilityDisplay"+item.ID}>
