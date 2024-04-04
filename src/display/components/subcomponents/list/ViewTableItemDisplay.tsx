@@ -20,7 +20,7 @@ const ViewTableItemDisplay = (props: any) => {
     }
 
     return (
-        <div style={{width: "100%", marginBottom: "0px"}} onClick={() => UpdateComponent()}>
+        <div style={{width: "100%", marginBottom: "0px"}} className='hovermouse' onClick={() => UpdateComponent()}>
             {_activestate && 
                 <h1 className={"title" + tableItem.Colour + " no-padding itemlisttext softpad"}>
                 {tableItem.HeldItem.Name}

@@ -22,7 +22,7 @@ abstract class FilterManager {
         return this.MiscOptions;
     }
 
-    ReturnActiveTestFilters() {
+    ReturnActiveTextFilters() {
         return this.TextOptions.filter((value) => value.Val.trim().length > 0);
     }
 
@@ -32,6 +32,14 @@ abstract class FilterManager {
 
     ReturnActiveMiscFilters() {
         return this.MiscOptions.filter((value) => value.IsActive == true);
+    }
+
+    ReturnCount() {
+        return this.ReturnMiscFilters.length + this.ReturnTagFilters.length + this.ReturnTextFilters.length;
+    }
+
+    ReturnActiveCount() {
+        return this.ReturnActiveMiscFilters.length + this.ReturnActiveTagFilters.length + this.ReturnActiveTextFilters.length;
     }
 }
 

@@ -8,6 +8,7 @@ import { AbilitiesFilterManager } from '../../classes/viewmodel/collections/filt
 
 import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 import ViewTableItemDisplay from '../../display/components/subcomponents/list/ViewTableItemDisplay'
+import FilterSelectDisplay from '../../display/components/subcomponents/filters/FilterSelectDisplay'
 
 const PlayerTacticsAbilities = (prop: any) => {
     // Initialize controllers and managers
@@ -15,14 +16,10 @@ const PlayerTacticsAbilities = (prop: any) => {
     const AbilitiesCollectionController: ViewAbilitiesCollection = ViewPageController.Collection;
     const FilterManager: AbilitiesFilterManager = ViewPageController.FilterManager;
 
-    console.log(FilterManager);
-
     // Initialize Use State
-    const BaseActiveItems = AbilitiesCollectionController.AbilitiesList;
-    const BaseFoundItems = AbilitiesCollectionController.itemcollection;
 
-    const [_activeItems, returnstate] = useState(BaseActiveItems);
-    const [_foundItems, returntable] = useState(BaseFoundItems)
+    const [_activeItems, returnstate] = useState(AbilitiesCollectionController.AbilitiesList);
+    const [_foundItems, returntable] = useState(AbilitiesCollectionController.itemcollection);
 
     // --------------------------------------------------------------------------------------------
 
@@ -41,9 +38,7 @@ const PlayerTacticsAbilities = (prop: any) => {
 
     function ReturnSearchFilterBox() {
         return (
-            <div className='bordermainpurple roundBody'>
-                TEST
-            </div>
+            <FilterSelectDisplay controller={ViewPageController}/>
         )
     }
 
@@ -72,7 +67,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                     </div>
                     <div className="row">
                         <div className='col-12'>
-                            <div className='bordermainpurple roundBody no-padding'>
+                            <div className='bordermainpurple roundBody no-padding '>
                                 {_foundItems.map((item) => (
                                     <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID}>
                                         <ViewTableItemDisplay data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>

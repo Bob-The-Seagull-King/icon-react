@@ -110,3 +110,18 @@
 .roundBody {
     border-radius: 0.25em;
 }
+
+.filterboxStructure {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-color: $colour_purple_main !important;
+    border-radius: 0em 0em 0.4em 0.4em !important;
+    box-shadow: 0 0 5px 1px #555;
+    width: 100%;
+    text-align: justify;
+    background-color: $colour_background_grey;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #555;
+    }
+}

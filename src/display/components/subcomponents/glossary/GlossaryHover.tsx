@@ -15,7 +15,7 @@ const GlossaryHover = (props: any) => {
     return (
       <HoverCard.Root>
         <HoverCard.Trigger asChild>
-          <span className='glossaryPurple'>{ruleName}</span>
+          <span className='glossaryPurple hovermouse'>{ruleName}</span>
         </HoverCard.Trigger>
         <HoverCard.Portal>
           <HoverCard.Content className="HoverCardContent" sideOffset={5}>
