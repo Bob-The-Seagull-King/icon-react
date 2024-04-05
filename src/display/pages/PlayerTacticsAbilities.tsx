@@ -77,6 +77,11 @@ const PlayerTacticsAbilities = (prop: any) => {
                     <div className="row">
                         <div className='col-12'>
                             <div className='bordermainpurple roundBody no-padding '>
+                                {_foundItems.length == 0 && 
+                                    <div className="">
+                                        <h1 className="subtletext">No Abilities Found</h1>
+                                    </div>
+                                }
                                 {_foundItems.map((item) => (
                                     <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())}>
                                         <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>

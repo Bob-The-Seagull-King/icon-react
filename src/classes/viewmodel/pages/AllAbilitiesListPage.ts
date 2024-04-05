@@ -3,6 +3,7 @@ import { AbilityFactory } from "../../../factories/features/AbilityFactory";
 import { getColour } from "../../../utility/functions";
 import { ViewAbilitiesCollection } from "../collections/ViewAbilitiesCollections";
 import { AbilitiesFilterManager } from "../collections/filters/AbilitiesFilterManager";
+import { ConvertFiltersToRequest } from "../collections/filters/FilterConvert";
 
 class AllAbilitiesListPage {
 
@@ -22,7 +23,8 @@ class AllAbilitiesListPage {
     }
 
     updateSearch() {
-        console.log(this.FilterManager.ReturnMiscFilters())
+        const newfilter = ConvertFiltersToRequest(this.FilterManager, "abilities")
+        this.Collection.UpdateSearchParams(newfilter);
         this.Collection.RunSearch();
     }
     

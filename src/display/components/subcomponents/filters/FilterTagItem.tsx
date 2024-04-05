@@ -57,7 +57,7 @@ const FilterTagItem = (prop: any) => {
                     <div className='tagpad'/>
                     <div className=''>
                         <InputGroup className="shorten tagboxpad">
-                            <Form.Control  size="sm" className="no-margins " onChange={e => updateName(e.target.value)} aria-label="Text input with checkbox" placeholder=""/>
+                            <Form.Control  size="sm" className="no-margins " onChange={e => updateName(e.target.value)} aria-label="Text input with checkbox" defaultValue={ItemFilter.TagVal.Val} placeholder=""/>
                         </InputGroup>
                     </div>
                 </div>

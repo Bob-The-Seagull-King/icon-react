@@ -32,7 +32,6 @@ class ViewAbilitiesCollection extends ViewCollectionsModel {
     PostSearch() {
         this.CleanupAbilities();
         this.CleanupCollection();
-        console.log("test")
         let i = 0;
         for (i = 0; i < this.dataresults.length; i++) {
             const abilityNew = AbilityFactory.CreateAbility(this.dataresults[i]);
