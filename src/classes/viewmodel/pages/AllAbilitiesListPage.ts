@@ -22,6 +22,7 @@ class AllAbilitiesListPage {
     }
 
     updateSearch() {
+        console.log(this.FilterManager.ReturnMiscFilters())
         this.Collection.RunSearch();
     }
     

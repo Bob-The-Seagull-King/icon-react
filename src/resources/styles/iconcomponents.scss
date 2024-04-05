@@ -127,6 +127,7 @@
 }
 
 .filterobjectdisplay {
+    margin: 0.25em;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -146,6 +147,7 @@
 }
 
 .filterobjectdisplaypositive {
+    margin: 0.25em;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -165,6 +167,7 @@
 }
 
 .filterobjectdisplaynegative {
+    margin: 0.25em;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -188,6 +191,7 @@
 }
 
 .filterobjectdisplaypositive {
+    margin: 0.25em;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -226,3 +230,24 @@
         box-shadow: 0 0 5px 1px #CCC;
     }
 }
+
+.filterbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagboxtitle {
+    
+	/* Use a flexbox layout */
+	display: flex;
+	
+	/* Make a horizontal flexbox (the default) */
+	flex-direction: row;
+	
+	/* The important part: vertically center the items */
+	align-items: center;
+}
+
+.inputbox input {
+    height: 50%;
+  }

@@ -7,7 +7,6 @@ import { makestringpresentable } from '../../../../utility/functions'
 
 const FilterItemItem = (prop: any) => {
     const ItemFilter: FilterItem = prop.data
-    const updatealert = prop.updatefunction
     
     const [_currentstate, returnactivetext] = useState(GetDisplayVal());
 

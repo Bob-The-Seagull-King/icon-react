@@ -192,6 +192,11 @@
     padding-bottom: 0.5em;
 }
 
+.tagboxpad {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
 .webtitlediv {
     display: flex;
     padding-right: 1em;
@@ -207,5 +212,19 @@
 
 .searchpad {
     margin-left: 1em;
+}
+
+.shorten {
+    max-width: 5em;
+}
+
+.tagpad {
+    margin-left: 0.5em;
+}
+
+.modalwide {
+    width: 75vw ;
+    max-width: 75vw;
+    min-width: 75vw;
 }
 
