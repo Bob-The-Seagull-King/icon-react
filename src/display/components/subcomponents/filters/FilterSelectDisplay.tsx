@@ -139,9 +139,9 @@ const FilterSelectDisplay = (prop: any) => {
                     </div>
                     
                     <div className='separator toppad'></div>
-                    <div className="row">
-                        <div className='col-12'>
-                            <div className='hovermouse filterclosebutton' onClick={() => handleClose()}>RETURN</div>
+                    <div className="row float-end">
+                        <div className='col-12 float-end'>
+                            <div className='hovermouse filterclosebutton' onClick={() => handleClose()}>CONFIRM</div>
                         </div>
                     </div>
                 </Modal.Body>
