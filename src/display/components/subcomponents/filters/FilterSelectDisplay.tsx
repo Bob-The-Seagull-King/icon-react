@@ -33,7 +33,7 @@ const FilterSelectDisplay = (prop: any) => {
         window.addEventListener("keydown", closeOnEscapePressed);
         return () =>
           window.removeEventListener("keydown", closeOnEscapePressed);
-      }, []);
+    }, []);
 
     function SwitchState() {
         return !show;

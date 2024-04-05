@@ -50,8 +50,8 @@ const FilterTagItem = (prop: any) => {
         <div className="">
             <div className="centerPosition">
                 <div className={"tagBox " + (_currentstate == "" ? "filterobjectdisplay" : _currentstate == "positive" ? "filterobjectdisplaypositive" : "filterobjectdisplaynegative")} >
-                    <div className='tagpad'/>
-                    <div onClick={() => SwitchStates()} className="tagboxtitle">
+                    <div className='hovermouse tagpad'/>
+                    <div onClick={() => SwitchStates()} className="hovermouse tagboxtitle">
                         {makestringpresentable(ItemFilter.TagType.Name)}
                     </div>
                     <div className='tagpad'/>
