@@ -31,7 +31,7 @@ export function ConvertFiltersToRequest(manager: FilterManager, _type: string) {
     }
     for (i = 0; i < filtermisc.length; i++) {
         const jsontemp =    {             
-                                item: "tags",
+                                item: filtermisc[i].Group,
                                 value: filtermisc[i].Name,
                                 equals: filtermisc[i].DoInclude,
                                 strict: true,

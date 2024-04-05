@@ -66,7 +66,7 @@ const FilterSelectDisplay = (prop: any) => {
                                     <FilterDisplay key={"tag"+item.TagType.Name+(_keyval.toString())} state={item.TagType.DoInclude? "positive" : "negative" } title={item.TagType.Name+" Tag"} value={item.TagVal.Val}/>
                                 ))}
                             {_activemiscfilters.map((item) => (
-                                    <FilterDisplay key={"tag"+item.Name+(_keyval.toString())} title={item.Name} state={item.DoInclude? "positive" : "negative" } value={""}/>
+                                    <FilterDisplay key={"tag"+item.Name+(_keyval.toString())} title={item.Group} state={item.DoInclude? "positive" : "negative" } value={item.Name}/>
                                 ))}
                         </div>
                         <div className='toppad'></div>
