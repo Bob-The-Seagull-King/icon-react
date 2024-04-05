@@ -22,7 +22,14 @@ const PlayerTacticsAbilities = (prop: any) => {
     const [_foundItems, returntable] = useState(AbilitiesCollectionController.itemcollection);
     const [_keyval, updatekey] = useState(1);
 
+    let listcolourval = 0;
+
     // --------------------------------------------------------------------------------------------
+
+    function getcolor() {
+        listcolourval += 1;
+        return listcolourval;
+    }
 
     function ItemRecall() {
         returnstate(RecallAbilities())
@@ -84,7 +91,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                                 }
                                 {_foundItems.map((item) => (
                                     <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())}>
-                                        <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>
+                                        <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall} positionid={getcolor()}/>
                                     </div>
                                 ))}
                             </div>

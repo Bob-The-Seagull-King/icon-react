@@ -8,7 +8,8 @@ import { ViewTableItem } from '../../../../classes/viewmodel/collections/ViewTab
 const ViewTableItemDisplay = (props: any) => {
     const tableItem: ViewTableItem = props.data
     const parentView = props.parent;
-    const updateHost = props.statefunction
+    const updateHost = props.statefunction;
+    const position = props.positionid;
     const [_activestate, checkstate] = useState(tableItem.IsActive);
     function UpdateComponent() {
         tableItem.SwitchStates();
@@ -17,8 +18,14 @@ const ViewTableItemDisplay = (props: any) => {
         checkstate(tableItem.IsActive);
     }
 
+    console.log(position)
+    console.log(position % 2)
+
     return (
-        <div style={{width: "100%", marginBottom: "0px"}} className='hovermouse' onClick={() => UpdateComponent()}>
+        <div style={{width: "100%", marginBottom: "0px", position: "relative"}} className='hovermouse' onClick={() => UpdateComponent()}>
+            {position % 2 == 0 &&
+                <div className="colourOverlay"/>
+            }
             {_activestate && 
                 <h1 className={"title" + tableItem.Colour + " no-padding itemlisttext softpad"}>
                 {tableItem.HeldItem.Name}
