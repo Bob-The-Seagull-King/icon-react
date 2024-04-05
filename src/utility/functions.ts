@@ -1,13 +1,4 @@
 /**
- * This function can be used anywhere in the app to greet the user
- * @param userName The user's first name
- * @returns A kind greeting message
- */
-export const sayHello = (userName: string): string => {
-    return 'Welcome ' + userName + '!'
-}
-
-/**
  * Returns a capitalized version of a given string
  * @param stringVal The string to be capitalized
  * @returns The string with the first letter capitalized
@@ -17,6 +8,18 @@ export function capitalizeString(stringVal: string) {
         return stringVal[0].toUpperCase() + stringVal.slice(1).toLowerCase();
     }
     return "";
+}
+
+export function makestringpresentable(stringVal: string) {
+    const pairedString = stringVal.toString().replace(/_/g, ' ').split(" "); 
+    let stringreturned = "";
+    
+    let i = 0 
+    for (i = 0; i < pairedString.length; i++) {
+        const tempstring = capitalizeString(pairedString[i])
+        stringreturned = stringreturned + ((i == 0)?  "" : " ") + tempstring
+    }
+    return stringreturned;
 }
 
 /**

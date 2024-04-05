@@ -20,6 +20,7 @@ const PlayerTacticsAbilities = (prop: any) => {
 
     const [_activeItems, returnstate] = useState(AbilitiesCollectionController.AbilitiesList);
     const [_foundItems, returntable] = useState(AbilitiesCollectionController.itemcollection);
+    const [_keyval, updatekey] = useState(1);
 
     // --------------------------------------------------------------------------------------------
 
@@ -27,10 +28,18 @@ const PlayerTacticsAbilities = (prop: any) => {
         returnstate(RecallAbilities())
     }
 
+    function UpdateSearch() {
+        ViewPageController.updateSearch();
+        returntable(RecallTable())
+        returnstate(RecallAbilities())
+        updatekey(_keyval+1)
+    }
+
     function RecallAbilities() {
         const abilities = AbilitiesCollectionController.ReturnAbilities();
         return abilities;
     }
+
     function RecallTable() {
         const table = AbilitiesCollectionController.ReturnItems();
         return table;
@@ -38,7 +47,7 @@ const PlayerTacticsAbilities = (prop: any) => {
 
     function ReturnSearchFilterBox() {
         return (
-            <FilterSelectDisplay controller={ViewPageController}/>
+            <FilterSelectDisplay controller={ViewPageController} runfunction={UpdateSearch}/>
         )
     }
 
@@ -69,8 +78,8 @@ const PlayerTacticsAbilities = (prop: any) => {
                         <div className='col-12'>
                             <div className='bordermainpurple roundBody no-padding '>
                                 {_foundItems.map((item) => (
-                                    <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID}>
-                                        <ViewTableItemDisplay data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>
+                                    <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())}>
+                                        <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall}/>
                                     </div>
                                 ))}
                             </div>

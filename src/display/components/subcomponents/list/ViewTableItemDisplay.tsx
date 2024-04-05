@@ -9,9 +9,8 @@ const ViewTableItemDisplay = (props: any) => {
     const tableItem: ViewTableItem = props.data
     const parentView = props.parent;
     const updateHost = props.statefunction
-
     const [_activestate, checkstate] = useState(tableItem.IsActive);
-
+    console.log(_activestate);
     function UpdateComponent() {
         tableItem.SwitchStates();
         parentView.UpdateList();

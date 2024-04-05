@@ -9,9 +9,9 @@
 }
 
 .bordersubpurple {
-    border-style: solid;
-    border-width: 2px;
-    border-color: $colour_purple_secondary;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-color: $colour_purple_secondary !important;
 }
 
 .bordermainblue {
@@ -123,5 +123,106 @@
 
     &:hover {
         box-shadow: 0 0 10px 2px #555;
+    }
+}
+
+.filterobjectdisplay {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px #CCC;
+    text-align: justify;
+    color: white;
+    font-weight: 600 ;
+    padding: 0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-color: $colour_purple_secondary !important;
+    background-color: $colour_purple_secondary;
+
+    &:hover {
+        box-shadow: 0 0 5px 1px #CCC;
+    }
+}
+
+.filterobjectdisplaypositive {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px #CCC;
+    text-align: justify;
+    color: white;
+    font-weight: 600 ;
+    padding: 0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-color: $colour_green_secondary !important;
+    background-color: $colour_green_secondary;
+
+    &:hover {
+        box-shadow: 0 0 5px 1px #CCC;
+    }
+}
+
+.filterobjectdisplaynegative {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px #CCC;
+    text-align: justify;
+    color: white;
+    font-weight: 600 ;
+    padding: 0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-color: $colour_red_secondary !important;
+    background-color: $colour_red_secondary;
+
+    &:hover {
+        box-shadow: 0 0 5px 1px #CCC;
+    }
+}
+
+.filtertextinput {
+    border-radius: 0.4em;
+}
+
+.filterobjectdisplaypositive {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px #CCC;
+    text-align: justify;
+    color: white;
+    font-weight: 600 ;
+    padding: 0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-color: $colour_green_secondary !important;
+    background-color: $colour_green_secondary;
+
+    &:hover {
+        box-shadow: 0 0 5px 1px #CCC;
+    }
+}
+
+.filterclosebutton {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px #CCC;
+    text-align: justify;
+    color: white;
+    font-weight: 600 ;
+    font-size: 1.25em;
+    width: fit-content;
+    padding: 0.1em;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    border-color: $colour_grey_main !important;
+    background-color: $colour_grey_main;
+
+    &:hover {
+        box-shadow: 0 0 5px 1px #CCC;
     }
 }

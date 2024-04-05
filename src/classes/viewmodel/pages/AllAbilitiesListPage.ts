@@ -20,6 +20,10 @@ class AllAbilitiesListPage {
         this.Collection.UpdateSearchParams({searchtype: "file", searchparam: {type: "abilities"}});
         this.Collection.RunSearch();
     }
+
+    updateSearch() {
+        this.Collection.RunSearch();
+    }
     
 }
 
