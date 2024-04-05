@@ -26,7 +26,7 @@ const FilterSelectDisplay = (prop: any) => {
 
     React.useEffect(() => {
         const closeOnEscapePressed = (e: KeyboardEvent) => {
-          if (e.key === "Escape") {
+          if ((e.key === "Escape") || (e.key === "Enter")) {
             handleClose()
           }
         };
