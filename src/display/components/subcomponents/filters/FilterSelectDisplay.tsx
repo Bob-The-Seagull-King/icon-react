@@ -24,20 +24,17 @@ const FilterSelectDisplay = (prop: any) => {
 
     const [_keyval, updatekey] = useState(1);
 
+
     React.useEffect(() => {
         const closeOnEscapePressed = (e: KeyboardEvent) => {
           if ((e.key === "Escape") || (e.key === "Enter")) {
-            handleClose()
+                //
           }
         };
         window.addEventListener("keydown", closeOnEscapePressed);
         return () =>
           window.removeEventListener("keydown", closeOnEscapePressed);
     }, []);
-
-    function SwitchState() {
-        return !show;
-    }
 
     const [show, setShow] = useState(false);
 
@@ -57,7 +54,7 @@ const FilterSelectDisplay = (prop: any) => {
     // Return result -----------------------------
     return (
         <>
-            <div onClick={() => setShow(SwitchState())}className='bordermainpurple roundBody hovermouse'>
+            <div onClick={() => handleShow()}className='bordermainpurple roundBody hovermouse'>
                 {((_activetextfilters.length == 0) && (_activetagfilters.length == 0) && (_activemiscfilters.length == 0) ) &&
                     <div className="">
                             <h1 className="subtletext">No Filters Selected</h1>
@@ -85,7 +82,7 @@ const FilterSelectDisplay = (prop: any) => {
                 }
             </div>
 
-            <Modal show={show} backdrop='static' contentClassName="filterboxStructure" dialogClassName="modalwide" onHide={handleClose} keyboard={false}  centered>
+            <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="modalwide" onHide={handleClose} keyboard={true}  centered>
                 <h1 className={'titleShape titlepurple'}>Select Filters</h1>
                 <Modal.Body >
                     <div className="separator"><h3>NAME</h3></div>
@@ -141,7 +138,7 @@ const FilterSelectDisplay = (prop: any) => {
                     <div className='separator toppad'></div>
                     <div className="row float-end">
                         <div className='col-12 float-end'>
-                            <div className='hovermouse filterclosebutton' onClick={() => handleClose()}>CONFIRM</div>
+                            <div className='hovermouse filterclosebutton' onClick={() => {handleClose()}}>CONFIRM</div>
                         </div>
                     </div>
                 </Modal.Body>

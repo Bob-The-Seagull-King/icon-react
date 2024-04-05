@@ -18,12 +18,9 @@ const ViewTableItemDisplay = (props: any) => {
         checkstate(tableItem.IsActive);
     }
 
-    console.log(position)
-    console.log(position % 2)
-
     return (
         <div style={{width: "100%", marginBottom: "0px", position: "relative"}} className='hovermouse' onClick={() => UpdateComponent()}>
-            {position % 2 == 0 &&
+            {position() % 2 == 0 &&
                 <div className="colourOverlay"/>
             }
             {_activestate && 
