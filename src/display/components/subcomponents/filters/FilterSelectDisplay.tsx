@@ -24,6 +24,17 @@ const FilterSelectDisplay = (prop: any) => {
 
     const [_keyval, updatekey] = useState(1);
 
+    React.useEffect(() => {
+        const closeOnEscapePressed = (e: KeyboardEvent) => {
+          if (e.key === "Escape") {
+            handleClose()
+          }
+        };
+        window.addEventListener("keydown", closeOnEscapePressed);
+        return () =>
+          window.removeEventListener("keydown", closeOnEscapePressed);
+      }, []);
+
     function SwitchState() {
         return !show;
     }
