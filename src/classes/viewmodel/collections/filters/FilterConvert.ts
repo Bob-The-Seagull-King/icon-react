@@ -25,7 +25,7 @@ export function ConvertFiltersToRequest(manager: FilterManager, _type: string) {
                                 equals: filtertag[i].TagType.DoInclude,
                                 strict: true,
                                 istag: true,
-                                tagvalue: filtertag[i].TagVal.Val
+                                tagvalue: (filtertag[i].TagVal.Val.toString().trim().length > 0)? filtertag[i].TagVal.Val : ""
                             }
         filterSet.push(jsontemp);
     }
