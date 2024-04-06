@@ -24,8 +24,10 @@ class AllAbilitiesListPage {
 
     updateSearch() {
         const newfilter = ConvertFiltersToRequest(this.FilterManager, "abilities")
-        this.Collection.UpdateSearchParams(newfilter);
-        this.Collection.RunSearch();
+        if (!(JSON.stringify(newfilter) == JSON.stringify(this.Collection.searchParam))) {
+            this.Collection.UpdateSearchParams(newfilter);
+            this.Collection.RunSearch();
+        }
     }
     
 }
