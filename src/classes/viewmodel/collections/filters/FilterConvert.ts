@@ -10,13 +10,15 @@ export function ConvertFiltersToRequest(manager: FilterManager, _type: string) {
 
     let i = 0;
     for (i = 0; i < filtertext.length; i++) {
-        const jsontemp =    {                         
-                                item: "name",
-                                value: filtertext[i].Val,
-                                equals: true,
-                                strict: filtertext[i].IsStrict
-                            }
-        filterSet.push(jsontemp);
+        if (filtertext[i].Val.toString().trim().length > 0) {
+            const jsontemp =    {                         
+                                    item: "name",
+                                    value: filtertext[i].Val,
+                                    equals: true,
+                                    strict: filtertext[i].IsStrict
+                                }
+            filterSet.push(jsontemp);
+        }
     }
     for (i = 0; i < filtertag.length; i++) {
         const jsontemp =    {             
