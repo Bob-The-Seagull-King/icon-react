@@ -10,6 +10,13 @@ export function capitalizeString(stringVal: string) {
     return "";
 }
 
+/**
+ * Takes a long string featuring underscores and turns it
+ * into a form usable on the frontend.
+ * @param stringVal The string to convert
+ * @returns The string with "_" replaced with " " and all
+ *          individual words capitalized.
+ */
 export function makestringpresentable(stringVal: string) {
     const pairedString = stringVal.toString().replace(/_/g, ' ').split(" "); 
     let stringreturned = "";
