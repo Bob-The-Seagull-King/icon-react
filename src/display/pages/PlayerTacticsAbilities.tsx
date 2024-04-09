@@ -8,7 +8,7 @@ import { AbilitiesFilterManager } from '../../classes/viewmodel/collections/filt
 
 import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 import ViewTableItemDisplay from '../../display/components/subcomponents/list/ViewTableItemDisplay'
-import FilterSelectDisplay from '../../display/components/subcomponents/filters/FilterSelectDisplay'
+import AbilityFilterSelectDisplay from '../../display/components/subcomponents/filters/filterselectors/AbilityFilterSelectDisplay'
 
 const PlayerTacticsAbilities = (prop: any) => {
     // Initialize controllers and managers
@@ -54,7 +54,7 @@ const PlayerTacticsAbilities = (prop: any) => {
 
     function ReturnSearchFilterBox() {
         return (
-            <FilterSelectDisplay controller={ViewPageController} runfunction={UpdateSearch}/>
+            <AbilityFilterSelectDisplay controller={ViewPageController} runfunction={UpdateSearch}/>
         )
     }
 

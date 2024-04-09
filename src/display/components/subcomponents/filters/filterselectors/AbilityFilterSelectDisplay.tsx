@@ -1,19 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import '../../../../resources/styles/_icon.scss'
+import '../../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
-import { ViewAbilitiesCollection } from '../../../../classes/viewmodel/collections/ViewAbilitiesCollections'
-import { AllAbilitiesListPage } from '../../../../classes/viewmodel/pages/AllAbilitiesListPage'
-import { AbilitiesFilterManager } from '../../../../classes/viewmodel/collections/filters/AbilitiesFilterManager'
+import { ViewAbilitiesCollection } from '../../../../../classes/viewmodel/collections/ViewAbilitiesCollections'
+import { AllAbilitiesListPage } from '../../../../../classes/viewmodel/pages/AllAbilitiesListPage'
+import { AbilitiesFilterManager } from '../../../../../classes/viewmodel/collections/filters/AbilitiesFilterManager'
 
-import FilterItemItem from './FilterItemItem'
-import FilterTagItem from './FilterTagItem'
-import FilterTextItem from './FilterTextItem'
-import FilterDisplay from './FilterDisplay'
+import FilterItemItem from '../FilterItemItem'
+import FilterTagItem from '../FilterTagItem'
+import FilterTextItem from '../FilterTextItem'
+import FilterDisplay from '../FilterDisplay'
 
 import Modal from 'react-bootstrap/Modal';
 
-const FilterSelectDisplay = (prop: any) => {
+const AbilityFilterSelectDisplay = (prop: any) => {
     const ViewPageController: AllAbilitiesListPage = prop.controller
     const FilterManager: AbilitiesFilterManager = ViewPageController.FilterManager;
     const updatesearch = prop.runfunction;
@@ -148,4 +148,4 @@ const FilterSelectDisplay = (prop: any) => {
     // -------------------------------------------
 }
 
-export default FilterSelectDisplay
+export default AbilityFilterSelectDisplay
