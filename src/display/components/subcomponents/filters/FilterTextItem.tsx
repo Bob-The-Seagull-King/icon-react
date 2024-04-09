@@ -5,44 +5,31 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
 import { FilterText } from '../../../../classes/viewmodel/collections/filters/FilterInterfaces'
+import { makestringpresentable } from '../../../../utility/functions'
 
 const FilterTextItem = (prop: any) => {
-    // Initialize ------------------------------------------------------------------------
-
-    // Object props
     const ItemFilter: FilterText = prop.data
+    const updatealert = prop.updatefunction
 
-    // Use states
     const [_currentstate, returnactivetext] = useState(ItemFilter.IsStrict);
     
-    // Functions -------------------------------------------------------------------------
-
-    /**
-     * Updates the item filter's name to reflect the
-     * text box
-     * @param value Current value of the text box
-     */
     function updateName(value: string) {
         ItemFilter.Val = value;
     }
 
-    /**
-     * Updates if the item filter is strict (requires
-     * an exact string match) or not.
-     */
-    function updateStrict() {
+    function updateStrict(value: any) {
         ItemFilter.IsStrict = !ItemFilter.IsStrict
         returnactivetext(ItemFilter.IsStrict)
     }
 
-    // Return result -----------------------------------------------------------------------
+    // Return result -----------------------------
     return (
         <div className="col">
             <div className="centerPosition">
                 <InputGroup className="mb-3 bordersubpurple filtertextinput">
                     <Form.Control onChange={e => updateName(e.target.value)} className='' aria-label="Text input with checkbox" defaultValue={ItemFilter.Val}/>
                     <InputGroup.Text className=''>Exact Match?</InputGroup.Text>
-                    <InputGroup.Checkbox checked={_currentstate}  onChange={() => updateStrict()}  className='' aria-label="Checkbox for following text input" ></InputGroup.Checkbox>
+                    <InputGroup.Checkbox checked={_currentstate}  onChange={e => updateStrict(e.target.checked)}  className='' aria-label="Checkbox for following text input" ></InputGroup.Checkbox>
                 </InputGroup>
             </div>
         </div>
