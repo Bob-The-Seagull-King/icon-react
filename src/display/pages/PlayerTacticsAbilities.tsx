@@ -115,7 +115,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                             }
                         </div>
                     </div>
-                    <div className="row row-cols-lg-2 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
+                    <div className="row row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                         {_activeItems.map((item) => (
                             <div className="col" key={"abilityDisplay"+item.ID}>
                                 <AbilityDisplay data={item}/>
