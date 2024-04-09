@@ -1,6 +1,5 @@
-import { ViewCollectionsModel } from "./ViewCollectionsModel";
+// Import typescript classes
 import { IconpendiumItem } from "../../../classes/IconpendiumItem";
-import { AbilityFactory } from "../../../factories/features/AbilityFactory";
 
 class ViewTableItem {
 
@@ -16,6 +15,9 @@ class ViewTableItem {
         this.Colour = colourName;
     }
 
+    /**
+     * Swaps the current active-state of the tablt item
+     */
     SwitchStates() {
         if (this.IsActive) {
             this.IsActive = false;

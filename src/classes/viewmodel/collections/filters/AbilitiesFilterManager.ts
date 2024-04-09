@@ -1,12 +1,14 @@
-import { IPlayerAbility, PlayerAbility } from "../../../../classes/feature/abilities/Ability";
-import { AbilityFactory } from "../../../../factories/features/AbilityFactory";
-import { getColour } from "../../../../utility/functions";
-import { IFilterItem, IFilterObject, IFilterTag, IFilterText, FilterTag, FilterItem, FilterText } from "./FilterInterfaces"
+// Import typescript interfaces and classes
+import { IFilterItem, IFilterTag, IFilterText, FilterTag, FilterItem, FilterText } from "./FilterInterfaces"
 import { Requester } from "../../../../factories/Requester";
 import { FilterManager } from "./FilterManager";
 
 class AbilitiesFilterManager extends FilterManager {
 
+    /**
+     * Builds the filter manager by gathering a full
+     * list of necessary filters.
+     */
     constructor() {
         super()
         this.TextOptions = [new FilterText({group: "name", val: "", isstrict: false})]
@@ -14,6 +16,11 @@ class AbilitiesFilterManager extends FilterManager {
         this.MiscOptions = this.FindMisc();
     }
 
+    /**
+     * Find all tag types, based on tag_name, that
+     * are currently in the abilities json data file.
+     * @returns Array of FilterTag objects
+     */
     FindTags() {
         const tempTags: FilterTag[] = []
         const foundTags = (Requester.MakeRequest({ searchtype: 'tags', searchparam: { type: 'abilities' } })).sort();
@@ -22,11 +29,7 @@ class AbilitiesFilterManager extends FilterManager {
         for (i = 0; i < foundTags.length; i++) {
             const tempTagText: IFilterText = { group: "tags", val: "", isstrict: false}
             const tempTagObject: IFilterItem = { group: "tags", isactive: false, doinclude: false, name: foundTags[i]}
-            const tempTagInterface: IFilterTag = {
-                                                    group: "tags",
-                                                    tagtype: tempTagObject,
-                                                    tagval: tempTagText
-                                                    }
+            const tempTagInterface: IFilterTag = { group: "tags", tagtype: tempTagObject, tagval: tempTagText }
             const tempTagConstructed = new FilterTag(tempTagInterface);
             tempTags.push(tempTagConstructed);
         }
@@ -34,6 +37,12 @@ class AbilitiesFilterManager extends FilterManager {
         return tempTags;
     }
 
+    /**
+     * Gathers all values of a given key type in
+     * the abilities json data file, with the key
+     * types determined by a hardcoded array.
+     * @returns Array of FilterItem objects
+     */
     FindMisc() {
         const tempMisc: FilterItem[] = []
         const keytypes = ["source", "chapter", "class_id", "job_id"]

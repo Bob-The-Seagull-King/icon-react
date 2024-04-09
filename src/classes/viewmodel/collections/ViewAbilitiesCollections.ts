@@ -74,10 +74,17 @@ class ViewAbilitiesCollection extends ViewCollectionsModel {
         return this.AbilitiesList;
     }
 
+    /**
+     * Basic return function
+     */
     public ReturnItems() {
         return this.itemcollection;
     }
     
+    /**
+     * Updates the list of abilities to be displayed
+     * on screen.
+     */
     UpdateList() {
         let i = 0;
         this.AbilitiesList = []

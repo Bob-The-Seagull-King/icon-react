@@ -1,15 +1,15 @@
 import {IIconpendiumItemData, IconpendiumItem} from '../../IconpendiumItem'
 import {ItemType} from '../../Enum'
-import {IAbilityDescription, AbilityDescription} from './AbilityDescription'
+import {AbilityDescription} from './AbilityDescription'
 import { PlayerAddon } from '../addons/Addon'
 
 interface IPlayerAbility extends IIconpendiumItemData {
-    chapter: number,
-    class_id: string,
-    job_id: string,
-    attachments: [],
-    blurb: string,
-    description: []
+    chapter: number, // Chapter of the ability
+    class_id: string, // Class of the ability (determined by job)
+    job_id: string, // Job of the ability
+    attachments: [], // List of addons, summons, etc featured in an ability
+    blurb: string, // Flavour text
+    description: [] // Mechanical description of the item
 }
 
 class PlayerAbility extends IconpendiumItem {
