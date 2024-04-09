@@ -2,17 +2,25 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
+// Imports functions and typescript classes
 import { getColour } from '../../../../utility/functions';
 import { PlayerAddon } from '../../../../classes/feature/addons/Addon';
-import {IIconpendiumItemTag} from '../../../../classes/IconpendiumItem'
+import { IIconpendiumItemTag } from '../../../../classes/IconpendiumItem'
 
+// Imports react components
 import TagDisplay from '../../subcomponents/TagDisplay'
 import AbilityDescriptionItemDisplay from '../../subcomponents/description/AbilityDescriptionItemDisplay';
 
 const AddonDisplay = (props: any) => {
-    const AbilityObject: PlayerAddon = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    // Initialize props ------------------------------------------------------------------
+    const AbilityObject: PlayerAddon = props.data // The addon being displayed
+    const bannedAbilityTags = ["inflict", "type"] // Tags which will not be shown
 
+    /**
+     * Returns the AbilityDescriptionItemDisplay
+     * component for this addon.
+     * @returns AbilityDescriptionItemDisplay
+     */
     function returnDescription() {
         return (
             <div>
@@ -25,6 +33,10 @@ const AddonDisplay = (props: any) => {
         )
     }
 
+    /**
+     * Displays a list of sorted tags
+     * @returns List of TagDisplay components
+     */
     function returnTags() {
         const displaytags = sortTagsForDisplay()
 
@@ -39,6 +51,12 @@ const AddonDisplay = (props: any) => {
         )
     }
 
+    /**
+     * Sorts through the list of tags in this item
+     * to find any banned tags or any tag names that
+     * need a different display name.
+     * @returns Array of IIconpendiumItemTags
+     */
     function sortTagsForDisplay() {
         const tagarray: IIconpendiumItemTag[] = []
 
@@ -56,6 +74,7 @@ const AddonDisplay = (props: any) => {
         return tagarray;
     }
 
+    // Return result ---------------------------------------------------------------------
     return (
         <div className={'abilityStructure bordersub'+getColour(AbilityObject.Class)}>
             <h1 className={'titleShape subtitle'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>

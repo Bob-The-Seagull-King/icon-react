@@ -2,18 +2,30 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
-import {capitalizeString, getTagValue} from '../../../../utility/functions'
-import {ConvertContentWithGlossary} from '../../../../utility/util'
-import {IAbilityDescription, AbilityDescription} from '../../../../classes/feature/abilities/AbilityDescription'
+// Import functions and typescript classes
+import { getTagValue } from '../../../../utility/functions'
+import { ConvertContentWithGlossary } from '../../../../utility/util'
+import { AbilityDescription } from '../../../../classes/feature/abilities/AbilityDescription'
 import { PlayerAbility } from '../../../../classes/feature/abilities/Ability'
-import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
-import { PlayerAddon } from '../../../../classes/feature/addons/Addon'
 
+// Import react components
+import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
 
 const AbilityDescriptionItemDisplay = (props: any) => {
-    const description: AbilityDescription = props.data
-    const parentItem: PlayerAbility = props.parent
+    // Initialize props --------------------------------------------------------------------
+    const description: AbilityDescription = props.data // The description object being rendered
+    const parentItem: PlayerAbility = props.parent // The ability object this is being rendered for
 
+    // Functions ---------------------------------------------------------------------------
+
+    /**
+     * Takes a given ability description object and renders it.
+     * Each component has a type which determines the tags surrounding
+     * various parts of the description. Subcomponents are rendered
+     * as nested AbilityDescriptionItemDisplay components.
+     * @param item The ability description being rendered
+     * @returns Fully rendered description for a given ability
+     */
     function returnFullItem(item: AbilityDescription) {
         switch (getTagValue(item.Tags, "desc_type")) {
             case "effect": {
@@ -82,6 +94,12 @@ const AbilityDescriptionItemDisplay = (props: any) => {
         }
     }
 
+    /**
+     * Locates the appropriate addon object for an
+     * ability and renders the addon component.
+     * @param id The ID of the addon component.
+     * @returns AddonDisplay component
+     */
     function findAddon(id: string) {
         let AddonFound = null;
 
@@ -93,16 +111,13 @@ const AbilityDescriptionItemDisplay = (props: any) => {
         }
 
         if (AddonFound != null) {
-            return (
-                <AddonDisplay data={AddonFound}/>
-            )
+            return ( <AddonDisplay data={AddonFound}/> )
         } else {
-            return (
-                <span>ERROR: ADDON NOT FOUND</span>
-            )
+            return ( <span>ERROR: ADDON NOT FOUND</span> )
         }
     }
 
+    // Return result -----------------------------------------------------------------------
     return (
         <span>
             {returnFullItem(description)}

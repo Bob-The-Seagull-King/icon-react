@@ -2,12 +2,14 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
+// Import functions
 import { makestringpresentable } from '../../../../utility/functions'
 
 const FilterDisplay = (prop: any) => {
-    const title = prop.title
-    const value = prop.value    
-    const exists = prop.state
+    // Initialize props
+    const title = prop.title // The filter type
+    const value = prop.value // Specific value of the filter
+    const exists = prop.state // If the filter is inclusive (green) or exclusive (red)
 
     // Return result -----------------------------
     return (

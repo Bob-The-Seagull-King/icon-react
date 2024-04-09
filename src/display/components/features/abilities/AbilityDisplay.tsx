@@ -2,17 +2,25 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
+// Imports functions and typescript classes
 import { getColour } from '../../../../utility/functions';
-import {PlayerAbility } from "../../../../classes/feature/abilities/Ability";
-import {IIconpendiumItemTag} from '../../../../classes/IconpendiumItem'
+import { PlayerAbility } from "../../../../classes/feature/abilities/Ability";
+import { IIconpendiumItemTag } from '../../../../classes/IconpendiumItem'
 
+// Imports react components
 import TagDisplay from '../../subcomponents/TagDisplay'
 import AbilityDescriptionItemDisplay from '../../subcomponents/description/AbilityDescriptionItemDisplay';
 
 const AbilityDisplay = (props: any) => {
-    const AbilityObject: PlayerAbility = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    // Initialize props ------------------------------------------------------------------
+    const AbilityObject: PlayerAbility = props.data // The ability being displayed
+    const bannedAbilityTags = ["inflict", "type"] // Tags which will not be shown
 
+    /**
+     * Returns the AbilityDescriptionItemDisplay
+     * component for this ability.
+     * @returns AbilityDescriptionItemDisplay
+     */
     function returnDescription() {
         return (
             <div>
@@ -25,6 +33,10 @@ const AbilityDisplay = (props: any) => {
         )
     }
 
+    /**
+     * Displays a list of sorted tags
+     * @returns List of TagDisplay components
+     */
     function returnTags() {
         const displaytags = sortTagsForDisplay()
 
@@ -39,6 +51,12 @@ const AbilityDisplay = (props: any) => {
         )
     }
 
+    /**
+     * Sorts through the list of tags in this item
+     * to find any banned tags or any tag names that
+     * need a different display name.
+     * @returns Array of IIconpendiumItemTags
+     */
     function sortTagsForDisplay() {
         const tagarray: IIconpendiumItemTag[] = []
 
@@ -56,6 +74,7 @@ const AbilityDisplay = (props: any) => {
         return tagarray;
     }
 
+    // Return result ---------------------------------------------------------------------
     return (
         <div className={'abilityStructure bordermain'+getColour(AbilityObject.Class)}>
             <h1 className={'titleShape title'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
