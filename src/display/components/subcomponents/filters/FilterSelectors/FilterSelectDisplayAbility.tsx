@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import '../../../../resources/styles/_icon.scss'
+import '../../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 import Modal from 'react-bootstrap/Modal';
 

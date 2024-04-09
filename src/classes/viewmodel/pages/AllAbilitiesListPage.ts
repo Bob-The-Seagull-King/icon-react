@@ -23,7 +23,7 @@ class AllAbilitiesListPage {
     }
 
     updateSearch() {
-        const newfilter = ConvertFiltersToRequest(this.FilterManager, "abilities")
+        const newfilter = ConvertFiltersToRequest(this.FilterManager, "abilities", ["chapter", "source", "class_id", "job_id"])
         if (!(JSON.stringify(newfilter) == JSON.stringify(this.Collection.searchParam))) {
             this.Collection.UpdateSearchParams(newfilter);
             this.Collection.RunSearch();
