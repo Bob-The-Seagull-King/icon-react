@@ -2,11 +2,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
-import {capitalizeString, getTagValue} from '../../../../utility/functions'
 import { GlossaryRule } from '../../../../classes/feature/glossary/Glossary'
 import * as HoverCard from '@radix-ui/react-hover-card';
 import GlossaryDisplay from './GlossaryDisplay'
-
 
 const GlossaryHover = (props: any) => {
     const ruleObject: GlossaryRule = props.data

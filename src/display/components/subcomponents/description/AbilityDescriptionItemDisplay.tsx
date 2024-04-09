@@ -2,12 +2,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
-import {capitalizeString, getTagValue} from '../../../../utility/functions'
+import { getTagValue} from '../../../../utility/functions'
 import {ConvertContentWithGlossary} from '../../../../utility/util'
-import {IAbilityDescription, AbilityDescription} from '../../../../classes/feature/abilities/AbilityDescription'
+import { AbilityDescription} from '../../../../classes/feature/abilities/AbilityDescription'
 import { PlayerAbility } from '../../../../classes/feature/abilities/Ability'
 import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
-import { PlayerAddon } from '../../../../classes/feature/addons/Addon'
 
 
 const AbilityDescriptionItemDisplay = (props: any) => {

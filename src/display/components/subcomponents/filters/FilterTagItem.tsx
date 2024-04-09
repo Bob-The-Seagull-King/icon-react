@@ -24,6 +24,9 @@ const FilterTagItem = (prop: any) => {
         }
     }
 
+    /**
+     * Switch between "off", "must include", and "must exclude"
+     */
     function SwitchStates() {
         if (ItemFilter.TagType.IsActive) {
             if (ItemFilter.TagType.DoInclude) {

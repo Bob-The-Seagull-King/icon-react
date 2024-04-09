@@ -17,24 +17,34 @@ const PlayerTacticsAbilities = (prop: any) => {
     const FilterManager: AbilitiesFilterManager = ViewPageController.FilterManager;
 
     // Initialize Use State
-
     const [_activeItems, returnstate] = useState(AbilitiesCollectionController.AbilitiesList);
     const [_foundItems, returntable] = useState(AbilitiesCollectionController.itemcollection);
     const [_keyval, updatekey] = useState(1);
 
     let listcolourval = 0;
 
-    // --------------------------------------------------------------------------------------------
+    // Functions -----------------------------------------------------------------------------------
 
+    /**
+     * @return the current colour value + 1
+     */
     function getcolor() {
         listcolourval += 1;
         return listcolourval;
     }
 
+    /**
+     * Update state of the list of abilities currently active
+     */
     function ItemRecall() {
         returnstate(RecallAbilities())
     }
 
+    /**
+     * Get the controller to update the search, then update
+     * the state of the ability/item list arrays. Update the
+     * keyval in order to force a rerender of elements.
+     */
     function UpdateSearch() {
         ViewPageController.updateSearch();
         returntable(RecallTable())
@@ -42,16 +52,25 @@ const PlayerTacticsAbilities = (prop: any) => {
         updatekey(_keyval+1)
     }
 
+    /**
+     * @returns Update the state of the abilities selected
+     */
     function RecallAbilities() {
         const abilities = AbilitiesCollectionController.ReturnAbilities();
         return abilities;
     }
 
+    /**
+     * @returns Update the state of the items available to select
+     */
     function RecallTable() {
         const table = AbilitiesCollectionController.ReturnItems();
         return table;
     }
 
+    /**
+     * @returns The filter display component
+     */
     function ReturnSearchFilterBox() {
         return (
             <AbilityFilterSelectDisplay controller={ViewPageController} runfunction={UpdateSearch}/>
@@ -65,6 +84,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                 <br/>
             </div>
             <div className="row">
+                {/* Display the filters and abilities which match the filters, if any. */}
                 <div className="col-lg-5 col-md-6 col-sm-12 col-xs-12 col-12 my-0 py-0">
                     <div className="row">
                         <div className='col-12'>
@@ -98,6 +118,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                         </div>
                     </div>
                 </div>
+                {/* Display the selected abilities, if any */}
                 <div className="col-lg-7 col-md-6 col-sm-12 col-xs-12 col-12">
                     <div className="row">
                         <div className='col-12'>

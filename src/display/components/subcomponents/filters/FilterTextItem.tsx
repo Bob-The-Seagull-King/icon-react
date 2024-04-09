@@ -5,11 +5,9 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
 import { FilterText } from '../../../../classes/viewmodel/collections/filters/FilterInterfaces'
-import { makestringpresentable } from '../../../../utility/functions'
 
 const FilterTextItem = (prop: any) => {
     const ItemFilter: FilterText = prop.data
-    const updatealert = prop.updatefunction
 
     const [_currentstate, returnactivetext] = useState(ItemFilter.IsStrict);
     

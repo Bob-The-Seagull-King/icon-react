@@ -11,6 +11,12 @@ const ViewTableItemDisplay = (props: any) => {
     const updateHost = props.statefunction;
     const position = props.positionid;
     const [_activestate, checkstate] = useState(tableItem.IsActive);
+
+    /**
+     * Updates the current state of the component
+     * and triggers an update of the selected list
+     * items and re-renders the ability display.
+     */
     function UpdateComponent() {
         tableItem.SwitchStates();
         parentView.UpdateList();

@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
-import { ViewAbilitiesCollection } from '../../../../../classes/viewmodel/collections/ViewAbilitiesCollections'
 import { AllAbilitiesListPage } from '../../../../../classes/viewmodel/pages/AllAbilitiesListPage'
 import { AbilitiesFilterManager } from '../../../../../classes/viewmodel/collections/filters/AbilitiesFilterManager'
 
@@ -21,20 +20,7 @@ const AbilityFilterSelectDisplay = (prop: any) => {
     const [_activetextfilters, returnactivetext] = useState(FilterManager.ReturnActiveTextFilters());
     const [_activetagfilters, returnactivetag] = useState(FilterManager.ReturnActiveTagFilters());
     const [_activemiscfilters, returnactivemisc] = useState(FilterManager.ReturnActiveMiscFilters());
-
     const [_keyval, updatekey] = useState(1);
-
-
-    React.useEffect(() => {
-        const closeOnEscapePressed = (e: KeyboardEvent) => {
-          if ((e.key === "Escape") || (e.key === "Enter")) {
-                //
-          }
-        };
-        window.addEventListener("keydown", closeOnEscapePressed);
-        return () =>
-          window.removeEventListener("keydown", closeOnEscapePressed);
-    }, []);
 
     const [show, setShow] = useState(false);
 
@@ -51,6 +37,7 @@ const AbilityFilterSelectDisplay = (prop: any) => {
         returnactivemisc(FilterManager.ReturnActiveMiscFilters())
         updatekey(_keyval+1)
     }
+    
     // Return result -----------------------------
     return (
         <>
