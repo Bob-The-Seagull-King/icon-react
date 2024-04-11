@@ -317,8 +317,8 @@
         ],
         "description": "{{{{Effect}}}}: {{{{Rush}}}} 1, then {{{{rush}}}} 1. Each time, you may deal 2 damage to an adjacent foe. Foes can only be damaged once per use of this ability.<br><b>Special</b>: If you didn’t attack on your turn before using this ability, it deals damage to <i>all</i> adjacent foes.<br>{{{{Charge}}}} or {{{{Heroic}}}}: {{{{Weaken}}}} all adjacent characters after the first or second {{{{rush}}}}.",
         "blurb": "Even unarmed, a Demon Slayer can employ ferocious strength and unleash blows with their bare hands that can crumple steel.",
-        "talent1":"You can {{{{rush}}}} 1 before triggering this ability, and your ally may {{{{rush}}}} 1 afterwards.",
-        "talent2":"{{{{Shove}}}} the triggering foe and ally each 1 space in any direction after this ability resolves.",
+        "talent1": "Instead of any {{{{rush}}}} from Demon Claw, you can gain 2 {{{{vigor}}}}.",
+        "talent2": "After the second {{{{rush}}}}, you can {{{{shove}}}} an adjacent character 2 spaces.",
         "masteryname":"RAGING DEMON",
         "masterdescription":"Demon Claw’s damage increases by 1 for every 25% of your maximum hp you are missing, up to a maximum of +3 damage."
     },
