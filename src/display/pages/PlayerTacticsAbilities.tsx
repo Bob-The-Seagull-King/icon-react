@@ -86,63 +86,75 @@ const PlayerTacticsAbilities = (prop: any) => {
             <div className="row">
                 {/* Display the filters and abilities which match the filters, if any. */}
                 <div className="col-lg-5 col-md-6 col-sm-12 col-xs-12 col-12 my-0 py-0">
-                    <div className="row">
-                        <div className='col-12'>
-                            <br/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className='col-12'>
-                            {ReturnSearchFilterBox()}
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className='col-12'>
-                            <br/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className='col-12'>
-                            <div className='bordermainpurple roundBody no-padding '>
-                                {_foundItems.length == 0 && 
-                                    <div className="">
-                                        <h1 className="subtletext">No Abilities Found</h1>
+                    <div className="row p-3 overflow-auto flex-grow-1">
+                        <div style={{"maxHeight": "calc(100vh"}}>
+                            <div className="col-12">
+                                <div className="row">
+                                    <div className='col-12'>
+                                        <br/>
                                     </div>
-                                }
-                                {_foundItems.map((item) => (
-                                    <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())}>
-                                        <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall} positionid={getcolor}/>
+                                </div>
+                                <div className="row">
+                                    <div className='col-12'>
+                                        {ReturnSearchFilterBox()}
                                     </div>
-                                ))}
+                                </div>
+                                <div className="row">
+                                    <div className='col-12'>
+                                        <br/>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className='col-12'>
+                                        <div className='bordermainpurple roundBody no-padding '>
+                                            {_foundItems.length == 0 && 
+                                                <div className="">
+                                                    <h1 className="subtletext">No Abilities Found</h1>
+                                                </div>
+                                            }
+                                            {_foundItems.map((item) => (
+                                                <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())}>
+                                                    <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall} positionid={getcolor}/>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* Display the selected abilities, if any */}
                 <div className="col-lg-7 col-md-6 col-sm-12 col-xs-12 col-12">
-                    <div className="row">
-                        <div className='col-12'>
-                            <br/>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className='col-12'>
-                            {_activeItems.length == 0 &&
-                                <div className="">
-                                    <div className='bordersubgrey emptyboxStructure'>
-                                        <h1 className="subtletext">No Items Selected</h1>
+                    <div className="row p-3 overflow-auto flex-grow-1">
+                        <div style={{"maxHeight": "calc(100vh"}}>
+                            <div className="col-12">
+                                <div className="row">
+                                    <div className='col-12'>
+                                        <br/>
                                     </div>
                                 </div>
-                            }
-                        </div>
-                    </div>
-                    <div className="row row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
-                        {_activeItems.map((item) => (
-                            <div className="col" key={"abilityDisplay"+item.ID}>
-                                <AbilityDisplay data={item}/>
-                                <br/>
+                                <div className="row">
+                                    <div className='col-12'>
+                                        {_activeItems.length == 0 &&
+                                            <div className="">
+                                                <div className='bordersubgrey emptyboxStructure'>
+                                                    <h1 className="subtletext">No Items Selected</h1>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                <div className="row row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
+                                    {_activeItems.map((item) => (
+                                        <div className="col" key={"abilityDisplay"+item.ID}>
+                                            <AbilityDisplay data={item}/>
+                                            <br/>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
-                        ))}
+                        </div>
                     </div>
                 </div>
             </div>
