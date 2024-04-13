@@ -70,64 +70,72 @@ const AbilityFilterSelectDisplay = (prop: any) => {
             </div>
 
             <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="modalwide" onHide={handleClose} keyboard={true}  centered>
-                <h1 className={'titleShape titlepurple'}>Select Filters</h1>
-                <Modal.Body >
-                    <div className="separator"><h3>NAME</h3></div>
-                    <div className="row">
-                        {FilterManager.ReturnTextFilters().map((item) => (
-                            <FilterTextItem data={item} key="name"/>
-                        ))}
-                    </div>
-                    <div className="separator"><h3>TAGS</h3></div>
-                    <div className="subltenotetext">{"You can specify tag's value in the text box. Leave blank to find all of that tag."}
-                    </div>
-                    <div className='toppad'></div>
-                    <div className="row">
-                        <div className="filterbox centerPosition">
-                            {FilterManager.ReturnTagFilters().map((item) => (
-                                <FilterTagItem key={"tag"+item.TagType.Name} data={item}/>
-                            ))}
+                
+                            <h1 className={'titleShape titlepurple'}>Select Filters</h1>
+                            <Modal.Body >
+                            <div className="row p-3 overflow-auto flex-grow-1">
+                                <div style={{"maxHeight": "calc(70vh"}}>
+                                    <div className="col-12">
+                                <div className="separator"><h3>NAME</h3></div>
+                                <div className="row">
+                                    {FilterManager.ReturnTextFilters().map((item) => (
+                                        <FilterTextItem data={item} key="name"/>
+                                    ))}
+                                </div>
+                                <div className="separator"><h3>TAGS</h3></div>
+                                <div className="subltenotetext">{"You can specify tag's value in the text box. Leave blank to find all of that tag."}
+                                </div>
+                                <div className='toppad'></div>
+                                <div className="row">
+                                    <div className="filterbox centerPosition">
+                                        {FilterManager.ReturnTagFilters().map((item) => (
+                                            <FilterTagItem key={"tag"+item.TagType.Name} data={item}/>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="separator"><h3>CHAPTERS</h3></div>
+                                <div className="row">
+                                    <div className='filterbox centerPosition'>
+                                        {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "chapter")).map((item) => (
+                                            <FilterItemItem key={"miscchapter"+item.Name} data={item} updatefunction={RunUpdate}/>
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="separator"><h3>SOURCES</h3></div>
+                                <div className="row">
+                                    <div className='filterbox centerPosition'>
+                                        {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
+                                            <FilterItemItem key={"miscsource"+item.Name} data={item} />
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="separator"><h3>CLASSES</h3></div>
+                                <div className="row">
+                                    <div className='filterbox centerPosition'>
+                                        {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "class_id")).map((item) => (
+                                            <FilterItemItem key={"misclass"+item.Name} data={item} />
+                                        ))}
+                                    </div>
+                                </div>
+                                <div className="separator"><h3>JOBS</h3></div>
+                                <div className="row">
+                                    <div className='filterbox centerPosition'>
+                                        {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "job_id")).map((item) => (
+                                            <FilterItemItem key={"miscjob"+item.Name} data={item} />
+                                        ))}
+                                    </div>
+                                </div>
+                                
+                                <div className='separator toppad'></div>
+                                <div className="row float-end">
+                                    <div className='col-12 float-end'>
+                                        <div className='hovermouse filterclosebutton' onClick={() => {handleClose()}}>CONFIRM</div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
-                    <div className="separator"><h3>CHAPTERS</h3></div>
-                    <div className="row">
-                        <div className='filterbox centerPosition'>
-                            {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "chapter")).map((item) => (
-                                <FilterItemItem key={"miscchapter"+item.Name} data={item} updatefunction={RunUpdate}/>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="separator"><h3>SOURCES</h3></div>
-                    <div className="row">
-                        <div className='filterbox centerPosition'>
-                            {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
-                                <FilterItemItem key={"miscsource"+item.Name} data={item} />
-                            ))}
-                        </div>
-                    </div>
-                    <div className="separator"><h3>CLASSES</h3></div>
-                    <div className="row">
-                        <div className='filterbox centerPosition'>
-                            {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "class_id")).map((item) => (
-                                <FilterItemItem key={"misclass"+item.Name} data={item} />
-                            ))}
-                        </div>
-                    </div>
-                    <div className="separator"><h3>JOBS</h3></div>
-                    <div className="row">
-                        <div className='filterbox centerPosition'>
-                            {FilterManager.ReturnMiscFilters().filter((value) => (value.Group == "job_id")).map((item) => (
-                                <FilterItemItem key={"miscjob"+item.Name} data={item} />
-                            ))}
-                        </div>
-                    </div>
-                    
-                    <div className='separator toppad'></div>
-                    <div className="row float-end">
-                        <div className='col-12 float-end'>
-                            <div className='hovermouse filterclosebutton' onClick={() => {handleClose()}}>CONFIRM</div>
-                        </div>
-                    </div>
+                </div>
+                
                 </Modal.Body>
             </Modal>
         </>
