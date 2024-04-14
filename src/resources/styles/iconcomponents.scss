@@ -98,9 +98,9 @@
     width: 100%;
     border-radius: 0.25em;
     padding:20%;
-    padding-top: 40%;
-    padding-bottom: 40%;
-    height: 500%;
+    padding-top: 35%;
+    padding-bottom: 35%;
+    height: 400%;
 }
 
 .popupBody {
@@ -251,3 +251,11 @@
 .inputbox input {
     height: 50%;
   }
+
+
+.topbarStructure {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}

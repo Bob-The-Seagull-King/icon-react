@@ -9,11 +9,13 @@ import './resources/styles/_icon.scss'
     objects are created for Main routes.
 */
 import HomeRoute from './display/superroutes/HomeRoute'
+import SuperHeader from './display/headers/SuperHeader'
 
 const RootComponent: React.FC = () => {
     return (
         <div>
             <Router>
+                <SuperHeader/>
                 <Routes>
                     <Route path={ROUTES.HOME_ROUTE} element={<HomeRoute />} />
                 </Routes>
