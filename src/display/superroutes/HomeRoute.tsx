@@ -24,7 +24,7 @@ const HomeRoute: React.FC = () => {
     // Return result -----------------------------
     return (
         <div>
-            <div className="row justify-content-center">
+            <div className="row justify-content-center m-0 p-0">
                 <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div className='row'><div className='col'><br/></div></div>
                     <div className="row">
