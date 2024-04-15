@@ -4,21 +4,26 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 
-import PlayerTacticsAbilities from '../../display/pages/PlayerTacticsAbilities'
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
 
 import logo from '../../resources/images/iconpendium_logo.png'
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFistRaised } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
 
     // Initialize Controller //
     const AbilitiesCollectionController = new AllAbilitiesListPage()    
 
+    function NavigateHome(dir: string) {
+        window.open(location.protocol + '//' + location.host +'/' + dir, '_self', 'noopener,noreferrer');
+    }
+
     // Return result -----------------------------
     return (
         <div>
-            <div className="row px-3">
-                <div className="col"/>
+            <div className="row justify-content-center">
                 <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div className='row'><div className='col'><br/></div></div>
                     <div className="row">
@@ -29,10 +34,21 @@ const HomeRoute: React.FC = () => {
                         <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Compendium</h3></div>
                     </div>
                     <div className="row">
+                        <div className="col row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
+                            <div className="col">
+                                <div className="pageaccessbox bordersubpurple hovermouse" onClick={() => NavigateHome("compendium/abilities/")}>
+                                    <FontAwesomeIcon icon={faFistRaised} className="pageaccestext"/>
+                                    <h1 className="pageaccestext">
+                                        ABILITIES
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
                         <div className="separator"></div>
                     </div>
                 </div>
-                <div className="col"/>
             </div>
         </div>
     )

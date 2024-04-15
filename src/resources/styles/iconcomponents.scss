@@ -277,3 +277,22 @@
     flex-wrap: wrap;
     align-items: center;
 }
+
+.pageaccessbox {
+    justify-content: center;
+    display: flex;
+    border-radius: 0.2em;
+    box-shadow: 0 0 5px 1px #CCC;
+    padding: 0.5em;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.pageaccestext {
+    font-size: 1.75em;
+    font-weight: 700;
+    color: $colour_purple_main;
+    margin: 0em;
+}
