@@ -9,6 +9,7 @@ import './resources/styles/_icon.scss'
     objects are created for Main routes.
 */
 import HomeRoute from './display/superroutes/HomeRoute'
+import CompendiumRoute from './display/superroutes/CompendiumRoute'
 import SuperHeader from './display/headers/SuperHeader'
 
 const RootComponent: React.FC = () => {
@@ -17,6 +18,7 @@ const RootComponent: React.FC = () => {
             <Router>
                 <SuperHeader/>
                 <Routes>
+                    <Route path={ROUTES.COMPENDIUM_ROUTE} element={<CompendiumRoute />} />
                     <Route path={ROUTES.HOME_ROUTE} element={<HomeRoute />} />
                 </Routes>
             </Router>

@@ -1,8 +1,8 @@
 export const ROUTES = {
     // Super Routes //
-
-    //HOME_ROUTES
+    COMPENDIUM_ROUTE: '/compendium/*',
     HOME_ROUTE: '/',
 
     // Page Routes //
+    COMPENDIUM_ABILITY_ROUTE: '/abilities/*'
 }

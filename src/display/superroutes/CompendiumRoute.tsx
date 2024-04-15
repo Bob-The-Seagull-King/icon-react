@@ -6,19 +6,20 @@ import { ROUTES } from '../../resources/routes-constants'
 
 import PlayerTacticsAbilities from '../../display/pages/PlayerTacticsAbilities'
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
+import path from 'path'
 
-const HomeRoute: React.FC = () => {
+const CompendiumRoute: React.FC = () => {
 
     // Initialize Controller //
-    const AbilitiesCollectionController = new AllAbilitiesListPage()    
+    const AbilitiesCollectionController = new AllAbilitiesListPage()
 
     // Return result -----------------------------
     return (
         <Routes>
-            
+            <Route path={ROUTES.COMPENDIUM_ABILITY_ROUTE} element={<PlayerTacticsAbilities controller={AbilitiesCollectionController}/>} />
         </Routes>
     )
     // -------------------------------------------
 }
 
-export default HomeRoute
+export default CompendiumRoute

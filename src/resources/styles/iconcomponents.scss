@@ -259,3 +259,20 @@
     width: 100%;
     z-index: 1000;
 }
+
+.topbarCompendiumBase {
+    width: 100%;
+    background: $colour_purple_main;
+    height: 3em;
+
+    box-shadow: 0 0 5px 1px #AAA;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #AAA;
+    }
+}
+
+.topbarCompendiumStructure {
+    display: flex;
+    align-items: center;
+}
