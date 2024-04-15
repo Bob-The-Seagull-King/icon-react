@@ -3,6 +3,7 @@ import '../../resources/styles/_icon.scss'
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
+import { useNavigate } from "react-router-dom";
 
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
 
@@ -12,12 +13,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFistRaised } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
+    const navigate = useNavigate();
 
     // Initialize Controller //
     const AbilitiesCollectionController = new AllAbilitiesListPage()    
 
     function NavigateHome(dir: string) {
-        window.open(location.protocol + '//' + location.host +'/' + dir, '_self', 'noopener,noreferrer');
+        navigate('/' + dir);
     }
 
     // Return result -----------------------------

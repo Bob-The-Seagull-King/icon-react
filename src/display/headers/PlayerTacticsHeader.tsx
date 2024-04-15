@@ -5,12 +5,13 @@ import Button from 'react-bootstrap/Button';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
-
+import { useNavigate } from "react-router-dom";
 
 const PlayerTacticsHeader = (prop: any) => {
+    const navigate = useNavigate();
 
     function NavigateHome() {
-        window.open(location.protocol + '//' + location.host +'/', '_self', 'noopener,noreferrer');
+        navigate("/");
     }
 
     // Return result -----------------------------
