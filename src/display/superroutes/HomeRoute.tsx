@@ -14,7 +14,7 @@ import { faFistRaised } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
     const navigate = useNavigate();
-  
+
     // Initialize Controller //
     const AbilitiesCollectionController = new AllAbilitiesListPage()    
 

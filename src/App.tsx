@@ -5,6 +5,7 @@ import RootComponent from './RootComponent'
 import { persistor, store } from './store/reducers/store'
 
 const App: React.FC = () => {
+
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
