@@ -30,7 +30,7 @@ const ToolsContentManager = (prop: any) => {
                     <div className='row'><div className='col'><br/><br/><br/></div></div>
                     <div className="row">
                         <input type="file" accept=".json" onChange={(e)=>readFileOnUpload(e.target.files? e.target.files[0] : undefined)} />
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>
