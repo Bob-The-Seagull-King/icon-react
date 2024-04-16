@@ -99,3 +99,21 @@ export function getTagValue(tag:any, value:string) {
     }
     return "";
 }
+
+/**
+ * Finds the human-readable title for any given
+ * page route.
+ * @param _route The current route of the page.
+ * @returns A string name for the route endpoint.
+ */
+export function getRouteName(_route: string) {
+    if (_route.includes("compendium/abilities")) {
+        return "Abilities"
+    }
+
+    if (_route.includes("tools/content")) {
+        return "Content Manager"
+    }
+
+    return ""
+}

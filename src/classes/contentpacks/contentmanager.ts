@@ -25,6 +25,10 @@ class ContentPackManager {
             console.log("File is not in the valid format")
         }
     }
+
+    public GetPack() {
+        return this.PackList;
+    }
 }
 
 export {ContentPackManager}

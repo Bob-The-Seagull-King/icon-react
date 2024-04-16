@@ -3,13 +3,14 @@ import '../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import ReactDOM from 'react-dom'
+import { Route, Link, Routes, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom";
+import { getRouteName } from "../../utility/functions"
 
 const PlayerTacticsHeader = (prop: any) => {
     const navigate = useNavigate();
-
     function NavigateHome() {
         navigate("/");
     }
@@ -25,7 +26,12 @@ const PlayerTacticsHeader = (prop: any) => {
                 <FontAwesomeIcon icon={faHouse} style={{fontSize:"2em",color:"white",margin:"0em"}}/>
             </Button>
             <div className="vr headertext"></div>
-            <div className="ms-auto headertext"></div>
+            <div className="ms-auto">
+                <h1 className="headertext">
+                    {getRouteName(useLocation().pathname).toUpperCase()}
+                </h1>
+            </div>
+            <span style={{paddingLeft:"0em"}}/>
         </div>
     )
     // -------------------------------------------

@@ -291,9 +291,43 @@
     }
 }
 
+.generalbuttonbox {
+    justify-content: center;
+    display: flex; /* make element size relative to content */
+    align-items: center;
+    border-radius: 0.2em;
+    box-shadow: 0 0 5px 1px #CCC;
+    height: 100%;
+    width: fit-content;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px #CCC;
+    }
+}
+
+.nofrillbox {
+    justify-content: center;
+    display: flex; /* make element size relative to content */
+    align-items: center;
+    height: 100%;
+}
+
 .pageaccestext {
     font-size: 1.75em;
     font-weight: 700;
     color: $colour_purple_main;
     margin: 0.1em;
+}
+
+.textHolder {
+  text-align: justify;
+}
+
+.flexbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
