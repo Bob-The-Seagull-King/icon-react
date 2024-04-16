@@ -11,6 +11,7 @@ import './resources/styles/_icon.scss'
 import HomeRoute from './display/superroutes/HomeRoute'
 import CompendiumRoute from './display/superroutes/CompendiumRoute'
 import SuperHeader from './display/headers/SuperHeader'
+import ToolsRoute from './display/superroutes/ToolsRoute'
 
 const RootComponent: React.FC = () => {
     return (
@@ -19,6 +20,7 @@ const RootComponent: React.FC = () => {
                 <SuperHeader/>
                 <Routes>
                     <Route path={ROUTES.COMPENDIUM_ROUTE} element={<CompendiumRoute />} />
+                    <Route path={ROUTES.TOOLS_ROUTE} element={<ToolsRoute />} />
                     <Route path={ROUTES.HOME_ROUTE} element={<HomeRoute />} />
                 </Routes>
             </Router>

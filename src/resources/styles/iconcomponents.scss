@@ -280,7 +280,8 @@
 
 .pageaccessbox {
     justify-content: center;
-    display: flex;
+    display: flex; /* make element size relative to content */
+    align-items: center;
     border-radius: 0.2em;
     box-shadow: 0 0 5px 1px #CCC;
     padding: 0.5em;
@@ -294,5 +295,5 @@
     font-size: 1.75em;
     font-weight: 700;
     color: $colour_purple_main;
-    margin: 0em;
+    margin: 0.1em;
 }
