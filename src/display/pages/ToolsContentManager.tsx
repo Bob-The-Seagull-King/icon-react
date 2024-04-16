@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import logo from '../../resources/images/iconpendium_logo.png'
 
 import { ContentPackManager } from '../../classes/contentpacks/contentmanager'
+import Button from 'react-bootstrap/esm/Button'
 
 const ToolsContentManager = (prop: any) => {
     const Manager = prop.manager;
@@ -13,7 +14,7 @@ const ToolsContentManager = (prop: any) => {
         const fileReader = new FileReader();
         fileReader.onloadend = ()=>{
            try{
-                console.log(fileReader.result);
+                Manager.FileToContentPack(fileReader.result);
            }catch(e){
                 console.log("**Not valid JSON file!**");
             }
@@ -31,6 +32,9 @@ const ToolsContentManager = (prop: any) => {
                     <div className='row'><div className='col'><br/><br/><br/></div></div>
                     <div className="row">
                         <input type="file" accept=".json" onChange={(e)=>readFileOnUpload(e.target.files? e.target.files[0] : undefined)} />
+                    </div>
+                    <div className='row'>
+                        <Button onClick={() => {console.log(Manager.PackList)}}>CLICK</Button>    
                     </div>  
                 </div>
             </div>

@@ -16,7 +16,14 @@ export const useContentPackStore = create<ContentPackStore>((set) => ({
 }))
 
 function GrabContentPack() {
-    const TempList: ContentPack[] = [];    
+    const TempList: ContentPack[] = [];  
+    const data = localStorage.getItem('contentpackstorage');  
+    try {
+        const ContentList: ContentPack[] = JSON.parse(data || "");
+        return ContentList;
+    } catch (e) {
+        console.log("Local storage is not valid.")
+    }
     return TempList;
 }
 
