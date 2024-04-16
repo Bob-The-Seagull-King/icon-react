@@ -1,14 +1,28 @@
 import { create } from "zustand";
+import {ContentPack, IContentPack, IContentPackFile, IContentPackTag} from '../classes/contentpacks/contentpack'
+import Cookies from 'js-cookie'
 
-type TestStore = {
-    count: number;
-    addition: () => void;
+type ContentPackStore = {
+    ContentPacks: ContentPack[];
+    SetFromCookies: () => void;
 }
 
-export const useTestStore = create<TestStore>((set) => ({
-    count: 0,
-    addition: () => {
+export const useContentPackStore = create<ContentPackStore>((set) => ({
+    ContentPacks: [],
+    SetFromCookies: () => {
         set(
-            (state) => ({count: state.count + 1})
-        )},
+            () => ({ContentPacks: GrabContentPack()})
+        )}
 }))
+
+function GrabContentPack() {
+    const TempList: ContentPack[] = [];
+    try {
+        const ContentPackAll: ContentPack[] = JSON.parse(Cookies.get('contentpackdata') ?? "");
+    } catch (e) {
+        console.log("No valid content pack data found.");
+    }
+    
+    return TempList;
+}
+

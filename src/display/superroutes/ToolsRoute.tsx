@@ -7,14 +7,17 @@ import { ROUTES } from '../../resources/routes-constants'
 import ToolsContentManager from '../../display/pages/ToolsContentManager'
 import path from 'path'
 
+import { ContentPackManager } from '../../classes/contentpacks/contentmanager'
+
 const ToolsRoute: React.FC = () => {
 
     // Initialize Controller //
+    const ContentManager = new ContentPackManager;
 
     // Return result -----------------------------
     return (
         <Routes>
-            <Route path={ROUTES.TOOLS_CONTENT_UPLOAD_ROUTE} element={<ToolsContentManager/>} />
+            <Route path={ROUTES.TOOLS_CONTENT_UPLOAD_ROUTE} element={<ToolsContentManager manager={ContentManager}/>} />
         </Routes>
     )
     // -------------------------------------------
