@@ -16,14 +16,7 @@ export const useContentPackStore = create<ContentPackStore>((set) => ({
 }))
 
 function GrabContentPack() {
-    const TempList: ContentPack[] = [];
-    try {
-        const ContentPackAll: ContentPack[] = [];
-        return ContentPackAll;
-    } catch (e) {
-        console.log("No valid content pack data found.");
-    }
-    
+    const TempList: ContentPack[] = [];    
     return TempList;
 }
 

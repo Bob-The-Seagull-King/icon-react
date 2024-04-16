@@ -13,7 +13,7 @@ const ToolsContentManager = (prop: any) => {
         const fileReader = new FileReader();
         fileReader.onloadend = ()=>{
            try{
-                Manager.ConvertToPack(fileReader.result)
+                console.log(fileReader.result);
            }catch(e){
                 console.log("**Not valid JSON file!**");
             }
@@ -30,9 +30,6 @@ const ToolsContentManager = (prop: any) => {
                     <div className='row'><div className='col'><br/><br/><br/></div></div>
                     <div className="row">
                         <input type="file" accept=".json" onChange={(e)=>readFileOnUpload(e.target.files? e.target.files[0] : undefined)} />
-                    </div>
-                    <div className="row">
-                        <button onClick={() => {console.log(Manager.PackList)}}/>
                     </div>
                 </div>
             </div>
