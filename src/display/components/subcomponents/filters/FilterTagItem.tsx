@@ -52,17 +52,19 @@ const FilterTagItem = (prop: any) => {
     return (
         <div className="">
             <div className="centerPosition">
-                <div className={"tagBox " + (_currentstate == "" ? "filterobjectdisplay" : _currentstate == "positive" ? "filterobjectdisplaypositive" : "filterobjectdisplaynegative")} >
+                <div className={"tagBox " + (_currentstate == "" ? "filterobjectdisplay" : _currentstate == "positive" ? "filterobjectdisplaypositive" : "filterobjectdisplaynegative")} style={{minHeight:"2.75em", alignItems: "center"}} >
                     <div className='hovermouse tagpad'/>
                     <div onClick={() => SwitchStates()} className="hovermouse tagboxtitle">
                         {makestringpresentable(ItemFilter.TagType.Name)}
                     </div>
                     <div className='tagpad'/>
+                     
                     <div className=''>
-                        <InputGroup className="shorten tagboxpad">
-                            <Form.Control  size="sm" className="no-margins " onChange={e => updateName(e.target.value)} aria-label="Text input with checkbox" defaultValue={ItemFilter.TagVal.Val} placeholder=""/>
+                        <InputGroup className="shorten tagboxpad" >
+                            <Form.Control size="sm" className="no-margins" style={{fontSize:"0.75em", height:"0.5em", margin:"0em", textAlign:"center"}} onChange={e => updateName(e.target.value)} aria-label="Text input with checkbox" defaultValue={ItemFilter.TagVal.Val} placeholder=""/>
                         </InputGroup>
                     </div>
+                    
                 </div>
             </div>
         </div>
