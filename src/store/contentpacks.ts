@@ -11,15 +11,15 @@ export const useContentPackStore = create<ContentPackStore>((set) => ({
     ContentPacks: [],
     SetFromCookies: () => {
         set(
-            () => ({ContentPacks: GrabContentPack()})
+            (state) => ({ContentPacks: GrabContentPack()})
         )}
 }))
 
 function GrabContentPack() {
     const TempList: ContentPack[] = [];
     try {
-        const ContentPackAll: ContentPack[] = JSON.parse(Cookies.get('contentpackdata') ?? "");
-        console.log(ContentPackAll);
+        const ContentPackAll: ContentPack[] = [];
+        return ContentPackAll;
     } catch (e) {
         console.log("No valid content pack data found.");
     }

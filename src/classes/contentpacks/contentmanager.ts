@@ -9,6 +9,7 @@ class ContentPackManager {
         const GrabPacks = useContentPackStore((state) => state.SetFromCookies)
         GrabPacks;
         const GetPackList = useContentPackStore((state) => state.ContentPacks)
+        console.log(GetPackList)
         this.PackList = GetPackList;
     }
 
