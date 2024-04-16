@@ -19,6 +19,7 @@ function GrabContentPack() {
     const TempList: ContentPack[] = [];
     try {
         const ContentPackAll: ContentPack[] = JSON.parse(Cookies.get('contentpackdata') ?? "");
+        console.log(ContentPackAll);
     } catch (e) {
         console.log("No valid content pack data found.");
     }

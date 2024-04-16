@@ -6,6 +6,8 @@ class ContentPackManager {
     PackList: ContentPack[] = [];
 
     constructor() {
+        const GrabPacks = useContentPackStore((state) => state.SetFromCookies)
+        GrabPacks;
         const GetPackList = useContentPackStore((state) => state.ContentPacks)
         this.PackList = GetPackList;
     }
