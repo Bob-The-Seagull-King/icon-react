@@ -25,6 +25,7 @@ const ToolsContentManager = (prop: any) => {
     // Return result -----------------------------
     return (
         <div className="container">
+            
             <div className="row justify-content-center m-0 p-0">
                 <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div className='row'><div className='col'><br/><br/><br/></div></div>
