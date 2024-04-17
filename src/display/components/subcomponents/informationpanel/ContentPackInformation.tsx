@@ -51,6 +51,12 @@ const ContentPackInformation = (prop: any) => {
                                         everything{"'"}s in order, you{"'"}re good to go!
                                     </p>
                                 </div>
+                                
+                                <div className="row float-end">
+                                    <div className='col-12 float-end'>
+                                        <div className='hovermouse filterclosebutton' onClick={() => {handleClose()}}>CONFIRM</div>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
