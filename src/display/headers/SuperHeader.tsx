@@ -11,12 +11,16 @@ const SuperHeader: React.FC = () => {
 
     // Return result -----------------------------
     return (
+        <>
         <div className="topbarStructure">
             <Routes>
                 <Route path={ROUTES.COMPENDIUM_ROUTE} element={<PlayerTacticsHeader/>} />
                 <Route path={ROUTES.TOOLS_ROUTE} element={<PlayerTacticsHeader/>} />
             </Routes>
         </div>
+        <br/>
+        <br/>
+        </>
     )
     // -------------------------------------------
 }

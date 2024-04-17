@@ -81,7 +81,7 @@ const PlayerTacticsAbilities = (prop: any) => {
     return (
         <div className="container">
             <div className="row">
-                <div style={{height:"4em"}}/>
+                <div style={{height:"2.25em"}}/>
             </div>
             <div className="row">
                 {/* Display the filters and abilities which match the filters, if any. */}
