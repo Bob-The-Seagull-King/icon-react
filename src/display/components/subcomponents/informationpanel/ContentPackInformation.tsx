@@ -18,7 +18,7 @@ const ContentPackInformation = (prop: any) => {
     return (
         <>
             <div style={{display:"flex"}}>
-                <FontAwesomeIcon icon={faCircleInfo} onClick={() => handleShow()} className="hovermouse"/>
+                <FontAwesomeIcon icon={faCircleInfo} onClick={() => handleShow()} className="pageaccestext hovermouse" style={{fontSize:"3em"}}/>
             </div>
             <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>
                 
