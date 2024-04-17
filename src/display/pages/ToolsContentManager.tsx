@@ -29,12 +29,14 @@ const ToolsContentManager = (prop: any) => {
 
     // Return result -----------------------------
     return (
-        <div className="container">
+        <div className="container" style={{width:"100%"}}>
             
+            <input id="pack-upload" style={{display:"none"}} type="file" accept=".json" onChange={(e)=>readFileOnUpload(e.target.files? e.target.files[0] : undefined)} />
+                       
             <div className="row justify-content-center">
                 <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div className='row'><div className='col'><br/><br/><br/></div></div>
-                    <div className="row justify-content-center">
+                    <div className="row">
                         <div className="col-12 justify-content-center" style={{display:"flex"}}>
                             <label htmlFor="pack-upload" className="generalbuttonbox bordersubpurple hovermouse">
                                 <FontAwesomeIcon icon={faFileImport} className="pageaccestext"/>
@@ -44,8 +46,6 @@ const ToolsContentManager = (prop: any) => {
                             </label>
                             <div className="navpad"/>
                             <ContentPackInformation/>
-                            <input id="pack-upload" style={{display:"none"}} type="file" accept=".json" onChange={(e)=>readFileOnUpload(e.target.files? e.target.files[0] : undefined)} />
-                        
                         </div>
                     </div>
                     <div className='row'>
