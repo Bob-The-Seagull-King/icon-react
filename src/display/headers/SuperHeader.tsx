@@ -18,8 +18,6 @@ const SuperHeader: React.FC = () => {
                 <Route path={ROUTES.TOOLS_ROUTE} element={<PlayerTacticsHeader/>} />
             </Routes>
         </div>
-        <br/>
-        <br/>
         </>
     )
     // -------------------------------------------
