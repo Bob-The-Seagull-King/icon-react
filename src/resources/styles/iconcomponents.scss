@@ -309,9 +309,10 @@
 
 .nofrillbox {
     justify-content: center;
-    display: flex; /* make element size relative to content */
     align-items: center;
+    display: flex;
     height: 100%;
+    width: fit-content;
 }
 
 .pageaccestext {
