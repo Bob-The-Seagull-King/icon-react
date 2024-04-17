@@ -45,7 +45,9 @@ const ToolsContentManager = (prop: any) => {
                                 </h1>
                             </label>
                             <div className="navpad"/>
-                            <ContentPackInformation/>
+                            <div style={{width:"fit-content"}}>
+                                <ContentPackInformation/>
+                            </div>
                         </div>
                     </div>
                     <div className='row'>
