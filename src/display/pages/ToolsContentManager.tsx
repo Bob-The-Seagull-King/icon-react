@@ -44,7 +44,6 @@ const ToolsContentManager = (prop: any) => {
                                     UPLOAD CONTENT PACK
                                 </h1>
                             </label>
-                            <div className="navpad"/>
                             <ContentPackInformation/>
                         </div>
                     </div>
