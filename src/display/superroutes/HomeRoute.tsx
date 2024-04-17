@@ -27,7 +27,6 @@ const HomeRoute: React.FC = () => {
         <div>
             <div className="row justify-content-center m-0 p-0">
                 <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-12">
-                    <div className='row'><div className='col'><br/></div></div>
                     <div className="row">
                         <img src={logo} style={{maxWidth:"100%"}} />
                     </div>
