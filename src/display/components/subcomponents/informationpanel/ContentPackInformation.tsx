@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button';
 
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 
 const ContentPackInformation = (prop: any) => {
 
@@ -22,7 +24,16 @@ const ContentPackInformation = (prop: any) => {
             </div>
             <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>
                 
-                            <h1 className={'titleShape titlepurple'}>Content Packs</h1>
+                            <h1 className={'titleShape titlepurple'}>
+                                Content Packs
+                                <div className="row float-end">
+                                    <div className='col-12 float-end'>
+                                        <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
+                                            <FontAwesomeIcon icon={faCircleXmark} style={{fontSize:"2em",color:"white",margin:"0em"}}/>
+                                        </Button>
+                                    </div>
+                                </div>
+                            </h1>
                             <Modal.Body >
                             <div className="row p-3 overflow-auto flex-grow-1">
                                 <div style={{"maxHeight": "calc(70vh"}}>
@@ -50,12 +61,6 @@ const ContentPackInformation = (prop: any) => {
                                         about how to structure your content pack, then fill out the information as you need it. Once
                                         everything{"'"}s in order, you{"'"}re good to go!
                                     </p>
-                                </div>
-                                
-                                <div className="row float-end">
-                                    <div className='col-12 float-end'>
-                                        <div className='hovermouse filterclosebutton' onClick={() => {handleClose()}}>CONFIRM</div>
-                                    </div>
                                 </div>
                         </div>
                     </div>

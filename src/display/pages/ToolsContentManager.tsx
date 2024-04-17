@@ -7,24 +7,36 @@ import logo from '../../resources/images/iconpendium_logo.png'
 import { ContentPackManager } from '../../classes/contentpacks/contentmanager'
 import Button from 'react-bootstrap/esm/Button'
 import ContentPackInformation from '../../display/components/subcomponents/informationpanel/ContentPackInformation'
+import ContentPackDisplay from '../../display/components/features/contentpack/ContentPackDisplay'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileImport } from '@fortawesome/free-solid-svg-icons'
+import { ContentPack } from '../../classes/contentpacks/contentpack'
 
 const ToolsContentManager = (prop: any) => {
     const Manager = prop.manager;
+
+    const [_allcontentpacks, returnstate] = useState(Manager.GetPack());
+    const [_key, updateKey] = useState(0);
 
     function readFileOnUpload(uploadedFile: File | undefined): void {
         const fileReader = new FileReader();
         fileReader.onloadend = ()=>{
            try{
                 Manager.FileToContentPack(fileReader.result);
+                ItemRecall();
            }catch(e){
                 console.log("**Not valid JSON file!**");
             }
         }
         if( uploadedFile!== undefined)
            fileReader.readAsText(uploadedFile);
+    }
+
+    function ItemRecall() {
+        returnstate(Manager.GetPack())
+        updateKey(_key+1)
+        console.log(_allcontentpacks)
     }
 
     // Return result -----------------------------
@@ -50,9 +62,16 @@ const ToolsContentManager = (prop: any) => {
                         </div>
                     </div>
                     <div className='row'>
-                        <div className='col-12'>
-                            <Button onClick={() => {console.log(Manager.PackList)}}>CLICK</Button>
+                        <div className='col'>
+                            <br/>
                         </div>
+                    </div>
+                    <div className='row row-cols-1'>
+                            {_allcontentpacks.map((item: ContentPack) => (
+                                <div className="col" key={"packdisplay"+item.ID}>
+                                    <ContentPackDisplay data={item} parent={Manager} statefunction={ItemRecall}/>
+                                </div>
+                            ))}
                     </div>  
                 </div>
             </div>

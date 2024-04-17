@@ -32,7 +32,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_purple_main;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -46,7 +46,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_purple_secondary;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -70,7 +70,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_blue_main;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -84,7 +84,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_blue_secondary;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -98,7 +98,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_green_main;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -112,7 +112,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_green_secondary;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -126,7 +126,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_red_main;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -140,7 +140,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_red_secondary;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -154,7 +154,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_yellow_main;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -168,7 +168,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_yellow_secondary;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -182,7 +182,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_grey_main;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -196,7 +196,7 @@
     width: 100%;
     text-align: center;
     background-color: $colour_grey_secondary;
-    color: white;
+    color: $colour_background_white;
     font-size: 200%;
     font-weight: bolder;
 }
@@ -279,13 +279,13 @@
   }
 
   .headertext {
-    color: white;
+    color: $colour_background_white;
     font-weight: 700;
     font-size: 1.5em;
   }
 
   .headersubtext {
-    color: white;
+    color: $colour_background_white;
     font-size: 1em;
     font-weight: 400;
   }
@@ -300,4 +300,35 @@
     color: $colour_purple_main;
     justify-self: center;
     text-align: center;
+  }
+
+  .pageaccestext {
+      font-size: 1.75em;
+      font-weight: 700;
+      color: $colour_purple_main;
+      margin: 0.1em;
+  }
+
+  .packtitle {
+    font-size: 1.75em;
+    font-weight: 700;
+    color: $colour_purple_main;
+    margin: 0.25em;
+  }
+
+  .packsubtitle {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: $colour_purple_main;
+    margin: 0.25em;
+  }
+
+  .purpleIcon {
+    color: $colour_purple_main;
+  }
+  .redIcon {
+    color: $colour_red_main;
+  }
+  .greenIcon {
+    color: $colour_green_main;
   }
