@@ -41,9 +41,10 @@ const ToolsContentManager = (prop: any) => {
                             <label htmlFor="pack-upload" className="generalbuttonbox bordersubpurple hovermouse">
                                 <FontAwesomeIcon icon={faFileImport} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
-                                    UPLOAD CONTENT PACK
+                                    UPLOAD PACK
                                 </h1>
                             </label>
+                            <div className="navpad"/>
                             <ContentPackInformation/>
                         </div>
                     </div>
