@@ -33,7 +33,10 @@ class ContentPackManager {
     public DeletePack(_pack : ContentPack) {
         let i = 0;
         for (i = 0; i < this.PackList.length; i++) {
-            this.PackList.splice(i, 1);
+            if (_pack == this.PackList[i]) {
+                this.PackList.splice(i, 1);
+                break;
+            }
         }
         this.SetStorage();
     }

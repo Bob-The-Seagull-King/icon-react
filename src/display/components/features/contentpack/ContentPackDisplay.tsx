@@ -27,8 +27,14 @@ const ContentPackDisplay = (props: any) => {
         parentView.DeletePack(PackItem);
         updateHost();
     }
+
+    function switchContentPackState() {
+        PackItem.isactive = !PackItem.isactive;
+        parentView.SetStorage();
+        updateHost();
+    }
     
-    const [stateWidth, setWidth] = useState(0);
+    const [stateWidth, setWidth] = useState(window.innerWidth);
     const ref = useRef<HTMLDivElement>(null);
     
     useEffect(() => {
@@ -54,7 +60,7 @@ const ContentPackDisplay = (props: any) => {
                                 <FontAwesomeIcon icon={faBookOpen} className="purpleIcon" style={{fontSize:"2em",margin:"0em"}}/>
                             </Button>
                             <div className="vr packvr"></div>
-                            <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
+                            <Button style={{padding:"0em"}} variant="" onClick={() => switchContentPackState()}>
                                 {PackItem.isactive &&
                                     <FontAwesomeIcon icon={faUnlock} className="greenIcon" style={{fontSize:"2em",margin:"0em"}}/>
                                 }
@@ -111,7 +117,7 @@ const ContentPackDisplay = (props: any) => {
                                     <FontAwesomeIcon icon={faBookOpen} className="purpleIcon" style={{fontSize:"2em",margin:"0em"}}/>
                                 </Button>
                                 <div className="vr packvr"></div>
-                                <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
+                                <Button style={{padding:"0em"}} variant="" onClick={() => switchContentPackState()}>
                                     {PackItem.isactive &&
                                         <FontAwesomeIcon icon={faUnlock} className="greenIcon" style={{fontSize:"2em",margin:"0em"}}/>
                                     }
