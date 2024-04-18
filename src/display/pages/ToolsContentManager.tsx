@@ -66,9 +66,16 @@ const ToolsContentManager = (prop: any) => {
                             <br/>
                         </div>
                     </div>
-                    <div className='row row-cols-1'>
+                    <div className='row row-cols-1 smallbordersubpurple'>
+                            {_allcontentpacks.length < 1 &&
+                                <div className="col p-0" key={"packdisplaynone"}>
+                                    <div className='contentpackcontainer smallbordersubpurple' style={{justifyContent:"center",alignItems:"center"}}>
+                                        <h1 className="subtletext" style={{paddingTop:"1em", paddingBottom:"1em"}}>No Packages Selected</h1>
+                                    </div>
+                                </div>
+                            }
                             {_allcontentpacks.map((item: ContentPack) => (
-                                <div className="col" key={"packdisplay"+item.ID}>
+                                <div className="col p-0" key={"packdisplay"+item.ID}>
                                     <ContentPackDisplay data={item} parent={Manager} statefunction={ItemRecall}/>
                                 </div>
                             ))}

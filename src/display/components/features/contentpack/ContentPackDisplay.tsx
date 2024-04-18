@@ -25,7 +25,7 @@ const ContentPackDisplay = (props: any) => {
 
     return (
         <>
-            <div className='contentpackcontainer bordersubpurple'>
+            <div className='contentpackcontainer smallbordersubpurple'>
                 <span className="packvrbox">
                     <Button style={{padding:"0em"}} variant="" onClick={() => handleShow()}>
                         <FontAwesomeIcon icon={faBookOpen} className="purpleIcon" style={{fontSize:"2em",margin:"0em"}}/>
@@ -41,7 +41,7 @@ const ContentPackDisplay = (props: any) => {
                     </Button>
                     <div className="vr packvr"></div>
                 </span>
-                
+
                 <h1 className="packtitle">
                     {PackItem.name}
                 </h1>
