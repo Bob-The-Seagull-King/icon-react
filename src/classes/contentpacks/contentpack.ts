@@ -34,7 +34,7 @@ class ContentPack {
         this.Author = _contentpack.author;
         this.Description = _contentpack.description;
         this.Tags = _contentpack.tags;
-        this.IsActive = false;
+        this.IsActive = true;
         this.Files = _contentpack.files;
     }
 

@@ -17,13 +17,47 @@ class ContentPackManager {
     }
 
     public FileToContentPack(_content : string) {
+        let ReturnMsg = "";
         try {
-            const ContentNew: ContentPack = JSON.parse(_content);
-            this.PackList.push(ContentNew);
-            this.SetStorage();
+            ReturnMsg = this.ValidateFileData(_content) 
+            if (ReturnMsg == "") {
+                const ContentNew: ContentPack = new ContentPack(JSON.parse(_content));
+                this.PackList.push(ContentNew);
+                this.SetStorage();
+            } else {
+                return ReturnMsg;
+            }
         } catch (e) {
             console.log("File is not in the valid format")
+            ReturnMsg = "File was not in the Content Pack format.";
         }
+
+        return ReturnMsg;
+    }
+
+    private ValidateFileData(_content : string) {
+
+        if (    (JSON.parse(_content) as IContentPack).id &&
+                (JSON.parse(_content) as IContentPack).name &&
+                (JSON.parse(_content) as IContentPack).author &&
+                (JSON.parse(_content) as IContentPack).description &&
+                (JSON.parse(_content) as IContentPack).tags &&
+                (JSON.parse(_content) as IContentPack).isactive &&
+                (JSON.parse(_content) as IContentPack).files
+            ) {
+            undefined;
+        } else {
+            return "Invalid file format structure.";
+        }
+
+        let i = 0;
+        for (i = 0; i < this.PackList.length; i++) {
+            if (this.PackList[i].ID == (JSON.parse(_content) as IContentPack).id) {
+                return "You already have a Content Pack with the same ID";
+            }
+        }
+
+        return ""
     }
 
     public GetPack() {

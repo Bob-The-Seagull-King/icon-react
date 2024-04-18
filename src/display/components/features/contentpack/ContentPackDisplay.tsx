@@ -14,10 +14,12 @@ import { faUnlock } from '@fortawesome/free-solid-svg-icons'
 import { makestringpresentable } from '../../../../utility/functions'
 
 const ContentPackDisplay = (props: any) => {
-    const PackItem = props.data;
+    const PackItem: ContentPack = props.data;
     const parentView = props.parent;
     const updateHost = props.statefunction;
-
+    
+    const [stateWidth, setWidth] = useState(window.innerWidth);
+    const ref = useRef<HTMLDivElement>(null);
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -29,13 +31,10 @@ const ContentPackDisplay = (props: any) => {
     }
 
     function switchContentPackState() {
-        PackItem.isactive = !PackItem.isactive;
+        PackItem.IsActive = !PackItem.IsActive;
         parentView.SetStorage();
         updateHost();
     }
-    
-    const [stateWidth, setWidth] = useState(window.innerWidth);
-    const ref = useRef<HTMLDivElement>(null);
     
     useEffect(() => {
         const setContentPackWidth = () => {
@@ -61,10 +60,10 @@ const ContentPackDisplay = (props: any) => {
                             </Button>
                             <div className="vr packvr"></div>
                             <Button style={{padding:"0em"}} variant="" onClick={() => switchContentPackState()}>
-                                {PackItem.isactive &&
+                                {PackItem.IsActive &&
                                     <FontAwesomeIcon icon={faUnlock} className="greenIcon" style={{fontSize:"2em",margin:"0em"}}/>
                                 }
-                                {!PackItem.isactive &&
+                                {!PackItem.IsActive &&
                                     <FontAwesomeIcon icon={faLock} className="redIcon" style={{fontSize:"2em",margin:"0em"}}/>
                                 }
                             </Button>
@@ -73,11 +72,11 @@ const ContentPackDisplay = (props: any) => {
                         <span className="contentsubnamecontainer">
                             <span/>
                             <h1 className="packtitle">
-                                {PackItem.name}
+                                {PackItem.Name}
                             </h1>
                             <div className="vr packvr"></div>
                             <h3 className="packsubtitle">
-                                {PackItem.author}
+                                {PackItem.Author}
                             </h3>
                             <span/>
                         </span>
@@ -96,7 +95,7 @@ const ContentPackDisplay = (props: any) => {
                             <div className="col-12 smallcontentpackrow" style={{display: "flex", justifyContent:"space-between"}}>
                                 <span/>
                                 <h1 className="packtitle" style={{width:"fit-content"}}>
-                                    {PackItem.name}
+                                    {PackItem.Name}
                                 </h1>
                                 <span/>
                             </div>
@@ -105,7 +104,7 @@ const ContentPackDisplay = (props: any) => {
                             <div className="col-12 smallcontentpackrow" style={{display: "flex", justifyContent:"space-between"}}>
                                 <span/>
                                 <h3 className="packsubtitle" style={{width:"fit-content"}}>
-                                    {PackItem.author}
+                                    {PackItem.Author}
                                 </h3>
                                 <span/>
                             </div>
@@ -118,10 +117,10 @@ const ContentPackDisplay = (props: any) => {
                                 </Button>
                                 <div className="vr packvr"></div>
                                 <Button style={{padding:"0em"}} variant="" onClick={() => switchContentPackState()}>
-                                    {PackItem.isactive &&
+                                    {PackItem.IsActive &&
                                         <FontAwesomeIcon icon={faUnlock} className="greenIcon" style={{fontSize:"2em",margin:"0em"}}/>
                                     }
-                                    {!PackItem.isactive &&
+                                    {!PackItem.IsActive &&
                                         <FontAwesomeIcon icon={faLock} className="redIcon" style={{fontSize:"2em",margin:"0em"}}/>
                                     }
                                 </Button>
@@ -138,7 +137,7 @@ const ContentPackDisplay = (props: any) => {
 
             <Modal size="lg" onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>    
                 <h1 className={'titleShape titlepurple'}>
-                    {PackItem.name}
+                    {PackItem.Name}
                     <div className="row float-end">
                         <div className='col-12 float-end'>
                             <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
@@ -150,13 +149,13 @@ const ContentPackDisplay = (props: any) => {
                 <Modal.Body >
                     <div className="row overflow-auto flex-grow-1 m-0 p-0">
                         <div style={{"maxHeight": "calc(70vh"}}>
-                            <div className="separator" style={{marginTop:"0em"}}><h5>By {PackItem.author}</h5></div>
+                            <div className="separator" style={{marginTop:"0em"}}><h5>By {PackItem.Author}</h5></div>
                             <div className="col-12" style={{fontSize:"0.95em"}}>
-                                {PackItem.description}
+                                {PackItem.Description}
                             </div>
                             <div className="separator" style={{marginTop:"0em"}}><h5>Content</h5></div>
                             <div style={{display:"flex",flexWrap:"wrap"}}>
-                                {PackItem.tags.map((item: any) => (
+                                {PackItem.Tags.map((item: any) => (
                                     <div className="filterobjectdisplay" key={"packdisplay"}>
                                         {makestringpresentable(item.name)} - {item.count.toString()}
                                     </div>

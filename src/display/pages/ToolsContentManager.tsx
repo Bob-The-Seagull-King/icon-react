@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
-
-import logo from '../../resources/images/iconpendium_logo.png'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { ContentPackManager } from '../../classes/contentpacks/contentmanager'
 import Button from 'react-bootstrap/esm/Button'
@@ -23,7 +23,10 @@ const ToolsContentManager = (prop: any) => {
         const fileReader = new FileReader();
         fileReader.onloadend = ()=>{
            try{
-                Manager.FileToContentPack(fileReader.result);
+                const Msg: string = Manager.FileToContentPack(fileReader.result);
+                if (Msg != "") {
+                    runToast("Upload Error: " + Msg);
+                }
                 ItemRecall();
            }catch(e){
                 console.log("**Not valid JSON file!**");
@@ -31,6 +34,25 @@ const ToolsContentManager = (prop: any) => {
         }
         if( uploadedFile!== undefined)
            fileReader.readAsText(uploadedFile);
+    }
+
+    /**
+     * Activates a toast error message with
+     * a provided message
+     * @param text The warning to be displayed
+     */
+    function runToast(text: string) 
+    {
+        toast.error(text, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     }
 
     function ItemRecall() {
@@ -42,7 +64,18 @@ const ToolsContentManager = (prop: any) => {
     // Return result -----------------------------
     return (
         <div className="container" style={{width:"100%"}}>
-            
+             <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            />
             <input id="pack-upload" style={{display:"none"}} type="file" accept=".json" onChange={(e)=>readFileOnUpload(e.target.files? e.target.files[0] : undefined)} />
                        
             <div className="row justify-content-center">
