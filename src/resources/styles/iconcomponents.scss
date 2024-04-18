@@ -316,17 +316,40 @@
 .contentpackcontainer {
     display: flex; /* make element size relative to content */
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap-reverse;
     border-radius: 0em;
-    height: 100%;
     width: 100%;
     position: relative;
     padding-left: 0.75em;
     padding-right: 0.75em;
     padding-top: 0.75em;
     padding-bottom: 0.75em;
+}
+
+.contentpacksmallcontainer {
+    align-items: center;
+    align-content: center;
+    border-radius: 0em;
+    width: 100%;
+    position: relative;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+}
+
+.smallcontentpackrow {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contentsubnamecontainer {
+    display: flex; /* make element size relative to content */
+    align-items: center;
+    align-content: center;
+    width: fit-content;
 }
 
 .nofrillbox {
@@ -351,7 +374,8 @@
 .packvr {
     color: $colour_purple_main;
     margin-left: 0.5em;
-    margin-right: 0.5em
+    margin-right: 0.5em;
+    width: fit-content;
 }
 
 .packvrbox {
