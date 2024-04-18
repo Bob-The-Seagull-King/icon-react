@@ -58,12 +58,14 @@ function GetContentPackData(request: IRequest): any {
     
     let i = 0;
     for (i = 0; i < ReturnData.length; i++) {
-        let j = 0;
-        for (j = 0; j < ReturnData[i].Files.length; j++) {
-            if (ReturnData[i].Files[j].type == request.searchparam.type) {
-                let k = 0;
-                for (k = 0; k < ReturnData[i].Files[j].data.length; k++) {
-                    BonusData.push(ReturnData[i].Files[j].data[k]);
+        if (ReturnData[i].IsActive) {
+            let j = 0;
+            for (j = 0; j < ReturnData[i].Files.length; j++) {
+                if (ReturnData[i].Files[j].type == request.searchparam.type) {
+                    let k = 0;
+                    for (k = 0; k < ReturnData[i].Files[j].data.length; k++) {
+                        BonusData.push(ReturnData[i].Files[j].data[k]);
+                    }
                 }
             }
         }
