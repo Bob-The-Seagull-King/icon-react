@@ -35,14 +35,17 @@ class ContentPackManager {
     }
 
     private ValidateFileData(_content : string) {
+        console.log("sdhasjkhdkasj")
 
-        if (    (JSON.parse(_content) as IContentPack).id &&
-                (JSON.parse(_content) as IContentPack).name &&
-                (JSON.parse(_content) as IContentPack).author &&
-                (JSON.parse(_content) as IContentPack).description &&
-                (JSON.parse(_content) as IContentPack).tags &&
-                (JSON.parse(_content) as IContentPack).isactive &&
-                (JSON.parse(_content) as IContentPack).files
+        const TestPack = (JSON.parse(_content) as IContentPack)
+
+        if (    TestPack.id &&
+                TestPack.name &&
+                TestPack.author &&
+                TestPack.description &&
+                TestPack.tags &&
+                TestPack.isactive &&
+                TestPack.files
             ) {
             undefined;
         } else {
@@ -51,10 +54,33 @@ class ContentPackManager {
 
         let i = 0;
         for (i = 0; i < this.PackList.length; i++) {
-            if (this.PackList[i].ID == (JSON.parse(_content) as IContentPack).id) {
+            if (this.PackList[i].ID == TestPack.id) {
                 return "You already have a Content Pack with the same ID";
             }
         }
+
+        const IDArray = [];
+        for (i = 0; i < TestPack.files.length; i ++) {
+            let j = 0;
+            for (j = 0; j < TestPack.files[i].data.length; j++) {
+                IDArray.push(TestPack.files[i].data[j].id)
+            }
+        }
+
+        console.log(IDArray);
+        let x = 0;
+        for (x = 0; x < this.PackList.length; x++) {
+            
+            for (i = 0; i < this.PackList[x].Files.length; i ++) {
+                let j = 0;
+                for (j = 0; j < this.PackList[x].Files[i].data.length; j++) {
+                    if (IDArray.includes(this.PackList[x].Files[i].data[j].id)) {
+                        return "Conflicting IDs were found."
+                    }
+                }
+            }
+        }
+
 
         return ""
     }
