@@ -58,7 +58,6 @@ const ToolsContentManager = (prop: any) => {
     function ItemRecall() {
         returnstate(Manager.GetPack())
         updateKey(_key+1)
-        console.log(_allcontentpacks)
     }
 
     // Return result -----------------------------

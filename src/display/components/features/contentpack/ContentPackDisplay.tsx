@@ -41,12 +41,10 @@ const ContentPackDisplay = (props: any) => {
             if(ref.current) {
                 setWidth(ref.current.clientWidth);
             }
-            console.log(stateWidth)
         }
         window.addEventListener("load", setContentPackWidth, false);
         window.addEventListener("resize", setContentPackWidth, false);
         setContentPackWidth();
-        console.log(stateWidth)
     }, [stateWidth])
 
     return (

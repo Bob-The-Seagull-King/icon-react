@@ -28,7 +28,6 @@ class ContentPackManager {
                 return ReturnMsg;
             }
         } catch (e) {
-            console.log("File is not in the valid format")
             ReturnMsg = "File was not in the Content Pack format.";
         }
 
