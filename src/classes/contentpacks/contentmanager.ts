@@ -29,6 +29,14 @@ class ContentPackManager {
     public GetPack() {
         return this.PackList;
     }
+
+    public DeletePack(_pack : ContentPack) {
+        let i = 0;
+        for (i = 0; i < this.PackList.length; i++) {
+            this.PackList.splice(i, 1);
+        }
+        this.SetStorage();
+    }
 }
 
 export {ContentPackManager}

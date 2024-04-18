@@ -23,6 +23,11 @@ const ContentPackDisplay = (props: any) => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    function removeContentPack() {
+        parentView.DeletePack(PackItem);
+        updateHost();
+    }
+
     return (
         <>
             <div className='contentpackcontainer smallbordersubpurple'>
@@ -52,7 +57,7 @@ const ContentPackDisplay = (props: any) => {
 
                 <span className="packvrbox">
                     <div className="vr packvr"></div>
-                    <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
+                    <Button style={{padding:"0em"}} variant="" onClick={() => removeContentPack()}>
                         <FontAwesomeIcon icon={faTrash} className="redIcon" style={{fontSize:"2em",margin:"0em"}}/>
                     </Button>
                 </span>
