@@ -2,7 +2,7 @@ import { ViewCollectionsModel } from "./ViewCollectionsModel";
 import { IPlayerAbility, PlayerAbility } from "../../../classes/feature/abilities/Ability";
 import { AbilityFactory } from "../../../factories/features/AbilityFactory";
 import { ViewTableItem } from "./ViewTableItem";
-import { getColour } from "../../../utility/functions";
+import { byPropertiesOf, getColour, sort } from "../../../utility/functions";
 
 class ViewAbilitiesCollection extends ViewCollectionsModel {
 
@@ -33,6 +33,7 @@ class ViewAbilitiesCollection extends ViewCollectionsModel {
         this.CleanupAbilities();
         this.CleanupCollection();
         let i = 0;
+        this.dataresults.sort(byPropertiesOf<IPlayerAbility>(['class_id', 'job_id', 'name', 'source', 'id']))
         for (i = 0; i < this.dataresults.length; i++) {
             const abilityNew = AbilityFactory.CreateAbility(this.dataresults[i]);
             const ItemNew = new ViewTableItem(abilityNew, getColour(abilityNew.Class));
