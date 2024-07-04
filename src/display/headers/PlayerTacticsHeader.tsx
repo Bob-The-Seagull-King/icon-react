@@ -9,7 +9,11 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from "react-router-dom";
 import { getRouteName } from "../../utility/functions"
 
+import PalleteSwap from './components/PalleteSwap';
+
 const PlayerTacticsHeader = (prop: any) => {
+
+
     const navigate = useNavigate();
     function NavigateHome() {
         navigate("/");
@@ -26,6 +30,8 @@ const PlayerTacticsHeader = (prop: any) => {
             <Button style={{padding:"0em"}} variant="" onClick={() => NavigateHome()}>
                 <FontAwesomeIcon icon={faHouse} style={{fontSize:"2em",color:"white",margin:"0em"}}/>
             </Button>
+            <div className="vr headertext"></div>
+            <PalleteSwap changeFunc={prop.palleteFunc}/>
             <div className="vr headertext"></div>
             <div className="ms-lg-auto ms-md-auto">
                 <h1 className="headertext">
