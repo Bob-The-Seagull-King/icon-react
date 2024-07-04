@@ -24,13 +24,13 @@
 
 .abilityStructure {
     border-radius: 0em 0em 0.4em 0.4em;
-    box-shadow: 0 0 5px 1px #CCC;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     width: 100%;
     text-align: justify;
     background-color: var(--colour_offwhite);
 
     &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
     }
 }
 
@@ -61,13 +61,13 @@
     border-width: 2px !important;
     border-color: var(--colour_icon_main) !important;
     border-radius: 0em 0em 0em 0em !important;
-    box-shadow: 0 0 5px 1px #555;
+    box-shadow: 0 0 5px 1px var(--colour_grey_main);
     width: 100%;
     text-align: justify;
     background-color: var(--colour_offwhite);
 
     &:hover {
-        box-shadow: 0 0 10px 2px #555;
+        box-shadow: 0 0 10px 2px var(--colour_grey_main);
     }
 }
 
@@ -76,7 +76,7 @@
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
-    box-shadow: 0 0 3px 0px #CCC;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
@@ -87,7 +87,7 @@
     background-color: var(--colour_icon_secondary);
 
     &:hover {
-        box-shadow: 0 0 5px 1px #CCC;
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     }
 }
 
@@ -96,7 +96,7 @@
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
-    box-shadow: 0 0 3px 0px #CCC;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
@@ -107,7 +107,7 @@
     background-color: var(--colour_green_secondary);
 
     &:hover {
-        box-shadow: 0 0 5px 1px #CCC;
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     }
 }
 
@@ -116,7 +116,7 @@
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
-    box-shadow: 0 0 3px 0px #CCC;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
@@ -127,7 +127,7 @@
     background-color: var(--colour_red_secondary);
 
     &:hover {
-        box-shadow: 0 0 5px 1px #CCC;
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     }
 }
 
@@ -140,7 +140,7 @@
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
-    box-shadow: 0 0 3px 0px #CCC;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
@@ -151,7 +151,7 @@
     background-color: var(--colour_green_secondary);
 
     &:hover {
-        box-shadow: 0 0 5px 1px #CCC;
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     }
 }
 
@@ -159,7 +159,7 @@
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
-    box-shadow: 0 0 3px 0px #CCC;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
@@ -172,7 +172,7 @@
     background-color: var(--colour_grey_main);
 
     &:hover {
-        box-shadow: 0 0 5px 1px #CCC;
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     }
 }
 
@@ -216,10 +216,10 @@
     background: var(--colour_icon_main);
     height: 100%;
 
-    box-shadow: 0 0 5px 1px #AAA;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
 
     &:hover {
-        box-shadow: 0 0 10px 2px #AAA;
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
     }
 }
 
@@ -234,11 +234,11 @@
     display: flex; /* make element size relative to content */
     align-items: center;
     border-radius: 0.2em;
-    box-shadow: 0 0 5px 1px #CCC;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     padding: 0.5em;
 
     &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
     }
 }
 
@@ -247,14 +247,14 @@
     display: flex; /* make element size relative to content */
     align-items: center;
     border-radius: 0.2em;
-    box-shadow: 0 0 5px 1px #CCC;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     height: 100%;
     width: fit-content;
     padding-left: 0.5em;
     padding-right: 0.5em;
 
     &:hover {
-        box-shadow: 0 0 10px 2px #CCC;
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
     }
 }
 
