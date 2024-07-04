@@ -2,7 +2,7 @@
 
 .tagText {
     font-weight: bolder;
-    color: $colour_grey_main;
+    color: var(--colour_grey_main);
 }
 
 .titleShape {
@@ -23,36 +23,21 @@
     font-size: 2.5em;
 }
 
-.titlepurple {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_purple_main;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.subtitlepurple {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_purple_secondary;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
+.titlebody {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-bottom: 0.25em;
+  margin: 0em;
+  border-radius: 0em;
+  width: 100%;
+  text-align: center;
+  color: var(--colour_white);
+  font-size: 200%;
+  font-weight: bolder;
 }
 
 .glossaryPurple {
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
     font-weight: bold;
 }
 
@@ -61,161 +46,21 @@
     font-size: 1.25em;
 }
 
-.titleblue {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_blue_main;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.subtitleblue {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_blue_secondary;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.titlegreen {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_green_main;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.subtitlegreen {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_green_secondary;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.titlered {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_red_main;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.subtitlered {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_red_secondary;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.titleyellow {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_yellow_main;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.subtitleyellow {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_yellow_secondary;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.titlegrey {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_grey_main;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
-.subtitlegrey {
-    padding-left: 0.25em;
-    padding-right: 0.25em;
-    padding-bottom: 0.25em;
-    margin: 0em;
-    border-radius: 0em;
-    width: 100%;
-    text-align: center;
-    background-color: $colour_grey_secondary;
-    color: $colour_background_white;
-    font-size: 200%;
-    font-weight: bolder;
-}
-
 .subtletext {
     text-align: center;
-    color: $colour_grey_secondary;
+    color: var(--colour_grey_secondary);
     font-size: 200%;
     font-weight: bolder;
 }
 
 .hometitle {
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
     font-size: 5em;
     font-weight: 1500;
 }
 
 .homesubtitle {
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
     font-size: 2em;
     font-weight: 1500;
 }
@@ -223,7 +68,7 @@
 .homelink {
     font-weight: 1000;
     text-decoration: none;
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
 }
 .navitemh2 {
     margin-top: 0.4em;
@@ -233,7 +78,7 @@
 .webtitle {
     margin-top: 0em;
     margin-bottom: 0em;
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
     font-size: 3em;
 
 }
@@ -242,7 +87,7 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: $colour_grey_secondary;
+    color: var(--colour_grey_secondary);
     font-weight: bolder;
     font-size: 2em;
   }
@@ -251,7 +96,7 @@
   .separator::after {
     content: '';
     flex: 1;
-    border-bottom: 1px solid $colour_grey_secondary;
+    border-bottom: 1px solid var(--colour_grey_secondary);
   }
   
   .separator:not(:empty)::before {
@@ -274,18 +119,18 @@
 
   .subltenotetext {
     text-align: center;
-    color: $colour_grey_secondary;
+    color: var(--colour_grey_secondary);
     font-size: 0.9em;
   }
 
   .headertext {
-    color: $colour_background_white;
+    color: var(--colour_white);
     font-weight: 700;
     font-size: 1.5em;
   }
 
   .headersubtext {
-    color: $colour_background_white;
+    color: var(--colour_white);
     font-size: 1em;
     font-weight: 400;
   }
@@ -297,38 +142,40 @@
   .pagetitletext {
     font-size: 3em;
     font-weight: 600;
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
     justify-self: center;
     text-align: center;
   }
 
   .pageaccestext {
-      font-size: 1.75em;
-      font-weight: 700;
-      color: $colour_purple_main;
-      margin: 0.1em;
-  }
+    font-size: 1.75em;
+    font-weight: 700;
+    color: var(--colour_icon_main);
+    margin: 0.1em;
+}
 
   .packtitle {
     font-size: 1.75em;
     font-weight: 700;
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
     margin: 0.25em;
   }
 
   .packsubtitle {
     font-size: 1.25em;
     font-weight: 400;
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
     margin: 0.25em;
   }
 
   .purpleIcon {
-    color: $colour_purple_main;
+    color: var(--colour_icon_main);
   }
+  
   .redIcon {
-    color: $colour_red_main;
+    color: var(--colour_red_main);
   }
+
   .greenIcon {
-    color: $colour_green_main;
+    color: var(--colour_green_main);
   }

@@ -37,7 +37,7 @@ const HomeRoute: React.FC = () => {
                     <div className="row">
                         <div className="col row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                             <div className="col">
-                                <div className="pageaccessbox bordersubpurple hovermouse" onClick={() => NavigateHome("compendium/abilities/")}>
+                                <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/abilities/")}>
                                     <FontAwesomeIcon icon={faFistRaised} className="pageaccestext"/>
                                     <h1 className="pageaccestext">
                                         ABILITIES
@@ -52,7 +52,7 @@ const HomeRoute: React.FC = () => {
                     <div className="row">
                         <div className="col row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                             <div className="col">
-                                <div className="pageaccessbox bordersubpurple hovermouse" onClick={() => NavigateHome("tools/content/")}>
+                                <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("tools/content/")}>
                                     <FontAwesomeIcon icon={faFileLines} className="pageaccestext"/>
                                     <h1 className="pageaccestext">
                                         CONTENT MANAGER

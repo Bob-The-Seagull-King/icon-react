@@ -57,8 +57,8 @@ const AbilityDisplay = (props: any) => {
     }
 
     return (
-        <div className={'abilityStructure bordermain'+getColour(AbilityObject.Class)}>
-            <h1 className={'titleShape title'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
+        <div className={'abilityStructure borderstyler border'+getColour(AbilityObject.Class)}>
+            <h1 className={'titleShape titlebody background'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
             <div className='abilityInternalStructure'>
                 <div>
                     {returnTags()}

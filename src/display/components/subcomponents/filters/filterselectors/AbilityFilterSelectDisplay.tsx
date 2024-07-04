@@ -41,7 +41,7 @@ const AbilityFilterSelectDisplay = (prop: any) => {
     // Return result -----------------------------
     return (
         <>
-            <div onClick={() => handleShow()}className='bordermainpurple roundBody hovermouse'>
+            <div onClick={() => handleShow()}className='borderstyler bordericon roundBody hovermouse'>
                 {((_activetextfilters.length == 0) && (_activetagfilters.length == 0) && (_activemiscfilters.length == 0) ) &&
                     <div className="">
                             <h1 className="subtletext">No Filters Selected</h1>
@@ -71,7 +71,7 @@ const AbilityFilterSelectDisplay = (prop: any) => {
 
             <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" size="xl" onHide={handleClose} keyboard={true}  centered>
                 
-                            <h1 className={'titleShape titlepurple'}>Select Filters</h1>
+                            <h1 className={'titleShape titlebody backgroundicon'}>Select Filters</h1>
                             <Modal.Body >
                             <div className="row p-3 overflow-auto flex-grow-1">
                                 <div style={{"maxHeight": "calc(70vh"}}>

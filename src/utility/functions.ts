@@ -35,33 +35,42 @@ export function makestringpresentable(stringVal: string) {
  * @returns The colour associated with that job or class
  */
 export function getColour(name: string){
-    const yellow = ["yellow", "cl_vagabond", "vagabond", "fool", "freelancer", "shade", "warden"];
-    const red = ["red","cl_stalwart", "stalwart", "bastion", "demon slayer", "colossus", "knave"];
-    const green = ["green", "cl_mendicant", "mendicant", "chanter", "harvester", "sealer", "seer"];
-    const blue = ["blue","cl_wright", "wright", "enochian", "geomancer", "spellblade", "stormbender"];
-    const purple = ["Purple", "purple"];
 
-    if (yellow.includes(name.toLowerCase())) {
-        return yellow[0];
+    switch (name.toLowerCase()) {
+        case "cl_vagabond": {
+            return "yellow"
+        }
+        case "cl_stalwart": {
+            return "red"
+        }
+        case "cl_mendicant": {
+            return "green"
+        }
+        case "cl_wright": {
+            return "blue"
+        }
+        case "yellow": {
+            return "yellow"
+        }
+        case "red": {
+            return "red"
+        }
+        case "green": {
+            return "green"
+        }
+        case "blue": {
+            return "blue"
+        }
+        case "icon": {
+            return "icon"
+        }
+        case "grey": {
+            return "grey"
+        }
+        default: {
+            return "icon"
+        }
     }
-
-    if (red.includes(name.toLowerCase())) {
-        return red[0];
-    }
-
-    if (green.includes(name.toLowerCase())) {
-        return green[0];
-    }
-
-    if (blue.includes(name.toLowerCase())) {
-        return blue[0];
-    }
-
-    if (purple.includes(name.toLowerCase())) {
-        return purple[0];
-    }
-
-    return purple[0];
 }
 
 /**

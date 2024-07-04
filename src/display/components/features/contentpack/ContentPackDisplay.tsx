@@ -134,7 +134,7 @@ const ContentPackDisplay = (props: any) => {
             </div>
 
             <Modal size="lg" onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>    
-                <h1 className={'titleShape titlepurple'}>
+                <h1 className={'titleShape backgroundicon'}>
                     {PackItem.Name}
                     <div className="row float-end">
                         <div className='col-12 float-end'>

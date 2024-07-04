@@ -57,8 +57,8 @@ const AddonDisplay = (props: any) => {
     }
 
     return (
-        <div className={'abilityStructure bordersub'+getColour(AbilityObject.Class)}>
-            <h1 className={'titleShape subtitle'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
+        <div className={'abilityStructure borderstyler subborder'+getColour(AbilityObject.Class)}>
+            <h1 className={'titleShape titlebody subbackground'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
             <div className='abilityInternalStructure'>
                 <div>
                     {returnTags()}

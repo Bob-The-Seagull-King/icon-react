@@ -21,8 +21,8 @@ const GlossaryDisplay = (props: any) => {
     }
 
     return (
-        <div className={'abilityStructure bordermainpurple'}>
-            <h1 className={'titleShape titlepurple'}>{ruleObject.Name || ""}</h1>
+        <div className={'abilityStructure borderstyler bordericon'}>
+            <h1 className={'titleShape titlebody backgroundicon'}>{ruleObject.Name || ""}</h1>
             <div className='abilityInternalStructure'>
                 <div>
                     {returnDescription()}

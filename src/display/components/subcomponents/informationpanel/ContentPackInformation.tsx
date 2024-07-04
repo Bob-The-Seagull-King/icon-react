@@ -24,7 +24,7 @@ const ContentPackInformation = (prop: any) => {
             </div>
             <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>
                 
-                            <h1 className={'titleShape titlepurple'}>
+                            <h1 className={'titleShape titlebody backgroundicon'}>
                                 Content Packs
                                 <div className="row float-end">
                                     <div className='col-12 float-end'>

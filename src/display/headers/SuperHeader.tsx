@@ -1,12 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes, useLocation  } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 
 import PlayerTacticsHeader from './PlayerTacticsHeader'
 
-const SuperHeader: React.FC = () => {
+interface HeaderProps {
+    changeSet: Dispatch<SetStateAction<string>>
+}
+
+const SuperHeader: React.FC<HeaderProps> = (props) => {
     const [stateheight, setHeight] = useState(0);
     const ref = useRef<HTMLDivElement>(null);
     const location = useLocation();
