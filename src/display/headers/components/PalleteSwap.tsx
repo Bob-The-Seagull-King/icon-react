@@ -9,22 +9,14 @@ import { Route, Link, Routes, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun } from '@fortawesome/free-solid-svg-icons'
 import { faMoon } from '@fortawesome/free-solid-svg-icons'
+import { useGlobalState } from '../../../utility/globalstate'
 
 const PalleteSwap = (prop: any) => {
 
-    const [theme, setTheme] = useState(InitTheme());
-
-    function InitTheme() {
-        const theme = localStorage.getItem('theme');
-        if (theme != null) {
-            return theme
-        }
-        return 'light'
-    }
+    const [theme, setTheme] = useGlobalState('theme');
     
     function SetPallete(theme: string) {
         localStorage.setItem('theme', theme);
-        prop.changeFunc(theme)
         setTheme(theme)
     }
 

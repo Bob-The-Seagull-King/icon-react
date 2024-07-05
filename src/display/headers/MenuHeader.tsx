@@ -18,7 +18,7 @@ const MenuHeader = (prop: any) => {
     return (
         <>
         <div className={"floatingButton backgroundicon"}>
-            <PalleteSwap changeFunc={prop.palleteFunc}/>
+            <PalleteSwap/>
         </div>
         </>
 

@@ -7,6 +7,7 @@ import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
+import { useGlobalState } from '../../../../utility/globalstate'
 
 const ContentPackInformation = (prop: any) => {
 
@@ -14,6 +15,7 @@ const ContentPackInformation = (prop: any) => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const [theme, setTheme] = useGlobalState('theme');
 
     
     // Return result -----------------------------
@@ -22,7 +24,7 @@ const ContentPackInformation = (prop: any) => {
             <div style={{display:"flex"}}>
                 <FontAwesomeIcon icon={faCircleInfo} onClick={() => handleShow()} className="pageaccestext hovermouse" style={{fontSize:"3em"}}/>
             </div>
-            <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>
+            <Modal data-theme={theme}  onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>
                 
                             <h1 className={'titleShape titlebody backgroundicon'}>
                                 Content Packs

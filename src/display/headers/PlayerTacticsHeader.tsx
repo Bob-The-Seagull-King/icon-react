@@ -31,7 +31,7 @@ const PlayerTacticsHeader = (prop: any) => {
                 <FontAwesomeIcon icon={faHouse} style={{fontSize:"2em",color:"white",margin:"0em"}}/>
             </Button>
             <div className="vr headertext"></div>
-            <PalleteSwap changeFunc={prop.palleteFunc}/>
+            <PalleteSwap/>
             <div className="vr headertext"></div>
             <div className="ms-lg-auto ms-md-auto">
                 <h1 className="headertext">

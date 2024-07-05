@@ -9,6 +9,7 @@ import FilterItemItem from '../FilterItemItem'
 import FilterTagItem from '../FilterTagItem'
 import FilterTextItem from '../FilterTextItem'
 import FilterDisplay from '../FilterDisplay'
+import { useGlobalState } from '../../../../../utility/globalstate'
 
 import Modal from 'react-bootstrap/Modal';
 
@@ -21,6 +22,9 @@ const AbilityFilterSelectDisplay = (prop: any) => {
     const [_activetagfilters, returnactivetag] = useState(FilterManager.ReturnActiveTagFilters());
     const [_activemiscfilters, returnactivemisc] = useState(FilterManager.ReturnActiveMiscFilters());
     const [_keyval, updatekey] = useState(1);
+    
+    
+    const [theme, setTheme] = useGlobalState('theme');
 
     const [show, setShow] = useState(false);
 
@@ -69,10 +73,10 @@ const AbilityFilterSelectDisplay = (prop: any) => {
                 }
             </div>
 
-            <Modal onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" size="xl" onHide={handleClose} keyboard={true}  centered>
+            <Modal data-theme={theme} onEnterKeyDown={() => handleClose()} show={show} contentClassName="filterboxStructure" dialogClassName="" size="xl" onHide={handleClose} keyboard={true}  centered>
                 
                             <h1 className={'titleShape titlebody backgroundicon'}>Select Filters</h1>
-                            <Modal.Body >
+                            <Modal.Body className="filterSelectorBack">
                             <div className="row p-3 overflow-auto flex-grow-1">
                                 <div style={{"maxHeight": "calc(70vh"}}>
                                     <div className="col-12">

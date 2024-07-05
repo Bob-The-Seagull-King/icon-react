@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from './resources/routes-constants'
 import './resources/styles/_icon.scss'
 
+import { useGlobalState } from './utility/globalstate'
+
 /* 
     Major routes are placed here.
     These routes have NO states, and are where the controllers/manager
@@ -15,20 +17,16 @@ import ToolsRoute from './display/superroutes/ToolsRoute'
 
 const RootComponent: React.FC = () => {
 
-    const [theme, setTheme] = useState(InitTheme());
+    const [theme, setTheme] = useGlobalState('theme');
 
-    function InitTheme() {
-        const theme = localStorage.getItem('theme');
-        if (theme != null) {
-            return theme
-        }
-        return 'light'
+    if ((theme == "" ) || (theme == null)) {
+        setTheme('light');
     }
 
     return (
         <div className="backgroundBaseColour" data-theme={theme}>
             <Router>
-                <SuperHeader changeSet={setTheme}/>
+                <SuperHeader />
                 <Routes>
                     <Route path={ROUTES.COMPENDIUM_ROUTE} element={<CompendiumRoute />} />
                     <Route path={ROUTES.TOOLS_ROUTE} element={<ToolsRoute />} />

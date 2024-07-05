@@ -37,6 +37,7 @@
 .abilityInternalStructure {
     padding: 1em;
     font-size: 0.85em;
+    color: var(--colour_basic_text);
 }
 
 .emptyboxStructure {
@@ -56,6 +57,10 @@
     border-radius: 0.25em;
 }
 
+.filterSelectorBack {
+    background-color: var(--colour_offwhite) !important;
+}
+
 .filterboxStructure {
     border-style: solid !important;
     border-width: 2px !important;
@@ -64,7 +69,7 @@
     box-shadow: 0 0 5px 1px var(--colour_grey_main);
     width: 100%;
     text-align: justify;
-    background-color: var(--colour_offwhite);
+    background-color: var(--colour_offwhite) !important;
 
     &:hover {
         box-shadow: 0 0 10px 2px var(--colour_grey_main);

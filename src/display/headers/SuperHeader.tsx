@@ -7,11 +7,8 @@ import { ROUTES } from '../../resources/routes-constants'
 import PlayerTacticsHeader from './PlayerTacticsHeader'
 import MenuHeader from './MenuHeader'
 
-interface HeaderProps {
-    changeSet: Dispatch<SetStateAction<string>>
-}
 
-const SuperHeader: React.FC<HeaderProps> = (props) => {
+const SuperHeader: React.FC = () => {
     const [stateheight, setHeight] = useState(0);
     const ref = useRef<HTMLDivElement>(null);
     const location = useLocation();
@@ -32,9 +29,9 @@ const SuperHeader: React.FC<HeaderProps> = (props) => {
         <>
         <div id="topbarbody" ref={ref} className="topbarStructure">
             <Routes>
-                <Route path={ROUTES.COMPENDIUM_ROUTE}  element={<PlayerTacticsHeader palleteFunc={props.changeSet}/>} />
-                <Route path={ROUTES.TOOLS_ROUTE} element={<PlayerTacticsHeader palleteFunc={props.changeSet}/>} />
-                <Route path={ROUTES.HOME_ROUTE} element={<MenuHeader palleteFunc={props.changeSet}/>} />
+                <Route path={ROUTES.COMPENDIUM_ROUTE}  element={<PlayerTacticsHeader />} />
+                <Route path={ROUTES.TOOLS_ROUTE} element={<PlayerTacticsHeader />} />
+                <Route path={ROUTES.HOME_ROUTE} element={<MenuHeader />} />
             </Routes>
         </div>
         <div style={{height:stateheight}}/>
