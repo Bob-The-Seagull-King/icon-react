@@ -8,7 +8,7 @@ interface IPlayerAbility extends IIconpendiumItemData {
     class_id: string, // Class of the ability (determined by job)
     job_id: string, // Job of the ability
     attachments: [], // List of addons, summons, etc featured in an ability
-    blurb: string, // Flavour text
+    blurb: [], // Flavour text
     description: [] // Mechanical description of the item
 }
 
@@ -34,7 +34,7 @@ class PlayerAbility extends IconpendiumItem {
         this.Class = data.class_id;
         this.Job = data.job_id;
         this.Attachments = data.attachments;
-        this.Blurb = data.blurb;
+        this.Blurb = this.DescriptionFactory(data.blurb);
         this.Description = this.DescriptionFactory(data.description);
     }
 

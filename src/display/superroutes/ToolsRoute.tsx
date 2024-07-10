@@ -7,18 +7,32 @@ import { ROUTES } from '../../resources/routes-constants'
 import ToolsContentManager from '../../display/pages/ToolsContentManager'
 import path from 'path'
 
+import { useGlobalState } from './../../utility/globalstate'
+
 import { ContentPackManager } from '../../classes/contentpacks/contentmanager'
+import { ToolsController } from '../../classes/ToolsController'
 
-const ToolsRoute: React.FC = () => {
+interface IControllerProp {
+    controller : ToolsController;
+}
 
-    // Initialize Controller //
-    const ContentManager = new ContentPackManager;
+
+const ToolsRoute: React.FC<IControllerProp> = (prop) => {
+
+    const [theme, setTheme] = useGlobalState('theme');
+
+    if ((theme == "" ) || (theme == null)) {
+        setTheme('light');
+    }
+
 
     // Return result -----------------------------
     return (
+        <div className="backgroundBaseColour" data-theme={theme}>
         <Routes>
-            <Route path={ROUTES.TOOLS_CONTENT_UPLOAD_ROUTE} element={<ToolsContentManager manager={ContentManager}/>} />
+            <Route path={ROUTES.TOOLS_CONTENT_UPLOAD_ROUTE} element={<ToolsContentManager manager={prop.controller.ContentManager}/>} />
         </Routes>
+        </div>
     )
     // -------------------------------------------
 }

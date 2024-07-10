@@ -3,6 +3,7 @@ import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
 import { getColour } from '../../../../utility/functions';
+import { returnTags, returnDescription } from '../../../../utility/util';
 import {PlayerAbility } from "../../../../classes/feature/abilities/Ability";
 import {IIconpendiumItemTag} from '../../../../classes/IconpendiumItem'
 
@@ -13,59 +14,16 @@ const AbilityDisplay = (props: any) => {
     const AbilityObject: PlayerAbility = props.data
     const bannedAbilityTags = ["inflict", "type"]
 
-    function returnDescription() {
-        return (
-            <div>
-                {AbilityObject.Description.map((item) => (
-                    <div key={"descriptionDisplay"}>
-                        <AbilityDescriptionItemDisplay data={item} parent={AbilityObject}/>
-                    </div>
-                ))}
-            </div>
-        )
-    }
-
-    function returnTags() {
-        const displaytags = sortTagsForDisplay()
-
-        return (
-            <div className="tagBox">
-                    {displaytags.map((item) => (
-                        <div key={"tagDisplay"+item.tag_name+item.val}>
-                            <TagDisplay data={item}/>
-                        </div>
-                    ))}
-            </div>
-        )
-    }
-
-    function sortTagsForDisplay() {
-        const tagarray: IIconpendiumItemTag[] = []
-
-        let i = 0;
-        for (i = 0; i < (AbilityObject.Tags?.length || 0); i++) {
-            if (AbilityObject.Tags != undefined) {
-                const temptag: IIconpendiumItemTag = AbilityObject.Tags[i]
-
-                if ((temptag.tag_name == "blast_size") || (temptag.tag_name == "blast_distance")) {
-                    temptag.tag_name = "blast"; }
-
-                if (!bannedAbilityTags.includes(temptag.tag_name)) {
-                    tagarray.push(temptag);
-                }}}
-        return tagarray;
-    }
-
     return (
         <div className={'abilityStructure borderstyler border'+getColour(AbilityObject.Class)}>
             <h1 className={'titleShape titlebody background'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
             <div className='abilityInternalStructure'>
                 <div>
-                    {returnTags()}
+                    {returnTags(AbilityObject.Tags, bannedAbilityTags)}
                 </div>
                 <div className="verticalspacer"/>
                 <div>
-                    <i>{AbilityObject.Blurb || ""}</i>
+                    {returnDescription(AbilityObject, AbilityObject.Blurb)}
                 </div> 
                 <div className="verticalspacer"/> 
                 <div>
@@ -73,7 +31,7 @@ const AbilityDisplay = (props: any) => {
                 </div> 
                 <div className="verticalspacer"/>
                 <div>
-                    {returnDescription()}
+                    {returnDescription(AbilityObject, AbilityObject.Description)}
                 </div>
             </div>
         </div>

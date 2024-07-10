@@ -6,18 +6,31 @@ import { ROUTES } from '../../resources/routes-constants'
 
 import PlayerTacticsAbilities from '../../display/pages/PlayerTacticsAbilities'
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
+import { ControllerController } from '../../classes/ControllerController'
 import path from 'path'
 
-const CompendiumRoute: React.FC = () => {
+import { useGlobalState } from './../../utility/globalstate'
 
-    // Initialize Controller //
-    const AbilitiesCollectionController = new AllAbilitiesListPage()
+
+interface IControllerProp {
+    controller : ControllerController;
+}
+
+const CompendiumRoute: React.FC<IControllerProp> = (prop) => {
+
+    const [theme, setTheme] = useGlobalState('theme');
+
+    if ((theme == "" ) || (theme == null)) {
+        setTheme('light');
+    }
 
     // Return result -----------------------------
     return (
+        <div className="backgroundBaseColour" data-theme={theme}>
         <Routes>
-            <Route path={ROUTES.COMPENDIUM_ABILITY_ROUTE} element={<PlayerTacticsAbilities controller={AbilitiesCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_ABILITY_ROUTE} element={<PlayerTacticsAbilities controller={prop.controller.AbilitiesCollectionController}/>} />
         </Routes>
+        </div>
     )
     // -------------------------------------------
 }

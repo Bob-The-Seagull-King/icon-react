@@ -4,11 +4,20 @@ import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from 're
 import { BrowserRouter as Router, Route, Routes, useLocation  } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 
+import { useGlobalState } from './../../utility/globalstate'
+
 import PlayerTacticsHeader from './PlayerTacticsHeader'
 import MenuHeader from './MenuHeader'
 
 
 const SuperHeader: React.FC = () => {
+
+    const [theme, setTheme] = useGlobalState('theme');
+
+    if ((theme == "" ) || (theme == null)) {
+        setTheme('light');
+    }
+
     const [stateheight, setHeight] = useState(0);
     const ref = useRef<HTMLDivElement>(null);
     const location = useLocation();
@@ -27,6 +36,7 @@ const SuperHeader: React.FC = () => {
     // Return result -----------------------------
     return (
         <>
+        <div data-theme={theme}>
         <div id="topbarbody" ref={ref} className="topbarStructure">
             <Routes>
                 <Route path={ROUTES.COMPENDIUM_ROUTE}  element={<PlayerTacticsHeader />} />
@@ -34,7 +44,8 @@ const SuperHeader: React.FC = () => {
                 <Route path={ROUTES.HOME_ROUTE} element={<MenuHeader />} />
             </Routes>
         </div>
-        <div style={{height:stateheight}}/>
+        <div style={{height:stateheight}} className="backgroundOffWhite"/>
+        </div>
         </>
     )
     // -------------------------------------------

@@ -20,7 +20,6 @@ const ContentPackDisplay = (props: any) => {
     const parentView = props.parent;
     const updateHost = props.statefunction;
 
-    
     const [theme, setTheme] = useGlobalState('theme');
     
     const [stateWidth, setWidth] = useState(window.innerWidth);

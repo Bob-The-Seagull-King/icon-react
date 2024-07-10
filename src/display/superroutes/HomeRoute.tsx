@@ -13,7 +13,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFistRaised } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
+import { useGlobalState } from './../../utility/globalstate'
+
 const HomeRoute: React.FC = () => {
+
+    const [theme, setTheme] = useGlobalState('theme');
+
+    if ((theme == "" ) || (theme == null)) {
+        setTheme('light');
+    }
+
     const navigate = useNavigate();
 
     // Initialize Controller //
@@ -24,6 +33,8 @@ const HomeRoute: React.FC = () => {
     }
     // Return result -----------------------------
     return (
+        
+        <div className="backgroundBaseColour" data-theme={theme}>
         <div>
             <div className="row justify-content-center m-0 p-0">
                 <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-12">
@@ -66,6 +77,7 @@ const HomeRoute: React.FC = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
     // -------------------------------------------
