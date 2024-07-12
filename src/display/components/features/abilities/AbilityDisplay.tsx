@@ -15,24 +15,21 @@ const AbilityDisplay = (props: any) => {
     const bannedAbilityTags = ["inflict", "type"]
 
     return (
-        <div className={'abilityStructure borderstyler border'+getColour(AbilityObject.Class)}>
-            <h1 className={'titleShape titlebody background'+getColour(AbilityObject.Class)}>{AbilityObject.Name || ""}</h1>
-            <div className='abilityInternalStructure'>
-                <div>
-                    {returnTags(AbilityObject.Tags, bannedAbilityTags)}
-                </div>
-                <div className="verticalspacer"/>
-                <div>
-                    {returnDescription(AbilityObject, AbilityObject.Blurb)}
-                </div> 
-                <div className="verticalspacer"/> 
-                <div>
-                    <div className="separator">&#x27E1;</div>
-                </div> 
-                <div className="verticalspacer"/>
-                <div>
-                    {returnDescription(AbilityObject, AbilityObject.Description)}
-                </div>
+        <div className='abilityInternalStructure'>
+            <div>
+                {returnTags(AbilityObject.Tags, bannedAbilityTags)}
+            </div>
+            <div className="verticalspacer"/>
+            <div>
+                {returnDescription(AbilityObject, AbilityObject.Blurb)}
+            </div> 
+            <div className="verticalspacer"/> 
+            <div>
+                <div className="separator">&#x27E1;</div>
+            </div> 
+            <div className="verticalspacer"/>
+            <div>
+                {returnDescription(AbilityObject, AbilityObject.Description)}
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/Vie
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
 import { AbilitiesFilterManager } from '../../classes/viewmodel/collections/filters/AbilitiesFilterManager'
 
-import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
+import GenericDisplay from '../components/generics/GenericDisplay'
 import ViewTableItemDisplay from '../../display/components/subcomponents/list/ViewTableItemDisplay'
 import AbilityFilterSelectDisplay from '../../display/components/subcomponents/filters/filterselectors/AbilityFilterSelectDisplay'
 
@@ -143,7 +143,7 @@ const PlayerTacticsAbilities = (prop: any) => {
                                 <div className="row row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                                     {_activeItems.map((item) => (
                                         <div className="col" key={"abilityDisplay"+item.ID}>
-                                            <AbilityDisplay data={item}/>
+                                            <GenericDisplay d_data={item} d_colour={item.Class} d_name={item.Name} d_type={""} d_object={"ability"}/>
                                             <br/>
                                         </div>
                                     ))}

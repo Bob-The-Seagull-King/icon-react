@@ -6,6 +6,7 @@ import { getTagValue} from '../../../../utility/functions'
 import {ConvertContentWithGlossary} from '../../../../utility/util'
 import { AbilityDescription} from '../../../../classes/feature/abilities/AbilityDescription'
 import { PlayerAbility } from '../../../../classes/feature/abilities/Ability'
+import GenericDisplay from '../../../../display/components/generics/GenericDisplay'
 import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
 
 
@@ -93,7 +94,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
 
         if (AddonFound != null) {
             return (
-                <AddonDisplay data={AddonFound}/>
+                <GenericDisplay d_data={AddonFound} d_colour={parentItem.Class} d_name={AddonFound.Name} d_type={"sub"} d_object={"addon"}/>
             )
         } else {
             return (

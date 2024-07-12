@@ -21,9 +21,6 @@ interface IPlayerAddon extends IIconpendiumItemData {
 }
 
 class PlayerAddon extends IconpendiumItem {
-    public readonly Class;
-    public readonly Job;
-    public readonly Parent;
     public readonly Description;
 
     /**
@@ -35,9 +32,6 @@ class PlayerAddon extends IconpendiumItem {
     {
         super(data)
         this.ItemType = ItemType.Addon;
-        this.Class = data.class_id;
-        this.Job = data.job_id;
-        this.Parent = data.parent;
         this.Description = this.DescriptionFactory(data.description);
     }
 
