@@ -11,21 +11,15 @@ import AbilityDisplay from '../features/abilities/AbilityDisplay';
 import AddonDisplay from '../features/addons/AddonDisplay';
 
 const GenericDisplay = (props: any) => {
-    const DisplayObject = props.d_data;
-    const ObjectType: string = props.d_object; 
     const DisplayColour : string = props.d_colour;
     const DisplayName : string = props.d_name;
     const DisplayType : string = props.d_type;
+    const displayMethod = props.d_method
 
     return (
         <div className={'abilityStructure borderstyler ' + DisplayType + 'border'+getColour(DisplayColour)}>
             <h1 className={'titleShape titlebody ' + DisplayType + 'background'+getColour(DisplayColour)}>{DisplayName || ""}</h1>
-            { ObjectType == 'ability' &&
-                <AbilityDisplay data={DisplayObject}/>
-            }
-            { ObjectType == 'addon' &&
-                <AddonDisplay data={DisplayObject}/>
-            }
+                {displayMethod()}
         </div>
     )
 }

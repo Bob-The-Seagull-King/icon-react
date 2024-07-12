@@ -83,7 +83,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
     }
 
     function findAddon(id: string) {
-        let AddonFound = null;
+        let AddonFound: any = null;
 
         let i = 0;
         for (i = 0; i < parentItem.Addons.length; i++) {
@@ -94,7 +94,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
 
         if (AddonFound != null) {
             return (
-                <GenericDisplay d_data={AddonFound} d_colour={parentItem.Class} d_name={AddonFound.Name} d_type={"sub"} d_object={"addon"}/>
+                <GenericDisplay d_colour={parentItem.Class} d_name={AddonFound.Name} d_type={"sub"} d_method={() => <AddonDisplay data={AddonFound} />}/>
             )
         } else {
             return (
