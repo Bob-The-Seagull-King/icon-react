@@ -5,11 +5,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 
 import ToolsContentManager from '../../display/pages/ToolsContentManager'
-import path from 'path'
 
 import { useGlobalState } from './../../utility/globalstate'
-
-import { ContentPackManager } from '../../classes/contentpacks/contentmanager'
 import { ToolsController } from '../../classes/ToolsController'
 
 interface IControllerProp {

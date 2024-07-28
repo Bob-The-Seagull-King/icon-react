@@ -3,15 +3,10 @@ import '../../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
 import { FilterManager } from '../../../../../classes/viewmodel/collections/filters/FilterManager'
-
-import FilterItemItem from '../FilterItemItem'
-import FilterTagItem from '../FilterTagItem'
-import FilterTextItem from '../FilterTextItem'
-import FilterDisplay from '../FilterDisplay'
-import AbilityFilterSelectDisplay from './AbilityFilterSelectDisplay'
 import { useGlobalState } from '../../../../../utility/globalstate'
 
-import Modal from 'react-bootstrap/Modal';
+import FilterDisplay from '../FilterDisplay'
+import AbilityFilterSelectDisplay from './AbilityFilterSelectDisplay'
 
 const BaseFilterSelectDisplay = (prop: any) => {
     const ViewPageController = prop.controller

@@ -4,12 +4,6 @@ import React from 'react'
 
 import { getColour } from '../../../utility/functions';
 
-import { PlayerAbility } from "../../../classes/feature/abilities/Ability";
-import { PlayerAddon } from '../../../classes/feature/addons/Addon';
-
-import AbilityDisplay from '../features/abilities/AbilityDisplay';
-import AddonDisplay from '../features/addons/AddonDisplay';
-
 const GenericDisplay = (props: any) => {
     const DisplayColour : string = props.d_colour;
     const DisplayName : string = props.d_name;

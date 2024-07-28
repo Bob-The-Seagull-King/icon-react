@@ -5,9 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 
 import PlayerTacticsAbilities from '../../display/pages/PlayerTacticsAbilities'
-import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
 import { ControllerController } from '../../classes/ControllerController'
-import path from 'path'
 
 import { useGlobalState } from './../../utility/globalstate'
 

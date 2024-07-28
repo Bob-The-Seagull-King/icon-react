@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
-import React, { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { BrowserRouter as Router, Route, Routes, useLocation  } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 

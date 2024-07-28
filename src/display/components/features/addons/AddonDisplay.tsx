@@ -2,13 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
-import { getColour } from '../../../../utility/functions';
 import { returnTags, returnDescription } from '../../../../utility/util';
 import { PlayerAddon } from '../../../../classes/feature/addons/Addon';
-import {IIconpendiumItemTag} from '../../../../classes/IconpendiumItem'
-
-import TagDisplay from '../../subcomponents/TagDisplay'
-import AbilityDescriptionItemDisplay from '../../subcomponents/description/AbilityDescriptionItemDisplay';
 
 const AddonDisplay = (props: any) => {
     const AddonObject: PlayerAddon = props.data

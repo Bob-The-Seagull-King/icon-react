@@ -1,8 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import { ROUTES } from '../../resources/routes-constants'
 import { useNavigate } from "react-router-dom";
 
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'

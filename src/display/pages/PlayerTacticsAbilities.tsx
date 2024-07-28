@@ -9,7 +9,6 @@ import { AbilitiesFilterManager } from '../../classes/viewmodel/collections/filt
 import GenericDisplay from '../components/generics/GenericDisplay'
 import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 import ViewTableItemDisplay from '../../display/components/subcomponents/list/ViewTableItemDisplay'
-import AbilityFilterSelectDisplay from '../../display/components/subcomponents/filters/filterselectors/AbilityFilterSelectDisplay'
 import BaseFilterSelectDisplay from '../../display/components/subcomponents/filters/filterselectors/BaseFilterSelectDisplay'
 
 const PlayerTacticsAbilities = (prop: any) => {

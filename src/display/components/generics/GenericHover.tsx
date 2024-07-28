@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
-import * as HoverCard from '@radix-ui/react-hover-card';
 import Modal from 'react-bootstrap/Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
