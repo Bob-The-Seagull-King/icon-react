@@ -2,7 +2,7 @@ import { ViewCollectionsModel } from "./ViewCollectionsModel";
 import { IPlayerAbility, PlayerAbility } from "../../../classes/feature/abilities/Ability";
 import { AbilityFactory } from "../../../factories/features/AbilityFactory";
 import { ViewTableItem } from "./ViewTableItem";
-import { byPropertiesOf, getColour, sort } from "../../../utility/functions";
+import { byPropertiesOf, getColour } from "../../../utility/functions";
 
 class ViewAbilitiesCollection extends ViewCollectionsModel {
 
@@ -59,6 +59,9 @@ class ViewAbilitiesCollection extends ViewCollectionsModel {
         this.AbilitiesList = []
     }
 
+    /**
+     * Delete the currently searched text Items
+     */
     CleanupCollection() {
         let i = 0;
         for (i = 0; i < this.itemcollection.length; i ++) {

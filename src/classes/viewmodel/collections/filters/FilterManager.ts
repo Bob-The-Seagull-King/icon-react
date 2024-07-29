@@ -1,5 +1,5 @@
 // Import typescript classes
-import {FilterText, FilterTag, FilterItem} from './FilterInterfaces'
+import { FilterText, FilterTag, FilterItem } from './FilterInterfaces'
 
 abstract class FilterManager {
     

@@ -1,4 +1,4 @@
-import {Requester, IRequest} from '../../../factories/Requester'
+import { Requester, IRequest } from '../../../factories/Requester'
 
 abstract class ViewCollectionsModel {
 
@@ -45,6 +45,9 @@ abstract class ViewCollectionsModel {
         return this.searchParam as IRequest
     }
 
+    /**
+     * Empty function for collection updating
+     */
     UpdateList() {
         undefined;
     }
