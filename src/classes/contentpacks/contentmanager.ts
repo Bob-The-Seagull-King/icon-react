@@ -1,9 +1,8 @@
-import {ContentPack, IContentPack, IContentPackFile, IContentPackTag} from './contentpack'
-import Cookies from 'js-cookie'
+import {ContentPack, IContentPack } from './contentpack'
 import { useContentPackStore } from '../../store/contentpacks'
 
 class ContentPackManager {
-    PackList: ContentPack[] = [];
+    PackList: ContentPack[] = []; // Array of Content Packs
 
     constructor() {
         const GrabData = useContentPackStore((state) => state.SetFromCookies)
@@ -12,10 +11,22 @@ class ContentPackManager {
         this.PackList = ReturnData;
     }
 
+    /**
+     * Updates the browser's local storage to reflect
+     * the manager's array of Content Packs.
+     */
     public SetStorage() {
         localStorage.setItem('contentpackstorage', JSON.stringify(this.PackList));
     }
 
+    /**
+     * Attempts to convert a given file into a Content Pack
+     * object, returning a message if something went wrong in
+     * the conversion process.
+     * @param _content The string representation of the File
+     * @returns String message, "" means nothing unusual has
+     * occured, non empty strings indicate an error.
+     */
     public FileToContentPack(_content : string) {
         let ReturnMsg = "";
         try {
@@ -34,11 +45,19 @@ class ContentPackManager {
         return ReturnMsg;
     }
 
+    /**
+     * Checks if the provided information can convert into
+     * a JSON format and that the minimum structure of a
+     * Content Pack is provided.
+     * @param _content The string representation of the File
+     * @returns String message, "" means nothing unusual has
+     * occured, non empty strings indicate an error.
+     */
     private ValidateFileData(_content : string) {
-        console.log("sdhasjkhdkasj")
-
         const TestPack = (JSON.parse(_content) as IContentPack)
+        let i = 0;
 
+        // Check that the minimum structure of the Content Pack exists
         if (    TestPack.id &&
                 TestPack.name &&
                 TestPack.author &&
@@ -52,13 +71,14 @@ class ContentPackManager {
             return "Invalid file format structure.";
         }
 
-        let i = 0;
+        // Check that no Content Pack shares the same ID
         for (i = 0; i < this.PackList.length; i++) {
             if (this.PackList[i].ID == TestPack.id) {
                 return "You already have a Content Pack with the same ID";
             }
         }
 
+        // Add all IDs contained in the Content Pack data to an array
         const IDArray = [];
         for (i = 0; i < TestPack.files.length; i ++) {
             let j = 0;
@@ -67,10 +87,9 @@ class ContentPackManager {
             }
         }
 
-        console.log(IDArray);
+        // For each ID in the array, check that no other Content Pack contains the same ID
         let x = 0;
         for (x = 0; x < this.PackList.length; x++) {
-            
             for (i = 0; i < this.PackList[x].Files.length; i ++) {
                 let j = 0;
                 for (j = 0; j < this.PackList[x].Files[i].data.length; j++) {
@@ -81,14 +100,22 @@ class ContentPackManager {
             }
         }
 
-
         return ""
     }
 
+    /**
+     * Getter for the Content Packs
+     * @returns All Content Packs
+     */
     public GetPack() {
         return this.PackList;
     }
 
+    /**
+     * Remove a Content Pack from the manager and
+     * update the stored information to match.
+     * @param _pack The Content Pack to remove from the manager
+     */
     public DeletePack(_pack : ContentPack) {
         let i = 0;
         for (i = 0; i < this.PackList.length; i++) {
@@ -97,6 +124,7 @@ class ContentPackManager {
                 break;
             }
         }
+        
         this.SetStorage();
     }
 }
