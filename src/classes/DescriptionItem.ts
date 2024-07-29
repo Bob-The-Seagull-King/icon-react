@@ -1,13 +1,10 @@
-import {ItemType} from './Enum'
-import {getTagValue} from '../utility/functions'
-
 /**
  * Data structure for the description section
  */
 interface IDescriptionItemData {
-    tags: [],
-    content?: string,
-    subcontent?: []
+    tags: [], // Tags that influence formatting
+    content?: string, // The description's text content
+    subcontent?: [] // Further description items that are children of this one
 }
 
 class DescriptionItem {

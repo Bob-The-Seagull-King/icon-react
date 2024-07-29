@@ -1,4 +1,4 @@
-import {ItemType} from './Enum'
+import { ItemType } from './Enum'
 
 /**
  * Basic data package for any Iconpendium Item
@@ -40,7 +40,6 @@ abstract class IconpendiumItem {
             this.Tags = data.tags;
             this.ItemType = data.type;
         }
-
     }
 }
 

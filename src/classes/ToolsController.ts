@@ -1,4 +1,3 @@
-
 import { ContentPackManager } from '../classes/contentpacks/contentmanager'
 
 class ToolsController {
@@ -6,7 +5,6 @@ class ToolsController {
     ContentManager;
 
     constructor () {
-
         this.ContentManager = new ContentPackManager()
     }
 
