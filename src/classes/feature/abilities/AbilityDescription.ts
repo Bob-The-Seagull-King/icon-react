@@ -1,4 +1,4 @@
-import {IDescriptionItemData, DescriptionItem} from '../../DescriptionItem'
+import { IDescriptionItemData, DescriptionItem } from '../../DescriptionItem'
 
 /**
  * Interface for an ability description item

@@ -1,9 +1,9 @@
-import {IIconpendiumItemData, IconpendiumItem} from '../../IconpendiumItem'
-import {ItemType} from '../../Enum'
-import {IAbilityDescription, AbilityDescription} from '../abilities/AbilityDescription'
+import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
+import { ItemType } from '../../Enum'
+import { AbilityDescription } from '../abilities/AbilityDescription'
 
 interface IGlossaryRule extends IIconpendiumItemData {
-    description: []
+    description: [] // Additional description field for display
 }
 
 class GlossaryRule extends IconpendiumItem {

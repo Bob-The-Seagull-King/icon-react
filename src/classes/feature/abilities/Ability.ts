@@ -1,6 +1,6 @@
-import {IIconpendiumItemData, IconpendiumItem} from '../../IconpendiumItem'
-import {ItemType} from '../../Enum'
-import {AbilityDescription} from './AbilityDescription'
+import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
+import { ItemType } from '../../Enum'
+import { AbilityDescription } from './AbilityDescription'
 import { PlayerAddon } from '../addons/Addon'
 
 interface IPlayerAbility extends IIconpendiumItemData {

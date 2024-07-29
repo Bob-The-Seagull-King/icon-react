@@ -1,23 +1,14 @@
-import {IIconpendiumItemData, IconpendiumItem} from '../../IconpendiumItem'
-import {ItemType} from '../../Enum'
-import {IAbilityDescription, AbilityDescription} from '../abilities/AbilityDescription'
-
-/**
- * Data structure for an addon's parent
- */
-interface IAddonParent {
-    type: string,
-    id: string
-}
+import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
+import { ItemType } from '../../Enum'
+import { AbilityDescription } from '../abilities/AbilityDescription'
 
 /**
  * Data structure for the player addon's
  */
 interface IPlayerAddon extends IIconpendiumItemData {
-    class_id: string,
-    job_id: string,
-    parent: IAddonParent,
-    description: []
+    class_id: string, // The class this Addon is a part of
+    job_id: string, // The job this Addon is a part of
+    description: [] // Descriptive text of the Addon
 }
 
 class PlayerAddon extends IconpendiumItem {
@@ -50,8 +41,7 @@ class PlayerAddon extends IconpendiumItem {
         }
         return array;
     }
-
 }
 
-export {IAddonParent, IPlayerAddon, PlayerAddon}
+export { IPlayerAddon, PlayerAddon}
 
