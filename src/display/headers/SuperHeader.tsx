@@ -1,20 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React, { useEffect, useRef, useState } from 'react'
+
 import { BrowserRouter as Router, Route, Routes, useLocation  } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 
+// Classes
 import { useGlobalState } from './../../utility/globalstate'
 
+// Components
 import PlayerTacticsHeader from './PlayerTacticsHeader'
 import MenuHeader from './MenuHeader'
 
-
 const SuperHeader: React.FC = () => {
 
+    // State
     const [theme, setTheme] = useGlobalState('theme');
 
-    if ((theme == "" ) || (theme == null)) {
+    if ((theme == "" ) || (theme == null)) { // Default theme to light
         setTheme('light');
     }
 
@@ -22,6 +25,11 @@ const SuperHeader: React.FC = () => {
     const ref = useRef<HTMLDivElement>(null);
     const location = useLocation();
     
+    /**
+     * Update when the screen size changes to ensure the
+     * header always has a 'buffer' of the appropriate size
+     * between itself and the top of the page.
+     */
     useEffect(() => {
         const setNavHeight = () => {
             if(ref.current) {

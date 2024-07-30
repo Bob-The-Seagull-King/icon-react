@@ -1,7 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../../resources/styles/_icon.scss'
 import React from 'react'
+
 import Dropdown from 'react-bootstrap/Dropdown';
+
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSun } from '@fortawesome/free-solid-svg-icons'
 import { faMoon } from '@fortawesome/free-solid-svg-icons'
@@ -9,13 +12,24 @@ import { useGlobalState } from '../../../utility/globalstate'
 
 const PalleteSwap = (prop: any) => {
 
+    // State
     const [theme, setTheme] = useGlobalState('theme');
     
+    /**
+     * Updates the locally stored web theme
+     * @param theme The selected theme
+     */
     function SetPallete(theme: string) {
         localStorage.setItem('theme', theme);
         setTheme(theme)
     }
 
+    /**
+     * Returns the appropriate icon based on the
+     * currently selected website theme
+     * @param themeval Current theme
+     * @returns The theme icon to display
+     */
     function returnCurrentPallete(themeval: string | null) {
 
         switch (themeval) {
