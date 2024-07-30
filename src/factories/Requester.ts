@@ -1,6 +1,5 @@
 import { ContentPack } from '../classes/contentpacks/contentpack';
 import {DataResponder} from '../resources/data/child/util/DataResponder'
-import { useContentPackStore } from '../store/contentpacks'
 
 /**
  * Format for a given request to send to the icon-data repo
@@ -45,6 +44,11 @@ class Requester {
 
 export {Requester, IRequest}
 
+/**
+ * Adds data from content packs to be given to the Data searcher
+ * @param request The request to add data to
+ * @returns The requets with additional data from content packs
+ */
 function GetContentPackData(request: IRequest): any {
     const BonusData = [];
 

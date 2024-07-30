@@ -1,6 +1,6 @@
-import {IPlayerAddon} from '../../classes/feature/addons/Addon'
-import {IPlayerAbility, PlayerAbility} from '../../classes/feature/abilities/Ability'
-import {AddonFactory} from './AddonFactory'
+import { IPlayerAddon } from '../../classes/feature/addons/Addon'
+import { IPlayerAbility, PlayerAbility } from '../../classes/feature/abilities/Ability'
+import { AddonFactory } from './AddonFactory'
 import { Requester } from '../Requester'
 
 class AbilityFactory {
@@ -22,7 +22,6 @@ class AbilityFactory {
                 ability.AddAddons(addonNew)
             }
         }
-
         return ability;
     }
 

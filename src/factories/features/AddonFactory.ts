@@ -1,6 +1,4 @@
-
-import {IAbilityDescription, AbilityDescription} from '../../classes/feature/abilities/AbilityDescription'
-import {IAddonParent, IPlayerAddon, PlayerAddon} from '../../classes/feature/addons/Addon'
+import { IPlayerAddon, PlayerAddon } from '../../classes/feature/addons/Addon'
 
 class AddonFactory {
 
