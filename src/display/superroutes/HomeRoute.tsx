@@ -1,34 +1,45 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React from 'react'
+import ReactDOM from 'react-dom'
 import { useNavigate } from "react-router-dom";
 
+// Classes
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
+import { useGlobalState } from './../../utility/globalstate'
 
+// Resource
 import logo from '../../resources/images/iconpendium_logo.png'
-import ReactDOM from 'react-dom'
+
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFistRaised } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
-import { useGlobalState } from './../../utility/globalstate'
-
 const HomeRoute: React.FC = () => {
 
+    // States
     const [theme, setTheme] = useGlobalState('theme');
 
+    // Default to the light theme
     if ((theme == "" ) || (theme == null)) {
         setTheme('light');
     }
 
+    // Navigation
     const navigate = useNavigate();
 
     // Initialize Controller //
     const AbilitiesCollectionController = new AllAbilitiesListPage()    
 
+    /**
+     * Navigate to a page
+     * @param dir The page to navigate to
+     */
     function NavigateHome(dir: string) {
         navigate('/' + dir);
     }
+
     // Return result -----------------------------
     return (
         
