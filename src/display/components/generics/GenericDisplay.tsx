@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../resources/styles/_icon.scss'
 import React from 'react'
 
+// Classes
 import { getColour } from '../../../utility/functions';
 
 const GenericDisplay = (props: any) => {

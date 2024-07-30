@@ -2,11 +2,15 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
+// Imports
 import Modal from 'react-bootstrap/Modal';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import Button from 'react-bootstrap/Button';
 
+// Font Awesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
+
+// Classes
 import { getColour } from '../../../utility/functions';
 import { useGlobalState } from '../../../utility/globalstate'
 
@@ -18,8 +22,9 @@ const GenericHover = (props: any) => {
 
     const ruleName = props.titlename
 
+    // States
     const [show, setShow] = useState(false);
-    const [theme, setTheme] = useGlobalState('theme');
+    const [theme] = useGlobalState('theme');
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
