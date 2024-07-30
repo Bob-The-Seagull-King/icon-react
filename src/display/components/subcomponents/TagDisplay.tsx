@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../resources/styles/_icon.scss'
 import React from 'react'
 
+// Classes
 import {capitalizeString} from '../../../utility/functions'
 import {IIconpendiumItemTag} from '../../../classes/IconpendiumItem'
 

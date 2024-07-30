@@ -1,9 +1,11 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
-import Button from 'react-bootstrap/Button';
 
+import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
@@ -11,8 +13,8 @@ import { useGlobalState } from '../../../../utility/globalstate'
 
 const ContentPackInformation = (prop: any) => {
 
+    // State
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [theme, setTheme] = useGlobalState('theme');

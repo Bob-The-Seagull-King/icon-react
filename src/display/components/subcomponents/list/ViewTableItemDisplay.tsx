@@ -2,14 +2,16 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
+// Classes
 import { ViewTableItem } from '../../../../classes/viewmodel/collections/ViewTableItem'
-
 
 const ViewTableItemDisplay = (props: any) => {
     const tableItem: ViewTableItem = props.data
     const parentView = props.parent;
     const updateHost = props.statefunction;
     const position = props.positionid;
+
+    // State
     const [_activestate, checkstate] = useState(tableItem.IsActive);
 
     /**
