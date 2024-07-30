@@ -3,10 +3,14 @@ util.tsx holds functions that are used often in
 multiple locations, and also return DOM elements.
 */
 import React from 'react'
+
+// Classes
 import { Requester } from '../factories/Requester';
 import { IGlossaryRule, GlossaryRule } from '../classes/feature/glossary/Glossary';
-import GlossaryHover from '../display/components/subcomponents/glossary/GlossaryHover';
 import { IIconpendiumItemTag } from '../classes/IconpendiumItem';
+
+// Components
+import GlossaryHover from '../display/components/subcomponents/glossary/GlossaryHover';
 import TagDisplay from '../display/components/subcomponents/TagDisplay';
 import AbilityDescriptionItemDisplay from '../display/components/subcomponents/description/AbilityDescriptionItemDisplay';
 
@@ -78,7 +82,12 @@ function ArrayItemIntoHtml(content: string, delim: any) {
     return ( <span></span> )
 }
 
-
+/**
+ * Renders a list of Tags associated with an item
+ * @param taglist List of tag objects the item has
+ * @param bannedList Any tag which matches a string in here should not be shown
+ * @returns Map of TagDisplay objects
+ */
 export function returnTags(taglist: [] | undefined, bannedList : string[]) {
     const displaytags = sortTagsForDisplay(taglist, bannedList)
 
@@ -93,6 +102,12 @@ export function returnTags(taglist: [] | undefined, bannedList : string[]) {
     )
 }
 
+/**
+ * Gathers the list of tags that should be rendered
+ * @param taglist List of tag objects the item has
+ * @param bannedList Any tag which matches a string in here should not be shown
+ * @returns Array of tag objects
+ */
 function sortTagsForDisplay(taglist: [] | undefined, bannedList : string[]) {
     const tagarray: IIconpendiumItemTag[] = []
 
@@ -110,6 +125,12 @@ function sortTagsForDisplay(taglist: [] | undefined, bannedList : string[]) {
     return tagarray;
 }
 
+/**
+ * Returns the organized description of an object based on model data
+ * @param baseObject The model which this description is attatched to
+ * @param objectArray The array of description items to render
+ * @returns Map of AbilityDescriptionItemDisplay elements
+ */
 export function returnDescription(baseObject: any, objectArray : any[]) {
     return (
         <div>
