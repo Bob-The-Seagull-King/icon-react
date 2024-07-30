@@ -1,17 +1,27 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
+
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
+// Classes
 import { FilterTag } from '../../../../classes/viewmodel/collections/filters/FilterInterfaces'
 import { makestringpresentable } from '../../../../utility/functions'
 
 const FilterTagItem = (prop: any) => {
     const ItemFilter: FilterTag = prop.data
 
+    // State
     const [_currentstate, returnactivetext] = useState(GetDisplayVal());
     
+    /**
+     * Determines the current state of the filter
+     * "" = No impact
+     * "negative" = Reject if fitler applies
+     * "positive" = Accept if filter applies
+     * @returns String to append to className
+     */
     function GetDisplayVal(){
         if (ItemFilter.TagType.IsActive) {
             if (ItemFilter.TagType.DoInclude) {
@@ -43,10 +53,13 @@ const FilterTagItem = (prop: any) => {
         returnactivetext(GetDisplayVal())
     }
 
+    /**
+     * Update the value that the tag filter checks against
+     * @param value New filter value
+     */
     function updateName(value: string) {
         ItemFilter.TagVal.Val = value;
     }
-
 
     // Return result -----------------------------
     return (

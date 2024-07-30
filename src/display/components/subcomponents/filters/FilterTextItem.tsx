@@ -1,20 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
+
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
+// Classes
 import { FilterText } from '../../../../classes/viewmodel/collections/filters/FilterInterfaces'
 
 const FilterTextItem = (prop: any) => {
     const ItemFilter: FilterText = prop.data
 
+    // State
     const [_currentstate, returnactivetext] = useState(ItemFilter.IsStrict);
     
+    // Update the value of the text fitler
     function updateName(value: string) {
         ItemFilter.Val = value;
     }
 
+    // Update the strictness of the text filter
     function updateStrict(value: any) {
         ItemFilter.IsStrict = !ItemFilter.IsStrict
         returnactivetext(ItemFilter.IsStrict)

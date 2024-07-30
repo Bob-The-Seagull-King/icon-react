@@ -2,9 +2,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
+// Classes
 import { FilterManager } from '../../../../../classes/viewmodel/collections/filters/FilterManager'
 import { useGlobalState } from '../../../../../utility/globalstate'
 
+// Components
 import FilterDisplay from '../FilterDisplay'
 import AbilityFilterSelectDisplay from './AbilityFilterSelectDisplay'
 
@@ -14,14 +16,12 @@ const BaseFilterSelectDisplay = (prop: any) => {
     const FilterType : string = prop.filtertype;
     const updatesearch = prop.runfunction;
 
+    // States
     const [_activetextfilters, returnactivetext] = useState(FilterManager.ReturnActiveTextFilters());
     const [_activetagfilters, returnactivetag] = useState(FilterManager.ReturnActiveTagFilters());
     const [_activemiscfilters, returnactivemisc] = useState(FilterManager.ReturnActiveMiscFilters());
     const [_keyval, updatekey] = useState(1);
-    
-    
     const [theme] = useGlobalState('theme');
-
     const [show, setShow] = useState(false);
 
     const handleClose = () => {
@@ -30,6 +30,10 @@ const BaseFilterSelectDisplay = (prop: any) => {
     };
     const handleShow = () => setShow(true);
 
+    /**
+     * Call the parent's update function and update
+     * the filter manager's suite of filters.
+     */
     function RunUpdate() {
         updatesearch();
         returnactivetext(FilterManager.ReturnActiveTextFilters())

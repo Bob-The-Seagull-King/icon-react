@@ -1,15 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../../resources/styles/_icon.scss'
 import React from 'react'
+import Modal from 'react-bootstrap/Modal';
 
+// Classes
 import { AllAbilitiesListPage } from '../../../../../classes/viewmodel/pages/AllAbilitiesListPage'
 import { AbilitiesFilterManager } from '../../../../../classes/viewmodel/collections/filters/AbilitiesFilterManager'
 
+// Components
 import FilterItemItem from '../FilterItemItem'
 import FilterTagItem from '../FilterTagItem'
 import FilterTextItem from '../FilterTextItem'
-
-import Modal from 'react-bootstrap/Modal';
 
 const AbilityFilterSelectDisplay = (prop: any) => {
     const ViewPageController: AllAbilitiesListPage = prop.controller
