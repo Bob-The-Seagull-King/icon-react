@@ -1,45 +1,60 @@
-import 'bootstrap/dist/css/bootstrap.css'
-import '../../../../resources/styles/_icon.scss'
 import React, { useEffect, useRef, useState } from 'react'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
+// Resources
+import 'bootstrap/dist/css/bootstrap.css'
+import '../../../../resources/styles/_icon.scss'
+
+// Classes
 import { ContentPack } from '../../../../classes/contentpacks/contentpack'
+import { useGlobalState } from '../../../../utility/globalstate'
+import { makestringpresentable } from '../../../../utility/functions'
+
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import { faUnlock } from '@fortawesome/free-solid-svg-icons'
-import { makestringpresentable } from '../../../../utility/functions'
-
-import { useGlobalState } from '../../../../utility/globalstate'
 
 const ContentPackDisplay = (props: any) => {
     const PackItem: ContentPack = props.data;
     const parentView = props.parent;
     const updateHost = props.statefunction;
 
-    const [theme, setTheme] = useGlobalState('theme');
-    
+    // States
+    const [theme] = useGlobalState('theme');
     const [stateWidth, setWidth] = useState(window.innerWidth);
-    const ref = useRef<HTMLDivElement>(null);
     const [show, setShow] = useState(false);
-
+    
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    
+    const ref = useRef<HTMLDivElement>(null);
 
+    /**
+     * Delete the Content Pack from local storage
+     */
     function removeContentPack() {
         parentView.DeletePack(PackItem);
         updateHost();
     }
 
+    /**
+     * Turn a Content Pack on/off
+     */
     function switchContentPackState() {
         PackItem.IsActive = !PackItem.IsActive;
         parentView.SetStorage();
         updateHost();
     }
     
+    /**
+     * Detect the current size of the screen to adjust
+     * presentation mode
+     */
     useEffect(() => {
         const setContentPackWidth = () => {
             if(ref.current) {
