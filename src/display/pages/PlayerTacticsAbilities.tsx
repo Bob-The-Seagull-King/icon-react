@@ -2,10 +2,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
+// Classes
 import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/ViewAbilitiesCollections'
 import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
-import { AbilitiesFilterManager } from '../../classes/viewmodel/collections/filters/AbilitiesFilterManager'
 
+// Components
 import GenericDisplay from '../components/generics/GenericDisplay'
 import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 import ViewTableItemDisplay from '../../display/components/subcomponents/list/ViewTableItemDisplay'
@@ -15,7 +16,6 @@ const PlayerTacticsAbilities = (prop: any) => {
     // Initialize controllers and managers
     const ViewPageController: AllAbilitiesListPage = prop.controller
     const AbilitiesCollectionController: ViewAbilitiesCollection = ViewPageController.Collection;
-    const FilterManager: AbilitiesFilterManager = ViewPageController.FilterManager;
 
     // Initialize Use State
     const [_activeItems, returnstate] = useState(AbilitiesCollectionController.AbilitiesList);

@@ -1,12 +1,15 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+// Components
 import ContentPackInformation from '../../display/components/subcomponents/informationpanel/ContentPackInformation'
 import ContentPackDisplay from '../../display/components/features/contentpack/ContentPackDisplay'
 
+// Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFileImport } from '@fortawesome/free-solid-svg-icons'
 import { ContentPack } from '../../classes/contentpacks/contentpack'
@@ -14,9 +17,15 @@ import { ContentPack } from '../../classes/contentpacks/contentpack'
 const ToolsContentManager = (prop: any) => {
     const Manager = prop.manager;
 
+    // States
     const [_allcontentpacks, returnstate] = useState(Manager.GetPack());
     const [_key, updateKey] = useState(0);
 
+    /**
+     * Reads a user-selected file and attempt to create
+     * a content pack from that file.
+     * @param uploadedFile The file to convert to a Content Pack
+     */
     function readFileOnUpload(uploadedFile: File | undefined): void {
         const fileReader = new FileReader();
         fileReader.onloadend = ()=>{
@@ -53,6 +62,10 @@ const ToolsContentManager = (prop: any) => {
         });
     }
 
+    /**
+     * Updates the page states and forces
+     * a re-render of the page
+     */
     function ItemRecall() {
         returnstate(Manager.GetPack())
         updateKey(_key+1)
