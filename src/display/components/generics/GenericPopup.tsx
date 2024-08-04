@@ -35,7 +35,7 @@ const GenericPopup = (props: any) => {
             <span className='glossaryPurple hovermouse' onClick={() => handleShow()}>{ruleName}</span>                
           </span>
 
-          <Modal data-theme={theme} onEnterKeyDown={() => handleClose()} show={show} size="lg" contentClassName="overcomeBackground" dialogClassName=""  onHide={handleClose} keyboard={true}  centered>
+          <Modal data-theme={theme} show={show} size="lg" contentClassName="overcomeBackground" dialogClassName=""  onHide={handleClose} keyboard={true}  centered>
               <Modal.Body > 
                 
                 <div className={'modelStructure borderstyler ' + DisplayType + 'border'+getColour(DisplayColour)}>
