@@ -4,14 +4,14 @@ import React from 'react'
 
 // Classes
 import {capitalizeString} from '../../../utility/functions'
-import {IIconpendiumItemTag} from '../../../classes/IconpendiumItem'
 
 const TagDisplay = (props: any) => {
-    const tag: IIconpendiumItemTag = props.data
+    const key : string = props.itemkey;
+    const val : string | boolean | number | null = props.itemval
 
     return (
         <div className="tagItem tagText">
-            &#x2b9e; {capitalizeString(tag.tag_name.toString() || "")} {capitalizeString(tag.val.toString() || "")}
+            &#x2b9e; {(key.toString() || "")} {capitalizeString(((val)? val : '').toString() || "")}
         </div>
     )
 }

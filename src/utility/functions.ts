@@ -20,7 +20,7 @@ export function capitalizeString(stringVal: string) {
  *          individual words capitalized.
  */
 export function makestringpresentable(stringVal: string) {
-    const pairedString = stringVal.toString().replace(/_/g, ' ').split(" "); 
+    const pairedString = stringVal.toString().split("_"); 
     let stringreturned = "";
     
     let i = 0 
@@ -82,15 +82,8 @@ export function getColour(name: string){
  * @returns Boolean, if one of the tags has tag_name
  * that matches the value.
  */
-export function containsTag(tag:any, value:string) {
-    let i = 0;
-
-    for (i = 0; i < tag.length; i++) {
-        if (tag[i].tag_name == value) {
-            return true;
-        }
-    }
-    return false;
+export function containsTag(tag: {[_name : string] : string | boolean | number | null | []}, value:string) {
+    return (tag[value])? true : false;
 }
 
 /**
@@ -100,15 +93,12 @@ export function containsTag(tag:any, value:string) {
  * @returns the val of a given tag, returns ""
  * if no tag exists within the param tag.
  */
-export function getTagValue(tag:any, value:string) {
-    let i = 0;
-
-    for (i = 0; i < tag.length; i++) {
-        if (tag[i].tag_name == value) {
-            return tag[i].val;
-        }
+export function getTagValue(tag: {[_name : string] : string | boolean | number | null | []}, value:string) {
+    if (tag[value]) {
+        return tag[value]
+    } else {
+        return "";
     }
-    return "";
 }
 
 /**

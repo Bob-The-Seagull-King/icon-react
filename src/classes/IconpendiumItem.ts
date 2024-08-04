@@ -6,15 +6,7 @@ interface IIconpendiumItemData {
     type: string, // The type of the item (ability, addon, summon, talent, relic, etc)
     name: string, // The name of the item
     source: string, // The source of the item (core book, homebrew, etc)
-    tags: IIconpendiumItemTag[] // Tags associated with that item (used for sorting and synergies)
-}
-
-/**
- * Basic item tag
- */
-interface IIconpendiumItemTag {
-    tag_name: any, // The name of the tag
-    val: any // The value of the tag
+    tags: {[_name : string]: string | boolean | number | null | []} // Tags associated with that item (used for sorting and synergies)
 }
 
 enum ItemType {
@@ -44,8 +36,10 @@ abstract class IconpendiumItem {
             this.Name = data.name;
             this.Tags = data.tags;
             this.ItemType = data.type;
+        } else {
+            this.Tags = {};
         }
     }
 }
 
-export {IIconpendiumItemData, IconpendiumItem, IIconpendiumItemTag, ItemType}
+export {IIconpendiumItemData, IconpendiumItem, ItemType}

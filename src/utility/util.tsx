@@ -7,13 +7,13 @@ import React from 'react'
 // Classes
 import { Requester } from '../factories/Requester';
 import { IGlossaryRule, GlossaryRule } from '../classes/feature/glossary/Glossary';
-import { IIconpendiumItemTag } from '../classes/IconpendiumItem';
 
 // Components
 import GenericHover from '../display/components/generics/GenericHover';
 import TagDisplay from '../display/components/subcomponents/TagDisplay';
 import AdvancedDescriptionItemDisplay from '../display/components/subcomponents/description/AdvancedDescriptionItemDisplay';
 import GlossaryDisplay from '../display/components/features/glossary/GlossaryDisplay';
+import { makestringpresentable } from './functions';
 
 /**
  * Takes a string, and an array of string:glossary_id pairs, and turns
@@ -72,7 +72,7 @@ function ArrayItemIntoHtml(content: string, delim: any) {
             if (content == delim[i].val) {
                 const GlossaryData: IGlossaryRule = Requester.MakeRequest( {searchtype: "id", searchparam: {type: "glossary", id: delim[i].id}} ) as IGlossaryRule
                 const GlossaryObject = new GlossaryRule(GlossaryData)
-                return (<GenericHover d_colour={'icon'} d_name={GlossaryObject.Name} titlename={GlossaryObject.Name} d_type={""} d_method={() => <GlossaryDisplay data={GlossaryObject} />}/>)
+                return (<GenericHover d_colour={'icon'} d_name={content} titlename={GlossaryObject.Name} d_type={""} d_method={() => <GlossaryDisplay data={GlossaryObject} />}/>)
             }
         }
         
@@ -88,14 +88,14 @@ function ArrayItemIntoHtml(content: string, delim: any) {
  * @param bannedList Any tag which matches a string in here should not be shown
  * @returns Map of TagDisplay objects
  */
-export function returnTags(taglist: [] | undefined, bannedList : string[]) {
-    const displaytags = sortTagsForDisplay(taglist, bannedList)
+export function returnTags(taglist: {[_name : string] : string | boolean | number | null | []}, bannedList : string[]) {
+    const displaytags: {[_name : string] : string | boolean | number | null | []} = sortTagsForDisplay(taglist, bannedList)
 
     return (
         <div className="tagBox">
-                {displaytags.map((item) => (
-                    <div key={"tagDisplay"+item.tag_name+item.val}>
-                        <TagDisplay data={item}/>
+                {Object.keys(displaytags).map((item) => (
+                    <div key={"tagDisplay"+item+displaytags[item]}>
+                        <TagDisplay itemkey={item} itemval={displaytags[item]}/>
                     </div>
                 ))}
         </div>
@@ -108,20 +108,15 @@ export function returnTags(taglist: [] | undefined, bannedList : string[]) {
  * @param bannedList Any tag which matches a string in here should not be shown
  * @returns Array of tag objects
  */
-function sortTagsForDisplay(taglist: [] | undefined, bannedList : string[]) {
-    const tagarray: IIconpendiumItemTag[] = []
+function sortTagsForDisplay(taglist:  {[_name : string] : string | boolean | number | null | []}, bannedList : string[]) {
+    const tagarray:  {[_name : string] : string | boolean | number | null | []} = {}
 
-    let i = 0;
-    for (i = 0; i < (taglist?.length || 0); i++) {
-        if (taglist != undefined) {
-            const temptag: IIconpendiumItemTag = taglist[i]
+    for (const key of Object.keys(taglist)) {
+        if (!bannedList.includes(key)) {
+            tagarray[makestringpresentable(key)] = (typeof taglist[key] === 'boolean')? null : taglist[key];
+        }
+    }
 
-            if ((temptag.tag_name == "blast_size") || (temptag.tag_name == "blast_distance")) {
-                temptag.tag_name = "blast"; }
-
-            if (!bannedList.includes(temptag.tag_name)) {
-                tagarray.push(temptag);
-            }}}
     return tagarray;
 }
 

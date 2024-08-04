@@ -23,14 +23,14 @@ const GenericHover = (props: any) => {
       <>
       <HoverCard.Root data-theme={theme} >
         <HoverCard.Trigger asChild>
-          <span className='glossaryPurple hovermouse'>{ruleName}</span>
+          <span className='glossaryPurple hovermouse'>{DisplayName}</span>
         </HoverCard.Trigger>
         <HoverCard.Portal>
           <HoverCard.Content data-theme={theme} className="HoverCardContent" sideOffset={5}>
               <div  className='popupBody'>
                 <div className={'modelStructure borderstyler ' + DisplayType + 'border'+getColour(DisplayColour)}>
                     <h1 className={'titleShape titlebody titlestyler ' + DisplayType + 'background'+getColour(DisplayColour)}>
-                        {DisplayName || ""}
+                        {ruleName || ""}
                     </h1>
                     {displayMethod()}
                 </div>

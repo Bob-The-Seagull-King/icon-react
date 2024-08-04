@@ -36,22 +36,11 @@ class PlayerAbility extends IconpendiumItem {
     }
     
     /**
-     * Add an addon to the ability
-     * @param list the PlayerAddon being created
-     */
-    public AddAddons(list: PlayerAddon) {
-        this.Addons.push(list);
-    }
-    
-    /**
      * When destroyed, also delete all associated
      * addon objects.
      */
     destructor() {
         let i = 0;
-        for (i = 0; i < this.Addons.length; i++) {
-            delete this.Addons[i];
-        }
         for (i = 0; i < this.Description.length; i++) {
             delete this.Description[i];
         }

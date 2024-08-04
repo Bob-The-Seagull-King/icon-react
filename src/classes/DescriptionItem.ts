@@ -2,7 +2,7 @@
  * Data structure for the description section
  */
 interface IDescriptionItemData {
-    tags: [], // Tags that influence formatting
+    tags: {[_name : string] : string | boolean | number | null | []}, // Tags that influence formatting
     content?: string, // The description's text content
     subcontent?: [] // Further description items that are children of this one
 }
@@ -21,6 +21,9 @@ class DescriptionItem {
         if (data) {
             this.Tags = data.tags;
             this.Content = data.content || "";
+        } else {
+            this.Tags = {};
+            this.Content = "";
         }
 
     }
