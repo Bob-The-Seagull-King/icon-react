@@ -153,7 +153,7 @@ const ContentPackDisplay = (props: any) => {
                 }
             </div>
 
-            <Modal data-theme={theme}  size="lg" onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>    
+            <Modal data-theme={theme}  size="lg" show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>    
                 <h1 className={'titleShape backgroundicon'}>
                     {PackItem.Name}
                     <div className="row float-end">

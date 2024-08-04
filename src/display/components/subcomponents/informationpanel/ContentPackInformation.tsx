@@ -26,7 +26,7 @@ const ContentPackInformation = (prop: any) => {
             <div style={{display:"flex"}}>
                 <FontAwesomeIcon icon={faCircleInfo} onClick={() => handleShow()} className="pageaccestext hovermouse" style={{fontSize:"3em"}}/>
             </div>
-            <Modal data-theme={theme}  onEnterKeyDown={() => handleClose()} show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>
+            <Modal data-theme={theme}  show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>
                 
                             <h1 className={'titleShape titlebody backgroundicon'}>
                                 Content Packs

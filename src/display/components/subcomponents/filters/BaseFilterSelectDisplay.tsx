@@ -76,7 +76,7 @@ const BaseFilterSelectDisplay = (prop: any) => {
                 }
             </div>
 
-            <Modal data-theme={theme} onEnterKeyDown={() => handleClose()} show={show} contentClassName="filterboxStructure" dialogClassName="" size="xl" onHide={handleClose} keyboard={true}  centered>
+            <Modal data-theme={theme} show={show} contentClassName="filterboxStructure" dialogClassName="" size="xl" onHide={handleClose} keyboard={true}  centered>
                 
                 <h1 className={'titleShape titlebody backgroundicon'}>Select Filters</h1>
                 <Modal.Body className="filterSelectorBack">
