@@ -18,6 +18,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
 import { faLock } from '@fortawesome/free-solid-svg-icons'
 import { faUnlock } from '@fortawesome/free-solid-svg-icons'
+import { returnDescription } from '../../../../utility/util';
 
 const ContentPackDisplay = (props: any) => {
     const PackItem: ContentPack = props.data;
@@ -168,7 +169,7 @@ const ContentPackDisplay = (props: any) => {
                         <div style={{"maxHeight": "calc(70vh"}}>
                             <div className="separator" style={{marginTop:"0em"}}><h5>By {PackItem.Author}</h5></div>
                             <div className="col-12" style={{fontSize:"0.95em"}}>
-                                {PackItem.Description}
+                                {returnDescription(PackItem, PackItem.Description)}
                             </div>
                             <div className="separator" style={{marginTop:"0em"}}><h5>Content</h5></div>
                             <div style={{display:"flex",flexWrap:"wrap"}}>

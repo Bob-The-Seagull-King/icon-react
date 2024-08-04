@@ -1,3 +1,5 @@
+import { DescriptionFactory } from "../../utility/functions";
+
 interface IContentPackFile {
     type: string, // What file to match this data to
     data: any[] // Contents of the file
@@ -12,7 +14,7 @@ interface IContentPack {
     id: string, // ID value of the Content Pack (must remain unique)
     name: string, // Public name of the Content Pack (can be shared)
     author: string, // Creator attribution for the Content Pack
-    description: string, // Brief description of the Content Pack, no formatting
+    description: [], // Brief description of the Content Pack, no formatting
     tags: IContentPackTag[], // Array of tags indicating the data given by the Content Pack
     isactive: boolean, // If the Content Pack currently adds its data to searches
     files: IContentPackFile[] // Actual new data provided by the Content Pack
@@ -23,7 +25,7 @@ class ContentPack {
     ID: string;
     Name: string;
     Author: string;
-    Description: string;
+    Description;
     Tags: IContentPackTag[];
     IsActive: boolean;
     Files: IContentPackFile[];
@@ -32,7 +34,7 @@ class ContentPack {
         this.ID = _contentpack.id;
         this.Name = _contentpack.name;
         this.Author = _contentpack.author;
-        this.Description = _contentpack.description;
+        this.Description = DescriptionFactory(_contentpack.description);
         this.Tags = _contentpack.tags;
         this.IsActive = true;
         this.Files = _contentpack.files;
