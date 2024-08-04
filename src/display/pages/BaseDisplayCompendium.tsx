@@ -38,7 +38,7 @@ const BaseDisplayCompendium = (prop: any) => {
      * Update state of the list of abilities currently active
      */
     function ItemRecall() {
-        returnstate(RecallItems())
+        returnstate(CollectionController.ReturnObjects())
     }
 
     /**
@@ -48,34 +48,9 @@ const BaseDisplayCompendium = (prop: any) => {
      */
     function UpdateSearch() {
         ViewPageController.updateSearch();
-        returntable(RecallTable())
-        returnstate(RecallItems())
+        returntable(CollectionController.ReturnItems())
+        returnstate(CollectionController.ReturnObjects())
         updatekey(_keyval+1)
-    }
-
-    /**
-     * @returns Update the state of the abilities selected
-     */
-    function RecallItems() {
-        const objects = CollectionController.ReturnObejcts();
-        return objects;
-    }
-
-    /**
-     * @returns Update the state of the items available to select
-     */
-    function RecallTable() {
-        const table = CollectionController.ReturnItems();
-        return table;
-    }
-
-    /**
-     * @returns The filter display component
-     */
-    function ReturnSearchFilterBox() {
-        return (
-            <BaseFilterSelectDisplay controller={ViewPageController} runfunction={UpdateSearch}/>
-        )
     }
 
     // Return result -----------------------------
@@ -93,7 +68,7 @@ const BaseDisplayCompendium = (prop: any) => {
                                 </div>
                                 <div className="row">
                                     <div className='col-12'>
-                                        {ReturnSearchFilterBox()}
+                                        <BaseFilterSelectDisplay controller={ViewPageController} runfunction={UpdateSearch}/>
                                     </div>
                                 </div>
                                 <div className="row">

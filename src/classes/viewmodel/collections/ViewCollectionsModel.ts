@@ -85,7 +85,7 @@ class ViewCollectionsModel {
     /**
      * Basic get function
      */
-    public ReturnObejcts() {
+    public ReturnObjects() {
         this.UpdateList();
         return this.ObjectList;
     }
