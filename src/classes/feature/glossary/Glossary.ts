@@ -1,6 +1,6 @@
 import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
 import { ItemType } from '../../Enum'
-import { AbilityDescription } from '../abilities/AbilityDescription'
+import { DescriptionFactory } from '../../../utility/functions';
 
 interface IGlossaryRule extends IIconpendiumItemData {
     description: [] // Additional description field for display
@@ -18,23 +18,7 @@ class GlossaryRule extends IconpendiumItem {
     {
         super(data)
         this.ItemType = ItemType.GlossaryRule;
-        this.Description = this.DescriptionFactory(data.description);
-    }
-
-    /**
-     * Translates the description JSON objects into a collection
-     * of AbilityDescription objects
-     * @param data The array of description data objects
-     * @returns Array of AbilityDescription objects
-     */
-    private DescriptionFactory(data: []) {
-        let i = 0;
-        const array: AbilityDescription[] = []
-        for (i = 0; i < data.length; i++) {
-            const tempAD = new AbilityDescription(data[i])
-            array.push(tempAD)
-        }
-        return array;
+        this.Description = DescriptionFactory(data.description);
     }
     
     /**

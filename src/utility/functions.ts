@@ -1,3 +1,5 @@
+import { AdvancedDescription } from "../classes/AdvancedDescription";
+
 /**
  * Returns a capitalized version of a given string
  * @param stringVal The string to be capitalized
@@ -177,4 +179,14 @@ export function byPropertiesOf<T extends object> (sortBy: Array<sortArg<T>>) {
  */
 export function sort<T extends object> (arr: T[], ...sortBy: Array<sortArg<T>>) {
     arr.sort(byPropertiesOf<T>(sortBy))
+}
+
+export function DescriptionFactory(data: []) {
+    let i = 0;
+    const array: AdvancedDescription[] = []
+    for (i = 0; i < data.length; i++) {
+        const tempAD = new AdvancedDescription(data[i])
+        array.push(tempAD)
+    }
+    return array;
 }
