@@ -90,8 +90,11 @@ const ToolsContentManager = (prop: any) => {
                        
             <div className="row justify-content-center">
                 <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-12">
-                    <div className="row">
-                        <br/>
+                    
+                    <div className='row'>
+                        <div className='col'>
+                            <br/>
+                        </div>
                     </div>
                     <div className="row">
                         <div className="col-12 justify-content-center" style={{display:"flex"}}>

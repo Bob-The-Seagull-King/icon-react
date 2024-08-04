@@ -17,7 +17,7 @@ import { ToolsController } from './classes/_high_level_controllers/ToolsControll
 */
 import HomeRoute from './display/superroutes/HomeRoute'
 import CompendiumRoute from './display/superroutes/CompendiumRoute'
-import BaseHeader from './display/headers/BaseHeader'
+import SuperHeader from './display/headers/SuperHeader'
 import ToolsRoute from './display/superroutes/ToolsRoute'
 
 const App: React.FC = () => {
@@ -32,7 +32,7 @@ const App: React.FC = () => {
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
                 <Router>
-                    <BaseHeader />
+                    <SuperHeader />
                     <Routes>
                         <Route path={ROUTES.COMPENDIUM_ROUTE} element={<CompendiumRoute controller={mastercontroller} />} />
                         <Route path={ROUTES.TOOLS_ROUTE} element={<ToolsRoute controller={toolcontroller} />} />
