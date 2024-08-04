@@ -7,6 +7,8 @@ import { getTagValue} from '../../../../utility/functions'
 import { ConvertContentWithGlossary } from '../../../../utility/util'
 import { AdvancedDescription} from '../../../../classes/AdvancedDescription'
 import { PlayerAbility } from '../../../../classes/feature/abilities/Ability'
+import { AddonFactory } from '../../../../factories/features/AddonFactory'
+import { PlayerAddon } from '../../../../classes/feature/addons/Addon'
 
 // Components
 import GenericDisplay from '../../../../display/components/generics/GenericDisplay'
@@ -96,24 +98,13 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
      * @returns Display component with the Addon
      */
     function findAddon(id: string) {
-        let AddonFound: any = null;
+        let addon: PlayerAddon | null = null;
 
-        let i = 0;
-        for (i = 0; i < parentItem.Addons.length; i++) {
-            if (parentItem.Addons[i].ID == id) {
-                AddonFound = parentItem.Addons[i];
-            }
-        }
+        addon = AddonFactory.CreateNewAddon(id)
 
-        if (AddonFound != null) {
-            return (
-                <GenericDisplay d_colour={parentItem.Class} d_name={AddonFound.Name} d_type={"sub"} d_method={() => <AddonDisplay data={AddonFound} />}/>
-            )
-        } else {
-            return (
-                <span>ERROR: ADDON NOT FOUND</span>
-            )
-        }
+        return (
+            <GenericDisplay d_colour={parentItem.Class} d_name={addon.Name} d_type={"sub"} d_method={() => <AddonDisplay data={addon} />}/>
+        )
     }
 
     return (

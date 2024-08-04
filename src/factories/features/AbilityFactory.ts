@@ -12,18 +12,10 @@ class AbilityFactory {
      */
     static CreateAbility(_ability: IPlayerAbility) {
         const ability = new PlayerAbility(_ability)
-
-        // Create a number of addon objects for each addon associated with an ability
-        let i = 0;
-        for (i = 0; i < ability.Attachments.length; i++) {
-            if (ability.Attachments[i]["tag_name"] == "addons") {
-                const addondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "addons", id: ability.Attachments[i]["val"]}}) as IPlayerAddon
-                const addonNew = AddonFactory.CreateAddon(addondata)
-                ability.AddAddons(addonNew)
-            }
-        }
         return ability;
     }
+
+    
 
 }
 
