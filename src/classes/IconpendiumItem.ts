@@ -1,5 +1,3 @@
-import { ItemType } from './Enum'
-
 /**
  * Basic data package for any Iconpendium Item
  */
@@ -17,6 +15,13 @@ interface IIconpendiumItemData {
 interface IIconpendiumItemTag {
     tag_name: any, // The name of the tag
     val: any // The value of the tag
+}
+
+enum ItemType {
+    None = '',
+    Ability = 'Ability',
+    Addon = 'Addon',
+    GlossaryRule = 'Glossary'
 }
 
 abstract class IconpendiumItem {
@@ -43,4 +48,4 @@ abstract class IconpendiumItem {
     }
 }
 
-export {IIconpendiumItemData, IconpendiumItem, IIconpendiumItemTag}
+export {IIconpendiumItemData, IconpendiumItem, IIconpendiumItemTag, ItemType}

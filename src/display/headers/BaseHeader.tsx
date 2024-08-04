@@ -17,7 +17,7 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons'
 // Component
 import PalleteSwap from './components/PalleteSwap';
 
-const PlayerTacticsHeader = (prop: any) => {
+const BaseHeader = (prop: any) => {
 
     // Navigation
     const navigate = useNavigate();
@@ -52,4 +52,4 @@ const PlayerTacticsHeader = (prop: any) => {
     // -------------------------------------------
 }
 
-export default PlayerTacticsHeader
+export default BaseHeader

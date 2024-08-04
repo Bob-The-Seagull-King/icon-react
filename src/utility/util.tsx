@@ -10,9 +10,10 @@ import { IGlossaryRule, GlossaryRule } from '../classes/feature/glossary/Glossar
 import { IIconpendiumItemTag } from '../classes/IconpendiumItem';
 
 // Components
-import GlossaryHover from '../display/components/subcomponents/glossary/GlossaryHover';
+import GenericHover from '../display/components/generics/GenericHover';
 import TagDisplay from '../display/components/subcomponents/TagDisplay';
-import AbilityDescriptionItemDisplay from '../display/components/subcomponents/description/AbilityDescriptionItemDisplay';
+import AdvancedDescriptionItemDisplay from '../display/components/subcomponents/description/AdvancedDescriptionItemDisplay';
+import GlossaryDisplay from '../display/components/features/glossary/GlossaryDisplay';
 
 /**
  * Takes a string, and an array of string:glossary_id pairs, and turns
@@ -71,8 +72,7 @@ function ArrayItemIntoHtml(content: string, delim: any) {
             if (content == delim[i].val) {
                 const GlossaryData: IGlossaryRule = Requester.MakeRequest( {searchtype: "id", searchparam: {type: "glossary", id: delim[i].id}} ) as IGlossaryRule
                 const GlossaryObject = new GlossaryRule(GlossaryData)
-
-                return ( <GlossaryHover data={GlossaryObject} titlename={content}/> )
+                return (<GenericHover d_colour={'icon'} d_name={GlossaryObject.Name} titlename={GlossaryObject.Name} d_type={""} d_method={() => <GlossaryDisplay data={GlossaryObject} />}/>)
             }
         }
         
@@ -136,7 +136,7 @@ export function returnDescription(baseObject: any, objectArray : any[]) {
         <div>
             {objectArray.map((item) => (
                 <div key={"descriptionDisplay"}>
-                    <AbilityDescriptionItemDisplay data={item} parent={baseObject}/>
+                    <AdvancedDescriptionItemDisplay data={item} parent={baseObject}/>
                 </div>
             ))}
         </div>

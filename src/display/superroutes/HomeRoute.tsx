@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom'
 import { useNavigate } from "react-router-dom";
 
 // Classes
-import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
 import { useGlobalState } from './../../utility/globalstate'
 
 // Resource
@@ -27,10 +26,7 @@ const HomeRoute: React.FC = () => {
     }
 
     // Navigation
-    const navigate = useNavigate();
-
-    // Initialize Controller //
-    const AbilitiesCollectionController = new AllAbilitiesListPage()    
+    const navigate = useNavigate(); 
 
     /**
      * Navigate to a page

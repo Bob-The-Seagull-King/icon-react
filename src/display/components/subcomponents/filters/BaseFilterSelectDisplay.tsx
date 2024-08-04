@@ -1,19 +1,22 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import '../../../../../resources/styles/_icon.scss'
+import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
+import Modal from 'react-bootstrap/Modal';
 
 // Classes
-import { FilterManager } from '../../../../../classes/viewmodel/collections/filters/FilterManager'
-import { useGlobalState } from '../../../../../utility/globalstate'
+import { FilterManager } from '../../../../classes/viewmodel/collections/filters/FilterManager'
+import { useGlobalState } from '../../../../utility/globalstate'
+import { CollectionsListPage } from '../../../../classes/viewmodel/pages/CollectionListPage'
 
 // Components
-import FilterDisplay from '../FilterDisplay'
-import AbilityFilterSelectDisplay from './AbilityFilterSelectDisplay'
+import FilterDisplay from './FilterDisplay'
+import { DisplayCollectionType, DisplayCollectionDataDex } from '../../../pages/DisplayPageStatic'
 
 const BaseFilterSelectDisplay = (prop: any) => {
-    const ViewPageController = prop.controller
+    const ViewPageController: CollectionsListPage = prop.controller
     const FilterManager: FilterManager = ViewPageController.FilterManager;
-    const FilterType : string = prop.filtertype;
+    const DisplayPage: DisplayCollectionType = DisplayCollectionDataDex[ViewPageController.TypeName]
+
     const updatesearch = prop.runfunction;
 
     // States
@@ -73,9 +76,18 @@ const BaseFilterSelectDisplay = (prop: any) => {
                 }
             </div>
 
-            { FilterType == "ability" &&
-                <AbilityFilterSelectDisplay useshow={show} controller={ViewPageController} usetheme={theme} closemodal={handleClose} update={RunUpdate}/>
-            }
+            <Modal data-theme={theme} onEnterKeyDown={() => handleClose()} show={show} contentClassName="filterboxStructure" dialogClassName="" size="xl" onHide={handleClose} keyboard={true}  centered>
+                
+                <h1 className={'titleShape titlebody backgroundicon'}>Select Filters</h1>
+                <Modal.Body className="filterSelectorBack">
+                    <div className="row p-3 overflow-auto flex-grow-1">
+                        <div style={{"maxHeight": "calc(70vh"}}>
+                            {DisplayPage.returnFilterSelect(FilterManager, RunUpdate, handleClose)}
+                        </div>
+                    </div>
+                
+                </Modal.Body>
+            </Modal>
         </>
     )
     // -------------------------------------------

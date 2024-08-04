@@ -5,15 +5,15 @@ import React from 'react'
 // Classes
 import { getTagValue} from '../../../../utility/functions'
 import { ConvertContentWithGlossary } from '../../../../utility/util'
-import { AbilityDescription} from '../../../../classes/feature/abilities/AbilityDescription'
+import { AdvancedDescription} from '../../../../classes/AdvancedDescription'
 import { PlayerAbility } from '../../../../classes/feature/abilities/Ability'
 
 // Components
 import GenericDisplay from '../../../../display/components/generics/GenericDisplay'
 import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
 
-const AbilityDescriptionItemDisplay = (props: any) => {
-    const description: AbilityDescription = props.data
+const AdvancedDescriptionItemDisplay = (props: any) => {
+    const description: AdvancedDescription = props.data
     const parentItem: PlayerAbility = props.parent
 
     /**
@@ -22,7 +22,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
      * @param item The base description body
      * @returns Full DOM element containing the rendered description
      */
-    function returnFullItem(item: AbilityDescription) {
+    function returnFullItem(item: AdvancedDescription) {
         switch (getTagValue(item.Tags, "desc_type")) {
             case "effect": {
                 return (
@@ -30,7 +30,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
                         <span><b>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")} </b></span>
                         <span>
                             {item.SubContent?.map((subitem) => (
-                               <AbilityDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
                             ))}
                         </span>
                     </div>
@@ -42,7 +42,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
                         <span><i>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")} </i></span>
                         <span>
                             {item.SubContent?.map((subitem) => (
-                               <AbilityDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
                             ))}
                         </span>
                         <span>{" "}</span>
@@ -55,7 +55,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
                         <span>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")} </span>
                         <span>
                             {item.SubContent?.map((subitem) => (
-                               <AbilityDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
                             ))}
                         </span>
                         <span>{" "}</span>
@@ -68,7 +68,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
                         <div className='addonbox'>{findAddon(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
-                               <AbilityDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
                             ))}
                         </span>
                         <span>{" "}</span>
@@ -81,7 +81,7 @@ const AbilityDescriptionItemDisplay = (props: any) => {
                     <span>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")}</span>
                     <span>
                         {item.SubContent?.map((subitem) => (
-                               <AbilityDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
                         ))}
                     </span>
                     </span>
@@ -123,4 +123,4 @@ const AbilityDescriptionItemDisplay = (props: any) => {
     )
 }
 
-export default AbilityDescriptionItemDisplay;
+export default AdvancedDescriptionItemDisplay;

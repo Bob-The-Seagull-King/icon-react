@@ -9,7 +9,7 @@ import { ROUTES } from '../../resources/routes-constants'
 import ToolsContentManager from '../../display/pages/ToolsContentManager'
 
 import { useGlobalState } from './../../utility/globalstate'
-import { ToolsController } from '../../classes/ToolsController'
+import { ToolsController } from '../../classes/_high_level_controllers/ToolsController'
 
 interface IControllerProp {
     controller : ToolsController; // The controller being inserted

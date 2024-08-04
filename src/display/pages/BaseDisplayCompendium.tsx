@@ -3,23 +3,23 @@ import '../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 
 // Classes
-import { ViewAbilitiesCollection } from '../../classes/viewmodel/collections/ViewAbilitiesCollections'
-import { AllAbilitiesListPage } from '../../classes/viewmodel/pages/AllAbilitiesListPage'
+import { ViewCollectionsModel } from '../../classes/viewmodel/collections/ViewCollectionsModel'
+import { CollectionsListPage } from '../../classes/viewmodel/pages/CollectionListPage'
 
 // Components
-import GenericDisplay from '../components/generics/GenericDisplay'
-import AbilityDisplay from '../components/features/abilities/AbilityDisplay'
 import ViewTableItemDisplay from '../../display/components/subcomponents/list/ViewTableItemDisplay'
-import BaseFilterSelectDisplay from '../../display/components/subcomponents/filters/filterselectors/BaseFilterSelectDisplay'
+import BaseFilterSelectDisplay from '../../display/components/subcomponents/filters/BaseFilterSelectDisplay'
+import { DisplayCollectionDataDex, DisplayCollectionType } from './DisplayPageStatic'
 
-const PlayerTacticsAbilities = (prop: any) => {
+const BaseDisplayCompendium = (prop: any) => {
     // Initialize controllers and managers
-    const ViewPageController: AllAbilitiesListPage = prop.controller
-    const AbilitiesCollectionController: ViewAbilitiesCollection = ViewPageController.Collection;
+    const ViewPageController: CollectionsListPage = prop.controller
+    const CollectionController: ViewCollectionsModel = ViewPageController.Collection;
+    const DisplayPage: DisplayCollectionType = DisplayCollectionDataDex[ViewPageController.TypeName]
 
     // Initialize Use State
-    const [_activeItems, returnstate] = useState(AbilitiesCollectionController.AbilitiesList);
-    const [_foundItems, returntable] = useState(AbilitiesCollectionController.itemcollection);
+    const [_activeItems, returnstate] = useState(CollectionController.ObjectList);
+    const [_foundItems, returntable] = useState(CollectionController.itemcollection);
     const [_keyval, updatekey] = useState(1);
 
     let listcolourval = 0;
@@ -38,7 +38,7 @@ const PlayerTacticsAbilities = (prop: any) => {
      * Update state of the list of abilities currently active
      */
     function ItemRecall() {
-        returnstate(RecallAbilities())
+        returnstate(RecallItems())
     }
 
     /**
@@ -49,23 +49,23 @@ const PlayerTacticsAbilities = (prop: any) => {
     function UpdateSearch() {
         ViewPageController.updateSearch();
         returntable(RecallTable())
-        returnstate(RecallAbilities())
+        returnstate(RecallItems())
         updatekey(_keyval+1)
     }
 
     /**
      * @returns Update the state of the abilities selected
      */
-    function RecallAbilities() {
-        const abilities = AbilitiesCollectionController.ReturnAbilities();
-        return abilities;
+    function RecallItems() {
+        const objects = CollectionController.ReturnObejcts();
+        return objects;
     }
 
     /**
      * @returns Update the state of the items available to select
      */
     function RecallTable() {
-        const table = AbilitiesCollectionController.ReturnItems();
+        const table = CollectionController.ReturnItems();
         return table;
     }
 
@@ -74,7 +74,7 @@ const PlayerTacticsAbilities = (prop: any) => {
      */
     function ReturnSearchFilterBox() {
         return (
-            <BaseFilterSelectDisplay controller={ViewPageController} filtertype={'ability'} runfunction={UpdateSearch}/>
+            <BaseFilterSelectDisplay controller={ViewPageController} runfunction={UpdateSearch}/>
         )
     }
 
@@ -106,12 +106,12 @@ const PlayerTacticsAbilities = (prop: any) => {
                                         <div className='borderstyler bordericon roundBody no-padding '>
                                             {_foundItems.length == 0 && 
                                                 <div className="">
-                                                    <h1 className="subtletext">No Abilities Found</h1>
+                                                    <h1 className="subtletext">No {ViewPageController.Collection.CollectionType.pageName} Found</h1>
                                                 </div>
                                             }
                                             {_foundItems.map((item) => (
                                                 <div className="col-12 my-0 py-0 no-margin" key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())}>
-                                                    <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={AbilitiesCollectionController} statefunction={ItemRecall} positionid={getcolor}/>
+                                                    <ViewTableItemDisplay key={"tableItemDisplay"+item.HeldItem.ID+(_keyval.toString())} data={item} parent={CollectionController} statefunction={ItemRecall} positionid={getcolor}/>
                                                 </div>
                                             ))}
                                         </div>
@@ -143,8 +143,8 @@ const PlayerTacticsAbilities = (prop: any) => {
                                 </div>
                                 <div className="row row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                                     {_activeItems.map((item) => (
-                                        <div className="col" key={"abilityDisplay"+item.ID}>
-                                            <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <AbilityDisplay data={item} />}/>
+                                        <div className="col" key={"itemDisplay"+item.ID}>
+                                            {DisplayPage.returnDisplay(item)}
                                             <br/>
                                         </div>
                                     ))}
@@ -159,4 +159,4 @@ const PlayerTacticsAbilities = (prop: any) => {
     // -------------------------------------------
 }
 
-export default PlayerTacticsAbilities
+export default BaseDisplayCompendium

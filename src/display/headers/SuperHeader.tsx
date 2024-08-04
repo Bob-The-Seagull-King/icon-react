@@ -9,7 +9,7 @@ import { ROUTES } from '../../resources/routes-constants'
 import { useGlobalState } from './../../utility/globalstate'
 
 // Components
-import PlayerTacticsHeader from './PlayerTacticsHeader'
+import BaseHeader from './BaseHeader'
 import MenuHeader from './MenuHeader'
 
 const SuperHeader: React.FC = () => {
@@ -47,8 +47,8 @@ const SuperHeader: React.FC = () => {
         <div data-theme={theme}>
         <div id="topbarbody" ref={ref} className="topbarStructure">
             <Routes>
-                <Route path={ROUTES.COMPENDIUM_ROUTE}  element={<PlayerTacticsHeader />} />
-                <Route path={ROUTES.TOOLS_ROUTE} element={<PlayerTacticsHeader />} />
+                <Route path={ROUTES.COMPENDIUM_ROUTE}  element={<BaseHeader />} />
+                <Route path={ROUTES.TOOLS_ROUTE} element={<BaseHeader />} />
                 <Route path={ROUTES.HOME_ROUTE} element={<MenuHeader />} />
             </Routes>
         </div>

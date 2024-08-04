@@ -1,14 +1,26 @@
 // Import typescript classes
 import { FilterText, FilterTag, FilterItem } from './FilterInterfaces'
+import { FilterType, FitlerDataDex } from './FiltersStatic';
 
-abstract class FilterManager {
+class FilterManager {
     
     TextOptions: FilterText[] = [];
     TagOptions: FilterTag[] = [];
     MiscOptions: FilterItem[] = []
 
-    constructor() {
-        undefined;
+    MyFilters : FilterType;
+
+    constructor(type : Lowercase<string>) {
+        this.MyFilters = FitlerDataDex[type]
+        if (this.MyFilters.findMisc) {
+            this.MiscOptions = this.MyFilters.findMisc();
+        }
+        if (this.MyFilters.findTags) {
+            this.TagOptions = this.MyFilters.findTags();
+        }
+        if (this.MyFilters.findText) {
+            this.TextOptions = this.MyFilters.findText();
+        }
     }
 
     /**

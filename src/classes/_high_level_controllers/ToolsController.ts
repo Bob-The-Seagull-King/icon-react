@@ -1,4 +1,4 @@
-import { ContentPackManager } from '../classes/contentpacks/contentmanager'
+import { ContentPackManager } from '../contentpacks/contentmanager'
 
 class ToolsController {
    

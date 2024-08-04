@@ -6,10 +6,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { ROUTES } from '../../resources/routes-constants'
 
 // Components
-import PlayerTacticsAbilities from '../../display/pages/PlayerTacticsAbilities'
+import BaseDisplayCompendium from '../pages/BaseDisplayCompendium'
 
 // Classes
-import { ControllerController } from '../../classes/ControllerController'
+import { ControllerController } from '../../classes/_high_level_controllers/ControllerController'
 import { useGlobalState } from './../../utility/globalstate'
 
 interface IControllerProp {
@@ -30,7 +30,7 @@ const CompendiumRoute: React.FC<IControllerProp> = (prop) => {
     return (
         <div className="backgroundBaseColour" data-theme={theme}>
         <Routes>
-            <Route path={ROUTES.COMPENDIUM_ABILITY_ROUTE} element={<PlayerTacticsAbilities controller={prop.controller.AbilitiesCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_ABILITY_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.AbilitiesCollectionController}/>} />
         </Routes>
         </div>
     )

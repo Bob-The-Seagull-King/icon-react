@@ -1,5 +1,4 @@
-import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
-import { ItemType } from '../../Enum'
+import { IIconpendiumItemData, IconpendiumItem, ItemType } from '../../IconpendiumItem'
 import { DescriptionFactory } from '../../../utility/functions';
 import { PlayerAddon } from '../addons/Addon'
 
