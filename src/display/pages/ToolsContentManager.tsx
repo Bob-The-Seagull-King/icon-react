@@ -6,8 +6,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 // Components
-import ContentPackInformation from '../../display/components/subcomponents/informationpanel/ContentPackInformation'
-import ContentPackDisplay from '../../display/components/features/contentpack/ContentPackDisplay'
+import GenericPanel from '../components/generics/GenericPanel';
+import ContentPackDisplay from '../components/features/contentpack/ContentPackDisplay'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -106,7 +106,7 @@ const ToolsContentManager = (prop: any) => {
                             </label>
                             <div className="navpad"/>
                             <div style={{width:"fit-content"}}>
-                                <ContentPackInformation/>
+                                <GenericPanel panelname={"contentpack"}/>
                             </div>
                         </div>
                     </div>
