@@ -1,8 +1,10 @@
+import { ObjectTag } from "./IconpendiumItem";
+
 /**
  * Data structure for the description section
  */
 interface IDescriptionItemData {
-    tags: {[_name : string] : string | boolean | number | null | []}, // Tags that influence formatting
+    tags: ObjectTag, // Tags that influence formatting
     content?: string, // The description's text content
     subcontent?: [] // Further description items that are children of this one
 }

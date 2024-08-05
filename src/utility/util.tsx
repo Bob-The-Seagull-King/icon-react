@@ -14,6 +14,7 @@ import TagDisplay from '../display/components/subcomponents/TagDisplay';
 import AdvancedDescriptionItemDisplay from '../display/components/subcomponents/description/AdvancedDescriptionItemDisplay';
 import GlossaryDisplay from '../display/components/features/glossary/GlossaryDisplay';
 import { makestringpresentable } from './functions';
+import { ObjectTag } from '../classes/IconpendiumItem';
 
 /**
  * Takes a string, and an array of string:glossary_id pairs, and turns
@@ -88,8 +89,8 @@ function ArrayItemIntoHtml(content: string, delim: any) {
  * @param bannedList Any tag which matches a string in here should not be shown
  * @returns Map of TagDisplay objects
  */
-export function returnTags(taglist: {[_name : string] : string | boolean | number | null | []}, bannedList : string[]) {
-    const displaytags: {[_name : string] : string | boolean | number | null | []} = sortTagsForDisplay(taglist, bannedList)
+export function returnTags(taglist: ObjectTag, bannedList : string[]) {
+    const displaytags: ObjectTag = sortTagsForDisplay(taglist, bannedList)
 
     return (
         <div className="tagBox">
@@ -108,8 +109,8 @@ export function returnTags(taglist: {[_name : string] : string | boolean | numbe
  * @param bannedList Any tag which matches a string in here should not be shown
  * @returns Array of tag objects
  */
-function sortTagsForDisplay(taglist:  {[_name : string] : string | boolean | number | null | []}, bannedList : string[]) {
-    const tagarray:  {[_name : string] : string | boolean | number | null | []} = {}
+function sortTagsForDisplay(taglist:  ObjectTag, bannedList : string[]) {
+    const tagarray: ObjectTag = {}
 
     for (const key of Object.keys(taglist)) {
         if (!bannedList.includes(key)) {

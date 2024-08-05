@@ -1,3 +1,4 @@
+import { ObjectTag } from "../classes/IconpendiumItem";
 import { AdvancedDescription } from "../classes/AdvancedDescription";
 
 /**
@@ -82,7 +83,7 @@ export function getColour(name: string){
  * @returns Boolean, if one of the tags has tag_name
  * that matches the value.
  */
-export function containsTag(tag: {[_name : string] : string | boolean | number | null | []}, value:string) {
+export function containsTag(tag: ObjectTag, value:string) {
     return (tag[value])? true : false;
 }
 
@@ -93,7 +94,7 @@ export function containsTag(tag: {[_name : string] : string | boolean | number |
  * @returns the val of a given tag, returns ""
  * if no tag exists within the param tag.
  */
-export function getTagValue(tag: {[_name : string] : string | boolean | number | null | []}, value:string) {
+export function getTagValue(tag: ObjectTag, value:string) {
     if (tag[value]) {
         return tag[value]
     } else {
