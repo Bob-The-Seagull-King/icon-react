@@ -1,7 +1,5 @@
 import { FilterManager } from "../../classes/viewmodel/collections/filters/FilterManager"
-import FilterItemItem from "../components/subcomponents/filters/FilterItemItem"
-import FilterTagItem from "../components/subcomponents/filters/FilterTagItem"
-import FilterTextItem from "../components/subcomponents/filters/FilterTextItem"
+import {FilterTagItem, FilterTextItem, FilterMiscItem} from "../components/subcomponents/filters/FilterItems"
 import AbilityDisplay from "../components/features/abilities/AbilityDisplay"
 import GenericDisplay from "../components/generics/GenericDisplay"
 import React from 'react'
@@ -49,7 +47,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
                         <div className="row">
                             <div className='filterbox centerPosition'>
                                 {manager.ReturnMiscFilters().filter((value) => (value.Group == "chapter")).map((item) => (
-                                    <FilterItemItem key={"miscchapter"+item.Name} data={item} updatefunction={update}/>
+                                    <FilterMiscItem key={"miscchapter"+item.Name} data={item} updatefunction={update}/>
                                 ))}
                             </div>
                         </div>
@@ -57,7 +55,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
                         <div className="row">
                             <div className='filterbox centerPosition'>
                                 {manager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
-                                    <FilterItemItem key={"miscsource"+item.Name} data={item} />
+                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
                                 ))}
                             </div>
                         </div>
@@ -65,7 +63,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
                         <div className="row">
                             <div className='filterbox centerPosition'>
                                 {manager.ReturnMiscFilters().filter((value) => (value.Group == "class_id")).map((item) => (
-                                    <FilterItemItem key={"misclass"+item.Name} data={item} />
+                                    <FilterMiscItem key={"misclass"+item.Name} data={item} />
                                 ))}
                             </div>
                         </div>
@@ -73,7 +71,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
                         <div className="row">
                             <div className='filterbox centerPosition'>
                                 {manager.ReturnMiscFilters().filter((value) => (value.Group == "job_id")).map((item) => (
-                                    <FilterItemItem key={"miscjob"+item.Name} data={item} />
+                                    <FilterMiscItem key={"miscjob"+item.Name} data={item} />
                                 ))}
                             </div>
                         </div>
