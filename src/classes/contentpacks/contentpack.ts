@@ -1,4 +1,4 @@
-import { DescriptionFactory } from "../../utility/functions";
+import { DescriptionFactory, makestringpresentable } from "../../utility/functions";
 
 interface IContentPackFile {
     type: string, // What file to match this data to
@@ -15,7 +15,6 @@ interface IContentPack {
     name: string, // Public name of the Content Pack (can be shared)
     author: string, // Creator attribution for the Content Pack
     description: [], // Brief description of the Content Pack, no formatting
-    tags: IContentPackTag[], // Array of tags indicating the data given by the Content Pack
     isactive: boolean, // If the Content Pack currently adds its data to searches
     files: IContentPackFile[] // Actual new data provided by the Content Pack
 }
@@ -35,9 +34,21 @@ class ContentPack {
         this.Name = _contentpack.name;
         this.Author = _contentpack.author;
         this.Description = DescriptionFactory(_contentpack.description);
-        this.Tags = _contentpack.tags;
+        this.Tags = this.GetTags(_contentpack.files);
         this.IsActive = true;
         this.Files = _contentpack.files;
+    }
+
+    private GetTags(data : IContentPackFile[]) {
+        const Tags : IContentPackTag[] = [];
+
+        let i = 0;
+        for (i = 0; i < data.length; i ++) {
+            const TempTag : IContentPackTag = {name: makestringpresentable(data[i].type), count: data[i].data.length}
+            Tags.push(TempTag);
+        }
+
+        return Tags;
     }
 
     /**

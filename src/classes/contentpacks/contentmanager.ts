@@ -1,5 +1,6 @@
 import {ContentPack, IContentPack } from './contentpack'
 import { useContentPackStore } from '../../store/contentpacks'
+import { ContentDataDex } from './contentstaticvalidator';
 
 class ContentPackManager {
     PackList: ContentPack[] = []; // Array of Content Packs
@@ -54,22 +55,12 @@ class ContentPackManager {
      * occured, non empty strings indicate an error.
      */
     private ValidateFileData(_content : string) {
-        const TestPack = (JSON.parse(_content) as IContentPack)
+        const TestPack = (JSON.parse(_content))
         let i = 0;
 
         // Check that the minimum structure of the Content Pack exists
-        if (    TestPack.id &&
-                TestPack.name &&
-                TestPack.author &&
-                TestPack.description &&
-                TestPack.tags &&
-                TestPack.isactive &&
-                TestPack.files
-            ) {
-            undefined;
-        } else {
-            return "Invalid file format structure.";
-        }
+        const validatetype = this.ValidateType(TestPack);
+        if (validatetype !== '') { return validatetype }
 
         // Check that no Content Pack shares the same ID
         for (i = 0; i < this.PackList.length; i++) {
@@ -101,6 +92,46 @@ class ContentPackManager {
         }
 
         return ""
+    }
+
+    private ValidateType(pack : any) {
+
+        try {
+            if (pack.id && pack.name && pack.author &&
+                pack.description && pack.isactive && pack.files ) {
+                if ( (typeof pack.id === 'string') && (typeof pack.name === 'string') &&
+                    (typeof pack.author === 'string') && (typeof pack.isactive === 'boolean') ) {
+
+                        const result = ContentDataDex['description'].validateItem(pack.description);
+                        if (result !== '') {return result}
+
+                        let i = 0;
+                        for (i = 0; i < pack.files.length; i ++) {
+                            if (pack.files[i].type && pack.files[i].data) {
+                                if (typeof pack.files[i].type === 'string') {
+                                    let j = 0;
+                                    for (j = 0; j < pack.files[i].data.length; j++) {
+                                        const result = ContentDataDex[pack.files[i].type].validateItem(pack.files[i].data[j])
+                                        if (result !== '') {return result}
+                                    }
+                                } else {
+                                    return "File name not valid"
+                                }
+                            } else {
+                                return "File structure not valid"
+                            }
+                        }
+                        return "";
+                } else {
+                    "Invalid Data Types"
+                }
+            } else {
+                return "Invalid File Structure"
+            }
+        } catch (e) {
+            return "UNKNOWN ERROR";
+        }
+        return "";
     }
 
     /**

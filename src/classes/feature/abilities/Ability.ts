@@ -6,7 +6,6 @@ interface IPlayerAbility extends IIconpendiumItemData {
     chapter: number, // Chapter of the ability
     class_id: string, // Class of the ability (determined by job)
     job_id: string, // Job of the ability
-    attachments: [], // List of addons, summons, etc featured in an ability
     blurb: [], // Flavour text
     description: [] // Mechanical description of the item
 }
@@ -17,8 +16,7 @@ class PlayerAbility extends IconpendiumItem {
     public readonly Job;
     public readonly Blurb;
     public readonly Description;
-    public Addons: PlayerAddon[] = [];
-    
+
     /**
      * Assigns parameters and creates a series of description
      * objects with DescriptionFactory
