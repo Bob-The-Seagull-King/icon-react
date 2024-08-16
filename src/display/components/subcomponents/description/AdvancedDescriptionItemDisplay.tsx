@@ -26,16 +26,28 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
      */
     function returnFullItem(item: AdvancedDescription) {
         switch (getTagValue(item.Tags, "desc_type")) {
-            case "effect": {
+            case "paragraph": {
                 return (
                     <div>
-                        <span><b>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")} </b></span>
                         <span>
                             {item.SubContent?.map((subitem) => (
                                <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
                             ))}
                         </span>
                     </div>
+                )
+
+            }
+            case "effect": {
+                return (
+                    <span>
+                        <span><b>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")} </b></span>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                    </span>
                 )
             }
             case "subeffect": {
@@ -74,6 +86,35 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                             ))}
                         </span>
                         <span>{" "}</span>
+                    </div>
+                )
+            }
+            case "gap": {
+                return (
+                    <div>
+                        <div><br/></div>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </div>
+                )
+            }
+            case "list": {
+                return (
+                    <div>
+                        <span>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")} </span>
+                        <span>
+                            <ul>
+                                {item.SubContent?.map((subitem) => (
+                                    <li  key="descriptionsubitem">
+                                        <AdvancedDescriptionItemDisplay data={subitem} parent={parentItem}/>
+                                    </li>
+                                ))}
+                            </ul>
+                        </span>
                     </div>
                 )
             }

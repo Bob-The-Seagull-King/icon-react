@@ -7,6 +7,7 @@ interface IIconpendiumItemData {
     name: string, // The name of the item
     source: string, // The source of the item (core book, homebrew, etc)
     tags: ObjectTag // Tags associated with that item (used for sorting and synergies)
+    eventtags: ObjectTag // Tags associated with that item (used for sorting and synergies)
 }
 
 type ObjectTag = {[_name : string] : string | boolean | number | null | []}
@@ -24,6 +25,7 @@ abstract class IconpendiumItem {
     public readonly ID;
     public readonly Tags;
     public readonly Name;
+    public readonly EventTags;
 
     /**
      * Assigns data values to the parameters of the item
@@ -37,9 +39,11 @@ abstract class IconpendiumItem {
             this.Source = data.source;
             this.Name = data.name;
             this.Tags = data.tags;
+            this.EventTags = data.eventtags;
             this.ItemType = data.type;
         } else {
             this.Tags = {};
+            this.EventTags = {};
         }
     }
 }
