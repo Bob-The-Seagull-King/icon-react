@@ -13,6 +13,9 @@ import { PlayerAddon } from '../../../../classes/feature/addons/Addon'
 // Components
 import GenericDisplay from '../../../../display/components/generics/GenericDisplay'
 import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
+import { PlayerTable } from '../../../../classes/feature/table/tablebody'
+import { TableFactory } from '../../../../factories/features/TableFactory'
+import TableDisplay from '../../../../display/components/features/table/TableDisplay'
 
 const AdvancedDescriptionItemDisplay = (props: any) => {
     const description: AdvancedDescription = props.data
@@ -89,6 +92,19 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                     </div>
                 )
             }
+            case "table": {
+                return (
+                    <div>
+                        <div className='addonbox'>{findTable(item.Content?.toString() || "")}</div>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </div>
+                )
+            }
             case "gap": {
                 return (
                     <div>
@@ -145,6 +161,20 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
 
         return (
             <GenericDisplay d_colour={parentItem.Class} d_name={addon.Name} d_type={"sub"} d_method={() => <AddonDisplay data={addon} />}/>
+        )
+    }
+    /**
+     * returns a component showing an Addon display
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findTable(id: string) {
+        let table: PlayerTable | null = null;
+
+        table = TableFactory.CreateNewTable(id)
+
+        return (
+            <GenericDisplay d_colour={parentItem.Class} d_name={table.Name} d_type={"sub"} d_method={() => <TableDisplay data={table} />}/>
         )
     }
 
