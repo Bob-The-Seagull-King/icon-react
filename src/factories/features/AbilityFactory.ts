@@ -15,7 +15,11 @@ class AbilityFactory {
         return ability;
     }
 
-    
+    static CreateNewAbility(_val : string) {
+        const addondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "abilities", id: _val}}) as IPlayerAbility
+        const addonNew = AbilityFactory.CreateAbility(addondata)
+        return addonNew;
+    }   
 
 }
 
