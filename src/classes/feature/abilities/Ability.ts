@@ -7,7 +7,9 @@ interface IPlayerAbility extends IIconpendiumItemData {
     class_id: string, // Class of the ability (determined by job)
     job_id: string, // Job of the ability
     blurb: [], // Flavour text
-    description: [] // Mechanical description of the item
+    description: [], // Mechanical description of the item
+    talent: [], // Talents an ability has
+    mastery: [] // The ability's mastery
 }
 
 class PlayerAbility extends IconpendiumItem {
@@ -16,6 +18,8 @@ class PlayerAbility extends IconpendiumItem {
     public readonly Job;
     public readonly Blurb;
     public readonly Description;
+    public readonly Talents;
+    public readonly Mastery;
 
     /**
      * Assigns parameters and creates a series of description
@@ -31,6 +35,8 @@ class PlayerAbility extends IconpendiumItem {
         this.Job = data.job_id;
         this.Blurb = DescriptionFactory(data.blurb);
         this.Description = DescriptionFactory(data.description);
+        this.Talents = data.talent;
+        this.Mastery = data.mastery;
     }
     
     /**
