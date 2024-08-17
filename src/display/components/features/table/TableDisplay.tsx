@@ -13,12 +13,12 @@ const TableDisplay = (props: any) => {
         <div className='abilityInternalStructure'>
             <table>
                 <tr>
-                    {Table.ColNames.map((item) => (<th><p>{item}</p></th>))}
+                    {Table.ColNames.map((item) => (<th key={"headtabledesc"}><p>{item}</p></th>))}
                 </tr>
                 {Table.Items.map((item) => (
-                <tr>
+                <tr key={"rowtabledesc"}>
                     {item.Description.map((val) => (
-                        <td>
+                        <td key={"itemtabledesc"}>
                             {returnDescription(Table, [val])}
                         </td>
                     ))}
