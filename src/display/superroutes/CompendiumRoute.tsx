@@ -31,6 +31,7 @@ const CompendiumRoute: React.FC<IControllerProp> = (prop) => {
         <div className="backgroundBaseColour" data-theme={theme}>
         <Routes>
             <Route path={ROUTES.COMPENDIUM_ABILITY_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.AbilitiesCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_SUMMON_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.SummonsCollectionController}/>} />
         </Routes>
         </div>
     )

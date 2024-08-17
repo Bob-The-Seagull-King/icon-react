@@ -9,13 +9,16 @@ import { AdvancedDescription} from '../../../../classes/AdvancedDescription'
 import { PlayerAbility } from '../../../../classes/feature/abilities/Ability'
 import { AddonFactory } from '../../../../factories/features/AddonFactory'
 import { PlayerAddon } from '../../../../classes/feature/addons/Addon'
+import { SummonFactory } from '../../../../factories/features/SummonFactory'
+import { PlayerSummon } from '../../../../classes/feature/summons/Summon'
+import { PlayerTable } from '../../../../classes/feature/table/tablebody'
+import { TableFactory } from '../../../../factories/features/TableFactory'
 
 // Components
 import GenericDisplay from '../../../../display/components/generics/GenericDisplay'
 import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
-import { PlayerTable } from '../../../../classes/feature/table/tablebody'
-import { TableFactory } from '../../../../factories/features/TableFactory'
 import TableDisplay from '../../../../display/components/features/table/TableDisplay'
+import SummonDisplay from '../../../../display/components/features/summons/SummonDisplay'
 
 const AdvancedDescriptionItemDisplay = (props: any) => {
     const description: AdvancedDescription = props.data
@@ -83,6 +86,19 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                 return (
                     <div>
                         <div className='addonbox'>{findAddon(item.Content?.toString() || "")}</div>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </div>
+                )
+            }
+            case "summon": {
+                return (
+                    <div>
+                        <div className='addonbox'>{findSummon(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
                                <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
@@ -163,6 +179,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             <GenericDisplay d_colour={parentItem.Class} d_name={addon.Name} d_type={"sub"} d_method={() => <AddonDisplay data={addon} />}/>
         )
     }
+
     /**
      * returns a component showing an Addon display
      * @param id The ID of the addon
@@ -175,6 +192,21 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
 
         return (
             <GenericDisplay d_colour={parentItem.Class} d_name={table.Name} d_type={"sub"} d_method={() => <TableDisplay data={table} />}/>
+        )
+    }
+
+    /**
+     * returns a component showing an Addon display
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findSummon(id: string) {
+        let summon: PlayerSummon | null = null;
+
+        summon = SummonFactory.CreateNewSummon(id)
+
+        return (
+            <GenericDisplay d_colour={parentItem.Class} d_name={summon.Name} d_type={"sub"} d_method={() => <SummonDisplay data={summon} />}/>
         )
     }
 

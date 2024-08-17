@@ -6,6 +6,7 @@ export const ROUTES = {
 
     // Page Routes //
     COMPENDIUM_ABILITY_ROUTE: '/abilities/*',
+    COMPENDIUM_SUMMON_ROUTE: '/summons/*',
     TOOLS_CONTENT_UPLOAD_ROUTE: '/content/*'
 
 }
