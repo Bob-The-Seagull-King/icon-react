@@ -50,38 +50,34 @@ const HomeRoute: React.FC = () => {
                     <div className="row">
                         <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Compendium</h3></div>
                     </div>
-                    <div className="row">
-                        <div className="col row-cols-lg-2 row-cols-md-2 row-cols-sx-1 row-cols-xs-1 row-cols-1">
-                            <div className="col">
-                                <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/abilities/")}>
-                                    <FontAwesomeIcon icon={faFistRaised} className="pageaccestext"/>
-                                    <h1 className="pageaccestext">
-                                        ABILITIES
-                                    </h1>
-                                </div>
+                    <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sx-1 row-cols-xs-1 row-cols-1">
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/abilities/")}>
+                                <FontAwesomeIcon icon={faFistRaised} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    ABILITIES
+                                </h1>
                             </div>
-                            <div className="col">
-                                <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/summons/")}>
-                                    <FontAwesomeIcon icon={faScrewdriverWrench} className="pageaccestext"/>
-                                    <h1 className="pageaccestext">
-                                        SUMMONS
-                                    </h1>
-                                </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/summons/")}>
+                                <FontAwesomeIcon icon={faScrewdriverWrench} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    SUMMONS
+                                </h1>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Tools</h3></div>
                     </div>
-                    <div className="row">
-                        <div className="col row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
-                            <div className="col">
-                                <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("tools/content/")}>
-                                    <FontAwesomeIcon icon={faFileLines} className="pageaccestext"/>
-                                    <h1 className="pageaccestext">
-                                        CONTENT MANAGER
-                                    </h1>
-                                </div>
+                    <div className="row row-cols-lg-1 row-cols-md-1 row-cols-sx-1 row-cols-xs-1 row-cols-1">
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("tools/content/")}>
+                                <FontAwesomeIcon icon={faFileLines} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    CONTENT MANAGER
+                                </h1>
                             </div>
                         </div>
                     </div>
