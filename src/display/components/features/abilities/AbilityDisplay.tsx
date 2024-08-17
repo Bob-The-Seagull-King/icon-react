@@ -56,6 +56,7 @@ const AbilityDisplay = (props: any) => {
                 {AbilityObject.Talents.map((item) => (
                 <div key="talentmap">
                     {findTalent(item)}
+                    <div className="verticalspacerbig"/>
                 </div>))}
             </div>
             <div className="verticalspacer"/> 
@@ -67,6 +68,7 @@ const AbilityDisplay = (props: any) => {
                 {AbilityObject.Mastery.map((item) => (
                 <div key="talentmap">
                     {findMastery(item)}
+                    <div className="verticalspacerbig"/>
                 </div>))}
             </div>
         </div>
