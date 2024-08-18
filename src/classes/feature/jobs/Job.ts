@@ -7,13 +7,16 @@ import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
 import { LimitBreakFactory } from '../../../factories/features/LimitBreakFactory';
 import { AddonFactory } from '../../../factories/features/AddonFactory';
+import { PlayerSummon } from '../summons/Summon';
+import { SummonFactory } from '../../../factories/features/SummonFactory';
 
 interface IJob extends IIconpendiumItemData {
     class_id: string, // Class of the ability (determined by job)
     subtitle: string,
     blurb: [], // Flavour text
     playstyle: [], // Mechanical description of the item
-    addons: [],
+    addons: string[],
+    summons: string[],
     traits: string[],
     abilities: string[],
     limitbreak: string,
@@ -30,6 +33,7 @@ class Job extends IconpendiumItem {
     public readonly UpgradeTrait;
     public readonly LimitBreak;
     public readonly Addons;
+    public readonly Summon;
 
     /**
      * Assigns parameters and creates a series of description
@@ -48,6 +52,7 @@ class Job extends IconpendiumItem {
         this.UpgradeTrait = this.TraitsFactory([data.upgrade_trait])
         this.LimitBreak = this.LimitBreakFactory(data.limitbreak)
         this.Addons = this.AddonsFactory(data.addons)
+        this.Summon = this.SummonsFactory(data.addons)
     }
 
     private AbilitiesFactory(_data : string[]) {
@@ -73,6 +78,15 @@ class Job extends IconpendiumItem {
         let i = 0;
         for (i = 0; i < _data.length; i++) {
             array.push(AddonFactory.CreateNewAddon(_data[i]))
+        }
+        return array;
+    }
+
+    private SummonsFactory(_data : string[]) {
+        const array : PlayerSummon[] = []
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            array.push(SummonFactory.CreateNewSummon(_data[i]))
         }
         return array;
     }
