@@ -3,19 +3,15 @@ import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
 // Classes
-import { returnTags, returnDescription } from '../../../../utility/util';
-import {PlayerAbility } from "../../../../classes/feature/abilities/Ability";
-import { Trait } from '../../../../classes/feature/trait/Trait';
-import { TraitFactory } from '../../../../factories/features/TraitFactory';
+import { returnTags } from '../../../../utility/util';
 
 // Components
-import GenericDisplay from '../../../components/generics/GenericDisplay';
-import TraitDisplay from '../trait/TraitDisplay';
-import AbilityDisplay from '../summons/SummonDisplay';
 import GenericPopup from '../../../components/generics/GenericPopup';
+import { Job } from '../../../../classes/feature/jobs/Job';
+import JobDisplay from '../jobs/JobDisplay';
 
-const JobAbilityDisplay = (props: any) => {
-    const AbilityObject: PlayerAbility = props.data
+const ClassJobDisplay = (props: any) => {
+    const JobObject: Job = props.data
     const bannedAbilityTags = ["inflict", "type"]
 
     
@@ -23,21 +19,21 @@ const JobAbilityDisplay = (props: any) => {
         <div className="row row-cols-3">
             <div className="col-4">
                 <div className="equipbody">
-                    <GenericPopup titlename={AbilityObject.Name} d_colour={AbilityObject.Class} d_name={AbilityObject.Name} d_type={""} d_method={() => <AbilityDisplay data={AbilityObject}/>}/>
+                    <GenericPopup titlename={JobObject.Name} d_colour={JobObject.Class} d_name={JobObject.Name} d_type={""} d_method={() => <JobDisplay data={JobObject}/>}/>
                 </div>
             </div>
-            <div className="col-2">
+            <div className="col-4">
                 <div className="equipbody">
-                    Ch.{AbilityObject.Chapter}
+                    {JobObject.Subtitle}
                 </div>
             </div>
-            <div className="col-6">
+            <div className="col-4">
                 <div className="equipbody">
-                    {returnTags(AbilityObject.Tags, bannedAbilityTags)}
+                    {returnTags(JobObject.Tags, bannedAbilityTags)}
                 </div>
             </div>
         </div>
     )
 }
 
-export default JobAbilityDisplay;
+export default ClassJobDisplay;

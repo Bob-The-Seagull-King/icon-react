@@ -13,11 +13,9 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 // Components
 import GenericDisplay from '../../generics/GenericDisplay';
 import TraitDisplay from '../trait/TraitDisplay';
-import LimitBreakDisplay from '../abilities/LimitBreakDisplay';
-import AddonDisplay from '../addons/AddonDisplay';
-import SummonDisplay from '../summons/SummonDisplay';
 import ItemStat from '../../subcomponents/description/ItemStat';
 import GenericComponentDisplay from '../../../components/generics/GenericComponent';
+import ClassJobDisplay from './ClassJobDisplay';
 
 const ClassDisplay = (props: any) => {
     const ClassObject: Class = props.data
@@ -96,6 +94,14 @@ const ClassDisplay = (props: any) => {
                     <div className="verticalspacerbig"/> 
                     <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={ClassObject.Gambit.Title} d_type={""} d_method={() => <GenericComponentDisplay data={ClassObject.Gambit}/>}/>
                 </div>
+            </div>
+            <div className="verticalspacer"/> 
+            <div>
+                <div className="separator">Jobs</div>
+            </div> 
+            <div className="verticalspacer"/>
+            <div>
+                {ClassObject.Jobs.map((item) => <ClassJobDisplay key={"classjob"} data={item}/>)}
             </div>
         </div>
     )
