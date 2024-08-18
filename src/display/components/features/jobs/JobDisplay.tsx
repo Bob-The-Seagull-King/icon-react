@@ -38,7 +38,7 @@ const JobDisplay = (props: any) => {
             </div> 
             <div className="verticalspacer"/>
             <div>
-                <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+                <div className="row">
                     <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
                         <Masonry gutter="20px">
                             {JobObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}             
