@@ -3,15 +3,15 @@ import { DescriptionFactory } from '../../../utility/functions';
 import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
 import { IRule } from '../rule/Rule';
-import { Job } from '../jobs/Job';
+import { IJob, Job } from '../jobs/Job';
 import { JobFactory } from '../../../factories/features/JobFactory';
 import { RuleFactory } from '../../../factories/features/RuleFactory';
+import { Requester } from '../../../factories/Requester';
 
 interface IClass extends IIconpendiumItemData {
     subtitle: string,
     description: [], // Mechanical description of the item
     traits: string[],
-    jobs: string[],
     specialmechanic: IRule,
     gambit: IRule,
     complexity: string,
@@ -55,7 +55,7 @@ class Class extends IconpendiumItem {
 
         this.Description = DescriptionFactory(data.description);
         this.Traits = this.TraitsFactory(data.traits);
-        this.Jobs = this.JobsFactory(data.jobs)
+        this.Jobs = this.JobsFactory()
 
         this.SpecialMechanic = RuleFactory.CreateRule(data.specialmechanic);
         this.Gambit = RuleFactory.CreateRule(data.gambit);
@@ -75,11 +75,22 @@ class Class extends IconpendiumItem {
         return array;
     }
 
-    private JobsFactory(_data : string[]) {
+    private JobsFactory() {
         const array : Job[] = []
         let i = 0;
+        const _data = Requester.MakeRequest({searchtype: "complex", searchparam: {type: "jobs", request: {
+                operator: "and",
+                terms: [{
+                    item        : "class_id",
+                    value       : this.ID,
+                    equals      : true,
+                    strict      : true,
+                    istag       : false
+                }],
+                subparams: []
+            }}}) as IJob[]
         for (i = 0; i < _data.length; i++) {
-            array.push(JobFactory.CreateNewJob(_data[i]))
+            array.push(JobFactory.CreateNewJob(_data[i].id))
         }
         return array;
     }
