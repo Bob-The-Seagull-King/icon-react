@@ -16,9 +16,28 @@ import TraitDisplay from '../trait/TraitDisplay';
 import LimitBreakDisplay from '../abilities/LimitBreakDisplay';
 import AddonDisplay from '../addons/AddonDisplay';
 import SummonDisplay from '../summons/SummonDisplay';
+import JobAbilityDisplay from './JobAbilityDisplay';
 
 const JobDisplay = (props: any) => {
     const JobObject: Job = props.data
+
+    console.log(JobObject)
+
+    function ReturnAbilities() {
+        return (
+            <div className="row row-cols-3">
+                <div className="col-4">
+                    <div className="equiptitle">Name</div>
+                </div>
+                <div className="col-2">
+                    <div className="equiptitle">Chapter</div>
+                </div>
+                <div className="col-6">
+                    <div className="equiptitle">Tags</div>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <div className='abilityInternalStructure'>
@@ -45,7 +64,7 @@ const JobDisplay = (props: any) => {
                     <div className="verticalspacer"/>
                     {JobObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}     
                     <div>
-                        <div className="separator" style={{fontSize:"0.9em"}}>Chapter 3</div>
+                        <div className="separator" style={{fontSize:"1.5em"}}>Chapter 3</div>
                     </div> 
                     {JobObject.UpgradeTrait.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}  
                 </div>
@@ -77,11 +96,12 @@ const JobDisplay = (props: any) => {
             }
             <div className="verticalspacer"/> 
             <div>
-                <div className="separator">&#x27E1;</div>
+                <div className="separator">Abilities</div>
             </div> 
             <div className="verticalspacer"/>
-            <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
-
+            <div>
+                {ReturnAbilities()}
+                {JobObject.Abilities.map((item) => <JobAbilityDisplay key={"jobability"} data={item}/>)}
             </div>
         </div>
     )
