@@ -62,6 +62,18 @@ const ClassDisplay = (props: any) => {
             <div>
                 {returnStats()} 
             </div>
+            
+            <div>
+                <div>
+                    <span className="boldtextCol">{"Complexity"}</span><span>{ClassObject.Complexity}</span>
+                </div>
+                <div>
+                    <span className="boldtextCol">{"Strengths"}</span><span>{ClassObject.Strength}</span>
+                </div>
+                <div>
+                    <span className="boldtextCol">{"Weaknesses"}</span><span>{ClassObject.Weakness}</span>
+                </div>
+            </div>
 
 
             <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">

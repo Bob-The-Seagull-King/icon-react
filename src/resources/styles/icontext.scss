@@ -46,6 +46,12 @@
     font-size: 1.25em;
 }
 
+.boldtextCol {   
+    font-weight: 650;
+    font-size: 1.25em;
+    color: var(--colour_icon_main);
+}
+
 .subtletext {
     text-align: center;
     color: var(--colour_grey_secondary);
@@ -119,6 +125,7 @@
     color: var(--colour_grey_main);
     text-align: center;
   }
+
 
   .equipbody {
     width: 100%;
