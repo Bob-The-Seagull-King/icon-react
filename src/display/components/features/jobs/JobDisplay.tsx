@@ -19,7 +19,6 @@ import SummonDisplay from '../summons/SummonDisplay';
 
 const JobDisplay = (props: any) => {
     const JobObject: Job = props.data
-    const bannedAbilityTags = ["inflict", "type"]
 
     return (
         <div className='abilityInternalStructure'>
@@ -44,7 +43,11 @@ const JobDisplay = (props: any) => {
                         <div className="separator">Traits</div>
                     </div> 
                     <div className="verticalspacer"/>
-                    {JobObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}             
+                    {JobObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}     
+                    <div>
+                        <div className="separator">Chapter 3</div>
+                    </div> 
+                    {JobObject.UpgradeTrait.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}  
                 </div>
                 <div className="col">
                     <div className="verticalspacer"/> 
@@ -72,6 +75,14 @@ const JobDisplay = (props: any) => {
                 </div>
             </div>
             }
+            <div className="verticalspacer"/> 
+            <div>
+                <div className="separator">&#x27E1;</div>
+            </div> 
+            <div className="verticalspacer"/>
+            <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
+
+            </div>
         </div>
     )
 }
