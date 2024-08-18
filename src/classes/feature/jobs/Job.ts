@@ -6,12 +6,14 @@ import { AbilityFactory } from '../../../factories/features/AbilityFactory';
 import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
 import { LimitBreakFactory } from '../../../factories/features/LimitBreakFactory';
+import { AddonFactory } from '../../../factories/features/AddonFactory';
 
 interface IJob extends IIconpendiumItemData {
     class_id: string, // Class of the ability (determined by job)
     subtitle: string,
     blurb: [], // Flavour text
     playstyle: [], // Mechanical description of the item
+    addons: [],
     traits: string[],
     abilities: string[],
     limitbreak: string,
@@ -27,6 +29,7 @@ class Job extends IconpendiumItem {
     public readonly Traits;
     public readonly UpgradeTrait;
     public readonly LimitBreak;
+    public readonly Addons;
 
     /**
      * Assigns parameters and creates a series of description
@@ -44,6 +47,7 @@ class Job extends IconpendiumItem {
         this.Traits = this.TraitsFactory(data.traits)
         this.UpgradeTrait = this.TraitsFactory([data.upgrade_trait])
         this.LimitBreak = this.LimitBreakFactory(data.limitbreak)
+        this.Addons = this.AddonsFactory(data.addons)
     }
 
     private AbilitiesFactory(_data : string[]) {
@@ -62,7 +66,15 @@ class Job extends IconpendiumItem {
             array.push(TraitFactory.CreateNewTrait(_data[i], 'traits'))
         }
         return array;
-        
+    }
+
+    private AddonsFactory(_data : string[]) {
+        const array : PlayerAddon[] = []
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            array.push(AddonFactory.CreateNewAddon(_data[i]))
+        }
+        return array;
     }
 
     private LimitBreakFactory(_data : string) {
