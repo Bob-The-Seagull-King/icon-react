@@ -13,6 +13,7 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 // Components
 import GenericDisplay from '../../../components/generics/GenericDisplay';
 import TraitDisplay from '../trait/TraitDisplay';
+import LimitBreakDisplay from '../abilities/LimitBreakDisplay';
 
 const JobDisplay = (props: any) => {
     const JobObject: Job = props.data
@@ -45,6 +46,14 @@ const JobDisplay = (props: any) => {
                         </Masonry>
                     </ResponsiveMasonry>
                 </div>
+            </div>
+            <div className="verticalspacer"/> 
+            <div>
+                <div className="separator">Limit Break</div>
+            </div> 
+            <div className="verticalspacer"/>
+            <div>
+                <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={JobObject.LimitBreak.Name} d_type={"sub"} d_method={() => <LimitBreakDisplay data={JobObject.LimitBreak} />}/>
             </div>
         </div>
     )

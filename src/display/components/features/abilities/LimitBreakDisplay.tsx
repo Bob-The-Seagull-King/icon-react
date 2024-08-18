@@ -13,7 +13,7 @@ import GenericDisplay from '../../../components/generics/GenericDisplay';
 import TraitDisplay from '../trait/TraitDisplay';
 import { LimitBreak } from '../../../../classes/feature/abilities/LimitBreak';
 
-const AbilityDisplay = (props: any) => {
+const LimitBreakDisplay = (props: any) => {
     const AbilityObject: LimitBreak = props.data
     const bannedAbilityTags = ["inflict", "type"]
     const colour = props.colour;
@@ -58,4 +58,4 @@ const AbilityDisplay = (props: any) => {
     )
 }
 
-export default AbilityDisplay;
+export default LimitBreakDisplay;
