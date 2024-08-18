@@ -52,7 +52,7 @@ const AbilityDisplay = (props: any) => {
                 <div className="separator">Talents</div>
             </div> 
             <div className="verticalspacer"/>
-            <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+            <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-2">
                 {AbilityObject.Talents.map((item) => (
                 <div className="col" key="talentmap">
                     {findTalent(item)}

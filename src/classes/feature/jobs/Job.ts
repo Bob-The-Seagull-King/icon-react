@@ -1,7 +1,7 @@
 import { IIconpendiumItemData, IconpendiumItem, ItemType } from '../../IconpendiumItem'
 import { DescriptionFactory } from '../../../utility/functions';
 import { PlayerAddon } from '../addons/Addon'
-import { PlayerAbility } from '../abilities/Ability';
+import { IPlayerAbility, PlayerAbility } from '../abilities/Ability';
 import { AbilityFactory } from '../../../factories/features/AbilityFactory';
 import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
@@ -9,6 +9,7 @@ import { LimitBreakFactory } from '../../../factories/features/LimitBreakFactory
 import { AddonFactory } from '../../../factories/features/AddonFactory';
 import { PlayerSummon } from '../summons/Summon';
 import { SummonFactory } from '../../../factories/features/SummonFactory';
+import { Requester } from '../../../factories/Requester';
 
 interface IJob extends IIconpendiumItemData {
     class_id: string, // Class of the ability (determined by job)
@@ -18,7 +19,6 @@ interface IJob extends IIconpendiumItemData {
     addons: string[],
     summons: string[],
     traits: string[],
-    abilities: string[],
     limitbreak: string,
     upgrade_trait: string
 }
@@ -47,7 +47,7 @@ class Job extends IconpendiumItem {
         this.Subtitle = data.subtitle;
         this.Blurb = DescriptionFactory(data.blurb);
         this.Playstyle = DescriptionFactory(data.playstyle);
-        this.Abilities = this.AbilitiesFactory(data.abilities);
+        this.Abilities = this.AbilitiesFactory();
         this.Traits = this.TraitsFactory(data.traits)
         this.UpgradeTrait = this.TraitsFactory([data.upgrade_trait])
         this.LimitBreak = this.LimitBreakFactory(data.limitbreak)
@@ -55,11 +55,23 @@ class Job extends IconpendiumItem {
         this.Summon = this.SummonsFactory(data.addons)
     }
 
-    private AbilitiesFactory(_data : string[]) {
+    private AbilitiesFactory() {
         const array : PlayerAbility[] = []
+        
+        const _data = Requester.MakeRequest({searchtype: "complex", searchparam: {type: "abilities", request: {
+            operator: "and",
+            terms: [{
+                item        : "job_id",
+                value       : this.ID,
+                equals      : true,
+                strict      : true,
+                istag       : false
+            }],
+            subparams: []
+        }}}) as IPlayerAbility[]
         let i = 0;
         for (i = 0; i < _data.length; i++) {
-            array.push(AbilityFactory.CreateNewAbility(_data[i]))
+            array.push(AbilityFactory.CreateAbility(_data[i]))
         }
         return array;
     }

@@ -90,7 +90,7 @@ class Class extends IconpendiumItem {
                 subparams: []
             }}}) as IJob[]
         for (i = 0; i < _data.length; i++) {
-            array.push(JobFactory.CreateNewJob(_data[i].id))
+            array.push(JobFactory.CreateJob(_data[i]))
         }
         return array;
     }
