@@ -21,8 +21,6 @@ import JobAbilityDisplay from './JobAbilityDisplay';
 const JobDisplay = (props: any) => {
     const JobObject: Job = props.data
 
-    console.log(JobObject)
-
     function ReturnAbilities() {
         return (
             <div className="row row-cols-3">

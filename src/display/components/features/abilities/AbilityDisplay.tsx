@@ -52,9 +52,9 @@ const AbilityDisplay = (props: any) => {
                 <div className="separator">Talents</div>
             </div> 
             <div className="verticalspacer"/>
-            <div>
+            <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
                 {AbilityObject.Talents.map((item) => (
-                <div key="talentmap">
+                <div className="col" key="talentmap">
                     {findTalent(item)}
                     <div className="verticalspacerbig"/>
                 </div>))}
@@ -64,9 +64,9 @@ const AbilityDisplay = (props: any) => {
                 <div className="separator">Mastery</div>
             </div> 
             <div className="verticalspacer"/>
-            <div>
+            <div className="row row-cols-lg-1 row-cols-md-1 row-cols-sm-1">
                 {AbilityObject.Mastery.map((item) => (
-                <div key="talentmap">
+                <div className="col" key="talentmap">
                     {findMastery(item)}
                     <div className="verticalspacerbig"/>
                 </div>))}

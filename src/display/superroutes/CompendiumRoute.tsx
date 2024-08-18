@@ -33,6 +33,7 @@ const CompendiumRoute: React.FC<IControllerProp> = (prop) => {
             <Route path={ROUTES.COMPENDIUM_ABILITY_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.AbilitiesCollectionController}/>} />
             <Route path={ROUTES.COMPENDIUM_SUMMON_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.SummonsCollectionController}/>} />
             <Route path={ROUTES.COMPENDIUM_JOB_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.JobsCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_CLASS_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.ClassesCollectionController}/>} />
         </Routes>
         </div>
     )
