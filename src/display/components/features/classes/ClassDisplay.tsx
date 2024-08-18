@@ -82,7 +82,7 @@ const ClassDisplay = (props: any) => {
                         <div className="separator">Traits</div>
                     </div> 
                     <div className="verticalspacer"/>
-                    {ClassObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={item.Name} d_type={""} d_method={() => <TraitDisplay data={item} />}/>)}         
+                    {ClassObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}         
                 </div>
                 <div className="col">
                     <div className="verticalspacer"/> 
@@ -90,9 +90,9 @@ const ClassDisplay = (props: any) => {
                         <div className="separator">Special Mechanic</div>
                     </div> 
                     <div className="verticalspacer"/>
-                    <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={ClassObject.SpecialMechanic.Title} d_type={""} d_method={() => <GenericComponentDisplay data={ClassObject.SpecialMechanic}/>}/>
+                    <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={ClassObject.SpecialMechanic.Title} d_type={"sub"} d_method={() => <GenericComponentDisplay data={ClassObject.SpecialMechanic}/>}/>
                     <div className="verticalspacerbig"/> 
-                    <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={ClassObject.Gambit.Title} d_type={""} d_method={() => <GenericComponentDisplay data={ClassObject.Gambit}/>}/>
+                    <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={ClassObject.Gambit.Title} d_type={"sub"} d_method={() => <GenericComponentDisplay data={ClassObject.Gambit}/>}/>
                 </div>
             </div>
             <div className="verticalspacer"/> 
