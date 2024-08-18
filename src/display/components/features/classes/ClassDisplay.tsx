@@ -63,7 +63,7 @@ const ClassDisplay = (props: any) => {
                 {returnStats()} 
             </div>
             
-            <div className="verticalspacer"/>
+            <div className="verticalspacerbig"/>
             <div>
                 <div>
                     <span className="boldtextCol">{"Complexity: "}</span><span>{ClassObject.Complexity}</span>
