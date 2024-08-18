@@ -45,7 +45,7 @@ const JobDisplay = (props: any) => {
                     <div className="verticalspacer"/>
                     {JobObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}     
                     <div>
-                        <div className="separator">Chapter 3</div>
+                        <div className="separator" style={{fontSize:"0.75em"}}>Chapter 3</div>
                     </div> 
                     {JobObject.UpgradeTrait.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}  
                 </div>
