@@ -27,7 +27,7 @@ const ClassDisplay = (props: any) => {
     function returnStats() {
         return (
             <div>
-                <div className="row row-cols-lg-8 row-cols-md-8 row-cols-sx-4 row-cols-xs-2 row-cols-sm-4 justify-content-center">
+                <div className="row row-cols-lg-8 row-cols-md-8 row-cols-sm-4 justify-content-center">
                 <ItemStat title={"VIT"} value={ClassObject.Stats.vit}/>
                 <ItemStat title={"HP"} value={ClassObject.Stats.hp}/>
                 <ItemStat title={"Speed"} value={ClassObject.Stats.speed}/>
