@@ -8,6 +8,7 @@ import JobDisplay from "../components/features/jobs/JobDisplay"
 
 export interface DisplayCollectionType {
     searchId      : string,
+    width         : number,
     returnDisplay: (item: any) => JSX.Element
     returnFilterSelect: (manager : FilterManager, update : NoneToNoneFunction, close : NoneToNoneFunction) => JSX.Element
 }
@@ -19,6 +20,7 @@ type NoneToNoneFunction = () => void;
 export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     abilities: {
         searchId: 'abilities',
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <AbilityDisplay data={item} />}/>
@@ -91,6 +93,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     summons: {
         searchId: 'summons',
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Colour} d_name={item.Name} d_type={""} d_method={() => <SummonDisplay data={item} />}/>
@@ -155,6 +158,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     jobs: {
         searchId: 'jobs',
+        width: 10,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <JobDisplay data={item} />}/>
