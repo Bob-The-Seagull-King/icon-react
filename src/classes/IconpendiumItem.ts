@@ -44,6 +44,7 @@ abstract class IconpendiumItem {
         } else {
             this.Tags = {};
             this.EventTags = {};
+            this.ID = "";
         }
     }
 }

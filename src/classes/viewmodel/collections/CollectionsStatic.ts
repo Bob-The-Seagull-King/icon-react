@@ -8,6 +8,8 @@ import { IPlayerSummon } from "../../feature/summons/Summon";
 import { SummonFactory } from "../../../factories/features/SummonFactory";
 import { IJob } from "../../feature/jobs/Job";
 import { JobFactory } from "../../../factories/features/JobFactory";
+import { IClass } from "../../feature/class/Class";
+import { ClassFactory } from "../../../factories/features/ClassFactory";
 
 export interface CollectionType {
     searchId      : string,
@@ -63,6 +65,22 @@ export const CollectionDataDex : CollectionDataTable = {
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = JobFactory.CreateJob(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.Class));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    classes: {
+        searchId: 'classes', 
+        pageName: 'Classes',
+        sort: ["source", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IClass>(["source", "name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = ClassFactory.CreateClass(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.ID));
                 model.itemcollection.push(ItemNew);
             }
         }
