@@ -53,7 +53,7 @@ const JobDisplay = (props: any) => {
             </div> 
             <div className="verticalspacer"/>
             <div>
-                <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={JobObject.LimitBreak.Name} d_type={"sub"} d_method={() => <LimitBreakDisplay data={JobObject.LimitBreak} />}/>
+                <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={JobObject.LimitBreak.Name} d_type={"sub"} d_method={() => <LimitBreakDisplay data={JobObject.LimitBreak} colour={JobObject.Class}/>}/>
             </div>
         </div>
     )
