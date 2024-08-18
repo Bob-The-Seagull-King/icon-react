@@ -27,7 +27,7 @@ const ClassDisplay = (props: any) => {
     function returnStats() {
         return (
             <div>
-                <div className="row row-cols-lg-4 row-cols-md-4 row-cols-sx-4 row-cols-xs-2 row-cols-2 justify-content-center">
+                <div className="row row-cols-lg-8 row-cols-md-8 row-cols-sx-4 row-cols-xs-4 row-cols-2 justify-content-center">
                 <ItemStat title={"VIT"} value={ClassObject.Stats.vit}/>
                 <ItemStat title={"HP"} value={ClassObject.Stats.hp}/>
                 <ItemStat title={"Speed"} value={ClassObject.Stats.speed}/>
@@ -47,7 +47,7 @@ const ClassDisplay = (props: any) => {
                 <div className="separator">{ClassObject.Subtitle}</div>
             </div> 
 
-            
+
             <div className="verticalspacer"/>
             <div>
                 {returnDescription(ClassObject, ClassObject.Description)} 
@@ -71,7 +71,7 @@ const ClassDisplay = (props: any) => {
                         <div className="separator">Traits</div>
                     </div> 
                     <div className="verticalspacer"/>
-                    {ClassObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}         
+                    {ClassObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={item.Name} d_type={""} d_method={() => <TraitDisplay data={item} />}/>)}         
                 </div>
                 <div className="col">
                     <div className="verticalspacer"/> 
@@ -80,6 +80,7 @@ const ClassDisplay = (props: any) => {
                     </div> 
                     <div className="verticalspacer"/>
                     <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={ClassObject.SpecialMechanic.Title} d_type={""} d_method={() => <GenericComponentDisplay data={ClassObject.SpecialMechanic}/>}/>
+                    <div className="verticalspacer"/> 
                     <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={ClassObject.Gambit.Title} d_type={""} d_method={() => <GenericComponentDisplay data={ClassObject.Gambit}/>}/>
                 </div>
             </div>
