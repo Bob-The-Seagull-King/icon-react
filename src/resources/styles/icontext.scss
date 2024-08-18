@@ -106,6 +106,19 @@
   .separator:not(:empty)::after {
     margin-left: .25em;
   }
+  
+  .statbody {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+  }  
+
+  .stattitle {
+    width: 100%;
+    font-weight: 400;
+    color: var(--colour_grey_main);
+    text-align: center;
+  }
 
   .equipbody {
     width: 100%;

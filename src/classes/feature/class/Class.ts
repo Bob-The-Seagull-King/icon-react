@@ -32,16 +32,16 @@ interface IStats {
 }
 
 class Class extends IconpendiumItem {
-    public readonly Subtitle;
-    public readonly Description;
-    public readonly Traits;
+    public readonly Subtitle; //
+    public readonly Description; //
+    public readonly Traits; //
     public readonly Jobs;
-    public readonly SpecialMechanic;
-    public readonly Gambit;
+    public readonly SpecialMechanic; //
+    public readonly Gambit; //
     public readonly Complexity;
     public readonly Strength;
     public readonly Weakness;
-    public readonly Stats;
+    public readonly Stats; //
 
     /**
      * Assigns parameters and creates a series of description
