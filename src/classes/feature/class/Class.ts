@@ -38,9 +38,9 @@ class Class extends IconpendiumItem {
     public readonly Jobs;
     public readonly SpecialMechanic; //
     public readonly Gambit; //
-    public readonly Complexity;
-    public readonly Strength;
-    public readonly Weakness;
+    public readonly Complexity; //
+    public readonly Strength; //
+    public readonly Weakness; //
     public readonly Stats; //
 
     /**

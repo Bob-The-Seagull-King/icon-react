@@ -63,15 +63,16 @@ const ClassDisplay = (props: any) => {
                 {returnStats()} 
             </div>
             
+            <div className="verticalspacer"/>
             <div>
                 <div>
-                    <span className="boldtextCol">{"Complexity"}</span><span>{ClassObject.Complexity}</span>
+                    <span className="boldtextCol">{"Complexity: "}</span><span>{ClassObject.Complexity}</span>
                 </div>
                 <div>
-                    <span className="boldtextCol">{"Strengths"}</span><span>{ClassObject.Strength}</span>
+                    <span className="boldtextCol">{"Strengths: "}</span><span>{ClassObject.Strength}</span>
                 </div>
                 <div>
-                    <span className="boldtextCol">{"Weaknesses"}</span><span>{ClassObject.Weakness}</span>
+                    <span className="boldtextCol">{"Weaknesses: "}</span><span>{ClassObject.Weakness}</span>
                 </div>
             </div>
 
