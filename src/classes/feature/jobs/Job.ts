@@ -1,14 +1,19 @@
 import { IIconpendiumItemData, IconpendiumItem, ItemType } from '../../IconpendiumItem'
 import { DescriptionFactory } from '../../../utility/functions';
 import { PlayerAddon } from '../addons/Addon'
+import { PlayerAbility } from '../abilities/Ability';
+import { AbilityFactory } from '../../../factories/features/AbilityFactory';
+import { Trait } from '../trait/Trait';
+import { TraitFactory } from '../../../factories/features/TraitFactory';
+import { LimitBreakFactory } from '../../../factories/features/LimitBreakFactory';
 
 interface IJob extends IIconpendiumItemData {
     class_id: string, // Class of the ability (determined by job)
     subtitle: string,
     blurb: [], // Flavour text
     playstyle: [], // Mechanical description of the item
-    traits: [],
-    abilities: [],
+    traits: string[],
+    abilities: string[],
     limitbreak: string,
     upgrade_trait: string
 }
@@ -18,6 +23,10 @@ class Job extends IconpendiumItem {
     public readonly Subtitle;
     public readonly Blurb;
     public readonly Playstyle
+    public readonly Abilities;
+    public readonly Traits;
+    public readonly UpgradeTrait;
+    public readonly LimitBreak;
 
     /**
      * Assigns parameters and creates a series of description
@@ -31,6 +40,33 @@ class Job extends IconpendiumItem {
         this.Subtitle = data.subtitle;
         this.Blurb = DescriptionFactory(data.blurb);
         this.Playstyle = DescriptionFactory(data.playstyle);
+        this.Abilities = this.AbilitiesFactory(data.abilities);
+        this.Traits = this.TraitsFactory(data.traits)
+        this.UpgradeTrait = this.TraitsFactory([data.upgrade_trait])
+        this.LimitBreak = this.LimitBreakFactory(data.limitbreak)
+    }
+
+    private AbilitiesFactory(_data : string[]) {
+        const array : PlayerAbility[] = []
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            array.push(AbilityFactory.CreateNewAbility(_data[i]))
+        }
+        return array;
+    }
+
+    private TraitsFactory(_data : string[]) {
+        const array : Trait[] = []
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            array.push(TraitFactory.CreateNewTrait(_data[i], 'traits'))
+        }
+        return array;
+        
+    }
+
+    private LimitBreakFactory(_data : string) {
+        return LimitBreakFactory.CreateNewLimitBreak(_data);
     }
 
 }

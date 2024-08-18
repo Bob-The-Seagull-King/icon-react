@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFistRaised, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -64,6 +64,14 @@ const HomeRoute: React.FC = () => {
                                 <FontAwesomeIcon icon={faScrewdriverWrench} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     SUMMONS
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/jobs/")}>
+                                <FontAwesomeIcon icon={faBriefcase} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    JOBS
                                 </h1>
                             </div>
                         </div>
