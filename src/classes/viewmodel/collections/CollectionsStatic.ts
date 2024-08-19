@@ -10,6 +10,8 @@ import { IJob } from "../../feature/jobs/Job";
 import { JobFactory } from "../../../factories/features/JobFactory";
 import { IClass } from "../../feature/class/Class";
 import { ClassFactory } from "../../../factories/features/ClassFactory";
+import { IRelic } from "../../feature/relics/Relic";
+import { RelicFactory } from "../../../factories/features/RelicFactory";
 
 export interface CollectionType {
     searchId      : string,
@@ -81,6 +83,22 @@ export const CollectionDataDex : CollectionDataTable = {
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = ClassFactory.CreateClass(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.ID));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    relics: {
+        searchId: 'relics', 
+        pageName: 'Relics',
+        sort: ["source", "colour", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IRelic>(["source", "colour", "name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = RelicFactory.CreateRelic(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.Colour));
                 model.itemcollection.push(ItemNew);
             }
         }
