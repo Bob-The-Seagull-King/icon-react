@@ -17,7 +17,7 @@ const RelicDisplay = (props: any) => {
 
         if (_item.Invoke === true) {
             if (_item.InvokeType) {
-                title += "(Invoke : " + makestringpresentable( _item.InvokeType)
+                title += " (Invoke : " + makestringpresentable( _item.InvokeType)
                 if (_item.InvokeVal) {
                     title += " " + _item.InvokeVal
                 }
@@ -26,7 +26,7 @@ const RelicDisplay = (props: any) => {
         }
 
         return (
-            <span>{title + ": "} {returnDescription(_item, _item.Description)}</span>
+            <div style={{display:"flex"}}><span className="boldtextColNormal" style={{marginRight:"0.5em"}}>{title + ": "}</span> {returnDescription(_item, _item.Description)}</div>
         )
     }
 
@@ -42,13 +42,13 @@ const RelicDisplay = (props: any) => {
             <div className="verticalspacer"/>
 
             <div>
-                {returnRelicAction("Tier I", RelicObject.TierI)}
+                {returnRelicAction("I", RelicObject.TierI)}
             </div>
             <div>
-                {returnRelicAction("Tier II", RelicObject.TierII)}
+                {returnRelicAction("II", RelicObject.TierII)}
             </div>
             <div>
-                {returnRelicAction("Tier III", RelicObject.TierIII)}
+                {returnRelicAction("III", RelicObject.TierIII)}
             </div>
 
             <div className="verticalspacer"/> 
@@ -56,14 +56,15 @@ const RelicDisplay = (props: any) => {
                 <div className="separator">Aspect</div>
             </div> 
             <div className="verticalspacer"/>
-
-            <div>
-                {returnRelicAction("Aspected", RelicObject.Aspected)}
-            </div>
             
             <div>
                 {returnDescription(RelicObject, RelicObject.Quest)}
             </div> 
+            <div className="verticalspacerbig"/>
+
+            <div>
+                {returnRelicAction("Aspected", RelicObject.Aspected)}
+            </div>
             
         </div>
     )
