@@ -82,7 +82,7 @@ const ClassDisplay = (props: any) => {
                         <div className="separator">Traits</div>
                     </div> 
                     <div className="verticalspacer"/>
-                    {ClassObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}         
+                    {ClassObject.Traits.map((item) => <div key={"trait"+item.ID}><GenericDisplay key="traitloop" d_colour={ClassObject.ID} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/><div className="verticalspacerbig"/></div>)}         
                 </div>
                 <div className="col">
                     <div className="verticalspacer"/> 

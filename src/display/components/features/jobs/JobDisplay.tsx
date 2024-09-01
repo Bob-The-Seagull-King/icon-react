@@ -60,7 +60,7 @@ const JobDisplay = (props: any) => {
                         <div className="separator">Traits</div>
                     </div> 
                     <div className="verticalspacer"/>
-                    {JobObject.Traits.map((item) => <GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/>)}     
+                    {JobObject.Traits.map((item) => <div key={"trait"+item.ID}><GenericDisplay key="traitloop" d_colour={JobObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/><div className="verticalspacerbig"/></div>)}     
                     <div>
                         <div className="separator" style={{fontSize:"1.5em"}}>Chapter 3</div>
                     </div> 
