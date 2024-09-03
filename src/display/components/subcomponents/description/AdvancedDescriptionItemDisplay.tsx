@@ -13,12 +13,16 @@ import { SummonFactory } from '../../../../factories/features/SummonFactory'
 import { PlayerSummon } from '../../../../classes/feature/summons/Summon'
 import { PlayerTable } from '../../../../classes/feature/table/tablebody'
 import { TableFactory } from '../../../../factories/features/TableFactory'
+import { Trait } from '../../../../classes/feature/trait/Trait'
+import { TraitFactory } from '../../../../factories/features/TraitFactory'
 
 // Components
 import GenericDisplay from '../../../../display/components/generics/GenericDisplay'
 import AddonDisplay from '../../../../display/components/features/addons/AddonDisplay'
 import TableDisplay from '../../../../display/components/features/table/TableDisplay'
 import SummonDisplay from '../../../../display/components/features/summons/SummonDisplay'
+import GenericHover from '../../../../display/components/generics/GenericHover'
+import TraitDisplay from '../../../../display/components/features/trait/TraitDisplay'
 
 const AdvancedDescriptionItemDisplay = (props: any) => {
     const description: AdvancedDescription = props.data
@@ -106,6 +110,32 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                         </span>
                         <span>{" "}</span>
                     </div>
+                )
+            }
+            case "textsummon": {
+                return (
+                    <span>
+                        <span className='addonbox'>{findTextSummon(item.Content?.toString() || "")}</span>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </span>
+                )
+            }
+            case "texttrait": {
+                return (
+                    <span>
+                        <span className='addonbox'>{findTextTrait(item.Content?.toString() || "")}</span>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </span>
                 )
             }
             case "table": {
@@ -207,6 +237,36 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
 
         return (
             <GenericDisplay d_colour={parentItem.Class} d_name={summon.Name} d_type={"sub"} d_method={() => <SummonDisplay data={summon} />}/>
+        )
+    }
+
+    /**
+     * returns a component showing a Summon display when hovered over
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findTextSummon (id: string) {
+        let summon: PlayerSummon | null = null;
+
+        summon = SummonFactory.CreateNewSummon(id)
+
+        return (
+            <GenericHover d_colour={'icon'} d_name={summon.Name} titlename={summon.Name} d_type={""} d_method={() => <SummonDisplay data={summon} />}/>
+        )
+    }
+
+    /**
+     * returns a component showing a Summon display when hovered over
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findTextTrait (id: string) {
+        let trait: Trait | null = null;
+
+        trait = TraitFactory.CreateNewTrait(id, "traits")
+
+        return (
+            <GenericHover d_colour={'icon'} d_name={trait.Name} titlename={trait.Name} d_type={""} d_method={() => <TraitDisplay data={trait} />}/>
         )
     }
 
