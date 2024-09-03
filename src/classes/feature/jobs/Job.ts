@@ -52,7 +52,7 @@ class Job extends IconpendiumItem {
         this.UpgradeTrait = this.TraitsFactory([data.upgrade_trait])
         this.LimitBreak = this.LimitBreakFactory(data.limitbreak)
         this.Addons = this.AddonsFactory(data.addons)
-        this.Summon = this.SummonsFactory(data.addons)
+        this.Summon = this.SummonsFactory(data.summons)
     }
 
     private AbilitiesFactory() {
