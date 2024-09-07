@@ -20,7 +20,7 @@ const LimitBreakDisplay = (props: any) => {
 
     function findMastery(id: string) {
         let trait: Trait | null = null;
-        trait = TraitFactory.CreateNewTrait(id, 'masteries')
+        trait = TraitFactory.CreateNewTrait(id, 'masteries', colour)
 
         return ( <GenericDisplay d_colour={colour} d_name={trait.Name} d_type={"sub"} d_method={() => <TraitDisplay data={trait} />}/> )
     }

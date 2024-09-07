@@ -8,7 +8,7 @@ import { Trait } from '../../../../classes/feature/trait/Trait';
 
 const TraitDisplay = (props: any) => {
     const TraitObject: Trait = props.data
-
+    console.log(TraitObject);
     return (
         <div className='abilityInternalStructure'>
             <div>

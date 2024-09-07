@@ -80,7 +80,7 @@ class Job extends IconpendiumItem {
         const array : Trait[] = []
         let i = 0;
         for (i = 0; i < _data.length; i++) {
-            array.push(TraitFactory.CreateNewTrait(_data[i], 'traits'))
+            array.push(TraitFactory.CreateNewTrait(_data[i], 'traits', this.Class))
         }
         return array;
     }

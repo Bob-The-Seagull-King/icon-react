@@ -18,14 +18,14 @@ const AbilityDisplay = (props: any) => {
 
     function findMastery(id: string) {
         let trait: Trait | null = null;
-        trait = TraitFactory.CreateNewTrait(id, 'masteries')
+        trait = TraitFactory.CreateNewTrait(id, 'masteries', AbilityObject.Class)
 
         return ( <GenericDisplay d_colour={AbilityObject.Class} d_name={trait.Name} d_type={"sub"} d_method={() => <TraitDisplay data={trait} />}/> )
     }
 
     function findTalent(id: string) {
         let trait: Trait | null = null;
-        trait = TraitFactory.CreateNewTrait(id, 'talents')
+        trait = TraitFactory.CreateNewTrait(id, 'talents', AbilityObject.Class)
 
         return ( <GenericDisplay d_colour={AbilityObject.Class} d_name={trait.Name} d_type={"sub"} d_method={() => <TraitDisplay data={trait} />}/> )
     }

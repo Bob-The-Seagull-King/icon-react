@@ -202,7 +202,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
      */
     function findAddon(id: string) {
         let addon: PlayerAddon | null = null;
-
+        console.log(parentItem);
         addon = AddonFactory.CreateNewAddon(id)
 
         return (
@@ -263,7 +263,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
     function findTextTrait (id: string) {
         let trait: Trait | null = null;
 
-        trait = TraitFactory.CreateNewTrait(id, "traits")
+        trait = TraitFactory.CreateNewTrait(id, "traits", parentItem.Class)
 
         return (
             <GenericHover d_colour={'icon'} d_name={trait.Name} titlename={trait.Name} d_type={""} d_method={() => <TraitDisplay data={trait} />}/>

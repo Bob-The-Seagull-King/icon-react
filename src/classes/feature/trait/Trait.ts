@@ -10,15 +10,17 @@ interface ITrait extends IIconpendiumItemData {
 
 class Trait extends IconpendiumItem {
     public readonly Description;
+    public readonly Class;
 
     /**
      * Assigns parameters and creates a series of description
      * objects with DescriptionFactory
      * @param data Object data in IPlayerAddon format
      */
-    public constructor(data: ITrait)
+    public constructor(data: ITrait, _col : string)
     {
         super(data)
+        this.Class = _col;
         this.Description = DescriptionFactory(data.description);
     }
 }
