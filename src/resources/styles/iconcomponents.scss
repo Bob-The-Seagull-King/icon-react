@@ -362,10 +362,10 @@
 // Bootstrap overrides
 /* Apply column striping */
 .table td:nth-child(odd), .table th:nth-child(odd) {
-    background-color: var(--colour_offerwhite);
+    background-color: var(--colour_tablea);
   }
   
   /* You can also style even columns if desired */
   .table td:nth-child(even), .table th:nth-child(even) {
-    background-color: var(--colour_offwhite); /* Slightly different shade */
+    background-color: var(--colour_tableb); /* Slightly different shade */
   }
