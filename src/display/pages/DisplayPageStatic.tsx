@@ -409,18 +409,18 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
                                 ))}
                             </div>
                         </div>
-                        <div className="separator"><h3>SOURCES</h3></div>
-                        <div className="row">
-                            <div className='filterbox centerPosition'>
-                                {manager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
-                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
-                                ))}
-                            </div>
-                        </div>
                         <div className="separator"><h3>CATEGORY</h3></div>
                         <div className="row">
                             <div className='filterbox centerPosition'>
                                 {manager.ReturnMiscFilters().filter((value) => (value.Group == "category")).map((item) => (
+                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                ))}
+                            </div>
+                        </div>
+                        <div className="separator"><h3>USES</h3></div>
+                        <div className="row">
+                            <div className='filterbox centerPosition'>
+                                {manager.ReturnMiscFilters().filter((value) => (value.Group == "uses")).map((item) => (
                                     <FilterMiscItem key={"miscsource"+item.Name} data={item} />
                                 ))}
                             </div>
