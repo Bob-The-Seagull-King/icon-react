@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -88,6 +88,14 @@ const HomeRoute: React.FC = () => {
                                 <FontAwesomeIcon icon={faAnkh} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     RELICS
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/glossary/")}>
+                                <FontAwesomeIcon icon={faList} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    GLOSSARY
                                 </h1>
                             </div>
                         </div>

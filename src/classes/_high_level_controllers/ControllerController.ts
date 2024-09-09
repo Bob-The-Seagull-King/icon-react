@@ -7,6 +7,7 @@ class ControllerController {
     JobsCollectionController;
     ClassesCollectionController;
     RelicsCollectionController;
+    GlossaryCollectionController;
 
     constructor () {
         this.AbilitiesCollectionController = new CollectionsListPage('abilities')
@@ -14,6 +15,7 @@ class ControllerController {
         this.JobsCollectionController = new CollectionsListPage('jobs')
         this.ClassesCollectionController = new CollectionsListPage('classes')
         this.RelicsCollectionController = new CollectionsListPage('relics')
+        this.GlossaryCollectionController = new CollectionsListPage('glossary')
     }
 }
 

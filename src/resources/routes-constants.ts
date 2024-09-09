@@ -10,6 +10,7 @@ export const ROUTES = {
     COMPENDIUM_CLASS_ROUTE: '/classes/*',
     COMPENDIUM_RELIC_ROUTE: '/relics/*',
     COMPENDIUM_SUMMON_ROUTE: '/summons/*',
+    COMPENDIUM_GLOSSARY_ROUTE: '/glossary/*',
     TOOLS_CONTENT_UPLOAD_ROUTE: '/content/*'
 
 }

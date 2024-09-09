@@ -12,6 +12,7 @@ import { IClass } from "../../feature/class/Class";
 import { ClassFactory } from "../../../factories/features/ClassFactory";
 import { IRelic } from "../../feature/relics/Relic";
 import { RelicFactory } from "../../../factories/features/RelicFactory";
+import { GlossaryRule } from "../../feature/glossary/Glossary";
 
 export interface CollectionType {
     searchId      : string,
@@ -99,6 +100,22 @@ export const CollectionDataDex : CollectionDataTable = {
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = RelicFactory.CreateRelic(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.Colour));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    glossary: {
+        searchId: 'glossary', 
+        pageName: 'Glossary',
+        sort: ["source", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IRelic>(["source", "name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = new GlossaryRule(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
                 model.itemcollection.push(ItemNew);
             }
         }
