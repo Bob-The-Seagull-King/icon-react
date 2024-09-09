@@ -23,6 +23,7 @@ import TableDisplay from '../../../../display/components/features/table/TableDis
 import SummonDisplay from '../../../../display/components/features/summons/SummonDisplay'
 import GenericHover from '../../../../display/components/generics/GenericHover'
 import TraitDisplay from '../../../../display/components/features/trait/TraitDisplay'
+import EmptyDisplay from '../../../../display/components/generics/EmptyDisplay'
 
 const AdvancedDescriptionItemDisplay = (props: any) => {
     const description: AdvancedDescription = props.data
@@ -221,7 +222,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
         table = TableFactory.CreateNewTable(id)
 
         return (
-            <GenericDisplay d_colour={parentItem.Class} d_name={table.Name} d_type={"sub"} d_method={() => <TableDisplay data={table} />}/>
+            <EmptyDisplay d_colour={parentItem.Class} d_name={table.Name} d_type={"sub"} d_method={() => <TableDisplay d_colour={parentItem.Class} d_type={"sub"} data={table} />}/>
         )
     }
 

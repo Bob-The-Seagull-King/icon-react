@@ -44,11 +44,25 @@
     }
 }
 
+.emptyStructure {
+    border-radius: 0em 0em 0em 0em;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    width: 100%;
+    text-align: justify;
+    background-color: var(--colour_offwhite);
+
+    &:hover {
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
+    }
+}
+
 .abilityInternalStructure {
     padding: 1em;
     font-size: 0.85em;
-    color: var(--colour_basic_text);
+    color: var(--colour_basic_text) !important;
 }
+
+
 
 .emptyboxStructure {
     width: 100%;
@@ -344,3 +358,14 @@
     align-items: center;
     height: 100%;
 }
+
+// Bootstrap overrides
+/* Apply column striping */
+.table td:nth-child(odd), .table th:nth-child(odd) {
+    background-color: var(--colour_offerwhite);
+  }
+  
+  /* You can also style even columns if desired */
+  .table td:nth-child(even), .table th:nth-child(even) {
+    background-color: var(--colour_offwhite); /* Slightly different shade */
+  }

@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -42,7 +42,7 @@ const HomeRoute: React.FC = () => {
         <div className="backgroundBaseColour" data-theme={theme}>
         <div>
             <div className="row justify-content-center m-0 p-0">
-                <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12 col-12">
+                <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-12">
                     <div className="row">
                         <img src={logo} style={{maxWidth:"100%"}} />
                     </div>
@@ -50,7 +50,7 @@ const HomeRoute: React.FC = () => {
                     <div className="row">
                         <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Tactical Play</h3></div>
                     </div>
-                    <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sx-1 row-cols-xs-1 row-cols-1">
+                    <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                         <div className="col" style={{padding:"0.5em"}}>
                             <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/abilities/")}>
                                 <FontAwesomeIcon icon={faFistRaised} className="pageaccestext"/>
@@ -95,10 +95,28 @@ const HomeRoute: React.FC = () => {
                             <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/trophies/")}>
                                 <FontAwesomeIcon icon={faTrophy} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
-                                    TROPHY
+                                    TROPHIES
                                 </h1>
                             </div>
                         </div>
+                    </div>
+                    <div className="row">
+                        <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Narrative Play</h3></div>
+                    </div>
+                    <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sx-1 row-cols-xs-1 row-cols-1">
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/powers/")}>
+                                <FontAwesomeIcon icon={faMagic} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    POWERS
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>General</h3></div>
+                    </div>
+                    <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sx-1 row-cols-xs-1 row-cols-1">                        
                         <div className="col" style={{padding:"0.5em"}}>
                             <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/glossary/")}>
                                 <FontAwesomeIcon icon={faList} className="pageaccestext"/>

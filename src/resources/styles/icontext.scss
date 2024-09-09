@@ -23,6 +23,22 @@
     font-size: 2.5em;
 }
 
+.table {
+  --bs-table-bg: transparent; /* or --bs-table-bg: transparent; */
+}
+
+.tableText {
+  color: var(--colour_basic_text) !important;    
+}
+
+.tableTitle {
+  font-size: 150%;
+  font-weight: 800;
+  text-align: center;
+  text-justify: center;
+  padding: 0em;
+}
+
 .titlebody {
   padding-left: 0.25em;
   padding-right: 0.25em;

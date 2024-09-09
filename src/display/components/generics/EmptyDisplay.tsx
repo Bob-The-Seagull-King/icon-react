@@ -5,18 +5,17 @@ import React from 'react'
 // Classes
 import { getColour } from '../../../utility/functions';
 
-const GenericDisplay = (props: any) => {
+const EmptyDisplay = (props: any) => {
     const DisplayColour : string = props.d_colour;
     const DisplayName : string = props.d_name;
     const DisplayType : string = props.d_type;
     const displayMethod = props.d_method
 
     return (
-        <div className={'abilityStructure borderstyler ' + DisplayType + 'border'+getColour(DisplayColour)}>
-            <h1 className={'titleShape titlebody ' + DisplayType + 'background'+getColour(DisplayColour)}>{DisplayName || ""}</h1>
+        <div className={'emptyStructure borderstyler ' + DisplayType + 'border'+getColour(DisplayColour)}>
             {displayMethod()}
         </div>
     )
 }
 
-export default GenericDisplay;
+export default EmptyDisplay;

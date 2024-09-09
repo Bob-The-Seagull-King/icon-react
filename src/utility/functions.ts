@@ -21,11 +21,18 @@ export function capitalizeString(stringVal: string) {
  *          individual words capitalized.
  */
 export function makestringpresentable(stringVal: string) {
+    const headers = ['cl', 'jb', 'bd']
+    if (stringVal === null || stringVal === "") {
+        return 'N/A';
+    }
     const pairedString = stringVal.toString().split("_"); 
     let stringreturned = "";
     
     let i = 0 
     for (i = 0; i < pairedString.length; i++) {
+        if (headers.includes(pairedString[i])) {
+            continue;
+        }
         const tempstring = capitalizeString(pairedString[i])
         stringreturned = stringreturned + ((i == 0)?  "" : " ") + tempstring
     }

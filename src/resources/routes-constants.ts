@@ -12,6 +12,7 @@ export const ROUTES = {
     COMPENDIUM_SUMMON_ROUTE: '/summons/*',
     COMPENDIUM_GLOSSARY_ROUTE: '/glossary/*',
     COMPENDIUM_TROPHY_ROUTE: '/trophies/*',
+    COMPENDIUM_POWER_ROUTE: '/powers/*',
     TOOLS_CONTENT_UPLOAD_ROUTE: '/content/*'
 
 }
