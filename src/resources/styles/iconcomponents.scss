@@ -363,9 +363,18 @@
 /* Apply column striping */
 .table td:nth-child(odd), .table th:nth-child(odd) {
     background-color: var(--colour_offwhite);
-  }
-  
-  /* You can also style even columns if desired */
-  .table td:nth-child(even), .table th:nth-child(even) {
-    background-color: var(--colour_tablea); /* Slightly different shade */
-  }
+    }
+      
+    /* You can also style even columns if desired */
+    .table td:nth-child(even), .table th:nth-child(even) {
+    background-color: var(--colour_tableb); /* Slightly different shade */
+    }
+
+    .table tr:nth-child(odd) {
+        background-color: var(--colour_offwhite);
+        }
+          
+        /* You can also style even columns if desired */
+        .table tr:nth-child(even) {
+        background-color: var(--colour_tableb); /* Slightly different shade */
+        }

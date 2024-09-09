@@ -17,7 +17,7 @@ const TableDisplay = (props: any) => {
     const BackgroundClass = DisplayType+"background"+getColour(DisplayColour)
 
     return (
-            <Table striped={true} style={{width:"100%",margin:"0em"}} className={BackgroundClass}>                
+            <Table style={{width:"100%",margin:"0em"}} className={BackgroundClass}>                
                 <thead className={"tableTitle " + BackgroundClass} >
                     <tr className={BackgroundClass}>
                         {TableObject.ColNames.map((item) => 
