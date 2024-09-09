@@ -39,6 +39,10 @@ export function makestringpresentable(stringVal: string) {
  */
 export function getColour(name: string){
 
+    if (name === undefined) {
+        return 'icon'
+    }
+
     switch (name.toLowerCase()) {
         case "cl_vagabond": {
             return "yellow"

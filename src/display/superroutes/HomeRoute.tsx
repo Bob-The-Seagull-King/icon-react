@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -48,7 +48,7 @@ const HomeRoute: React.FC = () => {
                     </div>
                     <div className='row'><div className='col'><br/></div></div>
                     <div className="row">
-                        <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Compendium</h3></div>
+                        <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Tactical Play</h3></div>
                     </div>
                     <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sx-1 row-cols-xs-1 row-cols-1">
                         <div className="col" style={{padding:"0.5em"}}>
@@ -88,6 +88,14 @@ const HomeRoute: React.FC = () => {
                                 <FontAwesomeIcon icon={faAnkh} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     RELICS
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/trophies/")}>
+                                <FontAwesomeIcon icon={faTrophy} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    TROPHY
                                 </h1>
                             </div>
                         </div>

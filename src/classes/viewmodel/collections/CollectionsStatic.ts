@@ -12,7 +12,9 @@ import { IClass } from "../../feature/class/Class";
 import { ClassFactory } from "../../../factories/features/ClassFactory";
 import { IRelic } from "../../feature/relics/Relic";
 import { RelicFactory } from "../../../factories/features/RelicFactory";
-import { GlossaryRule } from "../../feature/glossary/Glossary";
+import { GlossaryRule, IGlossaryRule } from "../../feature/glossary/Glossary";
+import { ITrophy } from "../../feature/trophy/Trophy";
+import { TrophyFactory } from "../../../factories/features/TrophyFactory";
 
 export interface CollectionType {
     searchId      : string,
@@ -112,9 +114,25 @@ export const CollectionDataDex : CollectionDataTable = {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IRelic>(["source", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IGlossaryRule>(["source", "name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = new GlossaryRule(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    trophies: {
+        searchId: 'trophies', 
+        pageName: 'trophies',
+        sort: ["source", "category", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<ITrophy>(["source", "category", "name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = TrophyFactory.CreateTrophy(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
                 model.itemcollection.push(ItemNew);
             }
