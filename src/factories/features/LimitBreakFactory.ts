@@ -10,14 +10,14 @@ class LimitBreakFactory {
      * @param _ability The data in IPlayerAbility format describing the ability
      * @returns A newly created ability
      */
-    static CreateLimitBreak(_ability: ILimitBreak) {
-        const ability = new LimitBreak(_ability)
+    static CreateLimitBreak(_ability: ILimitBreak, _col : string) {
+        const ability = new LimitBreak(_ability, _col)
         return ability;
     }
 
-    static CreateNewLimitBreak(_val : string) {
+    static CreateNewLimitBreak(_val : string, _col : string) {
         const addondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "limitbreaks", id: _val}}) as ILimitBreak
-        const addonNew = LimitBreakFactory.CreateLimitBreak(addondata)
+        const addonNew = LimitBreakFactory.CreateLimitBreak(addondata, _col)
         return addonNew;
     }   
 

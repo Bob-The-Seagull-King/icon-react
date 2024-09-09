@@ -104,7 +104,7 @@ class Job extends IconpendiumItem {
     }
 
     private LimitBreakFactory(_data : string) {
-        return LimitBreakFactory.CreateNewLimitBreak(_data);
+        return LimitBreakFactory.CreateNewLimitBreak(_data, this.Class);
     }
 
 }

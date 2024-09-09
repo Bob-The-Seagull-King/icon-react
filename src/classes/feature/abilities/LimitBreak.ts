@@ -12,15 +12,17 @@ class LimitBreak extends IconpendiumItem {
     public readonly Blurb;
     public readonly Description;
     public readonly Ultimate;
+    public readonly Class;
 
     /**
      * Assigns parameters and creates a series of description
      * objects with DescriptionFactory
      * @param data Object data in IPlayerAbility format
      */
-    public constructor(data: ILimitBreak)
+    public constructor(data: ILimitBreak, _col : string)
     {
         super(data)
+        this.Class = _col;
         this.ItemType = ItemType.Ability;
         this.Blurb = DescriptionFactory(data.blurb);
         this.Description = DescriptionFactory(data.description);

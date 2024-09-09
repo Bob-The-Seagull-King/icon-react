@@ -54,6 +54,7 @@ const JobDisplay = (props: any) => {
                 </div>
             </div>
             <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+                
                 <div className="col">
                     <div className="verticalspacer"/> 
                     <div>
