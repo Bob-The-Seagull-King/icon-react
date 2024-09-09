@@ -203,7 +203,6 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
      */
     function findAddon(id: string) {
         let addon: PlayerAddon | null = null;
-        console.log(parentItem);
         addon = AddonFactory.CreateNewAddon(id)
 
         return (

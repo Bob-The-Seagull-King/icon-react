@@ -71,7 +71,7 @@ function ArrayItemIntoHtml(content: string, delim: any) {
         let i = 0;
         for (i = 0; i < delim.length; i ++) {
             if (content == delim[i].val) {
-                const GlossaryData: IGlossaryRule = Requester.MakeRequest( {searchtype: "id", searchparam: {type: "glossary", id: delim[i].id}} ) as IGlossaryRule
+                const GlossaryData: IGlossaryRule = Requester.MakeRequest( {searchtype: "id", searchparam: {type: "glossary", id: delim[i].id}} ) as IGlossaryRule                
                 const GlossaryObject = new GlossaryRule(GlossaryData)
                 return (<GenericHover d_colour={'icon'} d_name={content} titlename={GlossaryObject.Name} d_type={""} d_method={() => <GlossaryDisplay data={GlossaryObject} />}/>)
             }
