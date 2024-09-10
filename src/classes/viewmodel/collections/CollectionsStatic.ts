@@ -28,6 +28,8 @@ import { CultureFactory } from "../../../factories/features/CultureFactory";
 import { ICulture } from "../../feature/character/Culture";
 import { ICampItem } from "../../feature/camp/CampItem";
 import { CampItemFactory } from "../../../factories/features/CampItemFactory";
+import { IRuleset } from "../../feature/rule/Ruleset";
+import { RulesetFactory } from "../../../factories/features/RulesetFactory";
 
 export interface CollectionType {
     searchId      : string,
@@ -242,6 +244,22 @@ export const CollectionDataDex : CollectionDataTable = {
             model.dataresults.sort(byPropertiesOf<ICampItem>(["source", "name", "id", "purchase"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = CampItemFactory.CreateCampItem(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    rules: {
+        searchId: 'rules', 
+        pageName: 'Rules',
+        sort: ["source", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IRuleset>(["source", "name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew =  RulesetFactory.CreateRuleset(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
                 model.itemcollection.push(ItemNew);
             }

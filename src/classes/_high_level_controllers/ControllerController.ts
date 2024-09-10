@@ -15,6 +15,7 @@ class ControllerController {
     KinCollectionController;
     CultureCollectionController;
     CampItemCollectionController;
+    RulesCollectionController;
 
     constructor () {
         this.AbilitiesCollectionController = new CollectionsListPage('abilities')
@@ -30,6 +31,7 @@ class ControllerController {
         this.KinCollectionController = new CollectionsListPage('kins')
         this.CultureCollectionController = new CollectionsListPage('cultures')
         this.CampItemCollectionController = new CollectionsListPage('campitems')
+        this.RulesCollectionController = new CollectionsListPage('rules')
     }
 }
 

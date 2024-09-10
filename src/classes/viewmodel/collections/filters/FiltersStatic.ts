@@ -496,5 +496,35 @@ export const FitlerDataDex : FilterDataTable = {
         findText() {
             return [new FilterText({group: "name", val: "", isstrict: false})]
         }
+    },
+    rules: {
+        searchId: 'rules',
+        findTags() {
+            const tempTags: FilterTag[] = []
+    
+            return tempTags;
+        },
+        findMisc() {
+            const tempMisc: FilterItem[] = []
+            const keytypes = ["source"]
+            keytypes.sort();
+    
+            let i = 0;
+            for (i = 0; i < keytypes.length; i ++) {
+                const foundVals = Requester.MakeRequest({ searchtype: 'keyvalues', searchparam: { type: 'rules' , id: keytypes[i]} }).sort();
+                
+                let j = 0;
+                for (j = 0; j < foundVals.length; j++) {
+                    const tempItemObject: IFilterItem = { group: keytypes[i], isactive: false, doinclude: false, name: foundVals[j]}
+                    const tempItemConstructed = new FilterItem(tempItemObject);
+                    tempMisc.push(tempItemConstructed);
+                }
+            }
+    
+            return tempMisc;
+        },
+        findText() {
+            return [new FilterText({group: "name", val: "", isstrict: false})]
+        }
     }
 }

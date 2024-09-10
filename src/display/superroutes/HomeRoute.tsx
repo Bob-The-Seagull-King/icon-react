@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic, faShapes, faTheaterMasks, faPerson, faCity, faCampground } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic, faShapes, faTheaterMasks, faPerson, faCity, faCampground, faBook } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -133,22 +133,7 @@ const HomeRoute: React.FC = () => {
                     <div className="row">
                         <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>General</h3></div>
                     </div>
-                    <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sx-1 row-cols-xs-1 row-cols-1">                        
-                    <div className="col" style={{padding:"0.5em"}}>
-                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/campitems/")}>
-                                <FontAwesomeIcon icon={faCampground} className="pageaccestext"/>
-                                <h1 className="pageaccestext">
-                                    CAMP ITEMS
-                                </h1>
-                            </div>
-                        </div><div className="col" style={{padding:"0.5em"}}>
-                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/glossary/")}>
-                                <FontAwesomeIcon icon={faList} className="pageaccestext"/>
-                                <h1 className="pageaccestext">
-                                    GLOSSARY
-                                </h1>
-                            </div>
-                        </div>
+                    <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sx-1 row-cols-xs-1 row-cols-1">   
                         <div className="col" style={{padding:"0.5em"}}>
                             <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/kin/")}>
                                 <FontAwesomeIcon icon={faPerson} className="pageaccestext"/>
@@ -162,6 +147,30 @@ const HomeRoute: React.FC = () => {
                                 <FontAwesomeIcon icon={faCity} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     CULTURE
+                                </h1>
+                            </div>
+                        </div>                     
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/campitems/")}>
+                                <FontAwesomeIcon icon={faCampground} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    CAMP ITEMS
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/glossary/")}>
+                                <FontAwesomeIcon icon={faList} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    GLOSSARY
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/rules/")}>
+                                <FontAwesomeIcon icon={faBook} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    RULES
                                 </h1>
                             </div>
                         </div>
