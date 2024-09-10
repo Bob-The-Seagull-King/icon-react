@@ -12,6 +12,7 @@ interface IPlayerAddon extends IIconpendiumItemData {
 
 class PlayerAddon extends IconpendiumItem {
     public readonly Description;
+    public readonly Class;
 
     /**
      * Assigns parameters and creates a series of description
@@ -22,6 +23,7 @@ class PlayerAddon extends IconpendiumItem {
     {
         super(data)
         this.ItemType = ItemType.Addon;
+        this.Class = data.class_id;
         this.Description = DescriptionFactory(data.description);
     }
 }
