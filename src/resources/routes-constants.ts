@@ -16,6 +16,7 @@ export const ROUTES = {
     COMPENDIUM_ACTION_ROUTE: '/actions/*',
     COMPENDIUM_BOND_ROUTE: '/bonds/*',
     COMPENDIUM_KIN_ROUTE: '/kin/*',
+    COMPENDIUM_CULTURE_ROUTE: '/culture/*',
     TOOLS_CONTENT_UPLOAD_ROUTE: '/content/*'
 
 }

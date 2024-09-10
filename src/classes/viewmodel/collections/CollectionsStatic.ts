@@ -23,6 +23,9 @@ import { BondFactory } from "../../../factories/features/BondFactory";
 import { IBond } from "../../feature/bonds/Bond";
 import { IKin } from "../../feature/character/Kin";
 import { Kin } from "../../feature/character/Kin";
+import { KinFactory } from "../../../factories/features/KinFactory";
+import { CultureFactory } from "../../../factories/features/CultureFactory";
+import { ICulture } from "../../feature/character/Culture";
 
 export interface CollectionType {
     searchId      : string,
@@ -204,7 +207,23 @@ export const CollectionDataDex : CollectionDataTable = {
             let i = 0;
             model.dataresults.sort(byPropertiesOf<IKin>(["source", "name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
-                const summonNew = new Kin(model.dataresults[i]);
+                const summonNew = KinFactory.CreateKin(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    cultures: {
+        searchId: 'cultures', 
+        pageName: 'Culture',
+        sort: ["source", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<ICulture>(["source", "name", "id",]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = CultureFactory.CreateCulture(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
                 model.itemcollection.push(ItemNew);
             }

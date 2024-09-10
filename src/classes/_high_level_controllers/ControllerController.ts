@@ -13,6 +13,7 @@ class ControllerController {
     ActionCollectionController;
     BondCollectionController;
     KinCollectionController;
+    CultureCollectionController;
 
     constructor () {
         this.AbilitiesCollectionController = new CollectionsListPage('abilities')
@@ -26,6 +27,7 @@ class ControllerController {
         this.ActionCollectionController = new CollectionsListPage('actions')
         this.BondCollectionController = new CollectionsListPage('bonds')
         this.KinCollectionController = new CollectionsListPage('kins')
+        this.CultureCollectionController = new CollectionsListPage('cultures')
     }
 }
 
