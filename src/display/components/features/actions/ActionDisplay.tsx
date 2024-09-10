@@ -4,17 +4,13 @@ import React from 'react'
 
 // Classes
 import { returnTags, returnDescription } from '../../../../utility/util';
-import {Action } from "../../../../classes/feature/actions/Action";
-import { Trait } from '../../../../classes/feature/trait/Trait';
-import { TraitFactory } from '../../../../factories/features/TraitFactory';
+import { Action } from "../../../../classes/feature/actions/Action";
+import { TableFactory } from '../../../../factories/features/TableFactory';
+import { capitalizeString } from '../../../../utility/functions';
+import { ITable } from '../../../../classes/feature/table/tablebody';
 
 // Components
-import GenericDisplay from '../../../components/generics/GenericDisplay';
-import TraitDisplay from '../trait/TraitDisplay';
-import { capitalizeString } from '../../../../utility/functions';
-import { ITable, PlayerTable } from '../../../../classes/feature/table/tablebody';
 import EmptyDisplay from '../../../components/generics/EmptyDisplay';
-import { TableFactory } from '../../../../factories/features/TableFactory';
 import TableDisplay from '../table/TableDisplay';
 
 const ActionDisplay = (props: any) => {
