@@ -5,7 +5,7 @@ import { DescriptionFactory } from '../../../utility/functions';
  * Data structure for the player addon's
  */
 interface ITableItem extends IIconpendiumItemData {
-    description: [] // Descriptive text of the Addon
+    description: any[] // Descriptive text of the Addon
 }
 
 class PlayerTableItem extends IconpendiumItem {

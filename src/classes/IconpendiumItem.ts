@@ -17,7 +17,8 @@ enum ItemType {
     Ability = 'Ability',
     Addon = 'Addon',
     GlossaryRule = 'Glossary',
-    Power = 'Power'
+    Power = 'Power',
+    Action = 'Action'
 }
 
 abstract class IconpendiumItem {

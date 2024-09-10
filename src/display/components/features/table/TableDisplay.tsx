@@ -21,7 +21,7 @@ const TableDisplay = (props: any) => {
                 <thead className={"tableTitle " + BackgroundClass} >
                     <tr className={BackgroundClass}>
                         {TableObject.ColNames.map((item) => 
-                            (<th style={{padding:"0em"}} className={BackgroundClass} key={"headtabledesc"}>
+                            (<th style={{paddingBottom:"0em"}} className={BackgroundClass} key={"headtabledesc"}>
                                 <p className={BackgroundClass + " setWhite"} style={{marginBottom:"0.5em"}}>
                                     {item}
                                 </p>
@@ -33,7 +33,7 @@ const TableDisplay = (props: any) => {
                     {TableObject.Items.map((item) => (
                     <tr key={"rowtabledesc"}>
                         {item.Description.map((val) => (
-                            <td key={"itemtabledesc"} style={{textAlign:"center"}} className="tableText">
+                            <td key={"itemtabledesc"} className="tableText">
                                 {returnDescription(TableObject, [val])}
                             </td>
                         ))}

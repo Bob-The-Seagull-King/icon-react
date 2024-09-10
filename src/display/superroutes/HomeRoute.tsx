@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic, faShapes } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -112,7 +112,16 @@ const HomeRoute: React.FC = () => {
                                 </h1>
                             </div>
                         </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/actions/")}>
+                                <FontAwesomeIcon icon={faShapes} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    ACTIONS
+                                </h1>
+                            </div>
+                        </div>
                     </div>
+
                     <div className="row">
                         <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>General</h3></div>
                     </div>

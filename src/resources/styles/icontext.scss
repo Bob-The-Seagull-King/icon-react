@@ -29,14 +29,24 @@
 
 .tableText {
   color: var(--colour_basic_text) !important;    
+  text-justify: center;
 }
 
 .tableTitle {
   font-size: 150%;
   font-weight: 800;
-  text-align: center;
   text-justify: center;
-  padding: 0em;
+  padding-bottom: 0em;
+}
+
+.actionheaderbody {
+  border-radius: 0.2em;
+  padding: 0.25em;
+  width: 100%;
+  text-align: center;
+  color: var(--colour_white);
+  font-size: 150%;
+  font-weight: bolder;
 }
 
 .titlebody {

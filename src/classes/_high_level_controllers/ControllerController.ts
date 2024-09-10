@@ -10,6 +10,7 @@ class ControllerController {
     GlossaryCollectionController;
     TrophyCollectionController;
     PowerCollectionController;
+    ActionCollectionController;
 
     constructor () {
         this.AbilitiesCollectionController = new CollectionsListPage('abilities')
@@ -20,6 +21,7 @@ class ControllerController {
         this.GlossaryCollectionController = new CollectionsListPage('glossary')
         this.TrophyCollectionController = new CollectionsListPage('trophies')
         this.PowerCollectionController = new CollectionsListPage('powers')
+        this.ActionCollectionController = new CollectionsListPage('actions')
     }
 }
 

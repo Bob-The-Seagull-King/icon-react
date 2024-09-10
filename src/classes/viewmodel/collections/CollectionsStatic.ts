@@ -17,6 +17,8 @@ import { ITrophy } from "../../feature/trophy/Trophy";
 import { TrophyFactory } from "../../../factories/features/TrophyFactory";
 import { IPower } from "../../feature/powers/Power";
 import { PowerFactory } from "../../../factories/features/PowerFactory";
+import { IAction } from "../../feature/actions/Action";
+import { ActionFactory } from "../../../factories/features/ActionFactory";
 
 export interface CollectionType {
     searchId      : string,
@@ -151,6 +153,22 @@ export const CollectionDataDex : CollectionDataTable = {
             model.dataresults.sort(byPropertiesOf<IPower>(["source", "name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = PowerFactory.CreatePower(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    actions: {
+        searchId: 'actions', 
+        pageName: 'Actions',
+        sort: ["source", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IAction>(["source", "name", "id",]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = ActionFactory.CreateAction(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
                 model.itemcollection.push(ItemNew);
             }

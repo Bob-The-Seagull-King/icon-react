@@ -183,7 +183,7 @@ export function sort<T extends object> (arr: T[], ...sortBy: Array<sortArg<T>>) 
     arr.sort(byPropertiesOf<T>(sortBy))
 }
 
-export function DescriptionFactory(data: []) {
+export function DescriptionFactory(data: any[]) {
     let i = 0;
     const array: AdvancedDescription[] = []
     for (i = 0; i < data.length; i++) {
