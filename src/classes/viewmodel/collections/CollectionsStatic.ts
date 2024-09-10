@@ -26,6 +26,8 @@ import { Kin } from "../../feature/character/Kin";
 import { KinFactory } from "../../../factories/features/KinFactory";
 import { CultureFactory } from "../../../factories/features/CultureFactory";
 import { ICulture } from "../../feature/character/Culture";
+import { ICampItem } from "../../feature/camp/CampItem";
+import { CampItemFactory } from "../../../factories/features/CampItemFactory";
 
 export interface CollectionType {
     searchId      : string,
@@ -224,6 +226,22 @@ export const CollectionDataDex : CollectionDataTable = {
             model.dataresults.sort(byPropertiesOf<ICulture>(["source", "name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = CultureFactory.CreateCulture(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    campitems: {
+        searchId: 'campitems', 
+        pageName: 'Camp Items',
+        sort: ["source", "name", "id", "purchase"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<ICampItem>(["source", "name", "id", "purchase"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = CampItemFactory.CreateCampItem(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
                 model.itemcollection.push(ItemNew);
             }

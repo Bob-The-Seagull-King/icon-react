@@ -33,7 +33,7 @@
 }
 
 .abilityStructure {
-    border-radius: 0em 0em 0.4em 0.4em;
+    border-radius: 0em 0em 0.4em 0.4rem;
     box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     width: 100%;
     text-align: justify;
@@ -45,7 +45,7 @@
 }
 
 .emptyStructure {
-    border-radius: 0em 0em 0em 0em;
+    border-radius: 0em 0em 0em 0rem;
     box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     width: 100%;
     text-align: justify;
@@ -57,8 +57,8 @@
 }
 
 .abilityInternalStructure {
-    padding: 1em;
-    font-size: 0.85em;
+    padding: 1rem;
+    font-size: 0.8rem;
     color: var(--colour_basic_text) !important;
 }
 
@@ -66,7 +66,7 @@
 
 .emptyboxStructure {
     width: 100%;
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
     padding:20%;
     padding-top: 35%;
     padding-bottom: 35%;
@@ -75,11 +75,11 @@
 
 .popupBody {
     background: var(--colour_offwhite);
-    max-width: 20em;
+    max-width: 20rem;
 }
 
 .roundBody {
-    border-radius: 0.25em;
+    border-radius: 0.25rem;
 }
 
 .filterSelectorBack {
@@ -102,7 +102,7 @@
 }
 
 .filterobjectdisplay {
-    margin: 0.25em;
+    margin: 0.25rem;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -110,9 +110,9 @@
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
-    padding: 0.1em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     border-color: var(--colour_icon_secondary) !important;
     background-color: var(--colour_icon_secondary);
 
@@ -122,7 +122,7 @@
 }
 
 .filterobjectdisplaypositive {
-    margin: 0.25em;
+    margin: 0.25rem;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -130,9 +130,9 @@
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
-    padding: 0.1em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     border-color: var(--colour_green_secondary) !important;
     background-color: var(--colour_green_secondary);
 
@@ -142,7 +142,7 @@
 }
 
 .filterobjectdisplaynegative {
-    margin: 0.25em;
+    margin: 0.25rem;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -150,9 +150,9 @@
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
-    padding: 0.1em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     border-color: var(--colour_red_secondary) !important;
     background-color: var(--colour_red_secondary);
 
@@ -162,11 +162,11 @@
 }
 
 .filtertextinput {
-    border-radius: 0.4em;
+    border-radius: 0.4rem;
 }
 
 .filterobjectdisplaypositive {
-    margin: 0.25em;
+    margin: 0.25rem;
     border-style: solid !important;
     border-width: 2px !important;
     border-radius: 0.4em 0.4em 0.4em 0.4em !important;
@@ -174,9 +174,9 @@
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
-    padding: 0.1em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     border-color: var(--colour_green_secondary) !important;
     background-color: var(--colour_green_secondary);
 
@@ -193,11 +193,11 @@
     text-align: justify;
     color: var(--colour_white);
     font-weight: 600 ;
-    font-size: 1.25em;
+    font-size: 1.25rem;
     width: fit-content;
-    padding: 0.1em;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
     border-color: var(--colour_grey_main) !important;
     background-color: var(--colour_grey_main);
 
@@ -228,9 +228,9 @@
   }
 
 .floatingButton {
-    margin: 1em;
-    padding: 0.5em;
-    border-radius: 0.5em;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
     width: fit-content;
 }
 
@@ -263,9 +263,9 @@
     justify-content: center;
     display: flex; /* make element size relative to content */
     align-items: center;
-    border-radius: 0.2em;
+    border-radius: 0.2rem;
     box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
-    padding: 0.5em;
+    padding: 0.5rem;
 
     &:hover {
         box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
@@ -276,12 +276,12 @@
     justify-content: center;
     display: flex; /* make element size relative to content */
     align-items: center;
-    border-radius: 0.2em;
+    border-radius: 0.2rem;
     box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
     height: 100%;
     width: fit-content;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 
     &:hover {
         box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
@@ -294,25 +294,25 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    border-radius: 0em;
+    border-radius: 0rem;
     width: 100%;
     position: relative;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .contentpacksmallcontainer {
     align-items: center;
     align-content: center;
-    border-radius: 0em;
+    border-radius: 0rem;
     width: 100%;
     position: relative;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    padding-top: 0.75em;
-    padding-bottom: 0.75em;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .smallcontentpackrow {
@@ -348,8 +348,8 @@
 
 .packvr {
     color: var(--colour_icon_main);
-    margin-left: 0.5em;
-    margin-right: 0.5em;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     width: fit-content;
 }
 
