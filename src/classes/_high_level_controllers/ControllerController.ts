@@ -12,6 +12,7 @@ class ControllerController {
     PowerCollectionController;
     ActionCollectionController;
     BondCollectionController;
+    KinCollectionController;
 
     constructor () {
         this.AbilitiesCollectionController = new CollectionsListPage('abilities')
@@ -24,6 +25,7 @@ class ControllerController {
         this.PowerCollectionController = new CollectionsListPage('powers')
         this.ActionCollectionController = new CollectionsListPage('actions')
         this.BondCollectionController = new CollectionsListPage('bonds')
+        this.KinCollectionController = new CollectionsListPage('kins')
     }
 }
 

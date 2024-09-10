@@ -40,6 +40,7 @@ const CompendiumRoute: React.FC<IControllerProp> = (prop) => {
             <Route path={ROUTES.COMPENDIUM_POWER_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.PowerCollectionController}/>} />
             <Route path={ROUTES.COMPENDIUM_ACTION_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.ActionCollectionController}/>} />
             <Route path={ROUTES.COMPENDIUM_BOND_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.BondCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_KIN_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.KinCollectionController}/>} />
         </Routes>
         </div>
     )
