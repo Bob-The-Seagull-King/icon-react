@@ -62,6 +62,21 @@
   font-weight: bolder;
 }
 
+.tablerowbody {
+  padding: 0.75em;
+  margin: 0em;
+  border-radius: 0em;
+  width: 100%;
+}
+
+.tablerow0 {
+  background-color: var(--colour_tablea);
+}
+
+.tablerow1 {
+  background-color: var(--colour_offwhite);
+}
+
 .glossaryPurple {
     color: var(--colour_icon_main);
     font-weight: bold;

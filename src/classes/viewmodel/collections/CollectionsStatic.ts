@@ -19,6 +19,8 @@ import { IPower } from "../../feature/powers/Power";
 import { PowerFactory } from "../../../factories/features/PowerFactory";
 import { IAction } from "../../feature/actions/Action";
 import { ActionFactory } from "../../../factories/features/ActionFactory";
+import { BondFactory } from "../../../factories/features/BondFactory";
+import { IBond } from "../../feature/bonds/Bond";
 
 export interface CollectionType {
     searchId      : string,
@@ -169,6 +171,22 @@ export const CollectionDataDex : CollectionDataTable = {
             model.dataresults.sort(byPropertiesOf<IAction>(["source", "name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = ActionFactory.CreateAction(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    bonds: {
+        searchId: 'bonds', 
+        pageName: 'Bonds',
+        sort: ["source", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IBond>(["source", "name", "id",]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew = BondFactory.CreateBond(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
                 model.itemcollection.push(ItemNew);
             }
