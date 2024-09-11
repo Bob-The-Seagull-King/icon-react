@@ -42,6 +42,8 @@ interface IBond extends IIconpendiumItemData {
     strain: number,
     secondwind: string,
     specialability: string,
+    customkitsize: number,
+    loosegearsize: number,
     actions: string[],
     gear: IGearOption[]
 }
@@ -56,6 +58,8 @@ class Bond extends IconpendiumItem {
     public readonly SpecialAbility;
     public readonly Actions;
     public readonly Powers;
+    public readonly CustomKitSize;
+    public readonly LooseGearSize;
 
     /**
      * Assigns parameters and creates a series of description
@@ -66,6 +70,8 @@ class Bond extends IconpendiumItem {
     {
         super(data)
         this.Blurb = DescriptionFactory(data.blurb);
+        this.CustomKitSize = data.customkitsize;
+        this.LooseGearSize = data.loosegearsize;
         this.Ideals = data.ideals;
         this.Effort = data.effort;
         this.Strain = data.strain;

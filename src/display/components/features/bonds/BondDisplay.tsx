@@ -90,10 +90,12 @@ const BondDisplay = (props: any) => {
 
         return (
             <div>
-                <div className="row row-cols-lg-8 row-cols-md-8 row-cols-sm-4 justify-content-center">
+                <div className="row row-cols-lg-5 row-cols-md-5 row-cols-sm-5 justify-content-center">
                 <ItemStat title={"Effort"} value={BondObject.Effort}/>
                 <ItemStat title={"Strain"} value={BondObject.Strain}/>
                 <ItemStat title={"Actions"} value={Actions}/>
+                <ItemStat title={"Custom Kit"} value={BondObject.CustomKitSize + " Pieces"}/>
+                <ItemStat title={"Loose Gear"} value={"Bring " + BondObject.LooseGearSize}/>
                 </div>
             </div>
         )
