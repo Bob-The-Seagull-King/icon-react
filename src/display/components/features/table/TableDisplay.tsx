@@ -34,7 +34,9 @@ const TableDisplay = (props: any) => {
                     <tr key={"rowtabledesc"}>
                         {item.Description.map((val) => (
                             <td key={"itemtabledesc"} className="tableText">
-                                {returnDescription(TableObject, [val])}
+                                <div className="tablecontent">
+                                    {returnDescription(TableObject, [val])}
+                                </div>
                             </td>
                         ))}
                     </tr>

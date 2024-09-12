@@ -30,6 +30,16 @@
 .tableText {
   color: var(--colour_basic_text) !important;    
   text-justify: center;
+  display: table-cell;
+  vertical-align: middle;
+  align-content: center !important;
+}
+
+.tablecontent {
+  
+  margin: auto;
+  width: 100%;
+  display: flex;
 }
 
 .tableTitle {
