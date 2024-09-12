@@ -126,6 +126,32 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                     </span>
                 )
             }
+            case "trait": {
+                return (
+                    <div>
+                        <div className='addonbox'>{findTrait(item.Content?.toString() || "")}</div>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </div>
+                )
+            }
+            case "foetrait": {
+                return (
+                    <div>
+                        <div className='addonbox'>{findFoeTrait(item.Content?.toString() || "")}</div>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </div>
+                )
+            }
             case "texttrait": {
                 return (
                     <span>
@@ -237,6 +263,36 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
 
         return (
             <GenericDisplay d_colour={parentItem.Class} d_name={summon.Name} d_type={"sub"} d_method={() => <SummonDisplay data={summon} />}/>
+        )
+    }
+
+    /**
+     * returns a component showing an Addon display
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findTrait(id: string) {
+        let trait: Trait | null = null;
+
+        trait = TraitFactory.CreateNewTrait(id, "traits", parentItem.Class)
+
+        return (
+            <GenericDisplay d_colour={parentItem.Class} d_name={trait.Name} d_type={"sub"} d_method={() => <TraitDisplay data={trait} />}/>
+        )
+    }
+
+    /**
+     * returns a component showing an Addon display
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findFoeTrait(id: string) {
+        let trait: Trait | null = null;
+
+        trait = TraitFactory.CreateNewTrait(id, "foetraits", parentItem.Class)
+
+        return (
+            <GenericDisplay d_colour={parentItem.Class} d_name={trait.Name} d_type={"sub"} d_method={() => <TraitDisplay data={trait} />}/>
         )
     }
 
