@@ -98,7 +98,7 @@ class Job extends IconpendiumItem {
         const array : PlayerSummon[] = []
         let i = 0;
         for (i = 0; i < _data.length; i++) {
-            array.push(SummonFactory.CreateNewSummon(_data[i]))
+            array.push(SummonFactory.CreateNewSummon(_data[i], "summons"))
         }
         return array;
     }

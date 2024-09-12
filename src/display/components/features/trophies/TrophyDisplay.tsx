@@ -21,7 +21,7 @@ const TrophyDisplay = (props: any) => {
             <div>                
                 <div className="row row-cols-lg-8 row-cols-md-8 row-cols-sm-4 justify-content-center">
                     <ItemStat title={"Category"} value={makestringpresentable( TrophyObject.Category )}/>
-                    <ItemStat title={"Uses"} value={TrophyObject.Uses}/>
+                    <ItemStat title={"Uses"} value={(TrophyObject.Uses === 0)? "Unlimited" : TrophyObject.Uses}/>
                     <ItemStat title={"Use Type"} value={makestringpresentable( TrophyObject.UseType + ((TrophyObject.UseType.length > 0)? ((TrophyObject.Uses > 1)? "s" : "") : "" ))}/>
                 </div>
             </div>

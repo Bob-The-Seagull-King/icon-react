@@ -126,6 +126,19 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                     </div>
                 )
             }
+            case "foesummon": {
+                return (
+                    <div>
+                        <div className='addonbox'>{findFoeSummon(item.Content?.toString() || "")}</div>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </div>
+                )
+            }
             case "textsummon": {
                 return (
                     <span>
@@ -285,7 +298,22 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
     function findSummon(id: string) {
         let summon: PlayerSummon | null = null;
 
-        summon = SummonFactory.CreateNewSummon(id)
+        summon = SummonFactory.CreateNewSummon(id, "summons")
+
+        return (
+            <GenericDisplay d_colour={parentItem.Class} d_name={summon.Name} d_type={"sub"} d_method={() => <SummonDisplay data={summon} />}/>
+        )
+    }
+
+    /**
+     * returns a component showing an Addon display
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findFoeSummon(id: string) {
+        let summon: PlayerSummon | null = null;
+
+        summon = SummonFactory.CreateNewSummon(id, "foesummons")
 
         return (
             <GenericDisplay d_colour={parentItem.Class} d_name={summon.Name} d_type={"sub"} d_method={() => <SummonDisplay data={summon} />}/>
@@ -330,7 +358,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
     function findTextSummon (id: string) {
         let summon: PlayerSummon | null = null;
 
-        summon = SummonFactory.CreateNewSummon(id)
+        summon = SummonFactory.CreateNewSummon(id, "summons")
 
         return (
             <GenericHover d_colour={'icon'} d_name={summon.Name} titlename={summon.Name} d_type={""} d_method={() => <SummonDisplay data={summon} />}/>

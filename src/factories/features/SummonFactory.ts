@@ -15,8 +15,8 @@ class SummonFactory {
         return summon;
     }
 
-    static CreateNewSummon(_val : string) {
-        const summondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "summons", id: _val}}) as IPlayerSummon
+    static CreateNewSummon(_val : string, _type : string) {
+        const summondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: _type, id: _val}}) as IPlayerSummon
         const summonNew = SummonFactory.CreateSummon(summondata)
         return summonNew;
     }
