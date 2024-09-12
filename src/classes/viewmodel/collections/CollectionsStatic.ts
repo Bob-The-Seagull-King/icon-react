@@ -60,12 +60,12 @@ export const CollectionDataDex : CollectionDataTable = {
     summons: {
         searchId: 'summons', 
         pageName: 'Summons',
-        sort: ["source", "name", "id", "colour"],
+        sort: ["source", "colour", "name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IPlayerSummon>(["source", "name", "id", "colour"]))
+            model.dataresults.sort(byPropertiesOf<IPlayerSummon>(["source", "colour", "name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = SummonFactory.CreateSummon(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.Colour));
@@ -140,12 +140,12 @@ export const CollectionDataDex : CollectionDataTable = {
     trophies: {
         searchId: 'trophies', 
         pageName: 'trophies',
-        sort: ["source", "category", "name", "id"],
+        sort: ["source", "name", "id", "category"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<ITrophy>(["source", "category", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<ITrophy>(["source",  "name", "id", "category"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = TrophyFactory.CreateTrophy(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -156,12 +156,12 @@ export const CollectionDataDex : CollectionDataTable = {
     powers: {
         searchId: 'powers', 
         pageName: 'Powers',
-        sort: ["source", "category", "name", "id"],
+        sort: ["source","name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IPower>(["source", "name", "id",]))
+            model.dataresults.sort(byPropertiesOf<IPower>(["source", "name", "id", ]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = PowerFactory.CreatePower(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
