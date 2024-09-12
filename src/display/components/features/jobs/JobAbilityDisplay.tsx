@@ -21,7 +21,7 @@ const JobAbilityDisplay = (props: any) => {
     
     return (
         <div className="row row-cols-3">
-            <div className="col-4">
+            <div className="col-2">
                 <div className="equipbody">
                     <GenericPopup titlename={AbilityObject.Name} d_colour={AbilityObject.Class} d_name={AbilityObject.Name} d_type={""} d_method={() => <AbilityDisplay data={AbilityObject}/>}/>
                 </div>
@@ -31,7 +31,7 @@ const JobAbilityDisplay = (props: any) => {
                     Ch.{AbilityObject.Chapter}
                 </div>
             </div>
-            <div className="col-6">
+            <div className="col-8">
                 <div className="equipbody">
                     {returnTags(AbilityObject.Tags, bannedAbilityTags)}
                 </div>

@@ -24,13 +24,13 @@ const JobDisplay = (props: any) => {
     function ReturnAbilities() {
         return (
             <div className="row row-cols-3">
-                <div className="col-4">
+                <div className="col-2">
                     <div className="equiptitle">Name</div>
                 </div>
                 <div className="col-2">
                     <div className="equiptitle">Chapter</div>
                 </div>
-                <div className="col-6">
+                <div className="col-8">
                     <div className="equiptitle">Tags</div>
                 </div>
             </div>
