@@ -15,7 +15,7 @@ const FilterDisplay = (prop: any) => {
         <div className="">
             <div className="centerPosition">
                 <div className={"filterobjectdisplay"+exists}>
-                    {makestringpresentable(title)}{(value.toString().trim().length == 0)? "" : ": "}{makestringpresentable(value)}
+                    {makestringpresentable(title)}{(value.toString().trim().length == 0)? ": " : ": "}{makestringpresentable(value)}
                 </div>
             </div>
         </div>
