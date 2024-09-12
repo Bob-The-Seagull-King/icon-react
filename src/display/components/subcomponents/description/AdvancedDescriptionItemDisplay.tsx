@@ -100,6 +100,19 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                     </div>
                 )
             }
+            case "foeability": {
+                return (
+                    <div>
+                        <div className='addonbox'>{findFoeAddon(item.Content?.toString() || "")}</div>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </div>
+                )
+            }
             case "summon": {
                 return (
                     <div>
@@ -229,7 +242,20 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
      */
     function findAddon(id: string) {
         let addon: PlayerAddon | null = null;
-        addon = AddonFactory.CreateNewAddon(id)
+        addon = AddonFactory.CreateNewAddon(id, "addons")
+
+        return (
+            <GenericDisplay d_colour={parentItem.Class} d_name={addon.Name} d_type={"sub"} d_method={() => <AddonDisplay data={addon} />}/>
+        )
+    }
+    /**
+     * returns a component showing an Addon display
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findFoeAddon(id: string) {
+        let addon: PlayerAddon | null = null;
+        addon = AddonFactory.CreateNewAddon(id, "foeabilities")
 
         return (
             <GenericDisplay d_colour={parentItem.Class} d_name={addon.Name} d_type={"sub"} d_method={() => <AddonDisplay data={addon} />}/>

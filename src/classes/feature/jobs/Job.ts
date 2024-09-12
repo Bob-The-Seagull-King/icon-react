@@ -89,7 +89,7 @@ class Job extends IconpendiumItem {
         const array : PlayerAddon[] = []
         let i = 0;
         for (i = 0; i < _data.length; i++) {
-            array.push(AddonFactory.CreateNewAddon(_data[i]))
+            array.push(AddonFactory.CreateNewAddon(_data[i], "addons"))
         }
         return array;
     }

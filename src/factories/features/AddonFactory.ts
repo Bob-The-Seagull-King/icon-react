@@ -13,8 +13,8 @@ class AddonFactory {
         return addon;
     }
 
-    static CreateNewAddon(_val : string) {
-        const addondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "addons", id: _val}}) as IPlayerAddon
+    static CreateNewAddon(_val : string, _type : string) {
+        const addondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: _type, id: _val}}) as IPlayerAddon
         const addonNew = AddonFactory.CreateAddon(addondata)
         return addonNew;
     }
