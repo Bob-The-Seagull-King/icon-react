@@ -17,7 +17,7 @@ const GenericDisplay = (props: any) => {
 
     return (
         <div className={'abilityStructure borderstyler ' + DisplayType + 'border'+getColour(DisplayColour)}>
-            <div onClick={() => {setOpen(!open);console.log("CLICK")}} className={'titleShape hovermouse titlebody ' + DisplayType + 'background'+getColour(DisplayColour)}>{DisplayName || ""}</div>
+            <div onClick={() => {setOpen(!open)}} className={'titleShape hovermouse titlebody ' + DisplayType + 'background'+getColour(DisplayColour)}>{DisplayName || ""}</div>
             <Collapse in={open}>
             <div>
                 {displayMethod()}

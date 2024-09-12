@@ -269,7 +269,6 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
     function findFoeAddon(id: string) {
         let addon: PlayerAddon | null = null;
         addon = AddonFactory.CreateNewAddon(id, "foeabilities")
-        console.log(addon);
         return (
             <GenericDisplay d_colour={parentItem.Class} d_name={addon.Name} d_type={"sub"} d_method={() => <AddonDisplay data={addon} />}/>
         )

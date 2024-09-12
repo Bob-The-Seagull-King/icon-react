@@ -26,6 +26,7 @@ class Relic extends IconpendiumItem {
     public readonly TierIII;
     public readonly Aspected;
     public readonly Quest;
+    public readonly Data;
 
     /**
      * Assigns parameters and creates a series of description
@@ -42,6 +43,7 @@ class Relic extends IconpendiumItem {
         this.TierIII = new RelicAction(data.tier_iii);
         this.Aspected = new RelicAction(data.aspected);
         this.Quest = DescriptionFactory(data.quest);
+        this.Data = data;
     }
     
     /**

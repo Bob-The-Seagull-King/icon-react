@@ -5,28 +5,181 @@ import React from 'react'
 // Classes
 import { returnDescription } from '../../../../utility/util';
 import { Relic, RelicAction } from '../../../../classes/feature/relics/Relic';
+import { ITable } from '../../../../classes/feature/table/tablebody';
+import { ITableItem } from '../../../../classes/feature/table/tableitem';
+import { TableFactory } from '../../../../factories/features/TableFactory';
+import { makestringpresentable } from '../../../../utility/functions';
 
 // Components
-import { makestringpresentable } from '../../../../utility/functions';
+import EmptyDisplay from '../../../components/generics/EmptyDisplay';
+import TableDisplay from '../table/TableDisplay';
 
 const RelicDisplay = (props: any) => {
     const RelicObject: Relic = props.data
 
-    function returnRelicAction(_title : string, _item : RelicAction) {
-        let title = _title;
+    function returnRelicUpdates() {        
 
-        if (_item.Invoke === true) {
-            if (_item.InvokeType) {
-                title += " (Invoke : " + makestringpresentable( _item.InvokeType)
-                if (_item.InvokeVal) {
-                    title += " " + _item.InvokeVal
+        const TableItems : ITableItem[] = []
+
+        
+        let titleI = "I";
+        if (RelicObject.TierI.Invoke === true) {
+            if (RelicObject.TierI.InvokeType) {
+                titleI += " (Invoke : " + makestringpresentable( RelicObject.TierI.InvokeType)
+                if (RelicObject.TierI.InvokeVal) {
+                    titleI += " " + RelicObject.TierI.InvokeVal
                 }
-                title += ")"
+                titleI += ")"
             }
         }
 
+        const ItemI : ITableItem = {
+            id: "ti_"+RelicObject.Name + "aspect",
+            type: "TableItem",
+            source: "core",
+            name: "",
+            tags: {},
+            eventtags: {},
+            description: [
+                {                    
+                    tags: {desc_type : "effect"},
+                    content: titleI
+                },
+                {
+                    tags: {desc_type : "desc"},
+                    content: "",
+                    subcontent: RelicObject.Data.tier_i.description
+                }]
+        }
+
+        TableItems.push(ItemI)
+        
+        let titleII = "II";
+        if (RelicObject.TierII.Invoke === true) {
+            if (RelicObject.TierII.InvokeType) {
+                titleII += " (Invoke : " + makestringpresentable( RelicObject.TierII.InvokeType)
+                if (RelicObject.TierI.InvokeVal) {
+                    titleII += " " + RelicObject.TierII.InvokeVal
+                }
+                titleII += ")"
+            }
+        }
+
+        const ItemII : ITableItem = {
+            id: "ti_"+RelicObject.Name + "aspect",
+            type: "TableItem",
+            source: "core",
+            name: "",
+            tags: {},
+            eventtags: {},
+            description: [
+                {                    
+                    tags: {desc_type : "effect"},
+                    content: titleII
+                },
+                {
+                    tags: {desc_type : "desc"},
+                    content: "",
+                    subcontent: RelicObject.Data.tier_ii.description
+                }]
+        }
+
+        TableItems.push(ItemII)
+        
+        let titleIII = "III";
+        if (RelicObject.TierIII.Invoke === true) {
+            if (RelicObject.TierIII.InvokeType) {
+                titleIII += " (Invoke : " + makestringpresentable( RelicObject.TierIII.InvokeType)
+                if (RelicObject.TierI.InvokeVal) {
+                    titleIII += " " + RelicObject.TierIII.InvokeVal
+                }
+                titleIII += ")"
+            }
+        }
+
+        const ItemIII : ITableItem = {
+            id: "ti_"+RelicObject.Name + "aspect",
+            type: "TableItem",
+            source: "core",
+            name: "",
+            tags: {},
+            eventtags: {},
+            description: [
+                {                    
+                    tags: {desc_type : "effect"},
+                    content: titleIII
+                },
+                {
+                    tags: {desc_type : "desc"},
+                    content: "",
+                    subcontent: RelicObject.Data.tier_iii.description
+                }]
+        }
+
+        TableItems.push(ItemIII)
+
+        const _itable : ITable = {
+            id: "tb_"+RelicObject.Name + "tiers",
+            type: "Table",
+            source: "core",
+            tags: {},
+            eventtags: {},
+            name: '',
+            colnames: ["Tier","Effect"],
+            description: [ ],
+            items: TableItems
+        }
+
+        const table = TableFactory.CreateTable(_itable)
+
         return (
-            <div style={{display:"flex"}}><span className="boldtextColNormal" style={{marginRight:"0.5em"}}>{title + ": "}</span> {returnDescription(_item, _item.Description)}</div>
+            <EmptyDisplay d_colour={RelicObject.Colour} d_name={table.Name} d_type={"sub"} d_method={() => <TableDisplay d_colour={RelicObject.Colour} d_type={"sub"} data={table} />}/>
+        )
+    }
+
+    function returnRelicAspects() {        
+
+        const TableItems : ITableItem[] = []
+
+        const Item : ITableItem = {
+            id: "ti_"+RelicObject.Name + "aspect",
+            type: "TableItem",
+            source: "core",
+            name: "",
+            tags: {},
+            eventtags: {},
+            description: [
+                {
+                    tags: {desc_type : "desc"},
+                    content: "",
+                    subcontent: RelicObject.Data.quest
+                },
+                {
+                    tags: {desc_type : "desc"},
+                    content: "",
+                    subcontent: RelicObject.Data.aspected.description
+                }
+                ]
+        }
+
+        TableItems.push(Item)
+
+        const _itable : ITable = {
+            id: "tb_"+RelicObject.Name + "aspect",
+            type: "Table",
+            source: "core",
+            tags: {},
+            eventtags: {},
+            name: '',
+            colnames: ["Quest","Effect"],
+            description: [ ],
+            items: TableItems
+        }
+
+        const table = TableFactory.CreateTable(_itable)
+
+        return (
+            <EmptyDisplay d_colour={RelicObject.Colour} d_name={table.Name} d_type={"sub"} d_method={() => <TableDisplay d_colour={RelicObject.Colour} d_type={"sub"} data={table} />}/>
         )
     }
 
@@ -35,20 +188,10 @@ const RelicDisplay = (props: any) => {
             <div>
                 {returnDescription(RelicObject, RelicObject.Blurb)}
             </div> 
-            <div className="verticalspacer"/> 
-            <div>
-                <div className="separator">&#x27E1;</div>
-            </div> 
-            <div className="verticalspacer"/>
+            <br/> 
 
             <div>
-                {returnRelicAction("I", RelicObject.TierI)}
-            </div>
-            <div>
-                {returnRelicAction("II", RelicObject.TierII)}
-            </div>
-            <div>
-                {returnRelicAction("III", RelicObject.TierIII)}
+                {returnRelicUpdates()}
             </div>
 
             <div className="verticalspacer"/> 
@@ -56,14 +199,9 @@ const RelicDisplay = (props: any) => {
                 <div className="separator">Aspect</div>
             </div> 
             <div className="verticalspacer"/>
-            
-            <div>
-                {returnDescription(RelicObject, RelicObject.Quest)}
-            </div> 
-            <div className="verticalspacerbig"/>
 
             <div>
-                {returnRelicAction("Aspected", RelicObject.Aspected)}
+                {returnRelicAspects()}
             </div>
             
         </div>
