@@ -140,6 +140,17 @@ const RelicDisplay = (props: any) => {
     function returnRelicAspects() {        
 
         const TableItems : ITableItem[] = []
+        
+        let titleaspect = "Aspect";
+        if (RelicObject.TierII.Invoke === true) {
+            if (RelicObject.TierII.InvokeType) {
+                titleaspect += " (Invoke : " + makestringpresentable( RelicObject.TierII.InvokeType)
+                if (RelicObject.TierI.InvokeVal) {
+                    titleaspect += " " + RelicObject.TierII.InvokeVal
+                }
+                titleaspect += ")"
+            }
+        }
 
         const Item : ITableItem = {
             id: "ti_"+RelicObject.Name + "aspect",
@@ -171,7 +182,7 @@ const RelicDisplay = (props: any) => {
             tags: {},
             eventtags: {},
             name: '',
-            colnames: ["Quest","Effect"],
+            colnames: ["Quest",titleaspect],
             description: [ ],
             items: TableItems
         }
