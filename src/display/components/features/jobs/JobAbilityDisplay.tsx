@@ -11,13 +11,12 @@ import { TraitFactory } from '../../../../factories/features/TraitFactory';
 // Components
 import GenericDisplay from '../../../components/generics/GenericDisplay';
 import TraitDisplay from '../trait/TraitDisplay';
-import AbilityDisplay from '../summons/SummonDisplay';
+import AbilityDisplay from '../abilities/AbilityDisplay';
 import GenericPopup from '../../../components/generics/GenericPopup';
 
 const JobAbilityDisplay = (props: any) => {
     const AbilityObject: PlayerAbility = props.data
     const bannedAbilityTags = ["inflict", "type"]
-
     
     return (
         <div className="row row-cols-3">

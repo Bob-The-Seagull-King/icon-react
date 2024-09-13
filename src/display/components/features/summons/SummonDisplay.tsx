@@ -6,7 +6,7 @@ import React from 'react'
 import { returnTags, returnDescription } from '../../../../utility/util';
 import { PlayerSummon } from "../../../../classes/feature/summons/Summon";
 
-const AbilityDisplay = (props: any) => {
+const SummonDisplay = (props: any) => {
     const SummonObject: PlayerSummon = props.data
     const bannedAbilityTags = ["inflict", "type"]
 
@@ -45,4 +45,4 @@ const AbilityDisplay = (props: any) => {
     )
 }
 
-export default AbilityDisplay;
+export default SummonDisplay;
