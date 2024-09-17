@@ -39,8 +39,8 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
         switch (getTagValue(item.Tags, "desc_type")) {
             case "paragraph": {
                 return (
-                    <div>
-                        <span>
+                    <div style={{width:"100%"}}>
+                        <span style={{width:"100%"}}>
                             {item.SubContent?.map((subitem) => (
                                <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
                             ))}
@@ -89,7 +89,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "addon": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div className='addonbox'>{findAddon(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -102,7 +102,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "foeability": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div className='addonbox'>{findFoeAddon(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -115,7 +115,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "summon": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div className='addonbox'>{findSummon(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -128,7 +128,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "foesummon": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div className='addonbox'>{findFoeSummon(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -154,7 +154,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "trait": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div className='addonbox'>{findTrait(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -167,7 +167,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "foetrait": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div className='addonbox'>{findFoeTrait(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -193,7 +193,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "table": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div className='addonbox'>{findTable(item.Content?.toString() || "")}</div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -206,7 +206,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "gap": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <div><br/></div>
                         <span>
                             {item.SubContent?.map((subitem) => (
@@ -219,7 +219,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             }
             case "list": {
                 return (
-                    <div>
+                    <div style={{width:"100%"}}>
                         <span>{ConvertContentWithGlossary((item.Glossary), item.Content?.toString() || "")} </span>
                         <span>
                             <ul>

@@ -129,7 +129,7 @@ function sortTagsForDisplay(taglist:  ObjectTag, bannedList : string[]) {
  */
 export function returnDescription(baseObject: any, objectArray : any[]) {
     return (
-        <div>
+        <div style={{width:"100%"}}>
             {objectArray.map((item) => (
                 <div key={"descriptionDisplay"}>
                     <AdvancedDescriptionItemDisplay data={item} parent={baseObject}/>
