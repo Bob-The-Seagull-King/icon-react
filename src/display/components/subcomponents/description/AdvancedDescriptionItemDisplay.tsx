@@ -142,7 +142,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             case "textsummon": {
                 return (
                     <span>
-                        <span className='addonbox'>{findTextSummon(item.Content?.toString() || "")}</span>
+                        <span className=''>{findTextSummon(item.Content?.toString() || "")}</span>
                         <span>
                             {item.SubContent?.map((subitem) => (
                                <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
@@ -181,7 +181,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
             case "texttrait": {
                 return (
                     <span>
-                        <span className='addonbox'>{findTextTrait(item.Content?.toString() || "")}</span>
+                        <span className=''>{findTextTrait(item.Content?.toString() || "")}</span>
                         <span>
                             {item.SubContent?.map((subitem) => (
                                <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
