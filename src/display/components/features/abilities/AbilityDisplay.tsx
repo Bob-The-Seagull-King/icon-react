@@ -48,6 +48,8 @@ const AbilityDisplay = (props: any) => {
                 {returnDescription(AbilityObject, AbilityObject.Description)}
             </div>
             <div className="verticalspacer"/> 
+            {AbilityObject.Talents.length > 0 &&
+            <>
             <div>
                 <div className="separator">Talents</div>
             </div> 
@@ -60,6 +62,10 @@ const AbilityDisplay = (props: any) => {
                 </div>))}
             </div>
             <div className="verticalspacer"/> 
+            </>
+            }
+            {AbilityObject.Mastery.length > 0 &&
+            <>
             <div>
                 <div className="separator">Mastery</div>
             </div> 
@@ -71,6 +77,8 @@ const AbilityDisplay = (props: any) => {
                     <div className="verticalspacerbig"/>
                 </div>))}
             </div>
+            </>
+            }
         </div>
     )
 }
