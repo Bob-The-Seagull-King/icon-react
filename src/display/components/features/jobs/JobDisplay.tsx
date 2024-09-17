@@ -43,7 +43,7 @@ const JobDisplay = (props: any) => {
                 <div className="separator">{JobObject.Subtitle}</div>
             </div> 
             <div className="verticalspacer"/>
-            <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+            <div className="row row-cols-lg-2 row-cols-md-2 row-cols-1">
                 <div className="col">
                     <div className="verticalspacer"/>
                     {returnDescription(JobObject, JobObject.Blurb)} 
@@ -53,7 +53,7 @@ const JobDisplay = (props: any) => {
                     {returnDescription(JobObject, JobObject.Playstyle)} 
                 </div>
             </div>
-            <div className="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
+            <div className="row row-cols-lg-2 row-cols-md-2 row-cols-1">
                 
                 <div className="col">
                     <div className="verticalspacer"/> 
