@@ -58,7 +58,7 @@ const RelicDisplay = (props: any) => {
         if (RelicObject.TierII.Invoke === true) {
             if (RelicObject.TierII.InvokeType) {
                 titleII += " (Invoke : " + makestringpresentable( RelicObject.TierII.InvokeType)
-                if (RelicObject.TierI.InvokeVal) {
+                if (RelicObject.TierII.InvokeVal) {
                     titleII += " " + RelicObject.TierII.InvokeVal
                 }
                 titleII += ")"
@@ -90,7 +90,7 @@ const RelicDisplay = (props: any) => {
         if (RelicObject.TierIII.Invoke === true) {
             if (RelicObject.TierIII.InvokeType) {
                 titleIII += " (Invoke : " + makestringpresentable( RelicObject.TierIII.InvokeType)
-                if (RelicObject.TierI.InvokeVal) {
+                if (RelicObject.TierIII.InvokeVal) {
                     titleIII += " " + RelicObject.TierIII.InvokeVal
                 }
                 titleIII += ")"
@@ -142,11 +142,11 @@ const RelicDisplay = (props: any) => {
         const TableItems : ITableItem[] = []
         
         let titleaspect = "Aspect";
-        if (RelicObject.TierII.Invoke === true) {
-            if (RelicObject.TierII.InvokeType) {
-                titleaspect += " (Invoke : " + makestringpresentable( RelicObject.TierII.InvokeType)
-                if (RelicObject.TierI.InvokeVal) {
-                    titleaspect += " " + RelicObject.TierII.InvokeVal
+        if (RelicObject.Aspected.Invoke === true) {
+            if (RelicObject.Aspected.InvokeType) {
+                titleaspect += " (Invoke : " + makestringpresentable( RelicObject.Aspected.InvokeType)
+                if (RelicObject.Aspected.InvokeVal) {
+                    titleaspect += " " + RelicObject.Aspected.InvokeVal
                 }
                 titleaspect += ")"
             }
