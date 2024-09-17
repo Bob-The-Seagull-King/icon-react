@@ -23,7 +23,7 @@ const GenericHover = (props: any) => {
 
     return (
       <>
-        <OverlayTrigger overlay={
+        <OverlayTrigger placement={'auto'} overlay={
           <Tooltip style={{ width: "30vw" }} className="overcomeTooltip" id="tooltip">
             <div data-theme={theme} style={{ width: "30vw" }} className='popupBody'>
               <div className={'modelStructure borderstyler ' + DisplayType + 'border'+getColour(DisplayColour)}>
