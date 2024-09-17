@@ -1,0 +1,380 @@
+@import './_variables';
+
+// Border
+
+.borderstyler {
+    border-style: solid;
+    border-width: 2px;
+}
+
+.smallbordersubpurple {
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: var(--colour_icon_secondary) !important;
+}
+
+// Structure
+
+.overcomeBackground {
+    background: none !important;
+    border: none !important;
+}
+
+.overcomeTooltip {
+    opacity: 1 !important;
+    --bs-tooltip-bg: none !important;
+}
+
+.dropdownClean {
+    background: none !important;
+    border: none !important;
+    margin: 0em !important;
+    padding: 0em !important;
+}
+
+.abilityStructure {
+    border-radius: 0em 0em 0.4em 0.4rem;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    width: 100%;
+    text-align: justify;
+    background-color: var(--colour_offwhite);
+
+    &:hover {
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
+    }
+}
+
+.emptyStructure {
+    border-radius: 0em 0em 0em 0rem;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    width: 100%;
+    text-align: justify;
+    background-color: var(--colour_offwhite);
+
+    &:hover {
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
+    }
+}
+
+.abilityInternalStructure {
+    padding: 1rem;
+    font-size: 0.8rem;
+    color: var(--colour_basic_text) !important;
+}
+
+
+
+.emptyboxStructure {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding:20%;
+    padding-top: 35%;
+    padding-bottom: 35%;
+    height: 400%;
+}
+
+.popupBody {
+    background: var(--colour_offwhite);
+    max-width: 20rem;
+}
+
+.roundBody {
+    border-radius: 0.25rem;
+}
+
+.filterSelectorBack {
+    background-color: var(--colour_offwhite) !important;
+}
+
+.filterboxStructure {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-color: var(--colour_icon_main) !important;
+    border-radius: 0em 0em 0em 0em !important;
+    box-shadow: 0 0 5px 1px var(--colour_grey_main);
+    width: 100%;
+    text-align: justify;
+    background-color: var(--colour_offwhite) !important;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px var(--colour_grey_main);
+    }
+}
+
+.filterobjectdisplay {
+    margin: 0.25rem;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
+    text-align: justify;
+    color: var(--colour_white);
+    font-weight: 600 ;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-color: var(--colour_icon_secondary) !important;
+    background-color: var(--colour_icon_secondary);
+
+    &:hover {
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    }
+}
+
+.filterobjectdisplaypositive {
+    margin: 0.25rem;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
+    text-align: justify;
+    color: var(--colour_white);
+    font-weight: 600 ;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-color: var(--colour_green_secondary) !important;
+    background-color: var(--colour_green_secondary);
+
+    &:hover {
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    }
+}
+
+.filterobjectdisplaynegative {
+    margin: 0.25rem;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
+    text-align: justify;
+    color: var(--colour_white);
+    font-weight: 600 ;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-color: var(--colour_red_secondary) !important;
+    background-color: var(--colour_red_secondary);
+
+    &:hover {
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    }
+}
+
+.filtertextinput {
+    border-radius: 0.4rem;
+}
+
+.filterobjectdisplaypositive {
+    margin: 0.25rem;
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
+    text-align: justify;
+    color: var(--colour_white);
+    font-weight: 600 ;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-color: var(--colour_green_secondary) !important;
+    background-color: var(--colour_green_secondary);
+
+    &:hover {
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    }
+}
+
+.filterclosebutton {
+    border-style: solid !important;
+    border-width: 2px !important;
+    border-radius: 0.4em 0.4em 0.4em 0.4em !important;
+    box-shadow: 0 0 3px 0px var(--colour_grey_secondary);
+    text-align: justify;
+    color: var(--colour_white);
+    font-weight: 600 ;
+    font-size: 1.25rem;
+    width: fit-content;
+    padding: 0.1rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-color: var(--colour_grey_main) !important;
+    background-color: var(--colour_grey_main);
+
+    &:hover {
+        box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    }
+}
+
+.filterbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagboxtitle {
+    
+	/* Use a flexbox layout */
+	display: flex;
+	
+	/* Make a horizontal flexbox (the default) */
+	flex-direction: row;
+	
+	/* The important part: vertically center the items */
+	align-items: center;
+}
+
+.inputbox input {
+    height: 50%;
+  }
+
+.floatingButton {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: fit-content;
+}
+
+.topbarStructure {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.topbarCompendiumBase {
+    width: 100%;
+    background: var(--colour_icon_main);
+    height: 100%;
+
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+
+    &:hover {
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
+    }
+}
+
+.topbarCompendiumStructure {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pageaccessbox {
+    justify-content: center;
+    display: flex; /* make element size relative to content */
+    align-items: center;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    padding: 0.5rem;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
+    }
+}
+
+.generalbuttonbox {
+    justify-content: center;
+    display: flex; /* make element size relative to content */
+    align-items: center;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 5px 1px var(--colour_grey_secondary);
+    height: 100%;
+    width: fit-content;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+    &:hover {
+        box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
+    }
+}
+
+.contentpackcontainer {
+    display: flex; /* make element size relative to content */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    border-radius: 0rem;
+    width: 100%;
+    position: relative;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.contentpacksmallcontainer {
+    align-items: center;
+    align-content: center;
+    border-radius: 0rem;
+    width: 100%;
+    position: relative;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.smallcontentpackrow {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.contentsubnamecontainer {
+    display: flex; /* make element size relative to content */
+    align-items: center;
+    align-content: center;
+    width: fit-content;
+}
+
+.nofrillbox {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: fit-content;
+}
+
+.textHolder {
+  text-align: justify;
+}
+
+.flexbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.packvr {
+    color: var(--colour_icon_main);
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: fit-content;
+}
+
+.packvrbox {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+// Bootstrap overrides
+/* Apply column striping */
+.table td:nth-child(odd), .table th:nth-child(odd) {
+    background-color: var(--colour_offwhite);
+    }
+      
+    /* You can also style even columns if desired */
+    .table td:nth-child(even), .table th:nth-child(even) {
+    background-color: var(--colour_tableb); /* Slightly different shade */
+    }
+
+    .table tr:nth-child(odd) {
+        background-color: var(--colour_offwhite);
+        }
+          
+        /* You can also style even columns if desired */
+        .table tr:nth-child(even) {
+        background-color: var(--colour_tableb); /* Slightly different shade */
+        }

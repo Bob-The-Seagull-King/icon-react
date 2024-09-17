@@ -1,0 +1,271 @@
+@import './_variables';
+
+.tagText {
+    font-weight: bolder;
+    color: var(--colour_grey_main);
+}
+
+.titleShape {
+    padding: 0%;
+    margin: 0%;
+    text-align: left;
+}
+
+.megatitleShape {
+    padding: 0%;
+    margin: 0%;
+    font-size: 4rem;
+}
+
+.medtitleShape {
+    padding: 0%;
+    margin: 0%;
+    font-size: 2.5rem;
+}
+
+.table {
+  --bs-table-bg: transparent; /* or --bs-table-bg: transparent; */
+}
+
+.tableText {
+  color: var(--colour_basic_text) !important;    
+  text-justify: center;
+  display: table-cell;
+  vertical-align: middle;
+  align-content: center !important;
+}
+
+.tablecontent {
+  
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+
+.tableTitle {
+  font-size: 150%;
+  font-weight: 800;
+  text-justify: center;
+  padding-bottom: 0em;
+}
+
+.actionheaderbody {
+  border-radius: 0.2em;
+  padding: 0.25em;
+  width: 100%;
+  text-align: center;
+  color: var(--colour_white);
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+.titlebody {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+  padding-bottom: 0.25em;
+  margin: 0em;
+  border-radius: 0em;
+  width: 100%;
+  text-align: center;
+  color: var(--colour_white);
+  font-size: 200%;
+  font-weight: bolder;
+}
+
+.tablerowbody {
+  padding: 0.75em;
+  margin: 0em;
+  border-radius: 0em;
+  width: 100%;
+}
+
+.tablerow0 {
+  background-color: var(--colour_tablea);
+}
+
+.tablerow1 {
+  background-color: var(--colour_offwhite);
+}
+
+.glossaryPurple {
+    color: var(--colour_icon_main);
+    font-weight: bold;
+}
+
+.boldtextPurple {   
+    font-weight: 650;
+    font-size: 1.25rem;
+}
+
+.boldtextCol {   
+    font-weight: 650;
+    font-size: 1.25rem;
+    color: var(--colour_icon_main);
+}
+
+.boldtextColNormal {   
+    font-weight: 650;
+    font-size: 1rem;
+    color: var(--colour_icon_main);
+}
+
+.subtletext {
+    text-align: center;
+    color: var(--colour_grey_secondary);
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+.hometitle {
+    color: var(--colour_icon_main);
+    font-size: 5rem;
+    font-weight: 1500;
+}
+
+.homesubtitle {
+    color: var(--colour_icon_main);
+    font-size: 2rem;
+    font-weight: 1500;
+}
+
+.homelink {
+    font-weight: 1000;
+    text-decoration: none;
+    color: var(--colour_icon_main);
+}
+.navitemh2 {
+    margin-top: 0.4em;
+    margin-bottom: 0.5em;
+}
+
+.webtitle {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    color: var(--colour_icon_main);
+    font-size: 3rem;
+
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--colour_grey_secondary);
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--colour_grey_secondary);
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+  
+  .statbody {
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+  }  
+
+  .stattitle {
+    width: 100%;
+    font-weight: 400;
+    color: var(--colour_grey_main);
+    text-align: center;
+  }
+
+
+  .equipbody {
+    width: 100%;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .equiptitle {
+    width: 100%;
+    font-weight: 400;
+    color: var(--colour_grey_main);
+    text-align: left;
+  }
+
+  .itemlisttext {
+
+    font-size: 125%;
+    text-align: left;
+  }
+
+  .softpad {
+    padding: 0.25em !important
+  }
+
+  .subltenotetext {
+    text-align: center;
+    color: var(--colour_grey_secondary);
+    font-size: 0.9rem;
+  }
+
+  .headertext {
+    color: var(--colour_white);
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  .headersubtext {
+    color: var(--colour_white);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .bodytext {
+    font-size: 0.85rem;
+  }
+
+  .pagetitletext {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--colour_icon_main);
+    justify-self: center;
+    text-align: center;
+  }
+
+  .pageaccestext {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--colour_icon_main);
+    margin: 0.1em;
+}
+
+  .packtitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--colour_icon_main);
+    margin: 0.25em;
+  }
+
+  .packsubtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--colour_icon_main);
+    margin: 0.25em;
+  }
+
+  .purpleIcon {
+    color: var(--colour_icon_main);
+  }
+  
+  .redIcon {
+    color: var(--colour_red_main);
+  }
+
+  .greenIcon {
+    color: var(--colour_green_main);
+  }
