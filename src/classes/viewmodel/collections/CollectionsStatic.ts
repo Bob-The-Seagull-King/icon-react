@@ -60,12 +60,12 @@ export const CollectionDataDex : CollectionDataTable = {
     summons: {
         searchId: 'summons', 
         pageName: 'Summons',
-        sort: ["source", "colour", "name", "id"],
+        sort: ["colour", "name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IPlayerSummon>(["source", "colour", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IPlayerSummon>(["colour", "name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = SummonFactory.CreateSummon(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.Colour));
@@ -76,12 +76,12 @@ export const CollectionDataDex : CollectionDataTable = {
     jobs: {
         searchId: 'jobs', 
         pageName: 'Jobs',
-        sort: ["source", "class_id", "name", "id"],
+        sort: ["class_id", "name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IJob>(["source", "class_id", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IJob>(["class_id", "name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = JobFactory.CreateJob(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.Class));
@@ -92,12 +92,12 @@ export const CollectionDataDex : CollectionDataTable = {
     classes: {
         searchId: 'classes', 
         pageName: 'Classes',
-        sort: ["source", "name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IClass>(["source", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IClass>(["name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = ClassFactory.CreateClass(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.ID));
@@ -108,12 +108,12 @@ export const CollectionDataDex : CollectionDataTable = {
     relics: {
         searchId: 'relics', 
         pageName: 'Relics',
-        sort: ["source", "colour", "name", "id"],
+        sort: ["colour", "name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IRelic>(["source", "colour", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IRelic>(["colour", "name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = RelicFactory.CreateRelic(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour(summonNew.Colour));
@@ -124,12 +124,12 @@ export const CollectionDataDex : CollectionDataTable = {
     glossary: {
         searchId: 'glossary', 
         pageName: 'Glossary',
-        sort: ["source", "name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IGlossaryRule>(["source", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IGlossaryRule>(["name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = new GlossaryRule(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -140,12 +140,12 @@ export const CollectionDataDex : CollectionDataTable = {
     trophies: {
         searchId: 'trophies', 
         pageName: 'trophies',
-        sort: ["source", "name", "id", "category"],
+        sort: ["name", "id", "category"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<ITrophy>(["source",  "name", "id", "category"]))
+            model.dataresults.sort(byPropertiesOf<ITrophy>([ "name", "id", "category"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = TrophyFactory.CreateTrophy(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -156,12 +156,12 @@ export const CollectionDataDex : CollectionDataTable = {
     powers: {
         searchId: 'powers', 
         pageName: 'Powers',
-        sort: ["source","name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IPower>(["source", "name", "id", ]))
+            model.dataresults.sort(byPropertiesOf<IPower>(["name", "id", ]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = PowerFactory.CreatePower(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -172,12 +172,12 @@ export const CollectionDataDex : CollectionDataTable = {
     actions: {
         searchId: 'actions', 
         pageName: 'Actions',
-        sort: ["source", "name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IAction>(["source", "name", "id",]))
+            model.dataresults.sort(byPropertiesOf<IAction>(["name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = ActionFactory.CreateAction(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -188,12 +188,12 @@ export const CollectionDataDex : CollectionDataTable = {
     bonds: {
         searchId: 'bonds', 
         pageName: 'Bonds',
-        sort: ["source", "name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IBond>(["source", "name", "id",]))
+            model.dataresults.sort(byPropertiesOf<IBond>([ "name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = BondFactory.CreateBond(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -204,12 +204,12 @@ export const CollectionDataDex : CollectionDataTable = {
     kins: {
         searchId: 'kins', 
         pageName: 'Kin',
-        sort: ["source", "name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IKin>(["source", "name", "id",]))
+            model.dataresults.sort(byPropertiesOf<IKin>(["name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = KinFactory.CreateKin(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -220,12 +220,12 @@ export const CollectionDataDex : CollectionDataTable = {
     cultures: {
         searchId: 'cultures', 
         pageName: 'Culture',
-        sort: ["source", "name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<ICulture>(["source", "name", "id",]))
+            model.dataresults.sort(byPropertiesOf<ICulture>(["name", "id",]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = CultureFactory.CreateCulture(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -236,12 +236,12 @@ export const CollectionDataDex : CollectionDataTable = {
     campitems: {
         searchId: 'campitems', 
         pageName: 'Camp Items',
-        sort: ["source", "name", "id", "purchase"],
+        sort: ["name", "id", "purchase"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<ICampItem>(["source", "name", "id", "purchase"]))
+            model.dataresults.sort(byPropertiesOf<ICampItem>(["name", "id", "purchase"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew = CampItemFactory.CreateCampItem(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
@@ -252,12 +252,12 @@ export const CollectionDataDex : CollectionDataTable = {
     rules: {
         searchId: 'rules', 
         pageName: 'Rules',
-        sort: ["source", "name", "id"],
+        sort: ["name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IRuleset>(["source", "name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IRuleset>(["name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew =  RulesetFactory.CreateRuleset(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
