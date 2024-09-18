@@ -12,7 +12,7 @@ interface IXPGain {
 interface IXPGainCollection {
     universal : IXPGain[]   // XP objectives all characters share
     ideals  : IXPGain[] // XP objectives based on character ideals
-    unique : IXPGain // XP objectives unique to that character
+    unique : IXPGain[] // XP objectives unique to that character
 }
 
 interface Ambition {
