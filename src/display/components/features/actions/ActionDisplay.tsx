@@ -85,7 +85,7 @@ const ActionDisplay = (props: any) => {
                         {
                         tags: {desc_type : "list"},
                         content: "",
-                        subcontent: Chapter1Desc
+                        subcontent: Chapter2Desc
                     }]
                 },
                 {
@@ -102,7 +102,7 @@ const ActionDisplay = (props: any) => {
                         {
                         tags: {desc_type : "list"},
                         content: "",
-                        subcontent: Chapter1Desc
+                        subcontent: Chapter3Desc
                     }]
                 }
             ]
