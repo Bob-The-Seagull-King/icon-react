@@ -162,15 +162,13 @@ interface TacticalInfo {
 
 interface Unspent {
     job : number
-    bond : number
     abilitypoint : number
     mastery : number
     relic : number
-    kin : number
-    culture : number
     actionpoint : number
     bondpower : number
     combat_choice : number
+    narrative_choice : number
 }
 
 interface IPlayerCharacter {
@@ -187,6 +185,8 @@ interface IPlayerCharacter {
 
 class PlayerCharacter{
 
+    public PC_Data : IPlayerCharacter;
+
     /**
      * Assigns parameters and creates a series of description
      * objects with DescriptionFactory
@@ -194,12 +194,8 @@ class PlayerCharacter{
      */
     public constructor(data: IPlayerCharacter)
     {
+        this.PC_Data = data;
     }
-
-    /*public ConvertToInterface(): IPlayerCharacter {
-        const InterfaceSheet : IPlayerCharacter = {}
-        return InterfaceSheet;
-    }*/
 
 }
 
