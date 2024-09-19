@@ -153,34 +153,41 @@ const ContentPackDisplay = (props: any) => {
                 }
             </div>
 
-            <Modal data-theme={theme}  size="lg" show={show}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleClose} keyboard={true}  centered>    
-                <h1 className={'titleShape backgroundicon'}>
-                    {PackItem.Name}
-                    <div className="row float-end">
-                        <div className='col-12 float-end'>
-                            <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
-                                <FontAwesomeIcon icon={faCircleXmark} style={{fontSize:"2em",color:"white",margin:"0em"}}/>
-                            </Button>
-                        </div>
-                    </div>
-                </h1>
+            <Modal data-theme={theme}  size="lg" show={show}  contentClassName="overcomeBackground" dialogClassName="" onHide={handleClose} keyboard={true}  centered>    
+                
                 <Modal.Body >
-                    <div className="row overflow-auto flex-grow-1 m-0 p-0">
-                        <div style={{"maxHeight": "calc(70vh"}}>
-                            <div className="separator" style={{marginTop:"0em"}}><h5>By {PackItem.Author}</h5></div>
-                            <div className="col-12" style={{fontSize:"0.95em"}}>
-                                {returnDescription(PackItem, PackItem.Description)}
+                <div className={'abilityStructure borderstyler bordericon'}>
+                    <h1 className={'titleShape titlebody backgroundicon'}>
+                    {PackItem.Name}
+                        
+                        <div className="row float-end">
+                            <div className='col-12 float-end'>
+                                <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
+                                    <FontAwesomeIcon icon={faCircleXmark} className="setWhite" style={{fontSize:"2em",margin:"0em"}}/>
+                                </Button>
                             </div>
-                            <div className="separator" style={{marginTop:"0em"}}><h5>Content</h5></div>
-                            <div style={{display:"flex",flexWrap:"wrap"}}>
-                                {PackItem.Tags.map((item: any) => (
-                                    <div className="filterobjectdisplay" key={"packdisplay"}>
-                                        {makestringpresentable(item.name)} - {item.count.toString()}
-                                    </div>
-                                ))}
+                        </div>
+                    </h1>
+                    
+                    <div className='abilityInternalStructure'>
+                        <div className="row overflow-auto flex-grow-1 m-0 p-0">
+                            <div style={{"maxHeight": "calc(70vh"}}>
+                                <div className="separator" style={{marginTop:"0em"}}><h5>By {PackItem.Author}</h5></div>
+                                <div className="col-12" style={{fontSize:"0.95em"}}>
+                                    {returnDescription(PackItem, PackItem.Description)}
+                                </div>
+                                <div className="separator" style={{marginTop:"0em"}}><h5>Content</h5></div>
+                                <div style={{display:"flex",flexWrap:"wrap"}}>
+                                    {PackItem.Tags.map((item: any) => (
+                                        <div className="filterobjectdisplay" key={"packdisplay"}>
+                                            {makestringpresentable(item.name)} - {item.count.toString()}
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
                 </Modal.Body>
             </Modal>
         </>
