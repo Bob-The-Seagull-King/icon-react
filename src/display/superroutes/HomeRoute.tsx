@@ -180,7 +180,7 @@ const HomeRoute: React.FC = () => {
                     </div>
                     <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sx-1 row-cols-xs-1 row-cols-1">   
                         <div className="col" style={{padding:"0.5em"}}>
-                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("foe/class/")}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/foe/class/")}>
                                 <FontAwesomeIcon icon={faLandmark} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     CLASSES
@@ -188,7 +188,7 @@ const HomeRoute: React.FC = () => {
                             </div>
                         </div>
                         <div className="col" style={{padding:"0.5em"}}>
-                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("foe/faction/")}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/foe/faction/")}>
                                 <FontAwesomeIcon icon={faUserGroup} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     FACTIONS
@@ -196,7 +196,7 @@ const HomeRoute: React.FC = () => {
                             </div>
                         </div>                     
                         <div className="col" style={{padding:"0.5em"}}>
-                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("foe/job/")}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("compendium/foe/job/")}>
                                 <FontAwesomeIcon icon={faUserDoctor} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     JOBS
