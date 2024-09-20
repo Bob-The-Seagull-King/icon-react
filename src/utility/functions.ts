@@ -106,11 +106,30 @@ export function containsTag(tag: ObjectTag, value:string) {
  * if no tag exists within the param tag.
  */
 export function getTagValue(tag: ObjectTag, value:string) {
+    
     if (tag[value]) {
         return tag[value]
     } else {
         return "";
     }
+}
+
+export function getTagSetValue(tag:any, value:string) {
+    let i = 0;
+    
+    if (tag.length === undefined) {
+        if (tag[value]) {
+            return tag[value]
+        } else {
+            return "";
+        }
+    }
+    for (i = 0; i < tag.length; i++) {
+        if (tag[i][value]) {
+            return tag[i][value]
+        }
+    }
+    return "";
 }
 
 /**

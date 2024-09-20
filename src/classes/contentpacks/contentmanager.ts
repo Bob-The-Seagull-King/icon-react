@@ -122,7 +122,6 @@ class ContentPackManager {
                             }
                         }
                         
-                        console.log("TEST E")
                         return "";
                 } else {
                     "Invalid Data Types"

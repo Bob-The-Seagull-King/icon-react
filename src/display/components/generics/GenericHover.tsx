@@ -21,6 +21,7 @@ const GenericHover = (props: any) => {
     // State
     const [theme] = useGlobalState('theme');
 
+
     return (
       <>
         <OverlayTrigger placement={'auto'} overlay={

@@ -3,7 +3,7 @@ import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
 // Classes
-import { getTagValue} from '../../../../utility/functions'
+import { getTagValue, getTagSetValue} from '../../../../utility/functions'
 import { ConvertContentWithGlossary } from '../../../../utility/util'
 import { AdvancedDescription} from '../../../../classes/AdvancedDescription'
 import { PlayerAbility } from '../../../../classes/feature/abilities/Ability'
@@ -36,7 +36,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
      * @returns Full DOM element containing the rendered description
      */
     function returnFullItem(item: AdvancedDescription) {
-        switch (getTagValue(item.Tags, "desc_type")) {
+        switch (getTagSetValue(item.Tags, "desc_type")) {
             case "paragraph": {
                 return (
                     <div style={{width:"100%"}}>
