@@ -19,7 +19,8 @@ interface IFoeStats {
     size?       : number,   //
     turns?      : number,   //
     actions?    : number,    //
-    hp_mod?     : number
+    hp_mod?     : number,
+    hp_per?     : string
 }
 
 export function StatBuilder(stats: IFoeStats, base : IFoeStats) {
