@@ -788,7 +788,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
         width: 8,
         returnDisplay(item: any) {
             return (
-                <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <FoeClassDisplay data={item} />}/>
+                <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <FoeClassDisplay data={item} />}/>
             )
         },
         returnFilterSelect(manager : FilterManager, update : NoneToNoneFunction, close : NoneToNoneFunction) {
@@ -864,7 +864,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
         width: 8,
         returnDisplay(item: any) {
             return (
-                <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <FoeJobDisplay data={item} />}/>
+                <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <FoeJobDisplay data={item} />}/>
             )
         },
         returnFilterSelect(manager : FilterManager, update : NoneToNoneFunction, close : NoneToNoneFunction) {
