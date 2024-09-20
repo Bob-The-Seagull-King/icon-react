@@ -26,6 +26,7 @@ interface IFoeJob extends IIconpendiumItemData {
     removed_traits : string[]
     phases : IFoePhase[]
     chapter: number
+    description: []
 }
 
 interface ChapterSet {
@@ -46,6 +47,7 @@ class FoeJob extends IconpendiumItem {
     public readonly Stats;
     public readonly ChapterSets : ChapterSet[] = [];
     public readonly Chapter;
+    public readonly Description;
 
     /**
      * Assigns parameters and creates a series of description
@@ -61,6 +63,8 @@ class FoeJob extends IconpendiumItem {
         this.Chapter = data.chapter;
         this.Class = classdata.class;
         this.Category = data.category;
+
+        this.Description = DescriptionFactory(data.description)
 
         const _actionLists = [];
         const _actionremovedLists = [];
@@ -117,6 +121,7 @@ class FoeJob extends IconpendiumItem {
         }
 
         ChapterObjects.forEach(_chapter => {
+            console.log(_chapter);
             const PhaseSet : FoePhase[] = [];            
 
             if (data.phases.length === 0) {

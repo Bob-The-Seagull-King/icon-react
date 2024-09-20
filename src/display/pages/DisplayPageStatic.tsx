@@ -861,7 +861,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     foejobs: {
         searchId: 'foejobs',
-        width: 8,
+        width: 10,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <FoeJobDisplay data={item} />}/>

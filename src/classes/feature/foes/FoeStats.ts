@@ -24,7 +24,22 @@ interface IFoeStats {
 }
 
 export function StatBuilder(stats: IFoeStats, base : IFoeStats) {
-    const Stats = base;
+    const Stats : IFoeStats = {};
+    
+    if (base.vit) { Stats.vit = base.vit; } //
+    if (base.hp) { Stats.hp = base.hp; } //
+    if (base.defense) { Stats.defense = base.defense; }
+    if (base.speed) { Stats.speed = base.speed; }
+    if (base.dash) { Stats.dash = base.dash; }
+    if (base.fray) { Stats.fray = base.fray; } //
+    if (base.damage) { Stats.damage = base.damage; } //
+    if (base.members) { Stats.members = base.members; } //
+    if (base.hits) { Stats.hits = base.hits; } //
+    if (base.size) { Stats.size = base.size; } //
+    if (base.turns) { Stats.turns = base.turns; } //
+    if (base.actions) { Stats.actions = base.actions; } //
+    if (base.hp_mod) { Stats.hp_mod = base.hp_mod; } //
+    if (base.hp_per) { Stats.hp_per = base.hp_per; } //
 
     if (stats.vit) { Stats.vit = stats.vit; } //
     if (stats.hp) { Stats.hp = stats.hp; } //
@@ -54,6 +69,8 @@ export function MergeLists(add_lists : string[][], remove_lists : string[][]) {
     remove_lists.forEach( _list => {
         FinalArray = FinalArray.filter(item => !(_list.includes(item)))
     })
+
+    FinalArray.sort((one, two) => (one > two ? -1 : 1));
 
     return FinalArray;
 }
