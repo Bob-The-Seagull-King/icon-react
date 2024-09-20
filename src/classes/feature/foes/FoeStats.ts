@@ -26,19 +26,20 @@ interface IFoeStats {
 export function StatBuilder(stats: IFoeStats, base : IFoeStats) {
     const Stats = base;
 
-    if (stats.vit) { Stats.vit = stats.vit; }
-    if (stats.hp) { Stats.hp = stats.hp; }
+    if (stats.vit) { Stats.vit = stats.vit; } //
+    if (stats.hp) { Stats.hp = stats.hp; } //
     if (stats.defense) { Stats.defense = stats.defense; }
     if (stats.speed) { Stats.speed = stats.speed; }
     if (stats.dash) { Stats.dash = stats.dash; }
-    if (stats.fray) { Stats.fray = stats.fray; }
-    if (stats.damage) { Stats.damage = stats.damage; }
-    if (stats.members) { Stats.members = stats.members; }
-    if (stats.hits) { Stats.hits = stats.hits; }
-    if (stats.size) { Stats.size = stats.size; }
-    if (stats.turns) { Stats.turns = stats.turns; }
-    if (stats.actions) { Stats.actions = stats.actions; }
-    if (stats.hp_mod) { Stats.hp_mod = stats.hp_mod; }
+    if (stats.fray) { Stats.fray = stats.fray; } //
+    if (stats.damage) { Stats.damage = stats.damage; } //
+    if (stats.members) { Stats.members = stats.members; } //
+    if (stats.hits) { Stats.hits = stats.hits; } //
+    if (stats.size) { Stats.size = stats.size; } //
+    if (stats.turns) { Stats.turns = stats.turns; } //
+    if (stats.actions) { Stats.actions = stats.actions; } //
+    if (stats.hp_mod) { Stats.hp_mod = stats.hp_mod; } //
+    if (stats.hp_per) { Stats.hp_per = stats.hp_per; } //
 
     return Stats;
 }

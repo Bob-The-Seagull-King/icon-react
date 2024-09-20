@@ -15,13 +15,37 @@ import GenericDisplay from '../../generics/GenericDisplay';
 import TraitDisplay from '../trait/TraitDisplay';
 import ItemStat from '../../subcomponents/description/ItemStat';
 import GenericComponentDisplay from '../../../components/generics/GenericComponent';
+import AddonDisplay from '../addons/AddonDisplay';
+import FoeStatsDisplay from './FoeStats';
 
 const FoeClassDisplay = (props: any) => {
     const FoeClassObject: FoeClass = props.data
 
     return (
         <div className='abilityInternalStructure'>
-           
+            <FoeStatsDisplay data={FoeClassObject.Stats}/>
+            <div className="verticalspacer"/>  
+            {FoeClassObject.Traits.length > 0 &&
+            <>
+            <div>
+                <div className="separator">Traits</div>
+            </div> 
+            <div className="verticalspacer"/>
+            {FoeClassObject.Traits.map((item) => <div key={"trait"+item.ID}><GenericDisplay key="traitloop" d_colour={FoeClassObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/><div className="verticalspacerbig"/></div>)}   
+            <div className="verticalspacer"/> 
+            </>
+            } 
+            {FoeClassObject.Actions.length > 0 &&
+            <>
+            <div>
+                <div className="separator">Actions</div>
+            </div> 
+            {FoeClassObject.Actions.map((item) => <GenericDisplay key="addonloop" d_colour={FoeClassObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/>)}
+                            
+            <div className="verticalspacer"/>  
+            </>
+            }
+                    
         </div>
     )
 }
