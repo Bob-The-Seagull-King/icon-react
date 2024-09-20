@@ -21,7 +21,7 @@ export function capitalizeString(stringVal: string) {
  *          individual words capitalized.
  */
 export function makestringpresentable(stringVal: string) {
-    const headers = ['cl', 'jb', 'bd']
+    const headers = ['cl', 'jb', 'bd','fc']
     if (stringVal === null || stringVal === "") {
         return 'N/A';
     }
