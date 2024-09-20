@@ -44,6 +44,9 @@ const CompendiumRoute: React.FC<IControllerProp> = (prop) => {
             <Route path={ROUTES.COMPENDIUM_CULTURE_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.CultureCollectionController}/>} />
             <Route path={ROUTES.COMPENDIUM_CAMP_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.CampItemCollectionController}/>} />
             <Route path={ROUTES.COMPENDIUM_RULE_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.RulesCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_FOECLASS_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.FoeClassCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_FOEFACTION_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.FoeFactionCollectionController}/>} />
+            <Route path={ROUTES.COMPENDIUM_FOEJOB_ROUTE} element={<BaseDisplayCompendium controller={prop.controller.FoeJobCollectionController}/>} />
         </Routes>
         </div>
     )

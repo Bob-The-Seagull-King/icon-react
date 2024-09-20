@@ -16,6 +16,9 @@ class ControllerController {
     CultureCollectionController;
     CampItemCollectionController;
     RulesCollectionController;
+    FoeClassCollectionController;
+    FoeFactionCollectionController;
+    FoeJobCollectionController;
 
     constructor () {
         this.AbilitiesCollectionController = new CollectionsListPage('abilities')
@@ -32,6 +35,9 @@ class ControllerController {
         this.CultureCollectionController = new CollectionsListPage('cultures')
         this.CampItemCollectionController = new CollectionsListPage('campitems')
         this.RulesCollectionController = new CollectionsListPage('rules')
+        this.FoeClassCollectionController = new CollectionsListPage('foeclass')
+        this.FoeFactionCollectionController = new CollectionsListPage('foefaction')
+        this.FoeJobCollectionController = new CollectionsListPage('foejobs')
     }
 }
 

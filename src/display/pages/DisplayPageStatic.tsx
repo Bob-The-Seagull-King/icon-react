@@ -16,6 +16,9 @@ import KinDisplay from "../components/features/character/KinDisplay"
 import CultureDisplay from "../components/features/character/CultureDisplay"
 import CampItemDisplay from "../components/features/camp/CampItemDisplay"
 import RulesetDisplay from "../components/features/rules/RulesetDisplay"
+import FoeJobDisplay from "../components/features/foes/FoeJobDisplay"
+import FoeFactionDisplay from "../components/features/foes/FoeFactionDisplay"
+import FoeClassDisplay from "../components/features/foes/FoeClassDisplay"
 
 export interface DisplayCollectionType {
     searchId      : string,
@@ -764,6 +767,138 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
                         <div className="row">
                             <div className='filterbox centerPosition'>
                                 {manager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
+                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                ))}
+                            </div>
+                        </div>
+                            
+                        <div className='separator toppad'></div>
+                        <div className="row float-end">
+                            <div className='col-12 float-end'>
+                                <div className='hovermouse filterclosebutton' onClick={() => {close()}}>CONFIRM</div>
+                            </div>
+                        </div>
+                    </div>
+               </>
+            )
+        }
+    },
+    foeclass: {
+        searchId: 'foeclass',
+        width: 8,
+        returnDisplay(item: any) {
+            return (
+                <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <FoeClassDisplay data={item} />}/>
+            )
+        },
+        returnFilterSelect(manager : FilterManager, update : NoneToNoneFunction, close : NoneToNoneFunction) {
+            return (
+                <>
+                    <div className="col-12">
+                        <div className="separator"><h3>NAME</h3></div>
+                        <div className="row">
+                            {manager.ReturnTextFilters().map((item) => (
+                                <FilterTextItem data={item} key="name"/>
+                            ))}
+                        </div>
+                        <div className="separator"><h3>SOURCES</h3></div>
+                        <div className="row">
+                            <div className='filterbox centerPosition'>
+                                {manager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
+                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                ))}
+                            </div>
+                        </div>
+                            
+                        <div className='separator toppad'></div>
+                        <div className="row float-end">
+                            <div className='col-12 float-end'>
+                                <div className='hovermouse filterclosebutton' onClick={() => {close()}}>CONFIRM</div>
+                            </div>
+                        </div>
+                    </div>
+               </>
+            )
+        }
+    },
+    foefaction: {
+        searchId: 'foefaction',
+        width: 10,
+        returnDisplay(item: any) {
+            return (
+                <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <FoeFactionDisplay data={item} />}/>
+            )
+        },
+        returnFilterSelect(manager : FilterManager, update : NoneToNoneFunction, close : NoneToNoneFunction) {
+            return (
+                <>
+                    <div className="col-12">
+                        <div className="separator"><h3>NAME</h3></div>
+                        <div className="row">
+                            {manager.ReturnTextFilters().map((item) => (
+                                <FilterTextItem data={item} key="name"/>
+                            ))}
+                        </div>
+                        <div className="separator"><h3>SOURCES</h3></div>
+                        <div className="row">
+                            <div className='filterbox centerPosition'>
+                                {manager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
+                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                ))}
+                            </div>
+                        </div>
+                            
+                        <div className='separator toppad'></div>
+                        <div className="row float-end">
+                            <div className='col-12 float-end'>
+                                <div className='hovermouse filterclosebutton' onClick={() => {close()}}>CONFIRM</div>
+                            </div>
+                        </div>
+                    </div>
+               </>
+            )
+        }
+    },
+    foejobs: {
+        searchId: 'foejobs',
+        width: 8,
+        returnDisplay(item: any) {
+            return (
+                <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <FoeJobDisplay data={item} />}/>
+            )
+        },
+        returnFilterSelect(manager : FilterManager, update : NoneToNoneFunction, close : NoneToNoneFunction) {
+            return (
+                <>
+                    <div className="col-12">
+                        <div className="separator"><h3>NAME</h3></div>
+                        <div className="row">
+                            {manager.ReturnTextFilters().map((item) => (
+                                <FilterTextItem data={item} key="name"/>
+                            ))}
+                        </div>
+                        <div className="separator"><h3>SOURCES</h3></div>
+                        <div className="row">
+                            <div className='filterbox centerPosition'>
+                                {manager.ReturnMiscFilters().filter((value) => (value.Group == "source")).map((item) => (
+                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                ))}
+                            </div>
+                        </div>
+                            
+                        <div className="separator"><h3>CLASS</h3></div>
+                        <div className="row">
+                            <div className='filterbox centerPosition'>
+                                {manager.ReturnMiscFilters().filter((value) => (value.Group == "class_id")).map((item) => (
+                                    <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                ))}
+                            </div>
+                        </div>
+                            
+                        <div className="separator"><h3>FACTION</h3></div>
+                        <div className="row">
+                            <div className='filterbox centerPosition'>
+                                {manager.ReturnMiscFilters().filter((value) => (value.Group == "faction_id")).map((item) => (
                                     <FilterMiscItem key={"miscsource"+item.Name} data={item} />
                                 ))}
                             </div>

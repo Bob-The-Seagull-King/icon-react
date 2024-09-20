@@ -30,6 +30,10 @@ import { ICampItem } from "../../feature/camp/CampItem";
 import { CampItemFactory } from "../../../factories/features/CampItemFactory";
 import { IRuleset } from "../../feature/rule/Ruleset";
 import { RulesetFactory } from "../../../factories/features/RulesetFactory";
+import { IFoeClass } from "../../feature/foes/FoeClass";
+import { FoeFactory } from "../../../factories/features/FoeFactory";
+import { IFoeFaction } from "../../feature/foes/FoeFaction";
+import { IFoeJob } from "../../feature/foes/FoeJob";
 
 export interface CollectionType {
     searchId      : string,
@@ -261,6 +265,54 @@ export const CollectionDataDex : CollectionDataTable = {
             for (i = 0; i < model.dataresults.length; i++) {
                 const summonNew =  RulesetFactory.CreateRuleset(model.dataresults[i]);
                 const ItemNew = new ViewTableItem(summonNew, getColour('icon'));
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    foeclass: {
+        searchId: 'foeclass', 
+        pageName: 'Class',
+        sort: ["name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IFoeClass>(["name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew =  FoeFactory.CreateFoeClass(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, summonNew.Class);
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    foefaction: {
+        searchId: 'foefaction', 
+        pageName: 'Faction',
+        sort: ["name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IFoeFaction>(["name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew =  FoeFactory.CreateFoeFaction(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, summonNew.Class);
+                model.itemcollection.push(ItemNew);
+            }
+        }
+    },
+    foejobs: {
+        searchId: 'foejobs', 
+        pageName: 'Faction',
+        sort: ["faction_id", "name", "id"],
+        postSearch(model : ViewCollectionsModel) {
+            model.CleanupItems();
+            model.CleanupCollection();
+            let i = 0;
+            model.dataresults.sort(byPropertiesOf<IFoeJob>(["faction_id","name", "id"]))
+            for (i = 0; i < model.dataresults.length; i++) {
+                const summonNew =  FoeFactory.CreateFoeJob(model.dataresults[i]);
+                const ItemNew = new ViewTableItem(summonNew, summonNew.Class);
                 model.itemcollection.push(ItemNew);
             }
         }

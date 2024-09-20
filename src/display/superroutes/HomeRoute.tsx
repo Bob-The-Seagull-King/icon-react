@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic, faShapes, faTheaterMasks, faPerson, faCity, faCampground, faBook } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic, faShapes, faTheaterMasks, faPerson, faCity, faCampground, faBook, faUserGroup, faUserDoctor } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -171,6 +171,35 @@ const HomeRoute: React.FC = () => {
                                 <FontAwesomeIcon icon={faBook} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     RULES
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="separator"><h3 style={{fontFamily:"Libre Baskerville"}}>Foes</h3></div>
+                    </div>
+                    <div className="row row-cols-lg-3 row-cols-md-3 row-cols-sx-1 row-cols-xs-1 row-cols-1">   
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("foe/class/")}>
+                                <FontAwesomeIcon icon={faLandmark} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    CLASSES
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("foe/faction/")}>
+                                <FontAwesomeIcon icon={faUserGroup} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    FACTIONS
+                                </h1>
+                            </div>
+                        </div>                     
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("foe/job/")}>
+                                <FontAwesomeIcon icon={faUserDoctor} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    JOBS
                                 </h1>
                             </div>
                         </div>
