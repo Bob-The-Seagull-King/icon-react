@@ -105,9 +105,18 @@ class FoeFactionClass extends IconpendiumItem {
                 equals      : true,
                 strict      : true,
                 istag       : false
+            },{
+                item        : "category",
+                value       : 'job',
+                equals      : true,
+                strict      : true,
+                istag       : false
             }],
             subparams: []
         }}}) as IFoeJob[]
+        
+        _data.sort((one, two) => (one.chapter > two.chapter ? -1 : 1));
+        
         let i = 0;
         for (i = 0; i < _data.length; i++) {
             array.push(FoeFactory.CreateFoeJob(_data[i]))

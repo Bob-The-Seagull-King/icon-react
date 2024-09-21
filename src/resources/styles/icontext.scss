@@ -275,15 +275,42 @@
   background-color: var(colour_offwhite) !important;
   border-color: none !important ;
   font-weight: 700 !important;
+  font-size: 1.1rem !important;
+}
+
+.nav-tabs .nav-item .nav-link{
+  color: var(--colour_icon_secondary) !important;
+  background-color: var(colour_offwhite) !important;
+  border-color: none !important ;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+}
+
+.nav-tabs .nav-item.nav-link.active {  
+  color: var(--colour_icon_secondary) !important;
+  background-color: var(colour_offwhite) !important;
+  border-color: none !important ;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+}
+
+.tabOverride {
+  color: var(--colour_icon_secondary) !important;
+  background-color: var(colour_offwhite) !important;
+  border-color: none !important ;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
 }
 
 .nav-tabs {
   color: var(--colour_icon_secondary)  !important;
   background-color:var(colour_offwhite) !important;
   border-color: none !important ;
+  font-size: 1.1rem !important;
 }
 
 .nav-tabs .nav-link:hover{
     color: var(--colour_icon_main)  !important;
     background-color: var(colour_offwhite) !important;
+    font-size: 1.1rem !important;
 }

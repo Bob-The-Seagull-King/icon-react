@@ -58,12 +58,7 @@ const FoeJobDisplay = (props: any) => {
 
             <FoeStatsDisplay data={stats}/>
 
-            <div className="verticalspacer"/>
-            
-            <div>
-                    <div className="separator">&#x27E1;</div>
-            </div> 
-            <div className="verticalspacer"/>
+            <div className="verticalspacerbig"/>
             
             {FoeJobObject.ChapterSets.length === 1 &&
             <>
@@ -96,13 +91,13 @@ const FoeJobDisplay = (props: any) => {
                             <Tabs
                             defaultActiveKey={phase}
                             id="justify-tab-example"
-                            className="mb-3"
+                            className="mb-3 tabOverride"
                             activeKey={phase}
                             justify
                             onSelect={(e) => handlePhaseSelect(Number(e))}
                             >
                                 {FoeJobObject.ChapterSets[0].phases.map(_phase => 
-                                    <Tab key={"tab"+_phase.Name+"model"+FoeJobObject.ID} eventKey={FoeJobObject.ChapterSets[0].phases.indexOf(_phase)} title={_phase.Name} >
+                                    <Tab  tabClassName="tabOverride" key={"tab"+_phase.Name+"model"+FoeJobObject.ID} eventKey={FoeJobObject.ChapterSets[0].phases.indexOf(_phase)} title={_phase.Name} >
                                         {_phase.Description.length > 0 &&
                                             <>
                                         <div className="col">

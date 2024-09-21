@@ -23,7 +23,7 @@ export function capitalizeString(stringVal: string) {
 export function makestringpresentable(stringVal: string) {
     const headers = ['cl', 'jb', 'bd','fc']
     if (stringVal === null || stringVal === "") {
-        return 'N/A';
+        return '-';
     }
     const pairedString = stringVal.toString().split("_"); 
     let stringreturned = "";
