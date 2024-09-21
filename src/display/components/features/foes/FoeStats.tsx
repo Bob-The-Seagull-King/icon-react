@@ -36,13 +36,22 @@ const FoeStatsDisplay = (props: any) => {
                 mod = FoeStatsDisplay.hp_mod
             }
             val = (FoeStatsDisplay.hits * mod).toString()
+        }
 
+        return val;        
+    }
+
+    
+    function ReturnMembersVal() {
+        let val = ""
+        if (FoeStatsDisplay.members) {
+            val += FoeStatsDisplay.members.toString();
             if (FoeStatsDisplay.hp_per) {
                 val += " " + FoeStatsDisplay.hp_per
             }
         }
 
-        return val;        
+        return val;
     }
 
     return (
@@ -59,7 +68,7 @@ const FoeStatsDisplay = (props: any) => {
                     <ItemStat title={"HITS"} value={ReturnHitsVal()}/>
                 }
                 {FoeStatsDisplay.members &&
-                    <ItemStat title={"MEMBERS"} value={FoeStatsDisplay.members}/>
+                    <ItemStat title={"MEMBERS"} value={ReturnMembersVal()}/>
                 }
                 {FoeStatsDisplay.damage &&
                     <ItemStat title={"DAMAGE DIE"} value={"D" + FoeStatsDisplay.damage}/>
