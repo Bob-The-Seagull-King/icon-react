@@ -1,14 +1,9 @@
-import { IIconpendiumItemData, IconpendiumItem, ItemType } from '../../IconpendiumItem'
+import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
 import { DescriptionFactory } from '../../../utility/functions';
-import { PlayerAddon } from '../addons/Addon'
-import { IPlayerAbility, PlayerAbility } from '../abilities/Ability';
+import { PlayerAbility } from '../abilities/Ability';
 import { AbilityFactory } from '../../../factories/features/AbilityFactory';
 import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
-import { LimitBreakFactory } from '../../../factories/features/LimitBreakFactory';
-import { AddonFactory } from '../../../factories/features/AddonFactory';
-import { PlayerSummon } from '../summons/Summon';
-import { SummonFactory } from '../../../factories/features/SummonFactory';
 import { Requester } from '../../../factories/Requester';
 import { IFoeStats } from './FoeStats';
 import { FoeFactory } from '../../../factories/features/FoeFactory';

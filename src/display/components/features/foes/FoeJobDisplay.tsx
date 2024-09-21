@@ -5,19 +5,14 @@ import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
 // Classes
-import { returnTags, returnDescription } from '../../../../utility/util';
+import { returnDescription } from '../../../../utility/util';
 import { FoeJob } from '../../../../classes/feature/foes/FoeJob';
-import { Trait } from '../../../../classes/feature/trait/Trait';
-import { TraitFactory } from '../../../../factories/features/TraitFactory';
-import { IFoeStats } from '../../../../classes/feature/foes/FoeStats';
 
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 
 // Components
 import GenericDisplay from '../../generics/GenericDisplay';
 import TraitDisplay from '../trait/TraitDisplay';
-import ItemStat from '../../subcomponents/description/ItemStat';
-import GenericComponentDisplay from '../../../components/generics/GenericComponent';
 import AddonDisplay from '../addons/AddonDisplay';
 import FoeStatsDisplay from './FoeStats';
 

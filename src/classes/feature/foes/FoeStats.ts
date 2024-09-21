@@ -1,6 +1,4 @@
-import { AbilityFactory } from "../../../factories/features/AbilityFactory";
 import { TraitFactory } from "../../../factories/features/TraitFactory";
-import { PlayerAbility } from "../abilities/Ability";
 import { Trait } from "../trait/Trait";
 import { PlayerAddon } from "../addons/Addon";
 import { DescriptionFactory } from "../../../utility/functions";

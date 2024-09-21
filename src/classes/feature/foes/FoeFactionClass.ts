@@ -1,17 +1,8 @@
-import { IIconpendiumItemData, IconpendiumItem, ItemType } from '../../IconpendiumItem'
+import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
 import { DescriptionFactory } from '../../../utility/functions';
-import { PlayerAddon } from '../addons/Addon'
-import { IPlayerAbility, PlayerAbility } from '../abilities/Ability';
-import { AbilityFactory } from '../../../factories/features/AbilityFactory';
-import { Trait } from '../trait/Trait';
-import { TraitFactory } from '../../../factories/features/TraitFactory';
-import { LimitBreakFactory } from '../../../factories/features/LimitBreakFactory';
-import { AddonFactory } from '../../../factories/features/AddonFactory';
-import { PlayerSummon } from '../summons/Summon';
-import { SummonFactory } from '../../../factories/features/SummonFactory';
 import { Requester } from '../../../factories/Requester';
-import { IFoePhase, IFoeChapter, FoePhase, FoeChapter, IFoeStats, StatBuilder, MergeLists } from './FoeStats';
-import { FoeClass, IFoeClass } from './FoeClass';
+import { IFoeChapter, FoeChapter, IFoeStats, StatBuilder, MergeLists } from './FoeStats';
+import { IFoeClass } from './FoeClass';
 import { IFoeFaction } from './FoeFaction';
 import { FoeFactory } from '../../../factories/features/FoeFactory';
 import { FoeJob, IFoeJob } from './FoeJob';
