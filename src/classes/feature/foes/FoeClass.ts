@@ -1,6 +1,6 @@
 import { IIconpendiumItemData, IconpendiumItem, ItemType } from '../../IconpendiumItem'
 import { PlayerAddon } from '../addons/Addon'
-import { AbilityFactory } from '../../../factories/features/AbilityFactory';
+import { AddonFactory } from '../../../factories/features/AddonFactory';
 import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
 import { IFoeStats } from './FoeStats';
@@ -39,7 +39,7 @@ class FoeClass extends IconpendiumItem {
 
         let i = 0;
         for (i = 0; i < _data.length; i++) {
-            array.push(AbilityFactory.CreateNewAbility(_data[i], 'foeabilities'))
+            array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities'))
         }
         return array;
     }
