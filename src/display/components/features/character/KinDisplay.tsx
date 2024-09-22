@@ -13,6 +13,7 @@ import { ITable } from '../../../../classes/feature/table/tablebody';
 import EmptyDisplay from '../../../components/generics/EmptyDisplay';
 import TableDisplay from '../table/TableDisplay';
 import { Kin } from '../../../../classes/feature/character/Kin';
+import ImageSetDisplay from '../../../components/generics/ImageSetDisplay';
 
 const KinDisplay = (props: any) => {
     const KinObject: Kin = props.data
@@ -34,6 +35,18 @@ const KinDisplay = (props: any) => {
             <div>
                 {returnDescription(KinObject, KinObject.Description)}
             </div>
+            {KinObject.Images.length > 0 &&
+                <>
+                <div className="verticalspacer"/> 
+                <div>
+                    <div className="separator">Gallery</div>
+                </div> 
+                <div className="verticalspacer"/>
+                <div>
+                    <ImageSetDisplay data={KinObject.Images}/>
+                </div>
+                </>
+            }
             
         </div>
     )

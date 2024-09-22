@@ -17,6 +17,7 @@ import LimitBreakDisplay from '../abilities/LimitBreakDisplay';
 import AddonDisplay from '../addons/AddonDisplay';
 import SummonDisplay from '../summons/SummonDisplay';
 import JobAbilityDisplay from './JobAbilityDisplay';
+import ImageSetDisplay from '../../../components/generics/ImageSetDisplay';
 
 const JobDisplay = (props: any) => {
     const JobObject: Job = props.data
@@ -102,6 +103,19 @@ const JobDisplay = (props: any) => {
                 {ReturnAbilities()}
                 {JobObject.Abilities.map((item) => <JobAbilityDisplay key={"jobability"} data={item}/>)}
             </div>
+            {JobObject.Images.length > 0 &&
+                <>
+                <div className="verticalspacer"/> 
+                <div>
+                    <div className="separator">Gallery</div>
+                </div> 
+                <div className="verticalspacer"/>
+                <div>
+                    <ImageSetDisplay data={JobObject.Images}/>
+                </div>
+                </>
+            }
+            
         </div>
     )
 }
