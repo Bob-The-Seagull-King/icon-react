@@ -18,6 +18,7 @@ import AddonDisplay from '../addons/AddonDisplay';
 import FoeTrophyDisplay from './FoeTrophyDisplay';
 import FoeJobSetDisplay from './FoeJobSetDisplay';
 import FoeClassFactionDisplay from './FoeClassFactionDisplay';
+import ImageSetDisplay from '../../../components/generics/ImageSetDisplay';
 
 const FoeFactionDisplay = (props: any) => {
     const FoeFactionObject: FoeFaction = props.data
@@ -28,7 +29,19 @@ const FoeFactionDisplay = (props: any) => {
                     {returnDescription(FoeFactionObject, FoeFactionObject.Description)} 
             </div>
             
-            <div className="verticalspacer"/>
+            
+            {FoeFactionObject.Images.length > 0 &&
+                <>
+                <div className="verticalspacer"/> 
+                <div>
+                    <div className="separator">Gallery</div>
+                </div> 
+                <div className="verticalspacer"/>
+                <div>
+                    <ImageSetDisplay data={FoeFactionObject.Images}/>
+                </div>
+                </>
+            }
                 
             <div className="verticalspacer"/>
 
@@ -154,6 +167,8 @@ const FoeFactionDisplay = (props: any) => {
              </Tab>
             }
             </Tabs>
+
+            
                         
         </div>
     )
