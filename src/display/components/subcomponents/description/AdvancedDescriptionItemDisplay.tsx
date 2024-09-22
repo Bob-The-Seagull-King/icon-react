@@ -15,6 +15,8 @@ import { PlayerTable } from '../../../../classes/feature/table/tablebody'
 import { TableFactory } from '../../../../factories/features/TableFactory'
 import { Trait } from '../../../../classes/feature/trait/Trait'
 import { TraitFactory } from '../../../../factories/features/TraitFactory'
+import { FoeJob } from '../../../../classes/feature/foes/FoeJob'
+import { FoeFactory } from '../../../../factories/features/FoeFactory'
 
 // Components
 import GenericDisplay from '../../../../display/components/generics/GenericDisplay'
@@ -24,6 +26,7 @@ import SummonDisplay from '../../../../display/components/features/summons/Summo
 import GenericHover from '../../../../display/components/generics/GenericHover'
 import TraitDisplay from '../../../../display/components/features/trait/TraitDisplay'
 import EmptyDisplay from '../../../../display/components/generics/EmptyDisplay'
+import FoeJobDisplay from '../../../../display/components/features/foes/FoeJobDisplay'
 
 const AdvancedDescriptionItemDisplay = (props: any) => {
     const description: AdvancedDescription = props.data
@@ -143,6 +146,19 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
                 return (
                     <span>
                         <span className=''>{findTextSummon(item.Content?.toString() || "")}</span>
+                        <span>
+                            {item.SubContent?.map((subitem) => (
+                               <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
+                            ))}
+                        </span>
+                        <span>{" "}</span>
+                    </span>
+                )
+            }
+            case "textfoe": {
+                return (
+                    <span>
+                        <span className=''>{findTextFoe(item.Content?.toString() || "")}</span>
                         <span>
                             {item.SubContent?.map((subitem) => (
                                <AdvancedDescriptionItemDisplay key="descriptionsubitem" data={subitem} parent={parentItem}/>
@@ -361,6 +377,21 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
 
         return (
             <GenericHover d_colour={'icon'} d_name={summon.Name} titlename={summon.Name} d_type={""} d_method={() => <SummonDisplay data={summon} />}/>
+        )
+    }
+
+    /**
+     * returns a component showing a Summon display when hovered over
+     * @param id The ID of the addon
+     * @returns Display component with the Addon
+     */
+    function findTextFoe (id: string) {
+        let summon: FoeJob | null = null;
+
+        summon = FoeFactory.CreateNewFoeJob(id)
+
+        return (
+            <GenericHover d_colour={summon.Class} d_name={summon.Name} titlename={summon.Name} d_type={""} d_method={() => <FoeJobDisplay data={summon} />}/>
         )
     }
 
