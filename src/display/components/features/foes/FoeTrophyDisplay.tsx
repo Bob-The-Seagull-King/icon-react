@@ -22,17 +22,17 @@ const FoeTrophyDisplay = (props: any) => {
                     <GenericPopup titlename={TrophyObject.Name} d_colour={'icon'} d_name={TrophyObject.Name} d_type={""} d_method={() => <TrophyDisplay data={TrophyObject}/>}/>
                 </div>
             </div>
-            <div className="col-2">
+            <div className="col-1">
                 <div className="equipbody">
                     {(TrophyObject.Uses <= 0) ? "Unlimited" : makestringpresentable(TrophyObject.Uses.toString())}
                 </div>
             </div>
-            <div className="col-2">
+            <div className="col-1">
                 <div className="equipbody">
                 {makestringpresentable(TrophyObject.UseType)}
                 </div>
             </div>
-            <div className="col-4">
+            <div className="col-6">
                 <div className="equipbody">
                     {returnTags(TrophyObject.Tags, bannedAbilityTags)}
                 </div>

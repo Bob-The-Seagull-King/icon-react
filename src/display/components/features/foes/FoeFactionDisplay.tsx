@@ -49,10 +49,14 @@ const FoeFactionDisplay = (props: any) => {
                 <Masonry gutter="20px">
                     
                     <div className="col">
+                        {FoeFactionObject.Template.length > 0 &&
+                        <>
                         <div>
                             <div className="separator">Template</div>
                         </div> 
-                            {returnDescription(FoeFactionObject, FoeFactionObject.Template)} 
+                            {returnDescription(FoeFactionObject, FoeFactionObject.Template)}
+                        </>
+                        } 
                     </div> 
                     <div>
                         {FoeFactionObject.Traits.length > 0 &&
@@ -78,7 +82,8 @@ const FoeFactionDisplay = (props: any) => {
                     
                 </Masonry>
             </ResponsiveMasonry>
-
+            {FoeFactionObject.Trophies.length > 0 &&
+            <>
             <div className="verticalspacer"/> 
             <div>
                 <div className="separator">Trophies</div>
@@ -90,19 +95,20 @@ const FoeFactionDisplay = (props: any) => {
                     <div className="col-4">
                         <div className="equiptitle">Name</div>
                     </div>
-                    <div className="col-2">
+                    <div className="col-1">
                         <div className="equiptitle">Uses</div>
                     </div>
-                    <div className="col-2">
-                        <div className="equiptitle">Use Type</div>
+                    <div className="col-1">
+                        <div className="equiptitle">Type</div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-6">
                         <div className="equiptitle">Tags</div>
                     </div>
                 </div>
                 {FoeFactionObject.Trophies.map((item) => <FoeTrophyDisplay key={"foetrophy"} data={item}/>)}
             </div>
-
+            </>
+            }
             <div className="verticalspacer"/> 
             <div>
                 <div className="separator">Members</div>

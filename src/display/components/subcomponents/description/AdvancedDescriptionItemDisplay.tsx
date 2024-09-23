@@ -27,6 +27,7 @@ import GenericHover from '../../../../display/components/generics/GenericHover'
 import TraitDisplay from '../../../../display/components/features/trait/TraitDisplay'
 import EmptyDisplay from '../../../../display/components/generics/EmptyDisplay'
 import FoeJobDisplay from '../../../../display/components/features/foes/FoeJobDisplay'
+import GenericPopup from '../../../../display/components/generics/GenericPopup'
 
 const AdvancedDescriptionItemDisplay = (props: any) => {
     const description: AdvancedDescription = props.data
@@ -391,7 +392,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
         summon = FoeFactory.CreateNewFoeJob(id)
 
         return (
-            <GenericHover d_colour={summon.Class} d_name={summon.Name} titlename={summon.Name} d_type={""} d_method={() => <FoeJobDisplay data={summon} />}/>
+            <GenericPopup titlename={summon.Name} d_colour={'icon'} d_name={summon.Name} d_type={""} d_method={() => <FoeJobDisplay data={summon} />}/>
         )
     }
 
