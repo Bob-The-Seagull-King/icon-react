@@ -131,19 +131,19 @@ class FoeChapter {
         const _actions = MergeLists([data.actions, actions], [data.removed_actions])
         const _traits = MergeLists([data.traits, traits], [data.removed_traits])
 
-        this.Actions = AbilitiesFactory(_actions);
+        this.Actions = AbilitiesFactory(_actions, this.Class);
         this.Traits = TraitsFactory(_traits, this.Class);
     } 
 }
 
 
 
-function AbilitiesFactory(_data : string[]) {
+function AbilitiesFactory(_data : string[], colour? : string) {
     const array : PlayerAddon[] = []
 
     let i = 0;
     for (i = 0; i < _data.length; i++) {
-        array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities'))
+        array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities', colour))
     }
     return array;
 }

@@ -19,11 +19,11 @@ class PlayerAddon extends IconpendiumItem {
      * objects with DescriptionFactory
      * @param data Object data in IPlayerAddon format
      */
-    public constructor(data: IPlayerAddon)
+    public constructor(data: IPlayerAddon, colour? : string)
     {
         super(data)
         this.ItemType = ItemType.Addon;
-        this.Class = data.class_id;
+        this.Class = (colour)? colour : data.class_id;
         this.Description = DescriptionFactory(data.description);
     }
 }

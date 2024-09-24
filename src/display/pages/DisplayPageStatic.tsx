@@ -34,7 +34,7 @@ type NoneToNoneFunction = () => void;
 export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     abilities: {
         searchId: 'abilities',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <AbilityDisplay data={item} />}/>
@@ -107,7 +107,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     relics: {
         searchId: 'relics',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Colour} d_name={item.Name} d_type={""} d_method={() => <RelicDisplay data={item} />}/>
@@ -164,7 +164,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     summons: {
         searchId: 'summons',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Colour} d_name={item.Name} d_type={""} d_method={() => <SummonDisplay data={item} />}/>
@@ -229,7 +229,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     jobs: {
         searchId: 'jobs',
-        width: 10,
+        width: 9,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <JobDisplay data={item} />}/>
@@ -286,7 +286,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     classes: {
         searchId: 'classes',
-        width: 10,
+        width: 9,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <ClassDisplay data={item} />}/>
@@ -335,7 +335,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     glossary: {
         searchId: 'glossary',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <GlossaryDisplay data={item} />}/>
@@ -384,7 +384,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     trophies: {
         searchId: 'trophies',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <TrophyDisplay data={item} />}/>
@@ -457,7 +457,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     powers: {
         searchId: 'powers',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <PowerDisplay data={item} />}/>
@@ -530,7 +530,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     actions: {
         searchId: 'actions',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <ActionDisplay data={item} />}/>
@@ -568,7 +568,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     bonds: {
         searchId: 'bonds',
-        width: 10,
+        width: 9,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <BondDisplay data={item} />}/>
@@ -606,7 +606,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     kins: {
         searchId: 'kins',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <KinDisplay data={item} />}/>
@@ -644,7 +644,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     cultures: {
         searchId: 'cultures',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <CultureDisplay data={item} />}/>
@@ -682,7 +682,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     campitems: {
         searchId: 'campitems',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <CampItemDisplay data={item} />}/>
@@ -747,7 +747,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     rules: {
         searchId: 'rules',
-        width: 10,
+        width: 9,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <RulesetDisplay data={item} />}/>
@@ -785,7 +785,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     foeclass: {
         searchId: 'foeclass',
-        width: 8,
+        width: 7,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <FoeClassDisplay data={item} />}/>
@@ -823,7 +823,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     foefaction: {
         searchId: 'foefaction',
-        width: 10,
+        width: 9,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.ID} d_name={item.Name} d_type={""} d_method={() => <FoeFactionDisplay data={item} />}/>
@@ -861,7 +861,7 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
     },
     foejobs: {
         searchId: 'foejobs',
-        width: 10,
+        width: 9,
         returnDisplay(item: any) {
             return (
                 <GenericDisplay  d_colour={item.Class} d_name={item.Name} d_type={""} d_method={() => <FoeJobDisplay data={item} />}/>

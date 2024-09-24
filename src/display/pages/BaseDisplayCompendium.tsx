@@ -55,7 +55,7 @@ const BaseDisplayCompendium = (prop: any) => {
 
     // Return result -----------------------------
     return (
-        <div className="container">
+        <div className="container" style={{maxWidth:"100%"}}>
             <div className="row">
                 {/* Display the filters and abilities which match the filters, if any. */}
                 <div className={"col-lg-" + (12-DisplayPage.width) + " col-md-" + (12-DisplayPage.width) + " col-sm-12 col-xs-12 col-12 my-0 py-0"}>
