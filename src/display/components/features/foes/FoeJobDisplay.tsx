@@ -15,6 +15,7 @@ import GenericDisplay from '../../generics/GenericDisplay';
 import TraitDisplay from '../trait/TraitDisplay';
 import AddonDisplay from '../addons/AddonDisplay';
 import FoeStatsDisplay from './FoeStats';
+import FoeTrophyDisplay from './FoeTrophyDisplay';
 
 const FoeJobDisplay = (props: any) => {
     const FoeJobObject: FoeJob = props.data
@@ -42,6 +43,20 @@ const FoeJobDisplay = (props: any) => {
             <div className="col">
                     {returnDescription(FoeJobObject, FoeJobObject.Description)} 
             </div>
+            
+            {FoeJobObject.Tactics.length > 0 &&
+            
+            <>
+            <div className="verticalspacer"/>
+            <div>
+                    <div className="separator">Tactics</div>
+            </div>
+            
+            <div className="col">
+                    {returnDescription(FoeJobObject, FoeJobObject.Tactics)} 
+            </div>
+            </>
+            } 
             
             <div className="verticalspacer"/>
             <div>
@@ -257,6 +272,33 @@ const FoeJobDisplay = (props: any) => {
                     </Tab>
                 )}
             </Tabs>
+            }
+            {FoeJobObject.Trophies.length > 0 &&
+            <>
+            <div className="verticalspacer"/> 
+            <div>
+                <div className="separator">Trophies</div>
+            </div> 
+            <div className="verticalspacer"/>
+            <div>
+                
+                <div className="row row-cols-4">
+                    <div className="col-4">
+                        <div className="equiptitle">Name</div>
+                    </div>
+                    <div className="col-1">
+                        <div className="equiptitle">Uses</div>
+                    </div>
+                    <div className="col-1">
+                        <div className="equiptitle">Type</div>
+                    </div>
+                    <div className="col-6">
+                        <div className="equiptitle">Tags</div>
+                    </div>
+                </div>
+                {FoeJobObject.Trophies.map((item) => <FoeTrophyDisplay key={"foetrophy"} data={item}/>)}
+            </div>
+            </>
             }
         </div>
     )

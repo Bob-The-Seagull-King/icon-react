@@ -5,6 +5,8 @@ import { IFoePhase, IFoeChapter, FoePhase, FoeChapter, IFoeStats, StatBuilder, M
 import { IFoeClass } from './FoeClass';
 import { IFoeFaction } from './FoeFaction';
 import { IFoeFactionClass } from './FoeFactionClass';
+import { TrophyFactory } from '../../../factories/features/TrophyFactory';
+import { Trophy, ITrophy } from '../trophy/Trophy';
 
 interface IFoeJob extends IIconpendiumItemData {
     faction_id : string
@@ -18,6 +20,7 @@ interface IFoeJob extends IIconpendiumItemData {
     phases : IFoePhase[]
     chapter: number
     description: []
+    tactics : []
 }
 
 interface ChapterSet {
@@ -39,6 +42,8 @@ class FoeJob extends IconpendiumItem {
     public readonly ChapterSets : ChapterSet[] = [];
     public readonly Chapter;
     public readonly Description;
+    public readonly Tactics;
+    public readonly Trophies;
 
     /**
      * Assigns parameters and creates a series of description
@@ -56,6 +61,7 @@ class FoeJob extends IconpendiumItem {
         this.Category = data.category;
 
         this.Description = DescriptionFactory(data.description)
+        this.Tactics = DescriptionFactory(data.tactics)
 
         const _actionLists = [];
         const _actionremovedLists = [];
@@ -139,6 +145,29 @@ class FoeJob extends IconpendiumItem {
             )
         })
 
+        this.Trophies = this.TrophiesFactory();
+
+    }
+
+    private TrophiesFactory() {
+        const array : Trophy[] = []
+        
+        const _data = Requester.MakeRequest({searchtype: "complex", searchparam: {type: "trophies", request: {
+            operator: "and",
+            terms: [{
+                item        : "foe_id",
+                value       : this.ID,
+                equals      : true,
+                strict      : true,
+                istag       : false
+            }],
+            subparams: []
+        }}}) as ITrophy[]
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            array.push(TrophyFactory.CreateTrophy(_data[i]))
+        }
+        return array;
     }
 }
 
