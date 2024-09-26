@@ -32,7 +32,6 @@ const FoeJobDisplay = (props: any) => {
         UpdateStats()
       }
     function handlePhaseSelect(key : number) {
-        console.log(key);
         setPhase(key);
         UpdateStats()
     }

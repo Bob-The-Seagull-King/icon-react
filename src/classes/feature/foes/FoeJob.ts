@@ -112,7 +112,6 @@ class FoeJob extends IconpendiumItem {
         }
 
         ChapterObjects.forEach(_chapter => {
-            console.log(_chapter);
             const PhaseSet : FoePhase[] = [];            
 
             if (data.phases.length === 0) {

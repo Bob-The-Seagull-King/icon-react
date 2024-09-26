@@ -45,7 +45,31 @@ const FoeClassFactionDisplay = (props: any) => {
         <FoeStatsDisplay data={stats}/>
 
         <div className="verticalspacerbig"/>
-            
+        {FoeClassFactionObject.Chapters.length === 1 &&
+            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+            <Masonry gutter="20px">                                
+                {FoeClassFactionObject.Chapters[0].Traits.length > 0 &&
+                <>
+                <div>
+                    <div className="separator">Traits</div>
+                </div> 
+                {FoeClassFactionObject.Chapters[0].Traits.map((item) => <div key={"trait"+item.ID}><GenericDisplay key="traitloop" d_colour={item.Class} d_state={false} d_name={item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={item} />}/><div className="verticalspacer"/></div>)}   
+                <div className="verticalspacer"/> 
+                </>
+                } 
+                {FoeClassFactionObject.Chapters[0].Actions.length > 0 &&
+                <>
+                <div>
+                    <div className="separator">Actions</div>
+                </div> 
+                {FoeClassFactionObject.Chapters[0].Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
+                                
+                <div className="verticalspacer"/>  
+                </>
+                }
+            </Masonry>
+        </ResponsiveMasonry>
+            }
 
         {FoeClassFactionObject.Chapters.length > 1 &&
             <Tabs
