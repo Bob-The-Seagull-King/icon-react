@@ -100,7 +100,7 @@ class FoePhase {
         this.Trigger = DescriptionFactory(data.trigger)
 
         this.Actions = AbilitiesFactory(data.actions);
-        this.Traits = TraitsFactory(data.actions, this.Class);
+        this.Traits = TraitsFactory(data.traits, this.Class);
     }
 }
 
