@@ -44,6 +44,7 @@ class FoeJob extends IconpendiumItem {
     public readonly Description;
     public readonly Tactics;
     public readonly Trophies;
+    public readonly ClassName;
 
     /**
      * Assigns parameters and creates a series of description
@@ -58,6 +59,7 @@ class FoeJob extends IconpendiumItem {
 
         this.Chapter = data.chapter;
         this.Class = classdata.class;
+        this.ClassName = classdata.name;
         this.Category = data.category;
 
         this.Description = DescriptionFactory(data.description)

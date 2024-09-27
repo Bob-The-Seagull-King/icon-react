@@ -11,7 +11,7 @@ import ItemStat from '../../subcomponents/description/ItemStat';
 
 const PowerDisplay = (props: any) => {
     const PowerObject: Power = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     return (
         <div className='abilityInternalStructure'>

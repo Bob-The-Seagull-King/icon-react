@@ -8,7 +8,7 @@ import { PlayerSummon } from "../../../../classes/feature/summons/Summon";
 
 const SummonDisplay = (props: any) => {
     const SummonObject: PlayerSummon = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     function returnLimit() {
         return (<> { SummonObject.Limit > 0 &&

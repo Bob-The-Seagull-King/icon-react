@@ -17,7 +17,7 @@ import ImageSetDisplay from '../../../components/generics/ImageSetDisplay';
 
 const KinDisplay = (props: any) => {
     const KinObject: Kin = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     return (
         <div className='abilityInternalStructure'>

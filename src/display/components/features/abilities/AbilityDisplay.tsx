@@ -14,7 +14,7 @@ import TraitDisplay from '../trait/TraitDisplay';
 
 const AbilityDisplay = (props: any) => {
     const AbilityObject: PlayerAbility = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     function findMastery(id: string) {
         let trait: Trait | null = null;

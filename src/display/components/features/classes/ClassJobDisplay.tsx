@@ -12,7 +12,7 @@ import JobDisplay from '../jobs/JobDisplay';
 
 const ClassJobDisplay = (props: any) => {
     const JobObject: Job = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     
     return (

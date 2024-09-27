@@ -8,7 +8,7 @@ import { PlayerAddon } from '../../../../classes/feature/addons/Addon';
 
 const AddonDisplay = (props: any) => {
     const AddonObject: PlayerAddon = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     return (
         <div className='abilityInternalStructure'>

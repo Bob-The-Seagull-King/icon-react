@@ -15,7 +15,7 @@ import { LimitBreak } from '../../../../classes/feature/abilities/LimitBreak';
 
 const LimitBreakDisplay = (props: any) => {
     const AbilityObject: LimitBreak = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
     const colour = props.colour;
 
     function findMastery(id: string) {

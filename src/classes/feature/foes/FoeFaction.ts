@@ -106,6 +106,7 @@ class FoeFaction extends IconpendiumItem {
             subparams: []
         }}}) as IFoeJob[]
         
+        _data.sort((one, two) => (one.name > two.name ? -1 : 1));
         _data.sort((one, two) => (one.chapter > two.chapter ? -1 : 1));
 
         let i = 0;
@@ -129,6 +130,8 @@ class FoeFaction extends IconpendiumItem {
             }],
             subparams: []
         }}}) as IFoeFactionClass[]
+
+        _data.sort((one, two) => (one.class_id < two.class_id ? -1 : 1));
 
         let i = 0;
         for (i = 0; i < _data.length; i++) {

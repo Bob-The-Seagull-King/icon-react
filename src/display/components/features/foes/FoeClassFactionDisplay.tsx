@@ -116,10 +116,13 @@ const FoeClassFactionDisplay = (props: any) => {
                 
             <div className="verticalspacer"/>
            <div className="row row-cols-2">
-                     <div className="col-6">
+                     <div className="col-4">
                          <div className="equiptitle">Name</div>
                      </div>
-                     <div className="col-6">
+                     <div className="col-4">
+                         <div className="equiptitle">Class</div>
+                     </div>
+                     <div className="col-4">
                          <div className="equiptitle">Chapter</div>
                      </div>
                  </div>

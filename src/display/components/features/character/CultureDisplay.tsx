@@ -16,7 +16,7 @@ import { Culture } from '../../../../classes/feature/character/Culture';
 
 const CultureDisplay = (props: any) => {
     const CultureObject: Culture = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     return (
         <div className='abilityInternalStructure'>

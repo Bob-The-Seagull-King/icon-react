@@ -11,7 +11,7 @@ import ItemStat from '../../subcomponents/description/ItemStat';
 
 const TrophyDisplay = (props: any) => {
     const TrophyObject: Trophy = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     return (
         <div className='abilityInternalStructure'>

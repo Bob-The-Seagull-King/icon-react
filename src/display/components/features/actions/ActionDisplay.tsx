@@ -15,7 +15,7 @@ import TableDisplay from '../table/TableDisplay';
 
 const ActionDisplay = (props: any) => {
     const ActionObject: Action = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
 
     function returnChapterExamples() {
 

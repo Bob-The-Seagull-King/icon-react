@@ -13,7 +13,7 @@ import TrophyDisplay from '../trophies/TrophyDisplay';
 
 const FoeTrophyDisplay = (props: any) => {
     const TrophyObject: Trophy = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
     
     return (
         <div className="row row-cols-3">

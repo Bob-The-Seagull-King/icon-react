@@ -16,7 +16,7 @@ import GenericPopup from '../../../components/generics/GenericPopup';
 
 const JobAbilityDisplay = (props: any) => {
     const AbilityObject: PlayerAbility = props.data
-    const bannedAbilityTags = ["inflict", "type"]
+    const bannedAbilityTags = ["inflict"]
     
     return (
         <div className="row row-cols-3">

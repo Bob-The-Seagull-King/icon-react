@@ -134,10 +134,13 @@ const FoeFactionDisplay = (props: any) => {
              <Tab key={"tab"+"uniques"} eventKey={"unique"} title={"UNIQUE"} >                   
              
                  <div className="row row-cols-2">
-                     <div className="col-6">
+                     <div className="col-4">
                          <div className="equiptitle">Name</div>
                      </div>
-                     <div className="col-6">
+                     <div className="col-4">
+                         <div className="equiptitle">Class</div>
+                     </div>
+                     <div className="col-4">
                          <div className="equiptitle">Chapter</div>
                      </div>
                  </div>
@@ -148,10 +151,13 @@ const FoeFactionDisplay = (props: any) => {
              <Tab key={"tab"+"elites"} eventKey={"elite"} title={"ELITE"} >                   
              
                  <div className="row row-cols-2">
-                     <div className="col-6">
+                     <div className="col-4">
                          <div className="equiptitle">Name</div>
                      </div>
-                     <div className="col-6">
+                     <div className="col-4">
+                         <div className="equiptitle">Class</div>
+                     </div>
+                     <div className="col-4">
                          <div className="equiptitle">Chapter</div>
                      </div>
                  </div>
@@ -162,10 +168,13 @@ const FoeFactionDisplay = (props: any) => {
              <Tab key={"tab"+"legends"} eventKey={"legend"} title={"LEGENDS"} >                   
              
                  <div className="row row-cols-2">
-                     <div className="col-6">
+                     <div className="col-4">
                          <div className="equiptitle">Name</div>
                      </div>
-                     <div className="col-6">
+                     <div className="col-4">
+                         <div className="equiptitle">Class</div>
+                     </div>
+                     <div className="col-4">
                          <div className="equiptitle">Chapter</div>
                      </div>
                  </div>

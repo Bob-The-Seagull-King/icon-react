@@ -14,12 +14,17 @@ const FoeJobSetDisplay = (props: any) => {
     
     return (
         <div className="row row-cols-3">
-            <div className="col-6">
+            <div className="col-4">
                 <div className="equipbody">
                     <GenericPopup titlename={JobObject.Name} d_colour={JobObject.Class} d_name={JobObject.Name} d_type={""} d_method={() => <FoeJobDisplay data={JobObject}/>}/>
                 </div>
             </div>
-            <div className="col-6">
+            <div className="col-4">
+                <div className="equipbody">
+                    {JobObject.ClassName}
+                </div>
+            </div>
+            <div className="col-4">
                 <div className="equipbody">
                     {JobObject.Chapter}
                 </div>
