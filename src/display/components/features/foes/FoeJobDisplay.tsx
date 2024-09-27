@@ -71,7 +71,7 @@ const FoeJobDisplay = (props: any) => {
             
             {FoeJobObject.ChapterSets.length === 1 &&
             <>
-                <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+                <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: ((FoeJobObject.ChapterSets[0].chapter.Traits.length === 0) || (FoeJobObject.ChapterSets[0].chapter.Actions.length === 0))? 1: 2}} >
                             <Masonry gutter="20px">                                
                                 {FoeJobObject.ChapterSets[0].chapter.Traits.length > 0 &&
                                 <>
@@ -134,7 +134,7 @@ const FoeJobDisplay = (props: any) => {
                                         </>
                                         }
                                         
-                                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+                                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: ((_phase.Traits.length === 0) || (_phase.Actions.length === 0))? 1: 2}} >
                                             <Masonry gutter="20px">                                
                                                 {_phase.Traits.length > 0 &&
                                                 <>
@@ -177,7 +177,7 @@ const FoeJobDisplay = (props: any) => {
             >
                 {FoeJobObject.ChapterSets.map(item => 
                     <Tab key={"tab"+item.chapter.Chapter+"model"+FoeJobObject.ID} eventKey={FoeJobObject.ChapterSets.indexOf(item)} title={"Chapter " + item.chapter.Name} >
-                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: ((item.chapter.Traits.length === 0) || (item.chapter.Actions.length === 0))? 1: 2}} >
                             <Masonry gutter="20px">                                
                                 {item.chapter.Traits.length > 0 &&
                                 <>
@@ -240,7 +240,7 @@ const FoeJobDisplay = (props: any) => {
                                         </>
                                         }
                                         
-                                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+                                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: ((_phase.Traits.length === 0) || (_phase.Actions.length === 0))? 1: 2}} >
                                             <Masonry gutter="20px">                                
                                                 {_phase.Traits.length > 0 &&
                                                 <>

@@ -46,7 +46,7 @@ const FoeClassFactionDisplay = (props: any) => {
 
         <div className="verticalspacerbig"/>
         {FoeClassFactionObject.Chapters.length === 1 &&
-            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768:  ((FoeClassFactionObject.Chapters[0].Traits.length === 0) || (FoeClassFactionObject.Chapters[0].Actions.length === 0))? 1: 2}} >
             <Masonry gutter="20px">                                
                 {FoeClassFactionObject.Chapters[0].Traits.length > 0 &&
                 <>
@@ -81,7 +81,7 @@ const FoeClassFactionDisplay = (props: any) => {
             >
                 {FoeClassFactionObject.Chapters.map(item => 
                     <Tab key={"tab"+item.Chapter+"model"+FoeClassFactionObject.ID} eventKey={FoeClassFactionObject.Chapters.indexOf(item)} title={"Chapter " + item.Name} >
-                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+                        <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768:  ((item.Traits.length === 0) || (item.Actions.length === 0))? 1: 2}} >
                             <Masonry gutter="20px">                                
                                 {item.Traits.length > 0 &&
                                 <>
