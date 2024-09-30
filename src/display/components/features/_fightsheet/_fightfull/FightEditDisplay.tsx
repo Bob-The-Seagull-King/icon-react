@@ -37,6 +37,10 @@ const FightEditDisplay = (prop: any) => {
         returnkey(_keyval+1)
     }
 
+    function ViewContentPack() {
+        UpdateFight(FightItem, true)
+    }
+
     const exportData = () => {
         const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
             JSON.stringify(FightItem.ConvertToInterface(), null, 4)
@@ -72,7 +76,26 @@ const FightEditDisplay = (prop: any) => {
                 <div className="verticalspacerbig"/>
             </div>
             <div className="row">
-                <GenericEditTextDisplay manager={Manager} item={FightItem} statictype={'fighttitle'} updater={UpdateFunction}/> 
+                <div className="notecontainer">
+                    <div>
+                        <GenericEditTextDisplay manager={Manager} item={FightItem} statictype={'fighttitle'} updater={UpdateFunction}/> 
+                    </div>
+                    <div>
+                        
+                        <span className="packvrbox">
+                            <div className="vr packvr"></div>
+                            <Button style={{padding:"0em"}} variant="" onClick={() => exportData()}>
+                                <FontAwesomeIcon icon={faDownload} style={{fontSize:"2em",margin:"0em"}}/>
+                            </Button>
+                        </span>
+                        <span className="packvrbox">
+                            <div className="vr packvr"></div>
+                            <Button style={{padding:"0em"}} variant="" onClick={() => ViewContentPack()}>
+                                <FontAwesomeIcon icon={faEye} style={{fontSize:"2em",margin:"0em"}}/>
+                            </Button>
+                        </span>
+                    </div>
+                </div>
             </div>
             <div className="row">
                 <div className="verticalspacerbig"/>

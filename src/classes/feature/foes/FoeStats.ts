@@ -68,7 +68,8 @@ export function MergeLists(add_lists : string[][], remove_lists : string[][]) {
     remove_lists.forEach( _list => {
         FinalArray = FinalArray.filter(item => !(_list.includes(item)))
     })
-
+    
+    FinalArray = FinalArray.filter((item, index) => FinalArray.indexOf(item) === index);
     FinalArray.sort((one, two) => (one > two ? -1 : 1));
 
     return FinalArray;
