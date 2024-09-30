@@ -33,9 +33,9 @@ const NoteItemEditDisplay = (props: any) => {
             <Collapse in={open}>
             <div>                
                 <div className='abilityInternalStructure'>
-                    <p>
+                    <div className="paragraphlinebreak">
                         {Note.text}
-                    </p>
+                    </div>
                 </div>
             </div>
             </Collapse>

@@ -79,6 +79,7 @@ const FightViewDisplay = (prop: any) => {
                 <div className="verticalspacerbig"/>
             </div> 
             <div className="row">
+                {FightItem.Notes.length > 0 &&
                 <div className="col-6">                     
                     <div>
                         <div className="separator">Notes</div>
@@ -87,6 +88,7 @@ const FightViewDisplay = (prop: any) => {
                         <NoteItemViewDisplay key={FightItem.Notes.indexOf(_item)+"ViewNote"} data={_item} />
                     )}
                 </div>
+                }
             </div> 
         </div>
     )

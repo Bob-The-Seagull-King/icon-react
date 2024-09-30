@@ -322,7 +322,9 @@
     font-size: 1.1rem !important;
 }
 
-
+.paragraphlinebreak {
+  white-space: pre-line;
+}
 
 .largefonttext {
   color: var(--colour_icon_main);
