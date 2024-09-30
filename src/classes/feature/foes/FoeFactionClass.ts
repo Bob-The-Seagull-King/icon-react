@@ -111,7 +111,7 @@ class FoeFactionClass extends IconpendiumItem {
         
         let i = 0;
         for (i = 0; i < _data.length; i++) {
-            array.push(FoeFactory.CreateFoeJob(_data[i]))
+            array.push(FoeFactory.CreateFoeJob(_data[i], 0))
         }
         return array;
     }

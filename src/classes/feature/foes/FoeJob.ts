@@ -116,7 +116,7 @@ class FoeJob extends IconpendiumItem {
         } else {
             _chapters.forEach(_chapter => {
                 
-            if (((chapter != null) && (chapter === _chapter.chapter)) || (chapter === null)) {
+            if (((chapter != null) && (chapter === _chapter.chapter)) || (chapter === 0) || (chapter === null)) {
                 ChapterObjects.push(new FoeChapter(_chapter, actionlist, traitlist, this.Stats, this.Class))
             }
             })
