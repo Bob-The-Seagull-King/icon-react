@@ -123,12 +123,12 @@ const FightListDisplay = (prop: any) => {
                         <div className="col">
                             <div className="" style={{paddingTop:"1em"}}>
                                 <div className="row justify-content-center" style={{display:"flex"}}>
-                                    <div className="col-md-4 col-12">
+                                    <div className="col-md-6 col-12">
                                         <InputGroup className="tagboxpad" style={{height:"4em"}}>
                                             <Form.Control ref={inputRef} style={{ height:"100%",textAlign:"center"}} onChange={e => updateTitle(e.target.value)} aria-label="Text input" defaultValue={NewFightTitle} placeholder="Fight Name"/>
                                         </InputGroup>
                                     </div>
-                                    <div className="col-md-4 col-12">
+                                    <div className="col-md-2 col-12">
                                         <InputGroup className="tagboxpad" style={{height:"4em"}}>
                                             <Form.Select style={{height:"100%",textAlign:"center"}} aria-label="Default select example" onChange={e => { updateChapter(Number(e.target.value)) 
                                                 factionRef = e.target;

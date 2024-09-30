@@ -17,9 +17,7 @@ export const EditTextDataDex : EditTextDataTable = {
     fighttitle : {
         title : 'Update Fight Title',
         returnBaseValue (_objitem : any | null, _subitem? : any | null) {
-            console.log(_objitem)
             if (_objitem) {
-                console.log("DHASKJDHASKJ")
                 return _objitem.Title}
             return ""
         },
@@ -28,9 +26,8 @@ export const EditTextDataDex : EditTextDataTable = {
 
             return (
                 <div className="largefonttext" style={{display:"flex",alignItems:"center"}}>
-                    <div style={{width:"fit-content"}}>
-                        <div style={{marginRight:"0.5em",textAlign:"center",width:"fit-content"}} className="d-none d-md-block">{Fight_Name}</div>
-                        <div style={{marginRight:"0.1em",fontSize:"0.7em",lineHeight:"0.75em",textAlign:"center",width:"fit-content"}} className="d-block d-md-none">{Fight_Name}</div>
+                    <div style={{width:"fit-content",marginRight:"0.5rem"}}>
+                        {Fight_Name}
                     </div>
                     <FontAwesomeIcon icon={faPenToSquare} className="hovermouse" style={{fontSize:"0.5em"}}  onClick={() => open()}/>
                 </div>

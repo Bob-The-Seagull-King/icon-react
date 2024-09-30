@@ -20,6 +20,7 @@ import { FightManager } from '../../../../../classes/fightsheets/FightManager';
 import { FightSheet } from '../../../../../classes/fightsheets/FightSheet';
 import { Button } from 'react-bootstrap';
 import GenericEditTextDisplay from '../../../../components/objectedit/GenericEditTextDisplay';
+import GenericEditListDisplay from '../../../../components/objectedit/GenericEditListDisplay';
 
 const FightEditDisplay = (prop: any) => {
     const Manager : FightManager = prop.manager;
@@ -45,6 +46,20 @@ const FightEditDisplay = (prop: any) => {
             </div>
             <div className="row">
                 <GenericEditTextDisplay manager={Manager} item={FightItem} statictype={'fighttitle'} updater={UpdateFunction}/> 
+            </div>
+            <div className="row">
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+            </div>            
+            <div className="row justify-content-center" style={{display:"flex"}}>                
+                <div style={{display:"flex",alignItems:"center"}}>                    
+                    <div  className="medfonttext" style={{width:"fit-content", marginRight:"1rem"}}>
+                        <p  style={{width:"fit-content"}}>Chapter</p>
+                    </div>
+                    <GenericEditListDisplay manager={Manager} item={FightItem} statictype={'fightchapter'} updater={UpdateFunction}/>
+                </div>
             </div>
        </div>
     )

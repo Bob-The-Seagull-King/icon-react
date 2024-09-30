@@ -50,10 +50,26 @@ const FightViewDisplay = (prop: any) => {
             <div className="row">
                 <div className="largefonttext" style={{display:"flex",alignItems:"center"}}>
                         <div style={{width:"fit-content"}}>
-                            <div style={{marginRight:"0.5em",textAlign:"center",width:"fit-content"}} className="d-none d-md-block">{FightItem.Title}</div>
-                            <div style={{marginRight:"0.1em",fontSize:"0.7em",lineHeight:"0.75em",textAlign:"center",width:"fit-content"}} className="d-block d-md-none">{FightItem.Title}</div>
+                            {FightItem.Title} 
                         </div>
                     </div>
+            </div>
+
+            <div className="row">
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+            </div>
+                      
+            <div className="row justify-content-center" style={{display:"flex"}}>                
+                <div style={{display:"flex",alignItems:"center"}}>                    
+                    <div  className="medfonttext" style={{width:"fit-content", marginRight:"1rem"}}>
+                        <p  style={{width:"fit-content"}}>{"Chapter " + ((FightItem.Chapter === 1)? "I" : (FightItem.Chapter === 2)? "II" : (FightItem.Chapter === 3)? "III" : "???")}</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

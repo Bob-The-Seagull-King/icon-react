@@ -319,7 +319,14 @@
 
 .largefonttext {
   color: var(--colour_icon_main);
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 700;
+  line-height: 1rem;
+}
+
+.medfonttext {
+  color: var(--colour_icon_main);
+  font-size: 3rem;
+  font-weight: 600;
   line-height: 1rem;
 }
