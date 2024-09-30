@@ -45,7 +45,7 @@ const GenericEditListDisplay = (props: any) => {
             
             <Modal data-theme={theme} onEnterKeyDown={() => handleCloseTextEdit()} show={showTextEdit}  contentClassName="filterboxStructure" dialogClassName="" onHide={handleCloseTextEdit} keyboard={true}  centered>
                 
-                <h1 className={'titleShape titlestyler backgroundicon'}>
+                <h1 className={'titleShape titlebody backgroundicon'}>
                     {EditStaticType.title}
                 </h1>
                 <Modal.Body >

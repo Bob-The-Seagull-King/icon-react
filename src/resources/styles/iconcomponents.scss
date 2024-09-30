@@ -303,6 +303,17 @@
     padding-bottom: 0.75rem;
 }
 
+.notecontainer {
+    display: flex; /* make element size relative to content */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    border-radius: 0rem;
+    width: 100%;
+    position: relative;
+}
+
 .contentpacksmallcontainer {
     align-items: center;
     align-content: center;

@@ -19,6 +19,7 @@ import { ContentPack } from '../../../../../classes/contentpacks/contentpack'
 import { FightManager } from '../../../../../classes/fightsheets/FightManager';
 import { FightSheet } from '../../../../../classes/fightsheets/FightSheet';
 import { Button } from 'react-bootstrap';
+import NoteItemViewDisplay from '../../notes/NoteItemViewDisplay';
 
 const FightViewDisplay = (prop: any) => {
     const Manager : FightManager = prop.manager;
@@ -71,6 +72,22 @@ const FightViewDisplay = (prop: any) => {
                     </div>
                 </div>
             </div>
+            <div className="row">
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+            </div> 
+            <div className="row">
+                <div className="col-6">                     
+                    <div>
+                        <div className="separator">Notes</div>
+                    </div> 
+                    {FightItem.Notes.map(_item => 
+                        <NoteItemViewDisplay key={FightItem.Notes.indexOf(_item)+"ViewNote"} data={_item} />
+                    )}
+                </div>
+            </div> 
         </div>
     )
     // -------------------------------------------

@@ -21,6 +21,8 @@ import { FightSheet } from '../../../../../classes/fightsheets/FightSheet';
 import { Button } from 'react-bootstrap';
 import GenericEditTextDisplay from '../../../../components/objectedit/GenericEditTextDisplay';
 import GenericEditListDisplay from '../../../../components/objectedit/GenericEditListDisplay';
+import NotesEditDisplay from '../../notes/NotesEditDisplay';
+import { INote } from '../../../../../classes/Note';
 
 const FightEditDisplay = (prop: any) => {
     const Manager : FightManager = prop.manager;
@@ -37,6 +39,16 @@ const FightEditDisplay = (prop: any) => {
     
         link.click();
       };
+
+    function CreateNewNote() {
+        Manager.NewNote(FightItem);
+        UpdateFunction(FightItem, false);
+    }
+    
+    function DeleteNewNote(_note : INote) {
+        Manager.DeleteNote(FightItem, _note);
+        UpdateFunction(FightItem, false);
+    }
       
 
     return (
@@ -61,6 +73,17 @@ const FightEditDisplay = (prop: any) => {
                     <GenericEditListDisplay manager={Manager} item={FightItem} statictype={'fightchapter'} updater={UpdateFunction}/>
                 </div>
             </div>
+            <div className="row">
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+            </div> 
+            <div className="row">
+                <div className="col-6"> 
+                    <NotesEditDisplay manager={Manager} updater={UpdateFunction} data={FightItem} deleter={DeleteNewNote} creater={CreateNewNote}/>
+                </div>
+            </div> 
        </div>
     )
     // -------------------------------------------
