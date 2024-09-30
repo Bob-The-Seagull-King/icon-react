@@ -67,10 +67,6 @@ const FightViewDisplay = (prop: any) => {
             <div className="row">
                 <div className="verticalspacerbig"/>
                 <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
             </div>
                       
             <div className="row justify-content-center" style={{display:"flex"}}>                
@@ -83,18 +79,19 @@ const FightViewDisplay = (prop: any) => {
             <div className="row">
                 <div className="verticalspacerbig"/>
                 <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
             </div> 
             <div className="row">
                 {FightItem.Notes.length > 0 &&
-                <div className="col-4">                     
+                <div className="col-md-4 col-12">                     
                     {FightItem.Notes.map(_item => 
                         <NoteItemViewDisplay key={FightItem.Notes.indexOf(_item)+"ViewNote"} data={_item} />
                     )}
+                    
+                        <div className="verticalspacerbig"/>
+                        <div className="verticalspacerbig"/>
                 </div>
                 }
-                <div className={"col-"+((FightItem.Notes.length > 0)? "8" : "12")}>
+                <div className={"col-md-"+((FightItem.Notes.length > 0)? "8" : "12") + " col-12"}>
                     
                 <div className="row">
                 {((FightItem.Traits.length > 0) || (FightItem.Abilities.length > 0)) &&

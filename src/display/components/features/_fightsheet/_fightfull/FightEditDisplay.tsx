@@ -100,8 +100,6 @@ const FightEditDisplay = (prop: any) => {
             <div className="row">
                 <div className="verticalspacerbig"/>
                 <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
             </div>            
             <div className="row justify-content-center" style={{display:"flex"}}>                
                 <div style={{display:"flex",alignItems:"center"}}>                    
@@ -114,14 +112,14 @@ const FightEditDisplay = (prop: any) => {
             <div className="row">
                 <div className="verticalspacerbig"/>
                 <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
-                <div className="verticalspacerbig"/>
             </div> 
             <div className="row">
-                <div className="col-5"> 
+                <div className="col-md-5 col-12"> 
                     <NotesEditDisplay manager={Manager} updater={UpdateFunction} data={FightItem} deleter={DeleteNewNote} creater={CreateNewNote}/>
+                    <div className="verticalspacerbig"/>
+                    <div className="verticalspacerbig"/>
                 </div>
-                <div className="col-7"> 
+                <div className="col-md-7 col-12"> 
                     {returnEnemies()}
                 </div>
             </div> 
