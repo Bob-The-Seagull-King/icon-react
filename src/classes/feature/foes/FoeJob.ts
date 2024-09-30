@@ -53,7 +53,7 @@ class FoeJob extends IconpendiumItem {
      * objects with DescriptionFactory
      * @param data Object data in IPlayerAbility format
      */
-    public constructor(data: IFoeJob, chapter? : number)
+    public constructor(data: IFoeJob, chapter? : number, _faction? : string)
     {
         super(data)
 
@@ -84,7 +84,13 @@ class FoeJob extends IconpendiumItem {
         _traitremovedLists.push(data.removed_traits)
 
         if ((this.Category != 'legend')) {
-            const factiondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foefaction", id: data.faction_id}}) as IFoeFaction
+            let factionval = ""
+            if ((_faction != undefined) && (_faction != null)) {
+                factionval = _faction
+            } else {
+                factionval = data.faction_id
+            }
+            const factiondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foefaction", id: factionval}}) as IFoeFaction
             _actionLists.push(factiondata.actions_added)
             _traitLists.push(factiondata.traits_added)
             _statsVal = StatBuilder(factiondata.stats, _statsVal)

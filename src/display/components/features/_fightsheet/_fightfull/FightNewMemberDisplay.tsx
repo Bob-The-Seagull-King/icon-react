@@ -228,7 +228,7 @@ const FightNewMemberDisplay = (prop: any) => {
                         <span className="contentsubnamecontainer">
                             <span/>
                             <h1 className="packtitle hovermouse" onClick={() => handleShow()}>
-                                {_member.Job.Name}
+                                {((_member.Job.FactionData)? "(" + _member.Job.FactionData.name + ") ": "") + _member.Job.Name}
                             </h1>
                             <span/>
                         </span>
