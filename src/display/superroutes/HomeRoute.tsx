@@ -12,7 +12,7 @@ import logo from '../../resources/images/iconpendium_logo.png'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic, faShapes, faTheaterMasks, faPerson, faCity, faCampground, faBook, faUserGroup, faUserDoctor } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faFistRaised, faScrewdriverWrench, faLandmark, faAnkh, faList, faTrophy, faMagic, faShapes, faTheaterMasks, faPerson, faCity, faCampground, faBook, faUserGroup, faUserDoctor, faSkull } from '@fortawesome/free-solid-svg-icons'
 import { faFileLines } from '@fortawesome/free-solid-svg-icons'
 
 const HomeRoute: React.FC = () => {
@@ -213,6 +213,14 @@ const HomeRoute: React.FC = () => {
                                 <FontAwesomeIcon icon={faFileLines} className="pageaccestext"/>
                                 <h1 className="pageaccestext">
                                     CONTENT MANAGER
+                                </h1>
+                            </div>
+                        </div>
+                        <div className="col" style={{padding:"0.5em"}}>
+                            <div className="pageaccessbox borderstyler subbordericon hovermouse" onClick={() => NavigateHome("tools/fights/")}>
+                                <FontAwesomeIcon icon={faSkull} className="pageaccestext"/>
+                                <h1 className="pageaccestext">
+                                    FIGHT MANAGER
                                 </h1>
                             </div>
                         </div>

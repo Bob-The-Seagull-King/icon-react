@@ -26,6 +26,7 @@ export const ROUTES = {
     COMPENDIUM_FOEFACTION_ROUTE: '/foe/faction/*',
     COMPENDIUM_FOEJOB_ROUTE: '/foe/job/*',
 
-    TOOLS_CONTENT_UPLOAD_ROUTE: '/content/*'
+    TOOLS_CONTENT_UPLOAD_ROUTE: '/content/*',
+    TOOLS_CONTENT_FIGHTS_ROUTE: '/fights/*'
 
 }

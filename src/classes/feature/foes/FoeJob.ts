@@ -51,7 +51,7 @@ class FoeJob extends IconpendiumItem {
      * objects with DescriptionFactory
      * @param data Object data in IPlayerAbility format
      */
-    public constructor(data: IFoeJob)
+    public constructor(data: IFoeJob, chapter? : number)
     {
         super(data)
 
@@ -120,31 +120,33 @@ class FoeJob extends IconpendiumItem {
         }
 
         ChapterObjects.forEach(_chapter => {
-            const PhaseSet : FoePhase[] = [];            
+            if (((chapter != null) && (chapter === _chapter.Chapter)) || (chapter === null)) {
+                const PhaseSet : FoePhase[] = [];            
 
-            if (data.phases.length === 0) {
-                const _phase : IFoePhase = {     
-                    description: [],
-                    trigger: [],
-                    name: '',
-                    actions: [],
-                    traits: [],
-                    stats: {}
-                }
+                if (data.phases.length === 0) {
+                    const _phase : IFoePhase = {     
+                        description: [],
+                        trigger: [],
+                        name: '',
+                        actions: [],
+                        traits: [],
+                        stats: {}
+                    }
 
-                PhaseSet.push(new FoePhase(_phase, _chapter.Stats, this.Class))
-            } else {
-                data.phases.forEach(_phase => {
                     PhaseSet.push(new FoePhase(_phase, _chapter.Stats, this.Class))
-                })
-            }
-
-            this.ChapterSets.push(
-                {
-                    chapter : _chapter,
-                    phases : PhaseSet
+                } else {
+                    data.phases.forEach(_phase => {
+                        PhaseSet.push(new FoePhase(_phase, _chapter.Stats, this.Class))
+                    })
                 }
-            )
+
+                this.ChapterSets.push(
+                    {
+                        chapter : _chapter,
+                        phases : PhaseSet
+                    }
+                )
+            }
         })
 
         this.Trophies = this.TrophiesFactory();

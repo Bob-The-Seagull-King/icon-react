@@ -31,8 +31,8 @@ class FoeFactory {
         return ability;
     }  
 
-    static CreateFoeJob(_ability: IFoeJob) {
-        const ability = new FoeJob(_ability)
+    static CreateFoeJob(_ability: IFoeJob, chapter? : number) {
+        const ability = new FoeJob(_ability, chapter)
         return ability;
     }  
 
@@ -54,9 +54,9 @@ class FoeFactory {
         return jobNew;
     }   
 
-    static CreateNewFoeJob(_val : string) {
+    static CreateNewFoeJob(_val : string, chapter? : number) {
         const jobdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foejobs", id: _val}}) as IFoeJob
-        const jobNew = FoeFactory.CreateFoeJob(jobdata)
+        const jobNew = FoeFactory.CreateFoeJob(jobdata, chapter)
         return jobNew;
     }   
 
