@@ -115,12 +115,14 @@ class FoeJob extends IconpendiumItem {
             ChapterObjects.push(new FoeChapter(basechapter, actionlist, traitlist, this.Stats, this.Class))
         } else {
             _chapters.forEach(_chapter => {
+                
+            if (((chapter != null) && (chapter === _chapter.chapter)) || (chapter === null)) {
                 ChapterObjects.push(new FoeChapter(_chapter, actionlist, traitlist, this.Stats, this.Class))
+            }
             })
         }
 
         ChapterObjects.forEach(_chapter => {
-            if (((chapter != null) && (chapter === _chapter.Chapter)) || (chapter === null)) {
                 const PhaseSet : FoePhase[] = [];            
 
                 if (data.phases.length === 0) {
@@ -146,7 +148,7 @@ class FoeJob extends IconpendiumItem {
                         phases : PhaseSet
                     }
                 )
-            }
+            
         })
 
         this.Trophies = this.TrophiesFactory();
