@@ -8,13 +8,14 @@ import 'react-toastify/dist/ReactToastify.css';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
+import Modal from 'react-bootstrap/Modal';
 // Components
 import GenericPanel from '../../../../components/generics/GenericPanel';
 import ContentPackDisplay from '../../../../components/features/contentpack/ContentPackDisplay'
 
 // Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faClone, faDownload, faEye, faFileImport, faPenToSquare, faPersonMilitaryRifle, faPlusSquare, faTrash } from '@fortawesome/free-solid-svg-icons'
+import { faCircleXmark, faClone, faDownload, faEye, faFileImport, faPenToSquare, faPersonMilitaryRifle, faPlusSquare, faTrash } from '@fortawesome/free-solid-svg-icons'
 import { ContentPack } from '../../../../../classes/contentpacks/contentpack'
 import { FightManager } from '../../../../../classes/fightsheets/FightManager';
 import { FightSheet } from '../../../../../classes/fightsheets/FightSheet';
@@ -24,6 +25,10 @@ import GenericEditListDisplay from '../../../../components/objectedit/GenericEdi
 import NotesEditDisplay from '../../notes/NotesEditDisplay';
 import { INote } from '../../../../../classes/Note';
 import { IFoeJob } from '../../../../../classes/feature/foes/FoeJob';
+import { FightMember } from '../../../../../classes/fightsheets/FightMember';
+import { useGlobalState } from '../../../../../utility/globalstate'
+import { getColour } from '../../../../../utility/functions';
+import FoeJobDisplay from '../../foes/FoeJobDisplay';
 
 const FightNewMemberDisplay = (prop: any) => {
     const Manager : FightManager = prop.manager;
@@ -40,6 +45,17 @@ const FightNewMemberDisplay = (prop: any) => {
     const [_alljobs, returnalljobs] = useState(FilterListOfJobs(Manager.JobList));
 
     const listRef = useRef<HTMLSelectElement>(null);
+
+    
+    function removeContentPack(_member : FightMember) {
+        Manager.DeleteMember(FightItem, _member);
+        UpdateFunction(FightItem)
+    }
+
+    function copyContentPack(_member : FightMember) {        
+        Manager.NewMember(FightItem, _member.Base, _member.Faction);
+        UpdateFunction(FightItem)
+    }
 
     function runToast(text: string) 
     {
@@ -198,6 +214,59 @@ const FightNewMemberDisplay = (prop: any) => {
         )
     }
 
+    function returnMember(_member : FightMember) {
+
+        const [show, setShow] = useState(false);
+        const [theme] = useGlobalState('theme');
+
+        const handleClose = () => setShow(false);
+        const handleShow = () => setShow(true);
+
+        return (
+            <>
+                            <div className="contentpackcontainer borderstyler bordericon" style={{marginBottom:"0.5rem"}} >
+                        <span className="contentsubnamecontainer">
+                            <span/>
+                            <h1 className="packtitle hovermouse" onClick={() => handleShow()}>
+                                {_member.Job.Name}
+                            </h1>
+                            <span/>
+                        </span>
+                        <span className="packvrbox">                            
+                            <div className="vr packvr"></div>
+                            <Button style={{padding:"0em"}} variant="" onClick={() => copyContentPack(_member)}>
+                                <FontAwesomeIcon icon={faClone} className="" style={{fontSize:"2em",margin:"0em"}}/>
+                            </Button>
+                            <div className="vr packvr"></div>
+                            <Button style={{padding:"0em"}} variant="" onClick={() => removeContentPack(_member)}>
+                                <FontAwesomeIcon icon={faTrash} className="redIcon" style={{fontSize:"2em",margin:"0em"}}/>
+                            </Button>
+                        </span>
+                    </div>
+                    
+                    <Modal data-theme={theme} show={show} size="lg" contentClassName="overcomeBackground" dialogClassName=""  onHide={handleClose} keyboard={true}  centered>
+                        <Modal.Body > 
+                            
+                            <div className={'abilityStructure borderstyler border'+getColour(_member.Job.Class)}>
+                                <h1 className={'titleShape titlebody background'+getColour(_member.Job.Class)}>
+                                    {_member.Job.Name}
+                                    
+                                    <div className="row float-end">
+                                        <div className='col-12 float-end'>
+                                            <Button style={{padding:"0em"}} variant="" onClick={() => handleClose()}>
+                                                <FontAwesomeIcon icon={faCircleXmark} className="setWhite" style={{fontSize:"2em",margin:"0em"}}/>
+                                            </Button>
+                                        </div>
+                                    </div>
+                                </h1>
+                                <FoeJobDisplay data={_member.Job} />
+                            </div>
+                        </Modal.Body>
+                    </Modal>
+                </>
+        )
+    }
+
     return (
        <div>
             <ToastContainer
@@ -226,7 +295,17 @@ const FightNewMemberDisplay = (prop: any) => {
                     </div>
                 </div>
             </div>
+            <div className="row">                
+                <br/>
+            </div>
             <div className="row">
+                <div style={{padding:"0rem",paddingTop:"0.5rem"}}>      
+                        {FightItem.Members.map(_item => 
+                            <div key={FightItem.Members.indexOf(_item)+_listkey}>
+                                {returnMember(_item)}
+                            </div>
+                        )}
+                    </div>
             </div>
        </div>
     )

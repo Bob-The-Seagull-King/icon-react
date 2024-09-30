@@ -8,6 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
+import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+
 // Components
 import GenericPanel from '../../../../components/generics/GenericPanel';
 import ContentPackDisplay from '../../../../components/features/contentpack/ContentPackDisplay'
@@ -20,6 +22,11 @@ import { FightManager } from '../../../../../classes/fightsheets/FightManager';
 import { FightSheet } from '../../../../../classes/fightsheets/FightSheet';
 import { Button } from 'react-bootstrap';
 import NoteItemViewDisplay from '../../notes/NoteItemViewDisplay';
+import GenericDisplay from '../../../../components/generics/GenericDisplay';
+import TraitDisplay from '../../trait/TraitDisplay';
+import AddonDisplay from '../../addons/AddonDisplay';
+import JobDisplay from '../../jobs/JobDisplay';
+import FoeJobDisplay from '../../foes/FoeJobDisplay';
 
 const FightViewDisplay = (prop: any) => {
     const Manager : FightManager = prop.manager;
@@ -27,6 +34,8 @@ const FightViewDisplay = (prop: any) => {
     const UpdateFunction = prop.updater;
     
     const ref = useRef<HTMLDivElement>(null);
+
+    console.log(FightItem)
 
     const exportData = () => {
         const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
@@ -80,7 +89,7 @@ const FightViewDisplay = (prop: any) => {
             </div> 
             <div className="row">
                 {FightItem.Notes.length > 0 &&
-                <div className="col-6">                     
+                <div className="col-4">                     
                     <div>
                         <div className="separator">Notes</div>
                     </div> 
@@ -89,6 +98,53 @@ const FightViewDisplay = (prop: any) => {
                     )}
                 </div>
                 }
+                <div className="col-8">
+                    
+                <div className="row">
+                {((FightItem.Traits.length > 0) || (FightItem.Abilities.length > 0)) &&
+                        <>                    
+                        <div>
+                            <div className="separator">Faction Features</div>
+                        </div> 
+                        
+                    <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+                        <Masonry gutter="20px">
+                            
+                            {FightItem.Traits.map(_item => 
+                                <div key={"trait"+_item.ID}><GenericDisplay key="addonloop" d_colour={"icon"} d_name={_item.Name} d_type={"sub"} d_method={() => <TraitDisplay data={_item} />}/><div className="verticalspacer"/></div>
+                            )}
+                            {FightItem.Abilities.map(_item => 
+                                <div key={"action"+_item.ID}><GenericDisplay key="addonloop" d_colour={'icon'} d_name={_item.Name} d_type={"sub"} d_method={() => <AddonDisplay data={_item} />}/><div className="verticalspacer"/></div>
+                            )}
+                        </Masonry>
+                    </ResponsiveMasonry>
+                        
+                        </>
+                    }
+                </div>
+                <div className="row">
+                {((FightItem.Members.length > 0)) &&
+                        <>                    
+                        <div>
+                            <div className="separator">Foes</div>
+                        </div> 
+                        
+                            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 1}} >
+                                <Masonry gutter="20px">
+                                    
+                                    {FightItem.Members.map(_item =>
+                                        <GenericDisplay key={FightItem.Members.indexOf(_item) + "FightJob"} d_colour={_item.Job.Class} d_name={((_item.Job.FactionData)? "(" + _item.Job.FactionData.name + ") ": "") + _item.Job.Name} d_type={""} d_method={() => <FoeJobDisplay data={_item.Job} />}/>
+                                    )
+
+                                    }
+                                </Masonry>
+                            </ResponsiveMasonry>
+                        
+                        </>
+                    }
+                </div>
+                    
+                </div>
             </div> 
         </div>
     )

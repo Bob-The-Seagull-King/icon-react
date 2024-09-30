@@ -28,8 +28,15 @@ import FightNewMemberDisplay from './FightNewMemberDisplay';
 const FightEditDisplay = (prop: any) => {
     const Manager : FightManager = prop.manager;
     const FightItem: FightSheet = prop.data;
-    const UpdateFunction = prop.updater;
+    const UpdateFight = prop.updater;
     
+    const [_keyval, returnkey] = useState(1);
+    
+    function UpdateFunction(_fight : FightSheet, _view? : boolean) {
+        UpdateFight(_fight, _view)
+        returnkey(_keyval+1)
+    }
+
     const exportData = () => {
         const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
             JSON.stringify(FightItem.ConvertToInterface(), null, 4)
@@ -54,7 +61,7 @@ const FightEditDisplay = (prop: any) => {
     function returnEnemies() {
         return (
             <div>
-                <FightNewMemberDisplay manager={Manager} data={FightItem} updater={UpdateFunction} />
+                <FightNewMemberDisplay key={_keyval} manager={Manager} data={FightItem} updater={UpdateFunction} />
             </div>
         )
     }
@@ -88,16 +95,11 @@ const FightEditDisplay = (prop: any) => {
                 <div className="verticalspacerbig"/>
             </div> 
             <div className="row">
-                <div className="col-6"> 
+                <div className="col-5"> 
                     <NotesEditDisplay manager={Manager} updater={UpdateFunction} data={FightItem} deleter={DeleteNewNote} creater={CreateNewNote}/>
                 </div>
-                <div className="col-6"> 
+                <div className="col-7"> 
                     {returnEnemies()}
-                    {FightItem.Members.map(_item => 
-                        <div key={FightItem.Members.indexOf(_item)}>
-                            {_item.Job.Name}
-                        </div>
-                    )}
                 </div>
             </div> 
        </div>

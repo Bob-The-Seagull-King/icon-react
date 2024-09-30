@@ -35,6 +35,7 @@ const ToolsFightManager = (prop: any) => {
     }
 
     function UpdateFight(_fight : FightSheet, _view? : boolean) {
+        _fight.UpdateFactionStuff();
         Manager.SetStorage();
         returnFight(_fight);
         if (_view) {

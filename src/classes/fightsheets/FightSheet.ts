@@ -32,38 +32,78 @@ class FightSheet {
      */
     public constructor(data: IFightSheet)
     {
+        console.log(data)
         this.ID = data.id;
         this.Title = data.title;
         this.Notes = data.notes;
         this.Chapter = data.chapter;
 
+        console.log('test a')
         let FactionTraitList : string[] = []
         let FactionTraitRemovedList : string[] = []
         let FactionActionList : string[] = []
         let FactionActionRemovedList : string[] = []
 
+        console.log('test b')
         for (let i = 0; i < data.members.length; i++) {
             const NewMember : FightMember = new FightMember(data.members[i], this.Chapter)
             this.Members.push(NewMember)
             
             if (NewMember.Job.FactionData) {
                 FactionTraitList = FactionTraitList.concat(NewMember.Job.FactionData.traits)
-                FactionTraitRemovedList = FactionTraitList.concat(NewMember.Job.FactionData.traits_added)
-                FactionActionList = FactionTraitList.concat(NewMember.Job.FactionData.actions)
-                FactionActionRemovedList = FactionTraitList.concat(NewMember.Job.FactionData.actions_added)
+                FactionTraitRemovedList = FactionTraitRemovedList.concat(NewMember.Job.FactionData.traits_added)
+                FactionActionList = FactionActionList.concat(NewMember.Job.FactionData.actions)
+                FactionActionRemovedList = FactionActionRemovedList.concat(NewMember.Job.FactionData.actions_added)
             }
         }
 
+        console.log('test c')
         const actionlist : string[] = MergeLists([FactionTraitList], [FactionTraitRemovedList])
         const traitlist : string[] = MergeLists([FactionActionList], [FactionActionRemovedList])
         
+        console.log('test d')
+        this.Traits = this.TraitsFactory(traitlist);
+        
+        console.log('test e')
+        this.Abilities = this.AbilitiesFactory(actionlist)
+        
+        console.log('test f')
+    }
+
+    public UpdateFactionStuff() {
+
+        let FactionTraitList : string[] = []
+        let FactionTraitRemovedList : string[] = []
+        let FactionActionList : string[] = []
+        let FactionActionRemovedList : string[] = []
+        
+        const NewMembers : FightMember[] = []
+        for (let i = 0; i < this.Members.length; i++) {
+            const NewMember : FightMember = new FightMember(this.Members[i].ConvertToInterface(), this.Chapter)
+            NewMembers.push(NewMember)
+        }
+        
+        this.Members = NewMembers;
+
+        for (let i = 0; i < this.Members.length; i++) {
+            const _job = this.Members[i].Job;
+            if (_job.FactionData != null) {
+                FactionTraitList = FactionTraitList.concat(_job.FactionData.traits)
+                FactionTraitRemovedList = FactionTraitRemovedList.concat(_job.FactionData.traits_added)
+                FactionActionList = FactionActionList.concat(_job.FactionData.actions)
+                FactionActionRemovedList = FactionActionRemovedList.concat(_job.FactionData.actions_added)
+            }
+        }
+
+        const traitlist : string[] = MergeLists([FactionTraitList], [FactionTraitRemovedList])
+        const actionlist : string[] = MergeLists([FactionActionList], [FactionActionRemovedList])
         this.Traits = this.TraitsFactory(traitlist);
         this.Abilities = this.AbilitiesFactory(actionlist)
     }
 
     private AbilitiesFactory(_data : string[]) {
         const array : PlayerAddon[] = []
-
+        console.log(_data)
         let i = 0;
         for (i = 0; i < _data.length; i++) {
             array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities'))
