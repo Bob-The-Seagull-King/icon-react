@@ -32,19 +32,16 @@ class FightSheet {
      */
     public constructor(data: IFightSheet)
     {
-        console.log(data)
         this.ID = data.id;
         this.Title = data.title;
         this.Notes = data.notes;
         this.Chapter = data.chapter;
 
-        console.log('test a')
         let FactionTraitList : string[] = []
         let FactionTraitRemovedList : string[] = []
         let FactionActionList : string[] = []
         let FactionActionRemovedList : string[] = []
 
-        console.log('test b')
         for (let i = 0; i < data.members.length; i++) {
             const NewMember : FightMember = new FightMember(data.members[i], this.Chapter)
             this.Members.push(NewMember)
@@ -57,17 +54,12 @@ class FightSheet {
             }
         }
 
-        console.log('test c')
-        const actionlist : string[] = MergeLists([FactionTraitList], [FactionTraitRemovedList])
-        const traitlist : string[] = MergeLists([FactionActionList], [FactionActionRemovedList])
+        const traitlist : string[] = MergeLists([FactionTraitList], [FactionTraitRemovedList])
+        const actionlist : string[] = MergeLists([FactionActionList], [FactionActionRemovedList])
         
-        console.log('test d')
         this.Traits = this.TraitsFactory(traitlist);
         
-        console.log('test e')
         this.Abilities = this.AbilitiesFactory(actionlist)
-        
-        console.log('test f')
     }
 
     public UpdateFactionStuff() {
@@ -103,7 +95,6 @@ class FightSheet {
 
     private AbilitiesFactory(_data : string[]) {
         const array : PlayerAddon[] = []
-        console.log(_data)
         let i = 0;
         for (i = 0; i < _data.length; i++) {
             array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities'))

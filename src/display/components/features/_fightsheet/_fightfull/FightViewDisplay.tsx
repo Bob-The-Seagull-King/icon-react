@@ -35,7 +35,6 @@ const FightViewDisplay = (prop: any) => {
     
     const ref = useRef<HTMLDivElement>(null);
 
-    console.log(FightItem)
 
     const exportData = () => {
         const jsonString = `data:text/json;chatset=utf-8,${encodeURIComponent(
@@ -90,24 +89,17 @@ const FightViewDisplay = (prop: any) => {
             <div className="row">
                 {FightItem.Notes.length > 0 &&
                 <div className="col-4">                     
-                    <div>
-                        <div className="separator">Notes</div>
-                    </div> 
                     {FightItem.Notes.map(_item => 
                         <NoteItemViewDisplay key={FightItem.Notes.indexOf(_item)+"ViewNote"} data={_item} />
                     )}
                 </div>
                 }
-                <div className="col-8">
+                <div className={"col-"+((FightItem.Notes.length > 0)? "8" : "12")}>
                     
                 <div className="row">
                 {((FightItem.Traits.length > 0) || (FightItem.Abilities.length > 0)) &&
                         <>                    
-                        <div>
-                            <div className="separator">Faction Features</div>
-                        </div> 
-                        
-                    <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
+                    <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 1}} >
                         <Masonry gutter="20px">
                             
                             {FightItem.Traits.map(_item => 
@@ -127,13 +119,14 @@ const FightViewDisplay = (prop: any) => {
                         <>                    
                         <div>
                             <div className="separator">Foes</div>
+                            <div className="verticalspacerbig"/>
                         </div> 
                         
-                            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 1}} >
+                            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: 2}} >
                                 <Masonry gutter="20px">
                                     
                                     {FightItem.Members.map(_item =>
-                                        <GenericDisplay key={FightItem.Members.indexOf(_item) + "FightJob"} d_colour={_item.Job.Class} d_name={((_item.Job.FactionData)? "(" + _item.Job.FactionData.name + ") ": "") + _item.Job.Name} d_type={""} d_method={() => <FoeJobDisplay data={_item.Job} />}/>
+                                        <GenericDisplay d_state={false} key={FightItem.Members.indexOf(_item) + "FightJob"} d_colour={_item.Job.Class} d_name={((_item.Job.FactionData)? "(" + _item.Job.FactionData.name + ") ": "") + _item.Job.Name} d_type={""} d_method={() => <FoeJobDisplay data={_item.Job} />}/>
                                     )
 
                                     }
