@@ -24,7 +24,7 @@ class FightMember {
         this.Base = data.base_id;
         this.Faction = data.faction_id;
         
-        const jobdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foejob", id: data.base_id}}) as IFoeJob
+        const jobdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foejobs", id: data.base_id}}) as IFoeJob
         jobdata.faction_id = this.Faction;
 
         this.Job = FoeFactory.CreateFoeJob(jobdata, chapter)

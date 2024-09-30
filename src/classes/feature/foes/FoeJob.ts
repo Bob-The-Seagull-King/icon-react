@@ -45,6 +45,8 @@ class FoeJob extends IconpendiumItem {
     public readonly Tactics;
     public readonly Trophies;
     public readonly ClassName;
+    public readonly JobData;
+    public readonly FactionData;
 
     /**
      * Assigns parameters and creates a series of description
@@ -55,6 +57,7 @@ class FoeJob extends IconpendiumItem {
     {
         super(data)
 
+        this.JobData = data;
         const classdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foeclass", id: data.class_id}}) as IFoeClass
 
         this.Chapter = data.chapter;
@@ -85,16 +88,21 @@ class FoeJob extends IconpendiumItem {
             _actionLists.push(factiondata.actions_added)
             _traitLists.push(factiondata.traits_added)
             _statsVal = StatBuilder(factiondata.stats, _statsVal)
+            this.FactionData = factiondata;
+        } else {
+            this.FactionData = null;
         }
 
         if ((this.Category === 'job') && (data.faction_id != 'fc_general')) {
             const factionclassdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foefactionclass", id: (data.faction_id + "_" + data.class_id)}}) as IFoeFactionClass
-            _actionLists.push(factionclassdata.actions)
-            _actionremovedLists.push(data.removed_actions)
-            _traitLists.push(factionclassdata.traits)
-            _traitremovedLists.push(data.removed_traits)
-            _chapters = factionclassdata.chapters
-            _statsVal = StatBuilder(factionclassdata.stats, _statsVal)
+            if (factionclassdata.id != undefined) {
+                _actionLists.push(factionclassdata.actions)
+                _actionremovedLists.push(data.removed_actions)
+                _traitLists.push(factionclassdata.traits)
+                _traitremovedLists.push(data.removed_traits)
+                _chapters = factionclassdata.chapters
+                _statsVal = StatBuilder(factionclassdata.stats, _statsVal)
+            }
         }
 
         this.Stats = StatBuilder(data.stats, _statsVal )

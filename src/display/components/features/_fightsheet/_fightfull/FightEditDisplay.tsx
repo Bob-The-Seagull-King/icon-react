@@ -23,6 +23,7 @@ import GenericEditTextDisplay from '../../../../components/objectedit/GenericEdi
 import GenericEditListDisplay from '../../../../components/objectedit/GenericEditListDisplay';
 import NotesEditDisplay from '../../notes/NotesEditDisplay';
 import { INote } from '../../../../../classes/Note';
+import FightNewMemberDisplay from './FightNewMemberDisplay';
 
 const FightEditDisplay = (prop: any) => {
     const Manager : FightManager = prop.manager;
@@ -50,6 +51,13 @@ const FightEditDisplay = (prop: any) => {
         UpdateFunction(FightItem, false);
     }
       
+    function returnEnemies() {
+        return (
+            <div>
+                <FightNewMemberDisplay manager={Manager} data={FightItem} updater={UpdateFunction} />
+            </div>
+        )
+    }
 
     return (
        <div>
@@ -82,6 +90,14 @@ const FightEditDisplay = (prop: any) => {
             <div className="row">
                 <div className="col-6"> 
                     <NotesEditDisplay manager={Manager} updater={UpdateFunction} data={FightItem} deleter={DeleteNewNote} creater={CreateNewNote}/>
+                </div>
+                <div className="col-6"> 
+                    {returnEnemies()}
+                    {FightItem.Members.map(_item => 
+                        <div key={FightItem.Members.indexOf(_item)}>
+                            {_item.Job.Name}
+                        </div>
+                    )}
                 </div>
             </div> 
        </div>

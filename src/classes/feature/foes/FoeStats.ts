@@ -22,6 +22,7 @@ interface IFoeStats {
 }
 
 export function StatBuilder(stats: IFoeStats, base : IFoeStats) {
+    
     const Stats : IFoeStats = {};
     
     if (base.vit) { Stats.vit = base.vit; } //

@@ -3,14 +3,20 @@ import { FightSheet, IFightSheet } from './FightSheet';
 import { FightMember, IFightMember } from './FightMember';
 import { Requester } from '../../factories/Requester';
 import { IFoeJob } from '../feature/foes/FoeJob';
+import { IFoeFaction } from '../feature/foes/FoeFaction';
+import { IFoeClass } from '../feature/foes/FoeClass';
 
 class FightManager {
     public FightList: FightSheet[] = []; // Array of Content Packs
     public JobList : IFoeJob[] = [];
+    public FactionList : IFoeFaction[] = [];
+    public ClassList : IFoeClass[] = [];
 
     constructor() {
         this.FightList = this.GrabFights();
         this.GrabJobs()
+        this.GrabFactions()
+        this.GrabClasses()
     }    
 
     /**
@@ -29,15 +35,38 @@ class FightManager {
 
 
     public GrabJobs() {
-        const _data = Requester.MakeRequest({searchtype: "file", searchparam: {type: "foejob"}}) as IFoeJob[]
+        const _data = Requester.MakeRequest({searchtype: "file", searchparam: {type: "foejobs"}}) as IFoeJob[]
         
         _data.sort((one, two) => (one.name > two.name ? -1 : 1));
-        _data.sort((one, two) => (one.chapter > two.chapter ? -1 : 1));
-        _data.sort((one, two) => (one.class_id > two.class_id ? -1 : 1));
+        _data.sort((one, two) => (one.class_id < two.class_id ? -1 : 1));
         
         let i = 0;
         for (i = 0; i < _data.length; i++) {
             this.JobList.push(_data[i])
+        }
+        
+    }
+
+    public GrabFactions() {
+        const _data = Requester.MakeRequest({searchtype: "file", searchparam: {type: "foefaction"}}) as IFoeFaction[]
+        
+        _data.sort((one, two) => (one.name < two.name ? -1 : 1));
+        
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            this.FactionList.push(_data[i])
+        }
+        
+    }
+
+    public GrabClasses() {
+        const _data = Requester.MakeRequest({searchtype: "file", searchparam: {type: "foeclass"}}) as IFoeClass[]
+        
+        _data.sort((one, two) => (one.name < two.name ? -1 : 1));
+        
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            this.ClassList.push(_data[i])
         }
         
     }

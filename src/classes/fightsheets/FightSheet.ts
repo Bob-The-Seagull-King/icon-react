@@ -2,6 +2,11 @@ import { IIconpendiumItemData, IconpendiumItem, ItemType } from '../IconpendiumI
 import { DescriptionFactory } from '../../utility/functions';
 import { IFightMember, FightMember } from './FightMember';
 import { INote } from '../Note';
+import { MergeLists } from '../../classes/feature/foes/FoeStats';
+import { PlayerAddon } from '../../classes/feature/addons/Addon';
+import { Trait } from '../../classes/feature/trait/Trait';
+import { AddonFactory } from '../../factories/features/AddonFactory';
+import { TraitFactory } from '../../factories/features/TraitFactory';
 
 interface IFightSheet {
     id : string,
@@ -17,6 +22,8 @@ class FightSheet {
     public Members : FightMember[] = [];
     public Chapter;
     public ID;
+    public Abilities;
+    public Traits;
 
     /**
      * Assigns parameters and creates a series of description
@@ -30,10 +37,48 @@ class FightSheet {
         this.Notes = data.notes;
         this.Chapter = data.chapter;
 
+        let FactionTraitList : string[] = []
+        let FactionTraitRemovedList : string[] = []
+        let FactionActionList : string[] = []
+        let FactionActionRemovedList : string[] = []
+
         for (let i = 0; i < data.members.length; i++) {
-            this.Members.push(new FightMember(data.members[i], this.Chapter))
+            const NewMember : FightMember = new FightMember(data.members[i], this.Chapter)
+            this.Members.push(NewMember)
+            
+            if (NewMember.Job.FactionData) {
+                FactionTraitList = FactionTraitList.concat(NewMember.Job.FactionData.traits)
+                FactionTraitRemovedList = FactionTraitList.concat(NewMember.Job.FactionData.traits_added)
+                FactionActionList = FactionTraitList.concat(NewMember.Job.FactionData.actions)
+                FactionActionRemovedList = FactionTraitList.concat(NewMember.Job.FactionData.actions_added)
+            }
         }
+
+        const actionlist : string[] = MergeLists([FactionTraitList], [FactionTraitRemovedList])
+        const traitlist : string[] = MergeLists([FactionActionList], [FactionActionRemovedList])
+        
+        this.Traits = this.TraitsFactory(traitlist);
+        this.Abilities = this.AbilitiesFactory(actionlist)
     }
+
+    private AbilitiesFactory(_data : string[]) {
+        const array : PlayerAddon[] = []
+
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities'))
+        }
+        return array;
+    }
+
+    private TraitsFactory(_data : string[]) {
+        const array : Trait[] = []
+        let i = 0;
+        for (i = 0; i < _data.length; i++) {
+            array.push(TraitFactory.CreateNewTrait(_data[i], 'foetraits', 'icon'))
+        }
+        return array;
+    }  
 
     public ConvertToInterface() {
         const FightMembers : IFightMember[] = []

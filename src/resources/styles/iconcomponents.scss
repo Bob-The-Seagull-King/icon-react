@@ -287,6 +287,13 @@
         box-shadow: 0 0 10px 2px var(--colour_grey_secondary);
     }
 }
+.hiddenbuttonbox {
+    justify-content: center;
+    display: flex; /* make element size relative to content */
+    align-items: center;
+    height: 100%;
+    width: fit-content;
+}
 
 .contentpackcontainer {
     display: flex; /* make element size relative to content */
