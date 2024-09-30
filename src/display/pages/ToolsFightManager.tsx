@@ -60,7 +60,7 @@ const ToolsFightManager = (prop: any) => {
 
     // Return result -----------------------------
     return (
-        <div className="container" style={{width:"100%", marginLeft:"0.5rem", marginRight:"0.5rem"}}>
+        <div className="container" style={{minWidth:"100%", marginLeft:"0.5rem", marginRight:"0.5rem"}}>
             {_currentFight != null &&
             <>
                 {_viewedit === false && 

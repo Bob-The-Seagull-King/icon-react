@@ -116,7 +116,7 @@ const FightListDisplay = (prop: any) => {
             />
             <input id="pack-upload" style={{display:"none"}} type="file" accept=".json" onChange={(e)=>readFileOnUpload(e.target.files? e.target.files[0] : undefined)} />
 
-            <div className="row justify-content-center">
+            <div className="row justify-content-center" style={{width:"100%"}}>
                 <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 col-12">
 
                     <div className="row justify-content-center">
