@@ -141,7 +141,7 @@ const FoeJobDisplay = (props: any) => {
                                                 <div>
                                                     <div className="separator">Traits</div>
                                                 </div> 
-                                                {_phase.Traits.map((phaseitem) => <div key={"trait"+phaseitem.Name}><GenericDisplay key="traitloop" d_colour={phaseitem.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <TraitDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}   
+                                                {_phase.Traits.map((phaseitem) => <div key={"trait"+phaseitem.Name}><GenericDisplay key="traitloop" d_colour={FoeJobObject.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <TraitDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}   
                                                 <div className="verticalspacer"/> 
                                                 </>
                                                 } 
@@ -150,7 +150,7 @@ const FoeJobDisplay = (props: any) => {
                                                 <div>
                                                     <div className="separator">Actions</div>
                                                 </div> 
-                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={phaseitem.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
+                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={FoeJobObject.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
                                                                 
                                                 <div className="verticalspacer"/>  
                                                 </>
@@ -247,7 +247,7 @@ const FoeJobDisplay = (props: any) => {
                                                 <div>
                                                     <div className="separator">Traits</div>
                                                 </div> 
-                                                {_phase.Traits.map((phaseitem) => <div key={"trait"+phaseitem.Name}><GenericDisplay key="traitloop" d_colour={phaseitem.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <TraitDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}   
+                                                {_phase.Traits.map((phaseitem) => <div key={"trait"+phaseitem.Name}><GenericDisplay key="traitloop" d_colour={FoeJobObject.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <TraitDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}   
                                                 <div className="verticalspacer"/> 
                                                 </>
                                                 } 
@@ -256,7 +256,7 @@ const FoeJobDisplay = (props: any) => {
                                                 <div>
                                                     <div className="separator">Actions</div>
                                                 </div> 
-                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={phaseitem.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
+                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={FoeJobObject.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
                                                                 
                                                 <div className="verticalspacer"/>  
                                                 </>
