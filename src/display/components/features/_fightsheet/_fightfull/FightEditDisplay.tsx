@@ -123,6 +123,10 @@ const FightEditDisplay = (prop: any) => {
                     {returnEnemies()}
                 </div>
             </div> 
+            <div className="row">
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+            </div> 
        </div>
     )
     // -------------------------------------------

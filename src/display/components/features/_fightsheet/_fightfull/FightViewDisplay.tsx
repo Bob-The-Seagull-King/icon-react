@@ -136,6 +136,10 @@ const FightViewDisplay = (prop: any) => {
                     
                 </div>
             </div> 
+            <div className="row">
+                <div className="verticalspacerbig"/>
+                <div className="verticalspacerbig"/>
+            </div> 
         </div>
     )
     // -------------------------------------------
