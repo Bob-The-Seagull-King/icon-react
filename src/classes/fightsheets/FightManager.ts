@@ -215,10 +215,11 @@ class FightManager {
         this.SetStorage();
     }
 
-    public NewMember(_pack : FightSheet, _base : string, _faction : string) {
+    public NewMember(_pack : FightSheet, _base : string, _faction : string, _elite : boolean) {
         const _member : IFightMember = {
             base_id : _base,
-            faction_id : _faction
+            faction_id : _faction,
+            elite : _elite
         }
 
         _pack.Members.push(new FightMember(_member, _pack.Chapter));

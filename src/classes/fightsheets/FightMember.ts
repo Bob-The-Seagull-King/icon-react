@@ -7,12 +7,14 @@ import { FoeFactory } from '../../factories/features/FoeFactory';
 interface IFightMember {
     base_id : string
     faction_id : string
+    elite : boolean
 }
 
 class FightMember {
     public Base;
     public Faction;
     public Job;
+    public Elite;
 
     /**
      * Assigns parameters and creates a series of description
@@ -23,16 +25,18 @@ class FightMember {
     {
         this.Base = data.base_id;
         this.Faction = data.faction_id;
+        this.Elite = data.elite;
         
         const jobdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foejobs", id: data.base_id}}) as IFoeJob
 
-        this.Job = FoeFactory.CreateFoeJob(jobdata, chapter, this.Faction)
+        this.Job = FoeFactory.CreateFoeJob(jobdata, chapter, this.Faction, this.Elite)
     }
 
     public ConvertToInterface() {
         const obj_int : IFightMember = {                    
             base_id : this.Base,
-            faction_id : this.Faction
+            faction_id : this.Faction,
+            elite : this.Elite
         }
         return obj_int;
     }

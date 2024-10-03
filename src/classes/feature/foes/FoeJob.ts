@@ -53,7 +53,7 @@ class FoeJob extends IconpendiumItem {
      * objects with DescriptionFactory
      * @param data Object data in IPlayerAbility format
      */
-    public constructor(data: IFoeJob, chapter? : number, _faction? : string)
+    public constructor(data: IFoeJob, chapter? : number, _faction? : string, _elite? : boolean)
     {
         super(data)
 
@@ -110,6 +110,12 @@ class FoeJob extends IconpendiumItem {
                 _statsVal = StatBuilder(factionclassdata.stats, _statsVal)
             }
         }
+        if ((this.Category === 'job') || (this.Category === 'unique')) {
+            if ((_elite != undefined) && (_elite != null)) {                
+                _statsVal = StatBuilder({ turns : ((_statsVal.turns)? _statsVal.turns : 1) + 1, hp_mod : ((_statsVal.hp_mod)? _statsVal.hp_mod : 0) + 2 }, _statsVal)
+            }
+        }
+
 
         this.Stats = StatBuilder(data.stats, _statsVal )
         const actionlist : string[] = MergeLists(_actionLists, _actionremovedLists)

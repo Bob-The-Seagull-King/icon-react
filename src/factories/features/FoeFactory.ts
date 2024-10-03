@@ -31,8 +31,8 @@ class FoeFactory {
         return ability;
     }  
 
-    static CreateFoeJob(_ability: IFoeJob, chapter? : number, _faction? : string) {
-        const ability = new FoeJob(_ability, chapter, _faction)
+    static CreateFoeJob(_ability: IFoeJob, chapter? : number, _faction? : string, _elite? : boolean) {
+        const ability = new FoeJob(_ability, chapter, _faction, _elite)
         return ability;
     }  
 

@@ -123,7 +123,7 @@ const FightViewDisplay = (prop: any) => {
                                 <Masonry gutter="20px">
                                     
                                     {FightItem.Members.map(_item =>
-                                        <GenericDisplay d_state={false} key={FightItem.Members.indexOf(_item) + "FightJob"} d_colour={_item.Job.Class} d_name={((_item.Job.FactionData)? "(" + _item.Job.FactionData.name + ") ": "") + _item.Job.Name} d_type={""} d_method={() => <FoeJobDisplay data={_item.Job} />}/>
+                                        <GenericDisplay d_state={false} key={FightItem.Members.indexOf(_item) + "FightJob"} d_colour={_item.Job.Class} d_name={((_item.Job.FactionData)? "(" + _item.Job.FactionData.name + ") ": "") + _item.Job.Name  +  ((_item.Elite)? " (ELITE)": "")} d_type={""} d_method={() => <FoeJobDisplay data={_item.Job} />}/>
                                     )
 
                                     }
@@ -145,4 +145,4 @@ const FightViewDisplay = (prop: any) => {
     // -------------------------------------------
 }
 
-export default FightViewDisplay
+export default FightViewDisplay;

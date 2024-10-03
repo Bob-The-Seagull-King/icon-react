@@ -40,12 +40,14 @@ const FightNewMemberDisplay = (prop: any) => {
     const [filterFaction, returnFaction] = useState("");
     const [_jobval, returnJobVal] = useState("");
     const [_classval, returnClassVal] = useState("");
+    const [_eliteval, returnEliteVal] = useState(false);
+    const [_elitedisabled, returnEliteDisabled] = useState(false);
 
     const [_listkey, returnkey] = useState(0);
     const [_alljobs, returnalljobs] = useState(FilterListOfJobs(Manager.JobList));
 
     const listRef = useRef<HTMLSelectElement>(null);
-
+    const eliteRef = useRef<HTMLInputElement>(null);
     
     function removeContentPack(_member : FightMember) {
         Manager.DeleteMember(FightItem, _member);
@@ -53,7 +55,7 @@ const FightNewMemberDisplay = (prop: any) => {
     }
 
     function copyContentPack(_member : FightMember) {        
-        Manager.NewMember(FightItem, _member.Base, _member.Faction);
+        Manager.NewMember(FightItem, _member.Base, _member.Faction, _member.Elite);
         UpdateFunction(FightItem)
     }
 
@@ -151,7 +153,7 @@ const FightNewMemberDisplay = (prop: any) => {
 
     function returnJobSelect() {
         return (
-            <div className={"col-5"} >
+            <div className={"col-4"} >
             <InputGroup className={"tagboxpad"}  style={{height:"100%"}}>
                 <Form.Select className="bordericon borderstyler" defaultValue={""} key={_listkey} style={{height:"100%",textAlign:"center"}} aria-label="Default select example" onChange={e => { 
                         returnJobVal(e.target.value.split(',')[0]); 
@@ -159,10 +161,15 @@ const FightNewMemberDisplay = (prop: any) => {
                             listRef.current.value = e.target.value.split(',')[1];
                             returnClassVal(e.target.value.split(',')[1]);
                         }
+                        if (eliteRef.current) {
+                            eliteRef.current.checked = (e.target.value.split(',')[2] === 'elite');
+                            returnEliteVal((e.target.value.split(',')[2] === 'elite'));
+                            returnEliteDisabled(((e.target.value.split(',')[2] === 'elite') || (e.target.value.split(',')[2] === 'legend')));
+                        }
                     } } >
                         <option key={"factionoptionnone"} value={""}>-</option>
                         {FilterListOfJobs(Manager.JobList).map(_item =>                             
-                            <option key={"factionoption"+_alljobs.indexOf(_item)+_listkey} value={[_item.id,_item.faction_id]}>{_item.name}</option>
+                            <option key={"factionoption"+_alljobs.indexOf(_item)+_listkey} value={[_item.id,_item.faction_id,_item.category]}>{_item.name}</option>
                         )
                         }
                 </Form.Select>
@@ -173,7 +180,7 @@ const FightNewMemberDisplay = (prop: any) => {
 
     function returnFactionSelect() {
         return (
-            <div className={"col-5"} >
+            <div className={"col-4"} >
             <InputGroup className={"tagboxpad"}  style={{height:"100%"}}>
                 <Form.Select className="bordericon borderstyler" defaultValue={""} ref={listRef} key={_listkey} style={{height:"100%",textAlign:"center"}} aria-label="Default select example" onChange={e => { returnClassVal(e.target.value); } } >
                 <option key={"factionoptionnone"} value={""}>-</option>
@@ -187,6 +194,18 @@ const FightNewMemberDisplay = (prop: any) => {
         )
     }
 
+    function returnEliteSelect() {
+        return (
+            <div className={"col-2"} >
+                <InputGroup className={"tagboxpad"}  style={{height:"100%"}}>
+                    <div className="backgroundWhite bordericon borderstyler" style={{height:"100%",textAlign:"center",verticalAlign:"middle",display:"table-cell",alignItems:"center",width:"100%",borderRadius:"0.5rem",padding:"0.5rem"}}>
+                        <Form.Check type="switch" disabled={_elitedisabled} label={"Elite"} ref={eliteRef} key={_listkey} aria-label="Default select example" onChange={e => { returnEliteVal(e.target.checked); } } />
+                    </div>
+                </InputGroup>
+            </div>
+        )
+    }
+
     
 
     function NewMember() {
@@ -196,7 +215,7 @@ const FightNewMemberDisplay = (prop: any) => {
             if (_classval === "") {                
                 runToast("Please Select a Faction");
             } else {
-                Manager.NewMember(FightItem, _jobval, _classval);
+                Manager.NewMember(FightItem, _jobval, _classval, _eliteval);
                 UpdateFunction(FightItem)
             }
         }        
@@ -228,7 +247,7 @@ const FightNewMemberDisplay = (prop: any) => {
                         <span className="contentsubnamecontainer">
                             <span/>
                             <h1 className="packtitle hovermouse" onClick={() => handleShow()}>
-                                {((_member.Job.FactionData)? "(" + _member.Job.FactionData.name + ") ": "") + _member.Job.Name}
+                                {((_member.Job.FactionData)? "(" + _member.Job.FactionData.name + ") ": "") + _member.Job.Name + ((_member.Elite)? " (ELITE)": "")}
                             </h1>
                             <span/>
                         </span>
@@ -291,6 +310,7 @@ const FightNewMemberDisplay = (prop: any) => {
                     <div style={{display:"flex",padding:"1rem",paddingTop:"0.5rem"}} className="row">
                         {returnJobSelect()}
                         {returnFactionSelect()}
+                        {returnEliteSelect()}
                         {returnButton()}
                     </div>
                 </div>
