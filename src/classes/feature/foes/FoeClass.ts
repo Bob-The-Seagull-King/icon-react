@@ -3,7 +3,7 @@ import { PlayerAddon } from '../addons/Addon'
 import { AddonFactory } from '../../../factories/features/AddonFactory';
 import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
-import { IFoeStats } from './FoeStats';
+import { IFoeStats, SortAbilities } from './FoeStats';
 
 interface IFoeClass extends IIconpendiumItemData {
     stats : IFoeStats,
@@ -41,7 +41,7 @@ class FoeClass extends IconpendiumItem {
         for (i = 0; i < _data.length; i++) {
             array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities'))
         }
-        return array;
+        return SortAbilities(array);
     }
 
     private TraitsFactory(_data : string[]) {

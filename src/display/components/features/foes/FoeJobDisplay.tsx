@@ -3,6 +3,7 @@ import '../../../../resources/styles/_icon.scss'
 import React, { useState } from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { GetObjectTagSpecialActionVal } from '../../../../utility/functions'
 
 // Classes
 import { returnDescription } from '../../../../utility/util';
@@ -87,7 +88,7 @@ const FoeJobDisplay = (props: any) => {
                                 <div>
                                     <div className="separator">Actions</div>
                                 </div> 
-                                {FoeJobObject.ChapterSets[0].chapter.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
+                                {FoeJobObject.ChapterSets[0].chapter.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={GetObjectTagSpecialActionVal(item.Tags) + item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
                                                 
                                 <div className="verticalspacer"/>  
                                 </>
@@ -150,7 +151,7 @@ const FoeJobDisplay = (props: any) => {
                                                 <div>
                                                     <div className="separator">Actions</div>
                                                 </div> 
-                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={FoeJobObject.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
+                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={FoeJobObject.Class} d_state={false} d_name={GetObjectTagSpecialActionVal(phaseitem.Tags) + phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
                                                                 
                                                 <div className="verticalspacer"/>  
                                                 </>
@@ -193,7 +194,7 @@ const FoeJobDisplay = (props: any) => {
                                 <div>
                                     <div className="separator">Actions</div>
                                 </div> 
-                                {item.chapter.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
+                                {item.chapter.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={GetObjectTagSpecialActionVal(item.Tags) + item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
                                                 
                                 <div className="verticalspacer"/>  
                                 </>
@@ -256,7 +257,7 @@ const FoeJobDisplay = (props: any) => {
                                                 <div>
                                                     <div className="separator">Actions</div>
                                                 </div> 
-                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={FoeJobObject.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
+                                                {_phase.Actions.map((phaseitem) => <div key={"action"+phaseitem.Name}><GenericDisplay key="addonloop" d_colour={FoeJobObject.Class} d_state={false} d_name={GetObjectTagSpecialActionVal(phaseitem.Tags) + phaseitem.Name} d_type={"sub"} d_method={() => <AddonDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}
                                                                 
                                                 <div className="verticalspacer"/>  
                                                 </>

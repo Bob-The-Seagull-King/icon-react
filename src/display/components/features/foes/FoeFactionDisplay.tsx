@@ -4,6 +4,7 @@ import React from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
+import { GetObjectTagSpecialActionVal } from '../../../../utility/functions'
 
 // Classes
 import {  returnDescription } from '../../../../utility/util';
@@ -74,7 +75,7 @@ const FoeFactionDisplay = (props: any) => {
                         <div>
                             <div className="separator">Actions</div>
                         </div> 
-                        {FoeFactionObject.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={FoeFactionObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
+                        {FoeFactionObject.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={FoeFactionObject.Class} d_name={GetObjectTagSpecialActionVal(item.Tags) + item.Name} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
                                         
                         </>
                         }

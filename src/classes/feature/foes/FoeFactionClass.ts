@@ -1,7 +1,7 @@
 import { IIconpendiumItemData, IconpendiumItem } from '../../IconpendiumItem'
 import { DescriptionFactory } from '../../../utility/functions';
 import { Requester } from '../../../factories/Requester';
-import { IFoeChapter, FoeChapter, IFoeStats, StatBuilder, MergeLists } from './FoeStats';
+import { IFoeChapter, FoeChapter, IFoeStats, StatBuilder, MergeLists, SortAbilities } from './FoeStats';
 import { IFoeClass } from './FoeClass';
 import { IFoeFaction } from './FoeFaction';
 import { FoeFactory } from '../../../factories/features/FoeFactory';

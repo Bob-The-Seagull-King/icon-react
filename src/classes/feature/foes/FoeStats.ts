@@ -1,7 +1,7 @@
 import { TraitFactory } from "../../../factories/features/TraitFactory";
 import { Trait } from "../trait/Trait";
 import { PlayerAddon } from "../addons/Addon";
-import { DescriptionFactory } from "../../../utility/functions";
+import { DescriptionFactory, GetObjectTagSpecialActionVal } from "../../../utility/functions";
 import { AddonFactory } from "../../../factories/features/AddonFactory";
 
 interface IFoeStats {
@@ -138,8 +138,6 @@ class FoeChapter {
     } 
 }
 
-
-
 function AbilitiesFactory(_data : string[], colour? : string) {
     const array : PlayerAddon[] = []
 
@@ -147,7 +145,7 @@ function AbilitiesFactory(_data : string[], colour? : string) {
     for (i = 0; i < _data.length; i++) {
         array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities', colour))
     }
-    return array;
+    return SortAbilities(array);
 }
 
 function TraitsFactory(_data : string[], _class : string) {
@@ -159,5 +157,44 @@ function TraitsFactory(_data : string[], _class : string) {
     return array;
 } 
 
-export {IFoeStats, FoePhase, FoeChapter, IFoePhase, IFoeChapter}
+function SortAbilities(_abilities : PlayerAddon[]) {
+
+    const order = ["(R) ", "(F) ", "(I) "];
+
+    return _abilities.sort((a, b) => ((((a.Name != undefined)? a.Name : "") > ((b.Name != undefined)? b.Name : "")) ? 1 : -1)).sort((a, b) => {
+        const aProp = GetObjectTagSpecialActionVal(a.Tags);
+        const bProp = GetObjectTagSpecialActionVal(b.Tags);
+      
+        // If both are strings
+        if (typeof aProp === "string" && typeof bProp === "string") {
+          const aIndex = order.indexOf(aProp);
+          const bIndex = order.indexOf(bProp);
+      
+          // If both are in the custom order, compare based on their index
+          if (aIndex !== -1 && bIndex !== -1) {
+            return aIndex - bIndex;
+          }
+      
+          // If only one is in the custom order, prioritize it
+          if (aIndex !== -1) return -1;
+          if (bIndex !== -1) return 1;
+      
+          // If neither is in the custom order, compare alphabetically
+          return aProp.localeCompare(bProp);
+        }
+      
+        // If one is a string and the other is a number, prioritize the string
+        if (typeof aProp === "string") return -1;
+        if (typeof bProp === "string") return 1;
+      
+        // If both are numbers, compare them numerically
+        if (typeof aProp === "number" && typeof bProp === "number") {
+          return aProp - bProp;
+        }
+      
+        return 0; // Fallback for cases where types don't match or are unusual
+      });
+}
+
+export {IFoeStats, FoePhase, FoeChapter, IFoePhase, IFoeChapter, SortAbilities}
 

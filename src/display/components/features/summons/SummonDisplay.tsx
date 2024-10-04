@@ -25,22 +25,30 @@ const SummonDisplay = (props: any) => {
             <div>
                 {returnDescription(SummonObject, SummonObject.Blurb)}
             </div> 
-            <div className="verticalspacer"/> 
-            <div>
-                <div className="separator">&#x27E1;</div>
-            </div> 
-            <div className="verticalspacer"/>
-            <div>
-                {returnDescription(SummonObject, SummonObject.Description)}
-            </div>
-            <div className="verticalspacer"/> 
-            <div>
-                <div className="separator">&#x27E1;</div>
-            </div> 
-            <div className="verticalspacer"/>
-            <div>
-                {returnLimit()}
-            </div>
+            {SummonObject.Description.length > 0 &&
+            <>
+                <div className="verticalspacer"/>
+                <div>
+                    <div className="separator">&#x27E1;</div>
+                </div> 
+                <div className="verticalspacer"/>
+                <div>
+                    {returnDescription(SummonObject, SummonObject.Description)}
+                </div>
+            </>
+            }
+            {SummonObject.Limit > 0 &&
+            <>
+                <div className="verticalspacer"/> 
+                <div>
+                    <div className="separator">&#x27E1;</div>
+                </div> 
+                <div className="verticalspacer"/>
+                <div>
+                    {returnLimit()}
+                </div>
+            </>
+            }
         </div>
     )
 }

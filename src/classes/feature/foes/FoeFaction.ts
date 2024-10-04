@@ -7,7 +7,7 @@ import { AbilityFactory } from '../../../factories/features/AbilityFactory';
 import { Trait } from '../trait/Trait';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
 import { Requester } from '../../../factories/Requester';
-import { IFoeStats } from './FoeStats';
+import { IFoeStats, SortAbilities } from './FoeStats';
 import { FoeFactory } from '../../../factories/features/FoeFactory';
 import { FoeJob, IFoeJob } from './FoeJob';
 import { FoeFactionClass, IFoeFactionClass } from './FoeFactionClass';
@@ -72,7 +72,7 @@ class FoeFaction extends IconpendiumItem {
         for (i = 0; i < _data.length; i++) {
             array.push(AddonFactory.CreateNewAddon(_data[i], 'foeabilities'))
         }
-        return array;
+        return SortAbilities(array);
     }
 
     private TraitsFactory(_data : string[]) {

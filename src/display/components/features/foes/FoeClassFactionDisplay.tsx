@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 
+import { GetObjectTagSpecialActionVal } from '../../../../utility/functions'
+
 // Classes
 import { returnDescription } from '../../../../utility/util';
 import { FoeFactionClass } from '../../../../classes/feature/foes/FoeFactionClass';
@@ -62,7 +64,7 @@ const FoeClassFactionDisplay = (props: any) => {
                 <div>
                     <div className="separator">Actions</div>
                 </div> 
-                {FoeClassFactionObject.Chapters[0].Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
+                {FoeClassFactionObject.Chapters[0].Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={GetObjectTagSpecialActionVal(item.Tags) + item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
                                 
                 <div className="verticalspacer"/>  
                 </>
@@ -97,7 +99,7 @@ const FoeClassFactionDisplay = (props: any) => {
                                 <div>
                                     <div className="separator">Actions</div>
                                 </div> 
-                                {item.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
+                                {item.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={item.Class} d_name={GetObjectTagSpecialActionVal(item.Tags) + item.Name} d_state={false} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
                                                 
                                 <div className="verticalspacer"/>  
                                 </>

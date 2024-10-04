@@ -304,14 +304,14 @@ export const CollectionDataDex : CollectionDataTable = {
     foejobs: {
         searchId: 'foejobs', 
         pageName: 'Faction',
-        sort: ["faction_id", "class_id", "name", "id"],
+        sort: ["class_id", "faction_id", "name", "id"],
         postSearch(model : ViewCollectionsModel) {
             model.CleanupItems();
             model.CleanupCollection();
             let i = 0;
-            model.dataresults.sort(byPropertiesOf<IFoeJob>(["faction_id","class_id","name", "id"]))
+            model.dataresults.sort(byPropertiesOf<IFoeJob>(["class_id","faction_id","name", "id"]))
             for (i = 0; i < model.dataresults.length; i++) {
-                const summonNew =  FoeFactory.CreateFoeJob(model.dataresults[i]);
+                const summonNew =  FoeFactory.CreateFoeJob(model.dataresults[i],0);
                 const ItemNew = new ViewTableItem(summonNew, summonNew.Class);
                 model.itemcollection.push(ItemNew);
             }

@@ -389,7 +389,7 @@ const AdvancedDescriptionItemDisplay = (props: any) => {
     function findTextFoe (id: string) {
         let summon: FoeJob | null = null;
 
-        summon = FoeFactory.CreateNewFoeJob(id)
+        summon = FoeFactory.CreateNewFoeJob(id,0)
 
         return (
             <GenericPopup titlename={summon.Name} d_colour={'icon'} d_name={summon.Name} d_type={""} d_method={() => <FoeJobDisplay data={summon} />}/>

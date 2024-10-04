@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
 import React from 'react'
 
+import { GetObjectTagSpecialActionVal } from '../../../../utility/functions'
+
 // Classes
 import { FoeClass } from '../../../../classes/feature/foes/FoeClass';
 
@@ -36,7 +38,7 @@ const FoeClassDisplay = (props: any) => {
                     <div>
                         <div className="separator">Actions</div>
                     </div> 
-                    {FoeClassObject.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={FoeClassObject.Class} d_name={item.Name} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
+                    {FoeClassObject.Actions.map((item) => <div key={"action"+item.ID}><GenericDisplay key="addonloop" d_colour={FoeClassObject.Class} d_name={GetObjectTagSpecialActionVal(item.Tags) + item.Name} d_type={"sub"} d_method={() => <AddonDisplay data={item} />}/><div className="verticalspacer"/></div>)}
                                     
                     <div className="verticalspacer"/>  
                     </>

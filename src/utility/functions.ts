@@ -132,6 +132,23 @@ export function getTagSetValue(tag:any, value:string) {
     return "";
 }
 
+export function GetObjectTagSpecialActionVal(tag: ObjectTag) {
+    const Val = getTagValue(tag, 'action')
+    if ((Val === 'round')) {
+        return "(R) "
+    } 
+    if ((Val === 'free')) {
+        return "(F) "
+    } 
+
+    const Int = getTagValue(tag, 'interrupt')
+    if (Int != "") {
+        return "(I) "
+    }
+
+    return "";
+}
+
 /**
  * Finds the human-readable title for any given
  * page route.
