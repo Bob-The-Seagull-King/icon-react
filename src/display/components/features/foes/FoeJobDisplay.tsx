@@ -281,6 +281,7 @@ const FoeJobDisplay = (props: any) => {
             <div>
                 <div className="separator">Choices</div>
             </div> 
+            <div className="verticalspacer"/> 
             <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: ((FoeJobObject.Choices.length > 1))? 2: 1}} >
                 <Masonry gutter="20px">   
                     {FoeJobObject.Choices.map((phaseitem) => <div key={"trait"+phaseitem.Name}><GenericDisplay key="traitloop" d_colour={phaseitem.Class} d_state={false} d_name={phaseitem.Name} d_type={"sub"} d_method={() => <TraitDisplay data={phaseitem} />}/><div className="verticalspacer"/></div>)}   
