@@ -23,7 +23,7 @@ interface IFoeJob extends IIconpendiumItemData {
     chapter: number
     description: []
     tactics : []
-    choices: string[]
+    choices?: string[]
 }
 
 interface ChapterSet {

@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import '../../../../resources/styles/_icon.scss'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import { GetObjectTagSpecialActionVal } from '../../../../utility/functions'
@@ -24,18 +24,31 @@ const FoeJobDisplay = (props: any) => {
     const [phase, setPhase] = useState(0);
     const [chapter, setChapter] = useState(0);
     const [stats, setStats] = useState(FoeJobObject.ChapterSets[chapter].phases[phase].Stats);
+    const [statkey, setStatKey] = useState(0);
+
+    
+    // Run UpdateStats when 'phase' changes
+    useEffect(() => {
+        UpdateStats();
+    }, [phase]);  // UpdateStats will now run every time 'phase' changes
+
+    
+    // Run UpdateStats when 'phase' changes
+    useEffect(() => {
+        UpdateStats();
+    }, [chapter]);  // UpdateStats will now run every time 'phase' changes
 
     function UpdateStats() {
         setStats(FoeJobObject.ChapterSets[chapter].phases[phase].Stats)
+        setStatKey(statkey + 1);
     }
 
     function handleChapterSelect(key : number) {
         setChapter(key);
-        UpdateStats()
       }
+
     function handlePhaseSelect(key : number) {
         setPhase(key);
-        UpdateStats()
     }
 
     return (
@@ -66,7 +79,9 @@ const FoeJobDisplay = (props: any) => {
                 
             <div className="verticalspacer"/>
 
-            <FoeStatsDisplay data={stats}/>
+            <div key={statkey}>
+                <FoeStatsDisplay key={statkey} data={stats}/>
+            </div>
 
             <div className="verticalspacerbig"/>
             
@@ -115,10 +130,6 @@ const FoeJobDisplay = (props: any) => {
                                         </div>
                                         
                                         <div className="verticalspacer"/>
-
-                                        <div>
-                                                <div className="separator">&#x27E1;</div>
-                                        </div> 
                                         </>
                                         }
                                         {_phase.Trigger.length > 0 &&
@@ -129,9 +140,6 @@ const FoeJobDisplay = (props: any) => {
                                         </div>
                                         
                                         <div className="verticalspacer"/>
-                                        <div>
-                                                <div className="separator">&#x27E1;</div>
-                                        </div> 
                                         </>
                                         }
                                         
@@ -221,10 +229,6 @@ const FoeJobDisplay = (props: any) => {
                                         </div>
                                         
                                         <div className="verticalspacer"/>
-
-                                        <div>
-                                                <div className="separator">&#x27E1;</div>
-                                        </div> 
                                         </>
                                         }
                                         {_phase.Trigger.length > 0 &&
@@ -235,9 +239,6 @@ const FoeJobDisplay = (props: any) => {
                                         </div>
                                         
                                         <div className="verticalspacer"/>
-                                        <div>
-                                                <div className="separator">&#x27E1;</div>
-                                        </div> 
                                         </>
                                         }
                                         
