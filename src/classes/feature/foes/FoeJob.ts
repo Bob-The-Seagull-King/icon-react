@@ -8,7 +8,7 @@ import { IFoeFactionClass } from './FoeFactionClass';
 import { TrophyFactory } from '../../../factories/features/TrophyFactory';
 import { Trophy, ITrophy } from '../trophy/Trophy';
 import { TraitFactory } from '../../../factories/features/TraitFactory';
-import { Trait } from '../trait/Trait';
+import { ITrait, Trait } from '../trait/Trait';
 
 interface IFoeJob extends IIconpendiumItemData {
     faction_id : string
@@ -185,8 +185,11 @@ class FoeJob extends IconpendiumItem {
     
     private TraitsFactory(_data : string[], _class : string) {
         let i = 0;
-        for (i = 0; i < _data.length; i++) {
-            this.Choices.push(TraitFactory.CreateNewTrait(_data[i], 'foetraits', _class))
+        
+        for (i = 0; i < _data.length; i++) {            
+            const addondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foetraits", id: _data[i]}}) as ITrait
+            const addonNew = TraitFactory.CreateTrait(addondata, (addondata.class)? addondata.class : _class)
+            this.Choices.push(addonNew);
         }
     } 
 

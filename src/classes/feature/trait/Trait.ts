@@ -6,6 +6,7 @@ import { DescriptionFactory } from '../../../utility/functions';
  */
 interface ITrait extends IIconpendiumItemData {
     description: [] // Descriptive text of the Addon
+    class? : string
 }
 
 class Trait extends IconpendiumItem {
