@@ -23,7 +23,7 @@ class PlayerAddon extends IconpendiumItem {
     {
         super(data)
         this.ItemType = ItemType.Addon;
-        this.Class = (colour)? colour : data.class_id;
+        this.Class = ((colour != undefined) && (colour != null))? colour : data.class_id;
         this.Description = DescriptionFactory(data.description);
     }
 }
