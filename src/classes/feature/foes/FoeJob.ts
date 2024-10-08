@@ -119,7 +119,7 @@ class FoeJob extends IconpendiumItem {
             }
         }
         if ((this.Category === 'job') || (this.Category === 'unique')) {
-            if ((_elite != undefined) && (_elite != null)) {                
+            if ((_elite != undefined) && (_elite != null) && (_elite === true)) {                
                 _statsVal = StatBuilder({ turns : ((_statsVal.turns)? _statsVal.turns : 1) + 1, hp_mod : ((_statsVal.hp_mod)? _statsVal.hp_mod : 0) + 2 }, _statsVal)
             }
         }
