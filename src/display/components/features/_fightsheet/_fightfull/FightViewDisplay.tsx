@@ -119,7 +119,7 @@ const FightViewDisplay = (prop: any) => {
                             <div className="verticalspacerbig"/>
                         </div> 
                         
-                            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: (FightItem.Members.length > 1)? 2 : 1}} >
+                            <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: (FightItem.Notes.length === 0)? 2 : 1}} >
                                 <Masonry gutter="20px">
                                     
                                     {FightItem.Members.map(_item =>
