@@ -3,7 +3,7 @@ import '../../../resources/styles/_icon.scss'
 import React from 'react'
 
 // Classes
-import {capitalizeString} from '../../../utility/functions'
+import {capitalizeString, makestringpresentable} from '../../../utility/functions'
 
 const TagDisplay = (props: any) => {
     const key : string = props.itemkey;
@@ -11,7 +11,7 @@ const TagDisplay = (props: any) => {
 
     return (
         <div className="tagItem tagText">
-            &#x2b9e; {(key.toString() || "")} {capitalizeString(((val)? val : '').toString() || "")}
+            &#x2b9e; {(key.toString() || "")} {makestringpresentable(((val)? val : '').toString() || "")}
         </div>
     )
 }
