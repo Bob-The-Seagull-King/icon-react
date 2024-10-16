@@ -11,6 +11,7 @@ interface IPlayerSummon extends IIconpendiumItemData {
 
 class PlayerSummon extends IconpendiumItem {
     public readonly Colour;
+    public readonly Class;
     public readonly Blurb;
     public readonly Description;
     public readonly Limit;
@@ -24,6 +25,7 @@ class PlayerSummon extends IconpendiumItem {
     {
         super(data)
         this.Colour = data.colour;
+        this.Class = data.colour;
         this.Limit = data.limit;
         this.Blurb = DescriptionFactory(data.blurb);
         this.Description = DescriptionFactory(data.description);
