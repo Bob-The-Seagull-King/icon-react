@@ -30,7 +30,7 @@ export function makestringpresentable(stringVal: string) {
     
     let i = 0 
     for (i = 0; i < pairedString.length; i++) {
-        if ((headers.includes(pairedString[i])) && (i === 0)) {
+        if ((headers.includes(pairedString[i]))) {
             continue;
         }
         const tempstring = capitalizeString(pairedString[i])
