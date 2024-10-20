@@ -25,6 +25,7 @@ class FoeFactionClass extends IconpendiumItem {
     public Stats;
     public Chapters : FoeChapter[] = [];
     public Data;
+    public FactionName;
 
     public Members;
 
@@ -39,6 +40,7 @@ class FoeFactionClass extends IconpendiumItem {
         this.Data = data;
         const classdata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foeclass", id: data.class_id}}) as IFoeClass
         const factiondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foefaction", id: data.faction_id}}) as IFoeFaction
+        this.FactionName = factiondata.name;
         this.Stats = StatBuilder(data.stats, StatBuilder(factiondata.stats, classdata.stats));
         this.Class = classdata.class;
         this.Description = DescriptionFactory(data.description)

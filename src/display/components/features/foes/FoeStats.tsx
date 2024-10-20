@@ -10,6 +10,7 @@ import ItemStat from '../../subcomponents/description/ItemStat';
 
 const FoeStatsDisplay = (props: any) => {
     const FoeStatsDisplay: IFoeStats = props.data
+    const FoeFaction: string = props.faction
 
     function ReturnHPVal() {
         let val = ""
@@ -102,6 +103,9 @@ const FoeStatsDisplay = (props: any) => {
                 }
                 {FoeStatsDisplay.dash &&
                     <ItemStat title={"DASH"} value={FoeStatsDisplay.dash}/>
+                }
+                {FoeFaction &&
+                    <ItemStat title={"FACTION"} value={FoeFaction}/>
                 }
             </div>
         </div>

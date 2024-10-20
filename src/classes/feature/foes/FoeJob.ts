@@ -91,20 +91,18 @@ class FoeJob extends IconpendiumItem {
         _traitLists.push(data.traits)
         _traitremovedLists.push(data.removed_traits)
 
+        let factionval = ""
+        if ((_faction != undefined) && (_faction != null)) {
+            factionval = _faction
+        } else { factionval = data.faction_id }
+        
+        const factiondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foefaction", id: factionval}}) as IFoeFaction
+        this.FactionData = factiondata;
+
         if ((this.Category != 'legend')) {
-            let factionval = ""
-            if ((_faction != undefined) && (_faction != null)) {
-                factionval = _faction
-            } else {
-                factionval = data.faction_id
-            }
-            const factiondata = Requester.MakeRequest({searchtype: "id", searchparam: {type: "foefaction", id: factionval}}) as IFoeFaction
             _actionLists.push(factiondata.actions_added)
             _traitLists.push(factiondata.traits_added)
             _statsVal = StatBuilder(factiondata.stats, _statsVal)
-            this.FactionData = factiondata;
-        } else {
-            this.FactionData = null;
         }
 
         if ((this.Category === 'job') && (data.faction_id != 'fc_general')) {

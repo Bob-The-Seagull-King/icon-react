@@ -20,7 +20,7 @@ const FoeClassDisplay = (props: any) => {
 
     return (
         <div className='abilityInternalStructure'>
-            <FoeStatsDisplay data={FoeClassObject.Stats}/>
+            <FoeStatsDisplay data={FoeClassObject.Stats} faction={null}/>
             <div className="verticalspacerbig"/>  
             <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 768: ((FoeClassObject.Traits.length === 0) || (FoeClassObject.Actions.length === 0))? 1: 2}} >
                 <Masonry gutter="20px">

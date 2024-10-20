@@ -26,6 +26,7 @@ const FoeJobDisplay = (props: any) => {
     const [stats, setStats] = useState(FoeJobObject.ChapterSets[chapter].phases[phase].Stats);
     const [statkey, setStatKey] = useState(0);
 
+    const factionName = FoeJobObject.FactionData.name
     
     // Run UpdateStats when 'phase' changes
     useEffect(() => {
@@ -80,7 +81,7 @@ const FoeJobDisplay = (props: any) => {
             <div className="verticalspacer"/>
 
             <div key={statkey}>
-                <FoeStatsDisplay key={statkey} data={stats}/>
+                <FoeStatsDisplay key={statkey} data={stats} faction={factionName}/>
             </div>
 
             <div className="verticalspacerbig"/>

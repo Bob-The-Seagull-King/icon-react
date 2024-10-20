@@ -22,7 +22,7 @@ import FoeStatsDisplay from './FoeStats';
 const FoeClassFactionDisplay = (props: any) => {
     const FoeClassFactionObject: FoeFactionClass = props.data
 
-    
+    const factionName = FoeClassFactionObject.FactionName;
     const [stats, setStats] = useState(FoeClassFactionObject.Chapters[0].Stats);
 
     function UpdateStats(key : number) {
@@ -44,7 +44,7 @@ const FoeClassFactionDisplay = (props: any) => {
                 
             <div className="verticalspacer"/>
 
-        <FoeStatsDisplay data={stats}/>
+        <FoeStatsDisplay data={stats} faction={factionName}/>
 
         <div className="verticalspacerbig"/>
         {FoeClassFactionObject.Chapters.length === 1 &&
