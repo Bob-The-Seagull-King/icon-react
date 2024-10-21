@@ -596,7 +596,7 @@ export const FitlerDataDex : FilterDataTable = {
         },
         findMisc() {
             const tempMisc: FilterItem[] = []
-            const keytypes = ["source","class_id","faction_id"]
+            const keytypes = ["source","class_id","faction_id","category","chapter"]
             keytypes.sort();
     
             let i = 0;

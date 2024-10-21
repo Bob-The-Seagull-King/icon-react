@@ -904,6 +904,24 @@ export const DisplayCollectionDataDex : DisplayCollectionDataTable = {
                             </div>
                         </div>
                             
+                            <div className="separator"><h3>CATEGORY</h3></div>
+                            <div className="row">
+                                <div className='filterbox centerPosition'>
+                                    {manager.ReturnMiscFilters().filter((value) => (value.Group == "category")).map((item) => (
+                                        <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                    ))}
+                                </div>
+                            </div>
+                            
+                            <div className="separator"><h3>CHAPTER</h3></div>
+                            <div className="row">
+                                <div className='filterbox centerPosition'>
+                                    {manager.ReturnMiscFilters().filter((value) => (value.Group == "chapter")).map((item) => (
+                                        <FilterMiscItem key={"miscsource"+item.Name} data={item} />
+                                    ))}
+                                </div>
+                            </div>
+                            
                         <div className='separator toppad'></div>
                         <div className="row float-end">
                             <div className='col-12 float-end'>
