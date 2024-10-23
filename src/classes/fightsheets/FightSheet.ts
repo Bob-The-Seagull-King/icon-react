@@ -45,8 +45,7 @@ class FightSheet {
         for (let i = 0; i < data.members.length; i++) {
             const NewMember : FightMember = new FightMember(data.members[i], this.Chapter)
             this.Members.push(NewMember)
-            
-            if (NewMember.Job.FactionData) {
+            if ((NewMember.Job.FactionData) && (NewMember.Job.Category != "legend")) {
                 FactionTraitList = FactionTraitList.concat(NewMember.Job.FactionData.traits)
                 FactionTraitRemovedList = FactionTraitRemovedList.concat(NewMember.Job.FactionData.traits_added)
                 FactionActionList = FactionActionList.concat(NewMember.Job.FactionData.actions)
@@ -79,7 +78,7 @@ class FightSheet {
 
         for (let i = 0; i < this.Members.length; i++) {
             const _job = this.Members[i].Job;
-            if (_job.FactionData != null) {
+            if ((_job.FactionData != null) && (_job.Category != "legend")) {
                 FactionTraitList = FactionTraitList.concat(_job.FactionData.traits)
                 FactionTraitRemovedList = FactionTraitRemovedList.concat(_job.FactionData.traits_added)
                 FactionActionList = FactionActionList.concat(_job.FactionData.actions)
